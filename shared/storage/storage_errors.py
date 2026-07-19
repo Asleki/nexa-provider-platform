@@ -183,7 +183,7 @@ class StorageDeleteError(StorageError):
 
 
 class StorageListError(StorageError):
-    """Raised when storage records or paths cannot be listed."""
+    """Raised when storage paths cannot be listed."""
 
 
 class StorageSerializationError(StorageError, ValueError):

@@ -59,7 +59,7 @@ class StorageAdapter(ABC):
         """Delete data from storage."""
 
     @abstractmethod
-    def list_records(
+    def list_paths(
         self,
         path: str | Path,
     ) -> list[Path]:

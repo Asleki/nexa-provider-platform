@@ -110,13 +110,13 @@ class StorageManager:
     ) -> StorageResult:
         return self.get_adapter(backend).delete(path)
 
-    def list_records(
+    def list_paths(
         self,
         path: str | Path,
         *,
         backend: str | None = None,
     ) -> list[Path]:
-        return self.get_adapter(backend).list_records(path)
+        return self.get_adapter(backend).list_paths(path)
 
     @property
     def registered_backends(self) -> tuple[str, ...]:

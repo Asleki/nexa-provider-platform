@@ -132,7 +132,7 @@ class JsonStorage(StorageAdapter):
             message="JSON document deleted.",
         )
 
-    def list_records(self, path: str | Path) -> list[Path]:
+    def list_paths(self, path: str | Path) -> list[Path]:
         target = Path(path)
 
         if not target.exists():

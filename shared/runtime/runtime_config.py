@@ -54,15 +54,16 @@ class RuntimeEnvironment(str, Enum):
 
 class StorageBackend(str, Enum):
     """
-    Storage backends understood by the runtime foundation.
+    Stable storage backend names understood by the runtime.
 
-    Only JSON is expected to be implemented during the first
-    development milestone. The other values reserve stable names
-    for later platform expansion.
+    Local file-based backends are implemented by the shared
+    storage foundation. Remote backend names are reserved for
+    later PostgreSQL and Supabase adapter implementations.
     """
 
     MEMORY = "memory"
     JSON = "json"
+    JSONL = "jsonl"
     CSV = "csv"
     SUPABASE = "supabase"
     POSTGRESQL = "postgresql"
@@ -388,6 +389,7 @@ class RuntimeConfig:
         return self.storage_backend in {
             StorageBackend.MEMORY,
             StorageBackend.JSON,
+            StorageBackend.JSONL,
             StorageBackend.CSV,
         }
 
