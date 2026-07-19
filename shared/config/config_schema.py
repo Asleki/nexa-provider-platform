@@ -69,7 +69,7 @@ class ConfigurationSchema:
     )
 
     data_directory: Path = field(
-        default_factory=lambda: Path("./data")
+        default_factory=lambda: Path("./storage/data")
     )
 
     configuration_directory: Path = field(
@@ -77,7 +77,7 @@ class ConfigurationSchema:
     )
 
     temporary_directory: Path = field(
-        default_factory=lambda: Path("./tmp")
+        default_factory=lambda: Path("./storage/temp")
     )
 
     timezone: str = "UTC"
