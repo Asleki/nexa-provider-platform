@@ -39,6 +39,7 @@ from .repository_errors import (
     RepositoryListError,
     RepositoryReadError,
     RepositoryRecordNotFoundError,
+    RepositoryStorageError,
     RepositoryUpdateError,
 )
 from .repository_result import RepositoryResult
@@ -197,6 +198,15 @@ class LocalRepository(BaseRepository):
 
         try:
             changes = self._normalize_record(record, require_identifier=False)
+
+            if not changes:
+                raise RepositoryInvalidRecordError(
+                    "Repository update must contain at least one field.",
+                    operation=operation,
+                    repository=self.repository_name,
+                    record_id=normalized_id,
+                    repository_type=self.repository_type,
+                )
 
             if self.id_field in changes:
                 supplied_id = self._normalize_identifier(
@@ -394,8 +404,8 @@ class LocalRepository(BaseRepository):
                 backend=self.backend,
             )
         except Exception as exc:
-            raise RepositoryDataCorruptionError(
-                "Unable to load persisted repository data.",
+            raise RepositoryStorageError(
+                "Unable to access persisted repository data.",
                 operation=operation,
                 repository=self.repository_name,
                 repository_type=self.repository_type,

@@ -53,9 +53,15 @@ class BaseRepository(RepositoryInterface, ABC):
         """Validate and normalize repository identifiers."""
         if record_id is None:
             raise ValueError("record_id must not be None.")
-        value = str(record_id).strip()
+
+        if not isinstance(record_id, str):
+            raise TypeError("record_id must be a string.")
+
+        value = record_id.strip()
+
         if not value:
             raise ValueError("record_id must not be empty.")
+
         return value
 
 

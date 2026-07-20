@@ -83,10 +83,13 @@ class RepositoryInterface(ABC):
         record: Mapping[str, Any],
     ) -> RepositoryResult:
         """
-        Replace the persisted state of an existing record.
+        Apply a partial update to an existing record.
 
-        Implementations must reject attempts to alter the
-        immutable primary identifier.
+        Only supplied fields are modified. Fields omitted from the
+        update mapping remain unchanged.
+
+        Implementations must reject empty update mappings and
+        attempts to alter the immutable primary identifier.
         """
 
     @abstractmethod
