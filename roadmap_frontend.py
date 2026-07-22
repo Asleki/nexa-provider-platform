@@ -96,7 +96,7 @@ def status_icon(status: RoadmapStatus) -> str:
     if status is RoadmapStatus.IN_PROGRESS:
         return "🟡"
     if status is RoadmapStatus.BLOCKED:
-        return "🔴"
+        return "⛔"
     if status is RoadmapStatus.CANCELLED:
         return "⚫"
     return "⚪"
