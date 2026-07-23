@@ -3,8 +3,8 @@
 Nexa Provider Platform
 File: tests/shared/audit/test_public_exports.py
 Layer: Shared Audit Infrastructure Tests
-Milestone: NPP-M007.2 — Audit Event Model
-Revision: v2
+Milestone: NPP-M007.3 — Actor and Source Metadata
+Revision: v3
 ============================================================
 
 Verifies that shared.audit exposes the complete, stable public API
@@ -16,18 +16,22 @@ from __future__ import annotations
 import shared.audit as audit_package
 from shared.audit import (
     AuditAction,
+    AuditActor,
     AuditError,
     AuditEvent,
     AuditEventResult,
     AuditEventType,
     AuditIdentifierError,
+    AuditMetadata,
     AuditMetadataError,
     AuditOutcome,
     AuditRecord,
+    AuditSource,
     AuditTimestampError,
     AuditValidationError,
 )
 from shared.audit.audit_action import AuditAction as CanonicalAuditAction
+from shared.audit.audit_actor import AuditActor as CanonicalAuditActor
 from shared.audit.audit_errors import (
     AuditError as CanonicalAuditError,
     AuditIdentifierError as CanonicalAuditIdentifierError,
@@ -42,20 +46,25 @@ from shared.audit.audit_event_result import (
 from shared.audit.audit_event_types import (
     AuditEventType as CanonicalAuditEventType,
 )
+from shared.audit.audit_metadata import AuditMetadata as CanonicalAuditMetadata
 from shared.audit.audit_outcome import AuditOutcome as CanonicalAuditOutcome
+from shared.audit.audit_source import AuditSource as CanonicalAuditSource
 from shared.audit.audit_record import AuditRecord as CanonicalAuditRecord
 
 
 EXPECTED_EXPORTS = {
     "AuditAction",
+    "AuditActor",
     "AuditError",
     "AuditEvent",
     "AuditEventResult",
     "AuditEventType",
     "AuditIdentifierError",
+    "AuditMetadata",
     "AuditMetadataError",
     "AuditOutcome",
     "AuditRecord",
+    "AuditSource",
     "AuditTimestampError",
     "AuditValidationError",
 }
@@ -77,14 +86,17 @@ def test_package_exports_are_available() -> None:
 
 def test_package_exports_have_canonical_identity() -> None:
     assert AuditAction is CanonicalAuditAction
+    assert AuditActor is CanonicalAuditActor
     assert AuditError is CanonicalAuditError
     assert AuditEvent is CanonicalAuditEvent
     assert AuditEventResult is CanonicalAuditEventResult
     assert AuditEventType is CanonicalAuditEventType
     assert AuditIdentifierError is CanonicalAuditIdentifierError
+    assert AuditMetadata is CanonicalAuditMetadata
     assert AuditMetadataError is CanonicalAuditMetadataError
     assert AuditOutcome is CanonicalAuditOutcome
     assert AuditRecord is CanonicalAuditRecord
+    assert AuditSource is CanonicalAuditSource
     assert AuditTimestampError is CanonicalAuditTimestampError
     assert AuditValidationError is CanonicalAuditValidationError
 

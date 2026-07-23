@@ -19,6 +19,9 @@ from datetime import UTC, datetime, timedelta, timezone
 from types import MappingProxyType
 
 from shared.audit.audit_action import AuditAction
+from shared.audit.audit_actor import AuditActor
+from shared.audit.audit_metadata import AuditMetadata
+from shared.audit.audit_source import AuditSource
 from shared.audit.audit_errors import (
     AuditIdentifierError,
     AuditMetadataError,
@@ -274,6 +277,57 @@ class AuditRecordTests(unittest.TestCase):
         data["metadata"]["channel"] = "changed"
 
         self.assertEqual(record.metadata["channel"], "api")
+
+
+    def test_structured_actor_and_source_metadata_are_derived(self) -> None:
+        record = self._make_record(
+            event_id="EVT-001",
+            event_type="CITIZEN_CREATED",
+            correlation_id="CORR-001",
+            causation_id="CAUSE-001",
+            request_id="REQ-001",
+            device_id="DEV-001",
+            metadata={"channel": "api"},
+        )
+
+        self.assertIsInstance(record.actor, AuditActor)
+        self.assertIsInstance(record.source_metadata, AuditSource)
+        self.assertIsInstance(record.audit_metadata, AuditMetadata)
+
+        self.assertEqual(record.actor.actor_id, record.actor_id)
+        self.assertEqual(record.actor.actor_type, record.actor_type)
+        self.assertEqual(record.source_metadata.source, record.source)
+        self.assertEqual(record.source_metadata.event_id, record.event_id)
+        self.assertEqual(record.source_metadata.event_type, record.event_type)
+        self.assertEqual(record.source_metadata.request_id, record.request_id)
+        self.assertEqual(record.source_metadata.device_id, record.device_id)
+        self.assertEqual(record.audit_metadata.runtime_id, record.runtime_id)
+        self.assertEqual(
+            record.audit_metadata.runtime_mode,
+            record.runtime_mode,
+        )
+        self.assertEqual(
+            record.audit_metadata.correlation_id,
+            record.correlation_id,
+        )
+        self.assertEqual(
+            record.audit_metadata.causation_id,
+            record.causation_id,
+        )
+        self.assertEqual(record.audit_metadata.attributes["channel"], "api")
+
+    def test_structured_metadata_does_not_change_legacy_serialization(self) -> None:
+        record = self._make_record(metadata={"channel": "api"})
+
+        data = record.to_dict()
+
+        self.assertNotIn("actor", data)
+        self.assertNotIn("source_metadata", data)
+        self.assertNotIn("audit_metadata", data)
+        self.assertEqual(data["actor_id"], "ACTOR-001")
+        self.assertEqual(data["source"], "npp")
+        self.assertEqual(data["metadata"], {"channel": "api"})
+
 
 
 if __name__ == "__main__":

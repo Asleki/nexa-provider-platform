@@ -3,7 +3,8 @@
 Nexa Provider Platform
 File: shared/audit/audit_record.py
 Layer: Shared Audit Infrastructure
-Milestone: NPP-M007.1.4 — Audit Record Contract
+Milestone: NPP-M007.1.4 / M007.3 — Audit Record Contract
+Revision: v2
 ============================================================
 
 Defines the immutable canonical record produced by the Shared
@@ -23,13 +24,16 @@ from types import MappingProxyType
 from typing import Any, Mapping
 
 from .audit_action import AuditAction
+from .audit_actor import AuditActor
 from .audit_errors import (
     AuditIdentifierError,
     AuditMetadataError,
     AuditTimestampError,
     AuditValidationError,
 )
+from .audit_metadata import AuditMetadata
 from .audit_outcome import AuditOutcome
+from .audit_source import AuditSource
 
 
 def _normalize_required_text(name: str, value: str) -> str:
@@ -106,6 +110,10 @@ class AuditRecord:
     device_id: str | None = None
 
     metadata: Mapping[str, Any] = field(default_factory=dict)
+
+    actor: AuditActor = field(init=False)
+    source_metadata: AuditSource = field(init=False)
+    audit_metadata: AuditMetadata = field(init=False)
 
     def __post_init__(self) -> None:
         try:
@@ -260,6 +268,31 @@ class AuditRecord:
             "metadata",
             MappingProxyType(dict(self.metadata)),
         )
+
+        actor = AuditActor(
+            actor_id=self.actor_id,
+            actor_type=self.actor_type,
+        )
+        source_metadata = AuditSource(
+            source=self.source,
+            request_id=self.request_id,
+            device_id=self.device_id,
+            event_id=self.event_id,
+            event_type=self.event_type,
+        )
+        audit_metadata = AuditMetadata(
+            actor=actor,
+            source=source_metadata,
+            runtime_id=self.runtime_id,
+            runtime_mode=self.runtime_mode,
+            correlation_id=self.correlation_id,
+            causation_id=self.causation_id,
+            attributes=self.metadata,
+        )
+
+        object.__setattr__(self, "actor", actor)
+        object.__setattr__(self, "source_metadata", source_metadata)
+        object.__setattr__(self, "audit_metadata", audit_metadata)
 
     def to_dict(self) -> dict[str, Any]:
         """Serialize the record into a detached plain dictionary."""
