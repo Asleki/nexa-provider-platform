@@ -1,4 +1,4 @@
-"""Public export validation for M007.6 Audit Integrity Validation."""
+"""Public export validation through M007.7 Audit Export."""
 from __future__ import annotations
 
 import shared.audit as audit_package
@@ -25,6 +25,10 @@ EXPECTED_EXPORTS = {
     "AuditIntegrityResult", "AuditIntegrityStatus",
     "AuditIntegrityValidator", "AuditIntegrityServiceInterface",
     "AuditIntegrityService",
+    "AuditExportError", "AuditExportValidationError",
+    "AuditExportExecutionError", "AuditExportResultError",
+    "AuditExportRequest", "AuditExportResult",
+    "AuditExportServiceInterface", "AuditExportService",
 }
 
 
@@ -60,6 +64,10 @@ def test_package_exports_have_canonical_modules() -> None:
         "AuditIntegrityValidator": "shared.audit.audit_integrity_validator",
         "AuditIntegrityServiceInterface": "shared.audit.audit_integrity_service_interface",
         "AuditIntegrityService": "shared.audit.audit_integrity_service",
+        "AuditExportRequest": "shared.audit.audit_export_request",
+        "AuditExportResult": "shared.audit.audit_export_result",
+        "AuditExportServiceInterface": "shared.audit.audit_export_service_interface",
+        "AuditExportService": "shared.audit.audit_export_service",
     }
     for name, module in expected_modules.items():
         assert getattr(audit_package, name).__module__ == module
@@ -69,3 +77,24 @@ def test_star_import_exposes_only_public_names() -> None:
     namespace: dict[str, object] = {}
     exec("from shared.audit import *", namespace)
     assert {name for name in namespace if not name.startswith("__")} == EXPECTED_EXPORTS
+"""M007.7 additions for tests/shared/audit/test_public_exports.py.
+
+Append the names below to the existing expected-public-export assertions.
+"""
+import shared.audit as audit
+
+
+def test_m007_7_public_exports() -> None:
+    expected = {
+        "AuditExportError",
+        "AuditExportValidationError",
+        "AuditExportExecutionError",
+        "AuditExportResultError",
+        "AuditExportRequest",
+        "AuditExportResult",
+        "AuditExportServiceInterface",
+        "AuditExportService",
+    }
+    assert expected.issubset(set(audit.__all__))
+    for name in expected:
+        assert getattr(audit, name) is not None

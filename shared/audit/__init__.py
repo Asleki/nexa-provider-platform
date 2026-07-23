@@ -3,8 +3,8 @@
 Nexa Provider Platform
 File: shared/audit/__init__.py
 Layer: Shared Audit Infrastructure
-Milestone: NPP-M007.1 / M007.2 / M007.3 / M007.4 / M007.5 / M007.6
-Revision: v6
+Milestone: NPP-M007.1 through M007.7
+Revision: v7
 ============================================================
 """
 from .audit_action import AuditAction
@@ -21,6 +21,8 @@ from .audit_errors import (
     AuditQueryResultError, AuditIntegrityError,
     AuditIntegrityValidationError, AuditIntegrityServiceConfigurationError,
     AuditIntegrityExecutionError, AuditIntegrityResultError,
+    AuditExportError, AuditExportValidationError,
+    AuditExportExecutionError, AuditExportResultError,
 )
 from .audit_event import AuditEvent
 from .audit_event_result import AuditEventResult
@@ -44,6 +46,10 @@ from .audit_integrity_result import (
 from .audit_integrity_validator import AuditIntegrityValidator
 from .audit_integrity_service_interface import AuditIntegrityServiceInterface
 from .audit_integrity_service import AuditIntegrityService
+from .audit_export_request import AuditExportRequest
+from .audit_export_result import AuditExportResult
+from .audit_export_service_interface import AuditExportServiceInterface
+from .audit_export_service import AuditExportService
 
 __all__ = [
     "AuditAction", "AuditActor", "AuditAppendError", "AuditCountError",
@@ -66,5 +72,8 @@ __all__ = [
     "AuditIntegrityResultError", "AuditIntegrityFinding",
     "AuditIntegrityResult", "AuditIntegrityStatus",
     "AuditIntegrityValidator", "AuditIntegrityServiceInterface",
-    "AuditIntegrityService",
+    "AuditIntegrityService", "AuditExportError",
+    "AuditExportValidationError", "AuditExportExecutionError",
+    "AuditExportResultError", "AuditExportRequest", "AuditExportResult",
+    "AuditExportServiceInterface", "AuditExportService",
 ]

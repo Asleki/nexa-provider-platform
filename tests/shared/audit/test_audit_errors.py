@@ -169,3 +169,26 @@ class AuditErrorTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+"""M007.7 additions for tests/shared/audit/test_audit_errors.py.
+
+Append these tests to the existing file after replacing audit_errors.py with v5.
+"""
+from shared.audit.audit_errors import (
+    AuditExportError,
+    AuditExportExecutionError,
+    AuditExportResultError,
+    AuditExportValidationError,
+)
+
+
+def test_audit_export_error_codes_are_stable() -> None:
+    assert AuditExportError.error_code == "NPP-AUDIT-400"
+    assert AuditExportValidationError.error_code == "NPP-AUDIT-401"
+    assert AuditExportExecutionError.error_code == "NPP-AUDIT-402"
+    assert AuditExportResultError.error_code == "NPP-AUDIT-403"
+
+
+def test_audit_export_errors_inherit_export_family() -> None:
+    assert issubclass(AuditExportValidationError, AuditExportError)
+    assert issubclass(AuditExportExecutionError, AuditExportError)
+    assert issubclass(AuditExportResultError, AuditExportError)
