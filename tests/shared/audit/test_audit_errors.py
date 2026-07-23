@@ -3,8 +3,8 @@
 Nexa Provider Platform
 File: tests/shared/audit/test_audit_errors.py
 Layer: Audit Unit Tests
-Milestone: NPP-M007.1-T1 / M007.4 / M007.5
-Revision: v3
+Milestone: NPP-M007.1-T1 / M007.4 / M007.5 / M007.6
+Revision: v4
 ============================================================
 """
 from __future__ import annotations
@@ -35,6 +35,11 @@ from shared.audit.audit_errors import (
     AuditQueryServiceConfigurationError,
     AuditQueryExecutionError,
     AuditQueryResultError,
+    AuditIntegrityError,
+    AuditIntegrityValidationError,
+    AuditIntegrityServiceConfigurationError,
+    AuditIntegrityExecutionError,
+    AuditIntegrityResultError,
 )
 
 
@@ -132,6 +137,11 @@ class AuditErrorTests(unittest.TestCase):
             AuditQueryServiceConfigurationError: "NPP-AUDIT-202",
             AuditQueryExecutionError: "NPP-AUDIT-203",
             AuditQueryResultError: "NPP-AUDIT-204",
+            AuditIntegrityError: "NPP-AUDIT-300",
+            AuditIntegrityValidationError: "NPP-AUDIT-301",
+            AuditIntegrityServiceConfigurationError: "NPP-AUDIT-302",
+            AuditIntegrityExecutionError: "NPP-AUDIT-303",
+            AuditIntegrityResultError: "NPP-AUDIT-304",
         }
         for error_class, expected_code in expected_codes.items():
             with self.subTest(error_class=error_class.__name__):
@@ -148,6 +158,9 @@ class AuditErrorTests(unittest.TestCase):
             AuditInvalidRecordError, AuditQueryError,
             AuditQueryValidationError, AuditQueryServiceConfigurationError,
             AuditQueryExecutionError, AuditQueryResultError,
+            AuditIntegrityError, AuditIntegrityValidationError,
+            AuditIntegrityServiceConfigurationError,
+            AuditIntegrityExecutionError, AuditIntegrityResultError,
         )
         for error_class in subclasses:
             with self.subTest(error_class=error_class.__name__):

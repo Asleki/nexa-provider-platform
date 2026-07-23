@@ -1,4 +1,4 @@
-"""Public export validation for M007.5 Audit Query Service."""
+"""Public export validation for M007.6 Audit Integrity Validation."""
 from __future__ import annotations
 
 import shared.audit as audit_package
@@ -19,18 +19,28 @@ EXPECTED_EXPORTS = {
     "AuditQueryServiceInterface", "AuditQueryError",
     "AuditQueryValidationError", "AuditQueryServiceConfigurationError",
     "AuditQueryExecutionError", "AuditQueryResultError",
+    "AuditIntegrityError", "AuditIntegrityValidationError",
+    "AuditIntegrityServiceConfigurationError", "AuditIntegrityExecutionError",
+    "AuditIntegrityResultError", "AuditIntegrityFinding",
+    "AuditIntegrityResult", "AuditIntegrityStatus",
+    "AuditIntegrityValidator", "AuditIntegrityServiceInterface",
+    "AuditIntegrityService",
 }
+
 
 def test_package_all_contains_expected_exports() -> None:
     assert set(audit_package.__all__) == EXPECTED_EXPORTS
+
 
 def test_package_all_contains_only_unique_strings() -> None:
     assert all(isinstance(name, str) for name in audit_package.__all__)
     assert len(audit_package.__all__) == len(set(audit_package.__all__))
 
+
 def test_package_exports_are_available() -> None:
     for name in EXPECTED_EXPORTS:
         assert hasattr(audit_package, name)
+
 
 def test_package_exports_have_canonical_modules() -> None:
     expected_modules = {
@@ -44,9 +54,16 @@ def test_package_exports_have_canonical_modules() -> None:
         "AuditQueryResult": "shared.audit.audit_query_result",
         "AuditQueryServiceInterface": "shared.audit.audit_query_service_interface",
         "AuditQueryService": "shared.audit.audit_query_service",
+        "AuditIntegrityFinding": "shared.audit.audit_integrity_result",
+        "AuditIntegrityResult": "shared.audit.audit_integrity_result",
+        "AuditIntegrityStatus": "shared.audit.audit_integrity_result",
+        "AuditIntegrityValidator": "shared.audit.audit_integrity_validator",
+        "AuditIntegrityServiceInterface": "shared.audit.audit_integrity_service_interface",
+        "AuditIntegrityService": "shared.audit.audit_integrity_service",
     }
     for name, module in expected_modules.items():
         assert getattr(audit_package, name).__module__ == module
+
 
 def test_star_import_exposes_only_public_names() -> None:
     namespace: dict[str, object] = {}

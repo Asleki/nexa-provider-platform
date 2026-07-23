@@ -3,8 +3,8 @@
 Nexa Provider Platform
 File: shared/audit/__init__.py
 Layer: Shared Audit Infrastructure
-Milestone: NPP-M007.1 / M007.2 / M007.3 / M007.4 / M007.5
-Revision: v5
+Milestone: NPP-M007.1 / M007.2 / M007.3 / M007.4 / M007.5 / M007.6
+Revision: v6
 ============================================================
 """
 from .audit_action import AuditAction
@@ -18,7 +18,9 @@ from .audit_errors import (
     AuditRepositoryOperationError, AuditTimestampError, AuditValidationError,
     AuditQueryError, AuditQueryValidationError,
     AuditQueryServiceConfigurationError, AuditQueryExecutionError,
-    AuditQueryResultError,
+    AuditQueryResultError, AuditIntegrityError,
+    AuditIntegrityValidationError, AuditIntegrityServiceConfigurationError,
+    AuditIntegrityExecutionError, AuditIntegrityResultError,
 )
 from .audit_event import AuditEvent
 from .audit_event_result import AuditEventResult
@@ -36,6 +38,12 @@ from .audit_query import AuditQuery
 from .audit_query_result import AuditQueryResult
 from .audit_query_service_interface import AuditQueryServiceInterface
 from .audit_query_service import AuditQueryService
+from .audit_integrity_result import (
+    AuditIntegrityFinding, AuditIntegrityResult, AuditIntegrityStatus,
+)
+from .audit_integrity_validator import AuditIntegrityValidator
+from .audit_integrity_service_interface import AuditIntegrityServiceInterface
+from .audit_integrity_service import AuditIntegrityService
 
 __all__ = [
     "AuditAction", "AuditActor", "AuditAppendError", "AuditCountError",
@@ -53,4 +61,10 @@ __all__ = [
     "AuditQueryServiceInterface", "AuditQueryError",
     "AuditQueryValidationError", "AuditQueryServiceConfigurationError",
     "AuditQueryExecutionError", "AuditQueryResultError",
+    "AuditIntegrityError", "AuditIntegrityValidationError",
+    "AuditIntegrityServiceConfigurationError", "AuditIntegrityExecutionError",
+    "AuditIntegrityResultError", "AuditIntegrityFinding",
+    "AuditIntegrityResult", "AuditIntegrityStatus",
+    "AuditIntegrityValidator", "AuditIntegrityServiceInterface",
+    "AuditIntegrityService",
 ]
