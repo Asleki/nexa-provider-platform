@@ -3,34 +3,22 @@
 Nexa Provider Platform
 File: shared/audit/__init__.py
 Layer: Shared Audit Infrastructure
-Milestone: NPP-M007.1 / M007.2 / M007.3 / M007.4
-Revision: v4
+Milestone: NPP-M007.1 / M007.2 / M007.3 / M007.4 / M007.5
+Revision: v5
 ============================================================
-
-Public API for provider-neutral audit contracts and append-only
-audit repository infrastructure.
 """
-
 from .audit_action import AuditAction
 from .audit_actor import AuditActor
 from .audit_errors import (
-    AuditAppendError,
-    AuditCountError,
-    AuditDuplicateRecordError,
-    AuditError,
-    AuditExistsError,
-    AuditIdentifierError,
-    AuditInvalidRecordError,
-    AuditListError,
-    AuditMetadataError,
-    AuditReadError,
-    AuditRecordNotFoundError,
-    AuditRecordRepositoryError,
-    AuditRepositoryConfigurationError,
-    AuditRepositoryError,
-    AuditRepositoryOperationError,
-    AuditTimestampError,
-    AuditValidationError,
+    AuditAppendError, AuditCountError, AuditDuplicateRecordError, AuditError,
+    AuditExistsError, AuditIdentifierError, AuditInvalidRecordError,
+    AuditListError, AuditMetadataError, AuditReadError,
+    AuditRecordNotFoundError, AuditRecordRepositoryError,
+    AuditRepositoryConfigurationError, AuditRepositoryError,
+    AuditRepositoryOperationError, AuditTimestampError, AuditValidationError,
+    AuditQueryError, AuditQueryValidationError,
+    AuditQueryServiceConfigurationError, AuditQueryExecutionError,
+    AuditQueryResultError,
 )
 from .audit_event import AuditEvent
 from .audit_event_result import AuditEventResult
@@ -44,7 +32,10 @@ from .audit_repository_types import AuditRepositoryOperation, AuditRepositoryTyp
 from .audit_source import AuditSource
 from .base_audit_repository import BaseAuditRepository
 from .memory_audit_repository import MemoryAuditRepository
-
+from .audit_query import AuditQuery
+from .audit_query_result import AuditQueryResult
+from .audit_query_service_interface import AuditQueryServiceInterface
+from .audit_query_service import AuditQueryService
 
 __all__ = [
     "AuditAction", "AuditActor", "AuditAppendError", "AuditCountError",
@@ -58,4 +49,8 @@ __all__ = [
     "AuditRepositoryOperationError", "AuditRepositoryResult",
     "AuditRepositoryType", "AuditSource", "AuditTimestampError",
     "AuditValidationError", "BaseAuditRepository", "MemoryAuditRepository",
+    "AuditQuery", "AuditQueryResult", "AuditQueryService",
+    "AuditQueryServiceInterface", "AuditQueryError",
+    "AuditQueryValidationError", "AuditQueryServiceConfigurationError",
+    "AuditQueryExecutionError", "AuditQueryResultError",
 ]

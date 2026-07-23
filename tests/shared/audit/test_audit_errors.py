@@ -1,15 +1,12 @@
 """
 ============================================================
 Nexa Provider Platform
-File: tests/unit/audit/test_audit_errors.py
+File: tests/shared/audit/test_audit_errors.py
 Layer: Audit Unit Tests
-Milestone: NPP-M007.1-T1 — Audit Errors Tests
+Milestone: NPP-M007.1-T1 / M007.4 / M007.5
+Revision: v3
 ============================================================
-
-Verifies the AuditError hierarchy, validation, normalization,
-immutability, metadata handling, error codes, and serialization.
 """
-
 from __future__ import annotations
 
 import unittest
@@ -33,6 +30,11 @@ from shared.audit.audit_errors import (
     AuditRecordNotFoundError,
     AuditDuplicateRecordError,
     AuditInvalidRecordError,
+    AuditQueryError,
+    AuditQueryValidationError,
+    AuditQueryServiceConfigurationError,
+    AuditQueryExecutionError,
+    AuditQueryResultError,
 )
 
 
@@ -45,78 +47,39 @@ class AuditErrorTests(unittest.TestCase):
     def test_message_must_be_string(self) -> None:
         for value in (None, 123, True, [], {}, object()):
             with self.subTest(message=value):
-                with self.assertRaisesRegex(
-                    TypeError,
-                    "message must be a string",
-                ):
+                with self.assertRaisesRegex(TypeError, "message must be a string"):
                     AuditError(value)  # type: ignore[arg-type]
 
     def test_message_must_not_be_empty(self) -> None:
         for value in ("", "   ", "\t", "\n"):
             with self.subTest(message=value):
-                with self.assertRaisesRegex(
-                    ValueError,
-                    "message must not be empty",
-                ):
+                with self.assertRaisesRegex(ValueError, "message must not be empty"):
                     AuditError(value)
 
     def test_audit_id_validation(self) -> None:
-        with self.assertRaisesRegex(
-            TypeError,
-            "audit_id must be a string",
-        ):
-            AuditError(
-                "Failure",
-                audit_id=123,  # type: ignore[arg-type]
-            )
-
-        with self.assertRaisesRegex(
-            ValueError,
-            "audit_id must not be empty when provided",
-        ):
+        with self.assertRaisesRegex(TypeError, "audit_id must be a string"):
+            AuditError("Failure", audit_id=123)  # type: ignore[arg-type]
+        with self.assertRaisesRegex(ValueError, "audit_id must not be empty when provided"):
             AuditError("Failure", audit_id=" ")
 
     def test_action_validation(self) -> None:
-        with self.assertRaisesRegex(
-            TypeError,
-            "action must be a string",
-        ):
-            AuditError(
-                "Failure",
-                action=123,  # type: ignore[arg-type]
-            )
-
-        with self.assertRaisesRegex(
-            ValueError,
-            "action must not be empty when provided",
-        ):
+        with self.assertRaisesRegex(TypeError, "action must be a string"):
+            AuditError("Failure", action=123)  # type: ignore[arg-type]
+        with self.assertRaisesRegex(ValueError, "action must not be empty when provided"):
             AuditError("Failure", action=" ")
 
     def test_metadata_validation(self) -> None:
         for value in (123, "x", [], object()):
             with self.subTest(metadata=value):
-                with self.assertRaisesRegex(
-                    TypeError,
-                    "metadata must be a mapping",
-                ):
-                    AuditError(
-                        "Failure",
-                        metadata=value,  # type: ignore[arg-type]
-                    )
+                with self.assertRaisesRegex(TypeError, "metadata must be a mapping"):
+                    AuditError("Failure", metadata=value)  # type: ignore[arg-type]
 
     def test_metadata_is_defensively_copied(self) -> None:
         metadata = {"source": "unit"}
-
-        error = AuditError(
-            "Failure",
-            metadata=metadata,
-        )
-
+        error = AuditError("Failure", metadata=metadata)
         metadata["source"] = "changed"
-
         self.assertIsInstance(error.metadata, MappingProxyType)
         self.assertEqual(error.metadata["source"], "unit")
-
         with self.assertRaises(TypeError):
             error.metadata["source"] = "changed"  # type: ignore[index]
 
@@ -127,7 +90,6 @@ class AuditErrorTests(unittest.TestCase):
             action=" CREATE ",
             metadata={"field": "actor_id"},
         )
-
         self.assertEqual(
             error.to_dict(),
             {
@@ -141,14 +103,9 @@ class AuditErrorTests(unittest.TestCase):
         )
 
     def test_to_dict_returns_independent_metadata_copy(self) -> None:
-        error = AuditError(
-            "Failure",
-            metadata={"source": "unit"},
-        )
-
+        error = AuditError("Failure", metadata={"source": "unit"})
         data = error.to_dict()
         data["metadata"]["source"] = "changed"
-
         self.assertEqual(error.metadata["source"], "unit")
 
     def test_error_codes(self) -> None:
@@ -170,37 +127,31 @@ class AuditErrorTests(unittest.TestCase):
             AuditRecordNotFoundError: "NPP-AUDIT-121",
             AuditDuplicateRecordError: "NPP-AUDIT-122",
             AuditInvalidRecordError: "NPP-AUDIT-123",
+            AuditQueryError: "NPP-AUDIT-200",
+            AuditQueryValidationError: "NPP-AUDIT-201",
+            AuditQueryServiceConfigurationError: "NPP-AUDIT-202",
+            AuditQueryExecutionError: "NPP-AUDIT-203",
+            AuditQueryResultError: "NPP-AUDIT-204",
         }
-
         for error_class, expected_code in expected_codes.items():
             with self.subTest(error_class=error_class.__name__):
-                error = error_class("Failure")
-                self.assertEqual(error.error_code, expected_code)
+                self.assertEqual(error_class("Failure").error_code, expected_code)
 
     def test_error_hierarchy(self) -> None:
         subclasses = (
-            AuditValidationError,
-            AuditIdentifierError,
-            AuditTimestampError,
-            AuditMetadataError,
-            AuditRepositoryError,
-            AuditRepositoryConfigurationError,
-            AuditRepositoryOperationError,
-            AuditAppendError,
-            AuditReadError,
-            AuditListError,
-            AuditExistsError,
-            AuditCountError,
-            AuditRecordRepositoryError,
-            AuditRecordNotFoundError,
-            AuditDuplicateRecordError,
-            AuditInvalidRecordError,
+            AuditValidationError, AuditIdentifierError, AuditTimestampError,
+            AuditMetadataError, AuditRepositoryError,
+            AuditRepositoryConfigurationError, AuditRepositoryOperationError,
+            AuditAppendError, AuditReadError, AuditListError, AuditExistsError,
+            AuditCountError, AuditRecordRepositoryError,
+            AuditRecordNotFoundError, AuditDuplicateRecordError,
+            AuditInvalidRecordError, AuditQueryError,
+            AuditQueryValidationError, AuditQueryServiceConfigurationError,
+            AuditQueryExecutionError, AuditQueryResultError,
         )
-
         for error_class in subclasses:
             with self.subTest(error_class=error_class.__name__):
-                instance = error_class("Failure")
-                self.assertIsInstance(instance, AuditError)
+                self.assertIsInstance(error_class("Failure"), AuditError)
 
 
 if __name__ == "__main__":
