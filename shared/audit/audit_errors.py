@@ -3,7 +3,8 @@
 Nexa Provider Platform
 File: shared/audit/audit_errors.py
 Layer: Shared Audit Infrastructure
-Milestone: NPP-M007.1.1 — Audit Error Contracts
+Milestone: NPP-M007.1.1 / M007.4 — Audit Error Contracts
+Revision: v2
 ============================================================
 
 Defines the contract-level exception hierarchy used by the
@@ -164,6 +165,62 @@ class AuditMetadataError(AuditValidationError):
     error_code = f"{AUDIT_ERROR_PREFIX}-013"
 
 
+class AuditRepositoryError(AuditError, RuntimeError):
+    """Base exception for audit repository failures."""
+
+    error_code = f"{AUDIT_ERROR_PREFIX}-100"
+
+
+class AuditRepositoryConfigurationError(AuditRepositoryError, ValueError):
+    """Raised when repository configuration is invalid."""
+
+    error_code = f"{AUDIT_ERROR_PREFIX}-101"
+
+
+class AuditRepositoryOperationError(AuditRepositoryError):
+    """Base exception for failed repository operations."""
+
+    error_code = f"{AUDIT_ERROR_PREFIX}-110"
+
+
+class AuditAppendError(AuditRepositoryOperationError):
+    error_code = f"{AUDIT_ERROR_PREFIX}-111"
+
+
+class AuditReadError(AuditRepositoryOperationError):
+    error_code = f"{AUDIT_ERROR_PREFIX}-112"
+
+
+class AuditListError(AuditRepositoryOperationError):
+    error_code = f"{AUDIT_ERROR_PREFIX}-113"
+
+
+class AuditExistsError(AuditRepositoryOperationError):
+    error_code = f"{AUDIT_ERROR_PREFIX}-114"
+
+
+class AuditCountError(AuditRepositoryOperationError):
+    error_code = f"{AUDIT_ERROR_PREFIX}-115"
+
+
+class AuditRecordRepositoryError(AuditRepositoryError):
+    """Base exception for repository record failures."""
+
+    error_code = f"{AUDIT_ERROR_PREFIX}-120"
+
+
+class AuditRecordNotFoundError(AuditRecordRepositoryError, LookupError):
+    error_code = f"{AUDIT_ERROR_PREFIX}-121"
+
+
+class AuditDuplicateRecordError(AuditRecordRepositoryError, ValueError):
+    error_code = f"{AUDIT_ERROR_PREFIX}-122"
+
+
+class AuditInvalidRecordError(AuditRecordRepositoryError, ValueError):
+    error_code = f"{AUDIT_ERROR_PREFIX}-123"
+
+
 __all__ = [
     "AUDIT_ERROR_PREFIX",
     "AuditError",
@@ -171,4 +228,16 @@ __all__ = [
     "AuditMetadataError",
     "AuditTimestampError",
     "AuditValidationError",
+    "AuditRepositoryError",
+    "AuditRepositoryConfigurationError",
+    "AuditRepositoryOperationError",
+    "AuditAppendError",
+    "AuditReadError",
+    "AuditListError",
+    "AuditExistsError",
+    "AuditCountError",
+    "AuditRecordRepositoryError",
+    "AuditRecordNotFoundError",
+    "AuditDuplicateRecordError",
+    "AuditInvalidRecordError",
 ]

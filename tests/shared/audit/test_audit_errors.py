@@ -21,6 +21,18 @@ from shared.audit.audit_errors import (
     AuditMetadataError,
     AuditTimestampError,
     AuditValidationError,
+    AuditRepositoryError,
+    AuditRepositoryConfigurationError,
+    AuditRepositoryOperationError,
+    AuditAppendError,
+    AuditReadError,
+    AuditListError,
+    AuditExistsError,
+    AuditCountError,
+    AuditRecordRepositoryError,
+    AuditRecordNotFoundError,
+    AuditDuplicateRecordError,
+    AuditInvalidRecordError,
 )
 
 
@@ -146,6 +158,18 @@ class AuditErrorTests(unittest.TestCase):
             AuditIdentifierError: "NPP-AUDIT-011",
             AuditTimestampError: "NPP-AUDIT-012",
             AuditMetadataError: "NPP-AUDIT-013",
+            AuditRepositoryError: "NPP-AUDIT-100",
+            AuditRepositoryConfigurationError: "NPP-AUDIT-101",
+            AuditRepositoryOperationError: "NPP-AUDIT-110",
+            AuditAppendError: "NPP-AUDIT-111",
+            AuditReadError: "NPP-AUDIT-112",
+            AuditListError: "NPP-AUDIT-113",
+            AuditExistsError: "NPP-AUDIT-114",
+            AuditCountError: "NPP-AUDIT-115",
+            AuditRecordRepositoryError: "NPP-AUDIT-120",
+            AuditRecordNotFoundError: "NPP-AUDIT-121",
+            AuditDuplicateRecordError: "NPP-AUDIT-122",
+            AuditInvalidRecordError: "NPP-AUDIT-123",
         }
 
         for error_class, expected_code in expected_codes.items():
@@ -159,6 +183,18 @@ class AuditErrorTests(unittest.TestCase):
             AuditIdentifierError,
             AuditTimestampError,
             AuditMetadataError,
+            AuditRepositoryError,
+            AuditRepositoryConfigurationError,
+            AuditRepositoryOperationError,
+            AuditAppendError,
+            AuditReadError,
+            AuditListError,
+            AuditExistsError,
+            AuditCountError,
+            AuditRecordRepositoryError,
+            AuditRecordNotFoundError,
+            AuditDuplicateRecordError,
+            AuditInvalidRecordError,
         )
 
         for error_class in subclasses:

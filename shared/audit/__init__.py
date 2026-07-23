@@ -3,24 +3,32 @@
 Nexa Provider Platform
 File: shared/audit/__init__.py
 Layer: Shared Audit Infrastructure
-Milestone: NPP-M007.3 — Actor and Source Metadata
-Revision: v3
+Milestone: NPP-M007.1 / M007.2 / M007.3 / M007.4
+Revision: v4
 ============================================================
 
-Defines the stable public import surface for the Shared Audit
-Infrastructure. Domain contracts from M007.1 and audit-event
-contracts from M007.2 are re-exported from this package without
-introducing repository, storage, or runtime-specific behavior.
+Public API for provider-neutral audit contracts and append-only
+audit repository infrastructure.
 """
-
-from __future__ import annotations
 
 from .audit_action import AuditAction
 from .audit_actor import AuditActor
 from .audit_errors import (
+    AuditAppendError,
+    AuditCountError,
+    AuditDuplicateRecordError,
     AuditError,
+    AuditExistsError,
     AuditIdentifierError,
+    AuditInvalidRecordError,
+    AuditListError,
     AuditMetadataError,
+    AuditReadError,
+    AuditRecordNotFoundError,
+    AuditRecordRepositoryError,
+    AuditRepositoryConfigurationError,
+    AuditRepositoryError,
+    AuditRepositoryOperationError,
     AuditTimestampError,
     AuditValidationError,
 )
@@ -29,23 +37,25 @@ from .audit_event_result import AuditEventResult
 from .audit_event_types import AuditEventType
 from .audit_metadata import AuditMetadata
 from .audit_outcome import AuditOutcome
-from .audit_source import AuditSource
 from .audit_record import AuditRecord
+from .audit_repository_interface import AuditRepositoryInterface
+from .audit_repository_result import AuditRepositoryResult
+from .audit_repository_types import AuditRepositoryOperation, AuditRepositoryType
+from .audit_source import AuditSource
+from .base_audit_repository import BaseAuditRepository
+from .memory_audit_repository import MemoryAuditRepository
 
 
 __all__ = [
-    "AuditAction",
-    "AuditActor",
-    "AuditError",
-    "AuditEvent",
-    "AuditEventResult",
-    "AuditEventType",
-    "AuditIdentifierError",
-    "AuditMetadata",
-    "AuditMetadataError",
-    "AuditOutcome",
-    "AuditRecord",
-    "AuditSource",
-    "AuditTimestampError",
-    "AuditValidationError",
+    "AuditAction", "AuditActor", "AuditAppendError", "AuditCountError",
+    "AuditDuplicateRecordError", "AuditError", "AuditEvent",
+    "AuditEventResult", "AuditEventType", "AuditExistsError",
+    "AuditIdentifierError", "AuditInvalidRecordError", "AuditListError",
+    "AuditMetadata", "AuditMetadataError", "AuditOutcome", "AuditReadError",
+    "AuditRecord", "AuditRecordNotFoundError", "AuditRecordRepositoryError",
+    "AuditRepositoryConfigurationError", "AuditRepositoryError",
+    "AuditRepositoryInterface", "AuditRepositoryOperation",
+    "AuditRepositoryOperationError", "AuditRepositoryResult",
+    "AuditRepositoryType", "AuditSource", "AuditTimestampError",
+    "AuditValidationError", "BaseAuditRepository", "MemoryAuditRepository",
 ]
