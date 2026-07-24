@@ -29,6 +29,14 @@ EXPECTED_EXPORTS = {
     "AuditExportExecutionError", "AuditExportResultError",
     "AuditExportRequest", "AuditExportResult",
     "AuditExportServiceInterface", "AuditExportService",
+    "AuditApiContract",
+    "AuditApiContractError",
+    "AuditApiError",
+    "AuditApiOperation",
+    "AuditApiRequest",
+    "AuditApiResponse",
+    "AuditApiResultError",
+    "AuditApiValidationError",
 }
 
 
@@ -98,3 +106,17 @@ def test_m007_7_public_exports() -> None:
     assert expected.issubset(set(audit.__all__))
     for name in expected:
         assert getattr(audit, name) is not None
+
+
+"""M007.8 additions for tests/shared/audit/test_public_exports.py."""
+import shared.audit as audit
+
+def test_m007_8_public_exports():
+    expected = {
+        "AuditApiError", "AuditApiValidationError", "AuditApiResultError",
+        "AuditApiContractError", "AuditApiOperation", "AuditApiRequest",
+        "AuditApiResponse", "AuditApiContract",
+    }
+    assert expected <= set(audit.__all__)
+    for name in expected:
+        assert hasattr(audit, name)

@@ -3,8 +3,8 @@
 Nexa Provider Platform
 File: shared/audit/__init__.py
 Layer: Shared Audit Infrastructure
-Milestone: NPP-M007.1 through M007.7
-Revision: v7
+Milestone: NPP-M007.1 through M007.8
+Revision: v8
 ============================================================
 """
 from .audit_action import AuditAction
@@ -23,6 +23,8 @@ from .audit_errors import (
     AuditIntegrityExecutionError, AuditIntegrityResultError,
     AuditExportError, AuditExportValidationError,
     AuditExportExecutionError, AuditExportResultError,
+    AuditApiError, AuditApiValidationError, AuditApiResultError,
+    AuditApiContractError,
 )
 from .audit_event import AuditEvent
 from .audit_event_result import AuditEventResult
@@ -50,6 +52,10 @@ from .audit_export_request import AuditExportRequest
 from .audit_export_result import AuditExportResult
 from .audit_export_service_interface import AuditExportServiceInterface
 from .audit_export_service import AuditExportService
+from .audit_api_operation import AuditApiOperation
+from .audit_api_request import AuditApiRequest
+from .audit_api_response import AuditApiResponse
+from .audit_api_contract import AuditApiContract
 
 __all__ = [
     "AuditAction", "AuditActor", "AuditAppendError", "AuditCountError",
@@ -76,4 +82,7 @@ __all__ = [
     "AuditExportValidationError", "AuditExportExecutionError",
     "AuditExportResultError", "AuditExportRequest", "AuditExportResult",
     "AuditExportServiceInterface", "AuditExportService",
+    "AuditApiError", "AuditApiValidationError", "AuditApiResultError",
+    "AuditApiContractError", "AuditApiOperation", "AuditApiRequest",
+    "AuditApiResponse", "AuditApiContract",
 ]

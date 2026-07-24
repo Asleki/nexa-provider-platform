@@ -192,3 +192,19 @@ def test_audit_export_errors_inherit_export_family() -> None:
     assert issubclass(AuditExportValidationError, AuditExportError)
     assert issubclass(AuditExportExecutionError, AuditExportError)
     assert issubclass(AuditExportResultError, AuditExportError)
+
+
+"""M007.8 additions for tests/shared/audit/test_audit_errors.py."""
+from shared.audit.audit_errors import (
+    AuditApiContractError, AuditApiError, AuditApiResultError,
+    AuditApiValidationError,
+)
+
+def test_m007_8_error_hierarchy_and_codes():
+    assert issubclass(AuditApiValidationError, AuditApiError)
+    assert issubclass(AuditApiResultError, AuditApiError)
+    assert issubclass(AuditApiContractError, AuditApiError)
+    assert AuditApiError.error_code == "NPP-AUDIT-500"
+    assert AuditApiValidationError.error_code == "NPP-AUDIT-501"
+    assert AuditApiResultError.error_code == "NPP-AUDIT-502"
+    assert AuditApiContractError.error_code == "NPP-AUDIT-503"

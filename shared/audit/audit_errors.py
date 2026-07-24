@@ -1,4 +1,4 @@
-"""Nexa Provider Platform — shared audit error contracts (M007.7 revision v5)."""
+"""Nexa Provider Platform — shared audit error contracts (M007.8 revision v6)."""
 from __future__ import annotations
 from types import MappingProxyType
 from typing import Any, Mapping
@@ -80,5 +80,10 @@ class AuditExportError(AuditError, RuntimeError): error_code=f"{AUDIT_ERROR_PREF
 class AuditExportValidationError(AuditExportError, ValueError): error_code=f"{AUDIT_ERROR_PREFIX}-401"
 class AuditExportExecutionError(AuditExportError): error_code=f"{AUDIT_ERROR_PREFIX}-402"
 class AuditExportResultError(AuditExportError, ValueError): error_code=f"{AUDIT_ERROR_PREFIX}-403"
+
+class AuditApiError(AuditError, RuntimeError): error_code=f"{AUDIT_ERROR_PREFIX}-500"
+class AuditApiValidationError(AuditApiError, ValueError): error_code=f"{AUDIT_ERROR_PREFIX}-501"
+class AuditApiResultError(AuditApiError, ValueError): error_code=f"{AUDIT_ERROR_PREFIX}-502"
+class AuditApiContractError(AuditApiError, ValueError): error_code=f"{AUDIT_ERROR_PREFIX}-503"
 
 __all__ = [name for name in globals() if name.startswith("Audit") or name == "AUDIT_ERROR_PREFIX"]
