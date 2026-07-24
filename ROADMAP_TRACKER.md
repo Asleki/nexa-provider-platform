@@ -16,7 +16,7 @@
 <!-- tracker-sync
 architecture_snapshot_sha256: 49380fa207637d97969cc20204202507bbac635e1b0f0fe14775f611360f902d
 roadmap_md_sha256: acfa094964a95910a892298373a0e0aafcbfff6d5e3928f82c6e04bac5bae84b
-generated_at: 2026-07-24T15:56:49+00:00
+generated_at: 2026-07-24T18:19:44+00:00
 -->
 
 ---
@@ -40,12 +40,13 @@ generated_at: 2026-07-24T15:56:49+00:00
 ## Milestone cards
 
 <a id="npp-trk-m008-master-registry"></a>
-### ✅ M008 — Master Registry Foundation
+### 🟦 M008 — Master Registry Foundation
 
-> **Type:** Architecture-linked execution  
-> **Tracker ID:** `npp-trk-m008-master-registry`  
-> **Status:** Completed  
-> **Created:** `2026-07-24T14:53:50.931056+00:00`  
+> **Type:** Architecture-linked execution
+> **Tracker ID:** `npp-trk-m008-master-registry`
+> **Canonical status:** Planned
+> **Tracker execution status:** Completed
+> **Created:** `2026-07-24T14:53:50.931056+00:00`
 > **Updated:** `2026-07-24T15:46:39.647938+00:00`
 
 | Evidence | Count |
