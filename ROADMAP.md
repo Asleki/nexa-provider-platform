@@ -6,9 +6,9 @@
 
 **Version 1.0.0** · **M001 → M022.8** · **833 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.12%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.24%**
 
-**76 completed** · **757 planned** · **22 root milestones**
+**77 completed** · **756 planned** · **22 root milestones**
 
 </div>
 
@@ -21,9 +21,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **9.12%** |
-| Completed milestones | **76** |
-| Planned milestones | **757** |
+| Overall progress | **9.24%** |
+| Completed milestones | **77** |
+| Planned milestones | **756** |
 | Total roadmap records | **833** |
 | Root milestones | **22** |
 
@@ -46,7 +46,7 @@ Jump directly to a root milestone:
 - [✅ **M004 — Storage Foundation**](#m004) — 9/9 complete (100.0%)
 - [✅ **M005 — Repository Foundation**](#m005) — 9/9 complete (100.0%)
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
-- [🟦 **M007 — Audit Infrastructure**](#m007) — 0/11 complete (0.0%)
+- [🟦 **M007 — Audit Infrastructure**](#m007) — 1/11 complete (9.1%)
 - [🟦 **M008 — Master Registry Foundation**](#m008) — 0/15 complete (0.0%)
 - [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 0/76 complete (0.0%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/42 complete (0.0%)
@@ -75,7 +75,7 @@ Jump directly to a root milestone:
 | [M004](#m004) | Storage Foundation | ✅ Completed | 9 | 9 | 100.0% |
 | [M005](#m005) | Repository Foundation | ✅ Completed | 9 | 9 | 100.0% |
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
-| [M007](#m007) | Audit Infrastructure | 🟦 Planned | 11 | 0 | 0.0% |
+| [M007](#m007) | Audit Infrastructure | 🟦 Planned | 11 | 1 | 9.1% |
 | [M008](#m008) | Master Registry Foundation | 🟦 Planned | 15 | 0 | 0.0% |
 | [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 76 | 0 | 0.0% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 42 | 0 | 0.0% |
@@ -867,7 +867,7 @@ Jump directly to a root milestone:
 <a id="m007"></a>
 ### 🟦 M007 — Audit Infrastructure
 
-`░░░░░░░░░░░░░░░░░░░░` **0/11 complete (0.0%)**
+`██░░░░░░░░░░░░░░░░░░` **1/11 complete (9.1%)**
 
 <details>
 <summary><strong>Open M007 roadmap records (11 items)</strong></summary>
@@ -881,9 +881,9 @@ Jump directly to a root milestone:
 - **Semantic path:** `Audit Infrastructure`
 - **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.1` — Audit Record Contracts**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.1` — Audit Record Contracts**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-762c23d592dfc8926506`
@@ -7909,6 +7909,6 @@ Jump directly to a root milestone:
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.0.0` |
 | Records rendered | `833` |
-| Canonical content checksum | `3877e181d248460a0aa2dc598ac4d02dee5eb8b4125f4511246864eaa98ddb91` |
+| Canonical content checksum | `ad013a395d155b318006d8cc0396c7e77b98c12402148d46d5995439b1825cbe` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.

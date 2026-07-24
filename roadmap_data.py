@@ -98,7 +98,7 @@ C|M006.3.11|Event Repository Unit Tests
 C|M006.3.12|Event Repository Integration Tests
 C|M006.3.13|Stabilization, Commit and Push
 P|M007|Audit Infrastructure
-P|M007.1|Audit Record Contracts
+C|M007.1|Audit Record Contracts
 P|M007.2|Audit Event Model
 P|M007.3|Actor and Source Metadata
 P|M007.4|Audit Repository
