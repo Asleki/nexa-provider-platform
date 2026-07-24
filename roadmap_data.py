@@ -97,17 +97,17 @@ C|M006.3.10|Event Repository Documentation
 C|M006.3.11|Event Repository Unit Tests
 C|M006.3.12|Event Repository Integration Tests
 C|M006.3.13|Stabilization, Commit and Push
-P|M007|Audit Infrastructure
+C|M007|Audit Infrastructure
 C|M007.1|Audit Record Contracts
-P|M007.2|Audit Event Model
-P|M007.3|Actor and Source Metadata
-P|M007.4|Audit Repository
-P|M007.5|Audit Query Service
-P|M007.6|Audit Integrity Validation
-P|M007.7|Audit Export
-P|M007.8|Audit API Contracts
-P|M007.9|Audit Tests
-P|M007.10|Audit Stabilization
+C|M007.2|Audit Event Model
+C|M007.3|Actor and Source Metadata
+C|M007.4|Audit Repository
+C|M007.5|Audit Query Service
+C|M007.6|Audit Integrity Validation
+C|M007.7|Audit Export
+C|M007.8|Audit API Contracts
+C|M007.9|Audit Tests
+C|M007.10|Audit Stabilization
 P|M008|Master Registry Foundation
 P|M008.1|Registry Contracts
 P|M008.2|Registry Identifier Model

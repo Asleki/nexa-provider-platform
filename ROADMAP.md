@@ -6,9 +6,9 @@
 
 **Version 1.0.0** · **M001 → M022.8** · **833 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.24%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **10.44%**
 
-**77 completed** · **756 planned** · **22 root milestones**
+**87 completed** · **746 planned** · **22 root milestones**
 
 </div>
 
@@ -21,9 +21,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **9.24%** |
-| Completed milestones | **77** |
-| Planned milestones | **756** |
+| Overall progress | **10.44%** |
+| Completed milestones | **87** |
+| Planned milestones | **746** |
 | Total roadmap records | **833** |
 | Root milestones | **22** |
 
@@ -46,7 +46,7 @@ Jump directly to a root milestone:
 - [✅ **M004 — Storage Foundation**](#m004) — 9/9 complete (100.0%)
 - [✅ **M005 — Repository Foundation**](#m005) — 9/9 complete (100.0%)
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
-- [🟦 **M007 — Audit Infrastructure**](#m007) — 1/11 complete (9.1%)
+- [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
 - [🟦 **M008 — Master Registry Foundation**](#m008) — 0/15 complete (0.0%)
 - [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 0/76 complete (0.0%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/42 complete (0.0%)
@@ -75,7 +75,7 @@ Jump directly to a root milestone:
 | [M004](#m004) | Storage Foundation | ✅ Completed | 9 | 9 | 100.0% |
 | [M005](#m005) | Repository Foundation | ✅ Completed | 9 | 9 | 100.0% |
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
-| [M007](#m007) | Audit Infrastructure | 🟦 Planned | 11 | 1 | 9.1% |
+| [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
 | [M008](#m008) | Master Registry Foundation | 🟦 Planned | 15 | 0 | 0.0% |
 | [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 76 | 0 | 0.0% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 42 | 0 | 0.0% |
@@ -865,16 +865,16 @@ Jump directly to a root milestone:
 ---
 
 <a id="m007"></a>
-### 🟦 M007 — Audit Infrastructure
+### ✅ M007 — Audit Infrastructure
 
-`██░░░░░░░░░░░░░░░░░░` **1/11 complete (9.1%)**
+`████████████████████` **11/11 complete (100.0%)**
 
 <details>
 <summary><strong>Open M007 roadmap records (11 items)</strong></summary>
 
-🟦 **`M007` — Audit Infrastructure**
+✅ **`M007` — Audit Infrastructure**
 
-- **Status:** Planned
+- **Status:** Completed
 - **Priority:** NORMAL
 - **Dependencies:** None
 - **Record ID:** `npp-rm-127018042b160eab4b8b`
@@ -890,81 +890,81 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Audit Record Contracts`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.2` — Audit Event Model**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.2` — Audit Event Model**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-34eaa49839ac20fb89b6`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Audit Event Model`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.3` — Actor and Source Metadata**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.3` — Actor and Source Metadata**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-297e6b5c4784c2dcbcea`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Actor and Source Metadata`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.4` — Audit Repository**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.4` — Audit Repository**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-973b34cb9a27c0706d3a`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Audit Repository`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.5` — Audit Query Service**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.5` — Audit Query Service**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-aaef9c0118642799a11a`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Audit Query Service`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.6` — Audit Integrity Validation**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.6` — Audit Integrity Validation**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-83225bb939ebf4cce3f5`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Audit Integrity Validation`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.7` — Audit Export**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.7` — Audit Export**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-340c43cdc939969e2df3`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Audit Export`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.8` — Audit API Contracts**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.8` — Audit API Contracts**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a8243f37c411dc434e90`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Audit API Contracts`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.9` — Audit Tests**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.9` — Audit Tests**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c6541a230505c4bf949b`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Audit Infrastructure / Audit Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M007.10` — Audit Stabilization**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M007.10` — Audit Stabilization**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-23dc778d34ea5394607e`
@@ -7909,6 +7909,6 @@ Jump directly to a root milestone:
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.0.0` |
 | Records rendered | `833` |
-| Canonical content checksum | `ad013a395d155b318006d8cc0396c7e77b98c12402148d46d5995439b1825cbe` |
+| Canonical content checksum | `2191cf5d3532fecba9f8dffc4166d1b27c95540cc18043a1d07dd17d945c1b6f` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.
