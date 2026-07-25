@@ -8,6 +8,7 @@ Exports the public immutable Registry Foundation models.
 
 from .registry_family import RegistryFamily
 from .registry_status import RegistryStatus
+from .identifier_lifecycle import IdentifierLifecycle
 
 from .registry_definition import (
     DEFAULT_REGISTRY_DEFINITION_VERSION,
@@ -29,6 +30,7 @@ from .identifier_definition import (
 )
 
 from .numbering_strategy import (
+    DEFAULT_NUMBERING_STRATEGY_VERSION,
     NumberingMode,
     NumberingStrategy,
     NumberingStrategyError,
@@ -43,6 +45,7 @@ from .identifier_reference import (
 __all__ = (
     "RegistryFamily",
     "RegistryStatus",
+    "IdentifierLifecycle",
     "DEFAULT_REGISTRY_DEFINITION_VERSION",
     "RegistryDefinition",
     "RegistryDefinitionError",
@@ -53,6 +56,7 @@ __all__ = (
     "DEFAULT_IDENTIFIER_DEFINITION_VERSION",
     "IdentifierDefinition",
     "IdentifierDefinitionError",
+    "DEFAULT_NUMBERING_STRATEGY_VERSION",
     "NumberingMode",
     "NumberingStrategy",
     "NumberingStrategyError",

@@ -3,7 +3,7 @@
 Nexa Provider Platform
 File: registries/core/namespace_definition.py
 Layer: Master Registry Foundation
-Milestone: NPP-M006.2 — Registry Foundation
+Milestone: M008.2 — Registry Identifier Model
 ============================================================
 
 Purpose

@@ -3,7 +3,7 @@
 Nexa Provider Platform
 File: registries/core/identifier_reference.py
 Layer: Master Registry Foundation
-Milestone: NPP-M006.2 — Registry Foundation
+Milestone: M008.2 — Registry Identifier Model
 ============================================================
 
 Purpose
@@ -48,7 +48,7 @@ from dataclasses import dataclass, field
 from types import MappingProxyType
 from typing import Final
 
-from .registry_status import RegistryStatus
+from .identifier_lifecycle import IdentifierLifecycle
 
 
 DEFAULT_IDENTIFIER_REFERENCE_VERSION: Final[int] = 1
@@ -110,7 +110,7 @@ class IdentifierReference:
     identifier_id: str
     subject_reference: str
     identifier_value: str
-    status: RegistryStatus = RegistryStatus.ACTIVE
+    status: IdentifierLifecycle = IdentifierLifecycle.REQUESTED
     source_reference: str | None = None
     version: int = DEFAULT_IDENTIFIER_REFERENCE_VERSION
     metadata: Mapping[str, object] = field(default_factory=dict)
@@ -209,12 +209,12 @@ class IdentifierReference:
     @staticmethod
     def _normalize_status(
         value: object,
-    ) -> RegistryStatus:
-        if isinstance(value, RegistryStatus):
+    ) -> IdentifierLifecycle:
+        if isinstance(value, IdentifierLifecycle):
             return value
 
         try:
-            return RegistryStatus(value)
+            return IdentifierLifecycle(value)
         except (TypeError, ValueError) as exc:
             raise IdentifierReferenceError(
                 f"Unsupported identifier-reference status {value!r}."
@@ -254,7 +254,7 @@ class IdentifierReference:
         Return True when the identifier reference is active.
         """
 
-        return self.status is RegistryStatus.ACTIVE
+        return self.status is IdentifierLifecycle.ACTIVE
 
     @property
     def inactive(self) -> bool:
