@@ -113,7 +113,7 @@ C|M008.1|Registry Contracts
 C|M008.2|Registry Identifier Model
 C|M008.3|Base Registry
 C|M008.4|Registry Repository Interface
-P|M008.5|Memory Registry Repository
+C|M008.5|Memory Registry Repository
 P|M008.6|Registry Factory
 P|M008.7|Registry Catalogue
 P|M008.8|Registry Lifecycle
