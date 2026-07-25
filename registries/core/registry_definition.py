@@ -3,13 +3,13 @@
 Nexa Provider Platform
 File: registries/core/registry_definition.py
 Layer: Master Registry Foundation
-Milestone: NPP-M006.2 — Registry Foundation
+Milestone: NPP-M008.1 — Registry Contracts
 ============================================================
 
 Purpose
 -------
-Defines the immutable RegistryDefinition model used throughout
-the Registry Foundation.
+Defines the immutable RegistryDefinition model that concretely
+satisfies the M008.1 registry-definition contract.
 
 A RegistryDefinition describes one registry as a platform
 resource. It establishes the registry's stable identity,

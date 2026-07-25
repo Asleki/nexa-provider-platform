@@ -5,6 +5,10 @@ Registry Foundation Public API
 Exports the public immutable Registry Foundation models.
 """
 
+
+from .registry_family import RegistryFamily
+from .registry_status import RegistryStatus
+
 from .registry_definition import (
     DEFAULT_REGISTRY_DEFINITION_VERSION,
     RegistryDefinition,
@@ -37,6 +41,8 @@ from .identifier_reference import (
 )
 
 __all__ = (
+    "RegistryFamily",
+    "RegistryStatus",
     "DEFAULT_REGISTRY_DEFINITION_VERSION",
     "RegistryDefinition",
     "RegistryDefinitionError",

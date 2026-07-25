@@ -3,7 +3,7 @@
 Nexa Provider Platform
 File: registries/core/registry_family.py
 Layer: Master Registry Foundation
-Milestone: NPP-M006.2 — Registry Package Skeleton
+Milestone: NPP-M008.1 — Registry Contracts
 ============================================================
 
 Defines the approved high-level registry families used by the
