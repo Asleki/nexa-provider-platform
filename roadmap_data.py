@@ -110,7 +110,7 @@ C|M007.9|Audit Tests
 C|M007.10|Audit Stabilization
 P|M008|Master Registry Foundation
 C|M008.1|Registry Contracts
-P|M008.2|Registry Identifier Model
+C|M008.2|Registry Identifier Model
 P|M008.3|Base Registry
 P|M008.4|Registry Repository Interface
 P|M008.5|Memory Registry Repository
