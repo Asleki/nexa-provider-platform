@@ -123,6 +123,22 @@ P|M008.11|Registry APIs
 P|M008.12|Registry Audit Integration
 P|M008.13|Registry Tests
 P|M008.14|Registry Stabilization
+P|M008.15|Registry Metadata and Capability Contracts
+P|M008.15.1|Registry Capability Model
+P|M008.15.2|Data Classification Metadata
+P|M008.15.3|Training Eligibility Metadata
+P|M008.15.4|Provenance Metadata
+P|M008.15.5|Retention Metadata
+P|M008.15.6|Registry Metadata Validation
+P|M008.15.7|Registry Metadata Tests
+P|M008.16|Cross-Registry Relationship Foundation
+P|M008.16.1|Relationship Contracts
+P|M008.16.2|Immutable Reference Rules
+P|M008.16.3|Relationship Direction
+P|M008.16.4|Relationship Constraints
+P|M008.16.5|Relationship Provenance
+P|M008.16.6|Relationship APIs
+P|M008.16.7|Relationship Tests
 P|M009|Data Catalogue and Communication Foundations
 P|M009.1|Name Catalogue
 P|M009.1.1|First-Name Catalogue
@@ -199,6 +215,13 @@ P|M009.7.6|Dataset Versioning
 P|M009.7.7|Sensitive-Data Filtering
 P|M009.7.8|Retention and Deletion Policies
 P|M009.7.9|Training Export Tests
+P|M009.8|Simulation Email Lifecycle
+P|M009.8.1|Simulation Email Accounts
+P|M009.8.2|Email Promotion Workflow
+P|M009.8.3|Email Verification Lifecycle
+P|M009.8.4|Email History Preservation
+P|M009.8.5|Production Email Activation
+P|M009.8.6|Email Lifecycle Tests
 P|M010|National Identity Platform
 P|M010.1|Birth Registry
 P|M010.1.1|Birth Reference Contracts
@@ -241,6 +264,20 @@ P|M010.4.8|NexaID Lifecycle
 P|M010.4.9|NexaID Events
 P|M010.4.10|NexaID APIs
 P|M010.4.11|NexaID Tests
+P|M010.5|Citizen Identity Promotion
+P|M010.5.1|Simulation Citizen Review
+P|M010.5.2|Citizen Approval Workflow
+P|M010.5.3|Production Citizen Activation
+P|M010.5.4|Citizen History Preservation
+P|M010.5.5|Identity Promotion Audit
+P|M010.5.6|Identity Promotion Tests
+P|M010.6|Citizen Identity Assets
+P|M010.6.1|Profile Picture Assignment
+P|M010.6.2|Avatar Generation Provider
+P|M010.6.3|Citizen ID Card Rendering
+P|M010.6.4|Secure Identity Storage
+P|M010.6.5|Identity Document Delivery
+P|M010.6.6|Identity Asset Tests
 P|M011|Telecommunications Platform
 P|M011.1|NexaCom Number Registry
 P|M011.1.1|Number Contracts
@@ -676,6 +713,13 @@ P|M012.7.9|Wallet Events
 P|M012.7.10|Wallet APIs
 P|M012.7.11|Wallet Communications
 P|M012.7.12|Wallet Tests
+P|M012.8|Payment Execution Modes
+P|M012.8.1|Simulation Payment Rules
+P|M012.8.2|Production Payment Rules
+P|M012.8.3|Tap-Only Simulation Policy
+P|M012.8.4|PIN Authorization Policy
+P|M012.8.5|Payment Capability Resolution
+P|M012.8.6|Payment Mode Tests
 P|M013|Business and Employment Registries
 P|M013.1|Business Registry
 P|M013.1.1|Business Contracts
@@ -745,6 +789,13 @@ P|M015.11|Gateway Audit
 P|M015.12|Gateway APIs
 P|M015.13|Gateway Tests
 P|M015.14|Gateway Stabilization
+P|M015.15|Runtime Execution Context
+P|M015.15.1|Runtime State Resolution (Online/Offline)
+P|M015.15.2|Environment Resolution (Simulation/Production)
+P|M015.15.3|Execution Authority Resolution
+P|M015.15.4|Runtime Validation
+P|M015.15.5|Runtime Context APIs
+P|M015.15.6|Runtime Context Tests
 P|M016|Simulation Engine Foundation
 P|M016.1|Simulation Contracts
 P|M016.2|Simulation Scenario Model
@@ -759,6 +810,40 @@ P|M016.10|Simulation Export
 P|M016.11|Simulation Audit
 P|M016.12|Simulation APIs
 P|M016.13|Simulation Tests
+P|M016.14|AI Simulation Orchestration
+P|M016.14.1|AI Scenario Generator
+P|M016.14.2|AI Actor Behaviour
+P|M016.14.3|AI Business Workflow Simulation
+P|M016.14.4|AI Payment Simulation
+P|M016.14.5|AI Citizen Simulation
+P|M016.14.6|AI Failure Scenario Simulation
+P|M016.14.7|AI Simulation Audit
+P|M016.14.8|AI Simulation Tests
+P|M016.15|Simulation Promotion Engine
+P|M016.15.1|Promotion Eligibility
+P|M016.15.2|Human Review Queue
+P|M016.15.3|Promotion Approval
+P|M016.15.4|Promotion Rejection
+P|M016.15.5|Simulation Lineage Preservation
+P|M016.15.6|Promotion Audit
+P|M016.15.7|Promotion Tests
+P|M016.16|Simulation Communication Platform
+P|M016.16.1|Simulation Email Delivery
+P|M016.16.2|Waiting Period Management
+P|M016.16.3|Verification Notifications
+P|M016.16.4|Reminder Scheduling
+P|M016.16.5|Simulation Inbox Synchronization
+P|M016.16.6|Communication Audit
+P|M016.16.7|Communication Tests
+P|M016.17|Autonomous Error Simulation
+P|M016.17.1|Invalid Event Generation
+P|M016.17.2|Invalid Payment Simulation
+P|M016.17.3|Invalid Identity Simulation
+P|M016.17.4|Invalid Banking Scenario Simulation
+P|M016.17.5|Invalid Supply Chain Simulation
+P|M016.17.6|Recovery Scenario Simulation
+P|M016.17.7|Error Simulation Analytics
+P|M016.17.8|Error Simulation Tests
 P|M017|Data Export and Training-Asset Foundation
 P|M017.1|JSON Export
 P|M017.2|JSONL Export
@@ -772,6 +857,26 @@ P|M017.9|Data Masking
 P|M017.10|Training Eligibility
 P|M017.11|Retention Policies
 P|M017.12|Export Tests
+P|M017.13|Training Resource Contracts
+P|M017.14|AI-Readiness Metadata
+P|M017.15|Dataset Manifest
+P|M017.16|Data Classification
+P|M017.17|Consent and Purpose Constraints
+P|M017.18|Label and Annotation Model
+P|M017.19|Dataset Quality Metrics
+P|M017.20|Dataset Splitting
+P|M017.21|Dataset Lineage
+P|M017.22|Dataset Integrity Hashes
+P|M017.23|Training Dataset Registry
+P|M017.24|Dataset Approval Workflow
+P|M017.25|Cloud Training-Asset Storage Adapters
+P|M017.25.1|Azure Blob Training-Asset Adapter
+P|M017.25.2|Azure Archive Dataset Adapter
+P|M017.25.3|Dataset Storage Provider Contracts
+P|M017.25.4|Storage Quota Enforcement
+P|M017.25.5|Cross-Provider Export Compatibility
+P|M017.25.6|Training-Asset Export Tests
+P|M017.26|Training-Asset Stabilization
 P|M018|PostgreSQL and Supabase Persistence
 P|M018.1|PostgreSQL Architecture
 P|M018.2|Database Schema Foundation
@@ -788,6 +893,14 @@ P|M018.12|Backup and Recovery
 P|M018.13|Database Security
 P|M018.14|Persistence Integration Tests
 P|M018.15|Persistence Stabilization
+P|M018.16|Cloud PostgreSQL Provider Adapters
+P|M018.16.1|Provider-Neutral Connection Contracts
+P|M018.16.2|Azure PostgreSQL Configuration
+P|M018.16.3|Supabase PostgreSQL Configuration
+P|M018.16.4|Migration Compatibility
+P|M018.16.5|Transaction Compatibility
+P|M018.16.6|Backup Compatibility
+P|M018.16.7|Cross-Provider Persistence Tests
 P|M019|Platform Infrastructure and Deployment
 P|M019.1|Infrastructure Contracts
 P|M019.1.1|Environment Configuration
@@ -821,6 +934,46 @@ P|M019.4.5|Logging
 P|M019.4.6|Monitoring
 P|M019.4.7|Alerting
 P|M019.4.8|Deployment Tests
+P|M019.5|Azure Development and Simulation Infrastructure
+P|M019.5.1|Azure Student Subscription Boundaries
+P|M019.5.2|Azure Resource Group Structure
+P|M019.5.3|Azure Key Vault Configuration
+P|M019.5.4|Azure Container Registry
+P|M019.5.5|Azure Container Apps
+P|M019.5.6|Azure Functions
+P|M019.5.7|Azure Service Bus
+P|M019.5.8|Azure Event Grid
+P|M019.5.9|Azure PostgreSQL Adapter Deployment
+P|M019.5.10|Azure Blob Storage
+P|M019.5.11|Azure Archive Storage
+P|M019.5.12|Azure AI Search Pilot
+P|M019.5.13|Azure Machine Learning Workspace
+P|M019.5.14|Azure Document Intelligence Pilot
+P|M019.5.15|Azure Language Pilot
+P|M019.5.16|Azure Content Safety Pilot
+P|M019.5.17|Azure Monitor
+P|M019.5.18|Azure Cost Management
+P|M019.5.19|Budget and Quota Alerts
+P|M019.5.20|Free-Tier Quota Verification
+P|M019.5.21|Azure Infrastructure Tests
+P|M019.6|Cloud Credit and Free-Tier Governance
+P|M019.6.1|Cloud Credit Registry
+P|M019.6.2|Credit Provider Contracts
+P|M019.6.3|Credit Award Records
+P|M019.6.4|Credit Expiry Tracking
+P|M019.6.5|Service Eligibility Mapping
+P|M019.6.6|Per-System Credit Allocation
+P|M019.6.7|Monthly Usage Limits
+P|M019.6.8|Token and Inference Budgets
+P|M019.6.9|GPU-Hour Limits
+P|M019.6.10|Storage Quota Limits
+P|M019.6.11|Budget Alert Policies
+P|M019.6.12|Automatic Shutdown Policies
+P|M019.6.13|Free-Tier Boundary Monitoring
+P|M019.6.14|Paid-Fallback Estimates
+P|M019.6.15|Credit Usage Dashboard
+P|M019.6.16|Credit Governance Audit
+P|M019.6.17|Cloud Credit Governance Tests
 P|M020|NPP Integration Readiness
 P|M020.1|Public API Catalogue
 P|M020.2|Client Authentication Contracts
@@ -834,6 +987,66 @@ P|M020.9|Client SDK Foundation
 P|M020.10|Integration Documentation
 P|M020.11|Integration Tests
 P|M020.12|Integration-Ready Release
+P|M020.13|Nexa-Bridge Integration Foundation
+P|M020.13.1|Ecosystem Application Registration
+P|M020.13.2|Application Capability Discovery
+P|M020.13.3|Service Capability Contracts
+P|M020.13.4|Cross-System Request Envelope
+P|M020.13.5|Cross-System Response Envelope
+P|M020.13.6|Cross-System Correlation
+P|M020.13.7|Cross-System Idempotency
+P|M020.13.8|API Versioning
+P|M020.13.9|Application Authentication
+P|M020.13.10|Scope and Permission Contracts
+P|M020.13.11|Safe API Routing
+P|M020.13.12|Command Routing
+P|M020.13.13|Event Routing
+P|M020.13.14|Service Bus Command Adapter
+P|M020.13.15|Event Grid Publication Adapter
+P|M020.13.16|Azure API Management Adapter
+P|M020.13.17|Provider Gateway Integration
+P|M020.13.18|Integration Error Contracts
+P|M020.13.19|Integration Audit
+P|M020.13.20|Integration Sandbox
+P|M020.13.21|Client SDK Foundation
+P|M020.13.22|Nexa-Bridge Integration Tests
+P|M020.13.23|Nexa-Bridge Stabilization
+P|M020.14|Client AI-Readiness Contracts
+P|M020.14.1|AI Resource Capability Contract
+P|M020.14.2|Training Resource Submission Contract
+P|M020.14.3|Source-System Provenance Contract
+P|M020.14.4|Client Data Classification Contract
+P|M020.14.5|Client Masking Declaration
+P|M020.14.6|Client Consent Declaration
+P|M020.14.7|Client Purpose Restriction Contract
+P|M020.14.8|Client Dataset Manifest
+P|M020.14.9|Client Resource Schema Discovery
+P|M020.14.10|Client Training-Resource Validation
+P|M020.14.11|Client AI-Readiness Tests
+P|M020.15|Ecosystem Application Integration Readiness
+P|M020.15.1|iNexaMarket Application Registration
+P|M020.15.2|CineWatch Application Registration
+P|M020.15.3|Business Chamber Portal Registration
+P|M020.15.4|Supplier Platform Registration
+P|M020.15.5|Manufacturer Platform Registration
+P|M020.15.6|Logistics Platform Registration
+P|M020.15.7|Warehouse Platform Registration
+P|M020.15.8|Application Identity Assignment
+P|M020.15.9|Application Scope Assignment
+P|M020.15.10|Callback and Webhook Registration
+P|M020.15.11|Event Subscription Registration
+P|M020.15.12|Schema-Version Registration
+P|M020.15.13|Runtime-Mode Enforcement
+P|M020.15.14|Simulation-Only Data Declaration
+P|M020.15.15|Ecosystem Application Integration Tests
+P|M020.16|Ecosystem Runtime Coordination
+P|M020.16.1|Runtime Context API
+P|M020.16.2|Simulation Status Discovery
+P|M020.16.3|Production Status Discovery
+P|M020.16.4|Execution Authority Exchange
+P|M020.16.5|Runtime Capability Discovery
+P|M020.16.6|Cross-System Runtime Validation
+P|M020.16.7|Runtime Coordination Tests
 P|M021|Operational Readiness
 P|M021.1|Security Review
 P|M021.2|Performance Testing

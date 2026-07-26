@@ -4,11 +4,11 @@
 
 ## Engineering Roadmap Frontend
 
-**Version 1.0.0** · **M001 → M022.8** · **833 canonical records**
+**Version 1.0.0** · **M001 → M022.8** · **1046 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **11.16%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.89%**
 
-**93 completed** · **740 planned** · **22 root milestones**
+**93 completed** · **953 planned** · **22 root milestones**
 
 </div>
 
@@ -21,10 +21,10 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **11.16%** |
+| Overall progress | **8.89%** |
 | Completed milestones | **93** |
-| Planned milestones | **740** |
-| Total roadmap records | **833** |
+| Planned milestones | **953** |
+| Total roadmap records | **1046** |
 | Root milestones | **22** |
 
 ### Status key
@@ -47,19 +47,19 @@ Jump directly to a root milestone:
 - [✅ **M005 — Repository Foundation**](#m005) — 9/9 complete (100.0%)
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
-- [🟦 **M008 — Master Registry Foundation**](#m008) — 6/15 complete (40.0%)
-- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 0/76 complete (0.0%)
-- [🟦 **M010 — National Identity Platform**](#m010) — 0/42 complete (0.0%)
+- [🟦 **M008 — Master Registry Foundation**](#m008) — 6/31 complete (19.4%)
+- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 0/83 complete (0.0%)
+- [🟦 **M010 — National Identity Platform**](#m010) — 0/56 complete (0.0%)
 - [🟦 **M011 — Telecommunications Platform**](#m011) — 0/27 complete (0.0%)
-- [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/408 complete (0.0%)
+- [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/415 complete (0.0%)
 - [🟦 **M013 — Business and Employment Registries**](#m013) — 0/42 complete (0.0%)
 - [🟦 **M014 — Device Registry Platform**](#m014) — 0/12 complete (0.0%)
-- [🟦 **M015 — Provider Gateway**](#m015) — 0/15 complete (0.0%)
-- [🟦 **M016 — Simulation Engine Foundation**](#m016) — 0/14 complete (0.0%)
-- [🟦 **M017 — Data Export and Training-Asset Foundation**](#m017) — 0/13 complete (0.0%)
-- [🟦 **M018 — PostgreSQL and Supabase Persistence**](#m018) — 0/16 complete (0.0%)
-- [🟦 **M019 — Platform Infrastructure and Deployment**](#m019) — 0/33 complete (0.0%)
-- [🟦 **M020 — NPP Integration Readiness**](#m020) — 0/13 complete (0.0%)
+- [🟦 **M015 — Provider Gateway**](#m015) — 0/22 complete (0.0%)
+- [🟦 **M016 — Simulation Engine Foundation**](#m016) — 0/48 complete (0.0%)
+- [🟦 **M017 — Data Export and Training-Asset Foundation**](#m017) — 0/33 complete (0.0%)
+- [🟦 **M018 — PostgreSQL and Supabase Persistence**](#m018) — 0/24 complete (0.0%)
+- [🟦 **M019 — Platform Infrastructure and Deployment**](#m019) — 0/73 complete (0.0%)
+- [🟦 **M020 — NPP Integration Readiness**](#m020) — 0/73 complete (0.0%)
 - [🟦 **M021 — Operational Readiness**](#m021) — 0/11 complete (0.0%)
 - [🟦 **M022 — NPP Alpha Release**](#m022) — 0/9 complete (0.0%)
 
@@ -76,19 +76,19 @@ Jump directly to a root milestone:
 | [M005](#m005) | Repository Foundation | ✅ Completed | 9 | 9 | 100.0% |
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
-| [M008](#m008) | Master Registry Foundation | 🟦 Planned | 15 | 6 | 40.0% |
-| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 76 | 0 | 0.0% |
-| [M010](#m010) | National Identity Platform | 🟦 Planned | 42 | 0 | 0.0% |
+| [M008](#m008) | Master Registry Foundation | 🟦 Planned | 31 | 6 | 19.4% |
+| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 83 | 0 | 0.0% |
+| [M010](#m010) | National Identity Platform | 🟦 Planned | 56 | 0 | 0.0% |
 | [M011](#m011) | Telecommunications Platform | 🟦 Planned | 27 | 0 | 0.0% |
-| [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 408 | 0 | 0.0% |
+| [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 415 | 0 | 0.0% |
 | [M013](#m013) | Business and Employment Registries | 🟦 Planned | 42 | 0 | 0.0% |
 | [M014](#m014) | Device Registry Platform | 🟦 Planned | 12 | 0 | 0.0% |
-| [M015](#m015) | Provider Gateway | 🟦 Planned | 15 | 0 | 0.0% |
-| [M016](#m016) | Simulation Engine Foundation | 🟦 Planned | 14 | 0 | 0.0% |
-| [M017](#m017) | Data Export and Training-Asset Foundation | 🟦 Planned | 13 | 0 | 0.0% |
-| [M018](#m018) | PostgreSQL and Supabase Persistence | 🟦 Planned | 16 | 0 | 0.0% |
-| [M019](#m019) | Platform Infrastructure and Deployment | 🟦 Planned | 33 | 0 | 0.0% |
-| [M020](#m020) | NPP Integration Readiness | 🟦 Planned | 13 | 0 | 0.0% |
+| [M015](#m015) | Provider Gateway | 🟦 Planned | 22 | 0 | 0.0% |
+| [M016](#m016) | Simulation Engine Foundation | 🟦 Planned | 48 | 0 | 0.0% |
+| [M017](#m017) | Data Export and Training-Asset Foundation | 🟦 Planned | 33 | 0 | 0.0% |
+| [M018](#m018) | PostgreSQL and Supabase Persistence | 🟦 Planned | 24 | 0 | 0.0% |
+| [M019](#m019) | Platform Infrastructure and Deployment | 🟦 Planned | 73 | 0 | 0.0% |
+| [M020](#m020) | NPP Integration Readiness | 🟦 Planned | 73 | 0 | 0.0% |
 | [M021](#m021) | Operational Readiness | 🟦 Planned | 11 | 0 | 0.0% |
 | [M022](#m022) | NPP Alpha Release | 🟦 Planned | 9 | 0 | 0.0% |
 
@@ -980,10 +980,10 @@ Jump directly to a root milestone:
 <a id="m008"></a>
 ### 🟦 M008 — Master Registry Foundation
 
-`████████░░░░░░░░░░░░` **6/15 complete (40.0%)**
+`████░░░░░░░░░░░░░░░░` **6/31 complete (19.4%)**
 
 <details>
-<summary><strong>Open M008 roadmap records (15 items)</strong></summary>
+<summary><strong>Open M008 roadmap records (31 items)</strong></summary>
 
 🟦 **`M008` — Master Registry Foundation**
 
@@ -1120,6 +1120,150 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Stabilization`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.15` — Registry Metadata and Capability Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fd7e96c73ae39ba62f67`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.15.1` — Registry Capability Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-099c5682ba23c3f387a8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts / Registry Capability Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.15.2` — Data Classification Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1063c64663df57e13b1b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts / Data Classification Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.15.3` — Training Eligibility Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cf3dfe6fb1163e291335`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts / Training Eligibility Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.15.4` — Provenance Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b850f612b0c3e6fc8a81`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts / Provenance Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.15.5` — Retention Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a1947c472127a7bf8f2d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts / Retention Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.15.6` — Registry Metadata Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9815c2af1e2fe2e6c285`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts / Registry Metadata Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.15.7` — Registry Metadata Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-186dfafe824611e785af`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts / Registry Metadata Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16` — Cross-Registry Relationship Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7781070b8db24e3bc273`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16.1` — Relationship Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6c4aec1b296ab797141d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation / Relationship Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16.2` — Immutable Reference Rules**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c690ad7b350cc7bacf85`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation / Immutable Reference Rules`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16.3` — Relationship Direction**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-307d5e4ed0b5ab5039a9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation / Relationship Direction`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16.4` — Relationship Constraints**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5ffe17c4fe6faff75d0f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation / Relationship Constraints`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16.5` — Relationship Provenance**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3f95603374c19527a30d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation / Relationship Provenance`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16.6` — Relationship APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-351978bc22b69bf4faa3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation / Relationship APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16.7` — Relationship Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e861df0f873a12c58597`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation / Relationship Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -1129,10 +1273,10 @@ Jump directly to a root milestone:
 <a id="m009"></a>
 ### 🟦 M009 — Data Catalogue and Communication Foundations
 
-`░░░░░░░░░░░░░░░░░░░░` **0/76 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/83 complete (0.0%)**
 
 <details>
-<summary><strong>Open M009 roadmap records (76 items)</strong></summary>
+<summary><strong>Open M009 roadmap records (83 items)</strong></summary>
 
 🟦 **`M009` — Data Catalogue and Communication Foundations**
 
@@ -1818,6 +1962,69 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Communication Training Export / Training Export Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.8` — Simulation Email Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-efb47720b23c6cd210cd`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Simulation Email Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.8.1` — Simulation Email Accounts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2b0b3c1ce3ebc51f69d3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Simulation Email Lifecycle / Simulation Email Accounts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.8.2` — Email Promotion Workflow**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a6d6db18bc03aab28ddb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Simulation Email Lifecycle / Email Promotion Workflow`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.8.3` — Email Verification Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-64dfe77103eda3bced47`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Simulation Email Lifecycle / Email Verification Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.8.4` — Email History Preservation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-526c867e85c419c6e32c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Simulation Email Lifecycle / Email History Preservation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.8.5` — Production Email Activation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-905317e0a95f8bc59845`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Simulation Email Lifecycle / Production Email Activation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.8.6` — Email Lifecycle Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8bbb0471621671c135ad`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Simulation Email Lifecycle / Email Lifecycle Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -1827,10 +2034,10 @@ Jump directly to a root milestone:
 <a id="m010"></a>
 ### 🟦 M010 — National Identity Platform
 
-`░░░░░░░░░░░░░░░░░░░░` **0/42 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/56 complete (0.0%)**
 
 <details>
-<summary><strong>Open M010 roadmap records (42 items)</strong></summary>
+<summary><strong>Open M010 roadmap records (56 items)</strong></summary>
 
 🟦 **`M010` — National Identity Platform**
 
@@ -2210,6 +2417,132 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / NexaID Registry / NexaID Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.5` — Citizen Identity Promotion**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-59d2f7e747b0504d9eef`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Promotion`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.5.1` — Simulation Citizen Review**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-258f9840b67bf7a531ed`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Promotion / Simulation Citizen Review`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.5.2` — Citizen Approval Workflow**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4a787f76ae4facde6899`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Promotion / Citizen Approval Workflow`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.5.3` — Production Citizen Activation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0cb0c3f8c71e7308c08b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Promotion / Production Citizen Activation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.5.4` — Citizen History Preservation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6adda4a3acc8eb276221`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Promotion / Citizen History Preservation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.5.5` — Identity Promotion Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1edb8d44e2fd0186fedc`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Promotion / Identity Promotion Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.5.6` — Identity Promotion Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-960b526dea1b13b4aeeb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Promotion / Identity Promotion Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.6` — Citizen Identity Assets**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4df310701b7aaddce35b`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Assets`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.6.1` — Profile Picture Assignment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-20a17bc5f8017f21379b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Assets / Profile Picture Assignment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.6.2` — Avatar Generation Provider**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4e1d484bf1e2c9ee0589`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Assets / Avatar Generation Provider`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.6.3` — Citizen ID Card Rendering**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2bbcb617452e982f6e16`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Assets / Citizen ID Card Rendering`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.6.4` — Secure Identity Storage**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b8f59368b9c82323f99d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Assets / Secure Identity Storage`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.6.5` — Identity Document Delivery**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6d8e5d2bed0ab259fcf3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Assets / Identity Document Delivery`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.6.6` — Identity Asset Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0a0927c5aef00e3013d9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Assets / Identity Asset Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -2476,10 +2809,10 @@ Jump directly to a root milestone:
 <a id="m012"></a>
 ### 🟦 M012 — Financial Identity, Banking and Payment Infrastructure
 
-`░░░░░░░░░░░░░░░░░░░░` **0/408 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/415 complete (0.0%)**
 
 <details>
-<summary><strong>Open M012 roadmap records (408 items)</strong></summary>
+<summary><strong>Open M012 roadmap records (415 items)</strong></summary>
 
 🟦 **`M012` — Financial Identity, Banking and Payment Infrastructure**
 
@@ -6153,6 +6486,69 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / NexaPesa Registry / Wallet Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.8` — Payment Execution Modes**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3f62c8d5dfce25feb636`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Payment Execution Modes`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.8.1` — Simulation Payment Rules**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4f00a8c76756c9f543d8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Payment Execution Modes / Simulation Payment Rules`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.8.2` — Production Payment Rules**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-288a83c0bf79c4e3e211`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Payment Execution Modes / Production Payment Rules`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.8.3` — Tap-Only Simulation Policy**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7e76c8b38d40fed586aa`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Payment Execution Modes / Tap-Only Simulation Policy`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.8.4` — PIN Authorization Policy**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b6acafb4f3b4c350664b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Payment Execution Modes / PIN Authorization Policy`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.8.5` — Payment Capability Resolution**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8a97bfa41466d09b48b6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Payment Execution Modes / Payment Capability Resolution`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.8.6` — Payment Mode Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fd0d7a2df311ac357bd4`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Payment Execution Modes / Payment Mode Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -6676,10 +7072,10 @@ Jump directly to a root milestone:
 <a id="m015"></a>
 ### 🟦 M015 — Provider Gateway
 
-`░░░░░░░░░░░░░░░░░░░░` **0/15 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/22 complete (0.0%)**
 
 <details>
-<summary><strong>Open M015 roadmap records (15 items)</strong></summary>
+<summary><strong>Open M015 roadmap records (22 items)</strong></summary>
 
 🟦 **`M015` — Provider Gateway**
 
@@ -6816,6 +7212,69 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Provider Gateway / Gateway Stabilization`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M015.15` — Runtime Execution Context**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cc896edc4fc09bbce52a`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Provider Gateway / Runtime Execution Context`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M015.15.1` — Runtime State Resolution (Online/Offline)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-12d468dcba8e033afe4c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Provider Gateway / Runtime Execution Context / Runtime State Resolution (Online/Offline)`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M015.15.2` — Environment Resolution (Simulation/Production)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-90e950f1078eaec99955`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Provider Gateway / Runtime Execution Context / Environment Resolution (Simulation/Production)`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M015.15.3` — Execution Authority Resolution**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-29dba9ea547864aee584`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Provider Gateway / Runtime Execution Context / Execution Authority Resolution`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M015.15.4` — Runtime Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-caf3078a19c1fe29f137`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Provider Gateway / Runtime Execution Context / Runtime Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M015.15.5` — Runtime Context APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1b7f9a09d608ee6dfca8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Provider Gateway / Runtime Execution Context / Runtime Context APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M015.15.6` — Runtime Context Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-93ba7d7aa2736428e965`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Provider Gateway / Runtime Execution Context / Runtime Context Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -6825,10 +7284,10 @@ Jump directly to a root milestone:
 <a id="m016"></a>
 ### 🟦 M016 — Simulation Engine Foundation
 
-`░░░░░░░░░░░░░░░░░░░░` **0/14 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/48 complete (0.0%)**
 
 <details>
-<summary><strong>Open M016 roadmap records (14 items)</strong></summary>
+<summary><strong>Open M016 roadmap records (48 items)</strong></summary>
 
 🟦 **`M016` — Simulation Engine Foundation**
 
@@ -6956,6 +7415,312 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14` — AI Simulation Orchestration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-742621c94fd010696bf2`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14.1` — AI Scenario Generator**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ee705478cd4e37d78823`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration / AI Scenario Generator`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14.2` — AI Actor Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5159a82663efe55a91da`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration / AI Actor Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14.3` — AI Business Workflow Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-197364bab6a3b432bfea`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration / AI Business Workflow Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14.4` — AI Payment Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-401c1b5c24ecea2d1016`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration / AI Payment Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14.5` — AI Citizen Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8c264dab489add707ea1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration / AI Citizen Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14.6` — AI Failure Scenario Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3680b8b1e6a40229225d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration / AI Failure Scenario Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14.7` — AI Simulation Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-38bbdb2c4db3e17334a7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration / AI Simulation Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.14.8` — AI Simulation Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-612e5ea24030b760ba9d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / AI Simulation Orchestration / AI Simulation Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.15` — Simulation Promotion Engine**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-058f6f3a0e8f4bcaad80`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Promotion Engine`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.15.1` — Promotion Eligibility**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f9e20f32734ba7ea2640`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Promotion Engine / Promotion Eligibility`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.15.2` — Human Review Queue**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-73a13a2154a25443e0a1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Promotion Engine / Human Review Queue`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.15.3` — Promotion Approval**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5577c49ef563659e120e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Promotion Engine / Promotion Approval`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.15.4` — Promotion Rejection**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5ea3498575cc8111186c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Promotion Engine / Promotion Rejection`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.15.5` — Simulation Lineage Preservation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b5b20e356d7936462cc1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Promotion Engine / Simulation Lineage Preservation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.15.6` — Promotion Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-31158d6d5aa01162138a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Promotion Engine / Promotion Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.15.7` — Promotion Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-17c56ba4c595cf1ca745`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Promotion Engine / Promotion Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.16` — Simulation Communication Platform**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3c51e38ab37466a27f54`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Communication Platform`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.16.1` — Simulation Email Delivery**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3319790f41639d5b22fb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Communication Platform / Simulation Email Delivery`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.16.2` — Waiting Period Management**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-025a48200edc1f83c35b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Communication Platform / Waiting Period Management`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.16.3` — Verification Notifications**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dfd80f198b5165e5a9ba`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Communication Platform / Verification Notifications`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.16.4` — Reminder Scheduling**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-482d6807ec3bbf934bbd`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Communication Platform / Reminder Scheduling`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.16.5` — Simulation Inbox Synchronization**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c5396bfcbe9c0d03ffad`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Communication Platform / Simulation Inbox Synchronization`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.16.6` — Communication Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-789b0d79191b779ea51f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Communication Platform / Communication Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.16.7` — Communication Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e338a5ee161a8dff7dca`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Simulation Communication Platform / Communication Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17` — Autonomous Error Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0dbc227c29b94554cbb7`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17.1` — Invalid Event Generation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-01e08fe8f65e1d7b8be2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Invalid Event Generation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17.2` — Invalid Payment Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dc3bd8afaaa875703ef0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Invalid Payment Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17.3` — Invalid Identity Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-07c4e8d6b4dd4c923d06`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Invalid Identity Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17.4` — Invalid Banking Scenario Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5767d5606b52692d62ed`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Invalid Banking Scenario Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17.5` — Invalid Supply Chain Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-503474df5ecd3dfb5bdf`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Invalid Supply Chain Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17.6` — Recovery Scenario Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f3c9d02a2ddcb6a84bcf`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Recovery Scenario Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17.7` — Error Simulation Analytics**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ef9baf0af6f1a7f08ea7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Error Simulation Analytics`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.17.8` — Error Simulation Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-718efce6e6a0e1cdf59c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Error Simulation Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -6965,10 +7730,10 @@ Jump directly to a root milestone:
 <a id="m017"></a>
 ### 🟦 M017 — Data Export and Training-Asset Foundation
 
-`░░░░░░░░░░░░░░░░░░░░` **0/13 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/33 complete (0.0%)**
 
 <details>
-<summary><strong>Open M017 roadmap records (13 items)</strong></summary>
+<summary><strong>Open M017 roadmap records (33 items)</strong></summary>
 
 🟦 **`M017` — Data Export and Training-Asset Foundation**
 
@@ -7087,6 +7852,186 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Export Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.13` — Training Resource Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ef73a9c105cb66bdce29`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Training Resource Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.14` — AI-Readiness Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c25a04e294098d57f5ea`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / AI-Readiness Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.15` — Dataset Manifest**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d066e39de04864607c60`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Dataset Manifest`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.16` — Data Classification**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-88d50742bcdf0ac02636`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Data Classification`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.17` — Consent and Purpose Constraints**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-83a34c6e7d051f005ddf`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Consent and Purpose Constraints`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.18` — Label and Annotation Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-15c3021388ae44604603`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Label and Annotation Model`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.19` — Dataset Quality Metrics**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1d9b61d3269d3fa549e0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Dataset Quality Metrics`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.20` — Dataset Splitting**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d66ecf9d57ae9c79a23d`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Dataset Splitting`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.21` — Dataset Lineage**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fd7cc069bf3887c494ee`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Dataset Lineage`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.22` — Dataset Integrity Hashes**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a997e9902f32a78e2148`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Dataset Integrity Hashes`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.23` — Training Dataset Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-00e7c64a2f4eea32cb3c`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Training Dataset Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.24` — Dataset Approval Workflow**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-85f158403f4da89a9519`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Dataset Approval Workflow`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.25` — Cloud Training-Asset Storage Adapters**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-eeef228efd2d6d7c530c`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Cloud Training-Asset Storage Adapters`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.25.1` — Azure Blob Training-Asset Adapter**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-17b2fb2a33aabd39cc19`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Cloud Training-Asset Storage Adapters / Azure Blob Training-Asset Adapter`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.25.2` — Azure Archive Dataset Adapter**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-28ffe5d98f1e9db12e1d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Cloud Training-Asset Storage Adapters / Azure Archive Dataset Adapter`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.25.3` — Dataset Storage Provider Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6bbba79422a74385771c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Cloud Training-Asset Storage Adapters / Dataset Storage Provider Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.25.4` — Storage Quota Enforcement**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e2e7db05e27f9a7c6e3f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Cloud Training-Asset Storage Adapters / Storage Quota Enforcement`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.25.5` — Cross-Provider Export Compatibility**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-30a57c1f20e14621ae7b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Cloud Training-Asset Storage Adapters / Cross-Provider Export Compatibility`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.25.6` — Training-Asset Export Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-41119f17e662623ef804`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Cloud Training-Asset Storage Adapters / Training-Asset Export Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.26` — Training-Asset Stabilization**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6045b54cd6b4ae4d1b12`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Training-Asset Stabilization`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -7096,10 +8041,10 @@ Jump directly to a root milestone:
 <a id="m018"></a>
 ### 🟦 M018 — PostgreSQL and Supabase Persistence
 
-`░░░░░░░░░░░░░░░░░░░░` **0/16 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/24 complete (0.0%)**
 
 <details>
-<summary><strong>Open M018 roadmap records (16 items)</strong></summary>
+<summary><strong>Open M018 roadmap records (24 items)</strong></summary>
 
 🟦 **`M018` — PostgreSQL and Supabase Persistence**
 
@@ -7245,6 +8190,78 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Persistence Stabilization`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M018.16` — Cloud PostgreSQL Provider Adapters**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6c2c1cf1955d79fb1fae`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Cloud PostgreSQL Provider Adapters`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M018.16.1` — Provider-Neutral Connection Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5b6a9d057951a5190579`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Cloud PostgreSQL Provider Adapters / Provider-Neutral Connection Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M018.16.2` — Azure PostgreSQL Configuration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-865022125594586d9e64`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Cloud PostgreSQL Provider Adapters / Azure PostgreSQL Configuration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M018.16.3` — Supabase PostgreSQL Configuration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-67365055b022eea1dea2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Cloud PostgreSQL Provider Adapters / Supabase PostgreSQL Configuration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M018.16.4` — Migration Compatibility**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-aded9dd16bf7d2a16293`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Cloud PostgreSQL Provider Adapters / Migration Compatibility`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M018.16.5` — Transaction Compatibility**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1e1aef116c83b7546fda`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Cloud PostgreSQL Provider Adapters / Transaction Compatibility`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M018.16.6` — Backup Compatibility**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d21f767c7c5169a74a10`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Cloud PostgreSQL Provider Adapters / Backup Compatibility`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M018.16.7` — Cross-Provider Persistence Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7b7aad38bbe51e91ea7b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `PostgreSQL and Supabase Persistence / Cloud PostgreSQL Provider Adapters / Cross-Provider Persistence Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -7254,10 +8271,10 @@ Jump directly to a root milestone:
 <a id="m019"></a>
 ### 🟦 M019 — Platform Infrastructure and Deployment
 
-`░░░░░░░░░░░░░░░░░░░░` **0/33 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/73 complete (0.0%)**
 
 <details>
-<summary><strong>Open M019 roadmap records (33 items)</strong></summary>
+<summary><strong>Open M019 roadmap records (73 items)</strong></summary>
 
 🟦 **`M019` — Platform Infrastructure and Deployment**
 
@@ -7556,6 +8573,366 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Deployment Infrastructure / Deployment Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5` — Azure Development and Simulation Infrastructure**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-66d07559c1094f362e26`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.1` — Azure Student Subscription Boundaries**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-02c04219334f38398349`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Student Subscription Boundaries`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.2` — Azure Resource Group Structure**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-55f651315e680b70f641`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Resource Group Structure`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.3` — Azure Key Vault Configuration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-48185064a4d540932d5d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Key Vault Configuration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.4` — Azure Container Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-284b50b5f33ae9d9b870`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Container Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.5` — Azure Container Apps**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0764f88661572cd76609`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Container Apps`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.6` — Azure Functions**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f1cfcd690b5d3205e73b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Functions`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.7` — Azure Service Bus**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6ef838b92494fbc970aa`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Service Bus`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.8` — Azure Event Grid**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d575ff3b66bd2a1ac2f0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Event Grid`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.9` — Azure PostgreSQL Adapter Deployment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-365fef0e78e04223ac03`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure PostgreSQL Adapter Deployment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.10` — Azure Blob Storage**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a63bbb19fd1b2857d7d5`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Blob Storage`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.11` — Azure Archive Storage**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-63c9eb7ecebcfa73ab25`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Archive Storage`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.12` — Azure AI Search Pilot**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-af95d4b499a4fbfb7f9e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure AI Search Pilot`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.13` — Azure Machine Learning Workspace**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-91f1e0efea95ea5b4388`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Machine Learning Workspace`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.14` — Azure Document Intelligence Pilot**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4103006ba724f3adf328`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Document Intelligence Pilot`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.15` — Azure Language Pilot**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cd87b3933cc1f1b326b5`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Language Pilot`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.16` — Azure Content Safety Pilot**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ce06697d1d587640a2c1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Content Safety Pilot`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.17` — Azure Monitor**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-889cc1ac84030012e5fc`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Monitor`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.18` — Azure Cost Management**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7acc85ca68f2c384338f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Cost Management`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.19` — Budget and Quota Alerts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5b3e86c11ccbd4e69a29`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Budget and Quota Alerts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.20` — Free-Tier Quota Verification**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-85f45842803045403763`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Free-Tier Quota Verification`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.5.21` — Azure Infrastructure Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3a1f21234d2ad307c97c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Azure Development and Simulation Infrastructure / Azure Infrastructure Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6` — Cloud Credit and Free-Tier Governance**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-562230f8232d9c6860df`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.1` — Cloud Credit Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7bd9f398bd12936b7af3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Cloud Credit Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.2` — Credit Provider Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b3d961c81e58caeee89b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Credit Provider Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.3` — Credit Award Records**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-29afacf9751925a6700f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Credit Award Records`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.4` — Credit Expiry Tracking**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d6dd100296331816e87d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Credit Expiry Tracking`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.5` — Service Eligibility Mapping**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d3044ca62cf5c02ddc67`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Service Eligibility Mapping`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.6` — Per-System Credit Allocation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8163a334cf48a9aa5009`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Per-System Credit Allocation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.7` — Monthly Usage Limits**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-83424b4b60f8c4f7351a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Monthly Usage Limits`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.8` — Token and Inference Budgets**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d48833132eef77c0992a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Token and Inference Budgets`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.9` — GPU-Hour Limits**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-18189f8e2c2aa30469b0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / GPU-Hour Limits`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.10` — Storage Quota Limits**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9e7d65c2e8baada9a1f9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Storage Quota Limits`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.11` — Budget Alert Policies**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1d036100caa855883758`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Budget Alert Policies`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.12` — Automatic Shutdown Policies**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ddcd0b84a8a7fb8843a7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Automatic Shutdown Policies`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.13` — Free-Tier Boundary Monitoring**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-865a9b05d52a93dc16d1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Free-Tier Boundary Monitoring`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.14` — Paid-Fallback Estimates**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ae46e5f91f6c30961b5a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Paid-Fallback Estimates`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.15` — Credit Usage Dashboard**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1959bfb6c60a6baa0671`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Credit Usage Dashboard`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.16` — Credit Governance Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ac8b3a2a3ae939db719f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Credit Governance Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M019.6.17` — Cloud Credit Governance Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2b106ce9461bd1693860`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Platform Infrastructure and Deployment / Cloud Credit and Free-Tier Governance / Cloud Credit Governance Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -7565,10 +8942,10 @@ Jump directly to a root milestone:
 <a id="m020"></a>
 ### 🟦 M020 — NPP Integration Readiness
 
-`░░░░░░░░░░░░░░░░░░░░` **0/13 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/73 complete (0.0%)**
 
 <details>
-<summary><strong>Open M020 roadmap records (13 items)</strong></summary>
+<summary><strong>Open M020 roadmap records (73 items)</strong></summary>
 
 🟦 **`M020` — NPP Integration Readiness**
 
@@ -7686,6 +9063,546 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-738a052fa9e27f4d2b48`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Integration-Ready Release`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13` — Nexa-Bridge Integration Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c8557d14e1ef70913857`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.1` — Ecosystem Application Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c70c536bd72794b56f5b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Ecosystem Application Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.2` — Application Capability Discovery**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cc7cf752f458dadd8f2c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Application Capability Discovery`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.3` — Service Capability Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-93eb7be80b384ef60042`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Service Capability Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.4` — Cross-System Request Envelope**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bb77b6ae1fcb3414e0a4`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Cross-System Request Envelope`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.5` — Cross-System Response Envelope**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-db98fbe5783162fd0285`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Cross-System Response Envelope`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.6` — Cross-System Correlation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cc41170969baddaa25a8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Cross-System Correlation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.7` — Cross-System Idempotency**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3fa25b18346e7df5c1f8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Cross-System Idempotency`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.8` — API Versioning**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b1ea9e8d26ca91156144`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / API Versioning`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.9` — Application Authentication**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fae7a059abf691f28587`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Application Authentication`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.10` — Scope and Permission Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b2f45bc79ac83c04322f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Scope and Permission Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.11` — Safe API Routing**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bfd74ea3202608d8cb3f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Safe API Routing`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.12` — Command Routing**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-33ac0623599875fe11be`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Command Routing`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.13` — Event Routing**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4b7abb8a223d675cda0a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Event Routing`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.14` — Service Bus Command Adapter**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-695d88cace1a081834eb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Service Bus Command Adapter`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.15` — Event Grid Publication Adapter**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a8d9900e8dc591dfe1a0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Event Grid Publication Adapter`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.16` — Azure API Management Adapter**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c05ed03d3f8ceb252574`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Azure API Management Adapter`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.17` — Provider Gateway Integration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5ed6c4710007d84b62d3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Provider Gateway Integration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.18` — Integration Error Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-12e689fe2d879084673d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Integration Error Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.19` — Integration Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c484e6a660fdc056b3de`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Integration Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.20` — Integration Sandbox**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5c9db7b05f37429772cd`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Integration Sandbox`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.21` — Client SDK Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-509d7679f38d165163b0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Client SDK Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.22` — Nexa-Bridge Integration Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2d6d32d2791e9d53e6b9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Nexa-Bridge Integration Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.13.23` — Nexa-Bridge Stabilization**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3c415406164d70cc22b9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Nexa-Bridge Integration Foundation / Nexa-Bridge Stabilization`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14` — Client AI-Readiness Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7ca3437a384678b06df7`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.1` — AI Resource Capability Contract**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c4042f010cbe9f22a8d8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / AI Resource Capability Contract`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.2` — Training Resource Submission Contract**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b2e93a37de4a25f8d044`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Training Resource Submission Contract`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.3` — Source-System Provenance Contract**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0faee56d970e6359aaf3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Source-System Provenance Contract`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.4` — Client Data Classification Contract**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-acff5fa1ba42fd10a50a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Client Data Classification Contract`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.5` — Client Masking Declaration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3c42f868418edef0cd11`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Client Masking Declaration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.6` — Client Consent Declaration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b6c160cbe47b6d308c57`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Client Consent Declaration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.7` — Client Purpose Restriction Contract**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-58419e1b61efeb6073ec`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Client Purpose Restriction Contract`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.8` — Client Dataset Manifest**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3ac2605433a5755c6cfa`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Client Dataset Manifest`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.9` — Client Resource Schema Discovery**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-44181d75dd8997efe568`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Client Resource Schema Discovery`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.10` — Client Training-Resource Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-79edd4b5c4d9d57d18b9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Client Training-Resource Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.14.11` — Client AI-Readiness Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-76d4db61da998f8822b1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Client AI-Readiness Contracts / Client AI-Readiness Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15` — Ecosystem Application Integration Readiness**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-45dc4c668ba05559e0c8`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.1` — iNexaMarket Application Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b5cf2149f34001bbe3ce`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / iNexaMarket Application Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.2` — CineWatch Application Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bf52ae0c6c69dfb14e94`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / CineWatch Application Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.3` — Business Chamber Portal Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ec1ab66408abd8832032`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Business Chamber Portal Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.4` — Supplier Platform Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-948228dcfb22d2f5d676`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Supplier Platform Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.5` — Manufacturer Platform Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-96c474d2a939f88de9a0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Manufacturer Platform Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.6` — Logistics Platform Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fe9113927ccb48595e39`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Logistics Platform Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.7` — Warehouse Platform Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-51dd37221a5a3971bade`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Warehouse Platform Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.8` — Application Identity Assignment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-85da32e475119997dfa2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Application Identity Assignment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.9` — Application Scope Assignment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1048a3f91af3d4a49672`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Application Scope Assignment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.10` — Callback and Webhook Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8237bf7d27e515bdbef4`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Callback and Webhook Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.11` — Event Subscription Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e539e112905c89305050`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Event Subscription Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.12` — Schema-Version Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-792bd1ca819caed6b43d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Schema-Version Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.13` — Runtime-Mode Enforcement**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d2932e924b0f67f38cce`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Runtime-Mode Enforcement`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.14` — Simulation-Only Data Declaration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-701147566b1a84e974cd`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Simulation-Only Data Declaration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.15.15` — Ecosystem Application Integration Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7d88f2c876e17ebf556e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Application Integration Readiness / Ecosystem Application Integration Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.16` — Ecosystem Runtime Coordination**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c5b5e8a5e2cea4216abb`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Runtime Coordination`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.16.1` — Runtime Context API**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8fcbe72e869cd230a376`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Runtime Coordination / Runtime Context API`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.16.2` — Simulation Status Discovery**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-84271558fd1cae567451`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Runtime Coordination / Simulation Status Discovery`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.16.3` — Production Status Discovery**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-820f5703f0fba4066906`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Runtime Coordination / Production Status Discovery`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.16.4` — Execution Authority Exchange**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e34aa00cfdb96a1ab244`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Runtime Coordination / Execution Authority Exchange`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.16.5` — Runtime Capability Discovery**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-754820213ef68c5f7f65`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Runtime Coordination / Runtime Capability Discovery`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.16.6` — Cross-System Runtime Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bb5a4ef8f126ecd4c91a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Runtime Coordination / Cross-System Runtime Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M020.16.7` — Runtime Coordination Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-20f956d9ff6feb7efd4d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NPP Integration Readiness / Ecosystem Runtime Coordination / Runtime Coordination Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
 </details>
 
@@ -7908,7 +9825,7 @@ Jump directly to a root milestone:
 | Canonical source | `roadmap_data.py` |
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.0.0` |
-| Records rendered | `833` |
-| Canonical content checksum | `2cd5439ec8fad393904bde065f27c3e8e54c8ed962cb5696d2d0ab2440953689` |
+| Records rendered | `1046` |
+| Canonical content checksum | `3726dd18668046b45e22f9b7805abd2a3651b7e68db5a92095463600c4a56a30` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.
