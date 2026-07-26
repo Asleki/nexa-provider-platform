@@ -6,9 +6,9 @@
 
 **Version 1.0.0** · **M001 → M022.8** · **1046 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.89%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.99%**
 
-**93 completed** · **953 planned** · **22 root milestones**
+**94 completed** · **952 planned** · **22 root milestones**
 
 </div>
 
@@ -21,9 +21,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **8.89%** |
-| Completed milestones | **93** |
-| Planned milestones | **953** |
+| Overall progress | **8.99%** |
+| Completed milestones | **94** |
+| Planned milestones | **952** |
 | Total roadmap records | **1046** |
 | Root milestones | **22** |
 
@@ -47,7 +47,7 @@ Jump directly to a root milestone:
 - [✅ **M005 — Repository Foundation**](#m005) — 9/9 complete (100.0%)
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
-- [🟦 **M008 — Master Registry Foundation**](#m008) — 6/31 complete (19.4%)
+- [🟦 **M008 — Master Registry Foundation**](#m008) — 7/31 complete (22.6%)
 - [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 0/83 complete (0.0%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/56 complete (0.0%)
 - [🟦 **M011 — Telecommunications Platform**](#m011) — 0/27 complete (0.0%)
@@ -76,7 +76,7 @@ Jump directly to a root milestone:
 | [M005](#m005) | Repository Foundation | ✅ Completed | 9 | 9 | 100.0% |
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
-| [M008](#m008) | Master Registry Foundation | 🟦 Planned | 31 | 6 | 19.4% |
+| [M008](#m008) | Master Registry Foundation | 🟦 Planned | 31 | 7 | 22.6% |
 | [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 83 | 0 | 0.0% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 56 | 0 | 0.0% |
 | [M011](#m011) | Telecommunications Platform | 🟦 Planned | 27 | 0 | 0.0% |
@@ -980,7 +980,7 @@ Jump directly to a root milestone:
 <a id="m008"></a>
 ### 🟦 M008 — Master Registry Foundation
 
-`████░░░░░░░░░░░░░░░░` **6/31 complete (19.4%)**
+`█████░░░░░░░░░░░░░░░` **7/31 complete (22.6%)**
 
 <details>
 <summary><strong>Open M008 roadmap records (31 items)</strong></summary>
@@ -1048,9 +1048,9 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Factory`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.7` — Registry Catalogue**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M008.7` — Registry Catalogue**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-82a0d8ae5d7b6402cea5`
@@ -9826,6 +9826,6 @@ Jump directly to a root milestone:
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.0.0` |
 | Records rendered | `1046` |
-| Canonical content checksum | `3726dd18668046b45e22f9b7805abd2a3651b7e68db5a92095463600c4a56a30` |
+| Canonical content checksum | `cdd24c20795a4a4df1171eb609066087bfae2c87514c588cba35f6b4801ae52c` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.

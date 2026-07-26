@@ -115,7 +115,7 @@ C|M008.3|Base Registry
 C|M008.4|Registry Repository Interface
 C|M008.5|Memory Registry Repository
 C|M008.6|Registry Factory
-P|M008.7|Registry Catalogue
+C|M008.7|Registry Catalogue
 P|M008.8|Registry Lifecycle
 P|M008.9|Registry Validation
 P|M008.10|Registry Events
