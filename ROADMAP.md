@@ -4,11 +4,11 @@
 
 ## Engineering Roadmap Frontend
 
-**Version 1.0.0** · **M001 → M022.8** · **1046 canonical records**
+**Version 1.1.0** · **M001 → M030.12** · **1514 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.99%**
+`██░░░░░░░░░░░░░░░░░░░░░░░░░░░░` **6.21%**
 
-**94 completed** · **952 planned** · **22 root milestones**
+**94 completed** · **1420 planned** · **30 root milestones**
 
 </div>
 
@@ -21,11 +21,11 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **8.99%** |
+| Overall progress | **6.21%** |
 | Completed milestones | **94** |
-| Planned milestones | **952** |
-| Total roadmap records | **1046** |
-| Root milestones | **22** |
+| Planned milestones | **1420** |
+| Total roadmap records | **1514** |
+| Root milestones | **30** |
 
 ### Status key
 
@@ -48,20 +48,28 @@ Jump directly to a root milestone:
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
 - [🟦 **M008 — Master Registry Foundation**](#m008) — 7/31 complete (22.6%)
-- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 0/83 complete (0.0%)
-- [🟦 **M010 — National Identity Platform**](#m010) — 0/56 complete (0.0%)
-- [🟦 **M011 — Telecommunications Platform**](#m011) — 0/27 complete (0.0%)
-- [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/415 complete (0.0%)
-- [🟦 **M013 — Business and Employment Registries**](#m013) — 0/42 complete (0.0%)
+- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 0/98 complete (0.0%)
+- [🟦 **M010 — National Identity Platform**](#m010) — 0/92 complete (0.0%)
+- [🟦 **M011 — Telecommunications Platform**](#m011) — 0/38 complete (0.0%)
+- [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/442 complete (0.0%)
+- [🟦 **M013 — Business and Employment Registries**](#m013) — 0/79 complete (0.0%)
 - [🟦 **M014 — Device Registry Platform**](#m014) — 0/12 complete (0.0%)
 - [🟦 **M015 — Provider Gateway**](#m015) — 0/22 complete (0.0%)
-- [🟦 **M016 — Simulation Engine Foundation**](#m016) — 0/48 complete (0.0%)
-- [🟦 **M017 — Data Export and Training-Asset Foundation**](#m017) — 0/33 complete (0.0%)
+- [🟦 **M016 — Simulation Engine Foundation**](#m016) — 0/117 complete (0.0%)
+- [🟦 **M017 — Data Export and Training-Asset Foundation**](#m017) — 0/46 complete (0.0%)
 - [🟦 **M018 — PostgreSQL and Supabase Persistence**](#m018) — 0/24 complete (0.0%)
 - [🟦 **M019 — Platform Infrastructure and Deployment**](#m019) — 0/73 complete (0.0%)
 - [🟦 **M020 — NPP Integration Readiness**](#m020) — 0/73 complete (0.0%)
 - [🟦 **M021 — Operational Readiness**](#m021) — 0/11 complete (0.0%)
 - [🟦 **M022 — NPP Alpha Release**](#m022) — 0/9 complete (0.0%)
+- [🟦 **M023 — Education, Skills and Knowledge Platform**](#m023) — 0/16 complete (0.0%)
+- [🟦 **M024 — Healthcare and Human Development Platform**](#m024) — 0/14 complete (0.0%)
+- [🟦 **M025 — Domestic Economy, Commerce and Supply Chains**](#m025) — 0/18 complete (0.0%)
+- [🟦 **M026 — Government, Constitution and Policy Platform**](#m026) — 0/37 complete (0.0%)
+- [🟦 **M027 — Faith and Religious Institution Platform**](#m027) — 0/118 complete (0.0%)
+- [🟦 **M028 — International Relations, Migration and Trade Platform**](#m028) — 0/21 complete (0.0%)
+- [🟦 **M029 — NexVox Observational Intelligence Platform**](#m029) — 0/23 complete (0.0%)
+- [🟦 **M030 — Sovereign Simulation Integration and Stabilisation**](#m030) — 0/13 complete (0.0%)
 
 ---
 
@@ -77,20 +85,28 @@ Jump directly to a root milestone:
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
 | [M008](#m008) | Master Registry Foundation | 🟦 Planned | 31 | 7 | 22.6% |
-| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 83 | 0 | 0.0% |
-| [M010](#m010) | National Identity Platform | 🟦 Planned | 56 | 0 | 0.0% |
-| [M011](#m011) | Telecommunications Platform | 🟦 Planned | 27 | 0 | 0.0% |
-| [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 415 | 0 | 0.0% |
-| [M013](#m013) | Business and Employment Registries | 🟦 Planned | 42 | 0 | 0.0% |
+| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 98 | 0 | 0.0% |
+| [M010](#m010) | National Identity Platform | 🟦 Planned | 92 | 0 | 0.0% |
+| [M011](#m011) | Telecommunications Platform | 🟦 Planned | 38 | 0 | 0.0% |
+| [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 442 | 0 | 0.0% |
+| [M013](#m013) | Business and Employment Registries | 🟦 Planned | 79 | 0 | 0.0% |
 | [M014](#m014) | Device Registry Platform | 🟦 Planned | 12 | 0 | 0.0% |
 | [M015](#m015) | Provider Gateway | 🟦 Planned | 22 | 0 | 0.0% |
-| [M016](#m016) | Simulation Engine Foundation | 🟦 Planned | 48 | 0 | 0.0% |
-| [M017](#m017) | Data Export and Training-Asset Foundation | 🟦 Planned | 33 | 0 | 0.0% |
+| [M016](#m016) | Simulation Engine Foundation | 🟦 Planned | 117 | 0 | 0.0% |
+| [M017](#m017) | Data Export and Training-Asset Foundation | 🟦 Planned | 46 | 0 | 0.0% |
 | [M018](#m018) | PostgreSQL and Supabase Persistence | 🟦 Planned | 24 | 0 | 0.0% |
 | [M019](#m019) | Platform Infrastructure and Deployment | 🟦 Planned | 73 | 0 | 0.0% |
 | [M020](#m020) | NPP Integration Readiness | 🟦 Planned | 73 | 0 | 0.0% |
 | [M021](#m021) | Operational Readiness | 🟦 Planned | 11 | 0 | 0.0% |
 | [M022](#m022) | NPP Alpha Release | 🟦 Planned | 9 | 0 | 0.0% |
+| [M023](#m023) | Education, Skills and Knowledge Platform | 🟦 Planned | 16 | 0 | 0.0% |
+| [M024](#m024) | Healthcare and Human Development Platform | 🟦 Planned | 14 | 0 | 0.0% |
+| [M025](#m025) | Domestic Economy, Commerce and Supply Chains | 🟦 Planned | 18 | 0 | 0.0% |
+| [M026](#m026) | Government, Constitution and Policy Platform | 🟦 Planned | 37 | 0 | 0.0% |
+| [M027](#m027) | Faith and Religious Institution Platform | 🟦 Planned | 118 | 0 | 0.0% |
+| [M028](#m028) | International Relations, Migration and Trade Platform | 🟦 Planned | 21 | 0 | 0.0% |
+| [M029](#m029) | NexVox Observational Intelligence Platform | 🟦 Planned | 23 | 0 | 0.0% |
+| [M030](#m030) | Sovereign Simulation Integration and Stabilisation | 🟦 Planned | 13 | 0 | 0.0% |
 
 ---
 
@@ -1273,10 +1289,10 @@ Jump directly to a root milestone:
 <a id="m009"></a>
 ### 🟦 M009 — Data Catalogue and Communication Foundations
 
-`░░░░░░░░░░░░░░░░░░░░` **0/83 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/98 complete (0.0%)**
 
 <details>
-<summary><strong>Open M009 roadmap records (83 items)</strong></summary>
+<summary><strong>Open M009 roadmap records (98 items)</strong></summary>
 
 🟦 **`M009` — Data Catalogue and Communication Foundations**
 
@@ -2025,6 +2041,141 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Simulation Email Lifecycle / Email Lifecycle Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9` — Geography and Community Catalogue**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-46976678fff709cf1ddc`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.1` — Country Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b852d76af27c30a14c57`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Country Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.2` — Province and State Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dd0e433bebdfbacf42a1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Province and State Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.3` — District Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-622fec804695a5f63674`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / District Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.4` — Ward Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9cc8378e9fec2d683d18`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Ward Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.5` — Village and Locality Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2bb292afba5cfb4984b1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Village and Locality Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.6` — Estate and Neighbourhood Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-186883634718d8e2c980`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Estate and Neighbourhood Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.7` — Address and Place Reference Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-29be0910aefd16e5ccb4`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Address and Place Reference Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.8` — Road and Route Catalogue**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7505bfba04d6369eafd1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Road and Route Catalogue`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.9` — Market and Trading-Centre Catalogue**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0aaf0306ce3e421fb0c1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Market and Trading-Centre Catalogue`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.10` — Public-Facility Location Catalogue**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9fa983bb4648af3a0f3f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Public-Facility Location Catalogue`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.11` — Geographic Hierarchy Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bfca579c8ec28b9001a9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Geographic Hierarchy Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.12` — Geography Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d7e0e4e5a2bd79a627f8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Geography Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.13` — Geography APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-daa378647a129371c42d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Geography APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.9.14` — Geography Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cc4670936ce790260d0f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Geography and Community Catalogue / Geography Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -2034,10 +2185,10 @@ Jump directly to a root milestone:
 <a id="m010"></a>
 ### 🟦 M010 — National Identity Platform
 
-`░░░░░░░░░░░░░░░░░░░░` **0/56 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/92 complete (0.0%)**
 
 <details>
-<summary><strong>Open M010 roadmap records (56 items)</strong></summary>
+<summary><strong>Open M010 roadmap records (92 items)</strong></summary>
 
 🟦 **`M010` — National Identity Platform**
 
@@ -2543,6 +2694,330 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Identity Assets / Identity Asset Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7` — Civil Registration and Birth Provenance**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e8f018baaa6a3a800570`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.1` — Pregnancy Record Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5f8fd5c19697f7f60fe2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Pregnancy Record Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.2` — Healthcare Facility Registry Link**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c040b9143dd6b20f5309`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Healthcare Facility Registry Link`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.3` — Birth Attendant Registry Link**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-485f0fcbe8d8f224c4d6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Birth Attendant Registry Link`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.4` — Hospital Birth Event**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9a85103fa8dbdbc90f3b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Hospital Birth Event`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.5` — Home Birth Event**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-46ad3aaadc8cde44af14`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Home Birth Event`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.6` — Late Birth Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b97e51a621180294f2a5`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Late Birth Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.7` — Birth Verification Workflow**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-85936578c392a3bf182c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Birth Verification Workflow`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.8` — Birth Certificate Issuance**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-af034917893b6b05f94c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Birth Certificate Issuance`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.9` — Birth Certificate Amendment by Event**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-118ca739e3d0e7bea3ac`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Birth Certificate Amendment by Event`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.10` — Birth Certificate Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f299c50e13fe042032f9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Birth Certificate Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.11` — Civil Registration Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-665d4d051be69786d922`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Civil Registration Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.7.12` — Civil Registration Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3c6afb3589d0c204dbfb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Civil Registration and Birth Provenance / Civil Registration Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8` — Household and Family Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bb97c0e92d000a13307a`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.1` — Household Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a9240b15f9983ff0fea9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Household Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.2` — Household Identifier Generator**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b8b43c7a57225ce329f2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Household Identifier Generator`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.3` — Parent-to-Child Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-33dd73d51a81d1183454`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Parent-to-Child Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.4` — Guardian Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fe2f8d614cfdb0437950`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Guardian Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.5` — Dependant Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-47907a95a0e70f4d6887`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Dependant Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.6` — Spouse and Partner Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a0640e7878e970fe047d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Spouse and Partner Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.7` — Household Membership Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-be164b90ef0ab8765fcd`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Household Membership Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.8` — Household Residence Linking**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-87874232f446eaecc9e5`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Household Residence Linking`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.9` — Household Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-89faad2b435b5ff7c106`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Household Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.10` — Household APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-45dba89fdd8efed2f169`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Household APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.8.11` — Household Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-66360a738044a8ea8435`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Household and Family Relationships / Household Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9` — Citizen Life Status Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0b37bd9e2a1a69009432`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.1` — Life Status Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-959e2d2c73f6cdbc8c16`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Life Status Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.2` — Minor and Adult Status Derivation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-552dac7bffae819076c0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Minor and Adult Status Derivation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.3` — Marriage Registration Link**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-321c0f914fbe04c3c60f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Marriage Registration Link`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.4` — Retirement Status Link**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-adcc4b395950d88b797a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Retirement Status Link`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.5` — Death Registration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-02e94a843b8e92cb41ac`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Death Registration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.6` — Deceased Identity Protection**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6d6988d08f22f2470c84`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Deceased Identity Protection`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.7` — Estate and Inheritance Reference Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-18f187229b47c4934768`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Estate and Inheritance Reference Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.8` — Life Status Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-269fe18ccc5169795ed0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Life Status Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.9` — Life Status APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c3b997a60b3d7c684fa1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Life Status APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M010.9.10` — Life Status Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b97fc0bca47aa20d5dbd`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `National Identity Platform / Citizen Life Status Foundation / Life Status Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -2552,10 +3027,10 @@ Jump directly to a root milestone:
 <a id="m011"></a>
 ### 🟦 M011 — Telecommunications Platform
 
-`░░░░░░░░░░░░░░░░░░░░` **0/27 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/38 complete (0.0%)**
 
 <details>
-<summary><strong>Open M011 roadmap records (27 items)</strong></summary>
+<summary><strong>Open M011 roadmap records (38 items)</strong></summary>
 
 🟦 **`M011` — Telecommunications Platform**
 
@@ -2800,6 +3275,105 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / SIM Registry / SIM Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3` — Telecommunication Usage and Communication Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-447a259e479f0efc35ce`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.1` — Communication Preference Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-61fe4535467eabdea747`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Communication Preference Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.2` — Preferred Contact Method**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-37327d55f7aaf99fe0bc`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Preferred Contact Method`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.3` — Language Preference**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8eb583ccb5b750a9e074`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Language Preference`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.4` — Number Usage History**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bf0684bace1a8c5a86dc`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Number Usage History`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.5` — SIM Usage History**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9891b9f5e8238d502d35`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / SIM Usage History`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.6` — Communication Availability State**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3552f9a346e055c4d8c2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Communication Availability State`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.7` — Communication Reputation Signals**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-168edf9730bc7941ec74`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Communication Reputation Signals`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.8` — Usage Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e43a0c2a5a07d4c5f5fa`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Usage Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.9` — Usage APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-703625f4a4423aee69c7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Usage APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M011.3.10` — Usage Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-74fe09a9c30a0c749c7d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Telecommunications Platform / Telecommunication Usage and Communication Behaviour / Usage Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -2809,10 +3383,10 @@ Jump directly to a root milestone:
 <a id="m012"></a>
 ### 🟦 M012 — Financial Identity, Banking and Payment Infrastructure
 
-`░░░░░░░░░░░░░░░░░░░░` **0/415 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/442 complete (0.0%)**
 
 <details>
-<summary><strong>Open M012 roadmap records (415 items)</strong></summary>
+<summary><strong>Open M012 roadmap records (442 items)</strong></summary>
 
 🟦 **`M012` — Financial Identity, Banking and Payment Infrastructure**
 
@@ -6549,6 +7123,249 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Payment Execution Modes / Payment Mode Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9` — Central Monetary Authority**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-53a0a0c2d7851b7f73e0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.1` — Monetary Authority Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-46d7e1b019d223a741d3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Monetary Authority Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.2` — Currency Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cad806a72407c078ea6a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Currency Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.3` — Currency Issuance and Withdrawal**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5ea5ee3941c90a68b632`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Currency Issuance and Withdrawal`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.4` — Commercial Bank Licensing**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-69bdf1affe839d6808a3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Commercial Bank Licensing`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.5` — Reserve Requirement Policy**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cbbd1a3e268bfbd29790`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Reserve Requirement Policy`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.6` — Policy Interest Rate**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7cd746c7086be75322b6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Policy Interest Rate`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.7` — Inflation Observation Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-04df38d66b8cf5433b59`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Inflation Observation Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.8` — Interbank Settlement Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5ad677e335b17662769a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Interbank Settlement Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.9` — Cash Circulation Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0b9d1c3585b66573fdf8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Cash Circulation Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.10` — Digital Currency Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c906c5ebf2510a2ca558`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Digital Currency Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.11` — Monetary Policy Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6b9d139237009423bf69`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Monetary Policy Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.12` — Monetary Authority APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bd7a6b4b73b507256b12`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Monetary Authority APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.13` — Monetary Authority Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4d8f58d544909f7c3cca`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Monetary Authority Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.9.14` — Monetary Authority Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4322f3c107c98fab2621`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Central Monetary Authority / Monetary Authority Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10` — Credit, Insurance and Long-Term Finance Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9963d407deb5b4857c96`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.1` — Credit Bureau Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d67c66baf1ef6034a52c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Credit Bureau Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.2` — Loan Product Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ab1139c2d45712f1959c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Loan Product Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.3` — Loan Application Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ada522782288110ad9c2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Loan Application Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.4` — Credit Assessment Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8edecee07d75492562c4`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Credit Assessment Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.5` — Insurance Institution Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-af242d63e453991e254b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Insurance Institution Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.6` — Insurance Product Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cfb63aa34251e1874f3e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Insurance Product Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.7` — Policy and Claim Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5292b5bab8fa66305317`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Policy and Claim Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.8` — Pension Fund Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-51ce38714d23706ac7d8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Pension Fund Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.9` — Pension Contribution Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4d10c43d12a9ec4e478d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Pension Contribution Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.10` — Long-Term Finance Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d4445f8432a1424e1d71`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Long-Term Finance Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M012.10.11` — Long-Term Finance Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7152119157d11cce3651`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Financial Identity, Banking and Payment Infrastructure / Credit, Insurance and Long-Term Finance Foundation / Long-Term Finance Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -6558,10 +7375,10 @@ Jump directly to a root milestone:
 <a id="m013"></a>
 ### 🟦 M013 — Business and Employment Registries
 
-`░░░░░░░░░░░░░░░░░░░░` **0/42 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/79 complete (0.0%)**
 
 <details>
-<summary><strong>Open M013 roadmap records (42 items)</strong></summary>
+<summary><strong>Open M013 roadmap records (79 items)</strong></summary>
 
 🟦 **`M013` — Business and Employment Registries**
 
@@ -6941,6 +7758,339 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Merchant Identifier Registry / Merchant Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5` — Business Type and Economic-Actor Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-da710d71295bc342c5c0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.1` — Business Type Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1b4edff51dac7cb9495e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Business Type Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.2` — Sole Trader Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-da4b4cf89ea26854f62f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Sole Trader Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.3` — Partnership Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-64e0943b0aac75a988cd`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Partnership Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.4` — Company Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d01ad34a3d0de9eb03c6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Company Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.5` — Cooperative Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e9b1e210f4ffac3bc3a0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Cooperative Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.6` — Non-Governmental Organisation Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f3d2e92f0aa13109c7aa`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Non-Governmental Organisation Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.7` — Informal Business Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9b836db5b2884f69930d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Informal Business Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.8` — Home Business Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e86ddd87bf946fd251e7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Home Business Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.9` — Street Vendor Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-67b8a3b5b46ba67f2368`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Street Vendor Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.10` — Farmer and Producer Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-302d20d053d30c35ad8e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Farmer and Producer Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.11` — Manufacturer Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-531c10da383ee2164e8e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Manufacturer Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.12` — Wholesaler and Distributor Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cf528b1d20fea0ad0d15`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Wholesaler and Distributor Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.13` — Importer and Exporter Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-42819ce39d57ec68a161`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Importer and Exporter Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.14` — Seasonal Business Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9588b7ecd4dd3944f679`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Seasonal Business Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.15` — Business Type Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3c54a897502fb74b20c4`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Business Type Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.5.16` — Business Type Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-df1fd7e0a1398cb5a874`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Business Type and Economic-Actor Foundation / Business Type Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6` — Employment Marketplace**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5429cff38b87ec6c0b49`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.1` — Vacancy Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-01d2127c17dcd22fab2c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Vacancy Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.2` — Job Requirement Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-53b5d1601ea37f035d15`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Job Requirement Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.3` — Verified Citizen CV Profile**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-509cd6d023fc38eab007`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Verified Citizen CV Profile`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.4` — CV Compilation from Verified History**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7374b1c52d9e3cb6f4f6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / CV Compilation from Verified History`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.5` — Citizen CV Review**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2a7d0bf1d9e9cf7cfe7d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Citizen CV Review`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.6` — Job Discovery and Notification**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c8547d715f9b4c424273`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Job Discovery and Notification`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.7` — Citizen Application Decision**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d0bf10b4fc49f23343bf`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Citizen Application Decision`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.8` — Job Application Submission**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-98be4bc3a8e094d329e7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Job Application Submission`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.9` — Shortlisting**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-eaa8855bbdda8dfc9121`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Shortlisting`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.10` — Interview Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dd4bd8630917624c19bd`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Interview Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.11` — Employment Offer**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3c851c47b381bd7f196b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Employment Offer`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.12` — Offer Acceptance and Rejection**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0b6bd87d1f72c3836c9a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Offer Acceptance and Rejection`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.13` — Employment Onboarding**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-22bedbcf7c85c47f2f79`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Employment Onboarding`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.14` — Promotion and Transfer**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7725b25c91805afb3f43`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Promotion and Transfer`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.15` — Resignation and Termination**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7e8daed5d15d06184d56`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Resignation and Termination`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.16` — Retirement from Employment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f3e4b86c3b6e827592db`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Retirement from Employment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.17` — Employment Marketplace Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-968e8c63a4552d9d29ce`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Employment Marketplace Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.18` — Employment Marketplace APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-64c5f94b3a054053041a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Employment Marketplace APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M013.6.19` — Employment Marketplace Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-da80643b89facaa79cab`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Business and Employment Registries / Employment Marketplace / Employment Marketplace Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -7284,10 +8434,10 @@ Jump directly to a root milestone:
 <a id="m016"></a>
 ### 🟦 M016 — Simulation Engine Foundation
 
-`░░░░░░░░░░░░░░░░░░░░` **0/48 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/117 complete (0.0%)**
 
 <details>
-<summary><strong>Open M016 roadmap records (48 items)</strong></summary>
+<summary><strong>Open M016 roadmap records (117 items)</strong></summary>
 
 🟦 **`M016` — Simulation Engine Foundation**
 
@@ -7721,6 +8871,627 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Autonomous Error Simulation / Error Simulation Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18` — Citizen Behaviour Engine**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bee27ebf2abb0f773ff6`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.1` — Needs and Wants Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4bfa9a455c8d685745a0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Needs and Wants Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.2` — Citizen Goal Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-06560122b77fdc803e73`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Citizen Goal Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.3` — Preference Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0323843f11790637b5c4`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Preference Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.4` — Memory and Knowledge Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-eb6b6119db9f6b131f43`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Memory and Knowledge Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.5` — Habit Formation and Change**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-27840205498c6d0d2e66`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Habit Formation and Change`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.6` — Budgeting Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a7434cbcb88ea259e6aa`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Budgeting Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.7` — Shopping Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-76a94be156d2d00f8157`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Shopping Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.8` — Saving Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-71a322cef99dd2f826c7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Saving Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.9` — Borrowing Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-db78ac7f09701a7ebdc1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Borrowing Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.10` — Investment Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2036658fd749fc5c5c7d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Investment Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.11` — Learning and Skill Development**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cf4b5ce03c51880a611c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Learning and Skill Development`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.12` — Citizen Decision Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9fd67be25206e7dfdd7a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Citizen Decision Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.18.13` — Citizen Behaviour Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7e92d5dd546bee6e8d37`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Citizen Behaviour Engine / Citizen Behaviour Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19` — Household Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-50d913e21d1d4a70e5e0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.1` — Household Budget**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-29171b08c689fb8de17f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Household Budget`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.2` — Household Shopping List**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b98946d6440bd9c07404`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Household Shopping List`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.3` — Rent and Housing Costs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9e6ff61dc25ca3b28ecf`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Rent and Housing Costs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.4` — Utilities and Household Services**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-502bd6962aa1b0ac5a4b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Utilities and Household Services`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.5` — Household Asset Ownership**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0dd3f857675ed49f63e2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Household Asset Ownership`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.6` — Household Income Pooling**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3a17fda1450f0443f2c0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Household Income Pooling`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.7` — Household Dependency Costs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c51b1424a0ebd5b1a431`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Household Dependency Costs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.8` — Household Decision Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1fe04fd236a43b978393`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Household Decision Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.19.9` — Household Simulation Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8d246601fb19ac692924`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Household Simulation / Household Simulation Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20` — Business Behaviour Engine**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e056f2dde7830c187831`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.1` — Business Goal Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3a0d5127f3e30c20e936`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Business Goal Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.2` — Hiring Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-67ffa366108e3ae89195`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Hiring Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.3` — Pricing Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bd744bcf63fef7a08c03`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Pricing Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.4` — Inventory Replenishment Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2a87ab683c53bf774955`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Inventory Replenishment Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.5` — Marketing Behaviour**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ae3ee87b13dbe97fd5b7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Marketing Behaviour`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.6` — Competition Response**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-60d6d85f2804d7379702`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Competition Response`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.7` — Expansion and Relocation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-42f976bd3d72ead9f95b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Expansion and Relocation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.8` — Partnership Formation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-12fba121fdd979a9b7b9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Partnership Formation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.9` — Distress and Bankruptcy**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-680b52a3f232b52bb775`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Distress and Bankruptcy`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.10` — Business Behaviour Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bd3f28a9553d1c3783bb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Business Behaviour Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.20.11` — Business Behaviour Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e77bc027ff5b5ba6cb98`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Business Behaviour Engine / Business Behaviour Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21` — Economic Behaviour Engine**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-684221def1f79fa9b3b6`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.1` — Supply and Demand Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-370c749c49eeea9a8be9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Supply and Demand Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.2` — Price Response Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b0d919329827ac022124`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Price Response Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.3` — Consumer Confidence Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-86b7ed295ef2fdf1f7e7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Consumer Confidence Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.4` — Employment-Market Response**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ace16bfff077d778c119`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Employment-Market Response`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.5` — Interest-Rate Response**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f0386a3b2c889deb122c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Interest-Rate Response`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.6` — Inflation Response**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c5b2b90cc43ee40e8263`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Inflation Response`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.7` — Seasonality**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7c26a423f84c092c300b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Seasonality`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.8` — Economic Shock Scenarios**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-92e2473183183f7afe74`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Economic Shock Scenarios`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.9` — Economic Behaviour Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c8eb919393645060c916`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Economic Behaviour Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.21.10` — Economic Behaviour Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-49b54ba5f87df9e8b259`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Economic Behaviour Engine / Economic Behaviour Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22` — Society and Social Influence Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ce5eeb1c116569513b6f`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.1` — Friendship Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-73b001c56ddc3b795b66`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Friendship Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.2` — Neighbour Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0ce5a81397e09e266f51`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Neighbour Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.3` — Community Group Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bd520a36912f35edb121`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Community Group Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.4` — Social Learning**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-38ce8e9fec01da55a339`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Social Learning`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.5` — Technology Adoption**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6a3d1f5fcac673f87438`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Technology Adoption`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.6` — Consumer Trend Diffusion**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5f0a37ec4e8123e77623`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Consumer Trend Diffusion`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.7` — Language and Translation Effects**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c46262c533688c53c660`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Language and Translation Effects`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.8` — Voluntary Association Decisions**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c591284d236aaffa281e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Voluntary Association Decisions`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.9` — Social Influence Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a5fa4ce4d04a32ade30c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Social Influence Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.22.10` — Society Simulation Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8eed857cc9428c25ea2a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Society and Social Influence Simulation / Society Simulation Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23` — Institutional Neutrality and Citizen Choice**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-79467b73e115de49e2c4`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.1` — Institutional Neutrality Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9032db32da10af8fc80d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / Institutional Neutrality Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.2` — No Forced Membership Rule**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-05703769915f3e755494`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / No Forced Membership Rule`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.3` — No Forced Belief Rule**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c9b63ed4916bdab82e55`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / No Forced Belief Rule`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.4` — No Forced Donation Rule**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1da290d2d060f5547b84`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / No Forced Donation Rule`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.5` — Citizen Consent and Refusal**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-29f0f9cd98a31e81666d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / Citizen Consent and Refusal`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.6` — Competing Commitments and Time Availability**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1650ebcf4829dce01460`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / Competing Commitments and Time Availability`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.7` — Employment and Institutional Participation Conflicts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f7e73e76230058096b42`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / Employment and Institutional Participation Conflicts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.8` — Evidence-Based Participation Decisions**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a1c93c81fb52806eef23`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / Evidence-Based Participation Decisions`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.9` — Neutrality Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-138e4bb6488bc5c42a58`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / Neutrality Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M016.23.10` — Neutrality Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f71e8596b4d4c76565b3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Simulation Engine Foundation / Institutional Neutrality and Citizen Choice / Neutrality Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
 </details>
 
 [⬆ Back to roadmap navigation](#roadmap-navigation)
@@ -7730,10 +9501,10 @@ Jump directly to a root milestone:
 <a id="m017"></a>
 ### 🟦 M017 — Data Export and Training-Asset Foundation
 
-`░░░░░░░░░░░░░░░░░░░░` **0/33 complete (0.0%)**
+`░░░░░░░░░░░░░░░░░░░░` **0/46 complete (0.0%)**
 
 <details>
-<summary><strong>Open M017 roadmap records (33 items)</strong></summary>
+<summary><strong>Open M017 roadmap records (46 items)</strong></summary>
 
 🟦 **`M017` — Data Export and Training-Asset Foundation**
 
@@ -8031,6 +9802,123 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6045b54cd6b4ae4d1b12`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Training-Asset Stabilization`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27` — Longitudinal and Behavioural Dataset Generation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cb8da42800068282e994`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.1` — Citizen Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5951d91de5bd35c1741d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Citizen Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.2` — Household Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3a51657ff2a887d64f7b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Household Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.3` — Education Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8b2f46de5ff2d857e7cc`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Education Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.4` — Employment Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-98a0a66dc8c32a064519`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Employment Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.5` — Business Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4716cff4635d92da55f1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Business Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.6` — Financial Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fbd2a0feb39dea7e7322`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Financial Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.7` — Healthcare Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-22e2266b2611bd510f9e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Healthcare Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.8` — Supply-Chain Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-14f25c954d8c8195f675`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Supply-Chain Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.9` — Government and Policy Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7cb18528171d228e668a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Government and Policy Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.10` — Institutional Participation Timeline Dataset**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0d9fe5fe814dbeb9e495`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Institutional Participation Timeline Dataset`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.11` — Cross-Lifecycle Causal Link Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ffc18bfdb7f474f4c7a1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Cross-Lifecycle Causal Link Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M017.27.12` — Longitudinal Dataset Quality Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fd399d8ed3b4688743cb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Export and Training-Asset Foundation / Longitudinal and Behavioural Dataset Generation / Longitudinal Dataset Quality Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
 </details>
 
@@ -9818,14 +11706,2466 @@ Jump directly to a root milestone:
 
 ---
 
+<a id="m023"></a>
+### 🟦 M023 — Education, Skills and Knowledge Platform
+
+`░░░░░░░░░░░░░░░░░░░░` **0/16 complete (0.0%)**
+
+<details>
+<summary><strong>Open M023 roadmap records (16 items)</strong></summary>
+
+🟦 **`M023` — Education, Skills and Knowledge Platform**
+
+- **Status:** Planned
+- **Priority:** NORMAL
+- **Dependencies:** None
+- **Record ID:** `npp-rm-ac70b6e4299918171e63`
+- **Semantic path:** `Education, Skills and Knowledge Platform`
+- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.1` — Education Institution Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5ed4cce722aaf07573d3`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Education Institution Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.2` — School and Campus Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2639e34d8bf779416252`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / School and Campus Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.3` — Programme and Course Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8f4761827c8dcc760c6f`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Programme and Course Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.4` — Student Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bd112e7552ef007faaf3`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Student Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.5` — Admission Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a4c52591af4fa1737517`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Admission Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.6` — Attendance and Participation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-98eef7053e181361bf56`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Attendance and Participation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.7` — Assessment and Examination**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-415816b90613f074dad0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Assessment and Examination`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.8` — Qualification and Certificate Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c9a47b721ba31b04c1be`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Qualification and Certificate Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.9` — Skill and Competency Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a6176bd1f6f7006998ef`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Skill and Competency Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.10` — Apprenticeship and Vocational Training**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5289df018b8a980827fe`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Apprenticeship and Vocational Training`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.11` — Education Finance and Sponsorship**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-20e0befaed93ec929e4d`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Education Finance and Sponsorship`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.12` — Education Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c8338dd36e385bb86f96`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Education Events`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.13` — Education APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a270dd526a4bc0e37e6f`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Education APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.14` — Education Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cd206e6f2c791ff7e431`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Education Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M023.15` — Education Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-92c1f4ca970e418ec026`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Education, Skills and Knowledge Platform / Education Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+</details>
+
+[⬆ Back to roadmap navigation](#roadmap-navigation)
+
+---
+
+<a id="m024"></a>
+### 🟦 M024 — Healthcare and Human Development Platform
+
+`░░░░░░░░░░░░░░░░░░░░` **0/14 complete (0.0%)**
+
+<details>
+<summary><strong>Open M024 roadmap records (14 items)</strong></summary>
+
+🟦 **`M024` — Healthcare and Human Development Platform**
+
+- **Status:** Planned
+- **Priority:** NORMAL
+- **Dependencies:** None
+- **Record ID:** `npp-rm-d2adae169a8ca3a58658`
+- **Semantic path:** `Healthcare and Human Development Platform`
+- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.1` — Healthcare Provider Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-459ebf0a37c1dbe31726`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Healthcare Provider Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.2` — Hospital and Clinic Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8497ca86148f9ed88c77`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Hospital and Clinic Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.3` — Healthcare Worker Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8d97348d949cdc76a90a`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Healthcare Worker Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.4` — Patient Encounter Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-630e8b4d9e43605af147`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Patient Encounter Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.5` — Maternal and Child Health**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bfcdb9e6d5e45c865c50`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Maternal and Child Health`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.6` — Immunisation Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1f9eb453627d3b062ec5`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Immunisation Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.7` — Diagnosis and Treatment Records**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-96fc3c368aec867a0d93`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Diagnosis and Treatment Records`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.8` — Medicine and Pharmacy Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bf3dc8f62c694fc86f18`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Medicine and Pharmacy Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.9` — Health Insurance Integration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f65764ced3409f81ae08`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Health Insurance Integration`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.10` — Public Health Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-28bbcb27b5a1dac85ba4`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Public Health Events`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.11` — Healthcare APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-15bbf0e75006c2f9aeae`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Healthcare APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.12` — Healthcare Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fc2de1fdf282e6e57184`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Healthcare Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M024.13` — Healthcare Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5c50bcc1b2c17f2f205a`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Healthcare and Human Development Platform / Healthcare Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+</details>
+
+[⬆ Back to roadmap navigation](#roadmap-navigation)
+
+---
+
+<a id="m025"></a>
+### 🟦 M025 — Domestic Economy, Commerce and Supply Chains
+
+`░░░░░░░░░░░░░░░░░░░░` **0/18 complete (0.0%)**
+
+<details>
+<summary><strong>Open M025 roadmap records (18 items)</strong></summary>
+
+🟦 **`M025` — Domestic Economy, Commerce and Supply Chains**
+
+- **Status:** Planned
+- **Priority:** NORMAL
+- **Dependencies:** None
+- **Record ID:** `npp-rm-d75b5ba77f9b67adf52a`
+- **Semantic path:** `Domestic Economy, Commerce and Supply Chains`
+- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.1` — Product and Service Catalogue**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2192d693006d508c5e30`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Product and Service Catalogue`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.2` — Retail Shop and Market Operations**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e5eb593bbb842e1eb0a1`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Retail Shop and Market Operations`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.3` — Customer Shopping Journey**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0aa4a293fc97e04014bd`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Customer Shopping Journey`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.4` — Basket and Shelf Selection Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a91ad81287845a818fba`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Basket and Shelf Selection Events`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.5` — Checkout and Payment Handoff**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-302e421bb3fc9f7b5214`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Checkout and Payment Handoff`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.6` — Inventory and Warehousing**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ca34a737f59362893767`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Inventory and Warehousing`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.7` — Procurement and Supplier Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-39b44cdc202e2eee5853`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Procurement and Supplier Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.8` — Transport and Logistics**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b640220fe87f7ff86926`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Transport and Logistics`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.9` — Agriculture and Food Supply Chains**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-63e80eb1f241bc65c69e`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Agriculture and Food Supply Chains`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.10` — Manufacturing and Processing**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ed5e526f713e9c7204b4`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Manufacturing and Processing`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.11` — Wholesale and Distribution**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-aed4612e56e6ff4f3fa1`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Wholesale and Distribution`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.12` — Domestic Trade**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9c237ecec5c15f69595c`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Domestic Trade`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.13` — Competition and Market Structure**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dab5b7a756da1eedbae6`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Competition and Market Structure`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.14` — Economic Statistics**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-abe55bef7e7b230db844`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Economic Statistics`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.15` — Commerce and Supply-Chain Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-73d5b5f3ae3d66504ff2`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Commerce and Supply-Chain Events`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.16` — Commerce APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-da01ac947b898eca6962`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Commerce APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M025.17` — Commerce Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4bb474e211993b3531f4`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Domestic Economy, Commerce and Supply Chains / Commerce Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+</details>
+
+[⬆ Back to roadmap navigation](#roadmap-navigation)
+
+---
+
+<a id="m026"></a>
+### 🟦 M026 — Government, Constitution and Policy Platform
+
+`░░░░░░░░░░░░░░░░░░░░` **0/37 complete (0.0%)**
+
+<details>
+<summary><strong>Open M026 roadmap records (37 items)</strong></summary>
+
+🟦 **`M026` — Government, Constitution and Policy Platform**
+
+- **Status:** Planned
+- **Priority:** NORMAL
+- **Dependencies:** None
+- **Record ID:** `npp-rm-537a65f262daa5fe5383`
+- **Semantic path:** `Government, Constitution and Policy Platform`
+- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.1` — Government Institution Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7131ee974c4b1f2fff38`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Government Institution Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.2` — Ministry and Agency Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b281f25022a5ea3eb694`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Ministry and Agency Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.3` — Civil Service Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1b53f2618593d6e23818`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Civil Service Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.4` — Constitutional Rule Engine**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cb64580ed206131c125c`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Constitutional Rule Engine`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.5` — Legal Eligibility and Age Rules**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1c4f115d621c691ae8f0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legal Eligibility and Age Rules`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.6` — Treasury and Public Accounts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a916e059feacd18ec224`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Treasury and Public Accounts`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.7` — Revenue Authority and Taxation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d4dd40dbe6e8cef71d47`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Revenue Authority and Taxation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.8` — National Statistics Bureau**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-15670f63a2700f51b03f`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / National Statistics Bureau`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.9` — Public Budget Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-383ac86f7139251dbca9`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Public Budget Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.10` — Public Service Programme Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-003a6f9decab53e2fc0f`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Public Service Programme Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.11` — Policy Proposal and Scenario Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-957ed165177e0d4513c4`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Policy Proposal and Scenario Model`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.12` — Policy Activation and Effective Dates**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-741564253271e584c6ba`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Policy Activation and Effective Dates`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.13` — Policy Impact Propagation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-390779638538c5c49ab0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Policy Impact Propagation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.14` — Government Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-316a8ce163fb446d74f9`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Government Events`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.15` — Government APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d62726ead080ec7121e3`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Government APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.16` — Government Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ca48af173d9256e4017e`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Government Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.17` — Government Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6d12a30e0bde0f5be305`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Government Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18` — Legislative Platform**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7fa7cbed92ef0c5c260b`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.1` — Bill Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cfe9577804d677288c6d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Bill Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.2` — Committee Workflow**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1f079579461cbdeeea87`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Committee Workflow`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.3` — Parliamentary Session Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4242d35237826c33607b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Parliamentary Session Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.4` — Voting and Passage Rules**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-63b2f431125933e716f6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Voting and Passage Rules`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.5` — Law Assent and Publication**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8bd9702a59c7b7cbb173`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Law Assent and Publication`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.6` — Law Commencement**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8f552a6c70d6c6f645f4`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Law Commencement`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.7` — Law Amendment and Repeal**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-916878dce404480d1890`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Law Amendment and Repeal`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.8` — Policy Transition Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e246e99cccb8713abb3a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Policy Transition Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.9` — Legislative Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-33e11a73730f4cbfb795`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Legislative Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.18.10` — Legislative Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-da9579984088765f3dcb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Legislative Platform / Legislative Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.19` — Election and Government-Priority Simulation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f0eb65185b33b7223c3c`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Election and Government-Priority Simulation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.19.1` — Election Eligibility Rules**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a6a828cee042933f81ee`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Election and Government-Priority Simulation / Election Eligibility Rules`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.19.2` — Electoral Administration Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-499d1c45a157a001bdcc`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Election and Government-Priority Simulation / Electoral Administration Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.19.3` — Government Priority Profiles**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5db0e537709f07fbe352`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Election and Government-Priority Simulation / Government Priority Profiles`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.19.4` — Policy Transition Scenarios**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0cae955d585529166965`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Election and Government-Priority Simulation / Policy Transition Scenarios`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.19.5` — Public Spending Priority Changes**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ea950d02a2d31c834a13`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Election and Government-Priority Simulation / Public Spending Priority Changes`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.19.6` — Election Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bc159a15d0faff497fb7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Election and Government-Priority Simulation / Election Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M026.19.7` — Election Simulation Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e0bacef2efde82694669`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Government, Constitution and Policy Platform / Election and Government-Priority Simulation / Election Simulation Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+</details>
+
+[⬆ Back to roadmap navigation](#roadmap-navigation)
+
+---
+
+<a id="m027"></a>
+### 🟦 M027 — Faith and Religious Institution Platform
+
+`░░░░░░░░░░░░░░░░░░░░` **0/118 complete (0.0%)**
+
+<details>
+<summary><strong>Open M027 roadmap records (118 items)</strong></summary>
+
+🟦 **`M027` — Faith and Religious Institution Platform**
+
+- **Status:** Planned
+- **Priority:** NORMAL
+- **Dependencies:** None
+- **Record ID:** `npp-rm-72d91e7f1f455828f74b`
+- **Semantic path:** `Faith and Religious Institution Platform`
+- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1` — Institutional Neutrality Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fb1114a13aec01e34e01`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1.1` — Religious Freedom and Voluntary Participation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e89aa435bb7e1f12ac89`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation / Religious Freedom and Voluntary Participation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1.2` — Citizen Belief Privacy**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8729f8509966d7456ca3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation / Citizen Belief Privacy`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1.3` — No Forced Conversion**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-126215ca213bb64a459d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation / No Forced Conversion`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1.4` — No Forced Attendance**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1ab2fd31d486d513d8ec`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation / No Forced Attendance`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1.5` — No Forced Donation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-239e829b54c142e07e34`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation / No Forced Donation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1.6` — Equal Institutional Treatment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e505a15d40a9754c24ab`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation / Equal Institutional Treatment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1.7` — Religious Neutrality Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-56eec911a5cc58a58fee`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation / Religious Neutrality Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.1.8` — Religious Neutrality Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fbd221f1f1d022d95e6a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Institutional Neutrality Foundation / Religious Neutrality Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.2` — Faith and Belief Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c593992e58df0ae6e4b0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith and Belief Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.2.1` — Faith Tradition Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3cf6c419e5077f249e46`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith and Belief Registry / Faith Tradition Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.2.2` — Belief Profile Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-50ada63418f339c4be55`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith and Belief Registry / Belief Profile Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.2.3` — Doctrine and Teaching Reference Assets**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-473dd2b44ca583b6129b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith and Belief Registry / Doctrine and Teaching Reference Assets`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.2.4` — Sacred Text Reference Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3c8c08810290d818a8b5`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith and Belief Registry / Sacred Text Reference Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.2.5` — Practice and Observance Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-861d058fe4d65c4d57a6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith and Belief Registry / Practice and Observance Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.2.6` — Faith Tradition Versioning**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-18039b760b6a85464b79`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith and Belief Registry / Faith Tradition Versioning`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.2.7` — Faith Registry Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f38a4af99b4ed706dc48`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith and Belief Registry / Faith Registry Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.3` — Initial Faith Tradition Profiles**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-708a4ab7f07f5804c2a7`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Initial Faith Tradition Profiles`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.3.1` — Catholic Tradition Profile**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-630de8fbfab4f6f10c16`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Initial Faith Tradition Profiles / Catholic Tradition Profile`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.3.2` — Anglican Tradition Profile**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2bfcf0eaaba6f677a2d1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Initial Faith Tradition Profiles / Anglican Tradition Profile`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.3.3` — Islamic Tradition Profile**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-920c31e71e2f32e94ca6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Initial Faith Tradition Profiles / Islamic Tradition Profile`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.3.4` — The Church of Jesus Christ of Latter-day Saints Tradition Profile**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f42d68b1a46e5514b547`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Initial Faith Tradition Profiles / The Church of Jesus Christ of Latter-day Saints Tradition Profile`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.3.5` — Tradition-Specific Governance Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c91ee8aef989cd259d86`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Initial Faith Tradition Profiles / Tradition-Specific Governance Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.3.6` — Initial Tradition Profile Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-de13d8977eeee936aba7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Initial Faith Tradition Profiles / Initial Tradition Profile Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4` — Religious Organisation Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d5c0ba940675a68379cd`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.1` — Organisation Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6f14f285fe9a47fc5b10`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Organisation Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.2` — Headquarters and Jurisdiction Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b0cc3c51d7df72f5e75f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Headquarters and Jurisdiction Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.3` — Local Congregation Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8e9abe6b9309c39231bb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Local Congregation Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.4` — Religious Office and Authority Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5a0aad5eb8014425796e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Religious Office and Authority Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.5` — Volunteer and Missionary Assignment Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-639f091dd57590c28bbe`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Volunteer and Missionary Assignment Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.6` — Organisation Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8a806e9dcb1f0dfda403`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Organisation Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.7` — Organisation Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3e2312c9aa085cfc97e0`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Organisation Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.8` — Organisation APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5f3128521b9db5cd1e89`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Organisation APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.4.9` — Organisation Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-659f2a28e6c635003520`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Organisation Registry / Organisation Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5` — Religious Membership and Participation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a0a769d07c27e46625fa`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.1` — Membership Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8969506722afdd80e7cb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Membership Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.2` — Citizen Interest and Enquiry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4611a1cb285b73b75255`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Citizen Interest and Enquiry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.3` — Teaching and Instruction Sessions**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5355a6eb107c32620475`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Teaching and Instruction Sessions`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.4` — Citizen Understanding and Language Effects**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e4db015fea820acc16e6`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Citizen Understanding and Language Effects`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.5` — Citizen Acceptance or Refusal**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dc4dcdf6da72894cb339`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Citizen Acceptance or Refusal`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.6` — Membership Admission Requirements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ca833426b30f3f76fcb8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Membership Admission Requirements`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.7` — Baptism or Initiation Authority Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-abf1eb334d9233e7efcf`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Baptism or Initiation Authority Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.8` — Membership Confirmation and Recording**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a63be1e406d703e457a8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Membership Confirmation and Recording`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.9` — Attendance and Participation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-97976927200b95d2fc12`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Attendance and Participation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.10` — Inactivity without Automatic Removal**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0ec62067ed94c1c5be97`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Inactivity without Automatic Removal`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.11` — Membership Transfer and Migration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-995bbc47fd77fbf9b322`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Membership Transfer and Migration`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.12` — Membership Lifecycle Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-59d71500646fbf98f90a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Membership Lifecycle Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.5.13` — Membership Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-88e382ee626c0ddf1dd8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Membership and Participation / Membership Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6` — Missionary and Outreach Operations**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b394c333a4d3e21d99bc`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.1` — Missionary Department Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b4eabb7f1bec8f5100c1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Missionary Department Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.2` — Mission and Area Assignment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-18584df39508006ec0cc`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Mission and Area Assignment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.3` — International Missionary Visa Dependency**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dfd6d1fbb1aa83639518`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / International Missionary Visa Dependency`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.4` — Missionary Couple Assignment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5a61ac50282549187267`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Missionary Couple Assignment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.5` — Local Missionary Calling**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-95da908acabfbabac0ba`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Local Missionary Calling`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.6` — Door-to-Door Outreach**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fb7edfc66077cd895617`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Door-to-Door Outreach`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.7` — Market and Community Outreach**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0ee163b37e233bab4727`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Market and Community Outreach`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.8` — Teaching Appointment Scheduling**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-703b2ffc99823186a546`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Teaching Appointment Scheduling`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.9` — Local Language Translation Support**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4bed1543b6722c7acc7d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Local Language Translation Support`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.10` — Missionary Material Inventory**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b28d0cbe8dc56eb94be3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Missionary Material Inventory`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.11` — Outreach Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dc905827b8ba806626ed`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Outreach Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.6.12` — Outreach Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1747f516613a61cf604c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Missionary and Outreach Operations / Outreach Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7` — Latter-day Saint Organisational Lifecycle Profile**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-dd5884c187f1a3fd4a99`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.1` — Zero-Member Country Initial State**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1bcf962a60402db82d6d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Zero-Member Country Initial State`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.2` — Migrant Member and Family Arrival**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8fbb54d3f171c6d9cdee`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Migrant Member and Family Arrival`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.3` — Home-Based Group Formation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-fbbf6423ac2434cc688d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Home-Based Group Formation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.4` — Priesthood Authority Validation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c27f35e40405fd6436c9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Priesthood Authority Validation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.5` — Baptism and Confirmation Authority Rules**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1e32084b3c81548bd1e5`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Baptism and Confirmation Authority Rules`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.6` — Priesthood Ordination Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-647a0e88a58fccc685a1`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Priesthood Ordination Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.7` — Group Leader Assignment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1dfdf46b558984f07bf7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Group Leader Assignment`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.8` — Branch Formation Request**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-339d7acc9283ab31d051`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Branch Formation Request`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.9` — Branch Organisation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-362186772501833f570d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Branch Organisation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.10` — Ward Formation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f7a832fba9e41edc235f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Ward Formation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.11` — Stake Formation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-11b9ae6299bbb7354fd2`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Stake Formation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.12` — Mission Formation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-02c57e7b9bdb5e91d3c9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Mission Formation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.13` — Temple District Formation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-be30cf820e3334b7d253`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Temple District Formation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.14` — Temple Planning and Construction Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2b70ebd04533d380b348`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Temple Planning and Construction Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.7.15` — Latter-day Saint Lifecycle Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bebf0b46658d64829705`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Latter-day Saint Organisational Lifecycle Profile / Latter-day Saint Lifecycle Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8` — Religious Programmes and Internal Organisations**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-79b56307e2d4ac5f267e`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.1` — Children and Primary Programme**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-07a58045f59f77e3cfb3`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Children and Primary Programme`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.2` — Youth Programme**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-43435a43173d69269f75`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Youth Programme`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.3` — Young Single Adult Programme**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e111e74977e7e9c5709a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Young Single Adult Programme`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.4` — Women and Relief Society Organisation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a32cca6b07eccd386765`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Women and Relief Society Organisation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.5` — Men and Elders Quorum Organisation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d59f6c4a43f0b1e7b604`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Men and Elders Quorum Organisation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.6` — Religious Education Programme**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-955c0a9435ad71b31bf9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Religious Education Programme`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.7` — Leadership Training**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8d07fadd52b54d409aed`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Leadership Training`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.8` — Programme Participation Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-13a2a886d95e80f0557f`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Programme Participation Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.8.9` — Programme Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5ffca5a135e3ebefd496`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Programmes and Internal Organisations / Programme Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9` — Religious Finance and Property**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8942e355ac62343e8d13`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.1` — Religious Account Ownership**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-24b2420065a82b232886`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Religious Account Ownership`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.2` — Voluntary Tithing and Donation Decisions**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-afd4854a4ff7c0d5047b`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Voluntary Tithing and Donation Decisions`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.3` — Fast Offering and Charitable Fund Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e77a5435d9ef30b73658`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Fast Offering and Charitable Fund Model`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.4` — Headquarters Funding Transfers**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6c60e6116daa52e8e34c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Headquarters Funding Transfers`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.5` — Local Budget Allocation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b6d944881f2f50934b15`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Local Budget Allocation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.6` — Land Search and Purchase**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d7ecfb1bde7396da4711`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Land Search and Purchase`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.7` — Building Approval and Construction**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bbe5c626bb50c5fad317`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Building Approval and Construction`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.8` — Meetinghouse Operations**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-580054fa385341b0b69e`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Meetinghouse Operations`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.9` — Temple Property Operations**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-2a8281b1034a703f3bda`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Temple Property Operations`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.10` — Religious Finance Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a8e817a123722ba01090`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Religious Finance Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.9.11` — Religious Finance Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-381decd7ab9a82dc8959`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Religious Finance and Property / Religious Finance Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10` — Faith, Employment and Social Effects**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b77f2e628dc6a154c970`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10.1` — Work-Schedule and Worship Conflict**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f9f0ca295b90079d97a7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects / Work-Schedule and Worship Conflict`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10.2` — Religious Accommodation by Employers**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c9a2665216687da423b8`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects / Religious Accommodation by Employers`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10.3` — Citizen Employment Preference Effects**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0dc042244b2fd18a2433`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects / Citizen Employment Preference Effects`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10.4` — Family-Level Mixed Participation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f4a7f494279d8da17c4d`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects / Family-Level Mixed Participation`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10.5` — Community Acceptance and Resistance**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c9d2a8f459528c5700aa`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects / Community Acceptance and Resistance`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10.6` — Institutional Growth without System Bias**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0922a9082062a0c98e82`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects / Institutional Growth without System Bias`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10.7` — Social-Effect Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-292ec48f2ba5cac41511`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects / Social-Effect Events`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.10.8` — Social-Effect Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9fa5466701f916284b76`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith, Employment and Social Effects / Social-Effect Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11` — Faith Knowledge and Training Assets**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-17c90449c75f3ab45360`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11.1` — Source Provenance Requirements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f4eab50c8b0882955a79`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets / Source Provenance Requirements`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11.2` — Tradition-Specific Terminology**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8e77439edc9cd308c3a7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets / Tradition-Specific Terminology`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11.3` — Teaching Material Metadata**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ce510e8e4a64d522b67c`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets / Teaching Material Metadata`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11.4` — Translation Dataset Governance**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8ddd76160868bbf804e9`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets / Translation Dataset Governance`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11.5` — Religious Knowledge Safety and Neutrality**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f29265e56c23a4b25aea`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets / Religious Knowledge Safety and Neutrality`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11.6` — NexVox Institutional-Learning Export**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c8fb13a55d646441922a`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets / NexVox Institutional-Learning Export`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11.7` — No Persuasion Training Constraint**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ba4f5d8b87c607a56579`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets / No Persuasion Training Constraint`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M027.11.8` — Faith Dataset Quality Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cc5b75a0e4c92ef3fcd7`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Faith and Religious Institution Platform / Faith Knowledge and Training Assets / Faith Dataset Quality Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+</details>
+
+[⬆ Back to roadmap navigation](#roadmap-navigation)
+
+---
+
+<a id="m028"></a>
+### 🟦 M028 — International Relations, Migration and Trade Platform
+
+`░░░░░░░░░░░░░░░░░░░░` **0/21 complete (0.0%)**
+
+<details>
+<summary><strong>Open M028 roadmap records (21 items)</strong></summary>
+
+🟦 **`M028` — International Relations, Migration and Trade Platform**
+
+- **Status:** Planned
+- **Priority:** NORMAL
+- **Dependencies:** None
+- **Record ID:** `npp-rm-526cdb0c28ca811beea0`
+- **Semantic path:** `International Relations, Migration and Trade Platform`
+- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.1` — Multi-Country Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-43463c0430d3e8ab169c`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Multi-Country Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.2` — Nationality and Citizenship Relationships**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-80e8eca7a4e079d78ac4`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Nationality and Citizenship Relationships`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.3` — Passport Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ac223ad0874959d90bfb`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Passport Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.4` — Visa Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ec56b4596e13a21bdd2a`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Visa Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.5` — Visa Application Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-948b5763c11face7abe5`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Visa Application Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.6` — Immigration and Border Entry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9bc23f2956d519fa0b88`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Immigration and Border Entry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.7` — Residence and Migration Lifecycle**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d76a65faf451d616b77e`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Residence and Migration Lifecycle`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.8` — Customs Foundation**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6974b2b7e7b932f4b21b`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Customs Foundation`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.9` — Port and Airport Registry**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9ac69c4f6ed8afb9b154`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Port and Airport Registry`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.10` — International Cargo and Logistics**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-361b4d4cf5cc594cff53`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / International Cargo and Logistics`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.11` — International Trade**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-19f63f5ac24bb1d22243`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / International Trade`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.12` — Trade Agreements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4183a0653b62eef7cc38`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Trade Agreements`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.13` — Exchange Rates**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4193b20e0151940369c6`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Exchange Rates`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.14` — Foreign Investment**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3a20b0dabe370dbe3c86`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Foreign Investment`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.15` — Tourism**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ff6c9a4f29e87e14a3e5`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Tourism`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.16` — Diplomatic Relationship Model**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e3827b8dbb53126d47d1`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / Diplomatic Relationship Model`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.17` — International Events**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bbfc89d307bc45610187`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / International Events`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.18` — International APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4ad6998a6fc9517abb61`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / International APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.19` — International Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-62ad6cab400739b297d8`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / International Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M028.20` — International Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3e72804cc857b58de146`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `International Relations, Migration and Trade Platform / International Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+</details>
+
+[⬆ Back to roadmap navigation](#roadmap-navigation)
+
+---
+
+<a id="m029"></a>
+### 🟦 M029 — NexVox Observational Intelligence Platform
+
+`░░░░░░░░░░░░░░░░░░░░` **0/23 complete (0.0%)**
+
+<details>
+<summary><strong>Open M029 roadmap records (23 items)</strong></summary>
+
+🟦 **`M029` — NexVox Observational Intelligence Platform**
+
+- **Status:** Planned
+- **Priority:** NORMAL
+- **Dependencies:** None
+- **Record ID:** `npp-rm-11916b490542f09fd46c`
+- **Semantic path:** `NexVox Observational Intelligence Platform`
+- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.1` — Observational Intelligence Contracts**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f247b417d2764e7241f5`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Observational Intelligence Contracts`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.2` — Read-Only Event and Read-Model Access**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e3aa32a381533c65b928`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Read-Only Event and Read-Model Access`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.3` — Pattern Detection**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-29e42e31cd88442462bb`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Pattern Detection`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.4` — Trend Detection**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-69e0fbea5b3aad1a5492`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Trend Detection`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.5` — Risk Detection**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-88f91cb8cb3a6fae3cd4`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Risk Detection`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.6` — Market-Gap Detection**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-98b8550698cef1bef340`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Market-Gap Detection`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.7` — Supply-Chain Gap Detection**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-bca66e2619dbc825cdba`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Supply-Chain Gap Detection`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.8` — Citizen Opportunity Analysis**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-43f393cd4e97df1577e3`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Citizen Opportunity Analysis`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.9` — Business Opportunity Analysis**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6da76e37655c027b4600`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Business Opportunity Analysis`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.10` — Investment Opportunity Analysis**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-78a55b38e005636444d0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Investment Opportunity Analysis`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.11` — Policy Impact Analysis**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7daf55a9b5af76e328e4`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Policy Impact Analysis`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.12` — Scenario Comparison**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7b6e7adb572eeea82638`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Scenario Comparison`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.13` — Evidence and Provenance Binding**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8d5f5dc62b4c42fb6e00`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Evidence and Provenance Binding`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.14` — Confidence Scoring**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-b413cfc3f7e5103f2669`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Confidence Scoring`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.15` — Explainable Recommendations**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3da6b0d1df719dbcdb79`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Explainable Recommendations`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.16` — Recommendation Review and Feedback**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-134a36725ba4077030b9`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / Recommendation Review and Feedback`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.17` — No Autonomous Execution Boundary**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3ff8565fdbd5fe58d1dd`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / No Autonomous Execution Boundary`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.18` — No Citizen Impersonation Boundary**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-544121d7664764c1d5fe`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / No Citizen Impersonation Boundary`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.19` — No Forced Institutional Participation Boundary**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-805303f843a3ad6393e6`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / No Forced Institutional Participation Boundary`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.20` — NexVox Audit**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-29038f74c4c1400fb44d`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / NexVox Audit`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.21` — NexVox APIs**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f88a60b6828fd229ab74`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / NexVox APIs`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M029.22` — NexVox Tests**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3b4fb49a3710b23ead87`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexVox Observational Intelligence Platform / NexVox Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+</details>
+
+[⬆ Back to roadmap navigation](#roadmap-navigation)
+
+---
+
+<a id="m030"></a>
+### 🟦 M030 — Sovereign Simulation Integration and Stabilisation
+
+`░░░░░░░░░░░░░░░░░░░░` **0/13 complete (0.0%)**
+
+<details>
+<summary><strong>Open M030 roadmap records (13 items)</strong></summary>
+
+🟦 **`M030` — Sovereign Simulation Integration and Stabilisation**
+
+- **Status:** Planned
+- **Priority:** NORMAL
+- **Dependencies:** None
+- **Record ID:** `npp-rm-9955db82be2e565a8f27`
+- **Semantic path:** `Sovereign Simulation Integration and Stabilisation`
+- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.1` — Cross-Lifecycle Integration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-1f79f6f3e43ced2bbb6a`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Cross-Lifecycle Integration`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.2` — Village Simulation Baseline**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-f7e9e2059e424ccb59b6`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Village Simulation Baseline`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.3` — Ward and District Scaling**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e3a1bb94efef9e1d1367`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Ward and District Scaling`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.4` — Province and National Scaling**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e1e596fdc781b45dc77b`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Province and National Scaling`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.5` — Multi-Country Scaling**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-43ab2840bf4b888b1a2e`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Multi-Country Scaling`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.6` — Deterministic Society Replay**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a4afb51b12b23fdb79b1`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Deterministic Society Replay`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.7` — Causal Event-Graph Verification**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e5777f40ce51e357bb7a`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Causal Event-Graph Verification`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.8` — Institutional Neutrality Verification**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-20b37843711a4d380547`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Institutional Neutrality Verification`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.9` — Simulation-to-Production Provider Replacement**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3ab6ed4ec65a99f069b2`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Simulation-to-Production Provider Replacement`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.10` — Sovereign Simulation Load Testing**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-54a00b73246325be0201`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Sovereign Simulation Load Testing`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.11` — Sovereign Simulation Release Candidate**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-c1c2a07da351e02f7eea`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Sovereign Simulation Release Candidate`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M030.12` — Sovereign Simulation Platform Stabilised**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-22a0a6b58f79c02ad3d6`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Sovereign Simulation Integration and Stabilisation / Sovereign Simulation Platform Stabilised`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+</details>
+
+[⬆ Back to roadmap navigation](#roadmap-navigation)
+
+---
+
 ## Generation information
 
 | Property | Value |
 |---|---|
 | Canonical source | `roadmap_data.py` |
 | Generator | `roadmap_frontend.py` |
-| Roadmap version | `1.0.0` |
-| Records rendered | `1046` |
-| Canonical content checksum | `cdd24c20795a4a4df1171eb609066087bfae2c87514c588cba35f6b4801ae52c` |
+| Roadmap version | `1.1.0` |
+| Records rendered | `1514` |
+| Canonical content checksum | `557adee73cd18df41a57e9e1d8142727cd22c38fa5a1c9a938778cdaaca90e72` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.

@@ -5,7 +5,8 @@ File: roadmap_data.py
 Authoritative structured roadmap data for the NPP engineering roadmap.
 Visible milestone numbers are positional and may be renumbered after insertion.
 Internal record IDs are derived from semantic title paths so ordinary number
-changes do not break identity. M001-M006 are COMPLETED; M007 onward PLANNED.
+changes do not break identity. Completed milestone rows are preserved; new scope
+is appended only to planned milestones and new planned root milestones.
 """
 from __future__ import annotations
 from hashlib import sha256
@@ -15,10 +16,10 @@ from typing import Final, Iterable, Mapping
 STATUS_COMPLETED: Final[str] = "COMPLETED"
 STATUS_PLANNED: Final[str] = "PLANNED"
 ALLOWED_STATUSES: Final[frozenset[str]] = frozenset({STATUS_COMPLETED, STATUS_PLANNED})
-ROADMAP_VERSION: Final[str] = "1.0.0"
+ROADMAP_VERSION: Final[str] = "1.1.0"
 ROADMAP_TITLE: Final[str] = "Nexa Provider Platform — Final Scope Engineering Roadmap"
 ROADMAP_START: Final[str] = "M001"
-ROADMAP_END: Final[str] = "M022.8"
+ROADMAP_END: Final[str] = "M030.12"
 
 _ROADMAP_OUTLINE: Final[str] = r"""
 C|M001|Project Foundation
@@ -222,6 +223,21 @@ P|M009.8.3|Email Verification Lifecycle
 P|M009.8.4|Email History Preservation
 P|M009.8.5|Production Email Activation
 P|M009.8.6|Email Lifecycle Tests
+P|M009.9|Geography and Community Catalogue
+P|M009.9.1|Country Registry
+P|M009.9.2|Province and State Registry
+P|M009.9.3|District Registry
+P|M009.9.4|Ward Registry
+P|M009.9.5|Village and Locality Registry
+P|M009.9.6|Estate and Neighbourhood Registry
+P|M009.9.7|Address and Place Reference Model
+P|M009.9.8|Road and Route Catalogue
+P|M009.9.9|Market and Trading-Centre Catalogue
+P|M009.9.10|Public-Facility Location Catalogue
+P|M009.9.11|Geographic Hierarchy Validation
+P|M009.9.12|Geography Events
+P|M009.9.13|Geography APIs
+P|M009.9.14|Geography Tests
 P|M010|National Identity Platform
 P|M010.1|Birth Registry
 P|M010.1.1|Birth Reference Contracts
@@ -278,6 +294,42 @@ P|M010.6.3|Citizen ID Card Rendering
 P|M010.6.4|Secure Identity Storage
 P|M010.6.5|Identity Document Delivery
 P|M010.6.6|Identity Asset Tests
+P|M010.7|Civil Registration and Birth Provenance
+P|M010.7.1|Pregnancy Record Contracts
+P|M010.7.2|Healthcare Facility Registry Link
+P|M010.7.3|Birth Attendant Registry Link
+P|M010.7.4|Hospital Birth Event
+P|M010.7.5|Home Birth Event
+P|M010.7.6|Late Birth Registration
+P|M010.7.7|Birth Verification Workflow
+P|M010.7.8|Birth Certificate Issuance
+P|M010.7.9|Birth Certificate Amendment by Event
+P|M010.7.10|Birth Certificate Lifecycle
+P|M010.7.11|Civil Registration Audit
+P|M010.7.12|Civil Registration Tests
+P|M010.8|Household and Family Relationships
+P|M010.8.1|Household Contracts
+P|M010.8.2|Household Identifier Generator
+P|M010.8.3|Parent-to-Child Relationships
+P|M010.8.4|Guardian Relationships
+P|M010.8.5|Dependant Relationships
+P|M010.8.6|Spouse and Partner Relationships
+P|M010.8.7|Household Membership Lifecycle
+P|M010.8.8|Household Residence Linking
+P|M010.8.9|Household Events
+P|M010.8.10|Household APIs
+P|M010.8.11|Household Tests
+P|M010.9|Citizen Life Status Foundation
+P|M010.9.1|Life Status Contracts
+P|M010.9.2|Minor and Adult Status Derivation
+P|M010.9.3|Marriage Registration Link
+P|M010.9.4|Retirement Status Link
+P|M010.9.5|Death Registration
+P|M010.9.6|Deceased Identity Protection
+P|M010.9.7|Estate and Inheritance Reference Foundation
+P|M010.9.8|Life Status Events
+P|M010.9.9|Life Status APIs
+P|M010.9.10|Life Status Tests
 P|M011|Telecommunications Platform
 P|M011.1|NexaCom Number Registry
 P|M011.1.1|Number Contracts
@@ -305,6 +357,17 @@ P|M011.2.9|SIM Repository
 P|M011.2.10|SIM Events
 P|M011.2.11|SIM APIs
 P|M011.2.12|SIM Tests
+P|M011.3|Telecommunication Usage and Communication Behaviour
+P|M011.3.1|Communication Preference Contracts
+P|M011.3.2|Preferred Contact Method
+P|M011.3.3|Language Preference
+P|M011.3.4|Number Usage History
+P|M011.3.5|SIM Usage History
+P|M011.3.6|Communication Availability State
+P|M011.3.7|Communication Reputation Signals
+P|M011.3.8|Usage Events
+P|M011.3.9|Usage APIs
+P|M011.3.10|Usage Tests
 P|M012|Financial Identity, Banking and Payment Infrastructure
 P|M012.1|NRA Registry
 P|M012.1.1|NRA PIN Contracts
@@ -720,6 +783,33 @@ P|M012.8.3|Tap-Only Simulation Policy
 P|M012.8.4|PIN Authorization Policy
 P|M012.8.5|Payment Capability Resolution
 P|M012.8.6|Payment Mode Tests
+P|M012.9|Central Monetary Authority
+P|M012.9.1|Monetary Authority Contracts
+P|M012.9.2|Currency Registry
+P|M012.9.3|Currency Issuance and Withdrawal
+P|M012.9.4|Commercial Bank Licensing
+P|M012.9.5|Reserve Requirement Policy
+P|M012.9.6|Policy Interest Rate
+P|M012.9.7|Inflation Observation Model
+P|M012.9.8|Interbank Settlement Foundation
+P|M012.9.9|Cash Circulation Model
+P|M012.9.10|Digital Currency Foundation
+P|M012.9.11|Monetary Policy Events
+P|M012.9.12|Monetary Authority APIs
+P|M012.9.13|Monetary Authority Audit
+P|M012.9.14|Monetary Authority Tests
+P|M012.10|Credit, Insurance and Long-Term Finance Foundation
+P|M012.10.1|Credit Bureau Registry
+P|M012.10.2|Loan Product Registry
+P|M012.10.3|Loan Application Lifecycle
+P|M012.10.4|Credit Assessment Contracts
+P|M012.10.5|Insurance Institution Registry
+P|M012.10.6|Insurance Product Registry
+P|M012.10.7|Policy and Claim Lifecycle
+P|M012.10.8|Pension Fund Registry
+P|M012.10.9|Pension Contribution Lifecycle
+P|M012.10.10|Long-Term Finance Events
+P|M012.10.11|Long-Term Finance Tests
 P|M013|Business and Employment Registries
 P|M013.1|Business Registry
 P|M013.1.1|Business Contracts
@@ -762,6 +852,43 @@ P|M013.4.7|Merchant Lifecycle
 P|M013.4.8|Merchant Events
 P|M013.4.9|Merchant APIs
 P|M013.4.10|Merchant Tests
+P|M013.5|Business Type and Economic-Actor Foundation
+P|M013.5.1|Business Type Contracts
+P|M013.5.2|Sole Trader Model
+P|M013.5.3|Partnership Model
+P|M013.5.4|Company Model
+P|M013.5.5|Cooperative Model
+P|M013.5.6|Non-Governmental Organisation Model
+P|M013.5.7|Informal Business Model
+P|M013.5.8|Home Business Model
+P|M013.5.9|Street Vendor Model
+P|M013.5.10|Farmer and Producer Model
+P|M013.5.11|Manufacturer Model
+P|M013.5.12|Wholesaler and Distributor Model
+P|M013.5.13|Importer and Exporter Model
+P|M013.5.14|Seasonal Business Model
+P|M013.5.15|Business Type Validation
+P|M013.5.16|Business Type Tests
+P|M013.6|Employment Marketplace
+P|M013.6.1|Vacancy Registry
+P|M013.6.2|Job Requirement Contracts
+P|M013.6.3|Verified Citizen CV Profile
+P|M013.6.4|CV Compilation from Verified History
+P|M013.6.5|Citizen CV Review
+P|M013.6.6|Job Discovery and Notification
+P|M013.6.7|Citizen Application Decision
+P|M013.6.8|Job Application Submission
+P|M013.6.9|Shortlisting
+P|M013.6.10|Interview Lifecycle
+P|M013.6.11|Employment Offer
+P|M013.6.12|Offer Acceptance and Rejection
+P|M013.6.13|Employment Onboarding
+P|M013.6.14|Promotion and Transfer
+P|M013.6.15|Resignation and Termination
+P|M013.6.16|Retirement from Employment
+P|M013.6.17|Employment Marketplace Events
+P|M013.6.18|Employment Marketplace APIs
+P|M013.6.19|Employment Marketplace Tests
 P|M014|Device Registry Platform
 P|M014.1|Device Contracts
 P|M014.2|Device ID Generator
@@ -844,6 +971,75 @@ P|M016.17.5|Invalid Supply Chain Simulation
 P|M016.17.6|Recovery Scenario Simulation
 P|M016.17.7|Error Simulation Analytics
 P|M016.17.8|Error Simulation Tests
+P|M016.18|Citizen Behaviour Engine
+P|M016.18.1|Needs and Wants Model
+P|M016.18.2|Citizen Goal Model
+P|M016.18.3|Preference Model
+P|M016.18.4|Memory and Knowledge Model
+P|M016.18.5|Habit Formation and Change
+P|M016.18.6|Budgeting Behaviour
+P|M016.18.7|Shopping Behaviour
+P|M016.18.8|Saving Behaviour
+P|M016.18.9|Borrowing Behaviour
+P|M016.18.10|Investment Behaviour
+P|M016.18.11|Learning and Skill Development
+P|M016.18.12|Citizen Decision Audit
+P|M016.18.13|Citizen Behaviour Tests
+P|M016.19|Household Simulation
+P|M016.19.1|Household Budget
+P|M016.19.2|Household Shopping List
+P|M016.19.3|Rent and Housing Costs
+P|M016.19.4|Utilities and Household Services
+P|M016.19.5|Household Asset Ownership
+P|M016.19.6|Household Income Pooling
+P|M016.19.7|Household Dependency Costs
+P|M016.19.8|Household Decision Events
+P|M016.19.9|Household Simulation Tests
+P|M016.20|Business Behaviour Engine
+P|M016.20.1|Business Goal Model
+P|M016.20.2|Hiring Behaviour
+P|M016.20.3|Pricing Behaviour
+P|M016.20.4|Inventory Replenishment Behaviour
+P|M016.20.5|Marketing Behaviour
+P|M016.20.6|Competition Response
+P|M016.20.7|Expansion and Relocation
+P|M016.20.8|Partnership Formation
+P|M016.20.9|Distress and Bankruptcy
+P|M016.20.10|Business Behaviour Events
+P|M016.20.11|Business Behaviour Tests
+P|M016.21|Economic Behaviour Engine
+P|M016.21.1|Supply and Demand Model
+P|M016.21.2|Price Response Model
+P|M016.21.3|Consumer Confidence Model
+P|M016.21.4|Employment-Market Response
+P|M016.21.5|Interest-Rate Response
+P|M016.21.6|Inflation Response
+P|M016.21.7|Seasonality
+P|M016.21.8|Economic Shock Scenarios
+P|M016.21.9|Economic Behaviour Events
+P|M016.21.10|Economic Behaviour Tests
+P|M016.22|Society and Social Influence Simulation
+P|M016.22.1|Friendship Relationships
+P|M016.22.2|Neighbour Relationships
+P|M016.22.3|Community Group Relationships
+P|M016.22.4|Social Learning
+P|M016.22.5|Technology Adoption
+P|M016.22.6|Consumer Trend Diffusion
+P|M016.22.7|Language and Translation Effects
+P|M016.22.8|Voluntary Association Decisions
+P|M016.22.9|Social Influence Events
+P|M016.22.10|Society Simulation Tests
+P|M016.23|Institutional Neutrality and Citizen Choice
+P|M016.23.1|Institutional Neutrality Contracts
+P|M016.23.2|No Forced Membership Rule
+P|M016.23.3|No Forced Belief Rule
+P|M016.23.4|No Forced Donation Rule
+P|M016.23.5|Citizen Consent and Refusal
+P|M016.23.6|Competing Commitments and Time Availability
+P|M016.23.7|Employment and Institutional Participation Conflicts
+P|M016.23.8|Evidence-Based Participation Decisions
+P|M016.23.9|Neutrality Audit
+P|M016.23.10|Neutrality Tests
 P|M017|Data Export and Training-Asset Foundation
 P|M017.1|JSON Export
 P|M017.2|JSONL Export
@@ -877,6 +1073,19 @@ P|M017.25.4|Storage Quota Enforcement
 P|M017.25.5|Cross-Provider Export Compatibility
 P|M017.25.6|Training-Asset Export Tests
 P|M017.26|Training-Asset Stabilization
+P|M017.27|Longitudinal and Behavioural Dataset Generation
+P|M017.27.1|Citizen Timeline Dataset
+P|M017.27.2|Household Timeline Dataset
+P|M017.27.3|Education Timeline Dataset
+P|M017.27.4|Employment Timeline Dataset
+P|M017.27.5|Business Timeline Dataset
+P|M017.27.6|Financial Timeline Dataset
+P|M017.27.7|Healthcare Timeline Dataset
+P|M017.27.8|Supply-Chain Timeline Dataset
+P|M017.27.9|Government and Policy Timeline Dataset
+P|M017.27.10|Institutional Participation Timeline Dataset
+P|M017.27.11|Cross-Lifecycle Causal Link Metadata
+P|M017.27.12|Longitudinal Dataset Quality Tests
 P|M018|PostgreSQL and Supabase Persistence
 P|M018.1|PostgreSQL Architecture
 P|M018.2|Database Schema Foundation
@@ -1067,6 +1276,266 @@ P|M022.5|Version Tag
 P|M022.6|Production Deployment
 P|M022.7|Production Verification
 P|M022.8|NPP Alpha Released
+P|M023|Education, Skills and Knowledge Platform
+P|M023.1|Education Institution Registry
+P|M023.2|School and Campus Registry
+P|M023.3|Programme and Course Registry
+P|M023.4|Student Registry
+P|M023.5|Admission Lifecycle
+P|M023.6|Attendance and Participation
+P|M023.7|Assessment and Examination
+P|M023.8|Qualification and Certificate Registry
+P|M023.9|Skill and Competency Registry
+P|M023.10|Apprenticeship and Vocational Training
+P|M023.11|Education Finance and Sponsorship
+P|M023.12|Education Events
+P|M023.13|Education APIs
+P|M023.14|Education Audit
+P|M023.15|Education Tests
+P|M024|Healthcare and Human Development Platform
+P|M024.1|Healthcare Provider Registry
+P|M024.2|Hospital and Clinic Registry
+P|M024.3|Healthcare Worker Registry
+P|M024.4|Patient Encounter Lifecycle
+P|M024.5|Maternal and Child Health
+P|M024.6|Immunisation Registry
+P|M024.7|Diagnosis and Treatment Records
+P|M024.8|Medicine and Pharmacy Foundation
+P|M024.9|Health Insurance Integration
+P|M024.10|Public Health Events
+P|M024.11|Healthcare APIs
+P|M024.12|Healthcare Audit
+P|M024.13|Healthcare Tests
+P|M025|Domestic Economy, Commerce and Supply Chains
+P|M025.1|Product and Service Catalogue
+P|M025.2|Retail Shop and Market Operations
+P|M025.3|Customer Shopping Journey
+P|M025.4|Basket and Shelf Selection Events
+P|M025.5|Checkout and Payment Handoff
+P|M025.6|Inventory and Warehousing
+P|M025.7|Procurement and Supplier Relationships
+P|M025.8|Transport and Logistics
+P|M025.9|Agriculture and Food Supply Chains
+P|M025.10|Manufacturing and Processing
+P|M025.11|Wholesale and Distribution
+P|M025.12|Domestic Trade
+P|M025.13|Competition and Market Structure
+P|M025.14|Economic Statistics
+P|M025.15|Commerce and Supply-Chain Events
+P|M025.16|Commerce APIs
+P|M025.17|Commerce Tests
+P|M026|Government, Constitution and Policy Platform
+P|M026.1|Government Institution Registry
+P|M026.2|Ministry and Agency Registry
+P|M026.3|Civil Service Registry
+P|M026.4|Constitutional Rule Engine
+P|M026.5|Legal Eligibility and Age Rules
+P|M026.6|Treasury and Public Accounts
+P|M026.7|Revenue Authority and Taxation
+P|M026.8|National Statistics Bureau
+P|M026.9|Public Budget Lifecycle
+P|M026.10|Public Service Programme Registry
+P|M026.11|Policy Proposal and Scenario Model
+P|M026.12|Policy Activation and Effective Dates
+P|M026.13|Policy Impact Propagation
+P|M026.14|Government Events
+P|M026.15|Government APIs
+P|M026.16|Government Audit
+P|M026.17|Government Tests
+P|M026.18|Legislative Platform
+P|M026.18.1|Bill Registry
+P|M026.18.2|Committee Workflow
+P|M026.18.3|Parliamentary Session Model
+P|M026.18.4|Voting and Passage Rules
+P|M026.18.5|Law Assent and Publication
+P|M026.18.6|Law Commencement
+P|M026.18.7|Law Amendment and Repeal
+P|M026.18.8|Policy Transition Simulation
+P|M026.18.9|Legislative Events
+P|M026.18.10|Legislative Tests
+P|M026.19|Election and Government-Priority Simulation
+P|M026.19.1|Election Eligibility Rules
+P|M026.19.2|Electoral Administration Foundation
+P|M026.19.3|Government Priority Profiles
+P|M026.19.4|Policy Transition Scenarios
+P|M026.19.5|Public Spending Priority Changes
+P|M026.19.6|Election Events
+P|M026.19.7|Election Simulation Tests
+P|M027|Faith and Religious Institution Platform
+P|M027.1|Institutional Neutrality Foundation
+P|M027.1.1|Religious Freedom and Voluntary Participation
+P|M027.1.2|Citizen Belief Privacy
+P|M027.1.3|No Forced Conversion
+P|M027.1.4|No Forced Attendance
+P|M027.1.5|No Forced Donation
+P|M027.1.6|Equal Institutional Treatment
+P|M027.1.7|Religious Neutrality Audit
+P|M027.1.8|Religious Neutrality Tests
+P|M027.2|Faith and Belief Registry
+P|M027.2.1|Faith Tradition Contracts
+P|M027.2.2|Belief Profile Metadata
+P|M027.2.3|Doctrine and Teaching Reference Assets
+P|M027.2.4|Sacred Text Reference Metadata
+P|M027.2.5|Practice and Observance Metadata
+P|M027.2.6|Faith Tradition Versioning
+P|M027.2.7|Faith Registry Tests
+P|M027.3|Initial Faith Tradition Profiles
+P|M027.3.1|Catholic Tradition Profile
+P|M027.3.2|Anglican Tradition Profile
+P|M027.3.3|Islamic Tradition Profile
+P|M027.3.4|The Church of Jesus Christ of Latter-day Saints Tradition Profile
+P|M027.3.5|Tradition-Specific Governance Validation
+P|M027.3.6|Initial Tradition Profile Tests
+P|M027.4|Religious Organisation Registry
+P|M027.4.1|Organisation Contracts
+P|M027.4.2|Headquarters and Jurisdiction Model
+P|M027.4.3|Local Congregation Registry
+P|M027.4.4|Religious Office and Authority Registry
+P|M027.4.5|Volunteer and Missionary Assignment Registry
+P|M027.4.6|Organisation Lifecycle
+P|M027.4.7|Organisation Events
+P|M027.4.8|Organisation APIs
+P|M027.4.9|Organisation Tests
+P|M027.5|Religious Membership and Participation
+P|M027.5.1|Membership Contracts
+P|M027.5.2|Citizen Interest and Enquiry
+P|M027.5.3|Teaching and Instruction Sessions
+P|M027.5.4|Citizen Understanding and Language Effects
+P|M027.5.5|Citizen Acceptance or Refusal
+P|M027.5.6|Membership Admission Requirements
+P|M027.5.7|Baptism or Initiation Authority Validation
+P|M027.5.8|Membership Confirmation and Recording
+P|M027.5.9|Attendance and Participation
+P|M027.5.10|Inactivity without Automatic Removal
+P|M027.5.11|Membership Transfer and Migration
+P|M027.5.12|Membership Lifecycle Events
+P|M027.5.13|Membership Tests
+P|M027.6|Missionary and Outreach Operations
+P|M027.6.1|Missionary Department Registry
+P|M027.6.2|Mission and Area Assignment
+P|M027.6.3|International Missionary Visa Dependency
+P|M027.6.4|Missionary Couple Assignment
+P|M027.6.5|Local Missionary Calling
+P|M027.6.6|Door-to-Door Outreach
+P|M027.6.7|Market and Community Outreach
+P|M027.6.8|Teaching Appointment Scheduling
+P|M027.6.9|Local Language Translation Support
+P|M027.6.10|Missionary Material Inventory
+P|M027.6.11|Outreach Events
+P|M027.6.12|Outreach Tests
+P|M027.7|Latter-day Saint Organisational Lifecycle Profile
+P|M027.7.1|Zero-Member Country Initial State
+P|M027.7.2|Migrant Member and Family Arrival
+P|M027.7.3|Home-Based Group Formation
+P|M027.7.4|Priesthood Authority Validation
+P|M027.7.5|Baptism and Confirmation Authority Rules
+P|M027.7.6|Priesthood Ordination Lifecycle
+P|M027.7.7|Group Leader Assignment
+P|M027.7.8|Branch Formation Request
+P|M027.7.9|Branch Organisation
+P|M027.7.10|Ward Formation
+P|M027.7.11|Stake Formation
+P|M027.7.12|Mission Formation
+P|M027.7.13|Temple District Formation
+P|M027.7.14|Temple Planning and Construction Lifecycle
+P|M027.7.15|Latter-day Saint Lifecycle Tests
+P|M027.8|Religious Programmes and Internal Organisations
+P|M027.8.1|Children and Primary Programme
+P|M027.8.2|Youth Programme
+P|M027.8.3|Young Single Adult Programme
+P|M027.8.4|Women and Relief Society Organisation
+P|M027.8.5|Men and Elders Quorum Organisation
+P|M027.8.6|Religious Education Programme
+P|M027.8.7|Leadership Training
+P|M027.8.8|Programme Participation Events
+P|M027.8.9|Programme Tests
+P|M027.9|Religious Finance and Property
+P|M027.9.1|Religious Account Ownership
+P|M027.9.2|Voluntary Tithing and Donation Decisions
+P|M027.9.3|Fast Offering and Charitable Fund Model
+P|M027.9.4|Headquarters Funding Transfers
+P|M027.9.5|Local Budget Allocation
+P|M027.9.6|Land Search and Purchase
+P|M027.9.7|Building Approval and Construction
+P|M027.9.8|Meetinghouse Operations
+P|M027.9.9|Temple Property Operations
+P|M027.9.10|Religious Finance Audit
+P|M027.9.11|Religious Finance Tests
+P|M027.10|Faith, Employment and Social Effects
+P|M027.10.1|Work-Schedule and Worship Conflict
+P|M027.10.2|Religious Accommodation by Employers
+P|M027.10.3|Citizen Employment Preference Effects
+P|M027.10.4|Family-Level Mixed Participation
+P|M027.10.5|Community Acceptance and Resistance
+P|M027.10.6|Institutional Growth without System Bias
+P|M027.10.7|Social-Effect Events
+P|M027.10.8|Social-Effect Tests
+P|M027.11|Faith Knowledge and Training Assets
+P|M027.11.1|Source Provenance Requirements
+P|M027.11.2|Tradition-Specific Terminology
+P|M027.11.3|Teaching Material Metadata
+P|M027.11.4|Translation Dataset Governance
+P|M027.11.5|Religious Knowledge Safety and Neutrality
+P|M027.11.6|NexVox Institutional-Learning Export
+P|M027.11.7|No Persuasion Training Constraint
+P|M027.11.8|Faith Dataset Quality Tests
+P|M028|International Relations, Migration and Trade Platform
+P|M028.1|Multi-Country Registry
+P|M028.2|Nationality and Citizenship Relationships
+P|M028.3|Passport Registry
+P|M028.4|Visa Registry
+P|M028.5|Visa Application Lifecycle
+P|M028.6|Immigration and Border Entry
+P|M028.7|Residence and Migration Lifecycle
+P|M028.8|Customs Foundation
+P|M028.9|Port and Airport Registry
+P|M028.10|International Cargo and Logistics
+P|M028.11|International Trade
+P|M028.12|Trade Agreements
+P|M028.13|Exchange Rates
+P|M028.14|Foreign Investment
+P|M028.15|Tourism
+P|M028.16|Diplomatic Relationship Model
+P|M028.17|International Events
+P|M028.18|International APIs
+P|M028.19|International Audit
+P|M028.20|International Tests
+P|M029|NexVox Observational Intelligence Platform
+P|M029.1|Observational Intelligence Contracts
+P|M029.2|Read-Only Event and Read-Model Access
+P|M029.3|Pattern Detection
+P|M029.4|Trend Detection
+P|M029.5|Risk Detection
+P|M029.6|Market-Gap Detection
+P|M029.7|Supply-Chain Gap Detection
+P|M029.8|Citizen Opportunity Analysis
+P|M029.9|Business Opportunity Analysis
+P|M029.10|Investment Opportunity Analysis
+P|M029.11|Policy Impact Analysis
+P|M029.12|Scenario Comparison
+P|M029.13|Evidence and Provenance Binding
+P|M029.14|Confidence Scoring
+P|M029.15|Explainable Recommendations
+P|M029.16|Recommendation Review and Feedback
+P|M029.17|No Autonomous Execution Boundary
+P|M029.18|No Citizen Impersonation Boundary
+P|M029.19|No Forced Institutional Participation Boundary
+P|M029.20|NexVox Audit
+P|M029.21|NexVox APIs
+P|M029.22|NexVox Tests
+P|M030|Sovereign Simulation Integration and Stabilisation
+P|M030.1|Cross-Lifecycle Integration
+P|M030.2|Village Simulation Baseline
+P|M030.3|Ward and District Scaling
+P|M030.4|Province and National Scaling
+P|M030.5|Multi-Country Scaling
+P|M030.6|Deterministic Society Replay
+P|M030.7|Causal Event-Graph Verification
+P|M030.8|Institutional Neutrality Verification
+P|M030.9|Simulation-to-Production Provider Replacement
+P|M030.10|Sovereign Simulation Load Testing
+P|M030.11|Sovereign Simulation Release Candidate
+P|M030.12|Sovereign Simulation Platform Stabilised
 """.strip()
 
 
@@ -1144,8 +1613,12 @@ def _validate(records: Iterable[Mapping[str, object]]) -> None:
         if parent is not None and parent not in known:
             raise ValueError(f"Missing parent {parent} for {row['number']}")
     roots = [number for number in numbers if "." not in number]
-    if roots != [f"M{value:03d}" for value in range(1, 23)]:
-        raise ValueError("Root milestones must be sequential from M001 to M022.")
+    end_root = int(ROADMAP_END.split(".", 1)[0][1:])
+    expected_roots = [f"M{value:03d}" for value in range(1, end_root + 1)]
+    if roots != expected_roots:
+        raise ValueError(
+            f"Root milestones must be sequential from M001 to M{end_root:03d}."
+        )
 
 
 _MUTABLE_MILESTONES = _parse_rows(_ROADMAP_OUTLINE)
