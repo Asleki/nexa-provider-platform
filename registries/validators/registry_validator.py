@@ -3,7 +3,7 @@
 Nexa Provider Platform
 File: registries/validators/registry_validator.py
 Layer: Registry Validation Foundation
-Milestone: NPP-M006.2 — Registry Foundation
+Milestone: NPP-M008.9 — Registry Validation
 ============================================================
 
 Purpose
@@ -27,6 +27,7 @@ import re
 from collections.abc import Iterable, Mapping
 from typing import Final
 
+from registries.core.base_registry import BaseRegistry
 from registries.core.registry_definition import RegistryDefinition
 
 from .validation_collector import RegistryValidationCollector
@@ -34,6 +35,7 @@ from .validation_message import (
     RegistryValidationMessage,
     ValidationSeverity,
 )
+from .validation_errors import InvalidRegistryDefinitionError
 from .validation_result import RegistryValidationResult
 
 
@@ -67,7 +69,7 @@ class RegistryValidator:
     @classmethod
     def validate(
         cls,
-        definition: RegistryDefinition,
+        definition: RegistryDefinition | BaseRegistry,
         *,
         existing_registry_ids: Iterable[str] = (),
         existing_registry_codes: Iterable[str] = (),
@@ -92,10 +94,7 @@ class RegistryValidator:
             definitions.
         """
 
-        if not isinstance(definition, RegistryDefinition):
-            raise TypeError(
-                "definition must be a RegistryDefinition."
-            )
+        definition = cls._unwrap_definition(definition)
 
         collector = RegistryValidationCollector()
 
@@ -128,6 +127,40 @@ class RegistryValidator:
         )
 
         return collector.build()
+
+
+    @classmethod
+    def validate_or_raise(
+        cls,
+        definition: RegistryDefinition | BaseRegistry,
+        *,
+        existing_registry_ids: Iterable[str] = (),
+        existing_registry_codes: Iterable[str] = (),
+        reserved_registry_codes: Iterable[str] = (),
+    ) -> RegistryValidationResult:
+        """Validate and raise InvalidRegistryDefinitionError on errors."""
+
+        result = cls.validate(
+            definition,
+            existing_registry_ids=existing_registry_ids,
+            existing_registry_codes=existing_registry_codes,
+            reserved_registry_codes=reserved_registry_codes,
+        )
+        if result.invalid:
+            raise InvalidRegistryDefinitionError(result)
+        return result
+
+    @staticmethod
+    def _unwrap_definition(
+        value: RegistryDefinition | BaseRegistry,
+    ) -> RegistryDefinition:
+        if isinstance(value, BaseRegistry):
+            value = value.definition
+        if not isinstance(value, RegistryDefinition):
+            raise TypeError(
+                "definition must be a RegistryDefinition or BaseRegistry."
+            )
+        return value
 
     @classmethod
     def _validate_registry_id(

@@ -118,7 +118,7 @@ C|M008.5|Memory Registry Repository
 C|M008.6|Registry Factory
 C|M008.7|Registry Catalogue
 C|M008.8|Registry Lifecycle
-P|M008.9|Registry Validation
+C|M008.9|Registry Validation
 P|M008.10|Registry Events
 P|M008.11|Registry APIs
 P|M008.12|Registry Audit Integration
