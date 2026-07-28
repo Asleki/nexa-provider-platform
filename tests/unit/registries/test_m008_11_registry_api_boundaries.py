@@ -33,9 +33,7 @@ def test_registry_api_does_not_publish_persist_events_or_clear_repository():
     for token in (".publish(","eventrepository","auditrepository","repository.clear(","apirouter","fastapi"):
         assert token not in source
 
-def test_later_audit_metadata_relationship_layers_remain_absent():
-    path=ROOT/"registries"/"metadata"
-    assert not path.exists() or not any(path.glob("*.py"))
+def test_metadata_and_relationship_layers_do_not_leak_into_registry_api():
     api_source="\n".join(path.read_text() for path in API.glob("*.py"))
-    for token in ("training_eligibility","retention_policy","relationship_provenance"):
+    for token in ("RegistryMetadataProfile","RegistryMetadataValidator","relationship_provenance"):
         assert token not in api_source

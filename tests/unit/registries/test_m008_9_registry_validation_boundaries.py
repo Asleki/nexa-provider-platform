@@ -46,22 +46,16 @@ def test_validation_reuses_existing_registry_definition_and_base_registry():
     assert RegistryValidator.validate(BaseRegistry(definition)).valid
 
 
-def test_later_m008_placeholders_remain_unimplemented():
-    # M008.10 Registry Events is now implemented.
-    #
-    # This advancing boundary preserves the original M008.9 validation tests
-    # while continuing to guard the still-future M008.11+ registry layers.
-    for folder in ("apis", "metadata"):
-        path = ROOT / "registries" / folder
-        assert not path.exists() or not any(path.glob("*.py"))
-
+def test_later_m008_layers_do_not_leak_into_registry_validation():
+    # M008.15 metadata contracts now exist in their own package. Preserve the
+    # original M008.9 boundary by ensuring the earlier validator package does
+    # not absorb metadata or relationship responsibilities.
     validation_source = "\n".join(
         path.read_text() for path in (ROOT / "registries" / "validators").glob("*.py")
     )
-
     for token in (
-        "training_eligibility",
-        "retention_policy",
+        "RegistryMetadataProfile",
+        "RegistryMetadataValidator",
         "relationship_provenance",
     ):
         assert token not in validation_source

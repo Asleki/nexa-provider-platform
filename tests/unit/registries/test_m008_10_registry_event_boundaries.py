@@ -72,15 +72,10 @@ def test_event_factory_only_constructs_and_does_not_execute_side_effects():
         assert token not in source.lower()
 
 
-def test_later_m008_audit_metadata_and_relationship_layers_remain_absent():
-    # M008.11 Registry APIs is now implemented; preserve the M008.10 event
-    # boundaries while advancing the future-layer guard to M008.12+.
-    for folder in ("apis", "metadata"):
-        path = ROOT / "registries" / folder
-        assert not path.exists() or not any(path.glob("*.py"))
-
-    api_source = "\n".join(
-        path.read_text() for path in (ROOT / "registries" / "api").glob("*.py")
-    )
-    for token in ("training_eligibility", "retention_policy", "relationship_provenance"):
-        assert token not in api_source
+def test_later_m008_metadata_and_relationship_layers_do_not_leak_into_events():
+    # M008.15 metadata contracts now exist, but registry events remain an
+    # independent M008.10 concern and must not import or execute metadata or
+    # relationship policy.
+    event_source = "\n".join(path.read_text() for path in EVENTS.glob("*.py"))
+    for token in ("RegistryMetadataProfile", "RegistryMetadataValidator", "relationship_provenance"):
+        assert token not in event_source

@@ -35,20 +35,22 @@ def test_stabilization_suite_is_additive() -> None:
     }.issubset({path.name for path in suite.glob("test_*.py")})
 
 
-def test_m008_14_does_not_introduce_future_registry_features() -> None:
-    forbidden = {
-        "registry_metadata.py",
-        "registry_capability.py",
-        "data_classification_metadata.py",
-        "training_eligibility_metadata.py",
-        "provenance_metadata.py",
-        "retention_metadata.py",
-        "relationship_api.py",
-        "school_registry.py",
-        "bank_registry.py",
-        "business_registry.py",
-        "birth_registry.py",
-        "sim_registry.py",
-    }
-    present = {path.name for path in REGISTRY_ROOT.rglob("*.py")}
-    assert forbidden.isdisjoint(present)
+def test_m008_14_stabilization_remains_separate_from_later_features() -> None:
+    # M008.15 metadata now exists as a dedicated later package. The M008.14
+    # stabilization files themselves must remain free of metadata, domain
+    # registry, and relationship implementation.
+    stabilization_files = (
+        REGISTRY_ROOT / "audit" / "registry_audit_result.py",
+        REGISTRY_ROOT / "ports" / "registry_audit_port.py",
+        REGISTRY_ROOT / "audit" / "__init__.py",
+    )
+    source = "\n".join(path.read_text() for path in stabilization_files)
+    for token in (
+        "RegistryMetadataProfile",
+        "RegistryCapability",
+        "relationship_api",
+        "SchoolRegistry",
+        "BankRegistry",
+        "BusinessRegistry",
+    ):
+        assert token not in source
