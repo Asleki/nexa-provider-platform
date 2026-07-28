@@ -125,7 +125,7 @@ C|M008.12|Registry Audit Integration
 C|M008.13|Registry Tests
 C|M008.14|Registry Stabilization
 C|M008.15|Registry Metadata and Capability Contracts
-P|M008.15.1|Registry Capability Model
+C|M008.15.1|Registry Capability Model
 P|M008.15.2|Data Classification Metadata
 P|M008.15.3|Training Eligibility Metadata
 P|M008.15.4|Provenance Metadata
