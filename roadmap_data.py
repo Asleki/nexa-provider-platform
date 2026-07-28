@@ -123,7 +123,7 @@ C|M008.10|Registry Events
 C|M008.11|Registry APIs
 C|M008.12|Registry Audit Integration
 C|M008.13|Registry Tests
-P|M008.14|Registry Stabilization
+C|M008.14|Registry Stabilization
 P|M008.15|Registry Metadata and Capability Contracts
 P|M008.15.1|Registry Capability Model
 P|M008.15.2|Data Classification Metadata
