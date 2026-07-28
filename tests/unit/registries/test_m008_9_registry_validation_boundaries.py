@@ -51,7 +51,7 @@ def test_later_m008_placeholders_remain_unimplemented():
     #
     # This advancing boundary preserves the original M008.9 validation tests
     # while continuing to guard the still-future M008.11+ registry layers.
-    for folder in ("api", "apis", "metadata"):
+    for folder in ("apis", "metadata"):
         path = ROOT / "registries" / folder
         assert not path.exists() or not any(path.glob("*.py"))
 
