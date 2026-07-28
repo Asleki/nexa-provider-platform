@@ -7,6 +7,7 @@ def test_public_exports_are_exact_and_unique() -> None:
         "REGISTRY_REPOSITORY_ERROR_PREFIX",
         "BaseRegistryRepository",
         "RegistryAddError",
+        "RegistryAuditPort",
         "RegistryClearError",
         "RegistryCountError",
         "RegistryDuplicateError",
@@ -34,7 +35,6 @@ def test_future_placeholder_boundaries_are_not_exported() -> None:
     forbidden = {
         "IdentifierRepository",
         "SequenceRepository",
-        "RegistryAuditPort",
         "MemoryRegistryRepository",
         "RegistryRepositoryFactory",
     }

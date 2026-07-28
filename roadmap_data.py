@@ -121,7 +121,7 @@ C|M008.8|Registry Lifecycle
 C|M008.9|Registry Validation
 C|M008.10|Registry Events
 C|M008.11|Registry APIs
-P|M008.12|Registry Audit Integration
+C|M008.12|Registry Audit Integration
 P|M008.13|Registry Tests
 P|M008.14|Registry Stabilization
 P|M008.15|Registry Metadata and Capability Contracts

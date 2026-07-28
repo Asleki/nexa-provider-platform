@@ -20,7 +20,7 @@ def test_registry_api_is_internal_and_clear_is_not_exposed():
     assert RegistryApi is not None
     assert "clear" not in {item.value for item in RegistryApiOperation}
 
-def test_registry_api_has_no_transport_audit_or_adapter_coupling():
+def test_registry_api_has_no_transport_shared_audit_or_adapter_coupling():
     forbidden=("fastapi","flask","django","requests","httpx","shared.audit","registries.adapters","supabase","database","backend","services")
     violations=[]
     for path in API.glob("*.py"):
@@ -37,5 +37,5 @@ def test_later_audit_metadata_relationship_layers_remain_absent():
     path=ROOT/"registries"/"metadata"
     assert not path.exists() or not any(path.glob("*.py"))
     api_source="\n".join(path.read_text() for path in API.glob("*.py"))
-    for token in ("RegistryAuditPort","training_eligibility","retention_policy","relationship_provenance"):
+    for token in ("training_eligibility","retention_policy","relationship_provenance"):
         assert token not in api_source

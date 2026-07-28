@@ -8,7 +8,7 @@ from typing import Any
 from registries.core import BaseRegistry, RegistryDefinition
 from registries.events import RegistryEventFactory
 from registries.governance import RegistryLifecycle
-from registries.ports import RegistryRepositoryInterface
+from registries.ports import RegistryAuditPort, RegistryRepositoryInterface
 from registries.validators import RegistryValidator
 from shared.events import EventMetadata
 
@@ -31,6 +31,7 @@ class RegistryApi:
         lifecycle: RegistryLifecycle | None = None,
         event_factory: RegistryEventFactory | None = None,
         contract: RegistryApiContract | None = None,
+        audit_port: RegistryAuditPort | None = None,
         clock: Clock | None = None,
     ) -> None:
         if not isinstance(repository, RegistryRepositoryInterface):
@@ -39,6 +40,9 @@ class RegistryApi:
         self._lifecycle = lifecycle or RegistryLifecycle()
         self._event_factory = event_factory or RegistryEventFactory()
         self._contract = contract or RegistryApiContract()
+        if audit_port is not None and not isinstance(audit_port, RegistryAuditPort):
+            raise TypeError("audit_port must implement RegistryAuditPort.")
+        self._audit_port = audit_port
         self._clock = clock or (lambda: datetime.now(timezone.utc))
 
     @property
@@ -55,12 +59,13 @@ class RegistryApi:
             raise TypeError("request must be a RegistryApiRequest.")
         completed_at = self._now()
         if not self.contract.supports(request.operation):
-            return self._failure(request, completed_at, RegistryApiExecutionError(
+            response = self._failure(request, completed_at, RegistryApiExecutionError(
                 f"Operation {request.operation.value!r} is not enabled by the contract."
             ))
+            return self._with_audit(request, response)
         try:
             data, events = self._execute(request)
-            return RegistryApiResponse.succeeded(
+            response = RegistryApiResponse.succeeded(
                 request_id=request.request_id,
                 operation=request.operation,
                 completed_at=completed_at,
@@ -69,7 +74,8 @@ class RegistryApi:
                 metadata={"api": self.contract.name, "api_version": self.contract.version},
             )
         except Exception as exc:
-            return self._failure(request, completed_at, exc)
+            response = self._failure(request, completed_at, exc)
+        return self._with_audit(request, response)
 
     def execute(self, request: RegistryApiRequest) -> RegistryApiResponse:
         """Alias for handle, suitable for application-service callers."""
@@ -168,6 +174,33 @@ class RegistryApi:
                 key: value for key, value in metadata.items()
                 if key not in {"correlation_id", "causation_id", "actor_id", "device_id", "source"}
             },
+        )
+
+    def _with_audit(self, request: RegistryApiRequest, response: RegistryApiResponse) -> RegistryApiResponse:
+        if self._audit_port is None:
+            return response
+        try:
+            result = self._audit_port.record(request=request, response=response)
+            audit_metadata = result.to_metadata()
+        except Exception as exc:
+            audit_metadata = {
+                "audit_attempted": True,
+                "audit_success": False,
+                "audit_error_code": getattr(exc, "error_code", "NPP-REGISTRY-AUDIT-030"),
+                "audit_error_type": type(exc).__name__,
+                "audit_requires_attention": True,
+            }
+        metadata = dict(response.metadata)
+        metadata.update(audit_metadata)
+        if response.success:
+            return RegistryApiResponse.succeeded(
+                request_id=response.request_id, operation=response.operation,
+                completed_at=response.completed_at, data=response.data,
+                events=response.events, metadata=metadata,
+            )
+        return RegistryApiResponse.failed(
+            request_id=response.request_id, operation=response.operation,
+            completed_at=response.completed_at, error=response.error, metadata=metadata,
         )
 
     def _failure(self, request, completed_at, exc):

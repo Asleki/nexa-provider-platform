@@ -82,5 +82,5 @@ def test_later_m008_audit_metadata_and_relationship_layers_remain_absent():
     api_source = "\n".join(
         path.read_text() for path in (ROOT / "registries" / "api").glob("*.py")
     )
-    for token in ("RegistryAuditPort", "training_eligibility", "retention_policy", "relationship_provenance"):
+    for token in ("training_eligibility", "retention_policy", "relationship_provenance"):
         assert token not in api_source

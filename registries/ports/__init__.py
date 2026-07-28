@@ -32,6 +32,7 @@ from .registry_repository_errors import (
 )
 from .registry_repository_result import RegistryRepositoryResult
 from .registry_repository_types import RegistryRepositoryOperation
+from .registry_audit_port import RegistryAuditPort
 
 __all__ = [
     "REGISTRY_REPOSITORY_ERROR_PREFIX",
@@ -53,6 +54,7 @@ __all__ = [
     "RegistryRepositoryError",
     "RegistryRepositoryInterface",
     "RegistryRepositoryOperation",
+    "RegistryAuditPort",
     "RegistryRepositoryOperationError",
     "RegistryRepositoryResult",
     "RegistryStorageError",
