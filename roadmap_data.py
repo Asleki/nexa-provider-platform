@@ -139,7 +139,7 @@ C|M008.16.3|Relationship Direction
 C|M008.16.4|Relationship Constraints
 C|M008.16.5|Relationship Provenance
 C|M008.16.6|Relationship APIs
-P|M008.16.7|Relationship Tests
+C|M008.16.7|Relationship Tests
 P|M008.17|Canonical Dataset Foundation
 P|M009|Data Catalogue and Communication Foundations
 P|M009.1|Name Catalogue
