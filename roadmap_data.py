@@ -127,7 +127,7 @@ C|M008.14|Registry Stabilization
 C|M008.15|Registry Metadata and Capability Contracts
 C|M008.15.1|Registry Capability Model
 C|M008.15.2|Data Classification Metadata
-P|M008.15.3|Training Eligibility Metadata
+C|M008.15.3|Training Eligibility Metadata
 P|M008.15.4|Provenance Metadata
 P|M008.15.5|Retention Metadata
 P|M008.15.6|Registry Metadata Validation
