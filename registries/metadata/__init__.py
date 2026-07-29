@@ -10,6 +10,7 @@ from .registry_metadata_errors import (
 )
 from .registry_metadata_profile import RegistryMetadataProfile
 from .registry_metadata_validator import RegistryMetadataValidator
+from .registry_metadata_validation_errors import InvalidRegistryMetadataError
 from .registry_provenance import RegistryProvenance
 from .registry_provenance_source_type import RegistryProvenanceSourceType
 from .registry_retention import RegistryRetention
@@ -21,6 +22,7 @@ __all__ = [
 "RegistryCapability", "RegistryCapabilityCategory", "RegistryClassificationLevel", "RegistryDataClassification",
 "RegistryTrainingEligibility", "RegistryTrainingEligibilityStatus", "RegistryProvenance", "RegistryProvenanceSourceType",
 "RegistryRetention", "RegistryRetentionMode", "RegistryMetadataProfile", "RegistryMetadataValidator",
+"InvalidRegistryMetadataError",
 "RegistryMetadataError", "RegistryCapabilityError", "RegistryClassificationError", "RegistryTrainingEligibilityError",
 "RegistryProvenanceError", "RegistryRetentionError", "RegistryMetadataProfileError",
 ]

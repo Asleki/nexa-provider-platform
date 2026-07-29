@@ -130,7 +130,7 @@ C|M008.15.2|Data Classification Metadata
 C|M008.15.3|Training Eligibility Metadata
 C|M008.15.4|Provenance Metadata
 C|M008.15.5|Retention Metadata
-P|M008.15.6|Registry Metadata Validation
+C|M008.15.6|Registry Metadata Validation
 P|M008.15.7|Registry Metadata Tests
 P|M008.16|Cross-Registry Relationship Foundation
 P|M008.16.1|Relationship Contracts
