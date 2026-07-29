@@ -1208,18 +1208,18 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Registry Metadata and Capability Contracts / Registry Metadata Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M008.16` — Cross-Registry Relationship Foundation**
+&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16` — Cross-Registry Relationship Foundation**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-7781070b8db24e3bc273`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Master Registry Foundation / Cross-Registry Relationship Foundation`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M008.16.1` — Relationship Contracts**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M008.16.1` — Relationship Contracts**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6c4aec1b296ab797141d`
@@ -14175,6 +14175,6 @@ Jump directly to a root milestone:
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.1.0` |
 | Records rendered | `1515` |
-| Canonical content checksum | `2e6b0b07a6f10f1dbff68c77afe7e9bb2fa7d48148f294e49993f791dcfcc8e3` |
+| Canonical content checksum | `7d92734cedc889406ce8fdc4918ae1ac9cd7ff7e6ccea69f97b6444982f938fd` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.
