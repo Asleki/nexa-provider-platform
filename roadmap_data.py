@@ -137,7 +137,7 @@ C|M008.16.1|Relationship Contracts
 C|M008.16.2|Immutable Reference Rules
 C|M008.16.3|Relationship Direction
 C|M008.16.4|Relationship Constraints
-P|M008.16.5|Relationship Provenance
+C|M008.16.5|Relationship Provenance
 P|M008.16.6|Relationship APIs
 P|M008.16.7|Relationship Tests
 P|M008.17|Canonical Dataset Foundation
