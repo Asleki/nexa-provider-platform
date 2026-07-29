@@ -128,7 +128,7 @@ C|M008.15|Registry Metadata and Capability Contracts
 C|M008.15.1|Registry Capability Model
 C|M008.15.2|Data Classification Metadata
 C|M008.15.3|Training Eligibility Metadata
-P|M008.15.4|Provenance Metadata
+C|M008.15.4|Provenance Metadata
 P|M008.15.5|Retention Metadata
 P|M008.15.6|Registry Metadata Validation
 P|M008.15.7|Registry Metadata Tests
@@ -140,6 +140,7 @@ P|M008.16.4|Relationship Constraints
 P|M008.16.5|Relationship Provenance
 P|M008.16.6|Relationship APIs
 P|M008.16.7|Relationship Tests
+P|M008.17|Canonical Dataset Foundation
 P|M009|Data Catalogue and Communication Foundations
 P|M009.1|Name Catalogue
 P|M009.1.1|First-Name Catalogue
