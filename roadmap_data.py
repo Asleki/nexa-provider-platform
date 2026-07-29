@@ -109,7 +109,7 @@ C|M007.7|Audit Export
 C|M007.8|Audit API Contracts
 C|M007.9|Audit Tests
 C|M007.10|Audit Stabilization
-P|M008|Master Registry Foundation
+C|M008|Master Registry Foundation
 C|M008.1|Registry Contracts
 C|M008.2|Registry Identifier Model
 C|M008.3|Base Registry
@@ -140,7 +140,7 @@ C|M008.16.4|Relationship Constraints
 C|M008.16.5|Relationship Provenance
 C|M008.16.6|Relationship APIs
 C|M008.16.7|Relationship Tests
-P|M008.17|Canonical Dataset Foundation
+C|M008.17|Canonical Dataset Foundation
 P|M009|Data Catalogue and Communication Foundations
 P|M009.1|Name Catalogue
 P|M009.1.1|First-Name Catalogue
