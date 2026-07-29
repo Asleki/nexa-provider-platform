@@ -134,7 +134,7 @@ C|M008.15.6|Registry Metadata Validation
 C|M008.15.7|Registry Metadata Tests
 P|M008.16|Cross-Registry Relationship Foundation
 C|M008.16.1|Relationship Contracts
-P|M008.16.2|Immutable Reference Rules
+C|M008.16.2|Immutable Reference Rules
 P|M008.16.3|Relationship Direction
 P|M008.16.4|Relationship Constraints
 P|M008.16.5|Relationship Provenance
