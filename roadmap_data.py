@@ -136,7 +136,7 @@ P|M008.16|Cross-Registry Relationship Foundation
 C|M008.16.1|Relationship Contracts
 C|M008.16.2|Immutable Reference Rules
 C|M008.16.3|Relationship Direction
-P|M008.16.4|Relationship Constraints
+C|M008.16.4|Relationship Constraints
 P|M008.16.5|Relationship Provenance
 P|M008.16.6|Relationship APIs
 P|M008.16.7|Relationship Tests
