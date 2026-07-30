@@ -6,9 +6,9 @@
 
 **Version 1.1.0** · **M001 → M030.12** · **1515 canonical records**
 
-`██░░░░░░░░░░░░░░░░░░░░░░░░░░░░` **7.85%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.38%**
 
-**119 completed** · **1396 planned** · **30 root milestones**
+**127 completed** · **1388 planned** · **30 root milestones**
 
 </div>
 
@@ -21,9 +21,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **7.85%** |
-| Completed milestones | **119** |
-| Planned milestones | **1396** |
+| Overall progress | **8.38%** |
+| Completed milestones | **127** |
+| Planned milestones | **1388** |
 | Total roadmap records | **1515** |
 | Root milestones | **30** |
 
@@ -48,7 +48,7 @@ Jump directly to a root milestone:
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
 - [✅ **M008 — Master Registry Foundation**](#m008) — 32/32 complete (100.0%)
-- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 0/98 complete (0.0%)
+- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 8/98 complete (8.2%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/92 complete (0.0%)
 - [🟦 **M011 — Telecommunications Platform**](#m011) — 0/38 complete (0.0%)
 - [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/442 complete (0.0%)
@@ -85,7 +85,7 @@ Jump directly to a root milestone:
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
 | [M008](#m008) | Master Registry Foundation | ✅ Completed | 32 | 32 | 100.0% |
-| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 98 | 0 | 0.0% |
+| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 98 | 8 | 8.2% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 92 | 0 | 0.0% |
 | [M011](#m011) | Telecommunications Platform | 🟦 Planned | 38 | 0 | 0.0% |
 | [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 442 | 0 | 0.0% |
@@ -1298,7 +1298,7 @@ Jump directly to a root milestone:
 <a id="m009"></a>
 ### 🟦 M009 — Data Catalogue and Communication Foundations
 
-`░░░░░░░░░░░░░░░░░░░░` **0/98 complete (0.0%)**
+`██░░░░░░░░░░░░░░░░░░` **8/98 complete (8.2%)**
 
 <details>
 <summary><strong>Open M009 roadmap records (98 items)</strong></summary>
@@ -1312,72 +1312,72 @@ Jump directly to a root milestone:
 - **Semantic path:** `Data Catalogue and Communication Foundations`
 - **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.1` — Name Catalogue**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.1` — Name Catalogue**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d1eb4fdec4775630d79e`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.1.1` — First-Name Catalogue**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.1.1` — First-Name Catalogue**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-efeaa3b7b962527607e3`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue / First-Name Catalogue`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.1.2` — Middle-Name Catalogue**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.1.2` — Middle-Name Catalogue**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-4c844e55d469b0ca16ec`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue / Middle-Name Catalogue`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.1.3` — Surname Catalogue**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.1.3` — Surname Catalogue**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-ae90750e05104a229a76`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue / Surname Catalogue`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.1.4` — Name Metadata**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.1.4` — Name Metadata**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a3c364262548995935b8`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue / Name Metadata`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.1.5` — Name Repository**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.1.5` — Name Repository**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-5d70491f8e0f667d0f17`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue / Name Repository`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.1.6` — Name Search**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.1.6` — Name Search**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-763da6eb21333ebed0a2`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue / Name Search`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.1.7` — Name Catalogue Tests**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.1.7` — Name Catalogue Tests**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-cee68c8e29208f9ff9e5`
@@ -14175,6 +14175,6 @@ Jump directly to a root milestone:
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.1.0` |
 | Records rendered | `1515` |
-| Canonical content checksum | `2f9d2ea7bbe73efee0db9e7acc5cd985108049656668cfa67197ca4c26bc016c` |
+| Canonical content checksum | `82500d0f1895c6a84663e048c9f2b4760d8edd9d5d8e18ef65fbf71e2f99686c` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.

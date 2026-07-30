@@ -142,14 +142,14 @@ C|M008.16.6|Relationship APIs
 C|M008.16.7|Relationship Tests
 C|M008.17|Canonical Dataset Foundation
 P|M009|Data Catalogue and Communication Foundations
-P|M009.1|Name Catalogue
-P|M009.1.1|First-Name Catalogue
-P|M009.1.2|Middle-Name Catalogue
-P|M009.1.3|Surname Catalogue
-P|M009.1.4|Name Metadata
-P|M009.1.5|Name Repository
-P|M009.1.6|Name Search
-P|M009.1.7|Name Catalogue Tests
+C|M009.1|Name Catalogue
+C|M009.1.1|First-Name Catalogue
+C|M009.1.2|Middle-Name Catalogue
+C|M009.1.3|Surname Catalogue
+C|M009.1.4|Name Metadata
+C|M009.1.5|Name Repository
+C|M009.1.6|Name Search
+C|M009.1.7|Name Catalogue Tests
 P|M009.2|Name Suggestion Engine
 P|M009.2.1|Manual Name Entry
 P|M009.2.2|Single-Name Suggestions

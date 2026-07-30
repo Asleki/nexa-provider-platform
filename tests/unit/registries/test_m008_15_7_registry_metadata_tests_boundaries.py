@@ -21,8 +21,9 @@ def test_m008_15_7_appends_tests_without_removing_earlier_metadata_tests():
 
 
 def test_m008_15_7_does_not_introduce_deferred_domain_engines():
+    # The names package was deferred during M008.15.7 and is now explicitly
+    # authorised by M009.1. Other deferred domain engines remain absent.
     forbidden = (
-        ROOT / "registries" / "names",
         ROOT / "registries" / "marriages",
         ROOT / "registries" / "jurisdictions",
     )
@@ -33,3 +34,9 @@ def test_metadata_profile_remains_the_only_updated_production_target():
     profile = ROOT / "registries" / "metadata" / "registry_metadata_profile.py"
     assert profile.exists()
     assert "def from_dict" in profile.read_text(encoding="utf-8")
+
+
+def test_m009_1_now_authorises_the_previously_deferred_names_package():
+    names = ROOT / "registries" / "names"
+    assert names.is_dir()
+    assert (names / "canonical_name.py").exists()
