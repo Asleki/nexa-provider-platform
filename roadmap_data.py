@@ -152,10 +152,10 @@ C|M009.1.6|Name Search
 C|M009.1.7|Name Catalogue Tests
 P|M009.2|Name Suggestion Engine
 C|M009.2.1|Manual Name Entry
-P|M009.2.2|Single-Name Suggestions
-P|M009.2.3|Pair Suggestions
-P|M009.2.4|Trio Suggestions
-P|M009.2.5|Full-Name Suggestions
+C|M009.2.2|Single-Name Suggestions
+C|M009.2.3|Pair Suggestions
+C|M009.2.4|Trio Suggestions
+C|M009.2.5|Full-Name Suggestions
 P|M009.2.6|Name Normalization
 P|M009.2.7|Duplicate Controls
 P|M009.2.8|Suggestion APIs

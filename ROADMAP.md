@@ -6,9 +6,9 @@
 
 **Version 1.1.0** · **M001 → M030.12** · **1515 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.45%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.71%**
 
-**128 completed** · **1387 planned** · **30 root milestones**
+**132 completed** · **1383 planned** · **30 root milestones**
 
 </div>
 
@@ -21,9 +21,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **8.45%** |
-| Completed milestones | **128** |
-| Planned milestones | **1387** |
+| Overall progress | **8.71%** |
+| Completed milestones | **132** |
+| Planned milestones | **1383** |
 | Total roadmap records | **1515** |
 | Root milestones | **30** |
 
@@ -48,7 +48,7 @@ Jump directly to a root milestone:
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
 - [✅ **M008 — Master Registry Foundation**](#m008) — 32/32 complete (100.0%)
-- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 9/98 complete (9.2%)
+- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 13/98 complete (13.3%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/92 complete (0.0%)
 - [🟦 **M011 — Telecommunications Platform**](#m011) — 0/38 complete (0.0%)
 - [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/442 complete (0.0%)
@@ -85,7 +85,7 @@ Jump directly to a root milestone:
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
 | [M008](#m008) | Master Registry Foundation | ✅ Completed | 32 | 32 | 100.0% |
-| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 98 | 9 | 9.2% |
+| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 98 | 13 | 13.3% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 92 | 0 | 0.0% |
 | [M011](#m011) | Telecommunications Platform | 🟦 Planned | 38 | 0 | 0.0% |
 | [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 442 | 0 | 0.0% |
@@ -1298,7 +1298,7 @@ Jump directly to a root milestone:
 <a id="m009"></a>
 ### 🟦 M009 — Data Catalogue and Communication Foundations
 
-`██░░░░░░░░░░░░░░░░░░` **9/98 complete (9.2%)**
+`███░░░░░░░░░░░░░░░░░` **13/98 complete (13.3%)**
 
 <details>
 <summary><strong>Open M009 roadmap records (98 items)</strong></summary>
@@ -1402,36 +1402,36 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Suggestion Engine / Manual Name Entry`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.2.2` — Single-Name Suggestions**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.2.2` — Single-Name Suggestions**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-9088baf0676e10740d0e`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Suggestion Engine / Single-Name Suggestions`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.2.3` — Pair Suggestions**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.2.3` — Pair Suggestions**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-69b7f005191c02de5ea6`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Suggestion Engine / Pair Suggestions`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.2.4` — Trio Suggestions**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.2.4` — Trio Suggestions**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-00558a0750794047e00d`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Suggestion Engine / Trio Suggestions`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.2.5` — Full-Name Suggestions**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.2.5` — Full-Name Suggestions**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-6ba8bdd51c326d318d0c`
@@ -14175,6 +14175,6 @@ Jump directly to a root milestone:
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.1.0` |
 | Records rendered | `1515` |
-| Canonical content checksum | `1d9194244be0132a81f212d645cc7a8060d4fd24c3cab8ddc7253191274d1f30` |
+| Canonical content checksum | `ed6e3a768a92c5436f17242943a9710be0aeaa122609e5f1c604a6a5180e78da` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.
