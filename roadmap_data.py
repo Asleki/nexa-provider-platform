@@ -156,10 +156,10 @@ C|M009.2.2|Single-Name Suggestions
 C|M009.2.3|Pair Suggestions
 C|M009.2.4|Trio Suggestions
 C|M009.2.5|Full-Name Suggestions
-P|M009.2.6|Name Normalization
-P|M009.2.7|Duplicate Controls
-P|M009.2.8|Suggestion APIs
-P|M009.2.9|Suggestion Tests
+C|M009.2.6|Name Normalization
+C|M009.2.7|Duplicate Controls
+C|M009.2.8|Suggestion APIs
+C|M009.2.9|Suggestion Tests
 P|M009.3|Email Registry
 P|M009.3.1|Email Address Model
 P|M009.3.2|Email-Type Model
