@@ -151,7 +151,7 @@ C|M009.1.5|Name Repository
 C|M009.1.6|Name Search
 C|M009.1.7|Name Catalogue Tests
 P|M009.2|Name Suggestion Engine
-P|M009.2.1|Manual Name Entry
+C|M009.2.1|Manual Name Entry
 P|M009.2.2|Single-Name Suggestions
 P|M009.2.3|Pair Suggestions
 P|M009.2.4|Trio Suggestions
