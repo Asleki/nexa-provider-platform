@@ -6,9 +6,9 @@
 
 **Version 1.1.0** · **M001 → M030.12** · **1528 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.16%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.42%**
 
-**140 completed** · **1388 planned** · **30 root milestones**
+**144 completed** · **1384 planned** · **30 root milestones**
 
 </div>
 
@@ -21,9 +21,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **9.16%** |
-| Completed milestones | **140** |
-| Planned milestones | **1388** |
+| Overall progress | **9.42%** |
+| Completed milestones | **144** |
+| Planned milestones | **1384** |
 | Total roadmap records | **1528** |
 | Root milestones | **30** |
 
@@ -48,7 +48,7 @@ Jump directly to a root milestone:
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
 - [✅ **M008 — Master Registry Foundation**](#m008) — 32/32 complete (100.0%)
-- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 21/111 complete (18.9%)
+- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 25/111 complete (22.5%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/92 complete (0.0%)
 - [🟦 **M011 — Telecommunications Platform**](#m011) — 0/38 complete (0.0%)
 - [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/442 complete (0.0%)
@@ -85,7 +85,7 @@ Jump directly to a root milestone:
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
 | [M008](#m008) | Master Registry Foundation | ✅ Completed | 32 | 32 | 100.0% |
-| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 111 | 21 | 18.9% |
+| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 111 | 25 | 22.5% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 92 | 0 | 0.0% |
 | [M011](#m011) | Telecommunications Platform | 🟦 Planned | 38 | 0 | 0.0% |
 | [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 442 | 0 | 0.0% |
@@ -1298,7 +1298,7 @@ Jump directly to a root milestone:
 <a id="m009"></a>
 ### 🟦 M009 — Data Catalogue and Communication Foundations
 
-`████░░░░░░░░░░░░░░░░` **21/111 complete (18.9%)**
+`█████░░░░░░░░░░░░░░░` **25/111 complete (22.5%)**
 
 <details>
 <summary><strong>Open M009 roadmap records (111 items)</strong></summary>
@@ -1519,36 +1519,36 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue Integration & Enrichment / PostgreSQL Name Catalogue Migration`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.10.5` — Local CSV Candidate Model**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.10.5` — Local CSV Candidate Model**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-3f1adce63995714c9488`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue Integration & Enrichment / Local CSV Candidate Model`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.10.6` — CSV Name Import Staging**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.10.6` — CSV Name Import Staging**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-8db03da9f059520a1bad`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue Integration & Enrichment / CSV Name Import Staging`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.10.7` — Candidate Validation and Quarantine**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.10.7` — Candidate Validation and Quarantine**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-e3f386ac29fc3c4f40a4`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue Integration & Enrichment / Candidate Validation and Quarantine`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.10.8` — Controlled Name Batch Import**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.10.8` — Controlled Name Batch Import**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-d166a6014d0e06d21c1d`
@@ -14292,6 +14292,6 @@ Jump directly to a root milestone:
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.1.0` |
 | Records rendered | `1528` |
-| Canonical content checksum | `b02ca529839a0c93d27724047980abe5695bcee40021bc2ac36c55f072ca346e` |
+| Canonical content checksum | `9186326a3c545152e9139225b8d92c284fe71ec16b60a9dad5a09f0726aefa88` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.
