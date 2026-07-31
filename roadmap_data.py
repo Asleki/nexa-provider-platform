@@ -160,6 +160,19 @@ C|M009.2.6|Name Normalization
 C|M009.2.7|Duplicate Controls
 C|M009.2.8|Suggestion APIs
 C|M009.2.9|Suggestion Tests
+P|M009.10|Name Catalogue Integration & Enrichment
+C|M009.10.1|Sex-Usage Classification Contract
+C|M009.10.2|Sex-Aware Name Compatibility
+C|M009.10.3|PostgreSQL Name Repository Adapter
+C|M009.10.4|PostgreSQL Name Catalogue Migration
+P|M009.10.5|Local CSV Candidate Model
+P|M009.10.6|CSV Name Import Staging
+P|M009.10.7|Candidate Validation and Quarantine
+P|M009.10.8|Controlled Name Batch Import
+P|M009.10.9|Offline Name Catalogue Cache
+P|M009.10.10|Name Catalogue Sync and Receipts
+P|M009.10.11|Integration APIs
+P|M009.10.12|Integration and Regression Tests
 P|M009.3|Email Registry
 P|M009.3.1|Email Address Model
 P|M009.3.2|Email-Type Model
