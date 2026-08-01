@@ -178,9 +178,9 @@ P|M009.12|Name Authority Registry
 C|M009.12.1|Production Seed Activation and Integrity Loading
 C|M009.12.2|Source-Specific Name Seed Adapters
 C|M009.12.3|Governed Atomic Name Import
-P|M009.12.4|Production Manual Name Introduction
-P|M009.12.5|Full-Name Authority Contracts and Composition
-P|M009.12.6|PostgreSQL Name Authority Persistence
+C|M009.12.4|Production Manual Name Introduction
+C|M009.12.5|Full-Name Authority Contracts and Composition
+C|M009.12.6|PostgreSQL Name Authority Persistence
 P|M009.12.7|Simulation Name Pool Generation
 P|M009.12.8|Batch Processing, Checkpoints and Recovery
 P|M009.12.9|Name Authority Read Models and Search
