@@ -174,6 +174,19 @@ C|M009.10.10|Name Catalogue Sync and Receipts
 C|M009.10.11|Integration APIs
 C|M009.10.12|Integration and Regression Tests
 C|M009.11|Name Catalogue Production Seed Governance
+P|M009.12|Name Authority Registry
+P|M009.12.1|Production Seed Activation and Integrity Loading
+P|M009.12.2|Source-Specific Name Seed Adapters
+P|M009.12.3|Governed Atomic Name Import
+P|M009.12.4|Production Manual Name Introduction
+P|M009.12.5|Full-Name Authority Contracts and Composition
+P|M009.12.6|PostgreSQL Name Authority Persistence
+P|M009.12.7|Simulation Name Pool Generation
+P|M009.12.8|Batch Processing, Checkpoints and Recovery
+P|M009.12.9|Name Authority Read Models and Search
+P|M009.12.10|Name Authority Application APIs
+P|M009.12.11|AWS-Hosted PWA and Offline Name Authority Access
+P|M009.12.12|Name Authority Integration and Regression Tests
 P|M009.3|Email Registry
 P|M009.3.1|Email Address Model
 P|M009.3.2|Email-Type Model
