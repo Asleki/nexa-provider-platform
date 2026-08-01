@@ -1,0 +1,3 @@
+from .contracts import OfflineOperationPolicy
+POLICIES={"search_cached":OfflineOperationPolicy.OFFLINE_ALLOWED,"view_cached":OfflineOperationPolicy.OFFLINE_ALLOWED,"create_draft":OfflineOperationPolicy.OFFLINE_ALLOWED,"submit_manual":OfflineOperationPolicy.OFFLINE_QUEUE_ALLOWED,"compose":OfflineOperationPolicy.OFFLINE_DRAFT_ONLY,"approve_manual":OfflineOperationPolicy.ONLINE_REQUIRED,"generation_manage":OfflineOperationPolicy.ADMIN_ONLINE_REQUIRED,"snapshot_download":OfflineOperationPolicy.ONLINE_REQUIRED,"ack_sync":OfflineOperationPolicy.OFFLINE_QUEUE_ALLOWED}
+def policy_for(operation): return POLICIES.get(operation,OfflineOperationPolicy.ONLINE_REQUIRED)

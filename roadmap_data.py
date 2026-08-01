@@ -184,9 +184,9 @@ C|M009.12.6|PostgreSQL Name Authority Persistence
 C|M009.12.7|Simulation Name Pool Generation
 C|M009.12.8|Batch Processing, Checkpoints and Recovery
 C|M009.12.9|Name Authority Read Models and Search
-P|M009.12.10|Name Authority Application APIs
-P|M009.12.11|AWS-Hosted PWA and Offline Name Authority Access
-P|M009.12.12|Name Authority Integration and Regression Tests
+C|M009.12.10|Name Authority Application APIs
+C|M009.12.11|AWS-Hosted PWA and Offline Name Authority Access
+C|M009.12.12|Name Authority Integration and Regression Tests
 P|M009.3|Email Registry
 P|M009.3.1|Email Address Model
 P|M009.3.2|Email-Type Model
