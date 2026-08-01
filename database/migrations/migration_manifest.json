@@ -1,0 +1,142 @@
+{
+  "manifest_schema": "npp.database-migration-manifest",
+  "manifest_schema_version": 1,
+  "catalogue_version": 1,
+  "migrations": [
+    {
+      "migration_id": "m009_10_04_name_catalogue",
+      "milestone_id": "M009.10.4",
+      "sequence_number": 1,
+      "description": "name_catalogue",
+      "forward_file": "m009_10_04_name_catalogue.sql",
+      "rollback_file": "m009_10_04_name_catalogue_rollback.sql",
+      "depends_on": [],
+      "expected_objects": {
+        "schemas": [
+          "reference"
+        ],
+        "tables": [
+          "reference.canonical_name"
+        ],
+        "indexes": [
+          "ix_canonical_name_runtime_kind_search",
+          "ix_canonical_name_status"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "c8661ac1c2953563bb9ec0be26695ef252454b1407dbbf981abd82d9f82193b8",
+      "rollback_sha256": "d1e88239d1b2ec0feacf9462c63d26b21fdda9d23449c06776a77d850a108ba8",
+      "forward_byte_size": 1656,
+      "rollback_byte_size": 62,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m009_12_06_name_authority",
+      "milestone_id": "M009.12.6",
+      "sequence_number": 2,
+      "description": "name_authority",
+      "forward_file": "m009_12_06_name_authority.sql",
+      "rollback_file": "m009_12_06_name_authority_rollback.sql",
+      "depends_on": [
+        "m009_10_04_name_catalogue"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "reference.manual_name_candidate",
+          "reference.name_authority_record",
+          "reference.name_authority_component"
+        ],
+        "indexes": [
+          "ix_manual_name_candidate_status",
+          "ix_name_authority_search",
+          "ix_name_authority_component_name"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "77328411ec2762912ffadaea3d9a458005054d5889ff16f866ff5ef9646e5762",
+      "rollback_sha256": "02f3121dde5bf7da00d17ea8e06e10152d745bd817feda5b553faa540de152e4",
+      "forward_byte_size": 3322,
+      "rollback_byte_size": 180,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m009_12_09_name_authority_generation",
+      "milestone_id": "M009.12.9",
+      "sequence_number": 3,
+      "description": "name_authority_generation",
+      "forward_file": "m009_12_09_name_authority_generation.sql",
+      "rollback_file": "m009_12_09_name_authority_generation_rollback.sql",
+      "depends_on": [
+        "m009_12_06_name_authority"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "reference.name_generation_source_snapshot",
+          "reference.name_generation_source_member",
+          "reference.name_generation_batch",
+          "reference.name_generation_checkpoint",
+          "reference.name_generation_result",
+          "reference.name_authority_read_model",
+          "reference.name_authority_projection_checkpoint"
+        ],
+        "indexes": [
+          "ix_name_generation_result_authority",
+          "ix_name_authority_read_cursor",
+          "ix_name_authority_read_generation"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "57263796493a4602f217cc0f8f853c570aa5564a229dd9de60ebbcad28d6d71a",
+      "rollback_sha256": "fe1ca45b2013daafd2c33216b77ce36e95944c992a1e24bdf085c8359f3bfeb2",
+      "forward_byte_size": 5176,
+      "rollback_byte_size": 436,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m009_12_12_name_authority_application",
+      "milestone_id": "M009.12.12",
+      "sequence_number": 4,
+      "description": "name_authority_application",
+      "forward_file": "m009_12_12_name_authority_application.sql",
+      "rollback_file": "m009_12_12_name_authority_application_rollback.sql",
+      "depends_on": [
+        "m009_12_09_name_authority_generation"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "reference.name_authority_command_receipt",
+          "reference.name_authority_change_journal",
+          "reference.name_authority_sync_receipt"
+        ],
+        "indexes": [
+          "ix_name_authority_change_journal_runtime_sequence"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "5027fa5985a414f395e9ec54a34f89f161d237ed9d1ff5d6bc642040f3eb2035",
+      "rollback_sha256": "ef98c7842181ef45d6ebf8c2974ef9e42454147a2f12c9ebb3e69121d13f545b",
+      "forward_byte_size": 1479,
+      "rollback_byte_size": 200,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    }
+  ]
+}
