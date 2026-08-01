@@ -187,6 +187,17 @@ C|M009.12.9|Name Authority Read Models and Search
 C|M009.12.10|Name Authority Application APIs
 C|M009.12.11|AWS-Hosted PWA and Offline Name Authority Access
 C|M009.12.12|Name Authority Integration and Regression Tests
+P|M009.13|Database Migration Control Foundation
+
+P|M009.13.1|Migration Identity and File Discovery
+P|M009.13.2|Migration Ordering and Dependency Planning
+P|M009.13.3|Migration Checksum and Immutability Verification
+P|M009.13.4|Migration History Ledger and Bootstrap
+P|M009.13.5|PostgreSQL Migration Locking and Transaction Execution
+P|M009.13.6|Migration Status, Plan and Verification Commands
+P|M009.13.7|Migration Failure, Recovery and Rollback Boundaries
+P|M009.13.8|AWS PostgreSQL Migration Qualification
+P|M009.13.9|Migration Control Integration and Regression Tests
 P|M009.3|Email Registry
 P|M009.3.1|Email Address Model
 P|M009.3.2|Email-Type Model
