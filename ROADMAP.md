@@ -6,9 +6,9 @@
 
 **Version 1.1.0** · **M001 → M030.12** · **1542 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.79%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.99%**
 
-**151 completed** · **1391 planned** · **30 root milestones**
+**154 completed** · **1388 planned** · **30 root milestones**
 
 </div>
 
@@ -21,9 +21,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **9.79%** |
-| Completed milestones | **151** |
-| Planned milestones | **1391** |
+| Overall progress | **9.99%** |
+| Completed milestones | **154** |
+| Planned milestones | **1388** |
 | Total roadmap records | **1542** |
 | Root milestones | **30** |
 
@@ -48,7 +48,7 @@ Jump directly to a root milestone:
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
 - [✅ **M008 — Master Registry Foundation**](#m008) — 32/32 complete (100.0%)
-- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 32/125 complete (25.6%)
+- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 35/125 complete (28.0%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/92 complete (0.0%)
 - [🟦 **M011 — Telecommunications Platform**](#m011) — 0/38 complete (0.0%)
 - [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/442 complete (0.0%)
@@ -85,7 +85,7 @@ Jump directly to a root milestone:
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
 | [M008](#m008) | Master Registry Foundation | ✅ Completed | 32 | 32 | 100.0% |
-| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 125 | 32 | 25.6% |
+| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 125 | 35 | 28.0% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 92 | 0 | 0.0% |
 | [M011](#m011) | Telecommunications Platform | 🟦 Planned | 38 | 0 | 0.0% |
 | [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 442 | 0 | 0.0% |
@@ -1298,7 +1298,7 @@ Jump directly to a root milestone:
 <a id="m009"></a>
 ### 🟦 M009 — Data Catalogue and Communication Foundations
 
-`█████░░░░░░░░░░░░░░░` **32/125 complete (25.6%)**
+`██████░░░░░░░░░░░░░░` **35/125 complete (28.0%)**
 
 <details>
 <summary><strong>Open M009 roadmap records (125 items)</strong></summary>
@@ -1609,27 +1609,27 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Authority Registry`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.12.1` — Production Seed Activation and Integrity Loading**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.12.1` — Production Seed Activation and Integrity Loading**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-231ecd6dc819ad3bf38c`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Authority Registry / Production Seed Activation and Integrity Loading`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.12.2` — Source-Specific Name Seed Adapters**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.12.2` — Source-Specific Name Seed Adapters**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-aea7afbe63358072c272`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Authority Registry / Source-Specific Name Seed Adapters`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.12.3` — Governed Atomic Name Import**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.12.3` — Governed Atomic Name Import**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-33355a4bd57a6273dc99`
@@ -14418,6 +14418,6 @@ Jump directly to a root milestone:
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.1.0` |
 | Records rendered | `1542` |
-| Canonical content checksum | `0ce4441b635b9ff396eb3a5b4aa9064b77bb2c27037d5ae48eb0e3ca15135dfd` |
+| Canonical content checksum | `31352f7e4ec4d49e1170f47ed3473b5bdd67f0980f3c8d761e7d00b300f8749f` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.
