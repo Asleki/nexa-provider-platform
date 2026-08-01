@@ -173,6 +173,7 @@ C|M009.10.9|Offline Name Catalogue Cache
 C|M009.10.10|Name Catalogue Sync and Receipts
 C|M009.10.11|Integration APIs
 C|M009.10.12|Integration and Regression Tests
+C|M009.11|Name Catalogue Production Seed Governance
 P|M009.3|Email Registry
 P|M009.3.1|Email Address Model
 P|M009.3.2|Email-Type Model

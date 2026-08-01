@@ -4,11 +4,11 @@
 
 ## Engineering Roadmap Frontend
 
-**Version 1.1.0** · **M001 → M030.12** · **1528 canonical records**
+**Version 1.1.0** · **M001 → M030.12** · **1529 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.82%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **9.88%**
 
-**150 completed** · **1378 planned** · **30 root milestones**
+**151 completed** · **1378 planned** · **30 root milestones**
 
 </div>
 
@@ -21,10 +21,10 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **9.82%** |
-| Completed milestones | **150** |
+| Overall progress | **9.88%** |
+| Completed milestones | **151** |
 | Planned milestones | **1378** |
-| Total roadmap records | **1528** |
+| Total roadmap records | **1529** |
 | Root milestones | **30** |
 
 ### Status key
@@ -48,7 +48,7 @@ Jump directly to a root milestone:
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
 - [✅ **M008 — Master Registry Foundation**](#m008) — 32/32 complete (100.0%)
-- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 31/111 complete (27.9%)
+- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 32/112 complete (28.6%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/92 complete (0.0%)
 - [🟦 **M011 — Telecommunications Platform**](#m011) — 0/38 complete (0.0%)
 - [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/442 complete (0.0%)
@@ -85,7 +85,7 @@ Jump directly to a root milestone:
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
 | [M008](#m008) | Master Registry Foundation | ✅ Completed | 32 | 32 | 100.0% |
-| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 111 | 31 | 27.9% |
+| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 112 | 32 | 28.6% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 92 | 0 | 0.0% |
 | [M011](#m011) | Telecommunications Platform | 🟦 Planned | 38 | 0 | 0.0% |
 | [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 442 | 0 | 0.0% |
@@ -1298,10 +1298,10 @@ Jump directly to a root milestone:
 <a id="m009"></a>
 ### 🟦 M009 — Data Catalogue and Communication Foundations
 
-`██████░░░░░░░░░░░░░░` **31/111 complete (27.9%)**
+`██████░░░░░░░░░░░░░░` **32/112 complete (28.6%)**
 
 <details>
-<summary><strong>Open M009 roadmap records (111 items)</strong></summary>
+<summary><strong>Open M009 roadmap records (112 items)</strong></summary>
 
 🟦 **`M009` — Data Catalogue and Communication Foundations**
 
@@ -1590,6 +1590,15 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0224f6001eee9575743b`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue Integration & Enrichment / Integration and Regression Tests`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`M009.11` — Name Catalogue Production Seed Governance**
+
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
+&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-0807f2547c55d0181ed0`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Name Catalogue Production Seed Governance`
+&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
 &nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.3` — Email Registry**
 
@@ -14291,7 +14300,7 @@ Jump directly to a root milestone:
 | Canonical source | `roadmap_data.py` |
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.1.0` |
-| Records rendered | `1528` |
-| Canonical content checksum | `86068eadf1dc550a05952f4d482d9de91bd7730687ed6d7e31f4f7a7f59124e0` |
+| Records rendered | `1529` |
+| Canonical content checksum | `55cd97bd87841a32b75248f1650f82c4e4379d1f66d214ff0ab71b15adbab162` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.
