@@ -1,0 +1,151 @@
+{
+  "manifest_schema": "npp.production-seed-manifest",
+  "manifest_schema_version": 1,
+  "classification": "production_seed",
+  "status": "approved",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "normalization": {
+    "owner": "python",
+    "canonical_unicode_form": "NFC",
+    "comparison_unicode_form": "NFKC",
+    "comparison_case_strategy": "casefold",
+    "database_generates_search_value": false,
+    "accent_stripping_authorized": false
+  },
+  "runtime_policy": {
+    "dataset_is_runtime_neutral": true,
+    "eligible_runtime_modes": [
+      "simulation",
+      "production"
+    ],
+    "default_runtime_mode": "simulation",
+    "single_runtime_per_import_batch": true,
+    "automatic_cross_runtime_copy": false
+  },
+  "governance": {
+    "direct_sql_import_allowed": false,
+    "postgresql_copy_allowed": false,
+    "source_ids_are_canonical_ids": false,
+    "released_files_may_be_silently_edited": false,
+    "python_validation_required": true,
+    "manifest_integrity_verification_required": true
+  },
+  "dataset_id": "dataset.novegeo.name_catalogue.native.v001",
+  "dataset_version": 1,
+  "dataset_name": "NoveGeo Native Name Catalogue Production Seed",
+  "domain": "name_catalogue",
+  "source_family": "novegeo_native",
+  "description": "Atomic native NoveGeo first, middle, and surname seeds with surname-to-tribe source references.",
+  "files": [
+    {
+      "path": "name_catalogue/novegeo/seed_first_names.csv",
+      "required_headers": [
+        "id",
+        "first_name",
+        "gender"
+      ],
+      "row_count": 800,
+      "sha256": "9ca0ee08a3784ea90bed24582ef9547cdb1e489c89d6f4bdf6447b139a527eb5",
+      "file_id": "file.novegeo.native.first_names.v001",
+      "record_role": "atomic_name",
+      "optional_headers": [],
+      "column_mappings": {
+        "id": "external_record_id",
+        "first_name": "raw_name_value",
+        "gender": "sex_usage"
+      },
+      "import_enabled": true,
+      "target_name_kind": "first_name"
+    },
+    {
+      "path": "name_catalogue/novegeo/seed_second_names.csv",
+      "required_headers": [
+        "id",
+        "second_name",
+        "gender"
+      ],
+      "row_count": 780,
+      "sha256": "d718048f49fde05668a6abc32815a639ec6058d8c010a39598223e917d6edb59",
+      "file_id": "file.novegeo.native.second_names.v001",
+      "record_role": "atomic_name",
+      "optional_headers": [],
+      "column_mappings": {
+        "id": "external_record_id",
+        "second_name": "raw_name_value",
+        "gender": "sex_usage"
+      },
+      "import_enabled": true,
+      "target_name_kind": "middle_name"
+    },
+    {
+      "path": "name_catalogue/novegeo/seed_surnames.csv",
+      "required_headers": [
+        "id",
+        "name",
+        "tribe"
+      ],
+      "row_count": 800,
+      "sha256": "47b60ae0a66015ccbfd1bae66b5a4ffe2c77a93a6aa042918db5e2e6442f9629",
+      "file_id": "file.novegeo.native.surnames.v001",
+      "record_role": "atomic_name",
+      "optional_headers": [],
+      "column_mappings": {
+        "id": "external_record_id",
+        "name": "raw_name_value",
+        "tribe": "culture_refs[0]"
+      },
+      "import_enabled": true,
+      "target_name_kind": "surname",
+      "notes": "Surname sex usage defaults to unspecified; tribe is a logical source reference, not an embedded tribe record."
+    },
+    {
+      "path": "name_catalogue/novegeo/references/novegeo_tribes.csv",
+      "required_headers": [
+        "id",
+        "tribe_name",
+        "language",
+        "tribe_identity"
+      ],
+      "row_count": 10,
+      "sha256": "1f61a6f0499a89640dbf9270ec0f7f846dc4d0b248bd3f47c95a13c089f942b1",
+      "file_id": "file.novegeo.native.tribes.v001",
+      "record_role": "supporting_reference",
+      "optional_headers": [],
+      "column_mappings": {
+        "id": "tribe_reference",
+        "tribe_name": "reference_label",
+        "language": "language_label",
+        "tribe_identity": "identity_label"
+      },
+      "import_enabled": false,
+      "notes": "Reference validation only. This manifest does not create a Tribe Registry or canonical name rows from this file."
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "relationship.novegeo.surname_to_tribe.v001",
+      "from_file_id": "file.novegeo.native.surnames.v001",
+      "from_column": "tribe",
+      "to_file_id": "file.novegeo.native.tribes.v001",
+      "to_column": "id",
+      "cardinality": "many_to_one",
+      "validation": "required",
+      "persistence_now": "culture_refs opaque reference",
+      "future_registry_binding": "reserved"
+    }
+  ],
+  "activation": {
+    "atomic_name_import_supported": true,
+    "supporting_reference_import_supported": false,
+    "source_specific_adapter_required": true,
+    "target_repository_contract": "NameRepository",
+    "target_table_via_adapter": "reference.canonical_name"
+  },
+  "provenance": {
+    "source_type": "curated_synthetic",
+    "authority": "Nexa Provider Platform",
+    "usage_basis": "NoveGeo production simulation seed",
+    "contains_personal_data": false
+  }
+}

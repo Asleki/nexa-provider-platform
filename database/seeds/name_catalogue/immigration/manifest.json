@@ -1,0 +1,95 @@
+{
+  "manifest_schema": "npp.production-seed-manifest",
+  "manifest_schema_version": 1,
+  "classification": "production_seed",
+  "status": "approved",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "normalization": {
+    "owner": "python",
+    "canonical_unicode_form": "NFC",
+    "comparison_unicode_form": "NFKC",
+    "comparison_case_strategy": "casefold",
+    "database_generates_search_value": false,
+    "accent_stripping_authorized": false
+  },
+  "runtime_policy": {
+    "dataset_is_runtime_neutral": true,
+    "eligible_runtime_modes": [
+      "simulation",
+      "production"
+    ],
+    "default_runtime_mode": "simulation",
+    "single_runtime_per_import_batch": true,
+    "automatic_cross_runtime_copy": false
+  },
+  "governance": {
+    "direct_sql_import_allowed": false,
+    "postgresql_copy_allowed": false,
+    "source_ids_are_canonical_ids": false,
+    "released_files_may_be_silently_edited": false,
+    "python_validation_required": true,
+    "manifest_integrity_verification_required": true
+  },
+  "dataset_id": "dataset.novegeo.name_catalogue.immigration.v001",
+  "dataset_version": 1,
+  "dataset_name": "NoveGeo Immigration-Ready Paired Name Production Seed",
+  "domain": "name_catalogue",
+  "source_family": "immigration_paired_names",
+  "description": "Complete culturally aligned first-name plus family-name pairs for first-generation foreigners entering NoveGeo.",
+  "files": [
+    {
+      "path": "name_catalogue/immigration/global_paired_names.csv",
+      "required_headers": [
+        "id",
+        "first_name",
+        "second_name",
+        "origin",
+        "language"
+      ],
+      "row_count": 800,
+      "sha256": "f1cabbecd38415ab668789fa12936198eeb5ff082de90c8ca0a87323474d32ba",
+      "file_id": "file.novegeo.immigration.global_pairs.v001",
+      "record_role": "paired_full_name_source",
+      "optional_headers": [],
+      "column_mappings": {
+        "id": "source_pair_id",
+        "first_name": "first_component.raw_name_value",
+        "second_name": "surname_component.raw_name_value",
+        "origin": "pairing_provenance.origin",
+        "language": "pairing_provenance.language"
+      },
+      "import_enabled": true,
+      "notes": "Atomic extraction is supported: first_name maps to FIRST_NAME and second_name maps to SURNAME. Formal pair relationship persistence is deferred."
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "relationship.novegeo.immigration.name_pair.v001",
+      "from_component": "first_name",
+      "to_component": "second_name",
+      "semantic_roles": [
+        "first_name",
+        "surname"
+      ],
+      "pairing_evidence": "source row",
+      "persistence_now": "source provenance reservation",
+      "pairing_relationship_persistence": "deferred",
+      "future_pair_id_namespace": "namepair:"
+    }
+  ],
+  "activation": {
+    "atomic_component_import_supported": true,
+    "formal_pair_relationship_import_supported": false,
+    "source_specific_adapter_required": true,
+    "target_repository_contract": "NameRepository",
+    "target_table_via_adapter": "reference.canonical_name",
+    "foreign_country_simulation_required": false
+  },
+  "provenance": {
+    "source_type": "curated_synthetic",
+    "authority": "Nexa Provider Platform",
+    "usage_basis": "Immigration-ready NoveGeo production simulation seed",
+    "contains_personal_data": false
+  }
+}

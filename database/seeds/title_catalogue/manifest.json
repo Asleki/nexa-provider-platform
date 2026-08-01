@@ -1,0 +1,79 @@
+{
+  "manifest_schema": "npp.production-seed-manifest",
+  "manifest_schema_version": 1,
+  "classification": "production_seed",
+  "status": "approved",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "normalization": {
+    "owner": "python",
+    "canonical_unicode_form": "NFC",
+    "comparison_unicode_form": "NFKC",
+    "comparison_case_strategy": "casefold",
+    "database_generates_search_value": false,
+    "accent_stripping_authorized": false
+  },
+  "runtime_policy": {
+    "dataset_is_runtime_neutral": true,
+    "eligible_runtime_modes": [
+      "simulation",
+      "production"
+    ],
+    "default_runtime_mode": "simulation",
+    "single_runtime_per_import_batch": true,
+    "automatic_cross_runtime_copy": false
+  },
+  "governance": {
+    "direct_sql_import_allowed": false,
+    "postgresql_copy_allowed": false,
+    "source_ids_are_canonical_ids": false,
+    "released_files_may_be_silently_edited": false,
+    "python_validation_required": true,
+    "manifest_integrity_verification_required": true
+  },
+  "dataset_id": "dataset.novegeo.title_catalogue.v001",
+  "dataset_version": 1,
+  "dataset_name": "NoveGeo Titles and Honorifics Production Seed",
+  "domain": "title_catalogue",
+  "source_family": "titles_honorifics",
+  "description": "Titles and honorifics reserved for a future Title Catalogue and presentation/communication use.",
+  "files": [
+    {
+      "path": "title_catalogue/name_titles_honorifics.csv",
+      "required_headers": [
+        "id",
+        "title",
+        "type",
+        "origin",
+        "language"
+      ],
+      "row_count": 65,
+      "sha256": "8eac2a9202fbb369d7262ca476d076a04684dea607a1308225385cae73d0c470",
+      "file_id": "file.novegeo.title_catalogue.honorifics.v001",
+      "record_role": "title_reference",
+      "optional_headers": [],
+      "column_mappings": {
+        "id": "external_record_id",
+        "title": "title_value",
+        "type": "title_type",
+        "origin": "source_origin",
+        "language": "source_language"
+      },
+      "import_enabled": false,
+      "notes": "Titles are not CanonicalName records and cannot be imported through ControlledNameBatchImporter."
+    }
+  ],
+  "relationships": [],
+  "activation": {
+    "canonical_name_import_allowed": false,
+    "target_contract": "reserved_title_catalogue",
+    "title_domain_model_required_before_activation": true,
+    "title_database_table_required_before_activation": true
+  },
+  "provenance": {
+    "source_type": "curated_synthetic",
+    "authority": "Nexa Provider Platform",
+    "usage_basis": "Future NoveGeo title catalogue production seed",
+    "contains_personal_data": false
+  }
+}

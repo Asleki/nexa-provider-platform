@@ -1,0 +1,150 @@
+{
+  "manifest_schema": "npp.production-seed-manifest",
+  "manifest_schema_version": 1,
+  "classification": "production_seed",
+  "status": "approved",
+  "encoding": "utf-8",
+  "delimiter": ",",
+  "normalization": {
+    "owner": "python",
+    "canonical_unicode_form": "NFC",
+    "comparison_unicode_form": "NFKC",
+    "comparison_case_strategy": "casefold",
+    "database_generates_search_value": false,
+    "accent_stripping_authorized": false
+  },
+  "runtime_policy": {
+    "dataset_is_runtime_neutral": true,
+    "eligible_runtime_modes": [
+      "simulation",
+      "production"
+    ],
+    "default_runtime_mode": "simulation",
+    "single_runtime_per_import_batch": true,
+    "automatic_cross_runtime_copy": false
+  },
+  "governance": {
+    "direct_sql_import_allowed": false,
+    "postgresql_copy_allowed": false,
+    "source_ids_are_canonical_ids": false,
+    "released_files_may_be_silently_edited": false,
+    "python_validation_required": true,
+    "manifest_integrity_verification_required": true
+  },
+  "dataset_id": "dataset.novegeo.name_catalogue.multicultural.v001",
+  "dataset_version": 1,
+  "dataset_name": "NoveGeo Multicultural Atomic Name Production Seed",
+  "domain": "name_catalogue",
+  "source_family": "multicultural_atomic",
+  "description": "Reusable international and Unicode-aware atomic name components for multicultural NoveGeo households and descendants of immigrants.",
+  "files": [
+    {
+      "path": "name_catalogue/multicultural/multicultural_first_names.csv",
+      "required_headers": [
+        "ID",
+        "first_name",
+        "gender",
+        "origin",
+        "Language"
+      ],
+      "row_count": 800,
+      "sha256": "c88602e0eeab6d7d045f3a18b986d0cf693572066ec96128c4bf497bab185b8f",
+      "file_id": "file.novegeo.multicultural.first_names.v001",
+      "record_role": "atomic_name",
+      "optional_headers": [],
+      "column_mappings": {
+        "ID": "external_record_id",
+        "first_name": "raw_name_value",
+        "gender": "sex_usage",
+        "origin": "attributes.source_origin",
+        "Language": "attributes.source_language"
+      },
+      "import_enabled": true,
+      "target_name_kind": "first_name"
+    },
+    {
+      "path": "name_catalogue/multicultural/accented_multicultural_first_names.csv",
+      "required_headers": [
+        "ID",
+        "first_name",
+        "gender",
+        "origin",
+        "language"
+      ],
+      "row_count": 800,
+      "sha256": "24cbf8b0bb1f1e98da30fcba7f533c1414cf963733d972d77d2d85216ab18228",
+      "file_id": "file.novegeo.multicultural.accented_first_names.v001",
+      "record_role": "atomic_name",
+      "optional_headers": [],
+      "column_mappings": {
+        "ID": "external_record_id",
+        "first_name": "raw_name_value",
+        "gender": "sex_usage",
+        "origin": "attributes.source_origin",
+        "language": "attributes.source_language"
+      },
+      "import_enabled": true,
+      "target_name_kind": "first_name"
+    },
+    {
+      "path": "name_catalogue/multicultural/multicultural_second_names.csv",
+      "required_headers": [
+        "id",
+        "second name",
+        "origin",
+        "language"
+      ],
+      "row_count": 800,
+      "sha256": "ac21b97e912f0f454692b5506ff27629b7b55aba8e4182d914b71a21b72d40aa",
+      "file_id": "file.novegeo.multicultural.family_names.v001",
+      "record_role": "atomic_name",
+      "optional_headers": [],
+      "column_mappings": {
+        "id": "external_record_id",
+        "second name": "raw_name_value",
+        "origin": "attributes.source_origin",
+        "language": "attributes.source_language"
+      },
+      "import_enabled": true,
+      "target_name_kind": "surname",
+      "notes": "Despite the source header, sampled and reviewed values are family names; mapping is explicitly surname and must not be inferred from the filename."
+    },
+    {
+      "path": "name_catalogue/multicultural/multicultural_accented_second_names.csv",
+      "required_headers": [
+        "id",
+        "second name",
+        "origin",
+        "language"
+      ],
+      "row_count": 800,
+      "sha256": "1cf9fae911765265144729693d9671f6ac7c5aba1edda58edf4b9aef3fe7c785",
+      "file_id": "file.novegeo.multicultural.accented_family_names.v001",
+      "record_role": "atomic_name",
+      "optional_headers": [],
+      "column_mappings": {
+        "id": "external_record_id",
+        "second name": "raw_name_value",
+        "origin": "attributes.source_origin",
+        "language": "attributes.source_language"
+      },
+      "import_enabled": true,
+      "target_name_kind": "surname",
+      "notes": "Accented family names remain canonical Unicode values; automatic accent stripping or merging is prohibited."
+    }
+  ],
+  "relationships": [],
+  "activation": {
+    "atomic_name_import_supported": true,
+    "source_specific_adapter_required": true,
+    "target_repository_contract": "NameRepository",
+    "target_table_via_adapter": "reference.canonical_name",
+    "preserve_unicode": true
+  },
+  "provenance": {
+    "source_type": "curated_synthetic",
+    "authority": "Nexa Provider Platform",
+    "usage_basis": "NoveGeo multicultural production simulation seed",
+    "contains_personal_data": false
+  }
+}

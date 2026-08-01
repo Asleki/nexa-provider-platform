@@ -1,0 +1,66 @@
+id,title,type,origin,language
+1,Mr.,Honorific Prefix,Global (English),English
+2,Ms.,Honorific Prefix,Global (English),English
+3,Mrs.,Honorific Prefix,Global (English),English
+4,Miss,Honorific Prefix,Global (English),English
+5,Mx.,Gender-Neutral Prefix,Global (English),English
+6,Dr.,Professional / Academic Prefix,Global,English
+7,Prof.,Academic Prefix,Global,English
+8,PhD,Academic Suffix,Global,Latin/English
+9,MD,Professional Suffix,Global,Latin/English
+10,Sir,Honorific / Knighthood Prefix,United Kingdom,English
+11,Dame,Honorific / Knighthood Prefix,United Kingdom,English
+12,Madam,Formal Address Prefix,Global,English
+13,Madame,Formal Address Prefix,France / Global,French
+14,Monsieur,Formal Address Prefix,France,French
+15,Lord,Nobility Prefix,United Kingdom,English
+16,Lady,Nobility Prefix,United Kingdom,English
+17,Excellency,Diplomatic Prefix,Global,English
+18,Honourable,Political Prefix,Global (Commonwealth),English
+19,Jr.,Generational Suffix,Americas / Global,English
+20,Sr.,Generational Suffix,Americas / Global,English
+21,III,Generational Suffix,Global,Roman Numeral
+22,IV,Generational Suffix,Global,Roman Numeral
+23,San,Honorific Suffix,Japan,Japanese
+24,Sama,Respectful Honorific Suffix,Japan,Japanese
+25,Sensei,Professional / Teacher Prefix/Suffix,Japan,Japanese
+26,Shi,Formal Suffix,China,Mandarin
+27,Xiansheng,Formal Prefix,China,Mandarin
+28,Nushi,Formal Prefix,China,Mandarin
+29,Ji,Respectful Suffix,India,Hindi
+30,Sri,Formal Prefix,India,Sanskrit/Hindi
+31,Srimati,Formal Prefix (Married Female),India,Hindi
+32,Sheikh,Religious / Tribal Leader Prefix,Middle East,Arabic
+33,Sheikha,Religious / Tribal Leader Prefix (Female),Middle East,Arabic
+34,Effendi,Nobility / Respect Prefix,Middle East / Turkey,Turkish/Arabic
+35,Pasha,Honorary Title,Middle East (Historical),Turkish
+36,Hadji,Religious Honorific Prefix,Global Islamic,Arabic
+37,Mzee,Elder / Respectful Prefix,East Africa,Swahili
+38,Baba,Elder / Respectful Prefix,West / East Africa,Yoruba/Swahili
+39,Mama,Elder / Respectful Prefix (Female),West / East Africa,Yoruba/Swahili
+40,Oloye,Chieftaincy Prefix,West Africa,Yoruba
+41,Nna,Respectful Title / Elder,West Africa,Igbo
+42,Don,Honorific Prefix,Spain / Italy,Spanish/Italian
+43,Doña,Honorific Prefix (Female),Spain,Spanish
+44,Señor,Formal Address Prefix,Spain / Latin America,Spanish
+45,Señora,Formal Address Prefix,Spain / Latin America,Spanish
+46,Señorita,Formal Address Prefix,Spain / Latin America,Spanish
+47,Herr,Formal Address Prefix,Germany / Austria,German
+48,Frau,Formal Address Prefix,Germany / Austria,German
+49,Signor,Formal Address Prefix,Italy,Italian
+50,Signora,Formal Address Prefix,Italy,Italian
+51,Pan,Formal Address Prefix,Poland / Czechia,Polish/Czech
+52,Pani,Formal Address Prefix (Female),Poland / Czechia,Polish/Czech
+53,Pastor,Religious Prefix,Global,English
+54,Reverend,Religious Prefix,Global,English
+55,Father,Religious Prefix,Global,English
+56,Sister,Religious Prefix,Global,English
+57,Brother,Religious Prefix,Global,English
+58,Imam,Religious Prefix,Global,Arabic
+59,Rabbi,Religious Prefix,Global,Hebrew
+60,Swami,Religious / Guru Prefix,India,Sanskrit
+61,General,Military Prefix,Global,English
+62,Colonel,Military Prefix,Global,English
+63,Captain,Military Prefix,Global,English
+64,Major,Military Prefix,Global,English
+65,Lieutenant,Military Prefix,Global,English
