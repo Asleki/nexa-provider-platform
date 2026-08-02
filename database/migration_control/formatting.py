@@ -6,6 +6,7 @@ from collections.abc import Mapping
 from dataclasses import fields, is_dataclass
 from datetime import date, datetime
 from enum import Enum
+from uuid import UUID
 
 
 def _clean(value):
@@ -25,6 +26,8 @@ def _clean(value):
         return [_clean(item) for item in sorted(value, key=repr)]
     if isinstance(value, Enum):
         return _clean(value.value)
+    if isinstance(value, UUID):
+        return str(value)
     if isinstance(value, (datetime, date)):
         return value.isoformat()
     return value
