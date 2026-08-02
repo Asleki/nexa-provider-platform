@@ -14,7 +14,15 @@ from .formatting import format_json,format_status
 from .drift import MigrationDriftInspector
 from .legacy_cleanup import LegacySchemaCleanupService,LEGACY_SCHEMA_ALLOWLIST
 from .qualification import MigrationQualificationService
-from .errors import *
+from .errors import (
+    MigrationChecksumError,
+    MigrationConfirmationError,
+    MigrationControlError,
+    MigrationDriftError,
+    MigrationExecutionError,
+    MigrationLockError,
+    MigrationTargetError,
+)
 
 def build_parser():
     p=argparse.ArgumentParser(prog='python -m database.migration_control')
