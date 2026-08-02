@@ -56,3 +56,44 @@ class PostgreSQLMigrationLedger:
     def insert_started(self,record): self.adapter.ledger_insert_started(record)
     def mark_applied(self,migration_id,*,completed_at,duration_ms): self.adapter.ledger_update(migration_id,'APPLIED',completed_at,duration_ms)
     def mark_failed(self,migration_id,*,completed_at,duration_ms,error_code,error_summary): self.adapter.ledger_update(migration_id,'FAILED',completed_at,duration_ms,error_code,error_summary)
+
+# Bundle C inspection and guarded cleanup extensions.
+def _inspect_database_objects(self):
+    from .drift import DatabaseObjectState
+    with self.connection.cursor() as c:
+        c.execute("SELECT schema_name FROM information_schema.schemata")
+        schemas=frozenset(r[0] for r in c.fetchall())
+        c.execute("SELECT table_schema||'.'||table_name FROM information_schema.tables WHERE table_type='BASE TABLE'")
+        tables=frozenset(r[0] for r in c.fetchall())
+        c.execute("SELECT schemaname||'.'||indexname FROM pg_indexes")
+        indexes=frozenset(r[0] for r in c.fetchall())
+        c.execute("SELECT tc.table_schema||'.'||tc.constraint_name FROM information_schema.table_constraints tc")
+        constraints=frozenset(r[0] for r in c.fetchall())
+        c.execute("SELECT table_schema||'.'||table_name FROM information_schema.views")
+        views=frozenset(r[0] for r in c.fetchall())
+        c.execute("SELECT routine_schema||'.'||routine_name FROM information_schema.routines")
+        functions=frozenset(r[0] for r in c.fetchall())
+    return DatabaseObjectState(schemas,tables,indexes,constraints,views,functions)
+
+def _inspect_schema_inventory(self,schema_name):
+    from .drift import SchemaInventory
+    with self.connection.cursor() as c:
+        c.execute("""SELECT
+          count(*) FILTER (WHERE c.relkind IN ('r','p')),
+          count(*) FILTER (WHERE c.relkind='v'),
+          count(*) FILTER (WHERE c.relkind='m'),
+          count(*) FILTER (WHERE c.relkind='S'),
+          count(*) FILTER (WHERE c.relkind='f')
+        FROM pg_class c JOIN pg_namespace n ON n.oid=c.relnamespace WHERE n.nspname=%s""",(schema_name,)); rel=c.fetchone()
+        c.execute("SELECT count(*) FROM pg_proc p JOIN pg_namespace n ON n.oid=p.pronamespace WHERE n.nspname=%s",(schema_name,)); routines=c.fetchone()[0]
+        c.execute("SELECT count(*) FROM pg_type t JOIN pg_namespace n ON n.oid=t.typnamespace WHERE n.nspname=%s AND t.typtype IN ('e','d','c') AND NOT EXISTS (SELECT 1 FROM pg_class c WHERE c.oid=t.typrelid)",(schema_name,)); types=c.fetchone()[0]
+    return SchemaInventory(schema_name,rel[0],rel[1],rel[2],rel[3],routines,types,rel[4])
+
+def _drop_empty_schema(self,schema_name):
+    if not schema_name.replace('_','').isalnum(): raise ValueError('unsafe schema name')
+    with self.connection.cursor() as c: c.execute(f'DROP SCHEMA "{schema_name}"')
+    self.connection.commit()
+
+PostgreSQLMigrationAdapter.inspect_database_objects=_inspect_database_objects
+PostgreSQLMigrationAdapter.inspect_schema_inventory=_inspect_schema_inventory
+PostgreSQLMigrationAdapter.drop_empty_schema=_drop_empty_schema
