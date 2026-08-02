@@ -191,9 +191,9 @@ P|M009.13|Database Migration Control Foundation
 C|M009.13.1|Migration Identity and File Discovery
 C|M009.13.2|Migration Ordering and Dependency Planning
 C|M009.13.3|Migration Checksum and Immutability Verification
-P|M009.13.4|Migration History Ledger and Bootstrap
-P|M009.13.5|PostgreSQL Migration Locking and Transaction Execution
-P|M009.13.6|Migration Status, Plan and Verification Commands
+C|M009.13.4|Migration History Ledger and Bootstrap
+C|M009.13.5|PostgreSQL Migration Locking and Transaction Execution
+C|M009.13.6|Migration Status, Plan and Verification Commands
 P|M009.13.7|Migration Failure, Recovery and Rollback Boundaries
 P|M009.13.8|AWS PostgreSQL Migration Qualification
 P|M009.13.9|Migration Control Integration and Regression Tests

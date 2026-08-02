@@ -1,70 +1,25 @@
-"""Stable errors for repository-side database migration control."""
-
+"""Stable errors for database migration control."""
 class MigrationControlError(Exception):
-    """Base error for migration-control validation failures."""
-
-    code = "MIGRATION_CONTROL_ERROR"
-
-    def __init__(self, message: str):
-        super().__init__(message)
-        self.message = message
-
-
-class MigrationManifestError(MigrationControlError):
-    code = "MIGRATION_MANIFEST_INVALID"
-
-
-class MigrationIdentityError(MigrationControlError):
-    code = "MIGRATION_IDENTITY_INVALID"
-
-
-class MigrationDiscoveryError(MigrationControlError):
-    code = "MIGRATION_DISCOVERY_FAILED"
-
-
-class MigrationPathError(MigrationControlError):
-    code = "MIGRATION_PATH_UNSAFE"
-
-
-class MigrationDuplicateError(MigrationControlError):
-    code = "MIGRATION_DUPLICATE"
-
-
-class MigrationPairingError(MigrationControlError):
-    code = "MIGRATION_PAIRING_INVALID"
-
-
-class MigrationDependencyError(MigrationControlError):
-    code = "MIGRATION_DEPENDENCY_INVALID"
-
-
-class MigrationCycleError(MigrationDependencyError):
-    code = "MIGRATION_DEPENDENCY_CYCLE"
-
-
-class MigrationOrderError(MigrationControlError):
-    code = "MIGRATION_ORDER_INVALID"
-
-
-class MigrationChecksumError(MigrationControlError):
-    code = "MIGRATION_CHECKSUM_MISMATCH"
-
-
-class MigrationPlanError(MigrationControlError):
-    code = "MIGRATION_PLAN_INVALID"
-
-
-__all__ = [
-    "MigrationControlError",
-    "MigrationManifestError",
-    "MigrationIdentityError",
-    "MigrationDiscoveryError",
-    "MigrationPathError",
-    "MigrationDuplicateError",
-    "MigrationPairingError",
-    "MigrationDependencyError",
-    "MigrationCycleError",
-    "MigrationOrderError",
-    "MigrationChecksumError",
-    "MigrationPlanError",
-]
+    code="MIGRATION_CONTROL_ERROR"
+    def __init__(self,message:str): super().__init__(message); self.message=message
+class MigrationManifestError(MigrationControlError): code="MIGRATION_MANIFEST_INVALID"
+class MigrationIdentityError(MigrationControlError): code="MIGRATION_IDENTITY_INVALID"
+class MigrationDiscoveryError(MigrationControlError): code="MIGRATION_DISCOVERY_FAILED"
+class MigrationPathError(MigrationControlError): code="MIGRATION_PATH_UNSAFE"
+class MigrationDuplicateError(MigrationControlError): code="MIGRATION_DUPLICATE"
+class MigrationPairingError(MigrationControlError): code="MIGRATION_PAIRING_INVALID"
+class MigrationDependencyError(MigrationControlError): code="MIGRATION_DEPENDENCY_INVALID"
+class MigrationCycleError(MigrationDependencyError): code="MIGRATION_DEPENDENCY_CYCLE"
+class MigrationOrderError(MigrationControlError): code="MIGRATION_ORDER_INVALID"
+class MigrationChecksumError(MigrationControlError): code="MIGRATION_CHECKSUM_MISMATCH"
+class MigrationPlanError(MigrationControlError): code="MIGRATION_PLAN_INVALID"
+class MigrationConfigurationError(MigrationControlError): code="MIGRATION_CONFIGURATION_INVALID"
+class MigrationTargetError(MigrationControlError): code="MIGRATION_TARGET_MISMATCH"
+class MigrationTLSRequiredError(MigrationTargetError): code="MIGRATION_TLS_REQUIRED"
+class MigrationBootstrapError(MigrationControlError): code="MIGRATION_BOOTSTRAP_FAILED"
+class MigrationLedgerError(MigrationControlError): code="MIGRATION_LEDGER_ERROR"
+class MigrationLockError(MigrationControlError): code="MIGRATION_LOCK_UNAVAILABLE"
+class MigrationExecutionError(MigrationControlError): code="MIGRATION_EXECUTION_FAILED"
+class MigrationVerificationError(MigrationControlError): code="MIGRATION_VERIFICATION_FAILED"
+class MigrationConfirmationError(MigrationControlError): code="MIGRATION_CONFIRMATION_FAILED"
+__all__=[n for n in globals() if n.startswith('Migration')]
