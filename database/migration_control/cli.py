@@ -9,7 +9,7 @@ from .postgresql import PostgreSQLMigrationAdapter,PostgreSQLMigrationLedger
 from .bootstrap import MigrationBootstrapService
 from .locking import MigrationLock
 from .executor import MigrationExecutor
-from .service import MigrationControlService
+from .service import MigrationControlService,MigrationStatus
 from .formatting import format_json,format_status
 from .drift import MigrationDriftInspector
 from .legacy_cleanup import LegacySchemaCleanupService,LEGACY_SCHEMA_ALLOWLIST
@@ -51,7 +51,8 @@ def main(argv=None,*,environ=None,input_fn=input,password_fn=getpass.getpass,con
             expected=target.database_name if target.environment.value!='production' else f'APPLY PRODUCTION {target.database_name}'
             if not args.yes and input_fn(f'Type {expected} to confirm: ').strip()!=expected: raise MigrationConfirmationError('migration application was not confirmed.')
             result=service.apply(applied_by=target.username,database_name=actual.database_name,environment_name=target.environment.value,repository_revision=env.get('NPP_REPOSITORY_REVISION','unknown'))
-        print(format_json(result) if args.format=='json' else (format_status(result) if hasattr(result,'ledger_state') else format_json(result))); return EXIT_SUCCESS
+        output = format_json(result) if args.format == 'json' else (format_status(result) if isinstance(result, MigrationStatus) else format_json(result))
+        print(output); return EXIT_SUCCESS
     except MigrationTargetError as e: print(f'{e.code}: {e.message}',file=sys.stderr); return EXIT_TARGET_MISMATCH
     except MigrationLockError as e: print(f'{e.code}: {e.message}',file=sys.stderr); return EXIT_LOCK_UNAVAILABLE
     except MigrationChecksumError as e: print(f'{e.code}: {e.message}',file=sys.stderr); return EXIT_INTEGRITY_FAILURE
