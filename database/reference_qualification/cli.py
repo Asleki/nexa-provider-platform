@@ -17,11 +17,15 @@ from .errors import ReferenceQualificationError
 from .formatting import format_json, format_production_report, format_schema_report
 from .postgresql_inspector import PostgreSQLReferenceSchemaInspector
 from .production_name_qualifier import ProductionNameAuthoringQualifier
+from .development_reset import DevelopmentCatalogueReset
+from .reference_bootstrap import GovernedReferenceBootstrap
+from registries.reference_authority import PostgreSQLReferenceRepository, PostgreSQLReferenceCodeAllocator, AtomicReferenceCodeAllocator, ReferenceAuthoringService
+from registries.name_authority.production_context import PLANS
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="python -m database.reference_qualification")
-    parser.add_argument("command", choices=("inspect-schema", "qualify-production-name"))
+    parser.add_argument("command", choices=("inspect-schema", "qualify-production-name", "preview-development-reset", "reset-development-catalogue", "bootstrap-reference-catalogues", "list-catalogue-plans"))
     parser.add_argument("--format", choices=("human", "json"), default="human")
     parser.add_argument("--schema", action="append", dest="schemas")
     parser.add_argument("--name")
@@ -36,6 +40,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--script-code")
     parser.add_argument("--notes")
     parser.add_argument("--yes", action="store_true")
+    parser.add_argument("--seed-root", default="database/seeds")
     return parser
 
 
@@ -50,6 +55,36 @@ def main(argv=None, *, environ=None, input_fn=input, password_fn=getpass.getpass
         if args.command == "inspect-schema":
             result = PostgreSQLReferenceSchemaInspector(factory).inspect(tuple(args.schemas or ("reference", "migration_control")))
             print(format_json(result) if args.format == "json" else format_schema_report(result))
+            return 0
+
+        if args.command == "list-catalogue-plans":
+            print(format_json({"plans": {key: [step.step_id for step in value.steps] for key, value in PLANS.items()}}))
+            return 0
+
+        if args.command in {"preview-development-reset", "reset-development-catalogue"}:
+            reset = DevelopmentCatalogueReset(factory)
+            plan = reset.preview(target.database_name, target.environment)
+            if args.command == "preview-development-reset":
+                print(format_json(plan))
+                return 0
+            token = f"RESET NAME CATALOGUE {target.database_name} {plan.plan_checksum[:12]}"
+            confirmation = token if args.yes else input_fn(f"Type {token} to confirm: ").strip()
+            result = reset.execute(plan, confirmation)
+            print(format_json(result))
+            return 0
+
+        if args.command == "bootstrap-reference-catalogues":
+            if not args.submitter or not args.approver:
+                raise ValueError("--submitter and --approver are required.")
+            token = f"BOOTSTRAP REFERENCE CATALOGUES {target.database_name}"
+            if not args.yes and input_fn(f"Type {token} to confirm: ").strip() != token:
+                raise ValueError("reference bootstrap was not confirmed.")
+            provider = PostgreSQLConnectionProvider(factory)
+            repo = PostgreSQLReferenceRepository(provider)
+            allocator = AtomicReferenceCodeAllocator(PostgreSQLReferenceCodeAllocator(provider))
+            authored = GovernedReferenceBootstrap(ReferenceAuthoringService(repo, allocator), args.seed_root).bootstrap(args.submitter, args.approver)
+            created = sum(1 for _, was_created in authored if was_created)
+            print(format_json({"processed": len(authored), "created": created, "existing": len(authored)-created}))
             return 0
 
         required = {"--name": args.name, "--submitter": args.submitter, "--approver": args.approver}

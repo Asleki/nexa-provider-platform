@@ -27,3 +27,9 @@ def test_cli_inspect_schema_uses_short_repository_owned_command(capsys):
     )
     assert code==0
     assert "POSTGRESQL REFERENCE SCHEMA QUALIFICATION" in capsys.readouterr().out
+
+def test_cli_lists_catalogue_plans_without_database_writes(capsys):
+    environ={"PGHOST":"db.example","PGPORT":"5432","PGDATABASE":"npp_dev","PGUSER":"npp_admin","PGSSLMODE":"require","PGCONNECT_TIMEOUT":"10","NPP_ENVIRONMENT":"development"}
+    code=main(["list-catalogue-plans"],environ=environ,password_fn=lambda _:"secret",connection_factory_builder=lambda target,password:(lambda:Connection()))
+    assert code==0
+    assert "native-core" in capsys.readouterr().out

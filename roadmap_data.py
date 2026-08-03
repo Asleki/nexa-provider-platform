@@ -197,6 +197,8 @@ C|M009.13.6|Migration Status, Plan and Verification Commands
 C|M009.13.7|Migration Failure, Recovery and Rollback Boundaries
 C|M009.13.8|AWS PostgreSQL Migration Qualification
 C|M009.13.9|Migration Control Integration and Regression Tests
+P|M009.13.10|Reference Registry Production Authoring and PostgreSQL Schema Qualification
+P|M009.13.11|Name Source Relationship Ledger Migration
 P|M009.3|Email Registry
 P|M009.3.1|Email Address Model
 P|M009.3.2|Email-Type Model

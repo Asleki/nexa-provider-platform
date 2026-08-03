@@ -137,6 +137,40 @@
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m009_13_10_reference_registry_authoring",
+      "milestone_id": "M009.13.10",
+      "sequence_number": 5,
+      "description": "reference_registry_authoring",
+      "forward_file": "m009_13_10_reference_registry_authoring.sql",
+      "rollback_file": "m009_13_10_reference_registry_authoring_rollback.sql",
+      "depends_on": [
+        "m009_12_12_name_authority_application"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "reference.reference_authority_record",
+          "reference.name_orthography_profile",
+          "reference.name_context_relationship"
+        ],
+        "indexes": [
+          "ix_reference_authority_type_status",
+          "ix_name_orthography_structure",
+          "ix_name_context_target"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1,
+      "forward_sha256": "f0c4b61e3997f98ab7436bf71f222023ef685f1c7b94492ca16d79ff1fef9f78",
+      "forward_byte_size": 4141,
+      "rollback_sha256": "cff5f10331a610c7f2519f6eec3b290d5a0375bf260faacf6cd62c7f7c2b5bac",
+      "rollback_byte_size": 343
     }
   ]
 }
