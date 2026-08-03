@@ -4,11 +4,11 @@
 
 ## Engineering Roadmap Frontend
 
-**Version 1.1.0** · **M001 → M030.12** · **1552 canonical records**
+**Version 1.1.0** · **M001 → M030.12** · **1554 canonical records**
 
-`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **11.08%**
+`███░░░░░░░░░░░░░░░░░░░░░░░░░░░` **11.07%**
 
-**172 completed** · **1380 planned** · **30 root milestones**
+**172 completed** · **1382 planned** · **30 root milestones**
 
 </div>
 
@@ -21,10 +21,10 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **11.08%** |
+| Overall progress | **11.07%** |
 | Completed milestones | **172** |
-| Planned milestones | **1380** |
-| Total roadmap records | **1552** |
+| Planned milestones | **1382** |
+| Total roadmap records | **1554** |
 | Root milestones | **30** |
 
 ### Status key
@@ -48,7 +48,7 @@ Jump directly to a root milestone:
 - [✅ **M006 — Event Infrastructure**](#m006) — 32/32 complete (100.0%)
 - [✅ **M007 — Audit Infrastructure**](#m007) — 11/11 complete (100.0%)
 - [✅ **M008 — Master Registry Foundation**](#m008) — 32/32 complete (100.0%)
-- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 53/135 complete (39.3%)
+- [🟦 **M009 — Data Catalogue and Communication Foundations**](#m009) — 53/137 complete (38.7%)
 - [🟦 **M010 — National Identity Platform**](#m010) — 0/92 complete (0.0%)
 - [🟦 **M011 — Telecommunications Platform**](#m011) — 0/38 complete (0.0%)
 - [🟦 **M012 — Financial Identity, Banking and Payment Infrastructure**](#m012) — 0/442 complete (0.0%)
@@ -85,7 +85,7 @@ Jump directly to a root milestone:
 | [M006](#m006) | Event Infrastructure | ✅ Completed | 32 | 32 | 100.0% |
 | [M007](#m007) | Audit Infrastructure | ✅ Completed | 11 | 11 | 100.0% |
 | [M008](#m008) | Master Registry Foundation | ✅ Completed | 32 | 32 | 100.0% |
-| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 135 | 53 | 39.3% |
+| [M009](#m009) | Data Catalogue and Communication Foundations | 🟦 Planned | 137 | 53 | 38.7% |
 | [M010](#m010) | National Identity Platform | 🟦 Planned | 92 | 0 | 0.0% |
 | [M011](#m011) | Telecommunications Platform | 🟦 Planned | 38 | 0 | 0.0% |
 | [M012](#m012) | Financial Identity, Banking and Payment Infrastructure | 🟦 Planned | 442 | 0 | 0.0% |
@@ -1298,10 +1298,10 @@ Jump directly to a root milestone:
 <a id="m009"></a>
 ### 🟦 M009 — Data Catalogue and Communication Foundations
 
-`████████░░░░░░░░░░░░` **53/135 complete (39.3%)**
+`████████░░░░░░░░░░░░` **53/137 complete (38.7%)**
 
 <details>
-<summary><strong>Open M009 roadmap records (135 items)</strong></summary>
+<summary><strong>Open M009 roadmap records (137 items)</strong></summary>
 
 🟦 **`M009` — Data Catalogue and Communication Foundations**
 
@@ -1805,6 +1805,24 @@ Jump directly to a root milestone:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-75510f659f733a5d10f3`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Database Migration Control Foundation / Migration Control Integration and Regression Tests`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.13.10` — Reference Registry Production Authoring and PostgreSQL Schema Qualification**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-a5776f97ea22cc38dfdb`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Database Migration Control Foundation / Reference Registry Production Authoring and PostgreSQL Schema Qualification`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.13.11` — Name Source Relationship Ledger Migration**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `npp-rm-06bad6803892b162f415`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Data Catalogue and Communication Foundations / Database Migration Control Foundation / Name Source Relationship Ledger Migration`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
 &nbsp;&nbsp;&nbsp;&nbsp;🟦 **`M009.3` — Email Registry**
@@ -14507,7 +14525,7 @@ Jump directly to a root milestone:
 | Canonical source | `roadmap_data.py` |
 | Generator | `roadmap_frontend.py` |
 | Roadmap version | `1.1.0` |
-| Records rendered | `1552` |
-| Canonical content checksum | `7e68b808bcf12e6dc5929530e2df3fcd3ba08afe11ab138b908ad6f1e2dc30ce` |
+| Records rendered | `1554` |
+| Canonical content checksum | `ad6dfb1892f98b24c53683e1f6197f67df71139f02cc4c39bcb01a5ed10d664a` |
 
 > The generated timestamp is intentionally omitted so identical canonical data produces identical `ROADMAP.md` output.
