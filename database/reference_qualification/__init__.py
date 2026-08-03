@@ -17,3 +17,5 @@ from .reference_bootstrap import GovernedReferenceBootstrap
 from .catalogue_snapshot import catalogue_fingerprint
 from .readiness_verifier import verify_readiness
 from .catalogue_plans import SequentialCataloguePlanRunner,PlanStepReceipt
+
+from .catalogue_execution import *

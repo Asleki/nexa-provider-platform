@@ -141,7 +141,7 @@ C|M008.16.5|Relationship Provenance
 C|M008.16.6|Relationship APIs
 C|M008.16.7|Relationship Tests
 C|M008.17|Canonical Dataset Foundation
-P|M009|Data Catalogue and Communication Foundations
+C|M009|Data Catalogue and Communication Foundations
 C|M009.1|Name Catalogue
 C|M009.1.1|First-Name Catalogue
 C|M009.1.2|Middle-Name Catalogue
@@ -174,7 +174,7 @@ C|M009.10.10|Name Catalogue Sync and Receipts
 C|M009.10.11|Integration APIs
 C|M009.10.12|Integration and Regression Tests
 C|M009.11|Name Catalogue Production Seed Governance
-P|M009.12|Name Authority Registry
+C|M009.12|Name Authority Registry
 C|M009.12.1|Production Seed Activation and Integrity Loading
 C|M009.12.2|Source-Specific Name Seed Adapters
 C|M009.12.3|Governed Atomic Name Import
@@ -187,7 +187,7 @@ C|M009.12.9|Name Authority Read Models and Search
 C|M009.12.10|Name Authority Application APIs
 C|M009.12.11|AWS-Hosted PWA and Offline Name Authority Access
 C|M009.12.12|Name Authority Integration and Regression Tests
-P|M009.13|Database Migration Control Foundation
+C|M009.13|Database Migration Control Foundation
 C|M009.13.1|Migration Identity and File Discovery
 C|M009.13.2|Migration Ordering and Dependency Planning
 C|M009.13.3|Migration Checksum and Immutability Verification
@@ -197,8 +197,8 @@ C|M009.13.6|Migration Status, Plan and Verification Commands
 C|M009.13.7|Migration Failure, Recovery and Rollback Boundaries
 C|M009.13.8|AWS PostgreSQL Migration Qualification
 C|M009.13.9|Migration Control Integration and Regression Tests
-P|M009.13.10|Reference Registry Production Authoring and PostgreSQL Schema Qualification
-P|M009.13.11|Name Source Relationship Ledger Migration
+C|M009.13.10|Reference Registry Production Authoring and PostgreSQL Schema Qualification
+C|M009.13.11|Name Source Relationship Ledger Migration
 P|M009.3|Email Registry
 P|M009.3.1|Email Address Model
 P|M009.3.2|Email-Type Model

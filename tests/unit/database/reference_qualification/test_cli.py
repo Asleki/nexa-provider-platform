@@ -33,3 +33,10 @@ def test_cli_lists_catalogue_plans_without_database_writes(capsys):
     code=main(["list-catalogue-plans"],environ=environ,password_fn=lambda _:"secret",connection_factory_builder=lambda target,password:(lambda:Connection()))
     assert code==0
     assert "native-core" in capsys.readouterr().out
+
+def test_cli_parser_exposes_catalogue_plan_execution_commands():
+    from database.reference_qualification.cli import build_parser
+    parser=build_parser()
+    for command in ("preview-catalogue-plan","run-catalogue-plan","verify-catalogue-plan"):
+        args=parser.parse_args([command,"--plan","native-core","--runtime","simulation"])
+        assert args.command==command
