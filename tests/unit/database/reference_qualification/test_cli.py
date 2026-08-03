@@ -1,0 +1,29 @@
+from database.reference_qualification.cli import main
+
+
+class Cursor:
+    def __init__(self): self.rows=[]
+    def execute(self, sql, params=None):
+        normalized=" ".join(sql.split())
+        if "current_database()" in normalized: self.rows=[("npp_dev",)]
+        else: self.rows=[]
+    def fetchone(self): return self.rows[0]
+    def fetchall(self): return list(self.rows)
+class Connection:
+    def cursor(self): return Cursor()
+    def close(self): pass
+
+
+def test_cli_inspect_schema_uses_short_repository_owned_command(capsys):
+    environ={
+        "PGHOST":"db.example", "PGPORT":"5432", "PGDATABASE":"npp_dev", "PGUSER":"npp_admin",
+        "PGSSLMODE":"require", "PGCONNECT_TIMEOUT":"10", "NPP_ENVIRONMENT":"development",
+    }
+    code=main(
+        ["inspect-schema", "--schema", "reference"],
+        environ=environ,
+        password_fn=lambda prompt:"secret",
+        connection_factory_builder=lambda target,password:(lambda:Connection()),
+    )
+    assert code==0
+    assert "POSTGRESQL REFERENCE SCHEMA QUALIFICATION" in capsys.readouterr().out
