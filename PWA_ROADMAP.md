@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **50 canonical records**
 
-`█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` **2.00%**
+`██░░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.00%**
 
-**1 completed** · **49 planned** · **8 root milestones**
+**4 completed** · **46 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **2.00%** |
-| Completed records | **1** |
-| Planned records | **49** |
+| Overall progress | **8.00%** |
+| Completed records | **4** |
+| Planned records | **46** |
 | Total roadmap records | **50** |
 | Root milestones | **8** |
 
@@ -43,7 +43,7 @@
 
 ## Roadmap navigation
 
-- [🟦 **P001 — NexiLabs PWA Project Foundation**](#p001) — 1/4 complete (25.0%)
+- [✅ **P001 — NexiLabs PWA Project Foundation**](#p001) — 4/4 complete (100.0%)
 - [🟦 **P002 — Application Shell and Brand Integration**](#p002) — 0/6 complete (0.0%)
 - [🟦 **P003 — Installable and Offline PWA**](#p003) — 0/6 complete (0.0%)
 - [🟦 **P004 — NoveGeo World Geometry and Map Core**](#p004) — 0/7 complete (0.0%)
@@ -58,7 +58,7 @@
 
 | Root | Title | Status | Records | Complete | Progress |
 |---|---|---:|---:|---:|---:|
-| [P001](#p001) | NexiLabs PWA Project Foundation | 🟦 Planned | 4 | 1 | 25.0% |
+| [P001](#p001) | NexiLabs PWA Project Foundation | ✅ Completed | 4 | 4 | 100.0% |
 | [P002](#p002) | Application Shell and Brand Integration | 🟦 Planned | 6 | 0 | 0.0% |
 | [P003](#p003) | Installable and Offline PWA | 🟦 Planned | 6 | 0 | 0.0% |
 | [P004](#p004) | NoveGeo World Geometry and Map Core | 🟦 Planned | 7 | 0 | 0.0% |
@@ -72,16 +72,16 @@
 ## Complete roadmap
 
 <a id="p001"></a>
-### 🟦 P001 — NexiLabs PWA Project Foundation
+### ✅ P001 — NexiLabs PWA Project Foundation
 
-`█████░░░░░░░░░░░░░░░` **1/4 complete (25.0%)**
+`████████████████████` **4/4 complete (100.0%)**
 
 <details>
 <summary><strong>Open P001 roadmap records (4 items)</strong></summary>
 
-🟦 **`P001` — NexiLabs PWA Project Foundation**
+✅ **`P001` — NexiLabs PWA Project Foundation**
 
-- **Status:** Planned
+- **Status:** Completed
 - **Priority:** NORMAL
 - **Dependencies:** None
 - **Record ID:** `nxl-pwa-rm-0f729c84ffcfa3e5db58`
@@ -97,18 +97,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexiLabs PWA Project Foundation / PWA Scope and Product Boundary`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P001.2` — Repository, Frontend and Roadmap Governance**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P001.2` — Repository, Frontend and Roadmap Governance**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-b8162511054825d8c0d9`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NexiLabs PWA Project Foundation / Repository, Frontend and Roadmap Governance`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P001.3` — Foundation Verification and Operating Rules**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P001.3` — Foundation Verification and Operating Rules**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-2ea2f2e10c5faa213e76`
@@ -641,6 +641,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `50` |
-| Canonical content checksum | `c62a8b176e3ed1db52f1d1d2aae1668cb643d066a72c47da0e6e201e816bb5cc` |
+| Canonical content checksum | `9697c5e94f1726a045b283ac723e501f8dff1da40460fca43203951c8c91a1ce` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.

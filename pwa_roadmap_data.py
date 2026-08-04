@@ -36,10 +36,10 @@ ROADMAP_BOUNDARIES: Final[Mapping[str, str]] = MappingProxyType({
 })
 
 _ROADMAP_OUTLINE: Final[str] = r"""
-P|P001|NexiLabs PWA Project Foundation
+C|P001|NexiLabs PWA Project Foundation
 C|P001.1|PWA Scope and Product Boundary
-P|P001.2|Repository, Frontend and Roadmap Governance
-P|P001.3|Foundation Verification and Operating Rules
+C|P001.2|Repository, Frontend and Roadmap Governance
+C|P001.3|Foundation Verification and Operating Rules
 P|P002|Application Shell and Brand Integration
 P|P002.1|Executable Frontend Application Skeleton
 P|P002.2|Application Bootstrap and Health State
