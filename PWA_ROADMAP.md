@@ -6,9 +6,9 @@
 
 **Version 0.1.0** · **P001 → P012.7** · **128 canonical records**
 
-`░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` **0.00%**
+`░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` **0.78%**
 
-**0 completed** · **128 planned** · **12 root milestones**
+**1 completed** · **127 planned** · **12 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **0.00%** |
-| Completed records | **0** |
-| Planned records | **128** |
+| Overall progress | **0.78%** |
+| Completed records | **1** |
+| Planned records | **127** |
 | Total roadmap records | **128** |
 | Root milestones | **12** |
 
@@ -43,7 +43,7 @@
 
 ## Roadmap navigation
 
-- [🟦 **P001 — NexiLabs PWA Project Foundation**](#p001) — 0/9 complete (0.0%)
+- [🟦 **P001 — NexiLabs PWA Project Foundation**](#p001) — 1/9 complete (11.1%)
 - [🟦 **P002 — NexiLabs Brand Integration**](#p002) — 0/10 complete (0.0%)
 - [🟦 **P003 — HTML, Metadata and Installable PWA Foundation**](#p003) — 0/13 complete (0.0%)
 - [🟦 **P004 — AWS Hosting and Deployment Foundation**](#p004) — 0/12 complete (0.0%)
@@ -62,7 +62,7 @@
 
 | Root | Title | Status | Records | Complete | Progress |
 |---|---|---:|---:|---:|---:|
-| [P001](#p001) | NexiLabs PWA Project Foundation | 🟦 Planned | 9 | 0 | 0.0% |
+| [P001](#p001) | NexiLabs PWA Project Foundation | 🟦 Planned | 9 | 1 | 11.1% |
 | [P002](#p002) | NexiLabs Brand Integration | 🟦 Planned | 10 | 0 | 0.0% |
 | [P003](#p003) | HTML, Metadata and Installable PWA Foundation | 🟦 Planned | 13 | 0 | 0.0% |
 | [P004](#p004) | AWS Hosting and Deployment Foundation | 🟦 Planned | 12 | 0 | 0.0% |
@@ -82,7 +82,7 @@
 <a id="p001"></a>
 ### 🟦 P001 — NexiLabs PWA Project Foundation
 
-`░░░░░░░░░░░░░░░░░░░░` **0/9 complete (0.0%)**
+`██░░░░░░░░░░░░░░░░░░` **1/9 complete (11.1%)**
 
 <details>
 <summary><strong>Open P001 roadmap records (9 items)</strong></summary>
@@ -96,9 +96,9 @@
 - **Semantic path:** `NexiLabs PWA Project Foundation`
 - **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P001.1` — PWA Scope and Product Boundary**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P001.1` — PWA Scope and Product Boundary**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-d8dc856aa66e38bc7525`
@@ -1407,6 +1407,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.1.0` |
 | Records rendered | `128` |
-| Canonical content checksum | `063d60789cc6b4b4a595caaafefbf742d954158a271ca41a49fa29e249ec719a` |
+| Canonical content checksum | `11657a74e552be19403f6e306b3a77fd76e49224a702790bffc990375215d276` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.
