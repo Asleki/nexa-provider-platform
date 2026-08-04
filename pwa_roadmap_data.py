@@ -41,10 +41,10 @@ C|P001.1|PWA Scope and Product Boundary
 C|P001.2|Repository, Frontend and Roadmap Governance
 C|P001.3|Foundation Verification and Operating Rules
 P|P002|Application Shell and Brand Integration
-P|P002.1|Executable Frontend Application Skeleton
-P|P002.2|Application Bootstrap and Health State
-P|P002.3|Canonical NexiLabs Brand Consumption
-P|P002.4|Responsive Base Layout and Styling
+C|P002.1|Executable Frontend Application Skeleton
+C|P002.2|Application Bootstrap and Health State
+C|P002.3|Canonical NexiLabs Brand Consumption
+C|P002.4|Responsive Base Layout and Styling
 P|P002.5|Application Shell Integration Tests
 P|P003|Installable and Offline PWA
 P|P003.1|Web App Manifest and Install Metadata

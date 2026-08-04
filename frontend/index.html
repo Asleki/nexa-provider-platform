@@ -5,22 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="NexiLabs NoveGeo PWA application shell.">
   <title>NexiLabs NoveGeo PWA</title>
+  <link rel="stylesheet" href="./public/brand/nexilabs/metadata/brand-tokens.css">
   <link rel="stylesheet" href="./styles/app.css">
   <script type="module" src="./src/main.js"></script>
 </head>
 <body>
-  <main id="nexilabs-app" class="application-shell" data-application-status="CREATED" data-runtime-mode="development">
-    <section class="health-panel" aria-labelledby="application-title">
-      <p class="eyebrow">NexiLabs</p>
-      <h1 id="application-title">NoveGeo PWA</h1>
-      <p class="summary">Frontend runtime foundation</p>
-      <dl class="health-grid">
-        <div><dt>Status</dt><dd data-role="application-status" data-health-status="CREATED" aria-live="polite">Created</dd></div>
-        <div><dt>Runtime</dt><dd data-role="runtime-mode">development</dd></div>
-        <div><dt>Version</dt><dd data-role="application-version">0.1.0</dd></div>
-      </dl>
-      <noscript>This application requires JavaScript to start.</noscript>
-    </section>
-  </main>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="nexilabs-app" class="application-shell" data-application-status="CREATED" data-runtime-mode="development">
+    <header class="application-header" aria-label="Application header">
+      <a class="brand-lockup" href="#main-content" aria-label="NexiLabs NoveGeo PWA home">
+        <img
+          class="brand-logo"
+          data-role="brand-logo"
+          src="./public/brand/nexilabs/vectors/nexilabs_logo_horizontal.svg"
+          alt="NexiLabs"
+          width="240"
+          height="64"
+        >
+        <span class="brand-product">NoveGeo PWA</span>
+      </a>
+      <div class="header-indicators" aria-label="Runtime indicators">
+        <span class="runtime-badge"><span class="indicator-label">Runtime</span> <strong data-role="runtime-mode">development</strong></span>
+        <span class="status-badge" data-health-status="CREATED"><span class="indicator-label">Status</span> <strong data-role="application-status" aria-live="polite">Created</strong></span>
+      </div>
+    </header>
+
+    <main id="main-content" class="application-main" tabindex="-1">
+      <section class="hero-panel" aria-labelledby="application-title">
+        <p class="eyebrow" data-role="brand-name">NexiLabs</p>
+        <h1 id="application-title">NoveGeo PWA</h1>
+        <p class="summary">A governed application shell for the evolving NoveGeo world.</p>
+      </section>
+
+      <section class="workspace-grid" aria-label="Application foundation workspace">
+        <article class="workspace-panel health-panel" aria-labelledby="foundation-title">
+          <div class="section-heading">
+            <p class="section-kicker">Foundation</p>
+            <h2 id="foundation-title">Frontend runtime health</h2>
+          </div>
+          <dl class="health-grid">
+            <div><dt>Status</dt><dd data-role="application-status" data-health-status="CREATED" aria-live="polite">Created</dd></div>
+            <div><dt>Runtime</dt><dd data-role="runtime-mode">development</dd></div>
+            <div><dt>Version</dt><dd data-role="application-version">0.1.0</dd></div>
+          </dl>
+          <noscript>This application requires JavaScript to start.</noscript>
+        </article>
+
+        <aside class="workspace-panel future-panel" aria-labelledby="workspace-title">
+          <div class="section-heading">
+            <p class="section-kicker">Reserved workspace</p>
+            <h2 id="workspace-title">NoveGeo world view</h2>
+          </div>
+          <p>The map, environmental layers, simulation clock, and registry-owned views will be added by later milestones.</p>
+          <p class="boundary-note">No map or registry capability is claimed in this shell.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="application-footer">
+      <span>NexiLabs NoveGeo PWA</span>
+      <span>Version <strong data-role="application-version">0.1.0</strong></span>
+    </footer>
+  </div>
 </body>
 </html>

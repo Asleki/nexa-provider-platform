@@ -4,6 +4,7 @@
  */
 
 import { ApplicationState, ApplicationStatus } from "../core/application-state.js";
+import { applyBrand } from "../branding/brand-config.js";
 
 function requireElement(documentRef, selector) {
   const element = documentRef.querySelector(selector);
@@ -11,13 +12,30 @@ function requireElement(documentRef, selector) {
   return element;
 }
 
-function renderHealth({ root, statusElement, config, snapshot }) {
+function matchingElements(documentRef, selector, fallback) {
+  if (typeof documentRef.querySelectorAll === "function") {
+    const matches = Array.from(documentRef.querySelectorAll(selector));
+    if (matches.length) return matches;
+  }
+  return fallback ? [fallback] : [];
+}
+
+function renderHealth({ documentRef, root, statusElement, config, snapshot }) {
   root.dataset.applicationStatus = snapshot.status;
   root.dataset.runtimeMode = config.runtimeMode;
-  statusElement.dataset.healthStatus = snapshot.status;
-  statusElement.textContent = snapshot.status === ApplicationStatus.READY
+  const label = snapshot.status === ApplicationStatus.READY
     ? "Ready"
     : snapshot.status.charAt(0) + snapshot.status.slice(1).toLowerCase();
+  for (const element of matchingElements(documentRef, "[data-role='application-status']", statusElement)) {
+    element.dataset.healthStatus = snapshot.status;
+    element.textContent = label;
+  }
+  for (const element of matchingElements(documentRef, "[data-role='runtime-mode']")) {
+    element.textContent = config.runtimeMode;
+  }
+  for (const element of matchingElements(documentRef, "[data-role='application-version']")) {
+    element.textContent = config.applicationVersion;
+  }
 }
 
 export function createApplication({
@@ -52,6 +70,7 @@ export function createApplication({
 
       try {
         const root = requireElement(documentRef, "#nexilabs-app");
+        const brandReceipt = applyBrand(documentRef);
         const statusElement = requireElement(documentRef, "[data-role='application-status']");
         const runtimeElement = requireElement(documentRef, "[data-role='runtime-mode']");
         const versionElement = requireElement(documentRef, "[data-role='application-version']");
@@ -61,7 +80,7 @@ export function createApplication({
         const readySnapshot = state.transition(ApplicationStatus.READY, {
           reason: "application_mounted",
         });
-        renderHealth({ root, statusElement, config, snapshot: readySnapshot });
+        renderHealth({ documentRef, root, statusElement, config, snapshot: readySnapshot });
 
         startReceipt = Object.freeze({
           applicationId: config.applicationId,
@@ -72,6 +91,7 @@ export function createApplication({
           startedAt: readySnapshot.changedAt,
           readyAt: clock(),
           capabilities: config.capabilities,
+          brand: brandReceipt,
         });
         return startReceipt;
       } catch (error) {
@@ -82,7 +102,7 @@ export function createApplication({
         const root = documentRef.querySelector("#nexilabs-app");
         const statusElement = documentRef.querySelector("[data-role='application-status']");
         if (root && statusElement) {
-          renderHealth({ root, statusElement, config, snapshot: failedSnapshot });
+          renderHealth({ documentRef, root, statusElement, config, snapshot: failedSnapshot });
         }
         throw error;
       }

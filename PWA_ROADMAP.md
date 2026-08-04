@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **50 canonical records**
 
-`██░░░░░░░░░░░░░░░░░░░░░░░░░░░░` **8.00%**
+`█████░░░░░░░░░░░░░░░░░░░░░░░░░` **16.00%**
 
-**4 completed** · **46 planned** · **8 root milestones**
+**8 completed** · **42 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **8.00%** |
-| Completed records | **4** |
-| Planned records | **46** |
+| Overall progress | **16.00%** |
+| Completed records | **8** |
+| Planned records | **42** |
 | Total roadmap records | **50** |
 | Root milestones | **8** |
 
@@ -44,7 +44,7 @@
 ## Roadmap navigation
 
 - [✅ **P001 — NexiLabs PWA Project Foundation**](#p001) — 4/4 complete (100.0%)
-- [🟦 **P002 — Application Shell and Brand Integration**](#p002) — 0/6 complete (0.0%)
+- [🟦 **P002 — Application Shell and Brand Integration**](#p002) — 4/6 complete (66.7%)
 - [🟦 **P003 — Installable and Offline PWA**](#p003) — 0/6 complete (0.0%)
 - [🟦 **P004 — NoveGeo World Geometry and Map Core**](#p004) — 0/7 complete (0.0%)
 - [🟦 **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 0/7 complete (0.0%)
@@ -59,7 +59,7 @@
 | Root | Title | Status | Records | Complete | Progress |
 |---|---|---:|---:|---:|---:|
 | [P001](#p001) | NexiLabs PWA Project Foundation | ✅ Completed | 4 | 4 | 100.0% |
-| [P002](#p002) | Application Shell and Brand Integration | 🟦 Planned | 6 | 0 | 0.0% |
+| [P002](#p002) | Application Shell and Brand Integration | 🟦 Planned | 6 | 4 | 66.7% |
 | [P003](#p003) | Installable and Offline PWA | 🟦 Planned | 6 | 0 | 0.0% |
 | [P004](#p004) | NoveGeo World Geometry and Map Core | 🟦 Planned | 7 | 0 | 0.0% |
 | [P005](#p005) | Terrain, Water, Climate and Vegetation | 🟦 Planned | 7 | 0 | 0.0% |
@@ -124,7 +124,7 @@
 <a id="p002"></a>
 ### 🟦 P002 — Application Shell and Brand Integration
 
-`░░░░░░░░░░░░░░░░░░░░` **0/6 complete (0.0%)**
+`█████████████░░░░░░░` **4/6 complete (66.7%)**
 
 <details>
 <summary><strong>Open P002 roadmap records (6 items)</strong></summary>
@@ -138,36 +138,36 @@
 - **Semantic path:** `Application Shell and Brand Integration`
 - **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P002.1` — Executable Frontend Application Skeleton**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P002.1` — Executable Frontend Application Skeleton**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-164ba308e2c0b22273f3`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Application Shell and Brand Integration / Executable Frontend Application Skeleton`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P002.2` — Application Bootstrap and Health State**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P002.2` — Application Bootstrap and Health State**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-9b0c2a1bcaea85caeecd`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Application Shell and Brand Integration / Application Bootstrap and Health State`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P002.3` — Canonical NexiLabs Brand Consumption**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P002.3` — Canonical NexiLabs Brand Consumption**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-99551678560a62377984`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Application Shell and Brand Integration / Canonical NexiLabs Brand Consumption`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P002.4` — Responsive Base Layout and Styling**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P002.4` — Responsive Base Layout and Styling**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-90b4dd56e56b6d6aeeb6`
@@ -641,6 +641,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `50` |
-| Canonical content checksum | `9697c5e94f1726a045b283ac723e501f8dff1da40460fca43203951c8c91a1ce` |
+| Canonical content checksum | `5dc59c7f6b71e5884b0f1aff4687ed77919d49d7b72f76137736ebaa95023284` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.
