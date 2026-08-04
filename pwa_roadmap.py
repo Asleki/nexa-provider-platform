@@ -178,8 +178,19 @@ def main(argv: Sequence[str] | None = None) -> int:
         print(f"Roadmap range   : {data.ROADMAP_START} → {data.ROADMAP_END}")
         return EXIT_OK
     if command == "json":
-        payload = data.roadmap_summary() if args.summary else data.MILESTONES
-        print(json.dumps(payload, indent=2, ensure_ascii=False, default=lambda value: list(value) if not isinstance(value, dict) else value))
+        if args.summary:
+            payload = dict(data.roadmap_summary())
+        else:
+            payload = [dict(item) for item in data.MILESTONES]
+
+        print(
+            json.dumps(
+                payload,
+                indent=2,
+                ensure_ascii=False,
+                default=list,
+            )
+        )
         return EXIT_OK
     parser.error(f"Unknown command: {command}")
     return EXIT_INVALID

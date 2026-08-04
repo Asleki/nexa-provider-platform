@@ -10,8 +10,8 @@ def test_current_canonical_summary_is_consistent() -> None:
     assert summary["start"] == "P001"
     assert summary["end"] == "P008.6"
     assert summary["total"] == 50
-    assert summary["completed"] == 1
-    assert summary["planned"] == 49
+    assert summary["completed"] == 4
+    assert summary["planned"] == 46
     assert summary["roots"] == 8
 
 

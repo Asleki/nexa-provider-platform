@@ -1,0 +1,34 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #071426;
+  color: #f4f8fc;
+}
+
+* { box-sizing: border-box; }
+html, body { min-height: 100%; margin: 0; }
+body {
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: radial-gradient(circle at top, #123a62 0%, #071426 58%);
+}
+
+.application-shell { width: min(100%, 48rem); }
+.health-panel {
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 1rem;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: rgba(5, 21, 39, .9);
+  box-shadow: 0 1.5rem 4rem rgba(0,0,0,.35);
+}
+.eyebrow { margin: 0; letter-spacing: .18em; text-transform: uppercase; font-size: .75rem; opacity: .75; }
+h1 { margin: .4rem 0 0; font-size: clamp(2rem, 8vw, 4rem); }
+.summary { margin: .5rem 0 2rem; color: #b6c8db; }
+.health-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 0; }
+.health-grid div { padding: 1rem; border-radius: .75rem; background: rgba(255,255,255,.06); }
+dt { font-size: .75rem; color: #9fb3c8; text-transform: uppercase; letter-spacing: .08em; }
+dd { margin: .35rem 0 0; font-weight: 700; overflow-wrap: anywhere; }
+[data-health-status="READY"] { color: #55e2b3; }
+[data-health-status="FAILED"] { color: #ff8d8d; }
+@media (max-width: 34rem) { .health-grid { grid-template-columns: 1fr; } }
