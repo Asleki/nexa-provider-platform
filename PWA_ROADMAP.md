@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **50 canonical records**
 
-`█████████░░░░░░░░░░░░░░░░░░░░░` **30.00%**
+`██████████░░░░░░░░░░░░░░░░░░░░` **32.00%**
 
-**15 completed** · **35 planned** · **8 root milestones**
+**16 completed** · **34 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **30.00%** |
-| Completed records | **15** |
-| Planned records | **35** |
+| Overall progress | **32.00%** |
+| Completed records | **16** |
+| Planned records | **34** |
 | Total roadmap records | **50** |
 | Root milestones | **8** |
 
@@ -45,7 +45,7 @@
 
 - [✅ **P001 — NexiLabs PWA Project Foundation**](#p001) — 4/4 complete (100.0%)
 - [✅ **P002 — Application Shell and Brand Integration**](#p002) — 6/6 complete (100.0%)
-- [✅ **P003 — Installable and Offline PWA**](#p003) — 5/6 complete (83.3%)
+- [✅ **P003 — Installable and Offline PWA**](#p003) — 6/6 complete (100.0%)
 - [🟦 **P004 — NoveGeo World Geometry and Map Core**](#p004) — 0/7 complete (0.0%)
 - [🟦 **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 0/7 complete (0.0%)
 - [🟦 **P006 — Map Interaction and Dynamic World State**](#p006) — 0/7 complete (0.0%)
@@ -60,7 +60,7 @@
 |---|---|---:|---:|---:|---:|
 | [P001](#p001) | NexiLabs PWA Project Foundation | ✅ Completed | 4 | 4 | 100.0% |
 | [P002](#p002) | Application Shell and Brand Integration | ✅ Completed | 6 | 6 | 100.0% |
-| [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 5 | 83.3% |
+| [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 6 | 100.0% |
 | [P004](#p004) | NoveGeo World Geometry and Map Core | 🟦 Planned | 7 | 0 | 0.0% |
 | [P005](#p005) | Terrain, Water, Climate and Vegetation | 🟦 Planned | 7 | 0 | 0.0% |
 | [P006](#p006) | Map Interaction and Dynamic World State | 🟦 Planned | 7 | 0 | 0.0% |
@@ -192,7 +192,7 @@
 <a id="p003"></a>
 ### ✅ P003 — Installable and Offline PWA
 
-`█████████████████░░░` **5/6 complete (83.3%)**
+`████████████████████` **6/6 complete (100.0%)**
 
 <details>
 <summary><strong>Open P003 roadmap records (6 items)</strong></summary>
@@ -242,9 +242,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Installable and Offline PWA / Update, Recovery and Cache Versioning`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P003.5` — Installation and Offline Qualification**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P003.5` — Installation and Offline Qualification**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-429467e43a77143840f0`
@@ -641,6 +641,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `50` |
-| Canonical content checksum | `9f60c0c6196e679585c529a603985b5cb3cefad39c2552d51e36e8e0bdae6934` |
+| Canonical content checksum | `095f8db05029a8692d9f61240c3fc3f2c94ae472b1d66344e60cae8865d224a9` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.

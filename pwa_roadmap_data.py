@@ -51,7 +51,7 @@ C|P003.1|Web App Manifest and Install Metadata
 C|P003.2|Service Worker Registration and Lifecycle
 C|P003.3|Offline Application Shell Cache
 C|P003.4|Update, Recovery and Cache Versioning
-P|P003.5|Installation and Offline Qualification
+C|P003.5|Installation and Offline Qualification
 P|P004|NoveGeo World Geometry and Map Core
 P|P004.1|Governed World Boundary Dataset
 P|P004.2|Coordinate Reference and Projection Engine
