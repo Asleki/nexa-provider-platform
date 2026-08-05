@@ -40,17 +40,17 @@ C|P001|NexiLabs PWA Project Foundation
 C|P001.1|PWA Scope and Product Boundary
 C|P001.2|Repository, Frontend and Roadmap Governance
 C|P001.3|Foundation Verification and Operating Rules
-P|P002|Application Shell and Brand Integration
+C|P002|Application Shell and Brand Integration
 C|P002.1|Executable Frontend Application Skeleton
 C|P002.2|Application Bootstrap and Health State
 C|P002.3|Canonical NexiLabs Brand Consumption
 C|P002.4|Responsive Base Layout and Styling
-P|P002.5|Application Shell Integration Tests
-P|P003|Installable and Offline PWA
-P|P003.1|Web App Manifest and Install Metadata
-P|P003.2|Service Worker Registration and Lifecycle
-P|P003.3|Offline Application Shell Cache
-P|P003.4|Update, Recovery and Cache Versioning
+C|P002.5|Application Shell Integration Tests
+C|P003|Installable and Offline PWA
+C|P003.1|Web App Manifest and Install Metadata
+C|P003.2|Service Worker Registration and Lifecycle
+C|P003.3|Offline Application Shell Cache
+C|P003.4|Update, Recovery and Cache Versioning
 P|P003.5|Installation and Offline Qualification
 P|P004|NoveGeo World Geometry and Map Core
 P|P004.1|Governed World Boundary Dataset

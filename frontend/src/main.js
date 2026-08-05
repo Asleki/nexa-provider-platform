@@ -2,6 +2,7 @@
 
 import { createApplication } from "./app/application.js";
 import { createRuntimeConfig } from "./config/runtime-config.js";
+import { registerServiceWorker } from "./pwa/service-worker-registration.js";
 
 function readPublicRuntimeInput(documentRef) {
   const root = documentRef.documentElement;
@@ -16,7 +17,9 @@ function readPublicRuntimeInput(documentRef) {
 
 export function bootstrap(documentRef = globalThis.document) {
   const config = createRuntimeConfig(readPublicRuntimeInput(documentRef));
-  return createApplication({ documentRef, config }).start();
+  const application = createApplication({ documentRef, config }).start();
+  void registerServiceWorker({ documentRef });
+  return application;
 }
 
 if (typeof document !== "undefined") {

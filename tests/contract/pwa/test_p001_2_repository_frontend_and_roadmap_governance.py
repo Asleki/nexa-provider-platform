@@ -208,6 +208,7 @@ def test_frontend_structure_may_materialize_only_inside_frontend() -> None:
         "scripts",
         "dist",
         "styles",
+        "sw.js",  # P003 service worker must remain at application scope root.
     }
 
     actual_children = {
@@ -238,6 +239,7 @@ def test_executable_frontend_source_is_permitted_after_p002_begins() -> None:
             "simulation",
             "styles",
             "ui",
+            "pwa",  # P003 install, offline and update lifecycle ownership.
         }
 
         actual_source_directories = {

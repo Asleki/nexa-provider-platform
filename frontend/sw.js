@@ -1,0 +1,51 @@
+/** P003.2–P003.4 — Versioned offline application-shell service worker. */
+const CACHE_NAME = "novegeo-shell-v1";
+const OFFLINE_URL = "./index.html";
+const APP_SHELL = [
+  "./", "./index.html", "./public/manifest.webmanifest",
+  "./public/brand/nexilabs/metadata/brand-tokens.css",
+  "./public/brand/nexilabs/vectors/nexilabs_logo_horizontal.svg",
+  "./public/brand/nexilabs/pwa/nexilabs_icon_192x192.png",
+  "./public/brand/nexilabs/pwa/nexilabs_icon_512x512.png",
+  "./styles/app.css", "./src/main.js", "./src/app/application.js",
+  "./src/branding/brand-assets.js", "./src/branding/brand-config.js",
+  "./src/config/runtime-config.js", "./src/core/application-state.js",
+  "./src/pwa/cache-policy.js", "./src/pwa/service-worker-registration.js"
+];
+
+self.addEventListener("install", (event) => {
+  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys()
+      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener("message", (event) => {
+  if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
+});
+
+self.addEventListener("fetch", (event) => {
+  const request = event.request;
+  if (request.method !== "GET") return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+
+  if (request.mode === "navigate") {
+    event.respondWith(fetch(request).catch(() => caches.match(OFFLINE_URL)));
+    return;
+  }
+
+  event.respondWith(
+    caches.match(request).then((cached) => cached || fetch(request).then((response) => {
+      if (!response || response.status !== 200 || response.type === "opaque") return response;
+      const copy = response.clone();
+      caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+      return response;
+    }))
+  );
+});

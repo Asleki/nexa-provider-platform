@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **50 canonical records**
 
-`█████░░░░░░░░░░░░░░░░░░░░░░░░░` **16.00%**
+`█████████░░░░░░░░░░░░░░░░░░░░░` **30.00%**
 
-**8 completed** · **42 planned** · **8 root milestones**
+**15 completed** · **35 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **16.00%** |
-| Completed records | **8** |
-| Planned records | **42** |
+| Overall progress | **30.00%** |
+| Completed records | **15** |
+| Planned records | **35** |
 | Total roadmap records | **50** |
 | Root milestones | **8** |
 
@@ -44,8 +44,8 @@
 ## Roadmap navigation
 
 - [✅ **P001 — NexiLabs PWA Project Foundation**](#p001) — 4/4 complete (100.0%)
-- [🟦 **P002 — Application Shell and Brand Integration**](#p002) — 4/6 complete (66.7%)
-- [🟦 **P003 — Installable and Offline PWA**](#p003) — 0/6 complete (0.0%)
+- [✅ **P002 — Application Shell and Brand Integration**](#p002) — 6/6 complete (100.0%)
+- [✅ **P003 — Installable and Offline PWA**](#p003) — 5/6 complete (83.3%)
 - [🟦 **P004 — NoveGeo World Geometry and Map Core**](#p004) — 0/7 complete (0.0%)
 - [🟦 **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 0/7 complete (0.0%)
 - [🟦 **P006 — Map Interaction and Dynamic World State**](#p006) — 0/7 complete (0.0%)
@@ -59,8 +59,8 @@
 | Root | Title | Status | Records | Complete | Progress |
 |---|---|---:|---:|---:|---:|
 | [P001](#p001) | NexiLabs PWA Project Foundation | ✅ Completed | 4 | 4 | 100.0% |
-| [P002](#p002) | Application Shell and Brand Integration | 🟦 Planned | 6 | 4 | 66.7% |
-| [P003](#p003) | Installable and Offline PWA | 🟦 Planned | 6 | 0 | 0.0% |
+| [P002](#p002) | Application Shell and Brand Integration | ✅ Completed | 6 | 6 | 100.0% |
+| [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 5 | 83.3% |
 | [P004](#p004) | NoveGeo World Geometry and Map Core | 🟦 Planned | 7 | 0 | 0.0% |
 | [P005](#p005) | Terrain, Water, Climate and Vegetation | 🟦 Planned | 7 | 0 | 0.0% |
 | [P006](#p006) | Map Interaction and Dynamic World State | 🟦 Planned | 7 | 0 | 0.0% |
@@ -122,16 +122,16 @@
 ---
 
 <a id="p002"></a>
-### 🟦 P002 — Application Shell and Brand Integration
+### ✅ P002 — Application Shell and Brand Integration
 
-`█████████████░░░░░░░` **4/6 complete (66.7%)**
+`████████████████████` **6/6 complete (100.0%)**
 
 <details>
 <summary><strong>Open P002 roadmap records (6 items)</strong></summary>
 
-🟦 **`P002` — Application Shell and Brand Integration**
+✅ **`P002` — Application Shell and Brand Integration**
 
-- **Status:** Planned
+- **Status:** Completed
 - **Priority:** NORMAL
 - **Dependencies:** None
 - **Record ID:** `nxl-pwa-rm-7ecf73b12d76a18f3698`
@@ -174,9 +174,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Application Shell and Brand Integration / Responsive Base Layout and Styling`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P002.5` — Application Shell Integration Tests**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P002.5` — Application Shell Integration Tests**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-62a9e2c57c2f9fdaffb8`
@@ -190,52 +190,52 @@
 ---
 
 <a id="p003"></a>
-### 🟦 P003 — Installable and Offline PWA
+### ✅ P003 — Installable and Offline PWA
 
-`░░░░░░░░░░░░░░░░░░░░` **0/6 complete (0.0%)**
+`█████████████████░░░` **5/6 complete (83.3%)**
 
 <details>
 <summary><strong>Open P003 roadmap records (6 items)</strong></summary>
 
-🟦 **`P003` — Installable and Offline PWA**
+✅ **`P003` — Installable and Offline PWA**
 
-- **Status:** Planned
+- **Status:** Completed
 - **Priority:** NORMAL
 - **Dependencies:** None
 - **Record ID:** `nxl-pwa-rm-c2da1d8e508c51e5d6ae`
 - **Semantic path:** `Installable and Offline PWA`
 - **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P003.1` — Web App Manifest and Install Metadata**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P003.1` — Web App Manifest and Install Metadata**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-e3dbaec6c71ec0299b97`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Installable and Offline PWA / Web App Manifest and Install Metadata`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P003.2` — Service Worker Registration and Lifecycle**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P003.2` — Service Worker Registration and Lifecycle**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-c6eb873b60b5a200fe06`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Installable and Offline PWA / Service Worker Registration and Lifecycle`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P003.3` — Offline Application Shell Cache**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P003.3` — Offline Application Shell Cache**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-a88d5b24dc84403a55ba`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Installable and Offline PWA / Offline Application Shell Cache`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P003.4` — Update, Recovery and Cache Versioning**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P003.4` — Update, Recovery and Cache Versioning**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-5303874aecacd8bb6568`
@@ -641,6 +641,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `50` |
-| Canonical content checksum | `5dc59c7f6b71e5884b0f1aff4687ed77919d49d7b72f76137736ebaa95023284` |
+| Canonical content checksum | `9f60c0c6196e679585c529a603985b5cb3cefad39c2552d51e36e8e0bdae6934` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.

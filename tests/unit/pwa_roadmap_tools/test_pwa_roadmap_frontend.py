@@ -12,8 +12,8 @@ def test_render_is_deterministic_and_uses_current_totals() -> None:
     assert first == second
     assert "Version 0.2.0" in first
     assert "50 canonical records" in first
-    assert "4 completed" in first
-    assert "46 planned" in first
+    assert "8 completed" in first
+    assert "42 planned" in first
 
 
 def test_render_contains_locked_boundaries_and_all_roots() -> None:

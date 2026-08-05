@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="NexiLabs NoveGeo PWA application shell.">
+  <meta name="theme-color" content="#0D1B2A">
+  <meta name="application-name" content="NexiLabs NoveGeo PWA">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="./public/manifest.webmanifest">
+  <link rel="icon" href="./public/brand/nexilabs/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="./public/brand/nexilabs/icons/apple-touch-icon.png">
   <title>NexiLabs NoveGeo PWA</title>
   <link rel="stylesheet" href="./public/brand/nexilabs/metadata/brand-tokens.css">
   <link rel="stylesheet" href="./styles/app.css">
@@ -27,6 +34,7 @@
       <div class="header-indicators" aria-label="Runtime indicators">
         <span class="runtime-badge"><span class="indicator-label">Runtime</span> <strong data-role="runtime-mode">development</strong></span>
         <span class="status-badge" data-health-status="CREATED"><span class="indicator-label">Status</span> <strong data-role="application-status" aria-live="polite">Created</strong></span>
+        <span class="status-badge"><span class="indicator-label">Offline</span> <strong data-role="pwa-status" data-pwa-status="REGISTERING" aria-live="polite">registering</strong></span>
       </div>
     </header>
 
