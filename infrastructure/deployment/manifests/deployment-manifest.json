@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "milestoneId": "I006",
+  "applicationEntryPoint": "infrastructure.api.main:app",
+  "serviceName": "nexa-infrastructure-api",
+  "releaseRoot": "/opt/nexa/infrastructure-api/releases",
+  "activeLink": "/opt/nexa/infrastructure-api/current",
+  "previousLink": "/opt/nexa/infrastructure-api/previous",
+  "healthPath": "/api/v1/health/live",
+  "readinessPath": "/api/v1/health/ready",
+  "databaseMigrationsAutomatic": false,
+  "publicListener": "caddy",
+  "applicationListener": "127.0.0.1:8000"
+}

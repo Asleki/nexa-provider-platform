@@ -1,0 +1,22 @@
+[Unit]
+Description=Nexa Shared Infrastructure FastAPI service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=nexa-api
+Group=nexa-api
+WorkingDirectory=/opt/nexa/infrastructure-api/current
+EnvironmentFile=/etc/nexa/infrastructure-api.env
+ExecStart=/opt/nexa/infrastructure-api/shared/venv/bin/uvicorn infrastructure.api.main:app --host 127.0.0.1 --port 8000 --proxy-headers --forwarded-allow-ips=127.0.0.1
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/nexa/infrastructure-api
+
+[Install]
+WantedBy=multi-user.target

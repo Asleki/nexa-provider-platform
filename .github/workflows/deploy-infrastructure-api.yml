@@ -1,0 +1,54 @@
+name: Deploy Infrastructure API
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_sha:
+        description: Commit SHA to deploy
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  qualify-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.commit_sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python -m pip install -r infrastructure/requirements.txt pytest
+      - name: Compile infrastructure
+        run: PYTHONPATH=. python -m compileall -q infrastructure
+      - name: Run accumulated infrastructure tests
+        run: PYTHONPATH=. pytest -q infrastructure/tests
+      - name: Build release
+        env:
+          COMMIT_SHA: ${{ inputs.commit_sha }}
+        run: infrastructure/deployment/scripts/build-release.sh "$GITHUB_WORKSPACE" "$RUNNER_TEMP"
+      - name: Configure SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.INFRA_DEPLOY_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.INFRA_DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+      - name: Upload and deploy
+        env:
+          HOST: ${{ secrets.INFRA_DEPLOY_HOST }}
+          USER: ${{ secrets.INFRA_DEPLOY_USER }}
+          SHA: ${{ inputs.commit_sha }}
+        run: |
+          ARCHIVE="$RUNNER_TEMP/infrastructure-api-$SHA.tar.gz"
+          scp "$ARCHIVE" "$USER@$HOST:/tmp/"
+          ssh "$USER@$HOST" "sudo /opt/nexa/deployment/deploy-release.sh /tmp/infrastructure-api-$SHA.tar.gz $SHA"
+      - name: Verify HTTPS
+        env:
+          HEALTH_URL: ${{ secrets.INFRA_PUBLIC_HEALTH_URL }}
+        run: curl --fail --silent --show-error "$HEALTH_URL/api/v1/health/live"
