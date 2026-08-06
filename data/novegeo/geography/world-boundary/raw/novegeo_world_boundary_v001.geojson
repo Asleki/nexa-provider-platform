@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "datasetId": "dataset:novegeo:world-boundary",
+        "datasetVersion": 1,
+        "boundaryId": "boundary:novegeo:sovereign",
+        "boundaryVersion": 1,
+        "sourcePackageId": "source-package:novegeo:world-boundary:v001",
+        "coordinateReferenceId": "crs:novegeo:geographic",
+        "coordinateReferenceVersion": 1,
+        "runtimeMode": "shared_reference",
+        "visibility": "public",
+        "lifecycleStatus": "candidate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[30.0,-6.0],[36.0,-8.0],[42.0,-4.0],[45.0,2.0],[41.0,7.0],[34.0,8.0],[29.0,3.0],[30.0,-6.0]]]
+      }
+    }
+  ]
+}

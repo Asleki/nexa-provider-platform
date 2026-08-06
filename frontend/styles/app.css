@@ -100,3 +100,8 @@ dd { margin: .4rem 0 0; font-weight: 800; overflow-wrap: anywhere; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+.geometry-status-grid { display: grid; gap: .75rem; margin: 0 0 1.25rem; }
+.geometry-status-grid div { padding: .9rem 1rem; border-radius: .85rem; background: var(--app-surface-elevated); }
+.geometry-status-grid dd { font-size: .9rem; }
+[data-role="future-map-viewport"] { min-height: 6rem; border: 1px dashed var(--app-border); border-radius: .85rem; background: color-mix(in srgb, var(--nexilabs-blue) 8%, transparent); }

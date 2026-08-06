@@ -13,9 +13,9 @@ def test_m009_13_manifest_approves_complete_current_migration_chain():
     catalogue = MigrationManifestLoader().load(MIGRATIONS / "migration_manifest.json")
     MigrationDiscovery(MIGRATIONS).validate_catalogue(catalogue)
     plan = MigrationPlanner().create_plan(catalogue)
-    assert plan.migration_count == 5
-    assert sum(len(item.expected_objects.tables) for item in catalogue.definitions) == 17
-    assert sum(len(item.expected_objects.indexes) for item in catalogue.definitions) == 12
+    assert plan.migration_count == 6
+    assert sum(len(item.expected_objects.tables) for item in catalogue.definitions) == 23
+    assert sum(len(item.expected_objects.indexes) for item in catalogue.definitions) == 14
     assert catalogue.definitions[0].expected_objects.schemas == ("reference",)
 
 
@@ -27,7 +27,7 @@ def test_m009_13_manifest_records_embedded_transaction_policy_for_locked_sql():
 
 def test_m009_13_10_reference_authoring_is_appended_to_locked_chain():
     catalogue = MigrationManifestLoader().load(MIGRATIONS / "migration_manifest.json")
-    last = catalogue.definitions[-1]
-    assert last.identity.migration_id == "m009_13_10_reference_registry_authoring"
-    assert last.identity.sequence_number == 5
-    assert last.depends_on == ("m009_12_12_name_authority_application",)
+    item = next(item for item in catalogue.definitions if item.identity.migration_id == "m009_13_10_reference_registry_authoring")
+    assert item.identity.migration_id == "m009_13_10_reference_registry_authoring"
+    assert item.identity.sequence_number == 5
+    assert item.depends_on == ("m009_12_12_name_authority_application",)

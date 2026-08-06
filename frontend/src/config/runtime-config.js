@@ -75,6 +75,9 @@ export function createRuntimeConfig(input = {}) {
       "application_shell",
       "runtime_configuration",
       "health_state",
+      "governed_world_boundary",
+      "coordinate_reference",
+      "coordinate_projection",
     ]),
   };
 

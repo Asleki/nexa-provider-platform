@@ -1,0 +1,14 @@
+{
+  "sourcePackageId": "source-package:novegeo:world-boundary:v001",
+  "datasetId": "dataset:novegeo:world-boundary",
+  "datasetVersion": 1,
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 1,
+  "coordinateReferenceId": "crs:novegeo:geographic",
+  "coordinateReferenceVersion": 1,
+  "applicationAxisOrder": ["longitude", "latitude"],
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "sourceStatus": "project-authored-candidate",
+  "note": "Initial fictional NoveGeo sovereign boundary for governed simulation development."
+}

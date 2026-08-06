@@ -53,8 +53,8 @@ C|P003.3|Offline Application Shell Cache
 C|P003.4|Update, Recovery and Cache Versioning
 C|P003.5|Installation and Offline Qualification
 P|P004|NoveGeo World Geometry and Map Core
-P|P004.1|Governed World Boundary Dataset
-P|P004.2|Coordinate Reference and Projection Engine
+C|P004.1|Governed World Boundary Dataset
+C|P004.2|Coordinate Reference and Projection Engine
 P|P004.3|Map Canvas and Viewport Renderer
 P|P004.4|Latitude, Longitude and Equator Overlay
 P|P004.5|World Extent and Coordinate Validation

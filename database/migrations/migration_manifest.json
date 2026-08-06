@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 1,
+  "catalogue_version": 2,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -171,6 +171,44 @@
       "forward_byte_size": 4141,
       "rollback_sha256": "cff5f10331a610c7f2519f6eec3b290d5a0375bf260faacf6cd62c7f7c2b5bac",
       "rollback_byte_size": 343
+    },
+    {
+      "migration_id": "m004_01_02_world_geometry_authority",
+      "milestone_id": "M004.1.2",
+      "sequence_number": 6,
+      "description": "world_geometry_authority",
+      "forward_file": "m004_01_02_world_geometry_authority.sql",
+      "rollback_file": "m004_01_02_world_geometry_authority_rollback.sql",
+      "depends_on": [
+        "m009_13_10_reference_registry_authoring"
+      ],
+      "expected_objects": {
+        "schemas": [
+          "geography"
+        ],
+        "tables": [
+          "geography.coordinate_reference",
+          "geography.world_boundary",
+          "geography.source_package",
+          "geography.world_boundary_version",
+          "geography.boundary_qualification",
+          "geography.boundary_publication"
+        ],
+        "indexes": [
+          "ux_world_boundary_active_runtime",
+          "ix_world_boundary_geometry_gist"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "90a623ab52bb057c188ad542a9419f11ccab35bea92b383d0f3bfc5c8aa197f5",
+      "rollback_sha256": "ab1ef94f739038c9249d6a73397fdc9fe1c09dc8f4097128bafa2de3fe94c4b4",
+      "forward_byte_size": 4901,
+      "rollback_byte_size": 358,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
     }
   ]
 }

@@ -61,11 +61,16 @@
 
         <aside class="workspace-panel future-panel" aria-labelledby="workspace-title">
           <div class="section-heading">
-            <p class="section-kicker">Reserved workspace</p>
-            <h2 id="workspace-title">NoveGeo world view</h2>
+            <p class="section-kicker">World geometry authority</p>
+            <h2 id="workspace-title">NoveGeo world geometry</h2>
           </div>
-          <p>The map, environmental layers, simulation clock, and registry-owned views will be added by later milestones.</p>
-          <p class="boundary-note">No map or registry capability is claimed in this shell.</p>
+          <dl class="geometry-status-grid">
+            <div><dt>Boundary</dt><dd data-role="world-boundary-status">Loading</dd></div>
+            <div><dt>Coordinate reference</dt><dd data-role="coordinate-reference-status">Loading</dd></div>
+            <div><dt>Projection</dt><dd data-role="projection-status">Loading</dd></div>
+          </dl>
+          <p class="boundary-note">The governed boundary and coordinate mathematics are available. Visual map rendering begins in P004.3. No map or registry capability is claimed in this shell.</p>
+          <div data-role="future-map-viewport" aria-label="Reserved NoveGeo map viewport"></div>
         </aside>
       </section>
     </main>

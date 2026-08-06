@@ -16,6 +16,9 @@ test("safe public runtime configuration is normalized and frozen", () => {
     "application_shell",
     "runtime_configuration",
     "health_state",
+    "governed_world_boundary",
+    "coordinate_reference",
+    "coordinate_projection",
   ]);
 });
 

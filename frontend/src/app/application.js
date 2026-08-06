@@ -5,6 +5,7 @@
 
 import { ApplicationState, ApplicationStatus } from "../core/application-state.js";
 import { applyBrand } from "../branding/brand-config.js";
+import { renderWorldGeometryStatus } from "../map/geography/status.js";
 
 function requireElement(documentRef, selector) {
   const element = documentRef.querySelector(selector);
@@ -71,6 +72,7 @@ export function createApplication({
       try {
         const root = requireElement(documentRef, "#nexilabs-app");
         const brandReceipt = applyBrand(documentRef);
+        const worldGeometry = renderWorldGeometryStatus(documentRef);
         const statusElement = requireElement(documentRef, "[data-role='application-status']");
         const runtimeElement = requireElement(documentRef, "[data-role='runtime-mode']");
         const versionElement = requireElement(documentRef, "[data-role='application-version']");
@@ -92,6 +94,7 @@ export function createApplication({
           readyAt: clock(),
           capabilities: config.capabilities,
           brand: brandReceipt,
+          worldGeometry,
         });
         return startReceipt;
       } catch (error) {
