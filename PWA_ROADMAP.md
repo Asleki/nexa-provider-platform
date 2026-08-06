@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **50 canonical records**
 
-`███████████░░░░░░░░░░░░░░░░░░░` **36.00%**
+`████████████░░░░░░░░░░░░░░░░░░` **40.00%**
 
-**18 completed** · **32 planned** · **8 root milestones**
+**20 completed** · **30 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **36.00%** |
-| Completed records | **18** |
-| Planned records | **32** |
+| Overall progress | **40.00%** |
+| Completed records | **20** |
+| Planned records | **30** |
 | Total roadmap records | **50** |
 | Root milestones | **8** |
 
@@ -46,7 +46,7 @@
 - [✅ **P001 — NexiLabs PWA Project Foundation**](#p001) — 4/4 complete (100.0%)
 - [✅ **P002 — Application Shell and Brand Integration**](#p002) — 6/6 complete (100.0%)
 - [✅ **P003 — Installable and Offline PWA**](#p003) — 6/6 complete (100.0%)
-- [🟦 **P004 — NoveGeo World Geometry and Map Core**](#p004) — 2/7 complete (28.6%)
+- [🟦 **P004 — NoveGeo World Geometry and Map Core**](#p004) — 4/7 complete (57.1%)
 - [🟦 **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 0/7 complete (0.0%)
 - [🟦 **P006 — Map Interaction and Dynamic World State**](#p006) — 0/7 complete (0.0%)
 - [🟦 **P007 — AWS Hosting and Release Operations**](#p007) — 0/6 complete (0.0%)
@@ -61,7 +61,7 @@
 | [P001](#p001) | NexiLabs PWA Project Foundation | ✅ Completed | 4 | 4 | 100.0% |
 | [P002](#p002) | Application Shell and Brand Integration | ✅ Completed | 6 | 6 | 100.0% |
 | [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 6 | 100.0% |
-| [P004](#p004) | NoveGeo World Geometry and Map Core | 🟦 Planned | 7 | 2 | 28.6% |
+| [P004](#p004) | NoveGeo World Geometry and Map Core | 🟦 Planned | 7 | 4 | 57.1% |
 | [P005](#p005) | Terrain, Water, Climate and Vegetation | 🟦 Planned | 7 | 0 | 0.0% |
 | [P006](#p006) | Map Interaction and Dynamic World State | 🟦 Planned | 7 | 0 | 0.0% |
 | [P007](#p007) | AWS Hosting and Release Operations | 🟦 Planned | 6 | 0 | 0.0% |
@@ -260,7 +260,7 @@
 <a id="p004"></a>
 ### 🟦 P004 — NoveGeo World Geometry and Map Core
 
-`██████░░░░░░░░░░░░░░` **2/7 complete (28.6%)**
+`███████████░░░░░░░░░` **4/7 complete (57.1%)**
 
 <details>
 <summary><strong>Open P004 roadmap records (7 items)</strong></summary>
@@ -292,18 +292,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NoveGeo World Geometry and Map Core / Coordinate Reference and Projection Engine`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P004.3` — Map Canvas and Viewport Renderer**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P004.3` — Map Canvas and Viewport Renderer**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-a5d4e1b8082b8f609698`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `NoveGeo World Geometry and Map Core / Map Canvas and Viewport Renderer`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P004.4` — Latitude, Longitude and Equator Overlay**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P004.4` — Latitude, Longitude and Equator Overlay**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-7105d1039aa73e4c58ca`
@@ -641,6 +641,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `50` |
-| Canonical content checksum | `27fe1f2cce56b7ae088d6ab698ae7c14f34e2ff47a134b49925ac0e25098afd0` |
+| Canonical content checksum | `c429e7d5302d822dc3769afad52bce3cb5df65dfc8d02bdd15b93549cf431cb3` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.

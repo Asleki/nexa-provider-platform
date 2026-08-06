@@ -55,8 +55,8 @@ C|P003.5|Installation and Offline Qualification
 P|P004|NoveGeo World Geometry and Map Core
 C|P004.1|Governed World Boundary Dataset
 C|P004.2|Coordinate Reference and Projection Engine
-P|P004.3|Map Canvas and Viewport Renderer
-P|P004.4|Latitude, Longitude and Equator Overlay
+C|P004.3|Map Canvas and Viewport Renderer
+C|P004.4|Latitude, Longitude and Equator Overlay
 P|P004.5|World Extent and Coordinate Validation
 P|P004.6|Map Core Integration Tests
 P|P005|Terrain, Water, Climate and Vegetation

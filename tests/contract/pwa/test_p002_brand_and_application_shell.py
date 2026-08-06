@@ -87,6 +87,6 @@ def test_styles_derive_from_canonical_tokens_and_are_responsive() -> None:
 def test_shell_does_not_claim_deferred_capabilities() -> None:
     html = _text("index.html")
     normalized = " ".join(html.split())
-    assert "No map or registry capability is claimed in this shell." in normalized
+    assert "Interaction, registry overlays and dynamic simulation remain deferred." in normalized
     for prohibited in ("serviceWorker.register", "navigator.serviceWorker", "postgresql://", "rds.amazonaws.com"):
         assert prohibited not in html

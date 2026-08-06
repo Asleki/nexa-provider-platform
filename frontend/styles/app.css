@@ -105,3 +105,17 @@ dd { margin: .4rem 0 0; font-weight: 800; overflow-wrap: anywhere; }
 .geometry-status-grid div { padding: .9rem 1rem; border-radius: .85rem; background: var(--app-surface-elevated); }
 .geometry-status-grid dd { font-size: .9rem; }
 [data-role="future-map-viewport"] { min-height: 6rem; border: 1px dashed var(--app-border); border-radius: .85rem; background: color-mix(in srgb, var(--nexilabs-blue) 8%, transparent); }
+
+[data-role="future-map-viewport"] {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  min-height: 260px;
+  overflow: hidden;
+  contain: layout paint size;
+}
+
+[data-role="novegeo-map-canvas"] {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
