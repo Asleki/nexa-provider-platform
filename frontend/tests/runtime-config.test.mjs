@@ -19,6 +19,10 @@ test("safe public runtime configuration is normalized and frozen", () => {
     "governed_world_boundary",
     "coordinate_reference",
     "coordinate_projection",
+    "map_canvas_renderer",
+    "coordinate_grid_overlay",
+    "world_extent_validation",
+    "map_core_qualification",
   ]);
 });
 

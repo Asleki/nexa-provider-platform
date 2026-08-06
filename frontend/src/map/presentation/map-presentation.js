@@ -6,6 +6,7 @@ import { createViewport } from "./viewport.js";
 import { createBoundaryRenderPlan } from "./boundary-render-plan.js";
 import { createCoordinateGrid } from "./coordinate-grid.js";
 import { renderMapCanvas } from "./canvas-renderer.js";
+import { qualifyMapCore } from "../validation/qualification.js";
 
 const DEFAULT_VIEWPORT_WIDTH = 640;
 const MINIMUM_VIEWPORT_WIDTH = 280;
@@ -127,21 +128,39 @@ export function mountMapPresentation(
         extent: publication.extent,
       });
 
-      const boundaryPlan = createBoundaryRenderPlan(
+      const qualification = qualifyMapCore({ publication, viewport });
+
+      if (qualification.status !== "PASSED") {
+        const failedCodes = qualification.findings
+          .filter((finding) => !finding.passed)
+          .map((finding) => finding.code)
+          .join(", ");
+        throw new Error(`map-core qualification failed: ${failedCodes}`);
+      }
+
+      const boundaryPlan = qualification.renderPlan || createBoundaryRenderPlan(
         publication,
         viewport,
       );
 
-      const grid = createCoordinateGrid(viewport, {
+      const grid = qualification.grid || createCoordinateGrid(viewport, {
         longitudeInterval,
         latitudeInterval,
       });
 
-      lastReceipt = renderMapCanvas({
+      const renderReceipt = renderMapCanvas({
         canvas,
         viewport,
         boundaryPlan,
         grid,
+      });
+
+      lastReceipt = Object.freeze({
+        ...renderReceipt,
+        qualificationId: qualification.qualificationId,
+        qualificationVersion: qualification.qualificationVersion,
+        qualificationStatus: qualification.status,
+        qualificationFindingCount: qualification.findingCount,
       });
 
       lastRenderedWidth = cssWidth;

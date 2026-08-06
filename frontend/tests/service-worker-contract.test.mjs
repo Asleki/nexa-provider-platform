@@ -24,8 +24,8 @@ test("offline navigation fallback and same-origin GET boundary are explicit", ()
 });
 
 test("cache version and shell inventory are versioned", () => {
-  assert.match(policy, /PWA_CACHE_VERSION = "novegeo-shell-v1"/);
+  assert.match(policy, /PWA_CACHE_VERSION = "novegeo-shell-v2"/);
   assert.match(policy, /APPLICATION_SHELL_ASSETS/);
-  assert.match(worker, /CACHE_NAME = "novegeo-shell-v1"/);
+  assert.match(worker, /CACHE_NAME = "novegeo-shell-v2"/);
   assert.match(worker, /keys\.filter\(\(key\) => key !== CACHE_NAME\)/);
 });

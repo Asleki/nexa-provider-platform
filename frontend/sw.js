@@ -1,16 +1,43 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
-const CACHE_NAME = "novegeo-shell-v1";
+const CACHE_NAME = "novegeo-shell-v2";
 const OFFLINE_URL = "./index.html";
 const APP_SHELL = [
-  "./", "./index.html", "./public/manifest.webmanifest",
+  "./",
+  "./index.html",
+  "./public/manifest.webmanifest",
   "./public/brand/nexilabs/metadata/brand-tokens.css",
   "./public/brand/nexilabs/vectors/nexilabs_logo_horizontal.svg",
   "./public/brand/nexilabs/pwa/nexilabs_icon_192x192.png",
   "./public/brand/nexilabs/pwa/nexilabs_icon_512x512.png",
-  "./styles/app.css", "./src/main.js", "./src/app/application.js",
-  "./src/branding/brand-assets.js", "./src/branding/brand-config.js",
-  "./src/config/runtime-config.js", "./src/core/application-state.js",
-  "./src/pwa/cache-policy.js", "./src/pwa/service-worker-registration.js"
+  "./styles/app.css",
+  "./src/main.js",
+  "./src/app/application.js",
+  "./src/branding/brand-assets.js",
+  "./src/branding/brand-config.js",
+  "./src/config/runtime-config.js",
+  "./src/core/application-state.js",
+  "./src/pwa/cache-policy.js",
+  "./src/pwa/service-worker-registration.js",
+  "./src/map/geography/contracts.js",
+  "./src/map/geography/projection.js",
+  "./src/map/geography/status.js",
+  "./src/map/presentation/boundary-render-plan.js",
+  "./src/map/presentation/canvas-renderer.js",
+  "./src/map/presentation/contracts.js",
+  "./src/map/presentation/coordinate-grid.js",
+  "./src/map/presentation/coordinate-labels.js",
+  "./src/map/presentation/index.js",
+  "./src/map/presentation/map-presentation.js",
+  "./src/map/presentation/publication.js",
+  "./src/map/presentation/viewport.js",
+  "./src/map/validation/contracts.js",
+  "./src/map/validation/geometry-validator.js",
+  "./src/map/validation/extent-calculator.js",
+  "./src/map/validation/extent-validator.js",
+  "./src/map/validation/projection-validator.js",
+  "./src/map/validation/viewport-validator.js",
+  "./src/map/validation/qualification.js",
+  "./src/map/validation/index.js"
 ];
 
 self.addEventListener("install", (event) => {
