@@ -38,7 +38,7 @@ def test_p003_3_offline_shell_cache_contract() -> None:
 def test_p003_4_update_recovery_and_versioning_contract() -> None:
     worker = (FRONTEND / "sw.js").read_text()
     registration = (FRONTEND / "src/pwa/service-worker-registration.js").read_text()
-    assert 'CACHE_NAME = "novegeo-shell-v2"' in worker
+    assert 'CACHE_NAME = "novegeo-shell-v3"' in worker
     assert "caches.delete" in worker
     assert "SKIP_WAITING" in worker
     assert "activateUpdate" in registration

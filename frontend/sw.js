@@ -1,5 +1,5 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
-const CACHE_NAME = "novegeo-shell-v2";
+const CACHE_NAME = "novegeo-shell-v3";
 const OFFLINE_URL = "./index.html";
 const APP_SHELL = [
   "./",
@@ -30,6 +30,14 @@ const APP_SHELL = [
   "./src/map/presentation/map-presentation.js",
   "./src/map/presentation/publication.js",
   "./src/map/presentation/viewport.js",
+  "./src/map/publication/contracts.js",
+  "./src/map/publication/catalog.js",
+  "./src/map/publication/index.js",
+  "./src/map/publication/v002-overview.js",
+  "./src/map/publication/v002-standard.js",
+  "./public/geography/novegeo/world-boundary/v002/manifest.json",
+  "./public/geography/novegeo/world-boundary/v002/overview.geojson",
+  "./public/geography/novegeo/world-boundary/v002/standard.geojson",
   "./src/map/validation/contracts.js",
   "./src/map/validation/geometry-validator.js",
   "./src/map/validation/extent-calculator.js",
