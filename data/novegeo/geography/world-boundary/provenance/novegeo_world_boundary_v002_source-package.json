@@ -1,0 +1,71 @@
+{
+  "sourcePackageId": "source-package:novegeo:world-boundary:v002",
+  "datasetId": "dataset:novegeo:world-boundary",
+  "datasetVersion": 2,
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2,
+  "supersedesBoundaryVersion": 1,
+  "coordinateReferenceId": "crs:novegeo:geographic",
+  "coordinateReferenceVersion": 1,
+  "applicationAxisOrder": [
+    "longitude",
+    "latitude"
+  ],
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "lifecycleStatus": "candidate",
+  "authoringContractId": "boundary-authoring-contract:novegeo:sovereign:v001",
+  "designBriefId": "design-brief:novegeo:sovereign:v002",
+  "sourceStatus": "project-authored-high-resolution-candidate",
+  "authoringMethod": "deterministic_project_authored_piecewise_boundary_design",
+  "generatedRuntimeDependency": false,
+  "qualificationDeferredTo": "P004.M1.3",
+  "publicDerivativeGenerationDeferredTo": "P004.M1.4",
+  "statistics": {
+    "polygonCount": 6,
+    "ringCount": 6,
+    "positionCountIncludingClosures": 1054,
+    "uniqueBoundaryVertexCount": 1048,
+    "mainlandUniqueVertexCount": 744,
+    "offshoreIslandCount": 5,
+    "extent": {
+      "minLongitude": 29.05,
+      "minLatitude": -7.717467,
+      "maxLongitude": 44.805229,
+      "maxLatitude": 7.85
+    }
+  },
+  "artifacts": {
+    "authoringContract": {
+      "path": "contracts/sovereign-boundary-authoring-v001.json",
+      "sha256": "9a11e2f24df4ea969831da23d4c50282f5b56c1743910409c8746ad418c47f97"
+    },
+    "designBrief": {
+      "path": "authoring/novegeo_world_boundary_v002_design-brief.json",
+      "sha256": "6217e44cbb4a2a9aacdf955edf0ae3bcf29cfbcfb7804018c81e048974be8b5b"
+    },
+    "rawGeoJson": {
+      "path": "raw/novegeo_world_boundary_v002.geojson",
+      "sha256": "3f1c2f85676c6dca8e2d7dade2f70b50b21d9605c600f850f04d82d1547865b8"
+    },
+    "candidateGeoJson": {
+      "path": "candidate/novegeo_world_boundary_v002.geojson",
+      "sha256": "3f1c2f85676c6dca8e2d7dade2f70b50b21d9605c600f850f04d82d1547865b8"
+    },
+    "vertexCsv": {
+      "path": "authoring/novegeo_world_boundary_v002_vertices.csv",
+      "sha256": "c5ce66daa2119d5f4539f438dafec40091b234638e750f49b42ad88ddd0cc026"
+    },
+    "segmentLedger": {
+      "path": "authoring/novegeo_world_boundary_v002_segment-ledger.csv",
+      "sha256": "22f200dbd9157eca3db88aa7ea4b884e5530e0287e6be2de096330bc8221708a"
+    }
+  },
+  "provenance": {
+    "authoringAuthority": "NexaDevs / NexiLabs NoveGeo engineering",
+    "authoringIntent": "Replace the coarse v001 fixture with a governed high-resolution v002 candidate while preserving v001 as historical authority.",
+    "designSource": "Approved NoveGeo physical-shape brief from Bundle 10A Phase 0-A.",
+    "externalRealWorldBoundarySourceUsed": false,
+    "notes": "Coordinates are fictional project-authored geography. No real sovereign boundary was copied or traced."
+  }
+}

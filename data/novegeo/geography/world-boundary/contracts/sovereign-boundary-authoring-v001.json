@@ -1,0 +1,42 @@
+{
+  "contractId": "boundary-authoring-contract:novegeo:sovereign:v001",
+  "contractVersion": 1,
+  "boundaryId": "boundary:novegeo:sovereign",
+  "coordinateReferenceId": "crs:novegeo:geographic",
+  "coordinateReferenceVersion": 1,
+  "authorityCompatibility": "EPSG:4326",
+  "applicationAxisOrder": ["longitude", "latitude"],
+  "authoringPrecisionDecimalPlacesMax": 8,
+  "canonicalComparisonToleranceDegrees": 1e-08,
+  "acceptedGeometryTypes": ["Polygon", "MultiPolygon"],
+  "normalizedGeometryType": "MultiPolygon",
+  "ringPolicy": {
+    "closed": true,
+    "minimumPositions": 4,
+    "minimumDistinctVertices": 3,
+    "consecutiveDuplicateVerticesAllowed": false,
+    "zeroAreaAllowed": false,
+    "selfIntersectionAllowed": false,
+    "exteriorOrientation": "counter_clockwise",
+    "interiorOrientation": "clockwise"
+  },
+  "spatialPolicy": {
+    "longitudeRange": [-180.0, 180.0],
+    "latitudeRange": [-90.0, 90.0],
+    "antimeridianCrossingAllowed": false,
+    "equatorCrossingExpected": true
+  },
+  "authoringPolicy": {
+    "artificialVertexDensificationForbidden": true,
+    "meaninglessRandomJitterForbidden": true,
+    "macroMesoMicroDetailRequired": true,
+    "mixedNaturalAndTreatyBorderCharacterRequired": true,
+    "mainlandDominantWithOffshoreIslandsRequired": true
+  },
+  "lifecyclePolicy": {
+    "authoringOutputStatus": "candidate",
+    "qualificationDeferredToMilestone": "P004.M1.3",
+    "supersessionDeferredToMilestone": "P004.M1.3",
+    "publicDerivativeGenerationDeferredToMilestone": "P004.M1.4"
+  }
+}

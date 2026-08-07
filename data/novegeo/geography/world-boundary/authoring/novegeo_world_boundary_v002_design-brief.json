@@ -1,0 +1,65 @@
+{
+  "designBriefId": "design-brief:novegeo:sovereign:v002",
+  "boundaryId": "boundary:novegeo:sovereign",
+  "candidateBoundaryVersion": 2,
+  "status": "approved-for-authoring",
+  "globalPlacement": {
+    "hemisphere": "eastern",
+    "equatorial": true,
+    "approximateLongitudeEnvelope": [29.0, 45.0],
+    "approximateLatitudeEnvelope": [-8.0, 8.0]
+  },
+  "nationalForm": {
+    "mainlandDominant": true,
+    "offshoreIslands": true,
+    "cartoonSymmetryForbidden": true,
+    "regularPolygonConstructionForbidden": true,
+    "substantialInteriorDepthRequired": true
+  },
+  "coastline": {
+    "principalOrientation": ["east", "southeast"],
+    "irregularNaturalCoast": true,
+    "requiredFeatureClasses": ["bay", "cape", "estuary", "natural_harbour", "long_beach", "cliff"]
+  },
+  "landBorders": {
+    "principalOrientation": ["west", "north"],
+    "character": ["natural_irregular", "straight_treaty", "mountain_reserved", "river_reserved"]
+  },
+  "reservedEnvironmentalSeams": [
+    "northwestern_highlands",
+    "central_plateau",
+    "eastern_coastal_plain",
+    "southern_dry_belt",
+    "major_western_basin",
+    "equatorial_rainforest_corridor"
+  ],
+  "futureDevelopmentCapacity": [
+    "multiple_metropolitan_areas",
+    "secondary_cities",
+    "agricultural_belts",
+    "industrial_corridors",
+    "international_and_domestic_airports",
+    "rail_corridors",
+    "highways",
+    "ports",
+    "utilities",
+    "protected_areas",
+    "long_term_urban_expansion"
+  ],
+  "detailHierarchy": ["macro", "meso", "micro"],
+  "deferredDomains": [
+    "terrain",
+    "rivers",
+    "lakes",
+    "climate",
+    "vegetation",
+    "administrative_boundaries",
+    "settlements",
+    "addresses",
+    "households",
+    "citizens",
+    "roads",
+    "railways",
+    "airports"
+  ]
+}
