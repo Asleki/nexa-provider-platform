@@ -1,0 +1,18 @@
+{
+  "authoringId": "authoring:novegeo:landforms:v001",
+  "purpose": "Provide stable semantic physical-land features derived from terrain authority.",
+  "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+  "terrainDatasetVersion": 1,
+  "canonicalClasses": [
+    "mountain",
+    "valley",
+    "plain",
+    "plateau"
+  ],
+  "exclusions": [
+    "rivers",
+    "lakes",
+    "climate",
+    "vegetation"
+  ]
+}

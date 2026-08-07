@@ -1,0 +1,29 @@
+{
+  "publicationId": "publication:novegeo:landforms:v001",
+  "publicationVersion": 1,
+  "datasetId": "dataset:novegeo:landforms",
+  "datasetVersion": 1,
+  "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+  "terrainDatasetVersion": 1,
+  "qualificationId": "qualification:novegeo:landforms:v001",
+  "qualificationReceiptSha256": "ce67c81cedc7b4c1d176876b5a44674e6cd34ab7df3cb0f4c836e58d5379f019",
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2,
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "lifecycleStatus": "published",
+  "defaultResolution": "standard",
+  "representations": [
+    {
+      "resolutionClass": "standard",
+      "featureCount": 12,
+      "assetPath": "./public/geography/novegeo/landforms/v001/standard.geojson",
+      "contentSha256": "0cc0e677a55c400708bb0c8b7980a582a592f84a4b76e0566b1334275f3ef98e"
+    }
+  ],
+  "activation": {
+    "active": true,
+    "activatedByMilestone": "P005.2"
+  },
+  "contentSha256": "c7149b21ac65ec1eaa19a351c0ecadf148205785272b84330fe06f368c43ff8f"
+}

@@ -1,0 +1,34 @@
+{
+  "qualificationId": "qualification:novegeo:landforms:v001",
+  "decision": "qualified",
+  "datasetId": "dataset:novegeo:landforms",
+  "datasetVersion": 1,
+  "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+  "terrainDatasetVersion": 1,
+  "featureCount": 12,
+  "canonicalClasses": [
+    "mountain",
+    "valley",
+    "plain",
+    "plateau"
+  ],
+  "findings": [
+    {
+      "code": "TERRAIN_LINEAGE",
+      "passed": true
+    },
+    {
+      "code": "CANONICAL_CLASSES",
+      "passed": true
+    },
+    {
+      "code": "FEATURE_IDENTITIES",
+      "passed": true
+    },
+    {
+      "code": "FEATURES_INSIDE_SOVEREIGN_GEOGRAPHY",
+      "passed": true
+    }
+  ],
+  "receiptSha256": "ce67c81cedc7b4c1d176876b5a44674e6cd34ab7df3cb0f4c836e58d5379f019"
+}

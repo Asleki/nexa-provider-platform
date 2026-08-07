@@ -1,0 +1,15 @@
+{
+  "contractId": "contract:novegeo:terrain-elevation:v001",
+  "requiredIdentifiers": [
+    "terrainId",
+    "terrainVersion",
+    "datasetId",
+    "datasetVersion",
+    "boundaryId",
+    "boundaryVersion"
+  ],
+  "coordinateReferenceId": "crs:novegeo:geographic",
+  "elevationUnit": "metre",
+  "requiredRuntimeMode": "shared_reference",
+  "noDataSemantic": "null_is_missing_not_zero"
+}

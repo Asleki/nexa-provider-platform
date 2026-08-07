@@ -1,0 +1,14 @@
+{
+  "sourcePackageId": "source-package:novegeo:terrain:v001",
+  "sourceType": "governed_procedural_authoring",
+  "realEarthDatasetUsed": false,
+  "algorithm": {
+    "algorithmId": "terrain:novegeo:deterministic-relief:v001",
+    "algorithmVersion": 1,
+    "seed": "novegeo-terrain-v001",
+    "wallClockIndependent": true
+  },
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2,
+  "contentSha256": "57f689f0ed60fde0885e76c82bbd3cc2b4b13c662d8e12657605817309cd699e"
+}

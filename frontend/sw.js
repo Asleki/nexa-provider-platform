@@ -1,5 +1,5 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
-const CACHE_NAME = "novegeo-shell-v3";
+const CACHE_NAME = "novegeo-shell-v6";
 const OFFLINE_URL = "./index.html";
 const APP_SHELL = [
   "./",
@@ -45,7 +45,21 @@ const APP_SHELL = [
   "./src/map/validation/projection-validator.js",
   "./src/map/validation/viewport-validator.js",
   "./src/map/validation/qualification.js",
-  "./src/map/validation/index.js"
+  "./src/map/validation/index.js",
+  "./src/map/terrain/contracts.js",
+  "./src/map/terrain/catalog.js",
+  "./src/map/terrain/render-plan.js",
+  "./src/map/landforms/contracts.js",
+  "./src/map/landforms/catalog.js",
+  "./src/map/landforms/render-plan.js",
+  "./src/map/environment/physical-land-presentation.js",
+  "./src/map/environment/full-viewport-coordinate-presentation.js",
+  "./src/map/lifecycle/foreground-recovery.js",
+  "./public/geography/novegeo/terrain/v001/manifest.json",
+  "./public/geography/novegeo/terrain/v001/overview.json",
+  "./public/geography/novegeo/terrain/v001/standard.json",
+  "./public/geography/novegeo/landforms/v001/manifest.json",
+  "./public/geography/novegeo/landforms/v001/standard.geojson"
 ];
 
 self.addEventListener("install", (event) => {

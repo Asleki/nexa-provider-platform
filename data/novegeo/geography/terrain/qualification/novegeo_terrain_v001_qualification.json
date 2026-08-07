@@ -1,0 +1,47 @@
+{
+  "qualificationId": "qualification:novegeo:terrain:v001",
+  "decision": "qualified",
+  "terrainId": "terrain:novegeo:surface",
+  "terrainVersion": 1,
+  "datasetId": "dataset:novegeo:terrain:elevation",
+  "datasetVersion": 1,
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2,
+  "sampleCount": 1104,
+  "minElevationMeters": 73,
+  "maxElevationMeters": 2778,
+  "canonicalLandformClasses": [
+    "mountain",
+    "valley",
+    "plain",
+    "plateau"
+  ],
+  "contentSha256": "57f689f0ed60fde0885e76c82bbd3cc2b4b13c662d8e12657605817309cd699e",
+  "findings": [
+    {
+      "code": "CRS_LINEAGE",
+      "passed": true
+    },
+    {
+      "code": "ELEVATION_DATUM_DECLARED",
+      "passed": true
+    },
+    {
+      "code": "FINITE_LAND_SAMPLES",
+      "passed": true
+    },
+    {
+      "code": "NO_DATA_DISTINCT_FROM_ZERO",
+      "passed": true
+    },
+    {
+      "code": "DETERMINISTIC_GENERATION",
+      "passed": true
+    },
+    {
+      "code": "ALL_CANONICAL_LANDFORM_CLASSES_PRESENT",
+      "passed": true
+    }
+  ],
+  "receiptSha256": "5769f7563b59109a94562728367c84ac7f8f45039444f76412e7cf2be8bd96be"
+}

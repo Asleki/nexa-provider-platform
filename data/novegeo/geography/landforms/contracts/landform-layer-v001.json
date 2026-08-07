@@ -1,0 +1,14 @@
+{
+  "contractId": "contract:novegeo:landform-layer:v001",
+  "canonicalClasses": [
+    "mountain",
+    "valley",
+    "plain",
+    "plateau"
+  ],
+  "requiresTerrainLineage": true,
+  "geometryTypes": [
+    "Point"
+  ],
+  "identityPrefix": "landform:novegeo:"
+}

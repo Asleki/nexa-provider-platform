@@ -7,8 +7,8 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 
 test("worker and policy declarations are extracted deterministically", () => {
   const result = inspectDeclaredPwaSources(ROOT);
-  assert.equal(result.workerCacheVersion, "novegeo-shell-v3");
-  assert.equal(result.policyCacheVersion, "novegeo-shell-v3");
+  assert.equal(result.workerCacheVersion, "novegeo-shell-v6");
+  assert.equal(result.policyCacheVersion, "novegeo-shell-v6");
   assert.deepEqual(result.workerAssets, result.policyAssets);
   assert.equal(result.workerOfflineDocument, "./index.html");
 });

@@ -1,0 +1,8 @@
+{
+  "sourcePackageId": "source-package:novegeo:landforms:v001",
+  "sourceType": "deterministic_terrain_classification",
+  "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+  "terrainDatasetVersion": 1,
+  "terrainContentSha256": "57f689f0ed60fde0885e76c82bbd3cc2b4b13c662d8e12657605817309cd699e",
+  "realEarthDatasetUsed": false
+}

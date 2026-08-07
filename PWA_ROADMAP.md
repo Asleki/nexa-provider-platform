@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **50 canonical records**
 
-`█████████████░░░░░░░░░░░░░░░░░` **44.00%**
+`███████████████░░░░░░░░░░░░░░░` **50.00%**
 
-**22 completed** · **28 planned** · **8 root milestones**
+**25 completed** · **25 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **44.00%** |
-| Completed records | **22** |
-| Planned records | **28** |
+| Overall progress | **50.00%** |
+| Completed records | **25** |
+| Planned records | **25** |
 | Total roadmap records | **50** |
 | Root milestones | **8** |
 
@@ -46,8 +46,8 @@
 - [✅ **P001 — NexiLabs PWA Project Foundation**](#p001) — 4/4 complete (100.0%)
 - [✅ **P002 — Application Shell and Brand Integration**](#p002) — 6/6 complete (100.0%)
 - [✅ **P003 — Installable and Offline PWA**](#p003) — 6/6 complete (100.0%)
-- [🟦 **P004 — NoveGeo World Geometry and Map Core**](#p004) — 6/7 complete (85.7%)
-- [🟦 **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 0/7 complete (0.0%)
+- [✅ **P004 — NoveGeo World Geometry and Map Core**](#p004) — 7/7 complete (100.0%)
+- [🟦 **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 2/7 complete (28.6%)
 - [🟦 **P006 — Map Interaction and Dynamic World State**](#p006) — 0/7 complete (0.0%)
 - [🟦 **P007 — AWS Hosting and Release Operations**](#p007) — 0/6 complete (0.0%)
 - [🟦 **P008 — Secure NPP Data Access and Alpha Qualification**](#p008) — 0/7 complete (0.0%)
@@ -61,8 +61,8 @@
 | [P001](#p001) | NexiLabs PWA Project Foundation | ✅ Completed | 4 | 4 | 100.0% |
 | [P002](#p002) | Application Shell and Brand Integration | ✅ Completed | 6 | 6 | 100.0% |
 | [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 6 | 100.0% |
-| [P004](#p004) | NoveGeo World Geometry and Map Core | 🟦 Planned | 7 | 6 | 85.7% |
-| [P005](#p005) | Terrain, Water, Climate and Vegetation | 🟦 Planned | 7 | 0 | 0.0% |
+| [P004](#p004) | NoveGeo World Geometry and Map Core | ✅ Completed | 7 | 7 | 100.0% |
+| [P005](#p005) | Terrain, Water, Climate and Vegetation | 🟦 Planned | 7 | 2 | 28.6% |
 | [P006](#p006) | Map Interaction and Dynamic World State | 🟦 Planned | 7 | 0 | 0.0% |
 | [P007](#p007) | AWS Hosting and Release Operations | 🟦 Planned | 6 | 0 | 0.0% |
 | [P008](#p008) | Secure NPP Data Access and Alpha Qualification | 🟦 Planned | 7 | 0 | 0.0% |
@@ -258,16 +258,16 @@
 ---
 
 <a id="p004"></a>
-### 🟦 P004 — NoveGeo World Geometry and Map Core
+### ✅ P004 — NoveGeo World Geometry and Map Core
 
-`█████████████████░░░` **6/7 complete (85.7%)**
+`████████████████████` **7/7 complete (100.0%)**
 
 <details>
 <summary><strong>Open P004 roadmap records (7 items)</strong></summary>
 
-🟦 **`P004` — NoveGeo World Geometry and Map Core**
+✅ **`P004` — NoveGeo World Geometry and Map Core**
 
-- **Status:** Planned
+- **Status:** Completed
 - **Priority:** NORMAL
 - **Dependencies:** None
 - **Record ID:** `nxl-pwa-rm-7bc495f2df7a35ebad80`
@@ -337,7 +337,7 @@
 <a id="p005"></a>
 ### 🟦 P005 — Terrain, Water, Climate and Vegetation
 
-`░░░░░░░░░░░░░░░░░░░░` **0/7 complete (0.0%)**
+`██████░░░░░░░░░░░░░░` **2/7 complete (28.6%)**
 
 <details>
 <summary><strong>Open P005 roadmap records (7 items)</strong></summary>
@@ -351,18 +351,18 @@
 - **Semantic path:** `Terrain, Water, Climate and Vegetation`
 - **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P005.1` — Terrain and Elevation Data Engine**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P005.1` — Terrain and Elevation Data Engine**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-915cbfaac5d425a76419`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Terrain, Water, Climate and Vegetation / Terrain and Elevation Data Engine`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P005.2` — Mountain, Valley, Plain and Plateau Layers**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P005.2` — Mountain, Valley, Plain and Plateau Layers**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-1a426a904ae3f6147797`
@@ -641,6 +641,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `50` |
-| Canonical content checksum | `99fa8e3ca53dbd0a9fa1977b9ff0ed9cf84f0a35c2dd750dddbaf55fd28663cc` |
+| Canonical content checksum | `603a56001d3a5d31fe489dbb7cc065d55daa292baaa1b22cc1ac2f0ea91bb09b` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.

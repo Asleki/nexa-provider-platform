@@ -1,0 +1,29 @@
+{
+  "authoringId": "authoring:novegeo:terrain:v001",
+  "purpose": "Establish deterministic governed physical relief for NoveGeo without importing real Earth terrain.",
+  "dependencies": [
+    "boundary:novegeo:sovereign:v002",
+    "crs:novegeo:geographic:v001"
+  ],
+  "exclusions": [
+    "hydrology",
+    "climate",
+    "vegetation",
+    "soil",
+    "geology",
+    "dynamic world state"
+  ],
+  "generation": {
+    "algorithmId": "terrain:novegeo:deterministic-relief:v001",
+    "algorithmVersion": 1,
+    "seed": "novegeo-terrain-v001",
+    "wallClockIndependent": true
+  },
+  "elevationDatum": {
+    "elevationDatumId": "datum:novegeo:elevation:mean-sea-level",
+    "version": 1,
+    "unit": "metre",
+    "zeroReference": "governed_novegeo_mean_sea_level",
+    "positiveDirection": "up"
+  }
+}

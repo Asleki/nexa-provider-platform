@@ -52,7 +52,7 @@ C|P003.2|Service Worker Registration and Lifecycle
 C|P003.3|Offline Application Shell Cache
 C|P003.4|Update, Recovery and Cache Versioning
 C|P003.5|Installation and Offline Qualification
-P|P004|NoveGeo World Geometry and Map Core
+C|P004|NoveGeo World Geometry and Map Core
 C|P004.1|Governed World Boundary Dataset
 C|P004.2|Coordinate Reference and Projection Engine
 C|P004.3|Map Canvas and Viewport Renderer
@@ -60,8 +60,8 @@ C|P004.4|Latitude, Longitude and Equator Overlay
 C|P004.5|World Extent and Coordinate Validation
 C|P004.6|Map Core Integration Tests
 P|P005|Terrain, Water, Climate and Vegetation
-P|P005.1|Terrain and Elevation Data Engine
-P|P005.2|Mountain, Valley, Plain and Plateau Layers
+C|P005.1|Terrain and Elevation Data Engine
+C|P005.2|Mountain, Valley, Plain and Plateau Layers
 P|P005.3|River, Lake and Drainage Layers
 P|P005.4|Climate, Rainfall and Wind Effects
 P|P005.5|Vegetation and Arid-Zone Layers
