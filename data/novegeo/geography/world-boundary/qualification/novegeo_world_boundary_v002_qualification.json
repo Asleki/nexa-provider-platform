@@ -1,0 +1,108 @@
+{
+  "qualificationId": "qualification:novegeo:world-boundary:v002",
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2,
+  "datasetId": "dataset:novegeo:world-boundary",
+  "datasetVersion": 2,
+  "sourcePackageId": "source-package:novegeo:world-boundary:v002",
+  "supersedesBoundaryVersion": 1,
+  "coordinateReferenceId": "crs:novegeo:geographic",
+  "coordinateReferenceVersion": 1,
+  "runtimeMode": "shared_reference",
+  "decision": "qualified",
+  "lifecycleStatus": "qualified",
+  "polygonCount": 6,
+  "ringCount": 6,
+  "uniqueVertexCount": 1048,
+  "mainlandVertexCount": 744,
+  "offshoreIslandCount": 5,
+  "extent": {
+    "minLongitude": 29.05,
+    "minLatitude": -7.717467,
+    "maxLongitude": 44.805229,
+    "maxLatitude": 7.85
+  },
+  "sourceGeometrySha256": "e63fc4efb35fabfe1b6e0e4e1184836a1c86f4b73daf5b0367e4c7ad429ffd58",
+  "normalizedGeometrySha256": "57edd38c08b00b9ff9a280fedea61ba6ddfc9d164e288c1ef9fd32eb2af94a19",
+  "sourcePackageSha256": "ea56f68dd0608f365911f35115057ea638dd87b983528428271e33d0a65e3b8b",
+  "receiptSha256": "f1795df86bda514e88d714e4d7300c23443b4d55d637b9c7a73b8aacd0b50561",
+  "findings": [
+    {
+      "code": "AUTHORING_PACKAGE_VALID",
+      "passed": true,
+      "message": "10A authoring package validates deterministically"
+    },
+    {
+      "code": "BOUNDARY_ID_CONTINUITY",
+      "passed": true,
+      "message": "stable sovereign boundary identity is preserved"
+    },
+    {
+      "code": "VERSION_LINEAGE",
+      "passed": true,
+      "message": "v002 explicitly supersedes v001"
+    },
+    {
+      "code": "DATASET_LINEAGE",
+      "passed": true,
+      "message": "dataset family is stable and v002 uses dataset version 2"
+    },
+    {
+      "code": "CRS_CONTINUITY",
+      "passed": true,
+      "message": "coordinate-reference identity remains stable"
+    },
+    {
+      "code": "RUNTIME_SHARED_REFERENCE",
+      "passed": true,
+      "message": "sovereign geography remains shared_reference"
+    },
+    {
+      "code": "PUBLIC_VISIBILITY",
+      "passed": true,
+      "message": "sovereign boundary remains public reference geography"
+    },
+    {
+      "code": "CANDIDATE_LIFECYCLE",
+      "passed": true,
+      "message": "source artifact remains an immutable candidate input"
+    },
+    {
+      "code": "MAINLAND_AND_ISLANDS",
+      "passed": true,
+      "message": "qualified geometry preserves one mainland and five offshore islands"
+    },
+    {
+      "code": "HIGH_RESOLUTION_INTEGRITY",
+      "passed": true,
+      "message": "qualification preserves every authored source vertex"
+    },
+    {
+      "code": "EXTENT_INTEGRITY",
+      "passed": true,
+      "message": "qualified extent exactly matches the authoring receipt"
+    },
+    {
+      "code": "EQUATOR_CROSSING",
+      "passed": true,
+      "message": "NoveGeo continues to cross the equator"
+    },
+    {
+      "code": "NO_ANTIMERIDIAN",
+      "passed": true,
+      "message": "v002 does not cross the antimeridian"
+    },
+    {
+      "code": "PREDECESSOR_PRESERVED",
+      "passed": true,
+      "message": "historical v001 qualified artifact remains intact"
+    },
+    {
+      "code": "SOURCE_PACKAGE_MATCH",
+      "passed": true,
+      "message": "candidate and provenance share the same source-package identity"
+    }
+  ],
+  "contractId": "boundary-qualification-contract:novegeo:sovereign:v001",
+  "runtimeActivationDeferredTo": "P004.M1.5"
+}

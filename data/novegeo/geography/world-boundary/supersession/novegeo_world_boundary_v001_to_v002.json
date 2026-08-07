@@ -1,0 +1,17 @@
+{
+  "supersessionId": "supersession:novegeo:world-boundary:v001-to-v002",
+  "boundaryId": "boundary:novegeo:sovereign",
+  "predecessorVersion": 1,
+  "successorVersion": 2,
+  "predecessorPriorLifecycle": "qualified",
+  "predecessorResultLifecycle": "superseded",
+  "successorPriorLifecycle": "candidate",
+  "successorResultLifecycle": "qualified",
+  "decision": "supersession_approved",
+  "qualificationId": "qualification:novegeo:world-boundary:v002",
+  "qualificationReceiptSha256": "f1795df86bda514e88d714e4d7300c23443b4d55d637b9c7a73b8aacd0b50561",
+  "runtimeActivationDeferredTo": "P004.M1.5",
+  "historicalPredecessorRetained": true,
+  "receiptSha256": "0228f5527d8adb0053f5a662685822fdf0de41b8d7789406773c0f9032b71d64",
+  "contractId": "boundary-supersession:novegeo:v001"
+}

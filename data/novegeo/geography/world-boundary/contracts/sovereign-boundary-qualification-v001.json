@@ -1,0 +1,31 @@
+{
+  "contractId": "boundary-qualification-contract:novegeo:sovereign:v001",
+  "contractVersion": 1,
+  "boundaryId": "boundary:novegeo:sovereign",
+  "candidateBoundaryVersion": 2,
+  "requiredPredecessorVersion": 1,
+  "coordinateReferenceId": "crs:novegeo:geographic",
+  "coordinateReferenceVersion": 1,
+  "runtimeMode": "shared_reference",
+  "requiredDecision": "qualified",
+  "requiredChecks": [
+    "authoring_package_valid",
+    "boundary_identity_continuity",
+    "explicit_version_lineage",
+    "dataset_lineage",
+    "coordinate_reference_continuity",
+    "geometry_integrity",
+    "mainland_and_islands_preserved",
+    "high_resolution_vertex_integrity",
+    "extent_integrity",
+    "equator_crossing",
+    "no_antimeridian_crossing",
+    "historical_predecessor_retention",
+    "source_package_fingerprint"
+  ],
+  "activationPolicy": {
+    "qualificationDoesNotImplyRuntimePublication": true,
+    "runtimeActivationDeferredTo": "P004.M1.5",
+    "historicalPredecessorMustRemainRetained": true
+  }
+}

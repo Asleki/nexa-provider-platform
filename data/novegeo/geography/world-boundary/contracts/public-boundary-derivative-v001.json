@@ -1,0 +1,29 @@
+{
+  "contractId": "public-boundary-derivative:novegeo:v001",
+  "contractVersion": 1,
+  "sourceBoundaryId": "boundary:novegeo:sovereign",
+  "sourceBoundaryVersion": 2,
+  "sourceMustBeQualified": true,
+  "visibility": "public",
+  "normalizedGeometryType": "MultiPolygon",
+  "coordinateReferenceId": "crs:novegeo:geographic",
+  "coordinateReferenceVersion": 1,
+  "algorithmPolicy": {
+    "deterministic": true,
+    "algorithmId": "simplification:novegeo:closed-ring-rdp:v001",
+    "algorithmVersion": 1,
+    "topologyValidationRequiredAfterSimplification": true
+  },
+  "preservationPolicy": {
+    "polygonCountMustRemainStable": true,
+    "offshoreIslandCountMustRemainStable": true,
+    "equatorCrossingMustRemain": true,
+    "maximumExtentShiftDegrees": 0.05,
+    "sourceGeometryMustRemainUnmodified": true
+  },
+  "resolutionClasses": {
+    "standard": {"toleranceDegrees": 0.005},
+    "overview": {"toleranceDegrees": 0.02}
+  },
+  "runtimePublicationDeferredTo": "P004.M1.5"
+}
