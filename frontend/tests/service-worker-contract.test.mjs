@@ -24,9 +24,9 @@ test("offline navigation fallback and same-origin GET boundary are explicit", ()
 });
 
 test("cache version and shell inventory are versioned", () => {
-  assert.match(policy, /PWA_CACHE_VERSION = "novegeo-shell-v9"/);
+  assert.match(policy, /PWA_CACHE_VERSION = "novegeo-shell-v10"/);
   assert.match(policy, /APPLICATION_SHELL_ASSETS/);
-  assert.match(worker, /CACHE_NAME = "novegeo-shell-v9"/);
+  assert.match(worker, /CACHE_NAME = "novegeo-shell-v10"/);
   assert.match(worker, /keys\.filter\(\(key\) => key !== CACHE_NAME\)/);
 });
 
@@ -35,6 +35,18 @@ test("Bundle 12A navigation and discovery modules are pre-cached", () => {
     "./src/map/interaction/map-navigation-discovery.js",
     "./src/map/controls/layer-state.js",
     "./src/map/selection/coordinate-search.js",
+  ]) {
+    assert.ok(worker.includes(marker), marker);
+    assert.ok(policy.includes(marker), marker);
+  }
+});
+
+
+test("Bundle 12B persistent and dynamic state modules are pre-cached", () => {
+  for (const marker of [
+    "./src/map/state/view-state-runtime.js",
+    "./src/map/state/world-state-store.js",
+    "./src/map/state/p006-state-integration.js",
   ]) {
     assert.ok(worker.includes(marker), marker);
     assert.ok(policy.includes(marker), marker);

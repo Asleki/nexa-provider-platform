@@ -70,9 +70,9 @@ P|P006|Map Interaction and Dynamic World State
 C|P006.1|Pan, Zoom, Touch and Keyboard Navigation
 C|P006.2|Layer Controls, Legend and Scale
 C|P006.3|Coordinate Search and Location Selection
-P|P006.4|One-to-One Simulation Clock Presentation
-P|P006.5|Versioned Dynamic World-State Updates
-P|P006.6|Interaction and Dynamic-State Tests
+C|P006.4|Map View State Persistence and Recovery
+C|P006.5|Versioned Dynamic World-State Updates
+C|P006.6|Interaction and Dynamic-State Tests
 P|P007|AWS Hosting and Release Operations
 P|P007.1|AWS Static Hosting and Build Output
 P|P007.2|CloudFront, HTTPS and Domain Delivery

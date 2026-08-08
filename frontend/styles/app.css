@@ -202,3 +202,30 @@ dd { margin: .4rem 0 0; font-weight: 800; overflow-wrap: anywhere; }
   .map-coordinate-search output { grid-column: 1 / -1; }
   .map-coordinate-search button { grid-column: auto; justify-self: stretch; }
 }
+
+
+/* P006.4-P006.6 — persistent view state and versioned dynamic-world-state status. */
+.map-state-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+  min-width: 0;
+  padding: .55rem .65rem;
+  border: 1px solid var(--app-border);
+  border-radius: .65rem;
+  color: var(--app-muted);
+  background: color-mix(in srgb, var(--app-background) 58%, transparent);
+  font-size: .78rem;
+}
+.map-state-status button {
+  min-height: 2rem;
+  padding: .35rem .6rem;
+  border: 1px solid var(--app-border);
+  border-radius: .55rem;
+  color: var(--app-text);
+  background: var(--app-surface);
+  font: inherit;
+  font-weight: 700;
+}

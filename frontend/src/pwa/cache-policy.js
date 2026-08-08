@@ -1,5 +1,5 @@
 /** P003.3/P003.4 — Immutable application-shell cache policy. */
-export const PWA_CACHE_VERSION = "novegeo-shell-v9";
+export const PWA_CACHE_VERSION = "novegeo-shell-v10";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./",
@@ -74,6 +74,13 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/map/controls/scale.js",
   "./src/map/selection/coordinate-search.js",
   "./src/map/selection/location-selection.js",
+  "./src/map/state/view-state-contracts.js",
+  "./src/map/state/view-state-storage.js",
+  "./src/map/state/view-state-runtime.js",
+  "./src/map/state/world-state-contracts.js",
+  "./src/map/state/world-state-store.js",
+  "./src/map/state/world-state-runtime.js",
+  "./src/map/state/p006-state-integration.js",
   "./public/geography/novegeo/vegetation/v001/manifest.json",
   "./public/geography/novegeo/vegetation/v001/standard.json",
   "./public/geography/novegeo/hydrology/v001/manifest.json",

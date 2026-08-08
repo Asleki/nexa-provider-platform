@@ -9,6 +9,7 @@ import { mountFullViewportCoordinatePresentation } from "./map/environment/full-
 import { mountHydrologyAtmospherePresentation } from "./map/environment/hydrology-atmosphere-presentation.js";
 import { mountBiospherePresentation } from "./map/environment/biosphere-presentation.js";
 import { mountMapNavigationDiscovery } from "./map/interaction/map-navigation-discovery.js";
+import { mountP006StateIntegration } from "./map/state/p006-state-integration.js";
 
 function readPublicRuntimeInput(documentRef) {
   const root = documentRef.documentElement;
@@ -28,7 +29,8 @@ export function bootstrap(documentRef = globalThis.document, windowRef = globalT
   mountBiospherePresentation(documentRef);
   mountHydrologyAtmospherePresentation(documentRef);
   mountFullViewportCoordinatePresentation(documentRef);
-  mountMapNavigationDiscovery(documentRef, windowRef);
+  const mapDiscovery = mountMapNavigationDiscovery(documentRef, windowRef);
+  mountP006StateIntegration({ documentRef, windowRef, discovery: mapDiscovery, runtimeMode: config.runtimeMode });
   registerMapForegroundRecovery({
     documentRef,
     windowRef,
