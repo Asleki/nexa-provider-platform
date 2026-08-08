@@ -1,0 +1,16 @@
+{
+  "contractId": "contract:novegeo:hydrology:v001",
+  "version": 1,
+  "datasetId": "dataset:novegeo:hydrology:surface-water",
+  "runtimeMode": "shared_reference",
+  "requiredLineage": [
+    "boundary:novegeo:sovereign@2",
+    "dataset:novegeo:terrain:elevation@1"
+  ],
+  "topologyRequirements": [
+    "anonymous stable confluence junction IDs",
+    "tributary endpoints equal receiving-channel coordinates exactly",
+    "tributary downstream references resolve to receiving river and junction",
+    "lakes remain closed-basin water bodies without distributaries in v001"
+  ]
+}

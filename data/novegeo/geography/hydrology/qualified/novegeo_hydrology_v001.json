@@ -1,0 +1,1559 @@
+{
+  "hydrologyId": "hydrology:novegeo:surface-water",
+  "hydrologyVersion": 1,
+  "datasetId": "dataset:novegeo:hydrology:surface-water",
+  "datasetVersion": 1,
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2,
+  "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+  "terrainDatasetVersion": 1,
+  "coordinateReference": {
+    "coordinateReferenceId": "crs:novegeo:geographic",
+    "version": 1,
+    "authorityName": "EPSG",
+    "authorityCode": "4326",
+    "axisOrder": [
+      "longitude",
+      "latitude"
+    ],
+    "unit": "decimal_degrees"
+  },
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "extent": {
+    "minLongitude": 29.05,
+    "minLatitude": -7.717467,
+    "maxLongitude": 44.805229,
+    "maxLatitude": 7.85
+  },
+  "drainageNetworks": [
+    {
+      "drainageNetworkId": "drainage:novegeo:d000001",
+      "drainageNetworkVersion": 1,
+      "riverIds": [
+        "river:novegeo:r000001",
+        "river:novegeo:r000002",
+        "river:novegeo:r000003",
+        "river:novegeo:r000004",
+        "river:novegeo:r000005"
+      ],
+      "lakeIds": [],
+      "junctionIds": [
+        "junction:novegeo:j000001",
+        "junction:novegeo:j000002",
+        "junction:novegeo:j000003",
+        "junction:novegeo:j000004"
+      ],
+      "outletType": "coast",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "drainageNetworkId": "drainage:novegeo:d000002",
+      "drainageNetworkVersion": 1,
+      "riverIds": [],
+      "lakeIds": [
+        "lake:novegeo:l000001"
+      ],
+      "junctionIds": [],
+      "outletType": "closed_basin",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "drainageNetworkId": "drainage:novegeo:d000003",
+      "drainageNetworkVersion": 1,
+      "riverIds": [],
+      "lakeIds": [
+        "lake:novegeo:l000002"
+      ],
+      "junctionIds": [],
+      "outletType": "closed_basin",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "drainageNetworkId": "drainage:novegeo:d000004",
+      "drainageNetworkVersion": 1,
+      "riverIds": [],
+      "lakeIds": [
+        "lake:novegeo:l000003"
+      ],
+      "junctionIds": [],
+      "outletType": "closed_basin",
+      "runtimeMode": "shared_reference"
+    }
+  ],
+  "rivers": [
+    {
+      "riverId": "river:novegeo:r000001",
+      "riverVersion": 1,
+      "drainageNetworkId": "drainage:novegeo:d000001",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            38.92,
+            6.772533
+          ],
+          [
+            38.883063,
+            6.707619
+          ],
+          [
+            38.772725,
+            6.551955
+          ],
+          [
+            38.616326,
+            6.343416
+          ],
+          [
+            38.441807,
+            6.119408
+          ],
+          [
+            38.277856,
+            5.916753
+          ],
+          [
+            38.153908,
+            5.771693
+          ],
+          [
+            38.1,
+            5.72
+          ],
+          [
+            38.027007,
+            5.640534
+          ],
+          [
+            37.842475,
+            5.432357
+          ],
+          [
+            37.591516,
+            5.14652
+          ],
+          [
+            37.319096,
+            4.834202
+          ],
+          [
+            37.069997,
+            4.546743
+          ],
+          [
+            36.888815,
+            4.335643
+          ],
+          [
+            36.82,
+            4.252533
+          ],
+          [
+            36.766368,
+            4.213103
+          ],
+          [
+            36.640674,
+            4.098798
+          ],
+          [
+            36.473432,
+            3.937877
+          ],
+          [
+            36.294656,
+            3.759101
+          ],
+          [
+            36.133735,
+            3.591859
+          ],
+          [
+            36.01943,
+            3.466165
+          ],
+          [
+            35.98,
+            3.412533
+          ],
+          [
+            35.913994,
+            3.338947
+          ],
+          [
+            35.737033,
+            3.155908
+          ],
+          [
+            35.492597,
+            2.908099
+          ],
+          [
+            35.224434,
+            2.639936
+          ],
+          [
+            34.976625,
+            2.3955
+          ],
+          [
+            34.793586,
+            2.218539
+          ],
+          [
+            34.72,
+            2.152533
+          ],
+          [
+            34.679594,
+            2.099878
+          ],
+          [
+            34.564505,
+            1.974967
+          ],
+          [
+            34.403149,
+            1.808159
+          ],
+          [
+            34.224374,
+            1.629384
+          ],
+          [
+            34.057566,
+            1.468028
+          ],
+          [
+            33.932655,
+            1.352939
+          ],
+          [
+            33.88,
+            1.312533
+          ],
+          [
+            33.801405,
+            1.255578
+          ],
+          [
+            33.607458,
+            1.098423
+          ],
+          [
+            33.345471,
+            0.879771
+          ],
+          [
+            33.06241,
+            0.638737
+          ],
+          [
+            32.804805,
+            0.414941
+          ],
+          [
+            32.618752,
+            0.248515
+          ],
+          [
+            32.55,
+            0.18
+          ],
+          [
+            32.451901,
+            0.117298
+          ],
+          [
+            32.205891,
+            -0.05406
+          ],
+          [
+            31.872072,
+            -0.291905
+          ],
+          [
+            31.510265,
+            -0.553683
+          ],
+          [
+            31.179944,
+            -0.796363
+          ],
+          [
+            30.940239,
+            -0.976434
+          ],
+          [
+            30.85,
+            -1.05
+          ],
+          [
+            30.766877,
+            -1.113148
+          ],
+          [
+            30.543706,
+            -1.261974
+          ],
+          [
+            30.235327,
+            -1.460328
+          ],
+          [
+            29.89693,
+            -1.672617
+          ],
+          [
+            29.584143,
+            -1.863944
+          ],
+          [
+            29.353028,
+            -2.000108
+          ],
+          [
+            29.26,
+            -2.047467
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        2460,
+        2445,
+        2406,
+        2354,
+        2296,
+        2244,
+        2205,
+        2190,
+        2171,
+        2123,
+        2056,
+        1984,
+        1917,
+        1869,
+        1850,
+        1828,
+        1771,
+        1693,
+        1607,
+        1529,
+        1472,
+        1450,
+        1424,
+        1357,
+        1265,
+        1165,
+        1073,
+        1006,
+        980,
+        958,
+        903,
+        827,
+        743,
+        667,
+        612,
+        590,
+        577,
+        544,
+        499,
+        451,
+        406,
+        373,
+        360,
+        351,
+        326,
+        293,
+        257,
+        224,
+        199,
+        190,
+        184,
+        168,
+        146,
+        122,
+        100,
+        84,
+        78
+      ],
+      "sourceElevationMeters": 2460,
+      "outletElevationMeters": 78,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference",
+      "riverClass": "principal",
+      "streamOrder": 3,
+      "referencePoint": {
+        "longitude": 34.72,
+        "latitude": 2.152533
+      },
+      "junctionIds": [
+        "junction:novegeo:j000001",
+        "junction:novegeo:j000002",
+        "junction:novegeo:j000003",
+        "junction:novegeo:j000004"
+      ],
+      "outletType": "coast"
+    },
+    {
+      "riverId": "river:novegeo:r000002",
+      "riverVersion": 1,
+      "drainageNetworkId": "drainage:novegeo:d000001",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            40.6,
+            4.42
+          ],
+          [
+            40.548613,
+            4.403221
+          ],
+          [
+            40.413891,
+            4.378938
+          ],
+          [
+            40.228873,
+            4.352696
+          ],
+          [
+            40.026687,
+            4.329285
+          ],
+          [
+            39.840568,
+            4.312553
+          ],
+          [
+            39.703861,
+            4.305408
+          ],
+          [
+            39.65,
+            4.31
+          ],
+          [
+            39.597846,
+            4.300511
+          ],
+          [
+            39.464477,
+            4.271245
+          ],
+          [
+            39.282531,
+            4.229472
+          ],
+          [
+            39.084601,
+            4.18265
+          ],
+          [
+            38.903223,
+            4.138476
+          ],
+          [
+            38.770878,
+            4.104884
+          ],
+          [
+            38.72,
+            4.09
+          ],
+          [
+            38.668437,
+            4.082288
+          ],
+          [
+            38.541448,
+            4.045588
+          ],
+          [
+            38.370006,
+            3.989244
+          ],
+          [
+            38.184846,
+            3.923268
+          ],
+          [
+            38.016404,
+            3.858504
+          ],
+          [
+            37.894822,
+            3.806632
+          ],
+          [
+            37.85,
+            3.78
+          ],
+          [
+            37.799771,
+            3.762057
+          ],
+          [
+            37.667945,
+            3.725027
+          ],
+          [
+            37.486856,
+            3.677784
+          ],
+          [
+            37.288926,
+            3.628834
+          ],
+          [
+            37.106692,
+            3.586222
+          ],
+          [
+            36.972803,
+            3.557538
+          ],
+          [
+            36.92,
+            3.55
+          ],
+          [
+            36.869183,
+            3.533815
+          ],
+          [
+            36.735903,
+            3.507304
+          ],
+          [
+            36.552845,
+            3.476638
+          ],
+          [
+            36.352787,
+            3.447381
+          ],
+          [
+            36.168614,
+            3.424343
+          ],
+          [
+            36.033323,
+            3.411578
+          ],
+          [
+            35.98,
+            3.412533
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        2240,
+        2231,
+        2206,
+        2173,
+        2137,
+        2104,
+        2079,
+        2070,
+        2061,
+        2036,
+        2003,
+        1967,
+        1934,
+        1909,
+        1900,
+        1891,
+        1868,
+        1837,
+        1803,
+        1772,
+        1749,
+        1740,
+        1732,
+        1710,
+        1681,
+        1649,
+        1620,
+        1598,
+        1590,
+        1582,
+        1562,
+        1535,
+        1505,
+        1478,
+        1458,
+        1450
+      ],
+      "sourceElevationMeters": 2240,
+      "outletElevationMeters": 1450,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference",
+      "riverClass": "secondary",
+      "streamOrder": 2,
+      "referencePoint": {
+        "longitude": 38.184846,
+        "latitude": 3.923268
+      },
+      "junctionIds": [],
+      "downstreamJunctionId": "junction:novegeo:j000002",
+      "downstreamRiverId": "river:novegeo:r000001"
+    },
+    {
+      "riverId": "river:novegeo:r000003",
+      "riverVersion": 1,
+      "drainageNetworkId": "drainage:novegeo:d000001",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            31.36,
+            6.772533
+          ],
+          [
+            31.41608,
+            6.74086
+          ],
+          [
+            31.54866,
+            6.644339
+          ],
+          [
+            31.725525,
+            6.506919
+          ],
+          [
+            31.914942,
+            6.353144
+          ],
+          [
+            32.085774,
+            6.208291
+          ],
+          [
+            32.207479,
+            6.098375
+          ],
+          [
+            32.25,
+            6.05
+          ],
+          [
+            32.298199,
+            6.010663
+          ],
+          [
+            32.425443,
+            5.913166
+          ],
+          [
+            32.600508,
+            5.781301
+          ],
+          [
+            32.792053,
+            5.638707
+          ],
+          [
+            32.968592,
+            5.508822
+          ],
+          [
+            33.098491,
+            5.41489
+          ],
+          [
+            33.15,
+            5.38
+          ],
+          [
+            33.212479,
+            5.341981
+          ],
+          [
+            33.380706,
+            5.260306
+          ],
+          [
+            33.613331,
+            5.154631
+          ],
+          [
+            33.868725,
+            5.04396
+          ],
+          [
+            34.104904,
+            4.946486
+          ],
+          [
+            34.279535,
+            4.87959
+          ],
+          [
+            34.35,
+            4.86
+          ],
+          [
+            34.417893,
+            4.846888
+          ],
+          [
+            34.590462,
+            4.803889
+          ],
+          [
+            34.825497,
+            4.741729
+          ],
+          [
+            35.08089,
+            4.671495
+          ],
+          [
+            35.31466,
+            4.604735
+          ],
+          [
+            35.484949,
+            4.553448
+          ],
+          [
+            35.55,
+            4.53
+          ],
+          [
+            35.622199,
+            4.523092
+          ],
+          [
+            35.80511,
+            4.490239
+          ],
+          [
+            36.054008,
+            4.439806
+          ],
+          [
+            36.3243,
+            4.380753
+          ],
+          [
+            36.571553,
+            4.322788
+          ],
+          [
+            36.751499,
+            4.276365
+          ],
+          [
+            36.82,
+            4.252533
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        2360,
+        2354,
+        2340,
+        2321,
+        2299,
+        2280,
+        2266,
+        2260,
+        2254,
+        2240,
+        2221,
+        2199,
+        2180,
+        2166,
+        2160,
+        2154,
+        2138,
+        2117,
+        2093,
+        2072,
+        2056,
+        2050,
+        2044,
+        2030,
+        2011,
+        1989,
+        1970,
+        1956,
+        1950,
+        1944,
+        1930,
+        1911,
+        1889,
+        1870,
+        1856,
+        1850
+      ],
+      "sourceElevationMeters": 2360,
+      "outletElevationMeters": 1850,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference",
+      "riverClass": "tributary",
+      "streamOrder": 1,
+      "referencePoint": {
+        "longitude": 33.868725,
+        "latitude": 5.04396
+      },
+      "junctionIds": [],
+      "downstreamJunctionId": "junction:novegeo:j000001",
+      "downstreamRiverId": "river:novegeo:r000001"
+    },
+    {
+      "riverId": "river:novegeo:r000004",
+      "riverVersion": 1,
+      "drainageNetworkId": "drainage:novegeo:d000001",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            34.3,
+            -5.827467
+          ],
+          [
+            34.283741,
+            -5.761469
+          ],
+          [
+            34.260858,
+            -5.589686
+          ],
+          [
+            34.236554,
+            -5.35422
+          ],
+          [
+            34.215271,
+            -5.097237
+          ],
+          [
+            34.200508,
+            -4.860981
+          ],
+          [
+            34.194819,
+            -4.687774
+          ],
+          [
+            34.2,
+            -4.62
+          ],
+          [
+            34.194443,
+            -4.550979
+          ],
+          [
+            34.175221,
+            -4.373569
+          ],
+          [
+            34.147145,
+            -4.131205
+          ],
+          [
+            34.115221,
+            -3.867299
+          ],
+          [
+            34.084696,
+            -3.625231
+          ],
+          [
+            34.061061,
+            -3.448355
+          ],
+          [
+            34.05,
+            -3.38
+          ],
+          [
+            34.055031,
+            -3.309489
+          ],
+          [
+            34.050207,
+            -3.128915
+          ],
+          [
+            34.037085,
+            -2.882474
+          ],
+          [
+            34.01793,
+            -2.614311
+          ],
+          [
+            33.995892,
+            -2.368507
+          ],
+          [
+            33.975002,
+            -2.18908
+          ],
+          [
+            33.96,
+            -2.12
+          ],
+          [
+            33.95132,
+            -2.022135
+          ],
+          [
+            33.938453,
+            -1.769423
+          ],
+          [
+            33.924349,
+            -1.423761
+          ],
+          [
+            33.911579,
+            -1.047055
+          ],
+          [
+            33.902243,
+            -0.701231
+          ],
+          [
+            33.897967,
+            -0.448228
+          ],
+          [
+            33.9,
+            -0.35
+          ],
+          [
+            33.890231,
+            -0.258011
+          ],
+          [
+            33.880429,
+            -0.020589
+          ],
+          [
+            33.872668,
+            0.304116
+          ],
+          [
+            33.868411,
+            0.657949
+          ],
+          [
+            33.868359,
+            0.982747
+          ],
+          [
+            33.872447,
+            1.220335
+          ],
+          [
+            33.88,
+            1.312533
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        1630,
+        1618,
+        1588,
+        1547,
+        1503,
+        1462,
+        1432,
+        1420,
+        1408,
+        1378,
+        1337,
+        1293,
+        1252,
+        1222,
+        1210,
+        1199,
+        1170,
+        1131,
+        1089,
+        1050,
+        1021,
+        1010,
+        998,
+        966,
+        923,
+        877,
+        834,
+        802,
+        790,
+        779,
+        750,
+        711,
+        669,
+        630,
+        601,
+        590
+      ],
+      "sourceElevationMeters": 1630,
+      "outletElevationMeters": 590,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference",
+      "riverClass": "secondary",
+      "streamOrder": 2,
+      "referencePoint": {
+        "longitude": 34.01793,
+        "latitude": -2.614311
+      },
+      "junctionIds": [],
+      "downstreamJunctionId": "junction:novegeo:j000004",
+      "downstreamRiverId": "river:novegeo:r000001"
+    },
+    {
+      "riverId": "river:novegeo:r000005",
+      "riverVersion": 1,
+      "drainageNetworkId": "drainage:novegeo:d000001",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            29.68,
+            3.412533
+          ],
+          [
+            29.740098,
+            3.418686
+          ],
+          [
+            29.893619,
+            3.415496
+          ],
+          [
+            30.102996,
+            3.404148
+          ],
+          [
+            30.330722,
+            3.386582
+          ],
+          [
+            30.539362,
+            3.365688
+          ],
+          [
+            30.691556,
+            3.345297
+          ],
+          [
+            30.75,
+            3.33
+          ],
+          [
+            30.806502,
+            3.315651
+          ],
+          [
+            30.9532,
+            3.283473
+          ],
+          [
+            31.154149,
+            3.241244
+          ],
+          [
+            31.373362,
+            3.19655
+          ],
+          [
+            31.574804,
+            3.156739
+          ],
+          [
+            31.722391,
+            3.128917
+          ],
+          [
+            31.78,
+            3.12
+          ],
+          [
+            31.829203,
+            3.094865
+          ],
+          [
+            31.96119,
+            3.047147
+          ],
+          [
+            32.143529,
+            2.98817
+          ],
+          [
+            32.343587,
+            2.928578
+          ],
+          [
+            32.528478,
+            2.878167
+          ],
+          [
+            32.665063,
+            2.845886
+          ],
+          [
+            32.72,
+            2.84
+          ],
+          [
+            32.771845,
+            2.825035
+          ],
+          [
+            32.902012,
+            2.777597
+          ],
+          [
+            33.0787,
+            2.709491
+          ],
+          [
+            33.270245,
+            2.632873
+          ],
+          [
+            33.445161,
+            2.560337
+          ],
+          [
+            33.572136,
+            2.504918
+          ],
+          [
+            33.62,
+            2.48
+          ],
+          [
+            33.683404,
+            2.470162
+          ],
+          [
+            33.842529,
+            2.430038
+          ],
+          [
+            34.058497,
+            2.369766
+          ],
+          [
+            34.292608,
+            2.300072
+          ],
+          [
+            34.506377,
+            2.232412
+          ],
+          [
+            34.661538,
+            2.178974
+          ],
+          [
+            34.72,
+            2.152533
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        1740,
+        1731,
+        1708,
+        1677,
+        1643,
+        1612,
+        1589,
+        1580,
+        1571,
+        1548,
+        1517,
+        1483,
+        1452,
+        1429,
+        1420,
+        1411,
+        1388,
+        1357,
+        1323,
+        1292,
+        1269,
+        1260,
+        1252,
+        1230,
+        1201,
+        1169,
+        1140,
+        1118,
+        1110,
+        1103,
+        1084,
+        1059,
+        1031,
+        1006,
+        987,
+        980
+      ],
+      "sourceElevationMeters": 1740,
+      "outletElevationMeters": 980,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference",
+      "riverClass": "tributary",
+      "streamOrder": 1,
+      "referencePoint": {
+        "longitude": 32.343587,
+        "latitude": 2.928578
+      },
+      "junctionIds": [],
+      "downstreamJunctionId": "junction:novegeo:j000003",
+      "downstreamRiverId": "river:novegeo:r000001"
+    }
+  ],
+  "lakes": [
+    {
+      "lakeId": "lake:novegeo:l000001",
+      "lakeVersion": 1,
+      "drainageNetworkId": "drainage:novegeo:d000002",
+      "surfaceElevationMeters": 293,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.52,
+              -3.307467
+            ],
+            [
+              32.495641,
+              -3.223277
+            ],
+            [
+              32.426274,
+              -3.151904
+            ],
+            [
+              32.322459,
+              -3.104214
+            ],
+            [
+              32.2,
+              -3.087467
+            ],
+            [
+              32.077541,
+              -3.104214
+            ],
+            [
+              31.973726,
+              -3.151904
+            ],
+            [
+              31.904359,
+              -3.223277
+            ],
+            [
+              31.88,
+              -3.307467
+            ],
+            [
+              31.904359,
+              -3.391657
+            ],
+            [
+              31.973726,
+              -3.46303
+            ],
+            [
+              32.077541,
+              -3.51072
+            ],
+            [
+              32.2,
+              -3.527467
+            ],
+            [
+              32.322459,
+              -3.51072
+            ],
+            [
+              32.426274,
+              -3.46303
+            ],
+            [
+              32.495641,
+              -3.391657
+            ],
+            [
+              32.52,
+              -3.307467
+            ]
+          ]
+        ]
+      },
+      "runtimeMode": "shared_reference",
+      "referencePoint": {
+        "longitude": 32.2,
+        "latitude": -3.307467
+      },
+      "hydrologicRole": "closed_basin_lake",
+      "surfaceOutlet": "none_declared"
+    },
+    {
+      "lakeId": "lake:novegeo:l000002",
+      "lakeVersion": 1,
+      "drainageNetworkId": "drainage:novegeo:d000003",
+      "surfaceElevationMeters": 820,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.94,
+              5.092533
+            ],
+            [
+              37.918686,
+              5.161416
+            ],
+            [
+              37.85799,
+              5.219812
+            ],
+            [
+              37.767151,
+              5.258831
+            ],
+            [
+              37.66,
+              5.272533
+            ],
+            [
+              37.552849,
+              5.258831
+            ],
+            [
+              37.46201,
+              5.219812
+            ],
+            [
+              37.401314,
+              5.161416
+            ],
+            [
+              37.38,
+              5.092533
+            ],
+            [
+              37.401314,
+              5.02365
+            ],
+            [
+              37.46201,
+              4.965254
+            ],
+            [
+              37.552849,
+              4.926235
+            ],
+            [
+              37.66,
+              4.912533
+            ],
+            [
+              37.767151,
+              4.926235
+            ],
+            [
+              37.85799,
+              4.965254
+            ],
+            [
+              37.918686,
+              5.02365
+            ],
+            [
+              37.94,
+              5.092533
+            ]
+          ]
+        ]
+      },
+      "runtimeMode": "shared_reference",
+      "referencePoint": {
+        "longitude": 37.66,
+        "latitude": 5.092533
+      },
+      "hydrologicRole": "closed_basin_lake",
+      "surfaceOutlet": "none_declared"
+    },
+    {
+      "lakeId": "lake:novegeo:l000003",
+      "lakeVersion": 1,
+      "drainageNetworkId": "drainage:novegeo:d000004",
+      "surfaceElevationMeters": 720,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.74,
+              -4.147467
+            ],
+            [
+              36.714119,
+              -4.07093
+            ],
+            [
+              36.640416,
+              -4.006046
+            ],
+            [
+              36.530112,
+              -3.962691
+            ],
+            [
+              36.4,
+              -3.947467
+            ],
+            [
+              36.269888,
+              -3.962691
+            ],
+            [
+              36.159584,
+              -4.006046
+            ],
+            [
+              36.085881,
+              -4.07093
+            ],
+            [
+              36.06,
+              -4.147467
+            ],
+            [
+              36.085881,
+              -4.224004
+            ],
+            [
+              36.159584,
+              -4.288888
+            ],
+            [
+              36.269888,
+              -4.332243
+            ],
+            [
+              36.4,
+              -4.347467
+            ],
+            [
+              36.530112,
+              -4.332243
+            ],
+            [
+              36.640416,
+              -4.288888
+            ],
+            [
+              36.714119,
+              -4.224004
+            ],
+            [
+              36.74,
+              -4.147467
+            ]
+          ]
+        ]
+      },
+      "runtimeMode": "shared_reference",
+      "referencePoint": {
+        "longitude": 36.4,
+        "latitude": -4.147467
+      },
+      "hydrologicRole": "closed_basin_lake",
+      "surfaceOutlet": "none_declared"
+    }
+  ],
+  "units": {
+    "elevation": "metre",
+    "length": "kilometre",
+    "lakeArea": "square_kilometre"
+  },
+  "cartographicModel": {
+    "surroundingWaterContext": "presentation_only",
+    "riverGeometry": "terrain_lineage_densified_meander",
+    "anonymousFeatureIdentity": true,
+    "featureNamingAuthority": "deferred",
+    "riverTopology": "exact_shared_coordinate_confluences",
+    "junctionIdentity": "anonymous_stable_reference",
+    "lakeConnectivity": "closed_basins_without_distributaries"
+  },
+  "junctions": [
+    {
+      "junctionId": "junction:novegeo:j000001",
+      "junctionVersion": 1,
+      "junctionType": "confluence",
+      "coordinate": {
+        "longitude": 36.82,
+        "latitude": 4.252533
+      },
+      "receivingRiverId": "river:novegeo:r000001",
+      "incomingRiverIds": [
+        "river:novegeo:r000003"
+      ],
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "junctionId": "junction:novegeo:j000002",
+      "junctionVersion": 1,
+      "junctionType": "confluence",
+      "coordinate": {
+        "longitude": 35.98,
+        "latitude": 3.412533
+      },
+      "receivingRiverId": "river:novegeo:r000001",
+      "incomingRiverIds": [
+        "river:novegeo:r000002"
+      ],
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "junctionId": "junction:novegeo:j000003",
+      "junctionVersion": 1,
+      "junctionType": "confluence",
+      "coordinate": {
+        "longitude": 34.72,
+        "latitude": 2.152533
+      },
+      "receivingRiverId": "river:novegeo:r000001",
+      "incomingRiverIds": [
+        "river:novegeo:r000005"
+      ],
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "junctionId": "junction:novegeo:j000004",
+      "junctionVersion": 1,
+      "junctionType": "confluence",
+      "coordinate": {
+        "longitude": 33.88,
+        "latitude": 1.312533
+      },
+      "receivingRiverId": "river:novegeo:r000001",
+      "incomingRiverIds": [
+        "river:novegeo:r000004"
+      ],
+      "runtimeMode": "shared_reference"
+    }
+  ],
+  "contentSha256": "52285245790036a22b057b48c54e85912762ed142e9722ed94eaa6b8960adad2"
+}

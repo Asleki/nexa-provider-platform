@@ -1,0 +1,13 @@
+{
+  "documentId": "authoring:novegeo:climate:v001",
+  "datasetId": "dataset:novegeo:climate:baseline",
+  "datasetVersion": 1,
+  "purpose": "Governed fictional NoveGeo baseline; deterministic, shared-reference, and not real-world Earth data.",
+  "upstream": {
+    "boundaryId": "boundary:novegeo:sovereign",
+    "boundaryVersion": 2,
+    "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+    "terrainDatasetVersion": 1
+  },
+  "runtimeMode": "shared_reference"
+}

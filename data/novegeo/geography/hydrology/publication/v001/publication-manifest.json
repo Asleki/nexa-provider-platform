@@ -1,0 +1,18 @@
+{
+  "publicationId": "publication:novegeo:hydrology:v001",
+  "publicationVersion": 1,
+  "datasetId": "dataset:novegeo:hydrology:surface-water",
+  "datasetVersion": 1,
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "lifecycleStatus": "published",
+  "defaultResolution": "standard",
+  "activation": {
+    "active": true,
+    "activatedByMilestone": "P005.3"
+  },
+  "representations": {
+    "standard": "./novegeo_hydrology_v001_standard.json"
+  },
+  "sourceContentSha256": "52285245790036a22b057b48c54e85912762ed142e9722ed94eaa6b8960adad2"
+}

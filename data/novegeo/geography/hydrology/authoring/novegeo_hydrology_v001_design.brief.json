@@ -1,0 +1,14 @@
+{
+  "documentId": "authoring:novegeo:hydrology:v001",
+  "datasetId": "dataset:novegeo:hydrology:surface-water",
+  "datasetVersion": 1,
+  "purpose": "Governed fictional NoveGeo baseline; deterministic, shared-reference, and not real-world Earth data.",
+  "upstream": {
+    "boundaryId": "boundary:novegeo:sovereign",
+    "boundaryVersion": 2,
+    "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+    "terrainDatasetVersion": 1
+  },
+  "runtimeMode": "shared_reference",
+  "topologyIntent": "Connected anonymous drainage network with exact shared confluence coordinates; lakes intentionally remain without distributaries."
+}

@@ -1,0 +1,9 @@
+{
+  "sourcePackageId": "source-package:novegeo:climate:v001",
+  "datasetId": "dataset:novegeo:climate:baseline",
+  "datasetVersion": 1,
+  "origin": "governed_fictional_authoring",
+  "algorithmVersion": "novegeo-environment-authoring-v001",
+  "deterministic": true,
+  "contentSha256": "aef20362f63fa22ea211a46fb12762bdf9e282fd8373c0686a4e52fb189ec194"
+}

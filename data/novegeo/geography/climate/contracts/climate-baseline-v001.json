@@ -1,0 +1,11 @@
+{
+  "contractId": "contract:novegeo:climate:v001",
+  "version": 1,
+  "datasetId": "dataset:novegeo:climate:baseline",
+  "runtimeMode": "shared_reference",
+  "requiredLineage": [
+    "boundary:novegeo:sovereign@2",
+    "dataset:novegeo:terrain:elevation@1",
+    "dataset:novegeo:hydrology:surface-water@1"
+  ]
+}

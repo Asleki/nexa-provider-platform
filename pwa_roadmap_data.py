@@ -62,8 +62,8 @@ C|P004.6|Map Core Integration Tests
 P|P005|Terrain, Water, Climate and Vegetation
 C|P005.1|Terrain and Elevation Data Engine
 C|P005.2|Mountain, Valley, Plain and Plateau Layers
-P|P005.3|River, Lake and Drainage Layers
-P|P005.4|Climate, Rainfall and Wind Effects
+C|P005.3|River, Lake and Drainage Layers
+C|P005.4|Climate, Rainfall and Wind Effects
 P|P005.5|Vegetation and Arid-Zone Layers
 P|P005.6|Environmental Layer Integration Tests
 P|P006|Map Interaction and Dynamic World State

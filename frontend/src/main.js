@@ -6,6 +6,7 @@ import { registerServiceWorker } from "./pwa/service-worker-registration.js";
 import { mountPhysicalLandPresentation } from "./map/environment/physical-land-presentation.js";
 import { registerMapForegroundRecovery } from "./map/lifecycle/foreground-recovery.js";
 import { mountFullViewportCoordinatePresentation } from "./map/environment/full-viewport-coordinate-presentation.js";
+import { mountHydrologyAtmospherePresentation } from "./map/environment/hydrology-atmosphere-presentation.js";
 
 function readPublicRuntimeInput(documentRef) {
   const root = documentRef.documentElement;
@@ -22,6 +23,7 @@ export function bootstrap(documentRef = globalThis.document, windowRef = globalT
   const config = createRuntimeConfig(readPublicRuntimeInput(documentRef));
   const application = createApplication({ documentRef, config }).start();
   mountPhysicalLandPresentation(documentRef);
+  mountHydrologyAtmospherePresentation(documentRef);
   mountFullViewportCoordinatePresentation(documentRef);
   registerMapForegroundRecovery({
     documentRef,
@@ -29,6 +31,7 @@ export function bootstrap(documentRef = globalThis.document, windowRef = globalT
     redrawMap: () => application.mapPresentation?.redraw?.() ?? { status: "UNAVAILABLE" },
     redrawPhysicalLand: () => {
       const physicalLand = mountPhysicalLandPresentation(documentRef);
+      mountHydrologyAtmospherePresentation(documentRef);
       mountFullViewportCoordinatePresentation(documentRef);
       return physicalLand;
     },

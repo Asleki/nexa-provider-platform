@@ -1,0 +1,11 @@
+{
+  "publicationId": "publication:novegeo:climate:v001",
+  "publicationVersion": 1,
+  "datasetId": "dataset:novegeo:climate:baseline",
+  "datasetVersion": 1,
+  "defaultResolution": "standard",
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "lifecycleStatus": "published",
+  "sourceContentSha256": "0678b32bf7cab2e71e53da10dba75a8ff20d4d1bc349c5b0311975b49230c6c9"
+}

@@ -1,0 +1,10 @@
+{
+  "sourcePackageId": "source-package:novegeo:hydrology:v001",
+  "datasetId": "dataset:novegeo:hydrology:surface-water",
+  "datasetVersion": 1,
+  "origin": "governed_fictional_authoring",
+  "algorithmVersion": "novegeo-environment-authoring-v001",
+  "deterministic": true,
+  "contentSha256": "52285245790036a22b057b48c54e85912762ed142e9722ed94eaa6b8960adad2",
+  "topologyModel": "exact_shared_coordinate_confluences"
+}

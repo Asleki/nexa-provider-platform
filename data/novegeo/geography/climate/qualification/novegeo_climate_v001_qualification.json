@@ -1,0 +1,10 @@
+{
+  "qualificationId": "qualification:novegeo:climate:v001",
+  "decision": "qualified",
+  "lifecycleStatus": "qualified",
+  "datasetId": "dataset:novegeo:climate:baseline",
+  "datasetVersion": 1,
+  "contentSha256": "0678b32bf7cab2e71e53da10dba75a8ff20d4d1bc349c5b0311975b49230c6c9",
+  "anonymousRainfallIdentity": true,
+  "rainfallPresentation": "continuous_irregular_intensity_field"
+}

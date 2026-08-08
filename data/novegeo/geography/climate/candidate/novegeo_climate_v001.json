@@ -1,0 +1,2580 @@
+{
+  "climateId": "climate:novegeo:baseline",
+  "climateVersion": 1,
+  "datasetId": "dataset:novegeo:climate:baseline",
+  "datasetVersion": 1,
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2,
+  "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+  "terrainDatasetVersion": 1,
+  "hydrologyDatasetId": "dataset:novegeo:hydrology:surface-water",
+  "hydrologyDatasetVersion": 1,
+  "coordinateReference": {
+    "coordinateReferenceId": "crs:novegeo:geographic",
+    "version": 1,
+    "authorityName": "EPSG",
+    "authorityCode": "4326",
+    "axisOrder": [
+      "longitude",
+      "latitude"
+    ],
+    "unit": "decimal_degrees"
+  },
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "extent": {
+    "minLongitude": 29.05,
+    "minLatitude": -7.717467,
+    "maxLongitude": 44.805229,
+    "maxLatitude": 7.85
+  },
+  "units": {
+    "temperature": "degree_celsius",
+    "rainfall": "millimetre_per_year",
+    "windSpeed": "metre_per_second",
+    "windDirection": "degree_clockwise_from_north"
+  },
+  "baselinePeriod": "governed_climatology_v001",
+  "rainfallSystems": [
+    {
+      "rainfallSystemId": "rainfall:novegeo:rs000001",
+      "rainfallSystemVersion": 1,
+      "intensityClass": "strong",
+      "center": {
+        "longitude": 33.5,
+        "latitude": 3.1
+      },
+      "radiusLongitudeDegrees": 2.25,
+      "radiusLatitudeDegrees": 1.75,
+      "peakAnnualRainfallMm": 1650,
+      "relativePower": 0.64,
+      "baselineType": "seasonal_climatology",
+      "referencePoint": {
+        "longitude": 33.5,
+        "latitude": 3.1
+      },
+      "fieldModel": {
+        "type": "irregular_radial_intensity",
+        "shapeSeed": 4100,
+        "irregularity": 0.22,
+        "visibleBoundary": false
+      }
+    },
+    {
+      "rainfallSystemId": "rainfall:novegeo:rs000002",
+      "rainfallSystemVersion": 1,
+      "intensityClass": "powerful",
+      "center": {
+        "longitude": 36.6,
+        "latitude": -0.2
+      },
+      "radiusLongitudeDegrees": 4.9,
+      "radiusLatitudeDegrees": 3.35,
+      "peakAnnualRainfallMm": 2650,
+      "relativePower": 1.0,
+      "baselineType": "seasonal_climatology",
+      "referencePoint": {
+        "longitude": 36.6,
+        "latitude": -0.2
+      },
+      "fieldModel": {
+        "type": "irregular_radial_intensity",
+        "shapeSeed": 4197,
+        "irregularity": 0.31,
+        "visibleBoundary": false
+      }
+    }
+  ],
+  "samples": [
+    {
+      "longitude": 35.14,
+      "latitude": -7.507467,
+      "annualRainfallMm": 559,
+      "meanTemperatureC": 25.6,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 38,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 36.82,
+      "latitude": -7.507467,
+      "annualRainfallMm": 562,
+      "meanTemperatureC": 25.4,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 43,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.5,
+      "latitude": -7.507467,
+      "annualRainfallMm": 564,
+      "meanTemperatureC": 25.3,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 48,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": -7.087467,
+      "annualRainfallMm": 564,
+      "meanTemperatureC": 25.4,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 39,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": -7.087467,
+      "annualRainfallMm": 570,
+      "meanTemperatureC": 25.1,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 44,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": -7.087467,
+      "annualRainfallMm": 575,
+      "meanTemperatureC": 24.8,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 49,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 39.76,
+      "latitude": -7.087467,
+      "annualRainfallMm": 572,
+      "meanTemperatureC": 25.0,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 54,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.04,
+      "latitude": -6.667467,
+      "annualRainfallMm": 563,
+      "meanTemperatureC": 25.6,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 36,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": -6.667467,
+      "annualRainfallMm": 573,
+      "meanTemperatureC": 25.2,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 41,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": -6.667467,
+      "annualRainfallMm": 583,
+      "meanTemperatureC": 24.7,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 46,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": -6.667467,
+      "annualRainfallMm": 592,
+      "meanTemperatureC": 24.1,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 51,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 39.76,
+      "latitude": -6.667467,
+      "annualRainfallMm": 586,
+      "meanTemperatureC": 24.4,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 56,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.78,
+      "latitude": -6.247467,
+      "annualRainfallMm": 564,
+      "meanTemperatureC": 25.6,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 34,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.46,
+      "latitude": -6.247467,
+      "annualRainfallMm": 573,
+      "meanTemperatureC": 25.3,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 39,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.14,
+      "latitude": -6.247467,
+      "annualRainfallMm": 590,
+      "meanTemperatureC": 24.6,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 44,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 36.82,
+      "latitude": -6.247467,
+      "annualRainfallMm": 607,
+      "meanTemperatureC": 23.8,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 49,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.5,
+      "latitude": -6.247467,
+      "annualRainfallMm": 616,
+      "meanTemperatureC": 23.2,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 54,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.18,
+      "latitude": -6.247467,
+      "annualRainfallMm": 598,
+      "meanTemperatureC": 23.9,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 59,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": -5.827467,
+      "annualRainfallMm": 561,
+      "meanTemperatureC": 25.8,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 32,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": -5.827467,
+      "annualRainfallMm": 573,
+      "meanTemperatureC": 25.4,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 37,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": -5.827467,
+      "annualRainfallMm": 590,
+      "meanTemperatureC": 25.0,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 43,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": -5.827467,
+      "annualRainfallMm": 619,
+      "meanTemperatureC": 23.8,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 48,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": -5.827467,
+      "annualRainfallMm": 643,
+      "meanTemperatureC": 22.5,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 53,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": -5.827467,
+      "annualRainfallMm": 644,
+      "meanTemperatureC": 22.1,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 58,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": -5.827467,
+      "annualRainfallMm": 609,
+      "meanTemperatureC": 23.5,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 63,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.1,
+      "latitude": -5.407467,
+      "annualRainfallMm": 559,
+      "meanTemperatureC": 26.0,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 33,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.78,
+      "latitude": -5.407467,
+      "annualRainfallMm": 577,
+      "meanTemperatureC": 25.5,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 38,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.46,
+      "latitude": -5.407467,
+      "annualRainfallMm": 598,
+      "meanTemperatureC": 25.2,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 43,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.14,
+      "latitude": -5.407467,
+      "annualRainfallMm": 641,
+      "meanTemperatureC": 23.6,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 48,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 36.82,
+      "latitude": -5.407467,
+      "annualRainfallMm": 679,
+      "meanTemperatureC": 21.7,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 53,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.5,
+      "latitude": -5.407467,
+      "annualRainfallMm": 688,
+      "meanTemperatureC": 20.7,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 58,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.18,
+      "latitude": -5.407467,
+      "annualRainfallMm": 644,
+      "meanTemperatureC": 22.3,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 64,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 41.86,
+      "latitude": -5.407467,
+      "annualRainfallMm": 594,
+      "meanTemperatureC": 24.4,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 69,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": -4.987467,
+      "annualRainfallMm": 569,
+      "meanTemperatureC": 25.9,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 37,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": -4.987467,
+      "annualRainfallMm": 590,
+      "meanTemperatureC": 25.7,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 42,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": -4.987467,
+      "annualRainfallMm": 632,
+      "meanTemperatureC": 24.8,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 47,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": -4.987467,
+      "annualRainfallMm": 696,
+      "meanTemperatureC": 22.4,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 52,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": -4.987467,
+      "annualRainfallMm": 740,
+      "meanTemperatureC": 20.1,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 57,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": -4.987467,
+      "annualRainfallMm": 729,
+      "meanTemperatureC": 19.7,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 62,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": -4.987467,
+      "annualRainfallMm": 656,
+      "meanTemperatureC": 22.3,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 67,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": -4.987467,
+      "annualRainfallMm": 594,
+      "meanTemperatureC": 24.6,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 72,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.94,
+      "latitude": -4.567467,
+      "annualRainfallMm": 583,
+      "meanTemperatureC": 25.8,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 40,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.62,
+      "latitude": -4.567467,
+      "annualRainfallMm": 616,
+      "meanTemperatureC": 25.8,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 45,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": -4.567467,
+      "annualRainfallMm": 689,
+      "meanTemperatureC": 24.1,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 50,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": -4.567467,
+      "annualRainfallMm": 775,
+      "meanTemperatureC": 21.0,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 55,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.66,
+      "latitude": -4.567467,
+      "annualRainfallMm": 814,
+      "meanTemperatureC": 18.5,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 60,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 39.34,
+      "latitude": -4.567467,
+      "annualRainfallMm": 768,
+      "meanTemperatureC": 19.1,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 65,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 41.02,
+      "latitude": -4.567467,
+      "annualRainfallMm": 665,
+      "meanTemperatureC": 22.5,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 70,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 42.7,
+      "latitude": -4.567467,
+      "annualRainfallMm": 593,
+      "meanTemperatureC": 24.9,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 75,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": -4.147467,
+      "annualRainfallMm": 584,
+      "meanTemperatureC": 26.1,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 41,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": -4.147467,
+      "annualRainfallMm": 627,
+      "meanTemperatureC": 26.1,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 46,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": -4.147467,
+      "annualRainfallMm": 716,
+      "meanTemperatureC": 24.8,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 51,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": -4.147467,
+      "annualRainfallMm": 835,
+      "meanTemperatureC": 21.2,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 56,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": -4.147467,
+      "annualRainfallMm": 897,
+      "meanTemperatureC": 18.1,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 61,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": -4.147467,
+      "annualRainfallMm": 861,
+      "meanTemperatureC": 17.5,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 66,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": -4.147467,
+      "annualRainfallMm": 730,
+      "meanTemperatureC": 21.1,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 71,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": -4.147467,
+      "annualRainfallMm": 623,
+      "meanTemperatureC": 24.3,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 76,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 29.68,
+      "latitude": -3.727467,
+      "annualRainfallMm": 571,
+      "meanTemperatureC": 26.5,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 40,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.36,
+      "latitude": -3.727467,
+      "annualRainfallMm": 624,
+      "meanTemperatureC": 26.1,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 45,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.04,
+      "latitude": -3.727467,
+      "annualRainfallMm": 711,
+      "meanTemperatureC": 25.9,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 50,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": -3.727467,
+      "annualRainfallMm": 864,
+      "meanTemperatureC": 22.8,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 56,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": -3.727467,
+      "annualRainfallMm": 982,
+      "meanTemperatureC": 19.1,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 61,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": -3.727467,
+      "annualRainfallMm": 993,
+      "meanTemperatureC": 16.6,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 66,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 39.76,
+      "latitude": -3.727467,
+      "annualRainfallMm": 867,
+      "meanTemperatureC": 18.5,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 71,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 41.44,
+      "latitude": -3.727467,
+      "annualRainfallMm": 702,
+      "meanTemperatureC": 22.7,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 76,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 43.12,
+      "latitude": -3.727467,
+      "annualRainfallMm": 600,
+      "meanTemperatureC": 25.4,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 81,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.1,
+      "latitude": -3.307467,
+      "annualRainfallMm": 595,
+      "meanTemperatureC": 26.4,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 44,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.78,
+      "latitude": -3.307467,
+      "annualRainfallMm": 674,
+      "meanTemperatureC": 26.4,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 49,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.46,
+      "latitude": -3.307467,
+      "annualRainfallMm": 820,
+      "meanTemperatureC": 25.4,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 54,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.14,
+      "latitude": -3.307467,
+      "annualRainfallMm": 1018,
+      "meanTemperatureC": 21.5,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 59,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 36.82,
+      "latitude": -3.307467,
+      "annualRainfallMm": 1122,
+      "meanTemperatureC": 18.2,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 64,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 38.5,
+      "latitude": -3.307467,
+      "annualRainfallMm": 1081,
+      "meanTemperatureC": 16.3,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 69,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 40.18,
+      "latitude": -3.307467,
+      "annualRainfallMm": 891,
+      "meanTemperatureC": 19.3,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 74,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 41.86,
+      "latitude": -3.307467,
+      "annualRainfallMm": 702,
+      "meanTemperatureC": 23.3,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 79,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 43.54,
+      "latitude": -3.307467,
+      "annualRainfallMm": 593,
+      "meanTemperatureC": 25.9,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 84,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": -2.887467,
+      "annualRainfallMm": 632,
+      "meanTemperatureC": 26.3,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 47,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": -2.887467,
+      "annualRainfallMm": 756,
+      "meanTemperatureC": 26.3,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 52,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": -2.887467,
+      "annualRainfallMm": 976,
+      "meanTemperatureC": 24.3,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 57,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": -2.887467,
+      "annualRainfallMm": 1201,
+      "meanTemperatureC": 20.4,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 62,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": -2.887467,
+      "annualRainfallMm": 1267,
+      "meanTemperatureC": 17.8,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 67,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": -2.887467,
+      "annualRainfallMm": 1154,
+      "meanTemperatureC": 16.7,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 72,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": -2.887467,
+      "annualRainfallMm": 902,
+      "meanTemperatureC": 20.3,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 77,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": -2.887467,
+      "annualRainfallMm": 696,
+      "meanTemperatureC": 24.0,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 82,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 29.68,
+      "latitude": -2.467467,
+      "annualRainfallMm": 604,
+      "meanTemperatureC": 26.7,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 47,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.36,
+      "latitude": -2.467467,
+      "annualRainfallMm": 726,
+      "meanTemperatureC": 26.1,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 52,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.04,
+      "latitude": -2.467467,
+      "annualRainfallMm": 947,
+      "meanTemperatureC": 25.3,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 57,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": -2.467467,
+      "annualRainfallMm": 1247,
+      "meanTemperatureC": 21.9,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 62,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": -2.467467,
+      "annualRainfallMm": 1417,
+      "meanTemperatureC": 19.4,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 67,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": -2.467467,
+      "annualRainfallMm": 1373,
+      "meanTemperatureC": 17.3,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 72,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 39.76,
+      "latitude": -2.467467,
+      "annualRainfallMm": 1129,
+      "meanTemperatureC": 18.3,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 77,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 41.44,
+      "latitude": -2.467467,
+      "annualRainfallMm": 835,
+      "meanTemperatureC": 22.3,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 82,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 43.12,
+      "latitude": -2.467467,
+      "annualRainfallMm": 650,
+      "meanTemperatureC": 25.2,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 87,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.1,
+      "latitude": -2.047467,
+      "annualRainfallMm": 646,
+      "meanTemperatureC": 26.5,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 50,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.78,
+      "latitude": -2.047467,
+      "annualRainfallMm": 826,
+      "meanTemperatureC": 25.8,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 55,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.46,
+      "latitude": -2.047467,
+      "annualRainfallMm": 1136,
+      "meanTemperatureC": 23.9,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 60,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 35.14,
+      "latitude": -2.047467,
+      "annualRainfallMm": 1472,
+      "meanTemperatureC": 20.6,
+      "meanWindSpeedMps": 4.4,
+      "prevailingWindDirectionDegrees": 65,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 36.82,
+      "latitude": -2.047467,
+      "annualRainfallMm": 1588,
+      "meanTemperatureC": 19.6,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 70,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 38.5,
+      "latitude": -2.047467,
+      "annualRainfallMm": 1462,
+      "meanTemperatureC": 17.7,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 75,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 40.18,
+      "latitude": -2.047467,
+      "annualRainfallMm": 1136,
+      "meanTemperatureC": 19.4,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 80,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 41.86,
+      "latitude": -2.047467,
+      "annualRainfallMm": 819,
+      "meanTemperatureC": 23.1,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 85,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 43.54,
+      "latitude": -2.047467,
+      "annualRainfallMm": 634,
+      "meanTemperatureC": 25.7,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 90,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": -1.627467,
+      "annualRainfallMm": 706,
+      "meanTemperatureC": 26.1,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 53,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": -1.627467,
+      "annualRainfallMm": 961,
+      "meanTemperatureC": 24.9,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 58,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": -1.627467,
+      "annualRainfallMm": 1357,
+      "meanTemperatureC": 22.0,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 64,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": -1.627467,
+      "annualRainfallMm": 1689,
+      "meanTemperatureC": 19.9,
+      "meanWindSpeedMps": 4.3,
+      "prevailingWindDirectionDegrees": 69,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": -1.627467,
+      "annualRainfallMm": 1727,
+      "meanTemperatureC": 19.8,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 74,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": -1.627467,
+      "annualRainfallMm": 1508,
+      "meanTemperatureC": 18.1,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 79,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": -1.627467,
+      "annualRainfallMm": 1116,
+      "meanTemperatureC": 20.4,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 84,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": -1.627467,
+      "annualRainfallMm": 792,
+      "meanTemperatureC": 23.7,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 89,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 29.26,
+      "latitude": -1.207467,
+      "annualRainfallMm": 610,
+      "meanTemperatureC": 27.1,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 52,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.94,
+      "latitude": -1.207467,
+      "annualRainfallMm": 787,
+      "meanTemperatureC": 25.6,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 57,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.62,
+      "latitude": -1.207467,
+      "annualRainfallMm": 1129,
+      "meanTemperatureC": 23.4,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 62,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": -1.207467,
+      "annualRainfallMm": 1586,
+      "meanTemperatureC": 20.0,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 67,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": -1.207467,
+      "annualRainfallMm": 1867,
+      "meanTemperatureC": 19.7,
+      "meanWindSpeedMps": 4.2,
+      "prevailingWindDirectionDegrees": 72,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 37.66,
+      "latitude": -1.207467,
+      "annualRainfallMm": 1816,
+      "meanTemperatureC": 19.9,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 77,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 39.34,
+      "latitude": -1.207467,
+      "annualRainfallMm": 1505,
+      "meanTemperatureC": 18.6,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 82,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 41.02,
+      "latitude": -1.207467,
+      "annualRainfallMm": 1071,
+      "meanTemperatureC": 21.2,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 87,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 42.7,
+      "latitude": -1.207467,
+      "annualRainfallMm": 758,
+      "meanTemperatureC": 24.2,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 92,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.1,
+      "latitude": -0.787467,
+      "annualRainfallMm": 693,
+      "meanTemperatureC": 26.3,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 56,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.78,
+      "latitude": -0.787467,
+      "annualRainfallMm": 978,
+      "meanTemperatureC": 24.0,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 61,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.46,
+      "latitude": -0.787467,
+      "annualRainfallMm": 1442,
+      "meanTemperatureC": 20.3,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 66,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.14,
+      "latitude": -0.787467,
+      "annualRainfallMm": 1875,
+      "meanTemperatureC": 18.2,
+      "meanWindSpeedMps": 4.4,
+      "prevailingWindDirectionDegrees": 71,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 36.82,
+      "latitude": -0.787467,
+      "annualRainfallMm": 1973,
+      "meanTemperatureC": 20.3,
+      "meanWindSpeedMps": 4.2,
+      "prevailingWindDirectionDegrees": 77,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 38.5,
+      "latitude": -0.787467,
+      "annualRainfallMm": 1764,
+      "meanTemperatureC": 19.1,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 82,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 40.18,
+      "latitude": -0.787467,
+      "annualRainfallMm": 1334,
+      "meanTemperatureC": 19.5,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 87,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 41.86,
+      "latitude": -0.787467,
+      "annualRainfallMm": 917,
+      "meanTemperatureC": 22.6,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 92,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 43.54,
+      "latitude": -0.787467,
+      "annualRainfallMm": 670,
+      "meanTemperatureC": 25.5,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 97,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": -0.367467,
+      "annualRainfallMm": 757,
+      "meanTemperatureC": 25.7,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 60,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": -0.367467,
+      "annualRainfallMm": 1120,
+      "meanTemperatureC": 22.4,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 65,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": -0.367467,
+      "annualRainfallMm": 1634,
+      "meanTemperatureC": 18.0,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 70,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": -0.367467,
+      "annualRainfallMm": 1996,
+      "meanTemperatureC": 17.6,
+      "meanWindSpeedMps": 4.3,
+      "prevailingWindDirectionDegrees": 75,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": -0.367467,
+      "annualRainfallMm": 1987,
+      "meanTemperatureC": 20.3,
+      "meanWindSpeedMps": 4.3,
+      "prevailingWindDirectionDegrees": 80,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": -0.367467,
+      "annualRainfallMm": 1701,
+      "meanTemperatureC": 18.8,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 85,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": -0.367467,
+      "annualRainfallMm": 1239,
+      "meanTemperatureC": 20.1,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 90,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": -0.367467,
+      "annualRainfallMm": 850,
+      "meanTemperatureC": 23.2,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 95,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 29.26,
+      "latitude": 0.052533,
+      "annualRainfallMm": 619,
+      "meanTemperatureC": 27.2,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 58,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.94,
+      "latitude": 0.052533,
+      "annualRainfallMm": 838,
+      "meanTemperatureC": 24.7,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 63,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.62,
+      "latitude": 0.052533,
+      "annualRainfallMm": 1279,
+      "meanTemperatureC": 20.2,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 68,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": 0.052533,
+      "annualRainfallMm": 1790,
+      "meanTemperatureC": 15.8,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 73,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": 0.052533,
+      "annualRainfallMm": 2031,
+      "meanTemperatureC": 17.5,
+      "meanWindSpeedMps": 4.2,
+      "prevailingWindDirectionDegrees": 78,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 37.66,
+      "latitude": 0.052533,
+      "annualRainfallMm": 1924,
+      "meanTemperatureC": 20.0,
+      "meanWindSpeedMps": 4.3,
+      "prevailingWindDirectionDegrees": 83,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 39.34,
+      "latitude": 0.052533,
+      "annualRainfallMm": 1582,
+      "meanTemperatureC": 18.6,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 88,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 41.02,
+      "latitude": 0.052533,
+      "annualRainfallMm": 1125,
+      "meanTemperatureC": 20.5,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 93,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 42.7,
+      "latitude": 0.052533,
+      "annualRainfallMm": 783,
+      "meanTemperatureC": 23.8,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 98,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 29.26,
+      "latitude": 0.472533,
+      "annualRainfallMm": 616,
+      "meanTemperatureC": 27.1,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 60,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.94,
+      "latitude": 0.472533,
+      "annualRainfallMm": 845,
+      "meanTemperatureC": 24.5,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 65,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.62,
+      "latitude": 0.472533,
+      "annualRainfallMm": 1312,
+      "meanTemperatureC": 19.2,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 70,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": 0.472533,
+      "annualRainfallMm": 1803,
+      "meanTemperatureC": 14.4,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 75,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": 0.472533,
+      "annualRainfallMm": 1986,
+      "meanTemperatureC": 16.5,
+      "meanWindSpeedMps": 4.4,
+      "prevailingWindDirectionDegrees": 80,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 37.66,
+      "latitude": 0.472533,
+      "annualRainfallMm": 1857,
+      "meanTemperatureC": 19.7,
+      "meanWindSpeedMps": 4.4,
+      "prevailingWindDirectionDegrees": 85,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 39.34,
+      "latitude": 0.472533,
+      "annualRainfallMm": 1533,
+      "meanTemperatureC": 18.4,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 90,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 41.02,
+      "latitude": 0.472533,
+      "annualRainfallMm": 1104,
+      "meanTemperatureC": 20.2,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 95,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 42.7,
+      "latitude": 0.472533,
+      "annualRainfallMm": 776,
+      "meanTemperatureC": 23.6,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 100,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 29.68,
+      "latitude": 0.892533,
+      "annualRainfallMm": 649,
+      "meanTemperatureC": 26.6,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 64,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.36,
+      "latitude": 0.892533,
+      "annualRainfallMm": 956,
+      "meanTemperatureC": 23.0,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 69,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.04,
+      "latitude": 0.892533,
+      "annualRainfallMm": 1489,
+      "meanTemperatureC": 16.7,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 74,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": 0.892533,
+      "annualRainfallMm": 1864,
+      "meanTemperatureC": 12.9,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 79,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": 0.892533,
+      "annualRainfallMm": 1877,
+      "meanTemperatureC": 17.1,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 84,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": 0.892533,
+      "annualRainfallMm": 1687,
+      "meanTemperatureC": 19.2,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 89,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 39.76,
+      "latitude": 0.892533,
+      "annualRainfallMm": 1357,
+      "meanTemperatureC": 18.3,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 94,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 41.44,
+      "latitude": 0.892533,
+      "annualRainfallMm": 977,
+      "meanTemperatureC": 20.6,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 99,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 43.12,
+      "latitude": 0.892533,
+      "annualRainfallMm": 709,
+      "meanTemperatureC": 24.2,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 104,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": 1.312533,
+      "annualRainfallMm": 768,
+      "meanTemperatureC": 25.1,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 68,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": 1.312533,
+      "annualRainfallMm": 1259,
+      "meanTemperatureC": 19.5,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 73,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": 1.312533,
+      "annualRainfallMm": 1752,
+      "meanTemperatureC": 13.0,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 78,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": 1.312533,
+      "annualRainfallMm": 1823,
+      "meanTemperatureC": 13.5,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 83,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": 1.312533,
+      "annualRainfallMm": 1654,
+      "meanTemperatureC": 18.8,
+      "meanWindSpeedMps": 4.5,
+      "prevailingWindDirectionDegrees": 88,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": 1.312533,
+      "annualRainfallMm": 1422,
+      "meanTemperatureC": 18.5,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 93,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": 1.312533,
+      "annualRainfallMm": 1100,
+      "meanTemperatureC": 18.8,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 98,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": 1.312533,
+      "annualRainfallMm": 802,
+      "meanTemperatureC": 22.1,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 103,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 29.68,
+      "latitude": 1.732533,
+      "annualRainfallMm": 639,
+      "meanTemperatureC": 26.6,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 68,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.36,
+      "latitude": 1.732533,
+      "annualRainfallMm": 1005,
+      "meanTemperatureC": 22.6,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 73,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.04,
+      "latitude": 1.732533,
+      "annualRainfallMm": 1615,
+      "meanTemperatureC": 15.4,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 78,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": 1.732533,
+      "annualRainfallMm": 1812,
+      "meanTemperatureC": 11.4,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 83,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": 1.732533,
+      "annualRainfallMm": 1606,
+      "meanTemperatureC": 16.2,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 88,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": 1.732533,
+      "annualRainfallMm": 1396,
+      "meanTemperatureC": 19.2,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 93,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 39.76,
+      "latitude": 1.732533,
+      "annualRainfallMm": 1166,
+      "meanTemperatureC": 18.1,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 98,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 41.44,
+      "latitude": 1.732533,
+      "annualRainfallMm": 896,
+      "meanTemperatureC": 19.8,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 103,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 43.12,
+      "latitude": 1.732533,
+      "annualRainfallMm": 680,
+      "meanTemperatureC": 23.9,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 108,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": 2.152533,
+      "annualRainfallMm": 776,
+      "meanTemperatureC": 25.1,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 72,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": 2.152533,
+      "annualRainfallMm": 1369,
+      "meanTemperatureC": 19.0,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 77,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": 2.152533,
+      "annualRainfallMm": 1825,
+      "meanTemperatureC": 12.1,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 82,
+      "climateClass": "humid_high_rainfall"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": 2.152533,
+      "annualRainfallMm": 1625,
+      "meanTemperatureC": 12.8,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 87,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": 2.152533,
+      "annualRainfallMm": 1333,
+      "meanTemperatureC": 18.8,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 92,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": 2.152533,
+      "annualRainfallMm": 1157,
+      "meanTemperatureC": 18.9,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 98,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": 2.152533,
+      "annualRainfallMm": 961,
+      "meanTemperatureC": 18.4,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 103,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": 2.152533,
+      "annualRainfallMm": 749,
+      "meanTemperatureC": 21.6,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 108,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 43.96,
+      "latitude": 2.152533,
+      "annualRainfallMm": 604,
+      "meanTemperatureC": 25.5,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 113,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.94,
+      "latitude": 2.572533,
+      "annualRainfallMm": 892,
+      "meanTemperatureC": 23.9,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 76,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.62,
+      "latitude": 2.572533,
+      "annualRainfallMm": 1569,
+      "meanTemperatureC": 17.1,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 81,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": 2.572533,
+      "annualRainfallMm": 1798,
+      "meanTemperatureC": 11.4,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 86,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": 2.572533,
+      "annualRainfallMm": 1412,
+      "meanTemperatureC": 14.5,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 91,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 37.66,
+      "latitude": 2.572533,
+      "annualRainfallMm": 1132,
+      "meanTemperatureC": 19.7,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 96,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 39.34,
+      "latitude": 2.572533,
+      "annualRainfallMm": 1001,
+      "meanTemperatureC": 18.9,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 101,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 41.02,
+      "latitude": 2.572533,
+      "annualRainfallMm": 853,
+      "meanTemperatureC": 18.8,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 106,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 42.7,
+      "latitude": 2.572533,
+      "annualRainfallMm": 684,
+      "meanTemperatureC": 22.6,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 111,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 29.68,
+      "latitude": 2.992533,
+      "annualRainfallMm": 619,
+      "meanTemperatureC": 26.6,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 74,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.36,
+      "latitude": 2.992533,
+      "annualRainfallMm": 1026,
+      "meanTemperatureC": 22.7,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 79,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.04,
+      "latitude": 2.992533,
+      "annualRainfallMm": 1676,
+      "meanTemperatureC": 15.5,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 84,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": 2.992533,
+      "annualRainfallMm": 1637,
+      "meanTemperatureC": 11.7,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 89,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": 2.992533,
+      "annualRainfallMm": 1184,
+      "meanTemperatureC": 16.7,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 94,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": 2.992533,
+      "annualRainfallMm": 966,
+      "meanTemperatureC": 20.5,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 99,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 39.76,
+      "latitude": 2.992533,
+      "annualRainfallMm": 881,
+      "meanTemperatureC": 19.0,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 104,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 41.44,
+      "latitude": 2.992533,
+      "annualRainfallMm": 770,
+      "meanTemperatureC": 19.6,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 109,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 43.12,
+      "latitude": 2.992533,
+      "annualRainfallMm": 633,
+      "meanTemperatureC": 23.8,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 114,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.1,
+      "latitude": 3.412533,
+      "annualRainfallMm": 659,
+      "meanTemperatureC": 26.1,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 77,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.78,
+      "latitude": 3.412533,
+      "annualRainfallMm": 1137,
+      "meanTemperatureC": 21.4,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 82,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.46,
+      "latitude": 3.412533,
+      "annualRainfallMm": 1639,
+      "meanTemperatureC": 14.5,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 87,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.14,
+      "latitude": 3.412533,
+      "annualRainfallMm": 1391,
+      "meanTemperatureC": 13.1,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 92,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 36.82,
+      "latitude": 3.412533,
+      "annualRainfallMm": 982,
+      "meanTemperatureC": 18.9,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 98,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 38.5,
+      "latitude": 3.412533,
+      "annualRainfallMm": 841,
+      "meanTemperatureC": 21.1,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 103,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.18,
+      "latitude": 3.412533,
+      "annualRainfallMm": 794,
+      "meanTemperatureC": 19.3,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 108,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 41.86,
+      "latitude": 3.412533,
+      "annualRainfallMm": 704,
+      "meanTemperatureC": 20.7,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 113,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 43.54,
+      "latitude": 3.412533,
+      "annualRainfallMm": 597,
+      "meanTemperatureC": 24.8,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 118,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.94,
+      "latitude": 3.832533,
+      "annualRainfallMm": 794,
+      "meanTemperatureC": 24.4,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 82,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.62,
+      "latitude": 3.832533,
+      "annualRainfallMm": 1311,
+      "meanTemperatureC": 18.5,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 87,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": 3.832533,
+      "annualRainfallMm": 1424,
+      "meanTemperatureC": 13.7,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 92,
+      "climateClass": "humid"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": 3.832533,
+      "annualRainfallMm": 1033,
+      "meanTemperatureC": 16.6,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 97,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 37.66,
+      "latitude": 3.832533,
+      "annualRainfallMm": 794,
+      "meanTemperatureC": 21.6,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 102,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 39.34,
+      "latitude": 3.832533,
+      "annualRainfallMm": 748,
+      "meanTemperatureC": 21.0,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 107,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 41.02,
+      "latitude": 3.832533,
+      "annualRainfallMm": 717,
+      "meanTemperatureC": 20.0,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 112,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 42.7,
+      "latitude": 3.832533,
+      "annualRainfallMm": 629,
+      "meanTemperatureC": 23.1,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 117,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": 4.252533,
+      "annualRainfallMm": 664,
+      "meanTemperatureC": 25.6,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 83,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": 4.252533,
+      "annualRainfallMm": 1039,
+      "meanTemperatureC": 20.8,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 88,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": 4.252533,
+      "annualRainfallMm": 1266,
+      "meanTemperatureC": 15.5,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 93,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": 4.252533,
+      "annualRainfallMm": 1001,
+      "meanTemperatureC": 16.4,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 98,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": 4.252533,
+      "annualRainfallMm": 752,
+      "meanTemperatureC": 21.6,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 103,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": 4.252533,
+      "annualRainfallMm": 694,
+      "meanTemperatureC": 22.4,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 108,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": 4.252533,
+      "annualRainfallMm": 689,
+      "meanTemperatureC": 20.9,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 113,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": 4.252533,
+      "annualRainfallMm": 631,
+      "meanTemperatureC": 22.8,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 118,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": 4.672533,
+      "annualRainfallMm": 628,
+      "meanTemperatureC": 25.7,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 85,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": 4.672533,
+      "annualRainfallMm": 900,
+      "meanTemperatureC": 21.5,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 90,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": 4.672533,
+      "annualRainfallMm": 1071,
+      "meanTemperatureC": 16.8,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 95,
+      "climateClass": "subhumid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": 4.672533,
+      "annualRainfallMm": 884,
+      "meanTemperatureC": 17.7,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 100,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": 4.672533,
+      "annualRainfallMm": 692,
+      "meanTemperatureC": 22.4,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 105,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": 4.672533,
+      "annualRainfallMm": 648,
+      "meanTemperatureC": 23.3,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 110,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": 4.672533,
+      "annualRainfallMm": 653,
+      "meanTemperatureC": 21.9,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 115,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 42.28,
+      "latitude": 4.672533,
+      "annualRainfallMm": 612,
+      "meanTemperatureC": 23.4,
+      "meanWindSpeedMps": 5.7,
+      "prevailingWindDirectionDegrees": 120,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.94,
+      "latitude": 5.092533,
+      "annualRainfallMm": 634,
+      "meanTemperatureC": 25.2,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 88,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.62,
+      "latitude": 5.092533,
+      "annualRainfallMm": 834,
+      "meanTemperatureC": 21.1,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 93,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": 5.092533,
+      "annualRainfallMm": 897,
+      "meanTemperatureC": 17.8,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 98,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": 5.092533,
+      "annualRainfallMm": 746,
+      "meanTemperatureC": 20.0,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 103,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.66,
+      "latitude": 5.092533,
+      "annualRainfallMm": 631,
+      "meanTemperatureC": 23.8,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 108,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 39.34,
+      "latitude": 5.092533,
+      "annualRainfallMm": 616,
+      "meanTemperatureC": 23.8,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 113,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 41.02,
+      "latitude": 5.092533,
+      "annualRainfallMm": 619,
+      "meanTemperatureC": 23.0,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 119,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": 5.512533,
+      "annualRainfallMm": 577,
+      "meanTemperatureC": 26.0,
+      "meanWindSpeedMps": 5.5,
+      "prevailingWindDirectionDegrees": 89,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": 5.512533,
+      "annualRainfallMm": 697,
+      "meanTemperatureC": 23.0,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 94,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": 5.512533,
+      "annualRainfallMm": 787,
+      "meanTemperatureC": 19.6,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 99,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": 5.512533,
+      "annualRainfallMm": 716,
+      "meanTemperatureC": 20.2,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 104,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": 5.512533,
+      "annualRainfallMm": 616,
+      "meanTemperatureC": 23.8,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 109,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": 5.512533,
+      "annualRainfallMm": 589,
+      "meanTemperatureC": 24.8,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 114,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": 5.512533,
+      "annualRainfallMm": 597,
+      "meanTemperatureC": 24.0,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 119,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 31.36,
+      "latitude": 5.932533,
+      "annualRainfallMm": 595,
+      "meanTemperatureC": 25.1,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 94,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.04,
+      "latitude": 5.932533,
+      "annualRainfallMm": 681,
+      "meanTemperatureC": 22.1,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 99,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": 5.932533,
+      "annualRainfallMm": 695,
+      "meanTemperatureC": 20.6,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 104,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": 5.932533,
+      "annualRainfallMm": 624,
+      "meanTemperatureC": 23.0,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 109,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": 5.932533,
+      "annualRainfallMm": 575,
+      "meanTemperatureC": 25.3,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 114,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 39.76,
+      "latitude": 5.932533,
+      "annualRainfallMm": 574,
+      "meanTemperatureC": 25.2,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 119,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 30.52,
+      "latitude": 6.352533,
+      "annualRainfallMm": 554,
+      "meanTemperatureC": 26.2,
+      "meanWindSpeedMps": 5.6,
+      "prevailingWindDirectionDegrees": 93,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.2,
+      "latitude": 6.352533,
+      "annualRainfallMm": 600,
+      "meanTemperatureC": 24.4,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 98,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.88,
+      "latitude": 6.352533,
+      "annualRainfallMm": 646,
+      "meanTemperatureC": 22.2,
+      "meanWindSpeedMps": 5.2,
+      "prevailingWindDirectionDegrees": 103,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.56,
+      "latitude": 6.352533,
+      "annualRainfallMm": 624,
+      "meanTemperatureC": 22.7,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 108,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.24,
+      "latitude": 6.352533,
+      "annualRainfallMm": 573,
+      "meanTemperatureC": 25.2,
+      "meanWindSpeedMps": 4.7,
+      "prevailingWindDirectionDegrees": 113,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.92,
+      "latitude": 6.352533,
+      "annualRainfallMm": 555,
+      "meanTemperatureC": 26.1,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 119,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 40.6,
+      "latitude": 6.352533,
+      "annualRainfallMm": 559,
+      "meanTemperatureC": 25.8,
+      "meanWindSpeedMps": 5.4,
+      "prevailingWindDirectionDegrees": 124,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 32.62,
+      "latitude": 6.772533,
+      "annualRainfallMm": 586,
+      "meanTemperatureC": 24.6,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 102,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": 6.772533,
+      "annualRainfallMm": 610,
+      "meanTemperatureC": 23.3,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 107,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": 6.772533,
+      "annualRainfallMm": 586,
+      "meanTemperatureC": 24.4,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 112,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 37.66,
+      "latitude": 6.772533,
+      "annualRainfallMm": 551,
+      "meanTemperatureC": 26.2,
+      "meanWindSpeedMps": 4.8,
+      "prevailingWindDirectionDegrees": 117,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 39.34,
+      "latitude": 6.772533,
+      "annualRainfallMm": 544,
+      "meanTemperatureC": 26.5,
+      "meanWindSpeedMps": 5.1,
+      "prevailingWindDirectionDegrees": 122,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 33.04,
+      "latitude": 7.192533,
+      "annualRainfallMm": 573,
+      "meanTemperatureC": 24.9,
+      "meanWindSpeedMps": 5.3,
+      "prevailingWindDirectionDegrees": 105,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.72,
+      "latitude": 7.192533,
+      "annualRainfallMm": 582,
+      "meanTemperatureC": 24.4,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 110,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 36.4,
+      "latitude": 7.192533,
+      "annualRainfallMm": 559,
+      "meanTemperatureC": 25.7,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 115,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 38.08,
+      "latitude": 7.192533,
+      "annualRainfallMm": 537,
+      "meanTemperatureC": 26.8,
+      "meanWindSpeedMps": 4.9,
+      "prevailingWindDirectionDegrees": 120,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 34.3,
+      "latitude": 7.612533,
+      "annualRainfallMm": 564,
+      "meanTemperatureC": 25.3,
+      "meanWindSpeedMps": 5.0,
+      "prevailingWindDirectionDegrees": 111,
+      "climateClass": "dry_subhumid"
+    },
+    {
+      "longitude": 35.98,
+      "latitude": 7.612533,
+      "annualRainfallMm": 550,
+      "meanTemperatureC": 26.0,
+      "meanWindSpeedMps": 4.6,
+      "prevailingWindDirectionDegrees": 116,
+      "climateClass": "dry_subhumid"
+    }
+  ],
+  "cartographicModel": {
+    "rainfallPresentation": "continuous_irregular_intensity_field",
+    "windPresentation": "restrained_directional_marks",
+    "featureNamingAuthority": "deferred"
+  },
+  "contentSha256": "0678b32bf7cab2e71e53da10dba75a8ff20d4d1bc349c5b0311975b49230c6c9"
+}

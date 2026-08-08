@@ -1,0 +1,11 @@
+{
+  "publicationId": "publication:novegeo:hydrology:v001",
+  "publicationVersion": 1,
+  "datasetId": "dataset:novegeo:hydrology:surface-water",
+  "datasetVersion": 1,
+  "defaultResolution": "standard",
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "lifecycleStatus": "published",
+  "sourceContentSha256": "52285245790036a22b057b48c54e85912762ed142e9722ed94eaa6b8960adad2"
+}

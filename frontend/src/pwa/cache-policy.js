@@ -1,5 +1,5 @@
 /** P003.3/P003.4 — Immutable application-shell cache policy. */
-export const PWA_CACHE_VERSION = "novegeo-shell-v6";
+export const PWA_CACHE_VERSION = "novegeo-shell-v7";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./",
@@ -55,6 +55,17 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/map/environment/physical-land-presentation.js",
   "./src/map/environment/full-viewport-coordinate-presentation.js",
   "./src/map/lifecycle/foreground-recovery.js",
+  "./src/map/hydrology/contracts.js",
+  "./src/map/hydrology/catalog.js",
+  "./src/map/hydrology/render-plan.js",
+  "./src/map/climate/contracts.js",
+  "./src/map/climate/catalog.js",
+  "./src/map/climate/render-plan.js",
+  "./src/map/environment/hydrology-atmosphere-presentation.js",
+  "./public/geography/novegeo/hydrology/v001/manifest.json",
+  "./public/geography/novegeo/hydrology/v001/standard.json",
+  "./public/geography/novegeo/climate/v001/manifest.json",
+  "./public/geography/novegeo/climate/v001/standard.json",
   "./public/geography/novegeo/terrain/v001/manifest.json",
   "./public/geography/novegeo/terrain/v001/overview.json",
   "./public/geography/novegeo/terrain/v001/standard.json",

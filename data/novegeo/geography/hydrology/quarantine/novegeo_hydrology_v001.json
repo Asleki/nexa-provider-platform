@@ -1,0 +1,756 @@
+{
+  "hydrologyId": "hydrology:novegeo:surface-water",
+  "hydrologyVersion": 1,
+  "datasetId": "dataset:novegeo:hydrology:surface-water",
+  "datasetVersion": 1,
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2,
+  "terrainDatasetId": "dataset:novegeo:terrain:elevation",
+  "terrainDatasetVersion": 1,
+  "coordinateReference": {
+    "coordinateReferenceId": "crs:novegeo:geographic",
+    "version": 1,
+    "authorityName": "EPSG",
+    "authorityCode": "4326",
+    "axisOrder": [
+      "longitude",
+      "latitude"
+    ],
+    "unit": "decimal_degrees"
+  },
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "extent": {
+    "minLongitude": 29.05,
+    "minLatitude": -7.717467,
+    "maxLongitude": 44.805229,
+    "maxLatitude": 7.85
+  },
+  "drainageNetworks": [
+    {
+      "drainageNetworkId": "drainage:novegeo:northern",
+      "drainageNetworkVersion": 1,
+      "name": "Northern Reach Drainage",
+      "riverIds": [
+        "river:novegeo:aurora"
+      ],
+      "lakeIds": [
+        "lake:novegeo:highmirror"
+      ],
+      "outletType": "coast_or_terminal_lake",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "drainageNetworkId": "drainage:novegeo:western",
+      "drainageNetworkVersion": 1,
+      "name": "Western Reach Drainage",
+      "riverIds": [
+        "river:novegeo:westreach",
+        "river:novegeo:blueplain"
+      ],
+      "lakeIds": [
+        "lake:novegeo:serene"
+      ],
+      "outletType": "coast_or_terminal_lake",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "drainageNetworkId": "drainage:novegeo:northwestern",
+      "drainageNetworkVersion": 1,
+      "name": "Northwestern Reach Drainage",
+      "riverIds": [
+        "river:novegeo:skyfall"
+      ],
+      "lakeIds": [],
+      "outletType": "coast_or_terminal_lake",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "drainageNetworkId": "drainage:novegeo:southern",
+      "drainageNetworkVersion": 1,
+      "name": "Southern Reach Drainage",
+      "riverIds": [
+        "river:novegeo:southrun"
+      ],
+      "lakeIds": [
+        "lake:novegeo:valora"
+      ],
+      "outletType": "coast_or_terminal_lake",
+      "runtimeMode": "shared_reference"
+    }
+  ],
+  "rivers": [
+    {
+      "riverId": "river:novegeo:aurora",
+      "riverVersion": 1,
+      "name": "Aurora River",
+      "drainageNetworkId": "drainage:novegeo:northern",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            34.72,
+            2.152533
+          ],
+          [
+            35.14,
+            2.572533
+          ],
+          [
+            35.56,
+            2.992533
+          ],
+          [
+            35.98,
+            3.412533
+          ],
+          [
+            36.4,
+            3.832533
+          ],
+          [
+            36.82,
+            4.252533
+          ],
+          [
+            37.24,
+            4.672533
+          ],
+          [
+            37.66,
+            5.092533
+          ],
+          [
+            38.08,
+            5.512533
+          ],
+          [
+            38.5,
+            5.932533
+          ],
+          [
+            38.92,
+            6.352533
+          ],
+          [
+            38.92,
+            6.772533
+          ],
+          [
+            38.92,
+            7.192533
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        2778,
+        2661,
+        2386,
+        2009,
+        1601,
+        1222,
+        913,
+        681,
+        516,
+        394,
+        286,
+        196,
+        125
+      ],
+      "sourceElevationMeters": 2778,
+      "outletElevationMeters": 125,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "riverId": "river:novegeo:westreach",
+      "riverVersion": 1,
+      "name": "Westreach River",
+      "drainageNetworkId": "drainage:novegeo:western",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            33.88,
+            1.732533
+          ],
+          [
+            33.46,
+            1.312533
+          ],
+          [
+            33.04,
+            0.892533
+          ],
+          [
+            32.62,
+            0.472533
+          ],
+          [
+            32.2,
+            0.052533
+          ],
+          [
+            31.78,
+            -0.367467
+          ],
+          [
+            31.36,
+            -0.787467
+          ],
+          [
+            30.94,
+            -1.207467
+          ],
+          [
+            30.52,
+            -1.627467
+          ],
+          [
+            30.1,
+            -2.047467
+          ],
+          [
+            29.68,
+            -2.047467
+          ],
+          [
+            29.26,
+            -2.047467
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        2585,
+        2282,
+        1901,
+        1501,
+        1134,
+        834,
+        615,
+        467,
+        366,
+        303,
+        260,
+        211
+      ],
+      "sourceElevationMeters": 2585,
+      "outletElevationMeters": 211,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "riverId": "river:novegeo:skyfall",
+      "riverVersion": 1,
+      "name": "Skyfall River",
+      "drainageNetworkId": "drainage:novegeo:northwestern",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            34.3,
+            3.412533
+          ],
+          [
+            33.88,
+            3.832533
+          ],
+          [
+            33.46,
+            4.252533
+          ],
+          [
+            33.04,
+            4.672533
+          ],
+          [
+            32.62,
+            5.092533
+          ],
+          [
+            32.2,
+            5.512533
+          ],
+          [
+            31.78,
+            5.932533
+          ],
+          [
+            31.36,
+            6.352533
+          ],
+          [
+            31.36,
+            6.772533
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        2512,
+        2233,
+        1872,
+        1481,
+        1112,
+        800,
+        557,
+        375,
+        307
+      ],
+      "sourceElevationMeters": 2512,
+      "outletElevationMeters": 307,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "riverId": "river:novegeo:southrun",
+      "riverVersion": 1,
+      "name": "Southrun River",
+      "drainageNetworkId": "drainage:novegeo:southern",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            34.72,
+            1.732533
+          ],
+          [
+            34.3,
+            1.312533
+          ],
+          [
+            33.88,
+            0.892533
+          ],
+          [
+            33.88,
+            0.472533
+          ],
+          [
+            33.88,
+            0.052533
+          ],
+          [
+            33.88,
+            -0.367467
+          ],
+          [
+            33.88,
+            -0.787467
+          ],
+          [
+            33.88,
+            -1.207467
+          ],
+          [
+            33.88,
+            -1.627467
+          ],
+          [
+            33.88,
+            -2.047467
+          ],
+          [
+            33.88,
+            -2.467467
+          ],
+          [
+            33.88,
+            -2.887467
+          ],
+          [
+            33.88,
+            -3.307467
+          ],
+          [
+            33.88,
+            -3.727467
+          ],
+          [
+            33.88,
+            -4.147467
+          ],
+          [
+            33.88,
+            -4.567467
+          ],
+          [
+            33.88,
+            -4.987467
+          ],
+          [
+            33.88,
+            -5.407467
+          ],
+          [
+            33.88,
+            -5.827467
+          ],
+          [
+            33.88,
+            -6.247467
+          ],
+          [
+            33.88,
+            -6.667467
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        2745,
+        2620,
+        2346,
+        2159,
+        1942,
+        1706,
+        1466,
+        1237,
+        1032,
+        861,
+        730,
+        640,
+        586,
+        556,
+        540,
+        528,
+        515,
+        497,
+        470,
+        426,
+        384
+      ],
+      "sourceElevationMeters": 2745,
+      "outletElevationMeters": 384,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "riverId": "river:novegeo:blueplain",
+      "riverVersion": 1,
+      "name": "Blueplain River",
+      "drainageNetworkId": "drainage:novegeo:western",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            33.88,
+            2.572533
+          ],
+          [
+            33.46,
+            2.992533
+          ],
+          [
+            33.04,
+            3.412533
+          ],
+          [
+            32.62,
+            3.412533
+          ],
+          [
+            32.2,
+            3.412533
+          ],
+          [
+            31.78,
+            3.412533
+          ],
+          [
+            31.36,
+            3.412533
+          ],
+          [
+            30.94,
+            3.412533
+          ],
+          [
+            30.52,
+            3.412533
+          ],
+          [
+            30.1,
+            3.412533
+          ],
+          [
+            29.68,
+            3.412533
+          ]
+        ]
+      },
+      "elevationProfileMeters": [
+        2604,
+        2323,
+        1955,
+        1668,
+        1374,
+        1097,
+        853,
+        646,
+        471,
+        343,
+        254
+      ],
+      "sourceElevationMeters": 2604,
+      "outletElevationMeters": 254,
+      "flowDirection": "source_to_outlet",
+      "runtimeMode": "shared_reference"
+    }
+  ],
+  "lakes": [
+    {
+      "lakeId": "lake:novegeo:serene",
+      "lakeVersion": 1,
+      "name": "Lake Serene",
+      "drainageNetworkId": "drainage:novegeo:western",
+      "surfaceElevationMeters": 293,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              32.52,
+              -3.307467
+            ],
+            [
+              32.495641,
+              -3.223277
+            ],
+            [
+              32.426274,
+              -3.151904
+            ],
+            [
+              32.322459,
+              -3.104214
+            ],
+            [
+              32.2,
+              -3.087467
+            ],
+            [
+              32.077541,
+              -3.104214
+            ],
+            [
+              31.973726,
+              -3.151904
+            ],
+            [
+              31.904359,
+              -3.223277
+            ],
+            [
+              31.88,
+              -3.307467
+            ],
+            [
+              31.904359,
+              -3.391657
+            ],
+            [
+              31.973726,
+              -3.46303
+            ],
+            [
+              32.077541,
+              -3.51072
+            ],
+            [
+              32.2,
+              -3.527467
+            ],
+            [
+              32.322459,
+              -3.51072
+            ],
+            [
+              32.426274,
+              -3.46303
+            ],
+            [
+              32.495641,
+              -3.391657
+            ],
+            [
+              32.52,
+              -3.307467
+            ]
+          ]
+        ]
+      },
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "lakeId": "lake:novegeo:highmirror",
+      "lakeVersion": 1,
+      "name": "High Mirror Lake",
+      "drainageNetworkId": "drainage:novegeo:northern",
+      "surfaceElevationMeters": 820,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.94,
+              5.092533
+            ],
+            [
+              37.918686,
+              5.161416
+            ],
+            [
+              37.85799,
+              5.219812
+            ],
+            [
+              37.767151,
+              5.258831
+            ],
+            [
+              37.66,
+              5.272533
+            ],
+            [
+              37.552849,
+              5.258831
+            ],
+            [
+              37.46201,
+              5.219812
+            ],
+            [
+              37.401314,
+              5.161416
+            ],
+            [
+              37.38,
+              5.092533
+            ],
+            [
+              37.401314,
+              5.02365
+            ],
+            [
+              37.46201,
+              4.965254
+            ],
+            [
+              37.552849,
+              4.926235
+            ],
+            [
+              37.66,
+              4.912533
+            ],
+            [
+              37.767151,
+              4.926235
+            ],
+            [
+              37.85799,
+              4.965254
+            ],
+            [
+              37.918686,
+              5.02365
+            ],
+            [
+              37.94,
+              5.092533
+            ]
+          ]
+        ]
+      },
+      "runtimeMode": "shared_reference"
+    },
+    {
+      "lakeId": "lake:novegeo:valora",
+      "lakeVersion": 1,
+      "name": "Lake Valora",
+      "drainageNetworkId": "drainage:novegeo:southern",
+      "surfaceElevationMeters": 720,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.74,
+              -4.147467
+            ],
+            [
+              36.714119,
+              -4.07093
+            ],
+            [
+              36.640416,
+              -4.006046
+            ],
+            [
+              36.530112,
+              -3.962691
+            ],
+            [
+              36.4,
+              -3.947467
+            ],
+            [
+              36.269888,
+              -3.962691
+            ],
+            [
+              36.159584,
+              -4.006046
+            ],
+            [
+              36.085881,
+              -4.07093
+            ],
+            [
+              36.06,
+              -4.147467
+            ],
+            [
+              36.085881,
+              -4.224004
+            ],
+            [
+              36.159584,
+              -4.288888
+            ],
+            [
+              36.269888,
+              -4.332243
+            ],
+            [
+              36.4,
+              -4.347467
+            ],
+            [
+              36.530112,
+              -4.332243
+            ],
+            [
+              36.640416,
+              -4.288888
+            ],
+            [
+              36.714119,
+              -4.224004
+            ],
+            [
+              36.74,
+              -4.147467
+            ]
+          ]
+        ]
+      },
+      "runtimeMode": "shared_reference"
+    }
+  ],
+  "units": {
+    "elevation": "metre",
+    "length": "kilometre",
+    "lakeArea": "square_kilometre"
+  },
+  "contentSha256": "f6187c2451d01f758a1ead8879e356582d945dc35b26163880354b8244a40dd6"
+}
