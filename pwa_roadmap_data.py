@@ -67,9 +67,9 @@ C|P005.4|Climate, Rainfall and Wind Effects
 C|P005.5|Vegetation and Arid-Zone Layers
 C|P005.6|Environmental Layer Integration Tests
 P|P006|Map Interaction and Dynamic World State
-P|P006.1|Pan, Zoom, Touch and Keyboard Navigation
-P|P006.2|Layer Controls, Legend and Scale
-P|P006.3|Coordinate Search and Location Selection
+C|P006.1|Pan, Zoom, Touch and Keyboard Navigation
+C|P006.2|Layer Controls, Legend and Scale
+C|P006.3|Coordinate Search and Location Selection
 P|P006.4|One-to-One Simulation Clock Presentation
 P|P006.5|Versioned Dynamic World-State Updates
 P|P006.6|Interaction and Dynamic-State Tests

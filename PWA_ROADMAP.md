@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **50 canonical records**
 
-`██████████████████░░░░░░░░░░░░` **60.00%**
+`████████████████████░░░░░░░░░░` **66.00%**
 
-**30 completed** · **20 planned** · **8 root milestones**
+**33 completed** · **17 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **60.00%** |
-| Completed records | **30** |
-| Planned records | **20** |
+| Overall progress | **66.00%** |
+| Completed records | **33** |
+| Planned records | **17** |
 | Total roadmap records | **50** |
 | Root milestones | **8** |
 
@@ -48,7 +48,7 @@
 - [✅ **P003 — Installable and Offline PWA**](#p003) — 6/6 complete (100.0%)
 - [✅ **P004 — NoveGeo World Geometry and Map Core**](#p004) — 7/7 complete (100.0%)
 - [✅ **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 7/7 complete (100.0%)
-- [🟦 **P006 — Map Interaction and Dynamic World State**](#p006) — 0/7 complete (0.0%)
+- [🟦 **P006 — Map Interaction and Dynamic World State**](#p006) — 3/7 complete (42.9%)
 - [🟦 **P007 — AWS Hosting and Release Operations**](#p007) — 0/6 complete (0.0%)
 - [🟦 **P008 — Secure NPP Data Access and Alpha Qualification**](#p008) — 0/7 complete (0.0%)
 
@@ -63,7 +63,7 @@
 | [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 6 | 100.0% |
 | [P004](#p004) | NoveGeo World Geometry and Map Core | ✅ Completed | 7 | 7 | 100.0% |
 | [P005](#p005) | Terrain, Water, Climate and Vegetation | ✅ Completed | 7 | 7 | 100.0% |
-| [P006](#p006) | Map Interaction and Dynamic World State | 🟦 Planned | 7 | 0 | 0.0% |
+| [P006](#p006) | Map Interaction and Dynamic World State | 🟦 Planned | 7 | 3 | 42.9% |
 | [P007](#p007) | AWS Hosting and Release Operations | 🟦 Planned | 6 | 0 | 0.0% |
 | [P008](#p008) | Secure NPP Data Access and Alpha Qualification | 🟦 Planned | 7 | 0 | 0.0% |
 
@@ -414,7 +414,7 @@
 <a id="p006"></a>
 ### 🟦 P006 — Map Interaction and Dynamic World State
 
-`░░░░░░░░░░░░░░░░░░░░` **0/7 complete (0.0%)**
+`█████████░░░░░░░░░░░` **3/7 complete (42.9%)**
 
 <details>
 <summary><strong>Open P006 roadmap records (7 items)</strong></summary>
@@ -428,27 +428,27 @@
 - **Semantic path:** `Map Interaction and Dynamic World State`
 - **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P006.1` — Pan, Zoom, Touch and Keyboard Navigation**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P006.1` — Pan, Zoom, Touch and Keyboard Navigation**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-fdff36b5c55b2631b090`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Map Interaction and Dynamic World State / Pan, Zoom, Touch and Keyboard Navigation`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P006.2` — Layer Controls, Legend and Scale**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P006.2` — Layer Controls, Legend and Scale**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-4e28f0fae221c4eac126`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Map Interaction and Dynamic World State / Layer Controls, Legend and Scale`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P006.3` — Coordinate Search and Location Selection**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P006.3` — Coordinate Search and Location Selection**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-fd05fd689964420d77f5`
@@ -641,6 +641,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `50` |
-| Canonical content checksum | `3fd0733b7f03fb25cf80d20991374784ea690768525ce8f70d1d9f154758c588` |
+| Canonical content checksum | `3d836b34ca6a6845cf1484c4240973bff79d1cf7ab0323dc63d3b898614c1218` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.

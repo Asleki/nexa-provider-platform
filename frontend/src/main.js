@@ -8,6 +8,7 @@ import { registerMapForegroundRecovery } from "./map/lifecycle/foreground-recove
 import { mountFullViewportCoordinatePresentation } from "./map/environment/full-viewport-coordinate-presentation.js";
 import { mountHydrologyAtmospherePresentation } from "./map/environment/hydrology-atmosphere-presentation.js";
 import { mountBiospherePresentation } from "./map/environment/biosphere-presentation.js";
+import { mountMapNavigationDiscovery } from "./map/interaction/map-navigation-discovery.js";
 
 function readPublicRuntimeInput(documentRef) {
   const root = documentRef.documentElement;
@@ -27,6 +28,7 @@ export function bootstrap(documentRef = globalThis.document, windowRef = globalT
   mountBiospherePresentation(documentRef);
   mountHydrologyAtmospherePresentation(documentRef);
   mountFullViewportCoordinatePresentation(documentRef);
+  mountMapNavigationDiscovery(documentRef, windowRef);
   registerMapForegroundRecovery({
     documentRef,
     windowRef,
