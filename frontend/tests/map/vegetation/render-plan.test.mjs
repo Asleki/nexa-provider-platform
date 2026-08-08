@@ -1,0 +1,4 @@
+import test from "node:test";import assert from "node:assert/strict";
+import {NOVEGEO_VEGETATION_STANDARD} from "../../../src/map/vegetation/catalog.js";import {createVegetationRenderPlan} from "../../../src/map/vegetation/render-plan.js";import {createViewport} from "../../../src/map/presentation/viewport.js";import {MapFitMode} from "../../../src/map/presentation/contracts.js";
+const viewport=createViewport({cssWidth:420,cssHeight:286,devicePixelRatio:1,padding:24,fitMode:MapFitMode.BOUNDARY,extent:NOVEGEO_VEGETATION_STANDARD.extent});
+test("P005.5 vegetation cells map deterministically into the governed viewport",()=>{const p=createVegetationRenderPlan(NOVEGEO_VEGETATION_STANDARD,viewport);assert.equal(p.cells.length,NOVEGEO_VEGETATION_STANDARD.samples.length);assert.ok(p.cells.every(c=>Number.isFinite(c.x)&&Number.isFinite(c.y)&&typeof c.color==="string"));});

@@ -1,0 +1,5 @@
+import test from "node:test";import assert from "node:assert/strict";
+import {NOVEGEO_VEGETATION_STANDARD} from "../../../src/map/vegetation/catalog.js";
+import {validateVegetationPublication,VEGETATION_PALETTE} from "../../../src/map/vegetation/contracts.js";
+test("P005.5 vegetation retains complete environmental lineage and anonymous stable cells",()=>{const v=validateVegetationPublication(NOVEGEO_VEGETATION_STANDARD);assert.equal(v.boundaryVersion,2);assert.equal(v.runtimeMode,"shared_reference");assert.ok(v.samples.length>=200);assert.equal(new Set(v.samples.map(s=>s.vegetationCellId)).size,v.samples.length);assert.ok(v.samples.every(s=>!("name" in s)));});
+test("P005.5 exposes all governed vegetation and aridity classes",()=>{const v=validateVegetationPublication(NOVEGEO_VEGETATION_STANDARD);assert.deepEqual(new Set(v.samples.map(s=>s.vegetationClass)),new Set(Object.keys(VEGETATION_PALETTE)));assert.deepEqual(new Set(v.samples.map(s=>s.aridityClass)),new Set(["arid","semi_arid","non_arid"]));});

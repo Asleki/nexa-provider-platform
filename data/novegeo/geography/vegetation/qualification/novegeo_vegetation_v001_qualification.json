@@ -1,0 +1,19 @@
+{
+  "qualificationId": "qualification:novegeo:vegetation:v001",
+  "decision": "qualified",
+  "datasetId": "dataset:novegeo:vegetation:baseline",
+  "sampleCount": 276,
+  "vegetationClassesPresent": [
+    "arid_surface",
+    "dense_vegetation",
+    "grassland",
+    "sparse_vegetation",
+    "woodland"
+  ],
+  "aridityClassesPresent": [
+    "arid",
+    "non_arid",
+    "semi_arid"
+  ],
+  "contentSha256": "eae5fd84efa8aa2b0063075fdb116c5b2c78ebef0b79b5bb22859a0c5732a7bd"
+}

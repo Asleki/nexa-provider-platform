@@ -1,0 +1,25 @@
+{
+  "contractId": "contract:novegeo:vegetation-baseline:v001",
+  "version": 1,
+  "datasetId": "dataset:novegeo:vegetation:baseline",
+  "requiredLineage": [
+    "boundary",
+    "terrain",
+    "hydrology",
+    "climate"
+  ],
+  "vegetationClasses": [
+    "dense_vegetation",
+    "woodland",
+    "grassland",
+    "sparse_vegetation",
+    "arid_surface"
+  ],
+  "aridityClasses": [
+    "arid",
+    "semi_arid",
+    "non_arid"
+  ],
+  "identityRule": "each vegetation cell has a stable anonymous vegetationCellId and coordinate reference",
+  "namingAuthority": "deferred"
+}

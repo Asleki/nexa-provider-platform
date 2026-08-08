@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **50 canonical records**
 
-`████████████████░░░░░░░░░░░░░░` **54.00%**
+`██████████████████░░░░░░░░░░░░` **60.00%**
 
-**27 completed** · **23 planned** · **8 root milestones**
+**30 completed** · **20 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **54.00%** |
-| Completed records | **27** |
-| Planned records | **23** |
+| Overall progress | **60.00%** |
+| Completed records | **30** |
+| Planned records | **20** |
 | Total roadmap records | **50** |
 | Root milestones | **8** |
 
@@ -47,7 +47,7 @@
 - [✅ **P002 — Application Shell and Brand Integration**](#p002) — 6/6 complete (100.0%)
 - [✅ **P003 — Installable and Offline PWA**](#p003) — 6/6 complete (100.0%)
 - [✅ **P004 — NoveGeo World Geometry and Map Core**](#p004) — 7/7 complete (100.0%)
-- [🟦 **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 4/7 complete (57.1%)
+- [✅ **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 7/7 complete (100.0%)
 - [🟦 **P006 — Map Interaction and Dynamic World State**](#p006) — 0/7 complete (0.0%)
 - [🟦 **P007 — AWS Hosting and Release Operations**](#p007) — 0/6 complete (0.0%)
 - [🟦 **P008 — Secure NPP Data Access and Alpha Qualification**](#p008) — 0/7 complete (0.0%)
@@ -62,7 +62,7 @@
 | [P002](#p002) | Application Shell and Brand Integration | ✅ Completed | 6 | 6 | 100.0% |
 | [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 6 | 100.0% |
 | [P004](#p004) | NoveGeo World Geometry and Map Core | ✅ Completed | 7 | 7 | 100.0% |
-| [P005](#p005) | Terrain, Water, Climate and Vegetation | 🟦 Planned | 7 | 4 | 57.1% |
+| [P005](#p005) | Terrain, Water, Climate and Vegetation | ✅ Completed | 7 | 7 | 100.0% |
 | [P006](#p006) | Map Interaction and Dynamic World State | 🟦 Planned | 7 | 0 | 0.0% |
 | [P007](#p007) | AWS Hosting and Release Operations | 🟦 Planned | 6 | 0 | 0.0% |
 | [P008](#p008) | Secure NPP Data Access and Alpha Qualification | 🟦 Planned | 7 | 0 | 0.0% |
@@ -335,16 +335,16 @@
 ---
 
 <a id="p005"></a>
-### 🟦 P005 — Terrain, Water, Climate and Vegetation
+### ✅ P005 — Terrain, Water, Climate and Vegetation
 
-`███████████░░░░░░░░░` **4/7 complete (57.1%)**
+`████████████████████` **7/7 complete (100.0%)**
 
 <details>
 <summary><strong>Open P005 roadmap records (7 items)</strong></summary>
 
-🟦 **`P005` — Terrain, Water, Climate and Vegetation**
+✅ **`P005` — Terrain, Water, Climate and Vegetation**
 
-- **Status:** Planned
+- **Status:** Completed
 - **Priority:** NORMAL
 - **Dependencies:** None
 - **Record ID:** `nxl-pwa-rm-23bbf9fa6a350b581f9d`
@@ -387,18 +387,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Terrain, Water, Climate and Vegetation / Climate, Rainfall and Wind Effects`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P005.5` — Vegetation and Arid-Zone Layers**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P005.5` — Vegetation and Arid-Zone Layers**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-cbec3328ecea1d93367f`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Terrain, Water, Climate and Vegetation / Vegetation and Arid-Zone Layers`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P005.6` — Environmental Layer Integration Tests**
+&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P005.6` — Environmental Layer Integration Tests**
 
-&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-8f4544a2202ad06dc268`
@@ -641,6 +641,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `50` |
-| Canonical content checksum | `b3e587bf7e7ccbaaedff64dbecda157c9166c2a2b2958d273e98ac02ed2e2652` |
+| Canonical content checksum | `3fd0733b7f03fb25cf80d20991374784ea690768525ce8f70d1d9f154758c588` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.

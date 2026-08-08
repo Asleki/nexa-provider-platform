@@ -1,0 +1,11 @@
+{
+  "sourcePackageId": "source-package:novegeo:vegetation:v001",
+  "datasetId": "dataset:novegeo:vegetation:baseline",
+  "sources": [
+    "dataset:novegeo:terrain:elevation",
+    "dataset:novegeo:hydrology:surface-water",
+    "dataset:novegeo:climate:baseline"
+  ],
+  "method": "deterministic baseline classification from governed P005 inputs",
+  "externalEarthDataUsed": false
+}

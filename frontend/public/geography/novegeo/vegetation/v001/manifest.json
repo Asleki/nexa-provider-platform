@@ -1,0 +1,20 @@
+{
+  "publicationId": "publication:novegeo:vegetation:v001",
+  "publicationVersion": 1,
+  "datasetId": "dataset:novegeo:vegetation:baseline",
+  "datasetVersion": 1,
+  "runtimeMode": "shared_reference",
+  "visibility": "public",
+  "lifecycleStatus": "published",
+  "defaultResolution": "standard",
+  "activation": {
+    "active": true,
+    "activatedByMilestone": "P005.5"
+  },
+  "representations": {
+    "standard": "./standard.json"
+  },
+  "sourceContentSha256": "eae5fd84efa8aa2b0063075fdb116c5b2c78ebef0b79b5bb22859a0c5732a7bd",
+  "boundaryId": "boundary:novegeo:sovereign",
+  "boundaryVersion": 2
+}

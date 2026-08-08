@@ -1,5 +1,5 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
-const CACHE_NAME = "novegeo-shell-v7";
+const CACHE_NAME = "novegeo-shell-v8";
 const OFFLINE_URL = "./index.html";
 const APP_SHELL = [
   "./",
@@ -62,6 +62,12 @@ const APP_SHELL = [
   "./src/map/climate/catalog.js",
   "./src/map/climate/render-plan.js",
   "./src/map/environment/hydrology-atmosphere-presentation.js",
+  "./src/map/vegetation/contracts.js",
+  "./src/map/vegetation/catalog.js",
+  "./src/map/vegetation/render-plan.js",
+  "./src/map/environment/biosphere-presentation.js",
+  "./public/geography/novegeo/vegetation/v001/manifest.json",
+  "./public/geography/novegeo/vegetation/v001/standard.json",
   "./public/geography/novegeo/hydrology/v001/manifest.json",
   "./public/geography/novegeo/hydrology/v001/standard.json",
   "./public/geography/novegeo/climate/v001/manifest.json",

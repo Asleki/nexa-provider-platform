@@ -7,6 +7,7 @@ import { mountPhysicalLandPresentation } from "./map/environment/physical-land-p
 import { registerMapForegroundRecovery } from "./map/lifecycle/foreground-recovery.js";
 import { mountFullViewportCoordinatePresentation } from "./map/environment/full-viewport-coordinate-presentation.js";
 import { mountHydrologyAtmospherePresentation } from "./map/environment/hydrology-atmosphere-presentation.js";
+import { mountBiospherePresentation } from "./map/environment/biosphere-presentation.js";
 
 function readPublicRuntimeInput(documentRef) {
   const root = documentRef.documentElement;
@@ -23,6 +24,7 @@ export function bootstrap(documentRef = globalThis.document, windowRef = globalT
   const config = createRuntimeConfig(readPublicRuntimeInput(documentRef));
   const application = createApplication({ documentRef, config }).start();
   mountPhysicalLandPresentation(documentRef);
+  mountBiospherePresentation(documentRef);
   mountHydrologyAtmospherePresentation(documentRef);
   mountFullViewportCoordinatePresentation(documentRef);
   registerMapForegroundRecovery({
@@ -31,6 +33,7 @@ export function bootstrap(documentRef = globalThis.document, windowRef = globalT
     redrawMap: () => application.mapPresentation?.redraw?.() ?? { status: "UNAVAILABLE" },
     redrawPhysicalLand: () => {
       const physicalLand = mountPhysicalLandPresentation(documentRef);
+      mountBiospherePresentation(documentRef);
       mountHydrologyAtmospherePresentation(documentRef);
       mountFullViewportCoordinatePresentation(documentRef);
       return physicalLand;

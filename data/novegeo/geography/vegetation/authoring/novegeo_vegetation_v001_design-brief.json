@@ -1,0 +1,16 @@
+{
+  "milestone": "P005.5",
+  "bundle": "11C",
+  "purpose": "Govern broad vegetation and arid-zone reference layers without naming, parcels, crops, ownership, or ecological simulation.",
+  "inputs": [
+    "dataset:novegeo:terrain:elevation",
+    "dataset:novegeo:hydrology:surface-water",
+    "dataset:novegeo:climate:baseline"
+  ],
+  "rules": [
+    "stable anonymous cell identities",
+    "coordinate-referenceable",
+    "shared_reference runtime",
+    "classification only; dynamic biosphere deferred"
+  ]
+}

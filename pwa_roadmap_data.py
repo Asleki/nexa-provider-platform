@@ -59,13 +59,13 @@ C|P004.3|Map Canvas and Viewport Renderer
 C|P004.4|Latitude, Longitude and Equator Overlay
 C|P004.5|World Extent and Coordinate Validation
 C|P004.6|Map Core Integration Tests
-P|P005|Terrain, Water, Climate and Vegetation
+C|P005|Terrain, Water, Climate and Vegetation
 C|P005.1|Terrain and Elevation Data Engine
 C|P005.2|Mountain, Valley, Plain and Plateau Layers
 C|P005.3|River, Lake and Drainage Layers
 C|P005.4|Climate, Rainfall and Wind Effects
-P|P005.5|Vegetation and Arid-Zone Layers
-P|P005.6|Environmental Layer Integration Tests
+C|P005.5|Vegetation and Arid-Zone Layers
+C|P005.6|Environmental Layer Integration Tests
 P|P006|Map Interaction and Dynamic World State
 P|P006.1|Pan, Zoom, Touch and Keyboard Navigation
 P|P006.2|Layer Controls, Legend and Scale
