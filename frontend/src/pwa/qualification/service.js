@@ -18,13 +18,13 @@ export async function qualifyOfflinePwa({ frontendRoot, qualificationId = `pwaqu
     ...qualifyManifest(manifest, frontendRoot),
     ...qualifyShellInventory(sources, frontendRoot)
   ];
-  const storage = new MemoryCacheStorage({ "novegeo-shell-old": { "./index.html": "old" } });
+  const storage = new MemoryCacheStorage({ "nexilabs-shell-old": { "./index.html": "old" } });
   const offline = await simulateOfflineQualification({ cacheStorage: storage, cacheName: sources.workerCacheVersion, shellAssets: sources.workerAssets, offlineDocument: sources.workerOfflineDocument });
   findings.push(createFinding({ code: "OFFLINE_NAVIGATION_AVAILABLE", passed: offline.passed, message: "The approved offline document is available after shell pre-cache.", details: offline }));
   const cleanup = await simulateActivationCleanup(storage, sources.workerCacheVersion);
-  findings.push(createFinding({ code: "STALE_CACHE_CLEANUP", passed: cleanup.passed, message: "Activation cleanup retains only the current NoveGeo shell cache.", details: cleanup }));
+  findings.push(createFinding({ code: "STALE_CACHE_CLEANUP", passed: cleanup.passed, message: "Activation cleanup retains only the current NexiLabs shell cache.", details: cleanup }));
   const html = readFileSync(resolve(frontendRoot, "index.html"), "utf8");
-  findings.push(createFinding({ code: "OFFLINE_SHELL_IDENTITY", passed: html.includes("NexiLabs NoveGeo PWA") && html.includes('id="nexilabs-app"'), message: "Offline fallback contains stable NoveGeo shell identity markers." }));
+  findings.push(createFinding({ code: "OFFLINE_SHELL_IDENTITY", passed: html.includes('name="application-name" content="NexiLabs PWA"') && html.includes('id="nexilabs-app"'), message: "Offline fallback contains stable NexiLabs shell identity markers." }));
   findings.push(createFinding({ code: "MANUAL_INSTALL_EVIDENCE_BOUNDARY", passed: manualEvidence.installationObserved !== false, message: "Manual browser installation evidence is recorded separately from repository qualification.", details: manualEvidence }));
   return createQualificationReceipt({
     qualificationId,

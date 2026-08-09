@@ -22,9 +22,10 @@ def test_brand_and_shell_files_exist() -> None:
 
 def test_canonical_brand_package_is_consumed_not_duplicated() -> None:
     html = _text("index.html")
+    header = _text("src/ui/partials/header.html")
     assets = _text("src/branding/brand-assets.js")
     assert "./public/brand/nexilabs/metadata/brand-tokens.css" in html
-    assert "./public/brand/nexilabs/vectors/nexilabs_logo_horizontal.svg" in html
+    assert "./public/brand/nexilabs/vectors/nexilabs_logo_horizontal.svg" in header
     assert 'const BRAND_ROOT = "./public/brand/nexilabs"' in assets
     assert (BRAND_ROOT / "vectors" / "nexilabs_logo_horizontal.svg").is_file()
     assert (BRAND_ROOT / "metadata" / "brand-tokens.css").is_file()
@@ -32,17 +33,20 @@ def test_canonical_brand_package_is_consumed_not_duplicated() -> None:
 
 def test_html_retains_runtime_contract_and_adds_semantic_shell() -> None:
     html = _text("index.html")
+    header = _text("src/ui/partials/header.html")
+    footer = _text("src/ui/partials/footer.html")
+    shell = html + header + footer
     for marker in (
         'id="nexilabs-app"',
+        'data-environment-name="development"',
         'data-role="application-status"',
-        'data-role="runtime-mode"',
         'data-role="application-version"',
         '<header class="application-header"',
         '<main id="main-content"',
         '<footer class="application-footer"',
         'class="skip-link"',
     ):
-        assert marker in html
+        assert marker in shell
 
 
 def test_shell_has_no_external_first_render_dependency() -> None:
@@ -86,7 +90,9 @@ def test_styles_derive_from_canonical_tokens_and_are_responsive() -> None:
 
 def test_shell_does_not_claim_deferred_capabilities() -> None:
     html = _text("index.html")
-    normalized = " ".join(html.split())
-    assert "Interaction, registry overlays and dynamic simulation remain deferred." in normalized
+    simulation = _text("src/ui/pages/simulation-entry.js")
+    access = _text("src/ui/pages/access-placeholder.js")
+    assert "No simulation activity is generated" in simulation
+    assert "Authentication is intentionally not implemented in Bundle 12C" in access
     for prohibited in ("serviceWorker.register", "navigator.serviceWorker", "postgresql://", "rds.amazonaws.com"):
         assert prohibited not in html

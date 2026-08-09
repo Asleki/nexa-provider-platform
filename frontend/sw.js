@@ -1,5 +1,5 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
-const CACHE_NAME = "novegeo-shell-v10";
+const CACHE_NAME = "nexilabs-shell-v11";
 const OFFLINE_URL = "./index.html";
 const APP_SHELL = [
   "./",
@@ -11,6 +11,18 @@ const APP_SHELL = [
   "./public/brand/nexilabs/pwa/nexilabs_icon_512x512.png",
   "./styles/app.css",
   "./src/main.js",
+  "./src/ui/partials/header.html",
+  "./src/ui/partials/footer.html",
+  "./src/app/navigation/application-route.js",
+  "./src/app/navigation/application-router.js",
+  "./src/app/navigation/runtime-selection.js",
+  "./src/app/shell/partial-loader.js",
+  "./src/app/shell/nexilabs-shell.js",
+  "./src/ui/navigation/primary-navigation.js",
+  "./src/ui/pages/runtime-gateway.js",
+  "./src/ui/pages/production-access.js",
+  "./src/ui/pages/simulation-entry.js",
+  "./src/ui/pages/access-placeholder.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",

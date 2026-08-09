@@ -3,86 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="NexiLabs NoveGeo PWA application shell.">
+  <meta name="description" content="NexiLabs application shell for governed production access, simulation and evolving platform systems.">
   <meta name="theme-color" content="#0D1B2A">
-  <meta name="application-name" content="NexiLabs NoveGeo PWA">
+  <meta name="application-name" content="NexiLabs PWA">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="./public/manifest.webmanifest">
   <link rel="icon" href="./public/brand/nexilabs/icons/favicon.ico">
   <link rel="apple-touch-icon" href="./public/brand/nexilabs/icons/apple-touch-icon.png">
-  <title>NexiLabs NoveGeo PWA</title>
+  <title>NexiLabs</title>
   <link rel="stylesheet" href="./public/brand/nexilabs/metadata/brand-tokens.css">
   <link rel="stylesheet" href="./styles/app.css">
   <script type="module" src="./src/main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <div id="nexilabs-app" class="application-shell" data-application-status="CREATED" data-runtime-mode="development">
-    <header class="application-header" aria-label="Application header">
-      <a class="brand-lockup" href="#main-content" aria-label="NexiLabs NoveGeo PWA home">
-        <img
-          class="brand-logo"
-          data-role="brand-logo"
-          src="./public/brand/nexilabs/vectors/nexilabs_logo_horizontal.svg"
-          alt="NexiLabs"
-          width="240"
-          height="64"
-        >
-        <span class="brand-product">NoveGeo PWA</span>
-      </a>
-      <div class="header-indicators" aria-label="Runtime indicators">
-        <span class="runtime-badge"><span class="indicator-label">Runtime</span> <strong data-role="runtime-mode">development</strong></span>
-        <span class="status-badge" data-health-status="CREATED"><span class="indicator-label">Status</span> <strong data-role="application-status" aria-live="polite">Created</strong></span>
-        <span class="status-badge"><span class="indicator-label">Offline</span> <strong data-role="pwa-status" data-pwa-status="REGISTERING" aria-live="polite">registering</strong></span>
-      </div>
-    </header>
+  <div id="nexilabs-app" class="application-shell" data-application-status="CREATED" data-environment-name="development">
+    <div data-shell-slot="header" aria-live="polite"></div>
 
     <main id="main-content" class="application-main" tabindex="-1">
-      <section class="hero-panel" aria-labelledby="application-title">
-        <p class="eyebrow" data-role="brand-name">NexiLabs</p>
-        <h1 id="application-title">NoveGeo PWA</h1>
-        <p class="summary">A governed application shell for the evolving NoveGeo world.</p>
-      </section>
-
-      <section class="workspace-grid" aria-label="Application foundation workspace">
-        <article class="workspace-panel health-panel" aria-labelledby="foundation-title">
-          <div class="section-heading">
-            <p class="section-kicker">Foundation</p>
-            <h2 id="foundation-title">Frontend runtime health</h2>
-          </div>
-          <dl class="health-grid">
-            <div><dt>Status</dt><dd data-role="application-status" data-health-status="CREATED" aria-live="polite">Created</dd></div>
-            <div><dt>Runtime</dt><dd data-role="runtime-mode">development</dd></div>
-            <div><dt>Version</dt><dd data-role="application-version">0.1.0</dd></div>
-          </dl>
-          <noscript>This application requires JavaScript to start.</noscript>
-        </article>
-
-        <aside class="workspace-panel future-panel" aria-labelledby="workspace-title">
-          <div class="section-heading">
-            <p class="section-kicker">World geometry authority</p>
-            <h2 id="workspace-title">NoveGeo world geometry</h2>
-          </div>
-          <dl class="geometry-status-grid">
-            <div><dt>Boundary</dt><dd data-role="world-boundary-status">Loading</dd></div>
-            <div><dt>Coordinate reference</dt><dd data-role="coordinate-reference-status">Loading</dd></div>
-            <div><dt>Projection</dt><dd data-role="projection-status">Loading</dd></div>
-          </dl>
-          <p>
-  The governed NoveGeo boundary, coordinate projection, map canvas,
-  latitude and longitude grid, and equator overlay are available.
-  Interaction, registry overlays and dynamic simulation remain deferred.
-          </p>
-          <div data-role="future-map-viewport" aria-label="Reserved NoveGeo map viewport"></div>
-        </aside>
-      </section>
+      <div class="application-page" data-role="application-page" aria-live="polite">
+        <section class="entry-page" aria-labelledby="loading-title">
+          <p class="eyebrow">NexiLabs</p>
+          <h1 id="loading-title">Starting NexiLabs</h1>
+          <p class="summary">Preparing the application shell.</p>
+        </section>
+      </div>
+      <noscript>This application requires JavaScript to start.</noscript>
     </main>
 
-    <footer class="application-footer">
-      <span>NexiLabs NoveGeo PWA</span>
-      <span>Version <strong data-role="application-version">0.1.0</strong></span>
-    </footer>
+    <div data-shell-slot="footer" aria-live="polite"></div>
   </div>
 </body>
 </html>

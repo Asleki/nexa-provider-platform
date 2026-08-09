@@ -8,8 +8,8 @@ const manifest = JSON.parse(readFileSync(resolve(ROOT, "public/manifest.webmanif
 const html = readFileSync(resolve(ROOT, "index.html"), "utf8");
 
 test("manifest has governed install metadata and local start scope", () => {
-  assert.equal(manifest.name, "NexiLabs NoveGeo PWA");
-  assert.equal(manifest.short_name, "NoveGeo");
+  assert.equal(manifest.name, "NexiLabs PWA");
+  assert.equal(manifest.short_name, "NexiLabs");
   assert.equal(manifest.start_url.startsWith("./"), true);
   assert.equal(manifest.scope, "./");
   assert.equal(manifest.display, "standalone");

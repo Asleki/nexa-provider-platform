@@ -28,11 +28,12 @@ def test_required_frontend_runtime_files_exist() -> None:
 
 def test_html_uses_the_single_es_module_entry_point() -> None:
     html = _text("index.html")
+    footer = _text("src/ui/partials/footer.html")
     assert '<script type="module" src="./src/main.js"></script>' in html
     assert 'id="nexilabs-app"' in html
-    assert 'data-role="application-status"' in html
-    assert 'data-role="runtime-mode"' in html
-    assert 'data-role="application-version"' in html
+    assert 'data-environment-name="development"' in html
+    assert 'data-role="application-status"' in footer
+    assert 'data-role="application-version"' in footer
 
 
 def test_html_has_no_inline_or_third_party_script_dependency() -> None:
@@ -75,7 +76,7 @@ def test_browser_entry_uses_only_public_document_configuration() -> None:
     source = _text("src/main.js")
     assert "documentElement" in source
     assert "createRuntimeConfig" in source
-    assert "createApplication" in source
+    assert "mountNexiLabsShell" in source
     assert "process.env" not in source
     assert "PGHOST" not in source
     assert "PGPASSWORD" not in source

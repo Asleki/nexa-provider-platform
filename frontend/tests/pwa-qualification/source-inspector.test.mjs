@@ -7,8 +7,8 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 
 test("worker and policy declarations are extracted deterministically", () => {
   const result = inspectDeclaredPwaSources(ROOT);
-  assert.equal(result.workerCacheVersion, "novegeo-shell-v10");
-  assert.equal(result.policyCacheVersion, "novegeo-shell-v10");
+  assert.equal(result.workerCacheVersion, "nexilabs-shell-v11");
+  assert.equal(result.policyCacheVersion, "nexilabs-shell-v11");
   assert.deepEqual(result.workerAssets, result.policyAssets);
   assert.equal(result.workerOfflineDocument, "./index.html");
 });
@@ -38,5 +38,19 @@ test("Bundle 12B state assets remain inside the offline shell inventory", () => 
     "./src/map/state/world-state-store.js",
     "./src/map/state/world-state-runtime.js",
     "./src/map/state/p006-state-integration.js",
+  ]) assert.ok(result.workerAssets.includes(asset), asset);
+});
+
+
+test("Bundle 12C NexiLabs shell assets remain inside the offline shell inventory", () => {
+  const result = inspectDeclaredPwaSources(ROOT);
+  for (const asset of [
+    "./src/ui/partials/header.html",
+    "./src/ui/partials/footer.html",
+    "./src/app/shell/nexilabs-shell.js",
+    "./src/app/navigation/application-router.js",
+    "./src/ui/navigation/primary-navigation.js",
+    "./src/ui/pages/runtime-gateway.js",
+    "./src/ui/pages/production-access.js",
   ]) assert.ok(result.workerAssets.includes(asset), asset);
 });

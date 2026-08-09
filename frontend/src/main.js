@@ -1,15 +1,8 @@
-/** Browser entry point for the NexiLabs NoveGeo PWA. */
+/** Browser entry point for the NexiLabs PWA. */
 
-import { createApplication } from "./app/application.js";
 import { createRuntimeConfig } from "./config/runtime-config.js";
+import { mountNexiLabsShell } from "./app/shell/nexilabs-shell.js";
 import { registerServiceWorker } from "./pwa/service-worker-registration.js";
-import { mountPhysicalLandPresentation } from "./map/environment/physical-land-presentation.js";
-import { registerMapForegroundRecovery } from "./map/lifecycle/foreground-recovery.js";
-import { mountFullViewportCoordinatePresentation } from "./map/environment/full-viewport-coordinate-presentation.js";
-import { mountHydrologyAtmospherePresentation } from "./map/environment/hydrology-atmosphere-presentation.js";
-import { mountBiospherePresentation } from "./map/environment/biosphere-presentation.js";
-import { mountMapNavigationDiscovery } from "./map/interaction/map-navigation-discovery.js";
-import { mountP006StateIntegration } from "./map/state/p006-state-integration.js";
 
 function readPublicRuntimeInput(documentRef) {
   const root = documentRef.documentElement;
@@ -22,35 +15,15 @@ function readPublicRuntimeInput(documentRef) {
   };
 }
 
-export function bootstrap(documentRef = globalThis.document, windowRef = globalThis.window) {
+export async function bootstrap(documentRef = globalThis.document, windowRef = globalThis.window, fetchRef = globalThis.fetch) {
   const config = createRuntimeConfig(readPublicRuntimeInput(documentRef));
-  const application = createApplication({ documentRef, config }).start();
-  mountPhysicalLandPresentation(documentRef);
-  mountBiospherePresentation(documentRef);
-  mountHydrologyAtmospherePresentation(documentRef);
-  mountFullViewportCoordinatePresentation(documentRef);
-  const mapDiscovery = mountMapNavigationDiscovery(documentRef, windowRef);
-  mountP006StateIntegration({ documentRef, windowRef, discovery: mapDiscovery, runtimeMode: config.runtimeMode });
-  registerMapForegroundRecovery({
-    documentRef,
-    windowRef,
-    redrawMap: () => application.mapPresentation?.redraw?.() ?? { status: "UNAVAILABLE" },
-    redrawPhysicalLand: () => {
-      const physicalLand = mountPhysicalLandPresentation(documentRef);
-      mountBiospherePresentation(documentRef);
-      mountHydrologyAtmospherePresentation(documentRef);
-      mountFullViewportCoordinatePresentation(documentRef);
-      return physicalLand;
-    },
-  });
-  void registerServiceWorker({ documentRef });
+  const application = await mountNexiLabsShell({ documentRef, windowRef, fetchRef, config });
+  void registerServiceWorker({ documentRef, windowRef });
   return application;
 }
 
 if (typeof document !== "undefined") {
-  try {
-    bootstrap(document, globalThis.window);
-  } catch (error) {
+  void bootstrap(document, globalThis.window, globalThis.fetch).catch((error) => {
     console.error("[NexiLabs PWA] Application bootstrap failed.", error);
-  }
+  });
 }

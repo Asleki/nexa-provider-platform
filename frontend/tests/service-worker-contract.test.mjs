@@ -24,9 +24,9 @@ test("offline navigation fallback and same-origin GET boundary are explicit", ()
 });
 
 test("cache version and shell inventory are versioned", () => {
-  assert.match(policy, /PWA_CACHE_VERSION = "novegeo-shell-v10"/);
+  assert.match(policy, /PWA_CACHE_VERSION = "nexilabs-shell-v11"/);
   assert.match(policy, /APPLICATION_SHELL_ASSETS/);
-  assert.match(worker, /CACHE_NAME = "novegeo-shell-v10"/);
+  assert.match(worker, /CACHE_NAME = "nexilabs-shell-v11"/);
   assert.match(worker, /keys\.filter\(\(key\) => key !== CACHE_NAME\)/);
 });
 
@@ -47,6 +47,20 @@ test("Bundle 12B persistent and dynamic state modules are pre-cached", () => {
     "./src/map/state/view-state-runtime.js",
     "./src/map/state/world-state-store.js",
     "./src/map/state/p006-state-integration.js",
+  ]) {
+    assert.ok(worker.includes(marker), marker);
+    assert.ok(policy.includes(marker), marker);
+  }
+});
+
+
+test("Bundle 12C shared NexiLabs shell modules are pre-cached", () => {
+  for (const marker of [
+    "./src/ui/partials/header.html",
+    "./src/ui/partials/footer.html",
+    "./src/app/shell/nexilabs-shell.js",
+    "./src/ui/pages/runtime-gateway.js",
+    "./src/ui/pages/production-access.js",
   ]) {
     assert.ok(worker.includes(marker), marker);
     assert.ok(policy.includes(marker), marker);

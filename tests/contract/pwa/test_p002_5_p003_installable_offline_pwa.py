@@ -14,7 +14,7 @@ def test_p002_5_application_shell_integration_files_exist() -> None:
 
 def test_p003_1_manifest_contract_is_installable_and_scoped() -> None:
     manifest = json.loads((FRONTEND / "public/manifest.webmanifest").read_text())
-    assert manifest["name"] == "NexiLabs NoveGeo PWA"
+    assert manifest["name"] == "NexiLabs PWA"
     assert manifest["start_url"].startswith("./")
     assert manifest["scope"] == "./"
     assert manifest["display"] == "standalone"
@@ -38,7 +38,7 @@ def test_p003_3_offline_shell_cache_contract() -> None:
 def test_p003_4_update_recovery_and_versioning_contract() -> None:
     worker = (FRONTEND / "sw.js").read_text()
     registration = (FRONTEND / "src/pwa/service-worker-registration.js").read_text()
-    assert 'CACHE_NAME = "novegeo-shell-v10"' in worker
+    assert 'CACHE_NAME = "nexilabs-shell-v11"' in worker
     assert "caches.delete" in worker
     assert "SKIP_WAITING" in worker
     assert "activateUpdate" in registration
