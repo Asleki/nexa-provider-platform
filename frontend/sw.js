@@ -1,6 +1,7 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
 const CACHE_NAME = "nexilabs-shell-v11";
 const OFFLINE_URL = "./index.html";
+const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -17,6 +18,7 @@ const APP_SHELL = [
   "./src/app/navigation/application-router.js",
   "./src/app/navigation/runtime-selection.js",
   "./src/app/shell/partial-loader.js",
+  "./src/app/shell/shell-recovery.js",
   "./src/app/shell/nexilabs-shell.js",
   "./src/ui/navigation/primary-navigation.js",
   "./src/ui/pages/runtime-gateway.js",
@@ -122,6 +124,19 @@ self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
 });
 
+async function navigationResponse(request) {
+  const controller = typeof AbortController === "function" ? new AbortController() : null;
+  let timer;
+  try {
+    if (controller) timer = setTimeout(() => controller.abort(), NAVIGATION_NETWORK_TIMEOUT_MS);
+    return await fetch(request, controller ? { signal: controller.signal } : undefined);
+  } catch {
+    return (await caches.match(request)) || caches.match(OFFLINE_URL);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
 self.addEventListener("fetch", (event) => {
   const request = event.request;
   if (request.method !== "GET") return;
@@ -129,7 +144,7 @@ self.addEventListener("fetch", (event) => {
   if (url.origin !== self.location.origin) return;
 
   if (request.mode === "navigate") {
-    event.respondWith(fetch(request).catch(() => caches.match(OFFLINE_URL)));
+    event.respondWith(navigationResponse(request));
     return;
   }
 

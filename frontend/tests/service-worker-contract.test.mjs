@@ -66,3 +66,16 @@ test("Bundle 12C shared NexiLabs shell modules are pre-cached", () => {
     assert.ok(policy.includes(marker), marker);
   }
 });
+
+test("Bundle 12.0C navigation recovery has a bounded network wait and cached fallback", () => {
+  assert.match(worker, /NAVIGATION_NETWORK_TIMEOUT_MS = 1800/);
+  assert.match(worker, /navigationResponse\(request\)/);
+  assert.match(worker, /controller\.abort\(\)/);
+  assert.match(worker, /caches\.match\(request\)/);
+});
+
+test("Bundle 12.0C shell recovery module is pre-cached", () => {
+  const marker = "./src/app/shell/shell-recovery.js";
+  assert.ok(worker.includes(marker), marker);
+  assert.ok(policy.includes(marker), marker);
+});

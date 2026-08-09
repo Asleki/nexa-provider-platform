@@ -13,3 +13,15 @@ test("P006.UI.1 browser bootstrap owns NexiLabs shell and no longer mounts NoveG
   assert.doesNotMatch(main, /mountMapNavigationDiscovery/);
   assert.match(shell, /applicationName: "NexiLabs PWA"/);
 });
+
+test("Bundle 12.0C shell degrades past partial failure and installs foreground recovery", () => {
+  assert.match(shell, /shellChromeStatus = "DEGRADED"/);
+  assert.match(shell, /installShellPartialRecovery/);
+  assert.match(shell, /nexilabs_shell_mounted_degraded/);
+});
+
+test("Bundle 12.0C starts service-worker recovery before awaiting the NexiLabs shell", () => {
+  const registration = main.indexOf("registerServiceWorker");
+  const mount = main.indexOf("await mountNexiLabsShell");
+  assert.ok(registration >= 0 && mount >= 0 && registration < mount);
+});

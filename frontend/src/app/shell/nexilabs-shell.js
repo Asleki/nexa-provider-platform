@@ -1,10 +1,11 @@
-/** P006.UI.1-P006.UI.3/P006.UI.15 — NexiLabs-owned application shell. */
+/** P006.UI.1-P006.UI.3/P006.UI.15 / Bundle 12.0C — NexiLabs-owned application shell. */
 import { ApplicationState, ApplicationStatus } from "../../core/application-state.js";
 import { applyBrand } from "../../branding/brand-config.js";
 import { ApplicationRoute } from "../navigation/application-route.js";
 import { createApplicationRouter } from "../navigation/application-router.js";
-import { createRuntimeSelection, SelectedRuntime } from "../navigation/runtime-selection.js";
-import { loadShellPartials } from "./partial-loader.js";
+import { createRuntimeSelection } from "../navigation/runtime-selection.js";
+import { loadShellPartials, shellPartialsReady } from "./partial-loader.js";
+import { installShellPartialRecovery } from "./shell-recovery.js";
 import { mountPrimaryNavigation } from "../../ui/navigation/primary-navigation.js";
 import { runtimeGatewayMarkup } from "../../ui/pages/runtime-gateway.js";
 import { productionAccessMarkup } from "../../ui/pages/production-access.js";
@@ -52,7 +53,16 @@ export async function mountNexiLabsShell({
   if (!root || !outlet) throw new Error("NexiLabs root shell is incomplete");
 
   state.transition(ApplicationStatus.BOOTING, { reason: "nexilabs_shell_start" });
-  await loadShellPartials({ documentRef, fetchRef });
+
+  // Shared chrome is important but must never be allowed to hold the entire PWA in BOOTING.
+  try {
+    await loadShellPartials({ documentRef, fetchRef });
+    root.dataset.shellChromeStatus = "READY";
+  } catch (error) {
+    root.dataset.shellChromeStatus = "DEGRADED";
+    root.dataset.shellChromeError = error?.name || "ShellPartialLoadError";
+  }
+
   applyBrand(documentRef);
 
   const runtimeSelection = createRuntimeSelection();
@@ -98,8 +108,23 @@ export async function mountNexiLabsShell({
   });
 
   router.start();
-  const ready = state.transition(ApplicationStatus.READY, { reason: "nexilabs_shell_mounted" });
+  const ready = state.transition(ApplicationStatus.READY, {
+    reason: shellPartialsReady(documentRef) ? "nexilabs_shell_mounted" : "nexilabs_shell_mounted_degraded",
+  });
   renderHealth(documentRef, root, config, ready);
+
+  const recovery = installShellPartialRecovery({
+    documentRef,
+    windowRef,
+    fetchRef,
+    onRecovered() {
+      root.dataset.shellChromeStatus = "READY";
+      delete root.dataset.shellChromeError;
+      applyBrand(documentRef);
+      mountPrimaryNavigation(documentRef, router.route);
+      renderHealth(documentRef, root, config, ready);
+    },
+  });
 
   return Object.freeze({
     applicationId: "nexilabs-pwa",
@@ -108,6 +133,8 @@ export async function mountNexiLabsShell({
     environmentName: config.environmentName,
     selectedRuntime: () => runtimeSelection.value,
     route: () => router.route,
+    shellChromeReady: () => recovery.ready,
+    recoverShellChrome: recovery.recover,
     router,
   });
 }

@@ -17,6 +17,7 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/app/navigation/application-router.js",
   "./src/app/navigation/runtime-selection.js",
   "./src/app/shell/partial-loader.js",
+  "./src/app/shell/shell-recovery.js",
   "./src/app/shell/nexilabs-shell.js",
   "./src/ui/navigation/primary-navigation.js",
   "./src/ui/pages/runtime-gateway.js",

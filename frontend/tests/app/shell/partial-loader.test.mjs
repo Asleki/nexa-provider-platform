@@ -11,3 +11,14 @@ test("P006.UI.1 shared header/footer partials load into shell slots", async () =
   assert.equal(slot.dataset.partialReady, "true");
   assert.match(slot.innerHTML, /Shared/);
 });
+
+test("Bundle 12.0C bounds a stalled partial fetch instead of leaving the application in BOOTING", async () => {
+  const slot = { innerHTML: "", dataset: {} };
+  const documentRef = { querySelector: () => slot };
+  const fetchRef = () => new Promise(() => {});
+  await assert.rejects(
+    loadPartial({ documentRef, fetchRef, descriptor: ShellPartial.HEADER, timeoutMs: 20 }),
+    /Timed out loading shell partial/,
+  );
+  assert.notEqual(slot.dataset.partialReady, "true");
+});

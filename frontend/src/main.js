@@ -17,8 +17,15 @@ function readPublicRuntimeInput(documentRef) {
 
 export async function bootstrap(documentRef = globalThis.document, windowRef = globalThis.window, fetchRef = globalThis.fetch) {
   const config = createRuntimeConfig(readPublicRuntimeInput(documentRef));
-  const application = await mountNexiLabsShell({ documentRef, windowRef, fetchRef, config });
+
+  // Start the offline recovery boundary before shell partial loading. A slow/dead local
+  // development server must not prevent the worker from being registered or updated.
   void registerServiceWorker({ documentRef, windowRef });
+
+  const application = await mountNexiLabsShell({ documentRef, windowRef, fetchRef, config });
+  void import("./app/auth/authentication-experience.js")
+    .then(({ installAuthenticationExperience }) => installAuthenticationExperience({ documentRef, windowRef, application }))
+    .catch((error) => console.warn("[NexiLabs PWA] Development authentication unavailable.", error));
   return application;
 }
 

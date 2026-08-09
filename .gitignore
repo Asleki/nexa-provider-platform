@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# NexiLabs Bundle 12D private local development authentication fixtures
+development/auth/private/

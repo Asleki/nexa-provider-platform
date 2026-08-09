@@ -54,3 +54,9 @@ test("Bundle 12C NexiLabs shell assets remain inside the offline shell inventory
     "./src/ui/pages/production-access.js",
   ]) assert.ok(result.workerAssets.includes(asset), asset);
 });
+
+test("Bundle 12.0C recovery module remains inside worker-policy shell parity", () => {
+  const result = inspectDeclaredPwaSources(ROOT);
+  assert.ok(result.workerAssets.includes("./src/app/shell/shell-recovery.js"));
+  assert.ok(result.policyAssets.includes("./src/app/shell/shell-recovery.js"));
+});
