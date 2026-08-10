@@ -9,15 +9,20 @@ import { installShellPartialRecovery } from "./shell-recovery.js";
 import { mountPrimaryNavigation } from "../../ui/navigation/primary-navigation.js";
 import { runtimeGatewayMarkup } from "../../ui/pages/runtime-gateway.js";
 import { productionAccessMarkup } from "../../ui/pages/production-access.js";
-import { simulationEntryMarkup } from "../../ui/pages/simulation-entry.js";
+import { simulationWorkspaceMarkup } from "../../ui/pages/simulation-workspace.js";
+import { noveGeoFeatureMarkup } from "../../ui/pages/novegeo-feature.js";
+import { productionFeatureGuardMarkup } from "../../ui/pages/production-feature-guard.js";
 import { accessPlaceholderMarkup } from "../../ui/pages/access-placeholder.js";
+import { mountNoveGeoFeatureRuntime } from "../features/novegeo-feature-runtime.js";
 
 function pageMarkup(route) {
   switch (route) {
     case ApplicationRoute.PRODUCTION_ACCESS: return productionAccessMarkup();
     case ApplicationRoute.PRODUCTION_DEVELOPER: return accessPlaceholderMarkup("developer");
     case ApplicationRoute.PRODUCTION_GUEST: return accessPlaceholderMarkup("guest");
-    case ApplicationRoute.SIMULATION_ENTRY: return simulationEntryMarkup();
+    case ApplicationRoute.SIMULATION_ENTRY: return simulationWorkspaceMarkup();
+    case ApplicationRoute.SIMULATION_NOVEGEO: return noveGeoFeatureMarkup({ runtime: "simulation", backRoute: ApplicationRoute.SIMULATION_ENTRY });
+    case ApplicationRoute.PRODUCTION_NOVEGEO: return productionFeatureGuardMarkup();
     case ApplicationRoute.RUNTIME_GATEWAY:
     default: return runtimeGatewayMarkup();
   }
@@ -67,14 +72,30 @@ export async function mountNexiLabsShell({
 
   const runtimeSelection = createRuntimeSelection();
   let router;
+  let featureRuntime = null;
+
+  const routeRuntime = (route) => {
+    if (route === ApplicationRoute.SIMULATION_ENTRY || route === ApplicationRoute.SIMULATION_NOVEGEO) return "simulation";
+    if ([ApplicationRoute.PRODUCTION_ACCESS, ApplicationRoute.PRODUCTION_DEVELOPER, ApplicationRoute.PRODUCTION_GUEST, ApplicationRoute.PRODUCTION_NOVEGEO].includes(route)) return "production";
+    return null;
+  };
 
   const renderRoute = (route) => {
+    featureRuntime?.disconnect?.();
+    featureRuntime = null;
     outlet.innerHTML = pageMarkup(route);
     root.dataset.applicationRoute = route;
     mountPrimaryNavigation(documentRef, route);
+    const inferredRuntime = routeRuntime(route);
+    if (inferredRuntime) runtimeSelection.select(inferredRuntime);
+    else if (route === ApplicationRoute.RUNTIME_GATEWAY) runtimeSelection.clear();
     const selected = runtimeSelection.value;
     if (selected) root.dataset.selectedRuntime = selected;
     else delete root.dataset.selectedRuntime;
+    root.dataset.developerDiagnostics = "false";
+    if (route === ApplicationRoute.SIMULATION_NOVEGEO) {
+      featureRuntime = mountNoveGeoFeatureRuntime({ documentRef, windowRef, runtimeMode: "simulation" });
+    }
     const main = documentRef.querySelector("#main-content");
     main?.focus?.({ preventScroll: true });
   };
@@ -135,6 +156,11 @@ export async function mountNexiLabsShell({
     route: () => router.route,
     shellChromeReady: () => recovery.ready,
     recoverShellChrome: recovery.recover,
+    mountFeatureRuntime(runtimeMode = runtimeSelection.value || "simulation") {
+      featureRuntime?.disconnect?.();
+      featureRuntime = mountNoveGeoFeatureRuntime({ documentRef, windowRef, runtimeMode });
+      return featureRuntime;
+    },
     router,
   });
 }

@@ -1,5 +1,5 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
-const CACHE_NAME = "nexilabs-shell-v11";
+const CACHE_NAME = "nexilabs-shell-v15";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -25,6 +25,12 @@ const APP_SHELL = [
   "./src/ui/pages/production-access.js",
   "./src/ui/pages/simulation-entry.js",
   "./src/ui/pages/access-placeholder.js",
+  "./src/ui/pages/simulation-workspace.js",
+  "./src/ui/pages/novegeo-feature.js",
+  "./src/ui/pages/production-feature-guard.js",
+  "./src/app/workspaces/workspace-capabilities.js",
+  "./src/app/features/novegeo-feature-runtime.js",
+  "./src/app/features/novegeo-feature-geometry.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",
@@ -109,15 +115,33 @@ const APP_SHELL = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    await cache.addAll(APP_SHELL);
+    // Bundle 12.0E: activate only after the complete replacement shell is cached.
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
-      .then(() => self.clients.claim())
-  );
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    const previousShellKeys = keys.filter((key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME);
+    await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));
+    await self.clients.claim();
+
+    // A previously controlled page can keep its old ES-module graph in memory even after
+    // controllerchange. Navigate stale window clients exactly once per shell generation so
+    // they restart against the newly completed cache. First installation has no old shell
+    // cache and therefore does not cause an unnecessary reload.
+    if (previousShellKeys.length > 0) {
+      const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
+      await Promise.all(clients.map((client) => {
+        if (!client.url?.startsWith(self.location.origin)) return undefined;
+        return client.navigate(client.url);
+      }));
+    }
+  })());
 });
 
 self.addEventListener("message", (event) => {

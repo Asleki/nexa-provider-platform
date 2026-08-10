@@ -47,3 +47,77 @@ test("registration failure is contained and reported", async () => {
   assert.equal(receipt.error, failure);
   assert.equal(documentRef.node.dataset.pwaStatus, "FAILED");
 });
+
+
+function eventTarget(initial = {}) {
+  const listeners = new Map();
+  return Object.assign(initial, {
+    addEventListener(type, listener) {
+      const set = listeners.get(type) || new Set();
+      set.add(listener);
+      listeners.set(type, set);
+    },
+    removeEventListener(type, listener) {
+      listeners.get(type)?.delete(listener);
+    },
+    dispatch(type, event = {}) {
+      for (const listener of listeners.get(type) || []) listener(event);
+    },
+  });
+}
+
+test("Bundle 12.0E automatically activates a waiting complete shell and exposes its generation", async () => {
+  const waiting = { messages: [], postMessage(message) { this.messages.push(message); } };
+  const registration = eventTarget({ waiting, installing: null, async update() {} });
+  const serviceWorker = eventTarget({
+    controller: {},
+    async register() { return registration; },
+  });
+  const documentRef = eventTarget(statusDocument());
+  documentRef.documentElement = { dataset: {} };
+  documentRef.visibilityState = "visible";
+  const windowRef = eventTarget({ dispatchEvent() {} });
+
+  const receipt = await registerServiceWorker({ navigatorRef: { serviceWorker }, documentRef, windowRef });
+  assert.equal(receipt.generation, "nexilabs-shell-v14");
+  assert.equal(documentRef.documentElement.dataset.shellGeneration, "nexilabs-shell-v14");
+  assert.deepEqual(waiting.messages, [{ type: "SKIP_WAITING" }]);
+  receipt.dispose();
+});
+
+test("Bundle 12.0E foreground update discovery is opportunistic and keeps the cached app usable on failure", async () => {
+  let updateCalls = 0;
+  const registration = eventTarget({
+    waiting: null,
+    installing: null,
+    async update() { updateCalls += 1; throw new Error("offline"); },
+  });
+  const serviceWorker = eventTarget({ controller: {}, async register() { return registration; } });
+  const documentRef = eventTarget(statusDocument());
+  documentRef.documentElement = { dataset: {} };
+  documentRef.visibilityState = "visible";
+  const windowRef = eventTarget({ dispatchEvent() {} });
+
+  const receipt = await registerServiceWorker({ navigatorRef: { serviceWorker }, documentRef, windowRef });
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  assert.equal(receipt.status, ServiceWorkerStatus.REGISTERED);
+  assert.ok(updateCalls >= 1);
+  assert.equal(await receipt.checkForUpdate(), false);
+  receipt.dispose();
+});
+
+test("Bundle 12.0E foreground listeners are disposable and do not reload from controllerchange", async () => {
+  const registration = eventTarget({ waiting: null, installing: null, async update() {} });
+  const serviceWorker = eventTarget({ controller: {}, async register() { return registration; } });
+  const documentRef = eventTarget(statusDocument());
+  documentRef.documentElement = { dataset: {} };
+  documentRef.visibilityState = "visible";
+  let reloads = 0;
+  const windowRef = eventTarget({ dispatchEvent() {}, location: { reload() { reloads += 1; } } });
+
+  const receipt = await registerServiceWorker({ navigatorRef: { serviceWorker }, documentRef, windowRef });
+  serviceWorker.dispatch("controllerchange");
+  assert.equal(receipt.status, ServiceWorkerStatus.ACTIVATED);
+  assert.equal(reloads, 0);
+  receipt.dispose();
+});

@@ -24,9 +24,9 @@ test("offline navigation fallback and same-origin GET boundary are explicit", ()
 });
 
 test("cache version and shell inventory are versioned", () => {
-  assert.match(policy, /PWA_CACHE_VERSION = "nexilabs-shell-v11"/);
+  assert.match(policy, /PWA_CACHE_VERSION = "nexilabs-shell-v15"/);
   assert.match(policy, /APPLICATION_SHELL_ASSETS/);
-  assert.match(worker, /CACHE_NAME = "nexilabs-shell-v11"/);
+  assert.match(worker, /CACHE_NAME = "nexilabs-shell-v15"/);
   assert.match(worker, /keys\.filter\(\(key\) => key !== CACHE_NAME\)/);
 });
 
@@ -78,4 +78,43 @@ test("Bundle 12.0C shell recovery module is pre-cached", () => {
   const marker = "./src/app/shell/shell-recovery.js";
   assert.ok(worker.includes(marker), marker);
   assert.ok(policy.includes(marker), marker);
+});
+
+
+test("Bundle 12E Simulation/NoveGeo entry assets are pre-cached without private registry or database material", () => {
+  for (const marker of [
+    "./src/ui/pages/simulation-workspace.js",
+    "./src/ui/pages/novegeo-feature.js",
+    "./src/app/features/novegeo-feature-runtime.js",
+  ]) {
+    assert.ok(worker.includes(marker), marker);
+    assert.ok(policy.includes(marker), marker);
+  }
+  assert.doesNotMatch(worker, /PGPASSWORD|development\/auth\/private|database\/seeds/);
+});
+
+
+test("Bundle 12.0E activates only after a complete shell install and restarts stale controlled clients", () => {
+  assert.match(worker, /await cache\.addAll\(APP_SHELL\)/);
+  assert.match(worker, /await self\.skipWaiting\(\)/);
+  assert.match(worker, /previousShellKeys/);
+  assert.match(worker, /self\.clients\.matchAll\(\{ type: "window", includeUncontrolled: true \}\)/);
+  assert.match(worker, /client\.navigate\(client\.url\)/);
+  assert.match(worker, /previousShellKeys\.length > 0/);
+});
+
+
+
+
+test("Bundle 12E Omega pre-caches normalized geometry and retires 12.0.1E compensation assets", () => {
+  const geometry = "./src/app/features/novegeo-feature-geometry.js";
+  assert.ok(worker.includes(geometry), geometry);
+  assert.ok(policy.includes(geometry), geometry);
+  for (const retired of [
+    "./styles/bundle12-0-1e-maintenance.css",
+    "./src/app/features/bundle12-0-1e-maintenance.js",
+  ]) {
+    assert.equal(worker.includes(retired), false, retired);
+    assert.equal(policy.includes(retired), false, retired);
+  }
 });

@@ -1,5 +1,5 @@
 /** P003.3/P003.4 — Immutable application-shell cache policy. */
-export const PWA_CACHE_VERSION = "nexilabs-shell-v11";
+export const PWA_CACHE_VERSION = "nexilabs-shell-v15";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./",
@@ -24,6 +24,12 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/ui/pages/production-access.js",
   "./src/ui/pages/simulation-entry.js",
   "./src/ui/pages/access-placeholder.js",
+  "./src/ui/pages/simulation-workspace.js",
+  "./src/ui/pages/novegeo-feature.js",
+  "./src/ui/pages/production-feature-guard.js",
+  "./src/app/workspaces/workspace-capabilities.js",
+  "./src/app/features/novegeo-feature-runtime.js",
+  "./src/app/features/novegeo-feature-geometry.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",

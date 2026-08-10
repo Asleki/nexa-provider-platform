@@ -5,6 +5,8 @@ export const ApplicationRoute = Object.freeze({
   PRODUCTION_DEVELOPER: "production-developer",
   PRODUCTION_GUEST: "production-guest",
   SIMULATION_ENTRY: "simulation-entry",
+  SIMULATION_NOVEGEO: "simulation-novegeo",
+  PRODUCTION_NOVEGEO: "production-novegeo",
 });
 
 const ROUTE_HASH = Object.freeze({
@@ -13,6 +15,8 @@ const ROUTE_HASH = Object.freeze({
   [ApplicationRoute.PRODUCTION_DEVELOPER]: "#/production/developer",
   [ApplicationRoute.PRODUCTION_GUEST]: "#/production/guest",
   [ApplicationRoute.SIMULATION_ENTRY]: "#/simulation",
+  [ApplicationRoute.SIMULATION_NOVEGEO]: "#/simulation/novegeo",
+  [ApplicationRoute.PRODUCTION_NOVEGEO]: "#/production/novegeo",
 });
 
 const HASH_ROUTE = Object.freeze(

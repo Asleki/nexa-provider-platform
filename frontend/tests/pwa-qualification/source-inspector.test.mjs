@@ -7,8 +7,8 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 
 test("worker and policy declarations are extracted deterministically", () => {
   const result = inspectDeclaredPwaSources(ROOT);
-  assert.equal(result.workerCacheVersion, "nexilabs-shell-v11");
-  assert.equal(result.policyCacheVersion, "nexilabs-shell-v11");
+  assert.equal(result.workerCacheVersion, "nexilabs-shell-v15");
+  assert.equal(result.policyCacheVersion, "nexilabs-shell-v15");
   assert.deepEqual(result.workerAssets, result.policyAssets);
   assert.equal(result.workerOfflineDocument, "./index.html");
 });
@@ -59,4 +59,37 @@ test("Bundle 12.0C recovery module remains inside worker-policy shell parity", (
   const result = inspectDeclaredPwaSources(ROOT);
   assert.ok(result.workerAssets.includes("./src/app/shell/shell-recovery.js"));
   assert.ok(result.policyAssets.includes("./src/app/shell/shell-recovery.js"));
+});
+
+
+test("Bundle 12E public Simulation and NoveGeo feature assets remain inside worker-policy shell parity", () => {
+  const result = inspectDeclaredPwaSources(ROOT);
+  for (const asset of [
+    "./src/ui/pages/simulation-workspace.js",
+    "./src/ui/pages/novegeo-feature.js",
+    "./src/ui/pages/production-feature-guard.js",
+    "./src/app/workspaces/workspace-capabilities.js",
+    "./src/app/features/novegeo-feature-runtime.js",
+  ]) {
+    assert.ok(result.workerAssets.includes(asset), asset);
+    assert.ok(result.policyAssets.includes(asset), asset);
+  }
+});
+
+
+
+
+
+test("Bundle 12E Omega geometry integration is pre-cached and obsolete 12.0.1E compensation is retired", () => {
+  const result = inspectDeclaredPwaSources(ROOT);
+  const geometry = "./src/app/features/novegeo-feature-geometry.js";
+  assert.ok(result.workerAssets.includes(geometry), geometry);
+  assert.ok(result.policyAssets.includes(geometry), geometry);
+  for (const retired of [
+    "./styles/bundle12-0-1e-maintenance.css",
+    "./src/app/features/bundle12-0-1e-maintenance.js",
+  ]) {
+    assert.equal(result.workerAssets.includes(retired), false, retired);
+    assert.equal(result.policyAssets.includes(retired), false, retired);
+  }
 });

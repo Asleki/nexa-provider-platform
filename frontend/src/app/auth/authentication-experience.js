@@ -6,11 +6,15 @@ import { createAuthorizationContext } from "./authorization-context.js";
 import { guestSignInMarkup } from "../../ui/pages/guest-sign-in.js";
 import { developerSignInMarkup } from "../../ui/pages/developer-sign-in.js";
 import { developerEnigmaMarkup } from "../../ui/pages/developer-enigma.js";
-import { authenticatedTransitionMarkup } from "../../ui/pages/authenticated-transition.js";
+import { productionDeveloperWorkspaceMarkup } from "../../ui/pages/production-developer-workspace.js";
+import { productionGuestWorkspaceMarkup } from "../../ui/pages/production-guest-workspace.js";
+import { noveGeoFeatureMarkup } from "../../ui/pages/novegeo-feature.js";
+import { resolveProductionWorkspace, WorkspaceKind } from "../workspaces/workspace-resolution.js";
 
 const AUTH_ROUTES = new Set([
   ApplicationRoute.PRODUCTION_DEVELOPER,
   ApplicationRoute.PRODUCTION_GUEST,
+  ApplicationRoute.PRODUCTION_NOVEGEO,
 ]);
 
 function formValue(form, name) {
@@ -36,7 +40,29 @@ export function installAuthenticationExperience({
     const target = outlet();
     if (!target) return false;
     if (context.authenticated) {
-      target.innerHTML = authenticatedTransitionMarkup(context.session);
+      const workspace = resolveProductionWorkspace(context.session);
+      const root = documentRef.querySelector?.("#nexilabs-app");
+      if (root) root.dataset.developerDiagnostics = String(workspace === WorkspaceKind.PRODUCTION_DEVELOPER);
+      if (route === ApplicationRoute.PRODUCTION_NOVEGEO) {
+        const backRoute = workspace === WorkspaceKind.PRODUCTION_DEVELOPER
+          ? ApplicationRoute.PRODUCTION_DEVELOPER
+          : ApplicationRoute.PRODUCTION_GUEST;
+        target.innerHTML = noveGeoFeatureMarkup({ runtime: "production", backRoute });
+        application.mountFeatureRuntime?.("production");
+        return true;
+      }
+      if (workspace === WorkspaceKind.PRODUCTION_DEVELOPER) {
+        target.innerHTML = productionDeveloperWorkspaceMarkup(context.session);
+        return true;
+      }
+      if (workspace === WorkspaceKind.PRODUCTION_GUEST) {
+        target.innerHTML = productionGuestWorkspaceMarkup(context.session);
+        return true;
+      }
+      context.clear();
+    }
+    if (route === ApplicationRoute.PRODUCTION_NOVEGEO) {
+      target.innerHTML = `<section class="entry-page" aria-labelledby="production-novegeo-access-title"><p class="eyebrow">Production</p><h1 id="production-novegeo-access-title">Authentication required</h1><p class="summary">Return to Production access and sign in before opening governed NoveGeo.</p><button class="text-button" type="button" data-route="${ApplicationRoute.PRODUCTION_ACCESS}">← Production access</button></section>`;
       return true;
     }
     if (route === ApplicationRoute.PRODUCTION_GUEST) {
@@ -115,6 +141,8 @@ export function installAuthenticationExperience({
       }
       pendingDeveloper = null;
       context.clear();
+      const root = documentRef.querySelector?.("#nexilabs-app");
+      if (root) root.dataset.developerDiagnostics = "false";
       application.router.navigate(ApplicationRoute.RUNTIME_GATEWAY);
     }
   };
