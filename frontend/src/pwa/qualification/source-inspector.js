@@ -20,6 +20,7 @@ function parseStringConstant(source, constantName) {
 export function inspectDeclaredPwaSources(frontendRoot) {
   const worker = readText(resolve(frontendRoot, "sw.js"));
   const policy = readText(resolve(frontendRoot, "src/pwa/cache-policy.js"));
+  const registration = readText(resolve(frontendRoot, "src/pwa/service-worker-registration.js"));
   return Object.freeze({
     workerAssets: Object.freeze(parseStringArray(worker, "APP_SHELL")),
     policyAssets: Object.freeze(parseStringArray(policy, "APPLICATION_SHELL_ASSETS")),
@@ -27,8 +28,10 @@ export function inspectDeclaredPwaSources(frontendRoot) {
     policyCacheVersion: parseStringConstant(policy, "PWA_CACHE_VERSION"),
     workerOfflineDocument: parseStringConstant(worker, "OFFLINE_URL"),
     policyOfflineDocument: parseStringConstant(policy, "OFFLINE_DOCUMENT"),
+    registrationUsesPolicyGeneration: /PWA_SHELL_GENERATION\s*=\s*PWA_CACHE_VERSION/.test(registration),
     workerSource: worker,
-    policySource: policy
+    policySource: policy,
+    registrationSource: registration
   });
 }
 

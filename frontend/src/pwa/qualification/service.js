@@ -15,7 +15,7 @@ export async function qualifyOfflinePwa({ frontendRoot, qualificationId = `pwaqu
   const manifest = readJson(manifestPath);
   const sources = inspectDeclaredPwaSources(frontendRoot);
   const findings = [
-    ...qualifyManifest(manifest, frontendRoot),
+    ...qualifyManifest(manifest, frontendRoot, { manifestUrl: "https://nexilabs.invalid/public/manifest.webmanifest" }),
     ...qualifyShellInventory(sources, frontendRoot)
   ];
   const storage = new MemoryCacheStorage({ "nexilabs-shell-old": { "./index.html": "old" } });

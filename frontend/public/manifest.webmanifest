@@ -1,12 +1,12 @@
 {
-  "id": "./",
+  "id": "../",
   "name": "NexiLabs PWA",
   "short_name": "NexiLabs",
   "description": "NexiLabs application shell for governed production access, simulation and evolving platform systems.",
   "lang": "en",
   "dir": "ltr",
-  "start_url": "./?source=pwa",
-  "scope": "./",
+  "start_url": "../?source=pwa",
+  "scope": "../",
   "display": "standalone",
   "display_override": [
     "window-controls-overlay",

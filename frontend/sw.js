@@ -1,5 +1,5 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
-const CACHE_NAME = "nexilabs-shell-v15";
+const CACHE_NAME = "nexilabs-shell-v16";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -10,6 +10,8 @@ const APP_SHELL = [
   "./public/brand/nexilabs/vectors/nexilabs_logo_horizontal.svg",
   "./public/brand/nexilabs/pwa/nexilabs_icon_192x192.png",
   "./public/brand/nexilabs/pwa/nexilabs_icon_512x512.png",
+  "./public/brand/nexilabs/pwa/nexilabs_maskable_192x192.png",
+  "./public/brand/nexilabs/pwa/nexilabs_maskable_512x512.png",
   "./styles/app.css",
   "./src/main.js",
   "./src/ui/partials/header.html",

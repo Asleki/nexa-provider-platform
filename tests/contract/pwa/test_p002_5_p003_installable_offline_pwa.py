@@ -1,5 +1,6 @@
 from __future__ import annotations
 import json
+from urllib.parse import urljoin, urlparse
 from pathlib import Path
 ROOT = Path(__file__).parents[3]
 FRONTEND = ROOT / "frontend"
@@ -15,8 +16,13 @@ def test_p002_5_application_shell_integration_files_exist() -> None:
 def test_p003_1_manifest_contract_is_installable_and_scoped() -> None:
     manifest = json.loads((FRONTEND / "public/manifest.webmanifest").read_text())
     assert manifest["name"] == "NexiLabs PWA"
-    assert manifest["start_url"].startswith("./")
-    assert manifest["scope"] == "./"
+    assert manifest["id"] == "../"
+    assert manifest["start_url"] == "../?source=pwa"
+    assert manifest["scope"] == "../"
+    manifest_url = "http://127.0.0.1:8765/public/manifest.webmanifest"
+    assert urljoin(manifest_url, manifest["id"]) == "http://127.0.0.1:8765/"
+    assert urljoin(manifest_url, manifest["start_url"]) == "http://127.0.0.1:8765/?source=pwa"
+    assert urljoin(manifest_url, manifest["scope"]) == "http://127.0.0.1:8765/"
     assert manifest["display"] == "standalone"
     assert {icon["purpose"] for icon in manifest["icons"]} == {"any", "maskable"}
 
@@ -38,7 +44,8 @@ def test_p003_3_offline_shell_cache_contract() -> None:
 def test_p003_4_update_recovery_and_versioning_contract() -> None:
     worker = (FRONTEND / "sw.js").read_text()
     registration = (FRONTEND / "src/pwa/service-worker-registration.js").read_text()
-    assert 'CACHE_NAME = "nexilabs-shell-v15"' in worker
+    assert 'CACHE_NAME = "nexilabs-shell-v16"' in worker
+    assert "PWA_SHELL_GENERATION = PWA_CACHE_VERSION" in registration
     assert "caches.delete" in worker
     assert "SKIP_WAITING" in worker
     assert "activateUpdate" in registration

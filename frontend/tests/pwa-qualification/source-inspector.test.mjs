@@ -7,10 +7,11 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 
 test("worker and policy declarations are extracted deterministically", () => {
   const result = inspectDeclaredPwaSources(ROOT);
-  assert.equal(result.workerCacheVersion, "nexilabs-shell-v15");
-  assert.equal(result.policyCacheVersion, "nexilabs-shell-v15");
+  assert.equal(result.workerCacheVersion, "nexilabs-shell-v16");
+  assert.equal(result.policyCacheVersion, "nexilabs-shell-v16");
   assert.deepEqual(result.workerAssets, result.policyAssets);
   assert.equal(result.workerOfflineDocument, "./index.html");
+  assert.equal(result.registrationUsesPolicyGeneration, true);
 });
 
 test("Bundle 12A interaction assets remain inside the offline shell inventory", () => {

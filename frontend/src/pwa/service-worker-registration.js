@@ -1,4 +1,5 @@
-/** P003.2/P003.4 / Bundle 12.0E / 12.0.1E — Browser-side service worker registration and generation recovery boundary. */
+/** P003.2/P003.4 / Bundle 12.0E / P006.UI.16 — Browser-side service worker registration and generation recovery boundary. */
+import { PWA_CACHE_VERSION } from "./cache-policy.js";
 export const ServiceWorkerStatus = Object.freeze({
   UNSUPPORTED: "UNSUPPORTED",
   REGISTERING: "REGISTERING",
@@ -8,7 +9,7 @@ export const ServiceWorkerStatus = Object.freeze({
   FAILED: "FAILED"
 });
 
-export const PWA_SHELL_GENERATION = "nexilabs-shell-v14";
+export const PWA_SHELL_GENERATION = PWA_CACHE_VERSION;
 const FOREGROUND_UPDATE_MIN_INTERVAL_MS = 30_000;
 
 function renderStatus(documentRef, status) {

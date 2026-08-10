@@ -10,8 +10,9 @@ const html = readFileSync(resolve(ROOT, "index.html"), "utf8");
 test("manifest has governed install metadata and local start scope", () => {
   assert.equal(manifest.name, "NexiLabs PWA");
   assert.equal(manifest.short_name, "NexiLabs");
-  assert.equal(manifest.start_url.startsWith("./"), true);
-  assert.equal(manifest.scope, "./");
+  assert.equal(manifest.id, "../");
+  assert.equal(manifest.start_url, "../?source=pwa");
+  assert.equal(manifest.scope, "../");
   assert.equal(manifest.display, "standalone");
   assert.equal(manifest.theme_color, "#0D1B2A");
 });
@@ -29,4 +30,12 @@ test("application document links manifest, theme and apple metadata", () => {
   assert.match(html, /rel="manifest" href="\.\/public\/manifest\.webmanifest"/);
   assert.match(html, /name="theme-color" content="#0D1B2A"/);
   assert.match(html, /rel="apple-touch-icon"/);
+});
+
+
+test("P006.UI.16 manifest-relative URLs resolve to the application root, not the public asset directory", () => {
+  const manifestUrl = new URL("https://example.test/nexilabs/public/manifest.webmanifest");
+  assert.equal(new URL(manifest.id, manifestUrl).href, "https://example.test/nexilabs/");
+  assert.equal(new URL(manifest.start_url, manifestUrl).href, "https://example.test/nexilabs/?source=pwa");
+  assert.equal(new URL(manifest.scope, manifestUrl).href, "https://example.test/nexilabs/");
 });
