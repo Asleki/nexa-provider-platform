@@ -1,0 +1,7 @@
+classification_code,canonical_label,description,public_readable,restricted_write,status
+PUBLIC,Public,Public,true,true,ACTIVE
+PUBLIC_REFERENCE,Public reference,Public reference,true,true,ACTIVE
+INTERNAL,Internal,Internal,false,true,ACTIVE
+RESTRICTED,Restricted,Restricted,false,true,ACTIVE
+LEGAL_RECORD,Legal record,Legal record,limited,true,ACTIVE
+SECURITY_SENSITIVE,Security sensitive,Security sensitive,false,true,ACTIVE

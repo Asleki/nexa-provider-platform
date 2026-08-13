@@ -1,0 +1,7 @@
+geometry_type_code,canonical_label,ogc_geometry_type,dimension,supports_multiple_parts,supports_ring,supports_linear_reference,description,status
+POINT,Point,POINT,2,false,false,false,Point,ACTIVE
+MULTIPOINT,Multipoint,MULTIPOINT,2,true,false,false,Multipoint,ACTIVE
+LINESTRING,Linestring,LINESTRING,2,false,false,true,Linestring,ACTIVE
+MULTILINESTRING,Multilinestring,MULTILINESTRING,2,true,false,true,Multilinestring,ACTIVE
+POLYGON,Polygon,POLYGON,2,false,true,false,Polygon,ACTIVE
+MULTIPOLYGON,Multipolygon,MULTIPOLYGON,2,true,true,false,Multipolygon,ACTIVE

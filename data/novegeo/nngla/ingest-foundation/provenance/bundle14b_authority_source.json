@@ -1,0 +1,88 @@
+{
+  "bundle": "P006.7.2 Bundle 14B",
+  "source_pack": "NNGLA_Phase_D1_CSV_Authority_Pack_2026-08-13_VALIDATED.zip",
+  "source_role": "governed migration-source evidence only; not runtime authority",
+  "captured_at": "2026-08-13T21:23:00+02:00",
+  "files": [
+    {
+      "path": "00_manifest/csv_catalogue_manifest.csv",
+      "sha256": "8f7d0c3e632e33a5939bc70fabcca8eb2580c292a623b34a5d130c6970fa9d3d",
+      "byte_size": 9926
+    },
+    {
+      "path": "02_controlled_codes/coordinate_reference_systems.csv",
+      "sha256": "bb5a1a3323b2755efb7e2cc036c3b11fc8ba65ffdf8cb0b392c843de178062f1",
+      "byte_size": 309
+    },
+    {
+      "path": "02_controlled_codes/geometry_type_codes.csv",
+      "sha256": "d12d578b91ca4be256a05954078eaebbd143f3015f88dcc73cc5ecaaa59b0308",
+      "byte_size": 568
+    },
+    {
+      "path": "03_authority_identifiers/novegeo_data_classification_register.csv",
+      "sha256": "21ee41e454284ec0cc5217cf8bb82bde81beffdf58b9bc73181b148f279ba38c",
+      "byte_size": 431
+    },
+    {
+      "path": "05_geographic_candidates/administrative_area_candidates.csv",
+      "sha256": "61b83d76fa7324e8e062e7dc479c6958ceba15a8dfff170fab17fbffe6a48e00",
+      "byte_size": 37554
+    },
+    {
+      "path": "05_geographic_candidates/geographic_feature_candidates.csv",
+      "sha256": "27ccd9919d42294f42b46449606af5ad88b4d7df1503eb8dd6c115d54c911c39",
+      "byte_size": 7694
+    },
+    {
+      "path": "05_geographic_candidates/geometry_version_candidates.csv",
+      "sha256": "9942d01483e9f180739587f8b3b46cbea42785738ae7cd1145055788fee911bc",
+      "byte_size": 9557
+    },
+    {
+      "path": "05_geographic_candidates/survey_control_point_candidates.csv",
+      "sha256": "778438ffd64ff21f6ef4aa9cc21ff4f33ff0e75036adcb31c8ab30bba6de1574",
+      "byte_size": 142
+    },
+    {
+      "path": "06_roads_addresses/address_reference_candidates.csv",
+      "sha256": "aa98d49ef377788e0b3ba4feb6084a60e171ce5bab7b8359a72c052666d6e341",
+      "byte_size": 251
+    },
+    {
+      "path": "06_roads_addresses/road_reference_candidates.csv",
+      "sha256": "ae4e334fad728bb676f38d1bda2f3504cdc7ee86db9d8c66ec7455949bf55339",
+      "byte_size": 177450
+    },
+    {
+      "path": "07_land/parcel_bootstrap.csv",
+      "sha256": "03f3937f52b84135b44a8aa6e343f0f57a76b3a3a3d8d09a7253b13d6009b3b3",
+      "byte_size": 181
+    },
+    {
+      "path": "07_land/state_land_bootstrap.csv",
+      "sha256": "511ff5195b4a6db0cbd9ff56e2848ad97a763c9b7e59c8e9a956e96b5389d641",
+      "byte_size": 132
+    },
+    {
+      "path": "07_land/title_bootstrap.csv",
+      "sha256": "a659637607c6e9533b3628757857672ad39cfc6fe571975aa8cfb178fb4af312",
+      "byte_size": 128
+    },
+    {
+      "path": "09_quarantine/invalid_geographic_feature_candidates.csv",
+      "sha256": "004a4fdfd5bd5c2077a3ea5726afa319a1c0f745fb1ead21b13d62a6ff72b412",
+      "byte_size": 96
+    },
+    {
+      "path": "10_evidence/novegeo_file_hash_register.csv",
+      "sha256": "d1d9e47c224da570be814da46487384a40aec91f74f7a13e0cc770a0cc69ee50",
+      "byte_size": 9992
+    },
+    {
+      "path": "10_evidence/novegeo_validation_evidence_register.csv",
+      "sha256": "560437dec496902808886fed39df1a093fb48215361f68c02a5d97f9d0fc0132",
+      "byte_size": 13336
+    }
+  ]
+}
