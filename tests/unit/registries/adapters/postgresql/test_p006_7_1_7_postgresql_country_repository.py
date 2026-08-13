@@ -1,0 +1,4 @@
+from registries.adapters.postgresql.postgresql_country_repository import COUNTRY_REGISTRY_TABLE,COUNTRY_REGISTRY_REQUIRED_COLUMNS
+
+def test_postgresql_country_adapter_targets_stable_reference_table_contract():
+ assert COUNTRY_REGISTRY_TABLE=='reference.country_registry'; assert 'country_id' in COUNTRY_REGISTRY_REQUIRED_COLUMNS; assert 'record_version' in COUNTRY_REGISTRY_REQUIRED_COLUMNS; assert 'realm_id' in COUNTRY_REGISTRY_REQUIRED_COLUMNS

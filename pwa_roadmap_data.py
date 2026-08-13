@@ -73,6 +73,37 @@ C|P006.3|Coordinate Search and Location Selection
 C|P006.4|Map View State Persistence and Recovery
 C|P006.5|Versioned Dynamic World-State Updates
 C|P006.6|Interaction and Dynamic-State Tests
+C|P006.7|NoveGeo Sovereign Country & NNGLA Spatial Authority Foundation
+P|P006.7.1|NoveGeo Sovereign Country Reference
+C|P006.7.1.1|Country Identity Contract
+C|P006.7.1.2|Synthetic Country-Code Authority
+C|P006.7.1.3|Realm, Runtime, Effect & Approval Dimensions
+C|P006.7.1.4|Timezone, Calendar & Date-Time Contract
+C|P006.7.1.5|Locale & Currency Reference Boundary
+C|P006.7.1.6|Sovereign Boundary Association
+C|P006.7.1.7|Country Registry Persistence
+C|P006.7.1.8|Country Events & Audit
+C|P006.7.1.9|Country Read Model
+C|P006.7.1.10|NoveGeo Country Qualification
+P|P006.7.2|NNGLA Authority & Spatial Identity Foundation
+P|P006.7.2.1|NNGLA Authority Registry
+P|P006.7.2.2|NNGLA Registry-Domain Catalogue
+P|P006.7.2.3|Spatial Identifier Contracts
+P|P006.7.2.4|Lifecycle & Effective-Dating Contracts
+P|P006.7.2.5|Source Dataset & Provenance Contracts
+P|P006.7.2.6|Ingest, Staging & Quarantine Foundation
+P|P006.7.2.7|PostgreSQL/PostGIS Schema Foundation
+P|P006.7.2.8|Migration & Canonicalization Controls
+P|P006.7.2.9|Event, Audit & Publication Infrastructure
+P|P006.7.2.10|NNGLA Foundation Qualification
+P|P006.7.3|NNGLA Geographic Recognition & Naming
+P|P006.7.4|NNGLA Administrative Geography & Places
+P|P006.7.5|NNGLA Geodesy, Survey & Authoritative Geometry
+P|P006.7.6|NNGLA Roads, Addresses & Addressable Sites
+P|P006.7.7|NNGLA Cadastre & Parcel Authority
+P|P006.7.8|NNGLA Titles, Tenure & State Land
+P|P006.7.9|NNGLA Publication, Read Models & PWA Integration
+P|P006.7.10|Sovereign Spatial Qualification & Registry Readiness
 P|P007|AWS Hosting and Release Operations
 P|P007.1|AWS Static Hosting and Build Output
 P|P007.2|CloudFront, HTTPS and Domain Delivery
