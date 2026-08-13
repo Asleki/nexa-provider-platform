@@ -1,0 +1,11 @@
+{
+  "sourceId": "source:novegeo:country-profile:p006.7.1",
+  "sourcePath": "data/novegeo/country/source/novegeo_country_profile.csv",
+  "sourceAuthority": "NNGLA Phase D.1 validated CSV authority pack",
+  "sourcePurpose": "Governed migration-source evidence for NoveGeo sovereign identity and synthetic country codes.",
+  "operationalAuthority": false,
+  "runtimeCsvConsumptionAllowed": false,
+  "canonicalPersistenceTarget": "PostgreSQL in the later P006.7 NNGLA database foundation milestone",
+  "sovereignBoundaryAuthority": "existing governed P004 geography authority",
+  "domainDeliveryContext": "nexaecosystem.com and AWS are deployment context only; no hostnames or credentials are embedded in this source contract"
+}

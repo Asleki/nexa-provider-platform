@@ -1,0 +1,2 @@
+country_record_id,country_code_sim,alpha2_code,official_name,short_name,world_realm_id,sovereignty_status,default_crs_code,default_timezone_code,calendar_code,runtime_eligibility,mainland_count,offshore_island_count,active_boundary_version,currency_code,currency_symbol,status,effective_from,effective_to,source_reference
+country:novegeo,NVG,NV,NoveGeo,NoveGeo,realm:nexilabs:novegeo,SIMULATED_SOVEREIGN,NG-CRS-EPSG4326,Africa/NoveGeo,GREGORIAN,SIMULATION|PRODUCTION,1,5,2,NGC,₦G,ACTIVE,2026-08-12,,NNGLA Phase A + governed NoveGeo geography
