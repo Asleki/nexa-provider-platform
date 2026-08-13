@@ -1,0 +1,2 @@
+policy_id,date_format,time_format,datetime_format,first_day_of_week,status
+dtpolicy:novegeo:v1,DD/MM/YYYY,HH:mm:ss,DD/MM/YYYY HH:mm:ss,MONDAY,ACTIVE

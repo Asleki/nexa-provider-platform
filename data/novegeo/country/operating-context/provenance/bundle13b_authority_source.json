@@ -1,0 +1,19 @@
+{
+  "milestone": "P006.7.1 Bundle 13B",
+  "sourcePack": "NNGLA_Phase_D1_CSV_Authority_Pack_2026-08-13_VALIDATED.zip",
+  "sourceAuthority": "NNGLA validated Phase D1 CSV authority pack",
+  "effectiveFrom": "2026-08-12",
+  "operationalAuthority": false,
+  "runtimeCsvConsumptionAllowed": false,
+  "canonicalRuntimePersistence": "AWS PostgreSQL authority milestone (later)",
+  "deploymentContext": {
+    "domain": "nexaecosystem.com",
+    "platform": "AWS EC2 + PostgreSQL",
+    "identityBearing": false
+  },
+  "notes": [
+    "These CSVs are a governed migration/reference snapshot for qualification and tests.",
+    "Application runtime must not use these CSVs as live authority storage.",
+    "Bundle 13A sovereign identity and boundary contracts remain immutable."
+  ]
+}

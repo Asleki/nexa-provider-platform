@@ -1,0 +1,2 @@
+world_realm_id,realm_code,realm_name,realm_type,country_record_id,status,effective_from
+realm:nexilabs:novegeo,NOVEGEO,NoveGeo,SIMULATED_SOVEREIGN_WORLD,country:novegeo,ACTIVE,2026-08-12

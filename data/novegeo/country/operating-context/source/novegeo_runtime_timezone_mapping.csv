@@ -1,0 +1,3 @@
+mapping_id,runtime_code,timezone_code,clock_ratio,calendar_code,status
+rtz:simulation,SIMULATION,Africa/NoveGeo,1:1,GREGORIAN,ACTIVE
+rtz:production,PRODUCTION,Africa/NoveGeo,1:1,GREGORIAN,ACTIVE

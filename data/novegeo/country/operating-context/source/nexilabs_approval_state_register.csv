@@ -1,0 +1,8 @@
+approval_state_code,canonical_label,terminal,status
+DRAFT,Draft,false,ACTIVE
+PROPOSED,Proposed,false,ACTIVE
+UNDER_REVIEW,Under Review,false,ACTIVE
+APPROVED,Approved,true,ACTIVE
+REJECTED,Rejected,true,ACTIVE
+WITHDRAWN,Withdrawn,true,ACTIVE
+SUPERSEDED,Superseded,true,ACTIVE

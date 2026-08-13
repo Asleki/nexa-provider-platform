@@ -1,0 +1,3 @@
+runtime_code,canonical_label,semantic_role,status,effective_from
+SIMULATION,Simulation,simulated_world_operations,ACTIVE,2026-08-12
+PRODUCTION,Production,governed_operator_actions,ACTIVE,2026-08-12

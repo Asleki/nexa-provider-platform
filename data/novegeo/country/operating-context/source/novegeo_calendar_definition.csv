@@ -1,0 +1,2 @@
+calendar_code,canonical_name,calendar_system,days_per_week,month_model,leap_year_model,status
+GREGORIAN,Gregorian Calendar,Gregorian,7,12_months,Gregorian,ACTIVE

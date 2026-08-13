@@ -1,0 +1,6 @@
+effect_scope_code,canonical_label,description,status
+SHARED_REFERENCE,Shared Reference,Shared Reference,ACTIVE
+SIMULATION_ONLY,Simulation Only,Simulation Only,ACTIVE
+PRODUCTION_ONLY,Production Only,Production Only,ACTIVE
+RUNTIME_SCOPED,Runtime Scoped,Runtime Scoped,ACTIVE
+HISTORICAL_REFERENCE,Historical Reference,Historical Reference,ACTIVE

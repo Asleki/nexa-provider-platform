@@ -1,0 +1,19 @@
+matrix_id,authority_code,record_family,runtime_code,permission_code,effect_scope_code,approval_required,notes,status
+matrix:geographic-name:simulation,NNGLA,GEOGRAPHIC_NAME,SIMULATION,CREATE_REVIEW_APPROVE,SHARED_REFERENCE,true,Authority boundary for NNGLA records,ACTIVE
+matrix:geographic-name:production,NNGLA,GEOGRAPHIC_NAME,PRODUCTION,CREATE_REVIEW_APPROVE,SHARED_REFERENCE,true,Authority boundary for NNGLA records,ACTIVE
+matrix:geographic-feature:simulation,NNGLA,GEOGRAPHIC_FEATURE,SIMULATION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:geographic-feature:production,NNGLA,GEOGRAPHIC_FEATURE,PRODUCTION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:geometry:simulation,NNGLA,GEOMETRY,SIMULATION,CREATE_REVIEW_APPROVE,SHARED_REFERENCE,true,Authority boundary for NNGLA records,ACTIVE
+matrix:geometry:production,NNGLA,GEOMETRY,PRODUCTION,CREATE_REVIEW_APPROVE,SHARED_REFERENCE,true,Authority boundary for NNGLA records,ACTIVE
+matrix:admin-area:simulation,NNGLA,ADMIN_AREA,SIMULATION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:admin-area:production,NNGLA,ADMIN_AREA,PRODUCTION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:road-reference:simulation,NNGLA,ROAD_REFERENCE,SIMULATION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:road-reference:production,NNGLA,ROAD_REFERENCE,PRODUCTION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:address-reference:simulation,NNGLA,ADDRESS_REFERENCE,SIMULATION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:address-reference:production,NNGLA,ADDRESS_REFERENCE,PRODUCTION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:parcel:simulation,NNGLA,PARCEL,SIMULATION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:parcel:production,NNGLA,PARCEL,PRODUCTION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:title:simulation,NNGLA,TITLE,SIMULATION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:title:production,NNGLA,TITLE,PRODUCTION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:state-land:simulation,NNGLA,STATE_LAND,SIMULATION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
+matrix:state-land:production,NNGLA,STATE_LAND,PRODUCTION,CREATE_REVIEW_APPROVE,RUNTIME_SCOPED,true,Authority boundary for NNGLA records,ACTIVE
