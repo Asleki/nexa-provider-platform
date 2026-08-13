@@ -1,0 +1,2 @@
+authority_id,authority_code,official_name,authority_type,parent_authority_id,world_realm_id,country_record_id,mandate_summary,status,effective_from,effective_to,source_reference
+authority:nngla,NNGLA,NoveGeo National Geospatial and Land Authority,NATIONAL_AUTHORITY,,realm:nexilabs:novegeo,country:novegeo,"Geographic Naming, Geodesy, National Mapping, Land Survey, Administrative Boundaries, Parcel Registration, Cadastre, Land Titles, State Land Administration, Road & Address Referencing",ACTIVE,2026-08-12,,Approved NNGLA Phase A

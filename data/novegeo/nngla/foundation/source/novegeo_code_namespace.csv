@@ -1,0 +1,12 @@
+namespace_id,namespace_prefix,namespace_name,object_family,issuing_authority_code,format_rule,example_value,immutable_after_issue,reusable_after_retirement,status,effective_from
+ns:ngp,NGP,NoveGeo Place source,PLACE_SOURCE,NNGLA,registered_format,NGP-000001,true,false,ACTIVE,2026-08-12
+ns:ngr,NGR,NoveGeo Region,ADMIN_REGION,NNGLA,registered_format,NGR-01,true,false,ACTIVE,2026-08-12
+ns:ng-nam,NG-NAM,NNGLA Geographic Name,GEOGRAPHIC_NAME,NNGLA,registered_format,NG-NAM-SET-000001,true,false,ACTIVE,2026-08-12
+ns:ng-hyd,NG-HYD,NNGLA Hydrology reference,HYDROLOGY,NNGLA,registered_format,NG-HYD-RIV-000001,true,false,ACTIVE,2026-08-12
+ns:ng-lfm,NG-LFM,NNGLA Landform reference,LANDFORM,NNGLA,registered_format,NG-LFM-MTN-000001,true,false,ACTIVE,2026-08-12
+ns:ng-rd,NG-RD,NNGLA Road,ROAD,NNGLA,registered_format,NG-RD-000001,true,false,ACTIVE,2026-08-12
+ns:ng-adr,NG-ADR,NNGLA Address,ADDRESS,NNGLA,registered_format,NG-ADR-000001,true,false,ACTIVE,2026-08-12
+ns:nv,NV,NNGLA Parcel,PARCEL,NNGLA,registered_format,NV-12-004-8890,true,false,ACTIVE,2026-08-12
+ns:ng-ttl,NG-TTL,NNGLA Title,TITLE,NNGLA,registered_format,NG-TTL-000001,true,false,ACTIVE,2026-08-12
+ns:ng-srv,NG-SRV,NNGLA Survey,SURVEY,NNGLA,registered_format,NG-SRV-000001,true,false,ACTIVE,2026-08-12
+ns:ng-geo,NG-GEO,NNGLA Geometry Version,GEOMETRY,NNGLA,registered_format,NG-GEO-000001,true,false,ACTIVE,2026-08-12

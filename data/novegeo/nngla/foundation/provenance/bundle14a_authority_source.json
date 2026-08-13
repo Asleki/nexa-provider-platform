@@ -1,0 +1,15 @@
+{
+  "bundle": "P006.7.2 Bundle 14A",
+  "source_pack": "NNGLA_Phase_D1_CSV_Authority_Pack_2026-08-13_VALIDATED.zip",
+  "classification": "GOVERNED_MIGRATION_SOURCE",
+  "runtime_storage": false,
+  "canonical_runtime_target": "future PostgreSQL/PostGIS authority foundation",
+  "copied_files": [
+    "novegeo_authority_record.csv",
+    "novegeo_authority_role_register.csv",
+    "nexilabs_runtime_authority_matrix.csv",
+    "novegeo_code_namespace.csv",
+    "novegeo_identifier_format_register.csv",
+    "feature_lifecycle_status_codes.csv"
+  ]
+}

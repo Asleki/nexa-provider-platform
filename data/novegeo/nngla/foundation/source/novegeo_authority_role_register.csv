@@ -1,0 +1,11 @@
+authority_role_id,authority_id,role_code,role_name,domain_scope,may_create,may_review,may_approve,may_gazette,may_retire,status,effective_from,effective_to
+nngla-role-01,authority:nngla,GEOGRAPHIC_NAMES,Geographic Names Authority,naming,true,true,true,true,true,ACTIVE,2026-08-12,
+nngla-role-02,authority:nngla,SURVEY_GEODESY,Survey and Geodesy Authority,survey_geodesy,true,true,true,false,true,ACTIVE,2026-08-12,
+nngla-role-03,authority:nngla,MAPPING,National Mapping Authority,mapping,true,true,true,false,true,ACTIVE,2026-08-12,
+nngla-role-04,authority:nngla,ADMINISTRATIVE_GEOGRAPHY,Administrative Geography Authority,administrative_geography,true,true,true,true,true,ACTIVE,2026-08-12,
+nngla-role-05,authority:nngla,ROAD_ADDRESS_REFERENCE,Road and Address Reference Authority,roads_addresses,true,true,true,true,true,ACTIVE,2026-08-12,
+nngla-role-06,authority:nngla,PARCEL_CADASTRE,Parcel and Cadastre Authority,cadastre,true,true,true,false,true,ACTIVE,2026-08-12,
+nngla-role-07,authority:nngla,LAND_TITLE,Land Title Authority,title_tenure,true,true,true,true,true,ACTIVE,2026-08-12,
+nngla-role-08,authority:nngla,STATE_LAND,State Land Authority,state_land,true,true,true,true,true,ACTIVE,2026-08-12,
+nngla-role-09,authority:nngla,DATA_GOVERNANCE,Geospatial Data Governance,data_governance,true,true,true,false,true,ACTIVE,2026-08-12,
+nngla-role-10,authority:nngla,AUDIT,NNGLA Audit Authority,audit,true,true,true,false,true,ACTIVE,2026-08-12,

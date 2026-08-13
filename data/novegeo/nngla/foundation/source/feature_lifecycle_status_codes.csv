@@ -1,0 +1,21 @@
+lifecycle_status_code,canonical_label,applies_to_origin_class,allows_geometry,allows_official_name,terminal_status,status_rank,description,status
+DETECTED,Detected,ALL,true,true,false,1,Detected,ACTIVE
+DISCOVERED,Discovered,ALL,true,true,false,2,Discovered,ACTIVE
+PROVISIONAL,Provisional,ALL,true,true,false,3,Provisional,ACTIVE
+OBSERVED,Observed,ALL,true,true,false,4,Observed,ACTIVE
+SURVEY_PENDING,Survey Pending,ALL,true,true,false,5,Survey Pending,ACTIVE
+SURVEYED,Surveyed,ALL,true,true,false,6,Surveyed,ACTIVE
+CLASSIFIED,Classified,ALL,true,true,false,7,Classified,ACTIVE
+RECOGNIZED,Recognized,ALL,true,true,false,8,Recognized,ACTIVE
+ACTIVE,Active,ALL,true,true,false,9,Active,ACTIVE
+INACTIVE,Inactive,ALL,true,true,false,10,Inactive,ACTIVE
+SEASONAL,Seasonal,ALL,true,true,false,11,Seasonal,ACTIVE
+DRY,Dry,ALL,true,true,false,12,Dry,ACTIVE
+SUBMERGED,Submerged,ALL,true,true,false,13,Submerged,ACTIVE
+EXTINCT,Extinct,ALL,true,true,true,14,Extinct,ACTIVE
+MERGED,Merged,ALL,true,true,false,15,Merged,ACTIVE
+SPLIT,Split,ALL,true,true,false,16,Split,ACTIVE
+SUPERSEDED,Superseded,ALL,true,true,true,17,Superseded,ACTIVE
+RETIRED,Retired,ALL,true,true,true,18,Retired,ACTIVE
+DEPRECATED,Deprecated,ALL,true,true,true,19,Deprecated,ACTIVE
+DISPUTED,Disputed,ALL,true,true,false,20,Disputed,ACTIVE
