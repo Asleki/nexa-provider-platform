@@ -44,7 +44,7 @@ def test_p003_3_offline_shell_cache_contract() -> None:
 def test_p003_4_update_recovery_and_versioning_contract() -> None:
     worker = (FRONTEND / "sw.js").read_text()
     registration = (FRONTEND / "src/pwa/service-worker-registration.js").read_text()
-    assert 'CACHE_NAME = "nexilabs-shell-v16"' in worker
+    assert 'CACHE_NAME = "nexilabs-shell-v17"' in worker
     assert "PWA_SHELL_GENERATION = PWA_CACHE_VERSION" in registration
     assert "caches.delete" in worker
     assert "SKIP_WAITING" in worker

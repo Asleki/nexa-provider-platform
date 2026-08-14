@@ -1,5 +1,5 @@
 /** P003.2–P003.4 — Versioned offline application-shell service worker. */
-const CACHE_NAME = "nexilabs-shell-v16";
+const CACHE_NAME = "nexilabs-shell-v17";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -40,6 +40,10 @@ const APP_SHELL = [
   "./src/core/application-state.js",
   "./src/pwa/cache-policy.js",
   "./src/pwa/service-worker-registration.js",
+  "./src/map/nngla/contracts.js",
+  "./src/map/nngla/read-client.js",
+  "./src/map/nngla/render-plan.js",
+  "./src/map/nngla/publication-status.js",
   "./src/map/geography/contracts.js",
   "./src/map/geography/projection.js",
   "./src/map/geography/status.js",

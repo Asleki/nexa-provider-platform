@@ -24,9 +24,9 @@ test("offline navigation fallback and same-origin GET boundary are explicit", ()
 });
 
 test("cache version and shell inventory are versioned", () => {
-  assert.match(policy, /PWA_CACHE_VERSION = "nexilabs-shell-v16"/);
+  assert.match(policy, /PWA_CACHE_VERSION = "nexilabs-shell-v17"/);
   assert.match(policy, /APPLICATION_SHELL_ASSETS/);
-  assert.match(worker, /CACHE_NAME = "nexilabs-shell-v16"/);
+  assert.match(worker, /CACHE_NAME = "nexilabs-shell-v17"/);
   assert.match(worker, /keys\.filter\(\(key\) => key !== CACHE_NAME\)/);
 });
 
@@ -120,7 +120,7 @@ test("Bundle 12E Omega pre-caches normalized geometry and retires 12.0.1E compen
 });
 
 
-test("P006.UI.16 pre-caches every manifest icon and publishes one v16 shell generation", () => {
+test("P006.UI.16 pre-caches every manifest icon and publishes one v17 shell generation", () => {
   for (const marker of [
     "./public/brand/nexilabs/pwa/nexilabs_icon_192x192.png",
     "./public/brand/nexilabs/pwa/nexilabs_icon_512x512.png",

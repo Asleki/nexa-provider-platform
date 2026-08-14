@@ -1,5 +1,5 @@
 /** P003.3/P003.4 — Immutable application-shell cache policy. */
-export const PWA_CACHE_VERSION = "nexilabs-shell-v16";
+export const PWA_CACHE_VERSION = "nexilabs-shell-v17";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./",
@@ -39,6 +39,10 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/core/application-state.js",
   "./src/pwa/cache-policy.js",
   "./src/pwa/service-worker-registration.js",
+  "./src/map/nngla/contracts.js",
+  "./src/map/nngla/read-client.js",
+  "./src/map/nngla/render-plan.js",
+  "./src/map/nngla/publication-status.js",
   "./src/map/geography/contracts.js",
   "./src/map/geography/projection.js",
   "./src/map/geography/status.js",

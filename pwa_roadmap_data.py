@@ -102,8 +102,8 @@ C|P006.7.5|NNGLA Geodesy, Survey & Authoritative Geometry
 C|P006.7.6|NNGLA Roads, Addresses & Addressable Sites
 C|P006.7.7|NNGLA Cadastre & Parcel Authority
 C|P006.7.8|NNGLA Titles, Tenure & State Land
-P|P006.7.9|NNGLA Publication, Read Models & PWA Integration
-P|P006.7.10|Sovereign Spatial Qualification & Registry Readiness
+C|P006.7.9|NNGLA Publication, Read Models & PWA Integration
+C|P006.7.10|Sovereign Spatial Qualification & Registry Readiness
 P|P007|AWS Hosting and Release Operations
 P|P007.1|AWS Static Hosting and Build Output
 P|P007.2|CloudFront, HTTPS and Domain Delivery

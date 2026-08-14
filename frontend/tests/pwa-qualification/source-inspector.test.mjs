@@ -7,8 +7,8 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 
 test("worker and policy declarations are extracted deterministically", () => {
   const result = inspectDeclaredPwaSources(ROOT);
-  assert.equal(result.workerCacheVersion, "nexilabs-shell-v16");
-  assert.equal(result.policyCacheVersion, "nexilabs-shell-v16");
+  assert.equal(result.workerCacheVersion, "nexilabs-shell-v17");
+  assert.equal(result.policyCacheVersion, "nexilabs-shell-v17");
   assert.deepEqual(result.workerAssets, result.policyAssets);
   assert.equal(result.workerOfflineDocument, "./index.html");
   assert.equal(result.registrationUsesPolicyGeneration, true);
@@ -93,4 +93,19 @@ test("Bundle 12E Omega geometry integration is pre-cached and obsolete 12.0.1E c
     assert.equal(result.workerAssets.includes(retired), false, retired);
     assert.equal(result.policyAssets.includes(retired), false, retired);
   }
+});
+
+test("Bundle 15.0D NNGLA read modules are in worker-policy shell parity for installed-PWA upgrades", () => {
+  const result = inspectDeclaredPwaSources(ROOT);
+  for (const asset of [
+    "./src/map/nngla/contracts.js",
+    "./src/map/nngla/read-client.js",
+    "./src/map/nngla/render-plan.js",
+    "./src/map/nngla/publication-status.js",
+  ]) {
+    assert.ok(result.workerAssets.includes(asset), asset);
+    assert.ok(result.policyAssets.includes(asset), asset);
+  }
+  assert.equal(result.workerCacheVersion, "nexilabs-shell-v17");
+  assert.equal(result.policyCacheVersion, "nexilabs-shell-v17");
 });

@@ -6,6 +6,7 @@ import { mountHydrologyAtmospherePresentation } from "../../map/environment/hydr
 import { mountFullViewportCoordinatePresentation } from "../../map/environment/full-viewport-coordinate-presentation.js";
 import { mountMapNavigationDiscovery } from "../../map/interaction/map-navigation-discovery.js";
 import { mountP006StateIntegration } from "../../map/state/p006-state-integration.js";
+import { mountNnglaPublicationStatus } from "../../map/nngla/publication-status.js";
 import { registerMapForegroundRecovery } from "../../map/lifecycle/foreground-recovery.js";
 import {
   applyDefaultNoveGeoOpeningView,
@@ -91,6 +92,7 @@ export function mountNoveGeoFeatureRuntime({
   const state = mountP006StateIntegration({ documentRef, windowRef, discovery, runtimeMode });
   const openingView = applyDefaultNoveGeoOpeningView({ viewport, discovery, stateIntegration: state });
   const adaptiveControls = configureAdaptiveControls(documentRef);
+  const nnglaPublication = mountNnglaPublicationStatus({ documentRef, fetchRef: windowRef?.fetch || globalThis.fetch });
 
   const redrawFeatureSurface = () => {
     const baseReceipt = base.redraw?.() || base;
@@ -128,6 +130,7 @@ export function mountNoveGeoFeatureRuntime({
     discovery,
     state,
     openingView,
+    nnglaPublication,
     resize,
     disconnect() {
       resize.disconnect?.();
@@ -135,6 +138,7 @@ export function mountNoveGeoFeatureRuntime({
       state.disconnect?.();
       adaptiveControls.disconnect?.();
       recovery.disconnect?.();
+      nnglaPublication.disconnect?.();
       base.disconnect?.();
     },
   });

@@ -79,8 +79,8 @@ test("Bundle 12.0E automatically activates a waiting complete shell and exposes 
   const windowRef = eventTarget({ dispatchEvent() {} });
 
   const receipt = await registerServiceWorker({ navigatorRef: { serviceWorker }, documentRef, windowRef });
-  assert.equal(receipt.generation, "nexilabs-shell-v16");
-  assert.equal(documentRef.documentElement.dataset.shellGeneration, "nexilabs-shell-v16");
+  assert.equal(receipt.generation, "nexilabs-shell-v17");
+  assert.equal(documentRef.documentElement.dataset.shellGeneration, "nexilabs-shell-v17");
   assert.deepEqual(waiting.messages, [{ type: "SKIP_WAITING" }]);
   receipt.dispose();
 });
@@ -127,5 +127,5 @@ test("P006.UI.16 browser registration generation is derived from the current cac
   const { PWA_SHELL_GENERATION } = await import("../src/pwa/service-worker-registration.js");
   const { PWA_CACHE_VERSION } = await import("../src/pwa/cache-policy.js");
   assert.equal(PWA_SHELL_GENERATION, PWA_CACHE_VERSION);
-  assert.equal(PWA_SHELL_GENERATION, "nexilabs-shell-v16");
+  assert.equal(PWA_SHELL_GENERATION, "nexilabs-shell-v17");
 });
