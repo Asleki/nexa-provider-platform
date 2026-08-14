@@ -1,0 +1,11 @@
+audit_event_id,event_type,subject_reference,actor_reference,event_time,runtime_effect_scope,result,details
+AUD-D-000001,PHASE_D_CONSTRUCTION_STARTED,NNGLA Phase D CSV Authority Pack,builder:chatgpt,2026-08-12,SHARED_REFERENCE,SUCCESS,Population-first rebuild initiated
+AUD-D-000002,NAMING_CORPUS_DERIVED,04_name_catalogues,builder:chatgpt,2026-08-12,SHARED_REFERENCE,SUCCESS,"Derived from 700 places, nicknames, tribes, region names and governed NoveGeo person-name seeds"
+AUD-D-000003,SOURCE_GEOGRAPHY_REFERENCED,05_geographic_candidates,builder:chatgpt,2026-08-12,SHARED_REFERENCE,SUCCESS,"Qualified hydrology, landforms and sovereign geometry referenced without inventing replacement coordinates"
+AUD-D-000004,CSV_VALIDATION_COMPLETED,NNGLA Phase D CSV Authority Pack,validator:python,2026-08-12,SHARED_REFERENCE,SUCCESS,60 validations passed; 0 failed
+AUD-D-000005,DATABASE_MIGRATION_STATUS,PostgreSQL/PostGIS,builder:chatgpt,2026-08-12,SHARED_REFERENCE,NOT_EXECUTED,Phase D prepares migration-source CSVs only; no database writes performed
+AUD-D-000006,PHASE_D1_INTEGRITY_CORRECTION_STARTED,NNGLA Phase D CSV Authority Pack,validator:python,2026-08-13,SHARED_REFERENCE,SUCCESS,Preserved every Phase D artifact; corrected only verified migration-readiness integrity defects.
+AUD-D-000007,GEOGRAPHIC_NAME_NAMESPACE_REPAIRED,04_name_catalogues/plain_name_catalogue.csv|04_name_catalogues/plateau_name_catalogue.csv,validator:python,2026-08-13,SHARED_REFERENCE,SUCCESS,Plain uses NG-NAM-PLN-* and Plateau uses NG-NAM-PLT-*; dependent name assignments updated.
+AUD-D-000008,IDENTIFIER_FORMAT_REGISTRY_RECONCILED,03_authority_identifiers/novegeo_identifier_format_register.csv,validator:python,2026-08-13,SHARED_REFERENCE,SUCCESS,Format registry now matches populated geographic-name families and declared geometry/hydrology/landform namespaces.
+AUD-D-000009,GEOMETRY_SOURCE_HASHES_PINNED,05_geographic_candidates/geometry_version_candidates.csv,validator:python,2026-08-13,SHARED_REFERENCE,SUCCESS,Each geometry candidate records SHA-256 of its existing governed repository source artifact.
+AUD-D-000010,PHASE_D1_MIGRATION_GRADE_VALIDATION_COMPLETED,NNGLA Phase D.1 CSV Authority Pack,validator:python,2026-08-13,SHARED_REFERENCE,SUCCESS,Global and cross-file validation completed with zero blockers; database migration not executed.

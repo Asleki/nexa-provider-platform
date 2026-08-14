@@ -1,0 +1,8 @@
+{
+  "bundle": "P006.7.2 Bundle 14C",
+  "source_pack": "NNGLA_Phase_D1_CSV_Authority_Pack_2026-08-13_VALIDATED.zip",
+  "source_member": "10_evidence/novegeo_immutable_audit_event.csv",
+  "purpose": "Historical source evidence only; not live NPP runtime audit storage.",
+  "sha256": "e3f12f62076d52b937a71f19f4cbf3f67c98bca7cad2f1cb84173df0ecd99507",
+  "database_migration_claim": "NOT_EXECUTED"
+}
