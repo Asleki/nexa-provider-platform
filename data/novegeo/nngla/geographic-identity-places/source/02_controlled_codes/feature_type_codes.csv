@@ -1,0 +1,50 @@
+feature_type_code,feature_family_code,canonical_label,geometry_expectation,origin_class,nngla_recognizable,nngla_creatable,nameable,supports_history,status,effective_from,effective_to,description
+COUNTRY,ADMIN,Country,MULTIPOLYGON,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,Country
+MAINLAND,NATURAL,Mainland,POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Mainland
+ISLAND,NATURAL,Island,POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Island
+REGION,ADMIN,Region,POLYGON,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,Region
+DISTRICT,ADMIN,District,POLYGON,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,District
+MUNICIPALITY,ADMIN,Municipality,POLYGON,EMERGENT_HUMAN,true,true,true,true,ACTIVE,2026-08-12,,Municipality
+CITY,SETTLEMENT,City,POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,City
+TOWN,SETTLEMENT,Town,POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Town
+VILLAGE,SETTLEMENT,Village,POINT_OR_POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Village
+SETTLEMENT,SETTLEMENT,Settlement,POINT_OR_POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Settlement
+SUBURB,SETTLEMENT,Suburb,POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Suburb
+TOWNSHIP,SETTLEMENT,Township,POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Township
+CITY_DISTRICT,ADMIN,City district,POLYGON,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,City district
+MARKET_CENTRE,SETTLEMENT,Market centre,POINT_OR_POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Market centre
+INDUSTRIAL_ZONE,ADMIN,Industrial zone,POLYGON,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,Industrial zone
+RESORT_SETTLEMENT,SETTLEMENT,Resort settlement,POINT_OR_POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Resort settlement
+ISLAND_SETTLEMENT,SETTLEMENT,Island settlement,POINT_OR_POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Island settlement
+RIVER,HYDROLOGY,River,LINESTRING,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,River
+LAKE,HYDROLOGY,Lake,POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Lake
+WATERBODY,HYDROLOGY,Waterbody,POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Waterbody
+DRAINAGE_CHANNEL,HYDROLOGY,Drainage channel,LINESTRING,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Drainage channel
+CONFLUENCE,HYDROLOGY,Confluence,POINT,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Confluence
+MOUNTAIN,LANDFORM,Mountain,POINT_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Mountain
+HILL,LANDFORM,Hill,POINT_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Hill
+VALLEY,LANDFORM,Valley,POINT_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Valley
+PLATEAU,LANDFORM,Plateau,POINT_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Plateau
+PLAIN,LANDFORM,Plain,POINT_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Plain
+FOREST,BIOSPHERE,Forest,POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Forest
+WETLAND,BIOSPHERE,Wetland,POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Wetland
+VEGETATION_ZONE,BIOSPHERE,Vegetation zone,POLYGON,REFERENCE,true,false,false,true,ACTIVE,2026-08-12,,Vegetation zone
+ARIDITY_ZONE,BIOSPHERE,Aridity zone,POLYGON,REFERENCE,true,false,false,true,ACTIVE,2026-08-12,,Aridity zone
+BAY,COASTAL,Bay,POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Bay
+CAPE,COASTAL,Cape,POINT_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Cape
+COASTLINE,COASTAL,Coastline,LINESTRING,NATURAL,true,false,true,true,ACTIVE,2026-08-12,,Coastline
+LANDMARK,REFERENCE,Landmark,POINT_OR_POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Landmark
+ROAD,TRANSPORT,Road,LINESTRING,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Road
+BRIDGE,TRANSPORT,Bridge,LINESTRING_OR_POINT,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Bridge
+SQUARE,TRANSPORT,Public square,POLYGON,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Public square
+ROAD_RESERVE,LEGAL_SPATIAL,Road reserve,POLYGON,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,Road reserve
+INTERSECTION,TRANSPORT,Road intersection,POINT,EMERGENT_HUMAN,true,false,true,true,ACTIVE,2026-08-12,,Road intersection
+SURVEY_CONTROL_POINT,GEODESY,Survey control point,POINT,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,Survey control point
+BENCHMARK,GEODESY,Survey benchmark,POINT,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,Survey benchmark
+PARCEL,CADASTRE,Land parcel,POLYGON,LEGAL_CONSTRUCT,true,true,false,true,ACTIVE,2026-08-12,,Land parcel
+CADASTRAL_SECTION,CADASTRE,Cadastral section,POLYGON,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,Cadastral section
+EASEMENT,CADASTRE,Easement,POLYGON_OR_LINESTRING,LEGAL_CONSTRUCT,true,true,false,true,ACTIVE,2026-08-12,,Easement
+SERVITUDE,CADASTRE,Servitude,POLYGON_OR_LINESTRING,LEGAL_CONSTRUCT,true,true,false,true,ACTIVE,2026-08-12,,Servitude
+RIGHT_OF_WAY,CADASTRE,Right of way,POLYGON_OR_LINESTRING,LEGAL_CONSTRUCT,true,true,false,true,ACTIVE,2026-08-12,,Right of way
+STATE_LAND_BLOCK,CADASTRE,State land block,POLYGON,LEGAL_CONSTRUCT,true,true,true,true,ACTIVE,2026-08-12,,State land block
+ADMINISTRATIVE_BOUNDARY,ADMIN,Administrative boundary,LINESTRING_OR_POLYGON,LEGAL_CONSTRUCT,true,true,false,true,ACTIVE,2026-08-12,,Administrative boundary

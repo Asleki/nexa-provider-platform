@@ -1,0 +1,18 @@
+gazette_action_code,canonical_label,subject_family,creates_legal_effect,requires_previous_record,reversible,status,description
+ESTABLISH,Establish,MULTI,true,false,true,ACTIVE,Establish
+NAME,Name,MULTI,true,false,true,ACTIVE,Name
+RENAME,Rename,MULTI,true,true,true,ACTIVE,Rename
+CLASSIFY,Classify,MULTI,true,false,true,ACTIVE,Classify
+RECLASSIFY,Reclassify,MULTI,true,true,true,ACTIVE,Reclassify
+DEFINE_BOUNDARY,Define Boundary,MULTI,true,false,true,ACTIVE,Define Boundary
+ALTER_BOUNDARY,Alter Boundary,MULTI,true,true,true,ACTIVE,Alter Boundary
+MERGE,Merge,MULTI,true,false,true,ACTIVE,Merge
+SPLIT,Split,MULTI,true,false,true,ACTIVE,Split
+CREATE,Create,MULTI,true,false,true,ACTIVE,Create
+CANCEL,Cancel,MULTI,true,true,false,ACTIVE,Cancel
+REVOKE,Revoke,MULTI,true,true,false,ACTIVE,Revoke
+RESTORE,Restore,MULTI,true,true,true,ACTIVE,Restore
+DECLARE,Declare,MULTI,true,false,true,ACTIVE,Declare
+RESERVE,Reserve,MULTI,true,false,true,ACTIVE,Reserve
+RELEASE,Release,MULTI,true,false,true,ACTIVE,Release
+SUPERSEDE,Supersede,MULTI,true,true,true,ACTIVE,Supersede

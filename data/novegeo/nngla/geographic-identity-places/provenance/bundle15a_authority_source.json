@@ -1,0 +1,137 @@
+{
+  "bundle": "15A",
+  "milestones": [
+    "P006.7.3",
+    "P006.7.4"
+  ],
+  "authority_pack": "NNGLA_Phase_D1_CSV_Authority_Pack_2026-08-13_VALIDATED",
+  "copied_at_utc": "2026-08-14T02:17:00Z",
+  "source_files": [
+    {
+      "path": "source/02_controlled_codes/feature_type_codes.csv",
+      "sha256": "f098ab2c5e47287764aca78c0cfa150810e8aecfab7ac821b9c1230c553c0a27",
+      "bytes": 5417
+    },
+    {
+      "path": "source/02_controlled_codes/gazette_action_types.csv",
+      "sha256": "8dac80b16ca9ef67e7584cfa90837433a4d900814581174d285c34c7f3be722e",
+      "bytes": 1077
+    },
+    {
+      "path": "source/02_controlled_codes/naming_status_codes.csv",
+      "sha256": "c5e97d2266bcf64f9f963ff267d6819e530937a422744a745687af5adaa18291",
+      "bytes": 1062
+    },
+    {
+      "path": "source/04_name_catalogues/administrative_name_catalogue.csv",
+      "sha256": "3c337c382828cd4a2d900511764f289294770798b5068fa402d733b58ad02fe2",
+      "bytes": 98729
+    },
+    {
+      "path": "source/04_name_catalogues/bay_name_catalogue.csv",
+      "sha256": "970758c6c70693a8a1c71919d2f679ba7415a1a81685dc04e1f1116a91c37364",
+      "bytes": 41350
+    },
+    {
+      "path": "source/04_name_catalogues/bridge_name_catalogue.csv",
+      "sha256": "76d254cb9e1021369ea762ae0e45ad1c5d44ace7b6901e8e6a2bfc7ba1877a14",
+      "bytes": 76219
+    },
+    {
+      "path": "source/04_name_catalogues/cape_name_catalogue.csv",
+      "sha256": "47afa6ae17ccc2eed28d54adf0a6efe7eeba95a85d8e03f059315b7569e430ae",
+      "bytes": 41170
+    },
+    {
+      "path": "source/04_name_catalogues/forest_name_catalogue.csv",
+      "sha256": "db2c00097f2ce5fab8812d6d36ba84a6f5c0a323a27d817d2c381dbc5d03928e",
+      "bytes": 60559
+    },
+    {
+      "path": "source/04_name_catalogues/hill_name_catalogue.csv",
+      "sha256": "7e908dcc42193f3b1cdf57bba56f782093226527ad535c91e4a99cd7916c5f22",
+      "bytes": 64748
+    },
+    {
+      "path": "source/04_name_catalogues/island_name_catalogue.csv",
+      "sha256": "6d38761e6dd52521178c972916181fd147820d71adf9203dbec25fb1abd664a3",
+      "bytes": 41530
+    },
+    {
+      "path": "source/04_name_catalogues/lake_name_catalogue.csv",
+      "sha256": "4eaa46d107964044f4f82b5473ba939f195c10c4a17b74df5c08f1c8287dec51",
+      "bytes": 50447
+    },
+    {
+      "path": "source/04_name_catalogues/landmark_name_catalogue.csv",
+      "sha256": "276d031aed2d62f8991298c5eea2456e7c7d0362cf82d3e3d4fb26e406b88eb7",
+      "bytes": 71515
+    },
+    {
+      "path": "source/04_name_catalogues/mountain_name_catalogue.csv",
+      "sha256": "ae610575a42b1110bb99ef61c13a20132a1acb8f6d6a18b3029f97d621a1b3d7",
+      "bytes": 61340
+    },
+    {
+      "path": "source/04_name_catalogues/plain_name_catalogue.csv",
+      "sha256": "ba9c49fe4132d31ab66e17ae7b2cce5a586eea2d51a7f7e2a56ec66b4e42d36b",
+      "bytes": 41709
+    },
+    {
+      "path": "source/04_name_catalogues/plateau_name_catalogue.csv",
+      "sha256": "3ac38f7dbe7b2810847676c604b8b777e69a770cfc06526680645c5c93c15101",
+      "bytes": 43329
+    },
+    {
+      "path": "source/04_name_catalogues/river_name_catalogue.csv",
+      "sha256": "f35c7845b2afe366c3e9737d1c96706b9a289954793bd982f8c5e208b37cc88e",
+      "bytes": 73604
+    },
+    {
+      "path": "source/04_name_catalogues/road_name_catalogue.csv",
+      "sha256": "dd74faae3b4f21e3ca9f023d8bccada92bc6712748fe42ce24a29b303f93624c",
+      "bytes": 325467
+    },
+    {
+      "path": "source/04_name_catalogues/settlement_name_catalogue.csv",
+      "sha256": "e6598eb8f5ca85351c11fe23629ec834d6130428a200a046ac37ddab19a4b616",
+      "bytes": 364158
+    },
+    {
+      "path": "source/04_name_catalogues/square_name_catalogue.csv",
+      "sha256": "64f4b993c647868d6a5f5e109055dd98b7e10b908389a4eaa4af58c5f304cd3a",
+      "bytes": 65926
+    },
+    {
+      "path": "source/04_name_catalogues/valley_name_catalogue.csv",
+      "sha256": "cf2ad67309d8f169508b7c376e8ed2f0b590a5dd35c4fa546d74827d2c8ee4c7",
+      "bytes": 56083
+    },
+    {
+      "path": "source/04_name_catalogues/wetland_name_catalogue.csv",
+      "sha256": "64d769d8c08fd6fe1fee8cca05888a29d0527999e70eb6ab8747da6415a343e6",
+      "bytes": 42610
+    },
+    {
+      "path": "source/05_geographic_candidates/administrative_area_candidates.csv",
+      "sha256": "61b83d76fa7324e8e062e7dc479c6958ceba15a8dfff170fab17fbffe6a48e00",
+      "bytes": 37554
+    },
+    {
+      "path": "source/05_geographic_candidates/geographic_feature_candidates.csv",
+      "sha256": "27ccd9919d42294f42b46449606af5ad88b4d7df1503eb8dd6c115d54c911c39",
+      "bytes": 7694
+    },
+    {
+      "path": "source/08_relationships/feature_name_assignment_candidates.csv",
+      "sha256": "de64f7da5414d7fcba8bdea1eeaa835d4ba34a11a9c46acd425b2c59cdb173e1",
+      "bytes": 4435
+    }
+  ],
+  "notes": [
+    "Governed source evidence only; not canonical operational state.",
+    "700 settlement rows remain UNMAPPED_PENDING_ASSOCIATION.",
+    "192 administrative candidates remain non-spatial; boundaries deferred to P006.7.5.",
+    "Feature-name assignment candidates remain proposed and ungazetted."
+  ]
+}

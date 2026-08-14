@@ -1,0 +1,16 @@
+naming_status_code,canonical_label,can_display_publicly,can_be_primary_name,requires_approval,requires_gazette,terminal_status,description
+UNASSIGNED,Unassigned,false,false,false,false,false,Unassigned
+NAME_CANDIDATE,Name Candidate,false,false,false,false,false,Name Candidate
+AVAILABLE,Available,false,false,true,false,false,Available
+RESERVED,Reserved,false,false,true,false,false,Reserved
+PROPOSED,Proposed,false,false,true,false,false,Proposed
+UNDER_REVIEW,Under Review,false,false,true,false,false,Under Review
+APPROVED,Approved,false,false,true,false,false,Approved
+GAZETTE_PENDING,Gazette Pending,false,false,true,true,false,Gazette Pending
+GAZETTED,Gazetted,true,true,true,true,false,Gazetted
+ACTIVE_OFFICIAL,Active Official,true,true,true,true,false,Active Official
+RENAMED,Renamed,false,false,true,true,false,Renamed
+HISTORIC,Historic,true,false,true,true,false,Historic
+RETIRED,Retired,false,false,true,false,true,Retired
+REJECTED,Rejected,false,false,true,false,true,Rejected
+PROTECTED,Protected,true,false,true,false,false,Protected

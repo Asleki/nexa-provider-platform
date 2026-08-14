@@ -74,7 +74,7 @@ C|P006.4|Map View State Persistence and Recovery
 C|P006.5|Versioned Dynamic World-State Updates
 C|P006.6|Interaction and Dynamic-State Tests
 C|P006.7|NoveGeo Sovereign Country & NNGLA Spatial Authority Foundation
-P|P006.7.1|NoveGeo Sovereign Country Reference
+C|P006.7.1|NoveGeo Sovereign Country Reference
 C|P006.7.1.1|Country Identity Contract
 C|P006.7.1.2|Synthetic Country-Code Authority
 C|P006.7.1.3|Realm, Runtime, Effect & Approval Dimensions
@@ -96,8 +96,8 @@ C|P006.7.2.7|PostgreSQL/PostGIS Schema Foundation
 C|P006.7.2.8|Migration & Canonicalization Controls
 C|P006.7.2.9|Event, Audit & Publication Infrastructure
 C|P006.7.2.10|NNGLA Foundation Qualification
-P|P006.7.3|NNGLA Geographic Recognition & Naming
-P|P006.7.4|NNGLA Administrative Geography & Places
+C|P006.7.3|NNGLA Geographic Recognition & Naming
+C|P006.7.4|NNGLA Administrative Geography & Places
 P|P006.7.5|NNGLA Geodesy, Survey & Authoritative Geometry
 P|P006.7.6|NNGLA Roads, Addresses & Addressable Sites
 P|P006.7.7|NNGLA Cadastre & Parcel Authority

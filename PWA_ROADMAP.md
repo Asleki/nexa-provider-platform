@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **81 canonical records**
 
-`██████████████████████░░░░░░░░` **72.84%**
+`███████████████████████░░░░░░░` **76.54%**
 
-**59 completed** · **22 planned** · **8 root milestones**
+**62 completed** · **19 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **72.84%** |
-| Completed records | **59** |
-| Planned records | **22** |
+| Overall progress | **76.54%** |
+| Completed records | **62** |
+| Planned records | **19** |
 | Total roadmap records | **81** |
 | Root milestones | **8** |
 
@@ -48,7 +48,7 @@
 - [✅ **P003 — Installable and Offline PWA**](#p003) — 6/6 complete (100.0%)
 - [✅ **P004 — NoveGeo World Geometry and Map Core**](#p004) — 7/7 complete (100.0%)
 - [✅ **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 7/7 complete (100.0%)
-- [✅ **P006 — Map Interaction and Dynamic World State**](#p006) — 29/38 complete (76.3%)
+- [✅ **P006 — Map Interaction and Dynamic World State**](#p006) — 32/38 complete (84.2%)
 - [🟦 **P007 — AWS Hosting and Release Operations**](#p007) — 0/6 complete (0.0%)
 - [🟦 **P008 — Secure NPP Data Access and Alpha Qualification**](#p008) — 0/7 complete (0.0%)
 
@@ -63,7 +63,7 @@
 | [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 6 | 100.0% |
 | [P004](#p004) | NoveGeo World Geometry and Map Core | ✅ Completed | 7 | 7 | 100.0% |
 | [P005](#p005) | Terrain, Water, Climate and Vegetation | ✅ Completed | 7 | 7 | 100.0% |
-| [P006](#p006) | Map Interaction and Dynamic World State | ✅ Completed | 38 | 29 | 76.3% |
+| [P006](#p006) | Map Interaction and Dynamic World State | ✅ Completed | 38 | 32 | 84.2% |
 | [P007](#p007) | AWS Hosting and Release Operations | 🟦 Planned | 6 | 0 | 0.0% |
 | [P008](#p008) | Secure NPP Data Access and Alpha Qualification | 🟦 Planned | 7 | 0 | 0.0% |
 
@@ -414,7 +414,7 @@
 <a id="p006"></a>
 ### ✅ P006 — Map Interaction and Dynamic World State
 
-`███████████████░░░░░` **29/38 complete (76.3%)**
+`█████████████████░░░` **32/38 complete (84.2%)**
 
 <details>
 <summary><strong>Open P006 roadmap records (38 items)</strong></summary>
@@ -491,9 +491,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Map Interaction and Dynamic World State / NoveGeo Sovereign Country & NNGLA Spatial Authority Foundation`
 &nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P006.7.1` — NoveGeo Sovereign Country Reference**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P006.7.1` — NoveGeo Sovereign Country Reference**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-3dece3df99f483469326`
@@ -689,18 +689,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Map Interaction and Dynamic World State / NoveGeo Sovereign Country & NNGLA Spatial Authority Foundation / NNGLA Authority & Spatial Identity Foundation / NNGLA Foundation Qualification`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P006.7.3` — NNGLA Geographic Recognition & Naming**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P006.7.3` — NNGLA Geographic Recognition & Naming**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-7c019967caa9502a18ae`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Map Interaction and Dynamic World State / NoveGeo Sovereign Country & NNGLA Spatial Authority Foundation / NNGLA Geographic Recognition & Naming`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P006.7.4` — NNGLA Administrative Geography & Places**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P006.7.4` — NNGLA Administrative Geography & Places**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-9c508aba2deac3711cf0`
@@ -920,6 +920,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `81` |
-| Canonical content checksum | `e567d79fdc2d652f3206065c5f5f05e5284c2e28f30a6c818de5ad76ccaa38c6` |
+| Canonical content checksum | `2e48fa73816d8ec694e8015bd6decd373d12f154ddeb42dc2a78fed40557dc05` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.
