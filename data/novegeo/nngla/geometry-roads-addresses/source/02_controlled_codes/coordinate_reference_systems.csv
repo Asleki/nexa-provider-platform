@@ -1,0 +1,2 @@
+crs_code,authority_name,authority_code,canonical_name,axis_order,horizontal_unit,vertical_unit,is_geographic,is_default_novegeo,status,effective_from,effective_to,notes
+NG-CRS-EPSG4326,EPSG,4326,WGS 84,LONGITUDE_LATITUDE,decimal_degree,,true,true,ACTIVE,2026-08-12,,Existing NoveGeo geographic CRS contract

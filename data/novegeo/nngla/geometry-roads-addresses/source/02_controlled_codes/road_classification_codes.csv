@@ -1,0 +1,11 @@
+road_class_code,canonical_label,administrative_level,access_scope,intended_function,nameable,addressable,parcel_access_eligible,status,description
+NATIONAL,National,national,public,strategic,true,true,true,ACTIVE,National
+REGIONAL,Regional,regional,public,regional_connector,true,true,true,ACTIVE,Regional
+DISTRICT,District,district,public,district_connector,true,true,true,ACTIVE,District
+MUNICIPAL,Municipal,municipal,public,urban_mobility,true,true,true,ACTIVE,Municipal
+LOCAL,Local,local,public,local_access,true,true,true,ACTIVE,Local
+RURAL,Rural,local,public,rural_access,true,true,true,ACTIVE,Rural
+ACCESS,Access,local,restricted_or_public,property_access,true,true,true,ACTIVE,Access
+SERVICE,Service,local,restricted,service_access,true,true,true,ACTIVE,Service
+UNCLASSIFIED,Unclassified,unclassified,public,unclassified,true,true,true,ACTIVE,Unclassified
+PRIVATE_REFERENCE,Private Reference,private,private,private_access,true,true,true,ACTIVE,Private Reference

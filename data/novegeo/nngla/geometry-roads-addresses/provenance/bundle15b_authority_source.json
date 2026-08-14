@@ -1,0 +1,53 @@
+{
+  "bundle": "15B",
+  "source_pack": "NNGLA_Phase_D1_CSV_Authority_Pack_2026-08-13_VALIDATED.zip",
+  "source_pack_sha256": "4b6d5e4bc7678d04c3876b607f49e8bcd2987078b990e53f3d2c4719b74b04c6",
+  "copy_policy": "BYTE_EXACT_GOVERNED_SOURCE_SNAPSHOT",
+  "files": [
+    {
+      "relative_path": "02_controlled_codes/coordinate_reference_systems.csv",
+      "sha256": "bb5a1a3323b2755efb7e2cc036c3b11fc8ba65ffdf8cb0b392c843de178062f1",
+      "row_count": 1
+    },
+    {
+      "relative_path": "02_controlled_codes/geometry_type_codes.csv",
+      "sha256": "d12d578b91ca4be256a05954078eaebbd143f3015f88dcc73cc5ecaaa59b0308",
+      "row_count": 6
+    },
+    {
+      "relative_path": "02_controlled_codes/survey_accuracy_classes.csv",
+      "sha256": "a1d7b87f2b281c7f47a8fd6f18b2fa537789942eeb9a5583a0eee7a8fe68f064",
+      "row_count": 6
+    },
+    {
+      "relative_path": "02_controlled_codes/road_classification_codes.csv",
+      "sha256": "1f995ea9576b9ce0dd7557f4da11ab0a5c6ee64814b655c22725759c473e889a",
+      "row_count": 10
+    },
+    {
+      "relative_path": "05_geographic_candidates/geometry_version_candidates.csv",
+      "sha256": "9942d01483e9f180739587f8b3b46cbea42785738ae7cd1145055788fee911bc",
+      "row_count": 21
+    },
+    {
+      "relative_path": "05_geographic_candidates/survey_control_point_candidates.csv",
+      "sha256": "778438ffd64ff21f6ef4aa9cc21ff4f33ff0e75036adcb31c8ab30bba6de1574",
+      "row_count": 0
+    },
+    {
+      "relative_path": "06_roads_addresses/road_reference_candidates.csv",
+      "sha256": "ae4e334fad728bb676f38d1bda2f3504cdc7ee86db9d8c66ec7455949bf55339",
+      "row_count": 900
+    },
+    {
+      "relative_path": "06_roads_addresses/address_reference_candidates.csv",
+      "sha256": "aa98d49ef377788e0b3ba4feb6084a60e171ce5bab7b8359a72c052666d6e341",
+      "row_count": 0
+    }
+  ],
+  "notes": [
+    "Survey-control and address candidate registers remain intentionally empty.",
+    "Road references remain RESERVED_REFERENCE and unmapped.",
+    "No live PostgreSQL migration executed."
+  ]
+}

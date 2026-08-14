@@ -98,8 +98,8 @@ C|P006.7.2.9|Event, Audit & Publication Infrastructure
 C|P006.7.2.10|NNGLA Foundation Qualification
 C|P006.7.3|NNGLA Geographic Recognition & Naming
 C|P006.7.4|NNGLA Administrative Geography & Places
-P|P006.7.5|NNGLA Geodesy, Survey & Authoritative Geometry
-P|P006.7.6|NNGLA Roads, Addresses & Addressable Sites
+C|P006.7.5|NNGLA Geodesy, Survey & Authoritative Geometry
+C|P006.7.6|NNGLA Roads, Addresses & Addressable Sites
 P|P006.7.7|NNGLA Cadastre & Parcel Authority
 P|P006.7.8|NNGLA Titles, Tenure & State Land
 P|P006.7.9|NNGLA Publication, Read Models & PWA Integration

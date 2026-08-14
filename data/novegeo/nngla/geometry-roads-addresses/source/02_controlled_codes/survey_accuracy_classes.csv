@@ -1,0 +1,7 @@
+accuracy_class_code,canonical_label,usage_scope,horizontal_accuracy_rule,vertical_accuracy_rule,legal_boundary_eligible,control_point_eligible,informational_only,requires_instrument_record,requires_surveyor_approval,status,notes
+REFERENCE_ONLY,Reference only,cartographic_reference,PENDING_POLICY,PENDING_POLICY,false,false,true,false,false,ACTIVE,Numeric tolerances intentionally deferred to formal survey policy
+MAP_APPROXIMATE,Map approximate,general_mapping,PENDING_POLICY,PENDING_POLICY,false,false,true,false,false,ACTIVE,Numeric tolerances intentionally deferred to formal survey policy
+GENERAL_SURVEY,General survey,survey,PENDING_POLICY,PENDING_POLICY,false,true,false,true,true,ACTIVE,Numeric tolerances intentionally deferred to formal survey policy
+CONTROL_SURVEY,Control survey,geodesy,PENDING_POLICY,PENDING_POLICY,true,true,false,true,true,ACTIVE,Numeric tolerances intentionally deferred to formal survey policy
+CADASTRAL_SURVEY,Cadastral survey,cadastre,PENDING_POLICY,PENDING_POLICY,true,true,false,true,true,ACTIVE,Numeric tolerances intentionally deferred to formal survey policy
+LEGAL_BOUNDARY,Legal boundary,legal_boundary,PENDING_POLICY,PENDING_POLICY,true,true,false,true,true,ACTIVE,Numeric tolerances intentionally deferred to formal survey policy
