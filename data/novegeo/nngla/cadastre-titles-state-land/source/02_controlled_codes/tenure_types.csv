@@ -1,0 +1,8 @@
+tenure_type_code,canonical_label,ownership_model,transferable,lease_based,state_interest_possible,status,description
+FREEHOLD,Freehold,private_ownership,true,false,false,ACTIVE,Freehold
+LEASEHOLD,Leasehold,lease,true,true,true,ACTIVE,Leasehold
+STATE,State,state_ownership,false,false,true,ACTIVE,State
+PUBLIC,Public,public_ownership,false,false,true,ACTIVE,Public
+COMMUNAL,Communal,communal,limited,false,true,ACTIVE,Communal
+CUSTOMARY,Customary,customary,limited,false,true,ACTIVE,Customary
+JOINT,Joint,joint_private,true,false,false,ACTIVE,Joint

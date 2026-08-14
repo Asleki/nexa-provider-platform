@@ -1,0 +1,14 @@
+land_use_code,canonical_label,category,allows_mixed_use,legal_classification,status,description
+RESIDENTIAL,Residential,RESIDENTIAL,false,true,ACTIVE,Residential
+COMMERCIAL,Commercial,COMMERCIAL,false,true,ACTIVE,Commercial
+INDUSTRIAL,Industrial,INDUSTRIAL,false,true,ACTIVE,Industrial
+AGRICULTURAL,Agricultural,AGRICULTURAL,false,true,ACTIVE,Agricultural
+INSTITUTIONAL,Institutional,INSTITUTIONAL,false,true,ACTIVE,Institutional
+TRANSPORT,Transport,TRANSPORT,false,true,ACTIVE,Transport
+UTILITY,Utility,UTILITY,false,true,ACTIVE,Utility
+CONSERVATION,Conservation,CONSERVATION,false,true,ACTIVE,Conservation
+FORESTRY,Forestry,FORESTRY,false,true,ACTIVE,Forestry
+RECREATION,Recreation,RECREATION,false,true,ACTIVE,Recreation
+WATER,Water,WATER,false,true,ACTIVE,Water
+UNCLASSIFIED,Unclassified,UNCLASSIFIED,false,true,ACTIVE,Unclassified
+MIXED_USE,Mixed Use,MIXED_USE,true,true,ACTIVE,Mixed Use

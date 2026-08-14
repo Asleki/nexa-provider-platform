@@ -1,0 +1,7 @@
+state_land_category_code,canonical_label,purpose,allocatable,leaseable,protected,status,description
+GENERAL_STATE_LAND,General State Land,general,true,true,false,ACTIVE,General State Land
+PUBLIC_RESERVE,Public Reserve,public_reserve,false,false,true,ACTIVE,Public Reserve
+INFRASTRUCTURE_RESERVE,Infrastructure Reserve,infrastructure,false,limited,true,ACTIVE,Infrastructure Reserve
+CONSERVATION_RESERVE,Conservation Reserve,conservation,false,false,true,ACTIVE,Conservation Reserve
+ADMINISTRATIVE_LAND,Administrative Land,government_use,false,false,true,ACTIVE,Administrative Land
+FUTURE_ALLOCATION,Future Allocation,future_allocation,true,true,false,ACTIVE,Future Allocation

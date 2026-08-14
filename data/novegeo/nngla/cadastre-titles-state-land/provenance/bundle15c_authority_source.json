@@ -1,0 +1,46 @@
+{
+  "bundle": "P006.7 Bundle 15C",
+  "authority_source": "NNGLA_Phase_D1_CSV_Authority_Pack_2026-08-13_VALIDATED",
+  "source_classification": "GOVERNED_AUTHORITY_SNAPSHOT",
+  "files": [
+    {
+      "path": "source/02_controlled_codes/land_use_codes.csv",
+      "sha256": "4d929c22156bbf679b45edf91e62631f876b56234d787226633674066d348677",
+      "bytes": 907
+    },
+    {
+      "path": "source/02_controlled_codes/state_land_categories.csv",
+      "sha256": "742b0affec3368b34fa660fa383973f137adfde21407f30408907001ab0b5f37",
+      "bytes": 683
+    },
+    {
+      "path": "source/02_controlled_codes/tenure_types.csv",
+      "sha256": "35f57c08b18fad2ef5952bf16d2a7262b0e24f115e8f31b2b4a9a8c926e53a87",
+      "bytes": 556
+    },
+    {
+      "path": "source/02_controlled_codes/title_types.csv",
+      "sha256": "8fa6acd94c3359018dd73029ffd406f6e131c74b616861482a772f227a7bcca9",
+      "bytes": 577
+    },
+    {
+      "path": "source/07_land/parcel_bootstrap.csv",
+      "sha256": "03f3937f52b84135b44a8aa6e343f0f57a76b3a3a3d8d09a7253b13d6009b3b3",
+      "bytes": 181
+    },
+    {
+      "path": "source/07_land/state_land_bootstrap.csv",
+      "sha256": "511ff5195b4a6db0cbd9ff56e2848ad97a763c9b7e59c8e9a956e96b5389d641",
+      "bytes": 132
+    },
+    {
+      "path": "source/07_land/title_bootstrap.csv",
+      "sha256": "a659637607c6e9533b3628757857672ad39cfc6fe571975aa8cfb178fb4af312",
+      "bytes": 128
+    }
+  ],
+  "notes": [
+    "The parcel, title, and state-land bootstrap registers are intentionally real governed empty registers.",
+    "No Soko Properties data is an NNGLA source or dependency."
+  ]
+}

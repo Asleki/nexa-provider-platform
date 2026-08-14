@@ -100,8 +100,8 @@ C|P006.7.3|NNGLA Geographic Recognition & Naming
 C|P006.7.4|NNGLA Administrative Geography & Places
 C|P006.7.5|NNGLA Geodesy, Survey & Authoritative Geometry
 C|P006.7.6|NNGLA Roads, Addresses & Addressable Sites
-P|P006.7.7|NNGLA Cadastre & Parcel Authority
-P|P006.7.8|NNGLA Titles, Tenure & State Land
+C|P006.7.7|NNGLA Cadastre & Parcel Authority
+C|P006.7.8|NNGLA Titles, Tenure & State Land
 P|P006.7.9|NNGLA Publication, Read Models & PWA Integration
 P|P006.7.10|Sovereign Spatial Qualification & Registry Readiness
 P|P007|AWS Hosting and Release Operations

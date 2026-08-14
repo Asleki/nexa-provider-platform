@@ -6,9 +6,9 @@
 
 **Version 0.2.0** · **P001 → P008.6** · **81 canonical records**
 
-`████████████████████████░░░░░░` **79.01%**
+`████████████████████████░░░░░░` **81.48%**
 
-**64 completed** · **17 planned** · **8 root milestones**
+**66 completed** · **15 planned** · **8 root milestones**
 
 </div>
 
@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---:|
-| Overall progress | **79.01%** |
-| Completed records | **64** |
-| Planned records | **17** |
+| Overall progress | **81.48%** |
+| Completed records | **66** |
+| Planned records | **15** |
 | Total roadmap records | **81** |
 | Root milestones | **8** |
 
@@ -48,7 +48,7 @@
 - [✅ **P003 — Installable and Offline PWA**](#p003) — 6/6 complete (100.0%)
 - [✅ **P004 — NoveGeo World Geometry and Map Core**](#p004) — 7/7 complete (100.0%)
 - [✅ **P005 — Terrain, Water, Climate and Vegetation**](#p005) — 7/7 complete (100.0%)
-- [✅ **P006 — Map Interaction and Dynamic World State**](#p006) — 34/38 complete (89.5%)
+- [✅ **P006 — Map Interaction and Dynamic World State**](#p006) — 36/38 complete (94.7%)
 - [🟦 **P007 — AWS Hosting and Release Operations**](#p007) — 0/6 complete (0.0%)
 - [🟦 **P008 — Secure NPP Data Access and Alpha Qualification**](#p008) — 0/7 complete (0.0%)
 
@@ -63,7 +63,7 @@
 | [P003](#p003) | Installable and Offline PWA | ✅ Completed | 6 | 6 | 100.0% |
 | [P004](#p004) | NoveGeo World Geometry and Map Core | ✅ Completed | 7 | 7 | 100.0% |
 | [P005](#p005) | Terrain, Water, Climate and Vegetation | ✅ Completed | 7 | 7 | 100.0% |
-| [P006](#p006) | Map Interaction and Dynamic World State | ✅ Completed | 38 | 34 | 89.5% |
+| [P006](#p006) | Map Interaction and Dynamic World State | ✅ Completed | 38 | 36 | 94.7% |
 | [P007](#p007) | AWS Hosting and Release Operations | 🟦 Planned | 6 | 0 | 0.0% |
 | [P008](#p008) | Secure NPP Data Access and Alpha Qualification | 🟦 Planned | 7 | 0 | 0.0% |
 
@@ -414,7 +414,7 @@
 <a id="p006"></a>
 ### ✅ P006 — Map Interaction and Dynamic World State
 
-`██████████████████░░` **34/38 complete (89.5%)**
+`███████████████████░` **36/38 complete (94.7%)**
 
 <details>
 <summary><strong>Open P006 roadmap records (38 items)</strong></summary>
@@ -725,18 +725,18 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Map Interaction and Dynamic World State / NoveGeo Sovereign Country & NNGLA Spatial Authority Foundation / NNGLA Roads, Addresses & Addressable Sites`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P006.7.7` — NNGLA Cadastre & Parcel Authority**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P006.7.7` — NNGLA Cadastre & Parcel Authority**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-41e0c4af37c3d92aa5a6`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Semantic path:** `Map Interaction and Dynamic World State / NoveGeo Sovereign Country & NNGLA Spatial Authority Foundation / NNGLA Cadastre & Parcel Authority`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Verification:** UNVERIFIED
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟦 **`P006.7.8` — NNGLA Titles, Tenure & State Land**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✅ **`P006.7.8` — NNGLA Titles, Tenure & State Land**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Planned
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Status:** Completed
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Priority:** NORMAL
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Dependencies:** None
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **Record ID:** `nxl-pwa-rm-55913699ac32f9a5e65a`
@@ -920,6 +920,6 @@
 | Generator | `pwa_roadmap_frontend.py` |
 | Roadmap version | `0.2.0` |
 | Records rendered | `81` |
-| Canonical content checksum | `706d704c73467d3a6cbafff2056f278dabc200a9027d8e41234abe22d29522de` |
+| Canonical content checksum | `d7b6d65fe919ac36e5b41a4fe52e728ebbc44e2ba632b50a825ca7f01c4fa40c` |
 
 > The generated timestamp is intentionally omitted so unchanged canonical data produces identical output.

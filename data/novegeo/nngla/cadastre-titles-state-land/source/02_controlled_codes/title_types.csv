@@ -1,0 +1,7 @@
+title_type_code,canonical_label,tenure_type_code,registrable,transferable,requires_parcel,status,description
+FREEHOLD_TITLE,Freehold Title,FREEHOLD,true,true,true,ACTIVE,Freehold Title
+LEASEHOLD_TITLE,Leasehold Title,LEASEHOLD,true,true,true,ACTIVE,Leasehold Title
+STATE_LEASE,State Lease,STATE,true,limited,true,ACTIVE,State Lease
+COMMUNAL_HOLDING,Communal Holding,COMMUNAL,true,limited,true,ACTIVE,Communal Holding
+CUSTOMARY_HOLDING,Customary Holding,CUSTOMARY,true,limited,true,ACTIVE,Customary Holding
+JOINT_TITLE,Joint Title,JOINT,true,true,true,ACTIVE,Joint Title
