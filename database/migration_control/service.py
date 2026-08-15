@@ -6,12 +6,17 @@ from .manifest import MigrationManifestLoader
 from .discovery import MigrationDiscovery
 from .planning import MigrationPlanner
 from .errors import MigrationVerificationError, MigrationDriftError
+from .contracts import MigrationDefinition
 
 @dataclass(frozen=True,slots=True)
 class MigrationStatus:
     ledger_state:str; repository_migrations:int; applied_migrations:int; pending_migrations:int
     failed_migrations:int; started_migrations:int; checksum_mismatches:int
     unknown_database_migrations:int; plan_checksum:str
+
+@dataclass(frozen=True,slots=True)
+class AppliedStructurePlan:
+    forward_order:tuple[MigrationDefinition,...]
 
 class MigrationControlService:
     def __init__(self,migration_root:Path,manifest_path:Path,ledger,bootstrap=None,lock=None,executor=None,drift_inspector=None):
@@ -30,12 +35,28 @@ class MigrationControlService:
         return MigrationStatus('BOOTSTRAPPED' if boot else 'NOT_BOOTSTRAPPED',plan.migration_count,len(applied),pending,sum(r.status=='FAILED' for r in history),sum(r.status=='STARTED' for r in history),mismatches,unknown,plan.plan_checksum)
     def plan(self): return self.trusted_plan()
     def history(self): return self.ledger.history() if self.ledger.is_bootstrapped() else ()
+    def applied_structure_plan(self):
+        """Return the repository definitions whose ledger state is APPLIED.
+
+        Structural verification is about the database state that must exist *now*.
+        Repository migrations that are still pending declare future structure and must
+        not be treated as drift merely because their objects do not exist yet.
+        Selection is by migration identity recorded in the ledger, never by slicing
+        the first N repository definitions.
+        """
+        plan=self.trusted_plan()
+        if not self.ledger.is_bootstrapped():
+            applied_ids=frozenset()
+        else:
+            applied_ids=frozenset(r.migration_id for r in self.ledger.history() if r.status=='APPLIED')
+        forward=tuple(d for d in plan.forward_order if d.identity.migration_id in applied_ids)
+        return AppliedStructurePlan(forward)
     def verify(self, *, structural=False):
         status=self.status()
         if status.checksum_mismatches or status.unknown_database_migrations or status.started_migrations:
             raise MigrationVerificationError('repository and migration ledger are inconsistent.')
         if structural and status.applied_migrations and self.drift_inspector is not None:
-            report=self.drift_inspector.inspect_expected(self.trusted_plan())
+            report=self.drift_inspector.inspect_expected(self.applied_structure_plan())
             if not report.is_clean: raise MigrationDriftError('expected database objects are missing.')
         return status
     def apply(self,*,applied_by,database_name,environment_name,repository_revision='unknown'):

@@ -12,8 +12,10 @@ def test_p004_world_geometry_migration_is_appended_without_rewriting_locked_arti
     catalogue = MigrationManifestLoader().load(MIGRATIONS / "migration_manifest.json")
     MigrationDiscovery(MIGRATIONS).validate_catalogue(catalogue)
     plan = MigrationPlanner().create_plan(catalogue)
-    assert plan.forward_order[-1].identity.migration_id == "m004_01_02_world_geometry_authority"
-    assert plan.forward_order[-1].depends_on == ("m009_13_10_reference_registry_authoring",)
+    item = next(x for x in plan.forward_order if x.identity.migration_id == "m004_01_02_world_geometry_authority")
+    assert item.identity.sequence_number == 6
+    assert plan.forward_order[5].identity.migration_id == "m004_01_02_world_geometry_authority"
+    assert item.depends_on == ("m009_13_10_reference_registry_authoring",)
     for locked in (
         "m009_10_04_name_catalogue.sql",
         "m009_12_06_name_authority.sql",

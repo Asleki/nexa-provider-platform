@@ -1,0 +1,13 @@
+BEGIN;
+DROP TABLE IF EXISTS geography.nngla_execution_item;
+DROP TABLE IF EXISTS geography.nngla_execution_receipt;
+DROP TABLE IF EXISTS geography.nngla_canonicalization_receipt;
+DROP TABLE IF EXISTS geography.nngla_canonical_crosswalk;
+DROP TABLE IF EXISTS geography.nngla_geometry_version;
+DROP TABLE IF EXISTS geography.nngla_spatial_feature;
+DROP TABLE IF EXISTS geography.nngla_quarantine_record;
+DROP TABLE IF EXISTS geography.nngla_staged_record;
+DROP TABLE IF EXISTS geography.nngla_ingest_batch;
+DROP TABLE IF EXISTS geography.nngla_source_artifact;
+DROP TABLE IF EXISTS geography.nngla_source_dataset;
+COMMIT;

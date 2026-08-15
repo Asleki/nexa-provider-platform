@@ -26,8 +26,16 @@ def test_real_chain_has_exact_forward_and_reverse_rollback_order():
         "m009_12_12_name_authority_application",
         "m009_13_10_reference_registry_authoring",
         "m004_01_02_world_geometry_authority",
+        "m006_07_11_nngla_execution_foundation",
+        "m006_07_11_nngla_identity_places_runtime",
+        "m006_07_11_nngla_geometry_roads_runtime",
+        "m006_07_11_nngla_cadastre_runtime",
     ]
     assert [item.identity.migration_id for item in plan.rollback_order] == [
+        "m006_07_11_nngla_cadastre_runtime",
+        "m006_07_11_nngla_geometry_roads_runtime",
+        "m006_07_11_nngla_identity_places_runtime",
+        "m006_07_11_nngla_execution_foundation",
         "m004_01_02_world_geometry_authority",
         "m009_13_10_reference_registry_authoring",
         "m009_12_12_name_authority_application",
@@ -35,7 +43,7 @@ def test_real_chain_has_exact_forward_and_reverse_rollback_order():
         "m009_12_06_name_authority",
         "m009_10_04_name_catalogue",
     ]
-    assert plan.migration_count == 6
+    assert plan.migration_count == 10
     assert len(plan.plan_checksum) == 64
 
 
