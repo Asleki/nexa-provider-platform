@@ -122,7 +122,7 @@ class PostgreSQLExecutionRepository:
                     (p['settlement_name_record_id'],p['canonical_name'],p['ascii_name'],p['naming_status_code'],p['source_dataset_id'],p['source_basis'],p['record_status']))
                 cur.execute("""INSERT INTO geography.nngla_place_reference(place_id,source_place_code,settlement_name_record_id,place_type_code,region_code,parent_source_place_code,spatial_assignment_status,geometry_reference,runtime_effect_scope,source_dataset_id)
                     VALUES(%s,%s,%s,%s,%s,NULLIF(%s,''),%s,NULLIF(%s,''),%s,%s) ON CONFLICT(place_id) DO NOTHING""",
-                    (canonical_id,p['source_place_code'],p['settlement_name_record_id'],p['place_type_code'],p['region_code'],p['parent_source_place_code'],p['spatial_assignment_status'],p['geometry_reference'],p['runtime_effect_scope'],p['source_dataset_id'])); return
+                    (canonical_id,p['source_place_code'],p['settlement_name_record_id'],p['place_type_code'],p['region_code'],p['parent_source_place_code'],p['spatial_assignment_status'],p.get('geometry_reference'),p['runtime_effect_scope'],p['source_dataset_id'])); return
             if key=="administrative-areas":
                 cur.execute("""INSERT INTO geography.nngla_administrative_area(administrative_area_id,administrative_candidate_id,source_record_id,administrative_type_code,canonical_name,parent_source_record_id,region_code,boundary_status,geometry_reference,lifecycle_status_code,runtime_effect_scope,candidate_status)
                     VALUES(%s,%s,%s,%s,%s,%s,%s,%s,NULLIF(%s,''),%s,%s,%s) ON CONFLICT(administrative_area_id) DO NOTHING""",
