@@ -1,0 +1,33 @@
+namespace_id,namespace_prefix,namespace_name,object_family,issuing_authority_code,format_rule,example_value,immutable_after_issue,reusable_after_retirement,status,effective_from
+ns:ng-plc,NG-PLC,NNGLA Canonical Place,PLACE,NNGLA,registered_extension_format,NG-PLC-000001,true,false,ACTIVE,2026-08-16
+ns:ng-adm,NG-ADM,NNGLA Canonical Administrative Area,ADMINISTRATIVE_AREA,NNGLA,registered_extension_format,NG-ADM-000001,true,false,ACTIVE,2026-08-16
+ns:ng-feat,NG-FEAT,NNGLA Canonical Geographic Feature,GEOGRAPHIC_FEATURE,NNGLA,registered_extension_format,NG-FEAT-000001,true,false,ACTIVE,2026-08-16
+ns:ng-rd-cand,NG-RD-CAND,NNGLA Road Candidate,ROAD_CANDIDATE,NNGLA,registered_extension_format,NG-RD-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-adm-cand,NG-ADM-CAND,NNGLA Administrative Candidate,ADMINISTRATIVE_AREA_CANDIDATE,NNGLA,registered_extension_format,NG-ADM-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-spt,NG-SPT,NoveGeo Spatial Reference Point,SPATIAL_REFERENCE_POINT,NNGLA,registered_extension_format,NG-SPT-000001,true,false,ACTIVE,2026-08-16
+ns:ng-scell,NG-SCELL,NoveGeo Spatial Reference Cell,SPATIAL_REFERENCE_CELL,NNGLA,registered_extension_format,NG-SCELL-000001,true,false,ACTIVE,2026-08-16
+ns:ng-mgrid,NG-MGRID,NoveGeo Major Grid,MAJOR_GRID,NNGLA,registered_extension_format,NG-MGRID-01-01,true,false,ACTIVE,2026-08-16
+ns:ng-elev-obs,NG-ELEV-OBS,NoveGeo Elevation Observation,ELEVATION_OBSERVATION,NNGLA,registered_extension_format,NG-ELEV-OBS-000001,true,false,ACTIVE,2026-08-16
+ns:ng-clim-obs,NG-CLIM-OBS,NoveGeo Climate Observation,CLIMATE_OBSERVATION,NNGLA,registered_extension_format,NG-CLIM-OBS-000001,true,false,ACTIVE,2026-08-16
+ns:ng-veg-obs,NG-VEG-OBS,NoveGeo Vegetation Observation,VEGETATION_OBSERVATION,NNGLA,registered_extension_format,NG-VEG-OBS-000001,true,false,ACTIVE,2026-08-16
+ns:ng-sov-part,NG-SOV-PART,NoveGeo Sovereign Physical Part,SOVEREIGN_PART,NNGLA,registered_extension_format,NG-SOV-PART-000001,true,false,ACTIVE,2026-08-16
+ns:ng-sit-req,NG-SIT-REQ,NNGLA Settlement Siting Requirement,SETTLEMENT_SITING_REQUIREMENT,NNGLA,registered_extension_format,NG-SIT-REQ-000001,true,false,ACTIVE,2026-08-16
+ns:ng-rdalign-req,NG-RDALIGN-REQ,NNGLA Road Alignment Requirement,ROAD_ALIGNMENT_REQUIREMENT,NNGLA,registered_extension_format,NG-RDALIGN-REQ-000001,true,false,ACTIVE,2026-08-16
+ns:ng-admbnd-req,NG-ADMBND-REQ,NNGLA Administrative Boundary Requirement,ADMINISTRATIVE_BOUNDARY_REQUIREMENT,NNGLA,registered_extension_format,NG-ADMBND-REQ-000001,true,false,ACTIVE,2026-08-16
+ns:ng-island-phys,NG-ISLAND-PHYS,NoveGeo Physical Island Candidate,PHYSICAL_ISLAND_CANDIDATE,NNGLA,registered_extension_format,NG-ISLAND-PHYS-000001,true,false,ACTIVE,2026-08-16
+ns:ng-bay-cand,NG-BAY-CAND,NNGLA Bay Candidate,BAY_CANDIDATE,NNGLA,registered_extension_format,NG-BAY-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-bch-cand,NG-BCH-CAND,NNGLA Beach Candidate,BEACH_CANDIDATE,NNGLA,registered_extension_format,NG-BCH-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-cape-cand,NG-CAPE-CAND,NNGLA Cape Candidate,CAPE_CANDIDATE,NNGLA,registered_extension_format,NG-CAPE-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-clf-cand,NG-CLF-CAND,NNGLA Cliff Candidate,CLIFF_CANDIDATE,NNGLA,registered_extension_format,NG-CLF-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-est-cand,NG-EST-CAND,NNGLA Estuary Candidate,ESTUARY_CANDIDATE,NNGLA,registered_extension_format,NG-EST-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-mtn-cand,NG-MTN-CAND,NNGLA Mountain Candidate,MOUNTAIN_CANDIDATE,NNGLA,registered_extension_format,NG-MTN-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-hbr-cand,NG-HBR-CAND,NNGLA Natural Harbour Candidate,NATURAL_HARBOUR_CANDIDATE,NNGLA,registered_extension_format,NG-HBR-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-pln-cand,NG-PLN-CAND,NNGLA Plain Candidate,PLAIN_CANDIDATE,NNGLA,registered_extension_format,NG-PLN-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-plt-cand,NG-PLT-CAND,NNGLA Plateau Candidate,PLATEAU_CANDIDATE,NNGLA,registered_extension_format,NG-PLT-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-val-cand,NG-VAL-CAND,NNGLA Valley Candidate,VALLEY_CANDIDATE,NNGLA,registered_extension_format,NG-VAL-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-mar-wat,NG-MAR-WAT,NoveGeo Marine Waterbody,MARINE_WATERBODY,NNGLA,registered_extension_format,NG-MAR-WAT-000001,true,false,ACTIVE,2026-08-16
+ns:ng-mar-if,NG-MAR-IF,NoveGeo Marine Coastal Interface,MARINE_INTERFACE,NNGLA,registered_extension_format,NG-MAR-IF-000001,true,false,ACTIVE,2026-08-16
+ns:ng-mar-anch,NG-MAR-ANCH,NoveGeo Marine Route Anchor,MARINE_ROUTE_ANCHOR,NNGLA,registered_extension_format,NG-MAR-ANCH-000001,true,false,ACTIVE,2026-08-16
+ns:ng-sea-rt-cand,NG-SEA-RT-CAND,NoveGeo Sea Route Candidate,SEA_ROUTE_CANDIDATE,NNGLA,registered_extension_format,NG-SEA-RT-CAND-000001,true,false,ACTIVE,2026-08-16
+ns:ng-mar-conn,NG-MAR-CONN,NoveGeo Marine Connection,MARINE_CONNECTION,NNGLA,registered_extension_format,NG-MAR-CONN-000001,true,false,ACTIVE,2026-08-16
+ns:ng-isl-state,NG-ISL-STATE,NoveGeo Island Physical State Record,ISLAND_PHYSICAL_STATE,NNGLA,registered_extension_format,NG-ISL-STATE-000001,true,false,ACTIVE,2026-08-16

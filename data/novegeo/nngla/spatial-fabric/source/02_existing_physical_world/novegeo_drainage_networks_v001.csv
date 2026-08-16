@@ -1,0 +1,5 @@
+drainage_network_id,drainage_network_version,river_ids,lake_ids,junction_ids,outlet_type,runtime_mode,source_dataset_id,source_sha256
+drainage:novegeo:d000001,1,river:novegeo:r000001|river:novegeo:r000002|river:novegeo:r000003|river:novegeo:r000004|river:novegeo:r000005,,junction:novegeo:j000001|junction:novegeo:j000002|junction:novegeo:j000003|junction:novegeo:j000004,COAST,SHARED_REFERENCE,dataset:novegeo:hydrology:surface-water,0eb0f0cd402a7a493732e90231a6b96f2e3e99eb2a826ee58c36f5b6125f20f2
+drainage:novegeo:d000002,1,,lake:novegeo:l000001,,CLOSED_BASIN,SHARED_REFERENCE,dataset:novegeo:hydrology:surface-water,0eb0f0cd402a7a493732e90231a6b96f2e3e99eb2a826ee58c36f5b6125f20f2
+drainage:novegeo:d000003,1,,lake:novegeo:l000002,,CLOSED_BASIN,SHARED_REFERENCE,dataset:novegeo:hydrology:surface-water,0eb0f0cd402a7a493732e90231a6b96f2e3e99eb2a826ee58c36f5b6125f20f2
+drainage:novegeo:d000004,1,,lake:novegeo:l000003,,CLOSED_BASIN,SHARED_REFERENCE,dataset:novegeo:hydrology:surface-water,0eb0f0cd402a7a493732e90231a6b96f2e3e99eb2a826ee58c36f5b6125f20f2

@@ -1,0 +1,10 @@
+{
+  "bundle": "17A",
+  "effective_date": "2026-08-16",
+  "milestone": "P006.7.11.7.1-P006.7.11.7.2",
+  "policy": "IMMUTABLE_V001_SOURCE_EVIDENCE_NO_POSTGRESQL_WRITES",
+  "source_archive": "NoveGeo_Spatial_Fabric_New_Waters_v001.zip",
+  "source_archive_sha256": "145af0be26b8c8c924546e9a7686dd8a648270080160831455d68e7841d34398",
+  "source_csv_count": 47,
+  "source_data_row_count": 7364
+}

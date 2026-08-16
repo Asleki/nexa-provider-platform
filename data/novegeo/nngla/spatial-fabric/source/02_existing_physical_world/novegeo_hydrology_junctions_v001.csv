@@ -1,0 +1,5 @@
+junction_id,junction_version,junction_type,longitude,latitude,receiving_river_id,incoming_river_ids,runtime_mode,source_dataset_id,source_sha256
+junction:novegeo:j000001,1,CONFLUENCE,36.82,4.252533,river:novegeo:r000001,river:novegeo:r000003,SHARED_REFERENCE,dataset:novegeo:hydrology:surface-water,0eb0f0cd402a7a493732e90231a6b96f2e3e99eb2a826ee58c36f5b6125f20f2
+junction:novegeo:j000002,1,CONFLUENCE,35.98,3.412533,river:novegeo:r000001,river:novegeo:r000002,SHARED_REFERENCE,dataset:novegeo:hydrology:surface-water,0eb0f0cd402a7a493732e90231a6b96f2e3e99eb2a826ee58c36f5b6125f20f2
+junction:novegeo:j000003,1,CONFLUENCE,34.72,2.152533,river:novegeo:r000001,river:novegeo:r000005,SHARED_REFERENCE,dataset:novegeo:hydrology:surface-water,0eb0f0cd402a7a493732e90231a6b96f2e3e99eb2a826ee58c36f5b6125f20f2
+junction:novegeo:j000004,1,CONFLUENCE,33.88,1.312533,river:novegeo:r000001,river:novegeo:r000004,SHARED_REFERENCE,dataset:novegeo:hydrology:surface-water,0eb0f0cd402a7a493732e90231a6b96f2e3e99eb2a826ee58c36f5b6125f20f2
