@@ -1,0 +1,6 @@
+evidence_type_code,is_direct_observation,creates_new_measured_fact,requires_source_reference,description,status
+DIRECT_SOURCE_OBSERVATION,true,false,true,Value is supplied at this spatial location by qualified governed source evidence.,ACTIVE
+GOVERNED_DERIVATION,false,false,true,Value is produced by a declared deterministic governed derivation from qualified evidence.,ACTIVE
+GOVERNED_INTERPOLATION,false,false,true,Value is produced by a formally governed interpolation policy; reserved until such a policy exists.,ACTIVE
+NEAREST_QUALIFIED_OBSERVATION,false,false,true,No direct value exists at the point; the nearest qualified source observation is referenced without relabelling it as direct.,ACTIVE
+NOT_AVAILABLE,false,false,false,No policy-authorized value is asserted at this location.,ACTIVE
