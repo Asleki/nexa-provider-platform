@@ -1,0 +1,4 @@
+bulk_policy_code,atomicity,maximum_items,maximum_concurrency,continue_after_item_failure,item_idempotency_required,authorization_per_item,status
+BULK_ATOMIC,ALL_OR_NOTHING,1000,32,false,true,true,ACTIVE
+BULK_ITEM_ATOMIC,ITEM_ATOMIC_CONTINUE,1000,32,true,true,true,ACTIVE
+BULK_PREVIEW,PREVIEW_ONLY,5000,64,true,true,true,ACTIVE
