@@ -1,0 +1,7 @@
+policy_code,allocation_scope,reset_semantics,default_sequence_step,duplicate_visible_number_cross_scope_allowed,same_scope_collision_policy,status,description
+CONTINUOUS,ROAD_OR_GOVERNED_CORRIDOR,NO_AUTOMATIC_RESET,1,true,FAIL_CLOSED,ACTIVE,Governed CONTINUOUS address-number allocation policy.
+LOCAL_RESET,LOCAL_GOVERNED_SCOPE,RESET_PER_LOCAL_SCOPE,1,true,FAIL_CLOSED,ACTIVE,Governed LOCAL_RESET address-number allocation policy.
+SEGMENT_RESET,ROAD_SEGMENT,RESET_PER_SEGMENT,1,true,FAIL_CLOSED,ACTIVE,Governed SEGMENT_RESET address-number allocation policy.
+ODD_EVEN,ROAD_OR_SEGMENT_SIDE,SIDE_SPECIFIC_PARITY,2,true,FAIL_CLOSED,ACTIVE,Governed ODD_EVEN address-number allocation policy.
+SEQUENTIAL,EXPLICIT_SERIES,MONOTONIC_NO_REUSE,1,true,FAIL_CLOSED,ACTIVE,Governed SEQUENTIAL address-number allocation policy.
+CUSTOM_GOVERNED,CUSTOM_GOVERNED_SCOPE,RULESET_REQUIRED,1,true,FAIL_CLOSED,ACTIVE,Governed CUSTOM_GOVERNED address-number allocation policy.

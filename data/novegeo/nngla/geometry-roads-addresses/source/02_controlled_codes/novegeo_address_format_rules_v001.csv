@@ -1,0 +1,4 @@
+format_rule_code,number_pattern,canonical_example,suffix_allowed,unit_designator_separate,status,description
+INTEGER,^[0-9]+$,14,false,true,ACTIVE,Unsigned integer premise number.
+INTEGER_SUFFIX,^[0-9]+[A-Z]$,14B,true,true,ACTIVE,Integer plus governed uppercase suffix.
+GOVERNED_TEXT,"^[0-9A-Z][0-9A-Z/-]{0,15}$",14/2,true,true,ACTIVE,Bounded governed human-readable address token.

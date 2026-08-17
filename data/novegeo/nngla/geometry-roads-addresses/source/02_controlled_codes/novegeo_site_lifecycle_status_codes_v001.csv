@@ -1,0 +1,7 @@
+site_lifecycle_status_code,sequence,canonical_site_exists,address_required,construction_state_owned_by_nngla,citizen_residence_owned_by_nngla,next_status_code,status,description
+CANDIDATE,1,false,false,false,false,SPATIALLY_QUALIFIED,ACTIVE,Stable site candidate only; not yet qualified and not a building or residence.
+SPATIALLY_QUALIFIED,2,false,false,false,false,ADDRESS_ELIGIBLE,ACTIVE,Site passes NNGLA spatial qualification; construction state remains external.
+ADDRESS_ELIGIBLE,3,false,false,false,false,ADDRESS_ASSIGNED,ACTIVE,Site may receive an address under a governed address series.
+ADDRESS_ASSIGNED,4,true,true,false,false,ACTIVE,ACTIVE,Governed address has been assigned; site and address identities remain distinct.
+ACTIVE,5,true,true,false,false,RETIRED,ACTIVE,Addressable site is active for cross-registry reference.
+RETIRED,6,true,false,false,false,,ACTIVE,Historical site identity retained but no longer active.

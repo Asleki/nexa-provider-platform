@@ -1,0 +1,10 @@
+structure_reference_type_code,canonical_label,nngla_owns_structure_record,external_reference_required,status,description
+HOUSE,House / dwelling structure,false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.
+SCHOOL_BUILDING,School or education building,false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.
+HEALTH_FACILITY,"Hospital, clinic or health facility",false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.
+SHOP,Retail or service premises,false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.
+WAREHOUSE,Warehouse or storage structure,false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.
+FACTORY,Manufacturing structure,false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.
+UTILITY_STRUCTURE,Utility/infrastructure structure,false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.
+PUBLIC_BUILDING,Public institutional building,false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.
+OTHER_GOVERNED,Other externally governed structure type,false,true,ACTIVE,Typed NNGLA relationship to an externally owned structure record.

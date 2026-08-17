@@ -1,0 +1,1 @@
+reservation_id,series_id,site_id,reserved_address_id,display_address_number,normalized_number_key,idempotency_key,reservation_status,canonical_address_created,authority_runtime_mode,source_reference
