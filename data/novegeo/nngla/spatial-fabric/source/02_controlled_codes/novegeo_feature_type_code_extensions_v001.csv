@@ -1,0 +1,6 @@
+feature_type_code,feature_family_code,canonical_label,geometry_expectation,origin_class,nngla_recognizable,nngla_creatable,nameable,supports_history,status,effective_from,effective_to,description
+OCEAN,HYDROLOGY,Ocean,POLYGON_OR_MULTIPOLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-17,,Open marine waterbody; outer governed envelope may be absent in source evidence.
+ESTUARY,COASTAL,Estuary,LINESTRING_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-17,,Natural coastal transition where riverine and marine systems meet.
+NATURAL_HARBOUR,COASTAL,Natural Harbour,POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-17,,Naturally sheltered coastal water/shore feature.
+BEACH,COASTAL,Beach,LINESTRING_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-17,,Natural shoreline beach feature.
+CLIFF,COASTAL,Cliff,LINESTRING_OR_POLYGON,NATURAL,true,false,true,true,ACTIVE,2026-08-17,,Natural steep coastal or terrestrial escarpment feature.
