@@ -1,0 +1,4 @@
+
+from registries.nngla.spatial_fabric.bundle17m import cross_family_duplicate_count
+
+def test_governed_catalogues_prove_visible_name_text_is_not_globally_unique(): assert cross_family_duplicate_count()==63

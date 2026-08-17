@@ -1,0 +1,17 @@
+transition_id,from_status,to_status,requires_approval,requires_gazette,creates_legal_effect,terminal_transition,status
+nametransition:nngla:unassigned:name_candidate,UNASSIGNED,NAME_CANDIDATE,false,false,false,false,ACTIVE
+nametransition:nngla:name_candidate:available,NAME_CANDIDATE,AVAILABLE,false,false,false,false,ACTIVE
+nametransition:nngla:available:reserved,AVAILABLE,RESERVED,true,false,false,false,ACTIVE
+nametransition:nngla:reserved:proposed,RESERVED,PROPOSED,true,false,false,false,ACTIVE
+nametransition:nngla:proposed:under_review,PROPOSED,UNDER_REVIEW,false,false,false,false,ACTIVE
+nametransition:nngla:under_review:approved,UNDER_REVIEW,APPROVED,true,false,false,false,ACTIVE
+nametransition:nngla:under_review:rejected,UNDER_REVIEW,REJECTED,true,false,false,true,ACTIVE
+nametransition:nngla:approved:gazette_pending,APPROVED,GAZETTE_PENDING,true,false,false,false,ACTIVE
+nametransition:nngla:gazette_pending:gazetted,GAZETTE_PENDING,GAZETTED,true,true,true,false,ACTIVE
+nametransition:nngla:gazetted:active_official,GAZETTED,ACTIVE_OFFICIAL,true,true,true,false,ACTIVE
+nametransition:nngla:active_official:renamed,ACTIVE_OFFICIAL,RENAMED,true,true,true,false,ACTIVE
+nametransition:nngla:renamed:historic,RENAMED,HISTORIC,true,true,false,false,ACTIVE
+nametransition:nngla:active_official:historic,ACTIVE_OFFICIAL,HISTORIC,true,true,false,false,ACTIVE
+nametransition:nngla:available:protected,AVAILABLE,PROTECTED,true,false,false,false,ACTIVE
+nametransition:nngla:protected:available,PROTECTED,AVAILABLE,true,false,false,false,ACTIVE
+nametransition:nngla:available:retired,AVAILABLE,RETIRED,true,false,false,true,ACTIVE
