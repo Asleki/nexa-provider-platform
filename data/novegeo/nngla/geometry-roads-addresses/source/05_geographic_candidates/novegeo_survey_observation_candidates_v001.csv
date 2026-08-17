@@ -1,0 +1,1 @@
+survey_observation_candidate_id,survey_id,subject_id,observed_at,longitude,latitude,elevation_m,crs_code,accuracy_class_code,instrument_record_reference,surveyor_approval_reference,source_reference,qualification_status

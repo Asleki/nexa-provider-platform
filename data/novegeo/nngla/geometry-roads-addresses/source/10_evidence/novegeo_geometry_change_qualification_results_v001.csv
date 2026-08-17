@@ -1,0 +1,2 @@
+qualification_id,qualification_scope,subject_identity_stable,successor_geometry_identity_new,crs_contract_valid,survey_policy_numeric_thresholds_invented,history_preserved,runtime_authority_separated,day_zero_survey_control_preserved,status,findings
+bundle17k:architecture-contract,CONTRACT,true,true,true,false,true,true,true,PASS,No canonical geometry change event fabricated; contract qualification only
