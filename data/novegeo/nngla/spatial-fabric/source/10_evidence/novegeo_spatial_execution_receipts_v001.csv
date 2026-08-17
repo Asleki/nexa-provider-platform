@@ -1,0 +1,1 @@
+execution_id,plan_id,plan_version,fingerprint,content_fingerprint,database_name,environment_name,runtime_mode,repository_revision,source_sha256,submitter_actor_id,approver_actor_id,selected_count,inserted_count,reused_count,quarantined_count,failed_count,status,started_at,completed_at
