@@ -1,0 +1,4 @@
+from ._shared import QUERY_CATALOGUE_PATH,QUERY_RESULT_CONTRACTS_PATH,READ_MODEL_CATALOGUE_PATH,GEOCODING_RULES_PATH,CROSS_REGISTRY_PATH,SCHEMA_PATH
+def artifact_paths():
+    return {"query_catalogue":QUERY_CATALOGUE_PATH,"result_contracts":QUERY_RESULT_CONTRACTS_PATH,"read_models":READ_MODEL_CATALOGUE_PATH,"geocoding_rules":GEOCODING_RULES_PATH,"cross_registry":CROSS_REGISTRY_PATH,"schema":SCHEMA_PATH}
+__all__=["artifact_paths"]
