@@ -1,0 +1,2 @@
+series_id,title_id_pattern,allocation_scope,prefix,sequence_width,minimum_sequence,sequence_semantics,issuing_authority_code,reservation_runtime,status,description
+titleseries:nngla:sovereign,^NG-TTL-\d{6}$,SOVEREIGN_GLOBAL,NG-TTL-,6,1,MONOTONIC_NO_REUSE,NNGLA,PRODUCTION_AUTHORITY,ACTIVE,Sovereign title-number reference series; reservation does not constitute title issuance.

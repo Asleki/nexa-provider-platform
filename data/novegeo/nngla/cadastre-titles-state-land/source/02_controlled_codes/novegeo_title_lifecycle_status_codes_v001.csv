@@ -1,0 +1,10 @@
+title_lifecycle_status_code,sequence,legal_title_exists,title_number_reserved,parcel_required,holder_reference_required,status,description
+TITLE_NUMBER_RESERVED,1,false,true,false,false,ACTIVE,Identifier reserved only; parcel and holder may be absent and no legal title exists.
+ISSUANCE_CANDIDATE,2,false,true,true,true,ACTIVE,"Reservation linked to proposed parcel, title type, tenure and holder; legal issuance pending."
+TITLE_ISSUED,3,true,true,true,true,ACTIVE,Title has been legally issued but activation/publication may be a separate workflow.
+ACTIVE,4,true,true,true,true,ACTIVE,Current active title relationship.
+SUSPENDED,5,true,true,true,true,ACTIVE,Title exists but operational/legal use is suspended subject to authority process.
+CANCELLED,6,true,true,true,true,ACTIVE,Historical title identity retained after cancellation.
+EXPIRED,7,true,true,true,true,ACTIVE,Historical title identity retained after expiry.
+REPLACED,8,true,true,true,true,ACTIVE,Historical title identity retained and linked to replacement title.
+HISTORICAL,9,true,true,true,true,ACTIVE,Retained non-current legal record.

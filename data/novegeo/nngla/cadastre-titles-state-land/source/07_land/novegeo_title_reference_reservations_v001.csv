@@ -1,0 +1,1 @@
+reservation_id,series_id,reserved_title_id,parcel_id,holder_reference,idempotency_key,reservation_status,legal_title_exists,authority_runtime_mode,source_reference
