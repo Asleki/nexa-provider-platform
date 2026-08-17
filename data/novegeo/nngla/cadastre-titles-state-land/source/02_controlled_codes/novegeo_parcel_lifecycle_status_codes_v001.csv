@@ -1,0 +1,8 @@
+lifecycle_status_code,sequence,canonical_parcel_exists,parcel_reference_required,next_status_code,status,description
+PHYSICAL_GROUND,1,false,false,PARCEL_CANDIDATE,ACTIVE,Physical land exists independently of any cadastral parcel.
+PARCEL_CANDIDATE,2,false,false,REFERENCE_RESERVED,ACTIVE,Candidate identity only; no sovereign parcel reference exists.
+REFERENCE_RESERVED,3,false,true,SURVEYED,ACTIVE,Sovereign parcel reference reserved but no canonical parcel exists.
+SURVEYED,4,false,true,QUALIFIED,ACTIVE,Candidate has survey evidence; registration remains deferred.
+QUALIFIED,5,false,true,RECOGNIZED,ACTIVE,Candidate passes parcel qualification; recognition remains separate.
+RECOGNIZED,6,false,true,REGISTERED,ACTIVE,Authority recognizes cadastral object; canonical register insertion is next.
+REGISTERED,7,true,true,,ACTIVE,Canonical parcel record exists in the parcel register.

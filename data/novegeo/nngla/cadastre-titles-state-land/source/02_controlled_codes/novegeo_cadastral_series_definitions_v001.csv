@@ -1,0 +1,2 @@
+definition_id,parcel_id_pattern,cadastral_zone_semantics,cadastral_series_semantics,sequence_semantics,minimum_sequence_width,allocation_authority_code,sovereign_reservation_runtime,administrative_area_dependency,status
+cadseries-policy:nngla:default,"^NV-\d{2}-\d{3}-\d{4,}$",GOVERNED_CADASTRAL_ZONE_NOT_ADMINISTRATIVE_AREA,GOVERNED_SERIES_WITHIN_CADASTRAL_ZONE,MONOTONIC_SERIES_LOCAL_NO_REUSE,4,NNGLA,PRODUCTION_AUTHORITY,INDEPENDENT_OF_ADMINISTRATIVE_BOUNDARIES,ACTIVE
