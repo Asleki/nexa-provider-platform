@@ -1,0 +1,3 @@
+case_id,target_family,failure_point,retry_behavior,identifier_reuse_allowed,gap_allowed,expected_status
+sequence-gap-after-rollback,IMMUTABLE_ID,AFTER_SEQUENCE_CONSUMPTION_BEFORE_COMMIT,ALLOCATE_NEW_IF_NEEDED,false,true,PASS
+retry-after-commit,ADDRESS,CLIENT_LOST_RESPONSE_AFTER_COMMIT,SAME_IDEMPOTENCY_KEY_RETURNS_ORIGINAL,false,true,PASS

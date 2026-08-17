@@ -1,0 +1,23 @@
+scenario_id,allocator_family,execution_basis,parallel_requests,requested_count,successful_count,unique_identity_count,duplicate_identity_count,collision_count,idempotent_replay_count,rollback_count,retry_count,unexpected_error_count,elapsed_ms,operations_per_second,status,evidence_note
+address-1,ADDRESS_ID,MEMORY_CONTRACT,1,1,1,1,0,0,0,0,0,0,0.535,1869.736,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+address-display-1,ADDRESS_DISPLAY_NUMBER,MEMORY_CONTRACT,1,1,1,1,0,0,0,0,0,0,0.284,3516.632,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+parcel-1,PARCEL_REFERENCE,MEMORY_CONTRACT,1,1,1,1,0,0,0,0,0,0,0.352,2843.227,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+site-1,SITE_ID,MEMORY_CONTRACT,1,1,1,1,0,0,0,0,0,0,0.220,4537.473,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+title-1,TITLE_REFERENCE,MEMORY_CONTRACT,1,1,1,1,0,0,0,0,0,0,0.202,4954.665,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+address-10,ADDRESS_ID,MEMORY_CONTRACT,10,10,10,10,0,0,0,0,0,0,0.859,11646.650,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+address-display-10,ADDRESS_DISPLAY_NUMBER,MEMORY_CONTRACT,10,10,10,10,0,0,0,0,0,0,0.625,15989.536,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+parcel-10,PARCEL_REFERENCE,MEMORY_CONTRACT,10,10,10,10,0,0,0,0,0,0,0.603,16575.062,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+site-10,SITE_ID,MEMORY_CONTRACT,10,10,10,10,0,0,0,0,0,0,0.543,18405.123,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+title-10,TITLE_REFERENCE,MEMORY_CONTRACT,10,10,10,10,0,0,0,0,0,0,0.517,19335.703,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+address-100,ADDRESS_ID,MEMORY_CONTRACT,100,100,100,100,0,0,0,0,0,0,7.779,12854.792,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+address-display-100,ADDRESS_DISPLAY_NUMBER,MEMORY_CONTRACT,100,100,100,100,0,0,0,0,0,0,5.232,19112.364,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+parcel-100,PARCEL_REFERENCE,MEMORY_CONTRACT,100,100,100,100,0,0,0,0,0,0,4.405,22702.063,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+site-100,SITE_ID,MEMORY_CONTRACT,100,100,100,100,0,0,0,0,0,0,3.490,28653.000,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+title-100,TITLE_REFERENCE,MEMORY_CONTRACT,100,100,100,100,0,0,0,0,0,0,3.602,27759.703,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+address-1000,ADDRESS_ID,MEMORY_CONTRACT,1000,1000,1000,1000,0,0,0,0,0,0,45.959,21758.600,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+address-display-1000,ADDRESS_DISPLAY_NUMBER,MEMORY_CONTRACT,1000,1000,1000,1000,0,0,0,0,0,0,84.761,11797.902,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+parcel-1000,PARCEL_REFERENCE,MEMORY_CONTRACT,1000,1000,1000,1000,0,0,0,0,0,0,34.795,28739.780,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+site-1000,SITE_ID,MEMORY_CONTRACT,1000,1000,1000,1000,0,0,0,0,0,0,31.368,31879.327,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+title-1000,TITLE_REFERENCE,MEMORY_CONTRACT,1000,1000,1000,1000,0,0,0,0,0,0,30.229,33080.693,PASS,Generated in isolated memory contract; no PostgreSQL writes.
+geometry-baseline,GEOMETRY_ID_BASELINE,STATIC_NAMESPACE_GUARD,1,2432,2432,2432,0,0,0,0,0,0,0.000,0.000,PASS,Current occupied max NG-GEO-002432; next safe candidate NG-GEO-002433.
+postgresql-integration,PARCEL_REFERENCE,POSTGRESQL_INTEGRATION,1000,0,0,0,0,0,0,0,0,0,0.000,0.000,CONTRACT_READY_NOT_EXECUTED,No PostgreSQL session available in artifact build environment; SQL contract is statically qualified and live execution remains Phase F/17P evidence.

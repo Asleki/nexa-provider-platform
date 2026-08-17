@@ -1,0 +1,4 @@
+case_id,target_family,first_scope,second_scope,visible_value,expected_result
+same-scope-address-14,ADDRESS_DISPLAY_NUMBER,addrseries:nngla:a,addrseries:nngla:a,14,FAIL_CLOSED_COLLISION
+different-scope-address-14,ADDRESS_DISPLAY_NUMBER,addrseries:nngla:a,addrseries:nngla:b,14,PASS_DIFFERENT_SCOPE
+idempotent-replay,IMMUTABLE_ID,same-request,same-request,,RETURN_ORIGINAL_RESULT
