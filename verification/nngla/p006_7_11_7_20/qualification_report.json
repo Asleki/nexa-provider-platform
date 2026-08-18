@@ -1,0 +1,263 @@
+{
+  "bundle": "17P",
+  "executions": [
+    {
+      "command": "python -m pytest -q",
+      "finished_utc": "2026-08-18T02:49:06.260818+00:00",
+      "label": "pytest_regression",
+      "ok": true,
+      "output": "........................................................................ [  2%]\n........................................................................ [  4%]\n........................................................................ [  6%]\n........................................................................ [  9%]\n................................................................................................. [ 12%]\n............................................................................. [ 14%]\n................................................................................... [ 17%]\n.................................................................. [ 19%]\n........................................................................ [ 22%]\n........................................................................ [ 24%]\n........................................................................ [ 26%]\n........................................................................ [ 29%]\n........................................................................ [ 31%]\n........................................................................ [ 33%]\n........................................................................ [ 36%]\n........................................................................ [ 38%]\n........................................................................ [ 40%]\n..................................... [ 41%]\n............................................. [ 43%]\n.......................... [ 44%]\n.............................................. [ 45%]\n........................................................................ [ 47%]\n........................................................................ [ 50%]\n........................................................................ [ 52%]\n........................................................................ [ 54%]\n........................................................................ [ 57%]\n........................................................................ [ 59%]\n........................................................................ [ 61%]\n........................................................................ [ 64%]\n........................................................................ [ 66%]\n........................................................................ [ 68%]\n........................................................................ [ 71%]\n........................................................................ [ 73%]\n........................................................................ [ 75%]\n........................................................................ [ 78%]\n........................................................................ [ 80%]\n........................................................................ [ 82%]\n........................................................................ [ 85%]\n........................................................................ [ 87%]\n........................................................................ [ 89%]\n........................................................................ [ 92%]\n........................................................................ [ 94%]\n........................................................................ [ 96%]\n..................................... [ 98%]\n............................................................       [100%]\n3094 passed, 356 subtests passed in 148.45s (0:02:28)\n",
+      "returncode": 0,
+      "started_utc": "2026-08-18T02:46:34.557141+00:00"
+    },
+    {
+      "command": "python -m database.migration_control qualify --format json",
+      "finished_utc": "2026-08-18T02:49:28.071270+00:00",
+      "label": "fresh_database_bootstrap",
+      "ok": true,
+      "output": "{\n  \"database_name\": \"npp_17p_qualification_20260818\",\n  \"drift_clean\": true,\n  \"environment_name\": \"development\",\n  \"ledger_state\": \"BOOTSTRAPPED\",\n  \"pending_migrations\": 0,\n  \"receipt\": {\n    \"created_at\": \"2026-08-18T02:49:27.964672+00:00\",\n    \"database_name\": \"npp_17p_qualification_20260818\",\n    \"details\": [\n      \"inspect-target\",\n      \"status\",\n      \"plan\",\n      \"verify-expected-objects\",\n      \"history\"\n    ],\n    \"environment_name\": \"development\",\n    \"operation\": \"qualify\",\n    \"plan_checksum\": \"1a1840b1388a42b4bd157444b5bc2eb2cfdbb5b1bed029e0a5193e2dc2a1a805\",\n    \"receipt_id\": \"f77ec497-cd8f-4153-a027-956af74d7b0f\",\n    \"status\": \"QUALIFIED\"\n  },\n  \"steps\": [\n    \"inspect-target\",\n    \"status\",\n    \"plan\",\n    \"verify-expected-objects\",\n    \"history\"\n  ],\n  \"tls_enabled\": true\n}\n",
+      "returncode": 0,
+      "started_utc": "2026-08-18T02:49:06.262814+00:00"
+    },
+    {
+      "command": "python -m pytest -q tests/unit/registries/nngla/spatial_fabric/bundle17l/test_bundle17l_candidates.py tests/unit/registries/nngla/spatial_fabric/bundle17l/test_bundle17l_allocator_recognition.py tests/unit/registries/nngla/spatial_fabric/bundle17n/test_bundle17n_bulk.py tests/unit/registries/nngla/spatial_fabric/bundle17n/test_bundle17n_dispatcher.py tests/unit/registries/nngla/spatial_fabric/bundle17o/test_bundle17o_query_service.py",
+      "finished_utc": "2026-08-18T02:49:31.095596+00:00",
+      "label": "future_data_simulation",
+      "ok": true,
+      "output": "...........                                                              [100%]\n11 passed in 0.76s\n",
+      "returncode": 0,
+      "started_utc": "2026-08-18T02:49:28.071488+00:00"
+    },
+    {
+      "command": "python -m pytest -q tests/unit/registries/nngla/spatial_fabric/bundle17n/test_bundle17n_idempotency.py tests/unit/registries/nngla/spatial_fabric/bundle17j/test_bundle17j_recovery.py",
+      "finished_utc": "2026-08-18T02:49:33.309005+00:00",
+      "label": "idempotent_rerun",
+      "ok": true,
+      "output": ".....                                                                    [100%]\n5 passed in 0.65s\n",
+      "returncode": 0,
+      "started_utc": "2026-08-18T02:49:31.095685+00:00"
+    },
+    {
+      "command": "python -m pytest -q tests/unit/registries/nngla/migration_architecture/test_bundle16c_geometry_receipts.py tests/unit/registries/nngla/spatial_fabric/bundle17n/test_bundle17n_dispatcher.py tests/unit/registries/nngla/spatial_fabric/bundle17e/test_bundle17e_execution.py",
+      "finished_utc": "2026-08-18T02:49:48.014213+00:00",
+      "label": "receipt_verification",
+      "ok": true,
+      "output": "......                                                                   [100%]\n6 passed in 13.17s\n",
+      "returncode": 0,
+      "started_utc": "2026-08-18T02:49:33.309395+00:00"
+    }
+  ],
+  "generated_utc": "2026-08-18T02:46:30.536764+00:00",
+  "lock_ready": true,
+  "lock_ready_reason": "All configured qualification gates passed.",
+  "milestone": "P006.7.11.7.20",
+  "qualification_kind": "NO_NEW_PRODUCTION_CODE",
+  "repo_root": "/public/nexa-provider-platform",
+  "static": {
+    "checks": {
+      "bundle_17n_contracts": {
+        "details": {
+          "novegeo_runtime_bulk_operation_policy_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_runtime_bulk_operation_policy_v001.csv"
+          ],
+          "novegeo_runtime_command_authorization_matrix_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_runtime_command_authorization_matrix_v001.csv"
+          ],
+          "novegeo_runtime_command_catalogue_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_runtime_command_catalogue_v001.csv"
+          ],
+          "novegeo_runtime_command_validation_rules_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_runtime_command_validation_rules_v001.csv"
+          ],
+          "novegeo_runtime_idempotency_policy_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_runtime_idempotency_policy_v001.csv"
+          ]
+        },
+        "ok": true
+      },
+      "bundle_17o_contracts": {
+        "details": {
+          "novegeo_cross_registry_spatial_reference_contracts_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/08_relationships/novegeo_cross_registry_spatial_reference_contracts_v001.csv"
+          ],
+          "novegeo_geocoding_normalization_rules_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_geocoding_normalization_rules_v001.csv"
+          ],
+          "novegeo_read_model_definition_catalogue_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_read_model_definition_catalogue_v001.csv"
+          ],
+          "novegeo_spatial_query_catalogue_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_spatial_query_catalogue_v001.csv"
+          ],
+          "novegeo_spatial_query_result_contracts_v001.csv": [
+            "data/novegeo/nngla/spatial-fabric/source/02_controlled_codes/novegeo_spatial_query_result_contracts_v001.csv"
+          ]
+        },
+        "ok": true
+      },
+      "historical_day_zero_registers_preserved": {
+        "details": {
+          "address_reference_candidates.csv": [
+            "data/novegeo/nngla/geometry-roads-addresses/source/06_roads_addresses/address_reference_candidates.csv",
+            "data/novegeo/nngla/ingest-foundation/source/06_roads_addresses/address_reference_candidates.csv"
+          ],
+          "parcel_bootstrap.csv": [
+            "data/novegeo/nngla/cadastre-titles-state-land/source/07_land/parcel_bootstrap.csv",
+            "data/novegeo/nngla/ingest-foundation/source/07_land/parcel_bootstrap.csv"
+          ],
+          "state_land_bootstrap.csv": [
+            "data/novegeo/nngla/cadastre-titles-state-land/source/07_land/state_land_bootstrap.csv",
+            "data/novegeo/nngla/ingest-foundation/source/07_land/state_land_bootstrap.csv"
+          ],
+          "survey_control_point_candidates.csv": [
+            "data/novegeo/nngla/geometry-roads-addresses/source/05_geographic_candidates/survey_control_point_candidates.csv",
+            "data/novegeo/nngla/ingest-foundation/source/05_geographic_candidates/survey_control_point_candidates.csv"
+          ],
+          "title_bootstrap.csv": [
+            "data/novegeo/nngla/cadastre-titles-state-land/source/07_land/title_bootstrap.csv",
+            "data/novegeo/nngla/ingest-foundation/source/07_land/title_bootstrap.csv"
+          ]
+        },
+        "ok": true
+      },
+      "qualification_only_worktree_changes": {
+        "details": {
+          "allowed_prefixes": [
+            "tests/",
+            "verification/"
+          ],
+          "changed_paths": [
+            "tests/registries/nngla/test_p006_7_11_7_20_operational_backend_lock.py",
+            "verification/nngla/p006_7_11_7_20/qualification_report.json",
+            "verification/nngla/p006_7_11_7_20/run_qualification.py"
+          ],
+          "disallowed_paths": [],
+          "git_available": true,
+          "git_error": null
+        },
+        "ok": true
+      },
+      "repository_surfaces": {
+        "details": {
+          "data/novegeo/nngla": true,
+          "database/migrations": true,
+          "registries/nngla": true,
+          "tests": true
+        },
+        "ok": true
+      },
+      "runtime_capability_evidence": {
+        "details": {
+          "authorization": {
+            "matched_tokens": [
+              "authorization",
+              "authorized"
+            ],
+            "ok": true
+          },
+          "bulk_operation": {
+            "matched_tokens": [
+              "bulk_operation"
+            ],
+            "ok": true
+          },
+          "idempotency": {
+            "matched_tokens": [
+              "idempotency",
+              "idempotent",
+              "idempotency_key"
+            ],
+            "ok": true
+          },
+          "receipt": {
+            "matched_tokens": [
+              "receipt",
+              "execution_receipt",
+              "command_receipt"
+            ],
+            "ok": true
+          },
+          "runtime_command": {
+            "matched_tokens": [
+              "runtime_command",
+              "command_catalogue",
+              "command_service"
+            ],
+            "ok": true
+          }
+        },
+        "ok": true
+      },
+      "spatial_query_capability_evidence": {
+        "details": {
+          "adjacency": {
+            "matched_tokens": [
+              "adjacency",
+              "adjacent"
+            ],
+            "ok": true
+          },
+          "containment": {
+            "matched_tokens": [
+              "containment",
+              "contains",
+              "within"
+            ],
+            "ok": true
+          },
+          "geocoding": {
+            "matched_tokens": [
+              "geocod",
+              "reverse_geocod"
+            ],
+            "ok": true
+          },
+          "intersection": {
+            "matched_tokens": [
+              "intersection",
+              "intersects",
+              "crosses"
+            ],
+            "ok": true
+          },
+          "nearest": {
+            "matched_tokens": [
+              "nearest",
+              "distance"
+            ],
+            "ok": true
+          },
+          "read_model": {
+            "matched_tokens": [
+              "read_model",
+              "read model"
+            ],
+            "ok": true
+          }
+        },
+        "ok": true
+      },
+      "v002_register_discovery": {
+        "details": {
+          "address_reference_candidates_v002.csv": [
+            "data/novegeo/nngla/geometry-roads-addresses/source/06_roads_addresses/address_reference_candidates_v002.csv"
+          ],
+          "parcel_bootstrap_v002.csv": [
+            "data/novegeo/nngla/cadastre-titles-state-land/source/07_land/parcel_bootstrap_v002.csv"
+          ],
+          "state_land_bootstrap_v002.csv": [
+            "data/novegeo/nngla/cadastre-titles-state-land/source/07_land/state_land_bootstrap_v002.csv"
+          ],
+          "survey_control_point_candidates_v002.csv": [
+            "data/novegeo/nngla/geometry-roads-addresses/source/05_geographic_candidates/survey_control_point_candidates_v002.csv"
+          ],
+          "title_bootstrap_v002.csv": [
+            "data/novegeo/nngla/cadastre-titles-state-land/source/07_land/title_bootstrap_v002.csv"
+          ]
+        },
+        "ok": true
+      }
+    },
+    "ok": true
+  }
+}
