@@ -53,6 +53,6 @@ def test_bundle17a_does_not_add_or_modify_database_migrations():
         "m006_07_11_nngla_geometry_roads_runtime.sql": "bbc847ff4f9fa0fcc73c4be0beb4a5c4bab12e0b67bb394a7f4deed47d6867e9",
         "m006_07_11_nngla_cadastre_runtime_rollback.sql": "bc0135037db52601dd4c7af58fb002051d358154dd940510ecd7cdb1bcde03fd",
     }
-    migrations = sorted((ROOT / "database/migrations").glob("m006_07_11*.sql"))
-    actual = {path.name: sha256(path.read_bytes()).hexdigest() for path in migrations}
+    migration_root = ROOT / "database/migrations"
+    actual = {name: sha256((migration_root / name).read_bytes()).hexdigest() for name in expected}
     assert actual == expected

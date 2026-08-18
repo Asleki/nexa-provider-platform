@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 3,
+  "catalogue_version": 4,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -350,6 +350,287 @@
       "rollback_sha256": "bc0135037db52601dd4c7af58fb002051d358154dd940510ecd7cdb1bcde03fd",
       "forward_byte_size": 2813,
       "rollback_byte_size": 334,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_smart_addressing_sites",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 11,
+      "description": "nngla_smart_addressing_sites",
+      "forward_file": "m006_07_11_nngla_smart_addressing_sites.sql",
+      "rollback_file": "m006_07_11_nngla_smart_addressing_sites_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_cadastre_runtime"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_road_segment",
+          "geography.nngla_road_frontage",
+          "geography.nngla_address_series",
+          "geography.nngla_address_number_reservation",
+          "geography.nngla_structure_site_reference",
+          "geography.nngla_site_address_assignment"
+        ],
+        "indexes": [],
+        "constraints": [],
+        "views": [],
+        "functions": [
+          "geography.nngla_reserve_address_number"
+        ]
+      },
+      "forward_sha256": "9ea7d142a9920d695387cce8279b898a64b89882618a73c5bc8da1083e1063b4",
+      "rollback_sha256": "b9f500dcfecbd23603da4c8a32a87a165b818055790f1f9670d3cdb25a74d59e",
+      "forward_byte_size": 6511,
+      "rollback_byte_size": 507,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_title_reservations_state_land_candidates",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 12,
+      "description": "nngla_title_reservations_state_land_candidates",
+      "forward_file": "m006_07_11_nngla_title_reservations_state_land_candidates.sql",
+      "rollback_file": "m006_07_11_nngla_title_reservations_state_land_candidates_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_smart_addressing_sites"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_title_number_series",
+          "geography.nngla_title_reference_reservation",
+          "geography.nngla_title_issuance_candidate",
+          "geography.nngla_state_land_candidate_record"
+        ],
+        "indexes": [],
+        "constraints": [],
+        "views": [],
+        "functions": [
+          "geography.nngla_reserve_title_reference"
+        ]
+      },
+      "forward_sha256": "87a8fedf6031d9ae0a8c9eb2a83f6d7beb4b2a54472b623fe4b81e9c56dd3ca5",
+      "rollback_sha256": "b85cf78073b05070f85aa01ee46a41237dd06c4d597cc421eb4d32ba292b2484",
+      "forward_byte_size": 4829,
+      "rollback_byte_size": 359,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_allocator_concurrency_recovery",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 13,
+      "description": "nngla_allocator_concurrency_recovery",
+      "forward_file": "m006_07_11_nngla_allocator_concurrency_recovery.sql",
+      "rollback_file": "m006_07_11_nngla_allocator_concurrency_recovery_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_title_reservations_state_land_candidates"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_parcel_reference_series",
+          "geography.nngla_parcel_reference_reservation"
+        ],
+        "indexes": [],
+        "constraints": [],
+        "views": [],
+        "functions": [
+          "geography.nngla_reserve_parcel_reference"
+        ]
+      },
+      "forward_sha256": "75d2c2116b2096607f5f34903b7ee2c3ac8ff357673495d1bb5daf8ed5b60319",
+      "rollback_sha256": "277fe05d483a8930d3a2db8e112a81df2f4411e85e151d73c8ac344ffd21d48c",
+      "forward_byte_size": 2912,
+      "rollback_byte_size": 231,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_geometry_change_lifecycle",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 14,
+      "description": "nngla_geometry_change_lifecycle",
+      "forward_file": "m006_07_11_nngla_geometry_change_lifecycle.sql",
+      "rollback_file": "m006_07_11_nngla_geometry_change_lifecycle_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_allocator_concurrency_recovery"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_geometry_id_allocator",
+          "geography.nngla_geometry_id_reservation",
+          "geography.nngla_geometry_change_candidate",
+          "geography.nngla_geometry_supersession_link",
+          "geography.nngla_survey_observation_candidate",
+          "geography.nngla_physical_state_change_candidate"
+        ],
+        "indexes": [],
+        "constraints": [],
+        "views": [],
+        "functions": [
+          "geography.nngla_reserve_geometry_id"
+        ]
+      },
+      "forward_sha256": "48b274a9f3f5e3ea87bd29d7594105d0f5897f50eccff06155815808978d3428",
+      "rollback_sha256": "2032d7436dac6dc32b1eb7b4324f6e8dcb4c5aa85fdb007d8141bae86abb479a",
+      "forward_byte_size": 4531,
+      "rollback_byte_size": 485,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_feature_recognition_lifecycle",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 15,
+      "description": "nngla_feature_recognition_lifecycle",
+      "forward_file": "m006_07_11_nngla_feature_recognition_lifecycle.sql",
+      "rollback_file": "m006_07_11_nngla_feature_recognition_lifecycle_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_geometry_change_lifecycle"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_feature_id_allocator",
+          "geography.nngla_feature_id_reservation",
+          "geography.nngla_feature_runtime_candidate",
+          "geography.nngla_feature_candidate_observation",
+          "geography.nngla_feature_recognition_result",
+          "geography.nngla_feature_lifecycle_event"
+        ],
+        "indexes": [],
+        "constraints": [],
+        "views": [],
+        "functions": [
+          "geography.nngla_reserve_feature_id"
+        ]
+      },
+      "forward_sha256": "c01b057306caa43f9a4844d25ad43bfecbb2012f7304e74bb415a48772ececfb",
+      "rollback_sha256": "19b5cfaabfac93d47a07dbf21960059baeed355a85ebca92ccff646c32edc7eb",
+      "forward_byte_size": 5164,
+      "rollback_byte_size": 470,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_geographic_naming_gazette",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 16,
+      "description": "nngla_geographic_naming_gazette",
+      "forward_file": "m006_07_11_nngla_geographic_naming_gazette.sql",
+      "rollback_file": "m006_07_11_nngla_geographic_naming_gazette_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_feature_recognition_lifecycle"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_name_family_policy",
+          "geography.nngla_name_id_reservation",
+          "geography.nngla_name_lifecycle_event",
+          "geography.nngla_gazette_action_candidate",
+          "geography.nngla_name_assignment_result"
+        ],
+        "indexes": [],
+        "constraints": [],
+        "views": [],
+        "functions": [
+          "geography.nngla_reserve_name_id"
+        ]
+      },
+      "forward_sha256": "77d62c589533626134edc85061e077c8844e65336e06a5e10323f9a57912f089",
+      "rollback_sha256": "13d4022997bbeaa09998a2557988523954df612b96f239079a9161b19267f380",
+      "forward_byte_size": 4948,
+      "rollback_byte_size": 401,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_runtime_command_services",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 17,
+      "description": "nngla_runtime_command_services",
+      "forward_file": "m006_07_11_nngla_runtime_command_services.sql",
+      "rollback_file": "m006_07_11_nngla_runtime_command_services_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_geographic_naming_gazette"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_runtime_command_receipt",
+          "geography.nngla_runtime_bulk_operation_receipt"
+        ],
+        "indexes": [],
+        "constraints": [],
+        "views": [],
+        "functions": [
+          "geography.nngla_claim_runtime_command"
+        ]
+      },
+      "forward_sha256": "542a7c94deb2e37089587042718425b48b3ee8f9d0e239099125445abf4805e7",
+      "rollback_sha256": "530ac33b1048f5e4304d2549116a228e4192f5d611ef3afc5011604bea25207d",
+      "forward_byte_size": 2882,
+      "rollback_byte_size": 253,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_spatial_query_read_models",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 18,
+      "description": "nngla_spatial_query_read_models",
+      "forward_file": "m006_07_11_nngla_spatial_query_read_models.sql",
+      "rollback_file": "m006_07_11_nngla_spatial_query_read_models_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_runtime_command_services"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_spatial_read_projection_v1"
+        ],
+        "indexes": [
+          "ix_nngla_spatial_read_projection_lookup"
+        ],
+        "constraints": [],
+        "views": [
+          "geography.nngla_spatial_subject_read_v1",
+          "geography.nngla_road_frontage_read_v1",
+          "geography.nngla_geocode_name_read_v1"
+        ],
+        "functions": [
+          "geography.nngla_current_geometry",
+          "geography.nngla_query_contains",
+          "geography.nngla_query_within",
+          "geography.nngla_query_intersects",
+          "geography.nngla_query_crosses",
+          "geography.nngla_query_touches",
+          "geography.nngla_query_adjacent",
+          "geography.nngla_query_connected_to",
+          "geography.nngla_query_distance",
+          "geography.nngla_query_nearest",
+          "geography.nngla_query_fronts",
+          "geography.nngla_reverse_geocode"
+        ]
+      },
+      "forward_sha256": "682ac41b7359a5ac5f58bcbb35245cd4777ab064c46d86932ef47485ef75a9cc",
+      "rollback_sha256": "6eccb644a39e0ad40cd8d7034e530d8d1a670823cd2c5b882d16aa6c6559d201",
+      "forward_byte_size": 7464,
+      "rollback_byte_size": 1162,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1

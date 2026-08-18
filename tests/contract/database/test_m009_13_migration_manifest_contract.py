@@ -13,9 +13,9 @@ def test_m009_13_manifest_approves_complete_current_migration_chain():
     catalogue = MigrationManifestLoader().load(MIGRATIONS / "migration_manifest.json")
     MigrationDiscovery(MIGRATIONS).validate_catalogue(catalogue)
     plan = MigrationPlanner().create_plan(catalogue)
-    assert plan.migration_count == 10
-    assert sum(len(item.expected_objects.tables) for item in catalogue.definitions) == 51
-    assert sum(len(item.expected_objects.indexes) for item in catalogue.definitions) == 20
+    assert plan.migration_count == 18
+    assert sum(len(item.expected_objects.tables) for item in catalogue.definitions) == 83
+    assert sum(len(item.expected_objects.indexes) for item in catalogue.definitions) == 21
     assert catalogue.definitions[0].expected_objects.schemas == ("reference",)
 
 

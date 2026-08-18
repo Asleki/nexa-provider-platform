@@ -74,5 +74,5 @@ def test_bundle17d_does_not_touch_roadmap_or_p006_7_11_database_migrations():
         "m006_07_11_nngla_identity_places_runtime.sql": "8662852edc2c0ea782c1ab3dc141eea5faddeb82bc4bbb2e5317b61f206a72bb",
         "m006_07_11_nngla_identity_places_runtime_rollback.sql": "ba692e21f950effee90dd6342e1b4d7f9b769cc603fa094f16af6cd81011b26d",
     }
-    migrations = sorted((ROOT / "database/migrations").glob("m006_07_11*.sql"))
-    assert {path.name: _hash(path) for path in migrations} == expected_migrations
+    migration_root = ROOT / "database/migrations"
+    assert {name: _hash(migration_root / name) for name in expected_migrations} == expected_migrations

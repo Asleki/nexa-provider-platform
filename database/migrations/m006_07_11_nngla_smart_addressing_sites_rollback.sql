@@ -1,0 +1,10 @@
+BEGIN;
+DROP FUNCTION IF EXISTS geography.nngla_reserve_address_number(text,text,text,text);
+DROP TABLE IF EXISTS geography.nngla_site_address_assignment;
+DROP TABLE IF EXISTS geography.nngla_structure_site_reference;
+DROP TABLE IF EXISTS geography.nngla_address_number_reservation;
+DROP TABLE IF EXISTS geography.nngla_address_series;
+DROP TABLE IF EXISTS geography.nngla_road_frontage;
+DROP TABLE IF EXISTS geography.nngla_road_segment;
+DROP SEQUENCE IF EXISTS geography.nngla_address_id_sequence;
+COMMIT;

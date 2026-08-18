@@ -1,0 +1,18 @@
+BEGIN;
+DROP FUNCTION IF EXISTS geography.nngla_reverse_geocode(double precision,double precision,text);
+DROP FUNCTION IF EXISTS geography.nngla_query_fronts(text,text);
+DROP FUNCTION IF EXISTS geography.nngla_query_nearest(text,text,text,integer);
+DROP FUNCTION IF EXISTS geography.nngla_query_distance(text,text,text);
+DROP FUNCTION IF EXISTS geography.nngla_query_connected_to(text,text,text);
+DROP FUNCTION IF EXISTS geography.nngla_query_adjacent(text,text,text);
+DROP FUNCTION IF EXISTS geography.nngla_query_touches(text,text,text);
+DROP FUNCTION IF EXISTS geography.nngla_query_crosses(text,text,text);
+DROP FUNCTION IF EXISTS geography.nngla_query_intersects(text,text,text);
+DROP FUNCTION IF EXISTS geography.nngla_query_within(text,text,text,boolean);
+DROP FUNCTION IF EXISTS geography.nngla_query_contains(text,text,text,boolean);
+DROP FUNCTION IF EXISTS geography.nngla_current_geometry(text,text);
+DROP VIEW IF EXISTS geography.nngla_geocode_name_read_v1;
+DROP VIEW IF EXISTS geography.nngla_road_frontage_read_v1;
+DROP VIEW IF EXISTS geography.nngla_spatial_subject_read_v1;
+DROP TABLE IF EXISTS geography.nngla_spatial_read_projection_v1;
+COMMIT;

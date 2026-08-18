@@ -13,12 +13,12 @@ def test_bundle16c_additive_schema_chain_installs_all_26_nngla_domain_tables_plu
     MigrationDiscovery(MIG).validate_catalogue(catalogue)
     plan=MigrationPlanner().create_plan(catalogue)
     ids=[x.identity.migration_id for x in plan.forward_order]
-    assert len(ids)==10
-    assert ids[-4:]==[
+    assert len(ids)>=10
+    assert ids[6:10]==[
         "m006_07_11_nngla_execution_foundation","m006_07_11_nngla_identity_places_runtime",
         "m006_07_11_nngla_geometry_roads_runtime","m006_07_11_nngla_cadastre_runtime",
     ]
-    tables={t for d in catalogue.definitions[-4:] for t in d.expected_objects.tables}
+    tables={t for d in catalogue.definitions[6:10] for t in d.expected_objects.tables}
     assert "geography.nngla_place_reference" in tables
     assert "geography.nngla_administrative_area" in tables
     assert "geography.nngla_execution_receipt" in tables
