@@ -1,0 +1,6 @@
+profile_id,sequence_number,batch_size,expected_total,purpose
+initial-spatial-2411,1,11,2411,Initial controlled resumable spatial migration for 2411 qualified points
+initial-spatial-2411,2,800,2411,Initial controlled resumable spatial migration for 2411 qualified points
+initial-spatial-2411,3,800,2411,Initial controlled resumable spatial migration for 2411 qualified points
+initial-spatial-2411,4,800,2411,Initial controlled resumable spatial migration for 2411 qualified points
+one-shot-spatial-2411,1,2411,2411,Optional single-transaction spatial migration for 2411 qualified points
