@@ -1,0 +1,31 @@
+{
+  "administrative_identity_count": 192,
+  "bundle": "Bundle 19",
+  "bundle19a_locked_and_unchanged": true,
+  "effective_dated_assignment_count": 192,
+  "gap_findings": 0,
+  "geometry_type_counts": {
+    "MultiPolygon": 9,
+    "Polygon": 183
+  },
+  "illegal_overlap_findings": 0,
+  "legalization_approved_count": 192,
+  "milestone": "P006.7.11.11",
+  "parent_containment_findings": 0,
+  "place_spatial_input_count": 700,
+  "publication_performed": false,
+  "qualified_count": 192,
+  "runtime_effect_scope": "SHARED_REFERENCE",
+  "schema_migration_required": false,
+  "source_provisional_history_preserved": true,
+  "sovereign_containment_findings": 0,
+  "topology_relationship_count": 192,
+  "type_counts": {
+    "CITY": 8,
+    "CITY_DISTRICT": 64,
+    "INDUSTRIAL_ZONE": 16,
+    "MUNICIPALITY": 24,
+    "REGION": 8,
+    "TOWNSHIP": 72
+  }
+}

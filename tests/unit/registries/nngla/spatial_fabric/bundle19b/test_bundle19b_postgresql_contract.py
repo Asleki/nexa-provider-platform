@@ -1,0 +1,2 @@
+from registries.nngla.spatial_fabric.bundle19b.postgresql_contract import existing_schema_findings,bundle19b_requires_schema_migration
+def test_existing_postgresql_contract_is_sufficient(): assert existing_schema_findings()==() and bundle19b_requires_schema_migration() is False
