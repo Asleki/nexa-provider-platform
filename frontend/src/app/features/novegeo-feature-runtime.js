@@ -77,29 +77,44 @@ export function mountNoveGeoFeatureRuntime({
   documentRef = globalThis.document,
   windowRef = globalThis.window,
   runtimeMode = "simulation",
+  boundaryPublication = null,
+  nnglaPublicationMount = mountNnglaPublicationStatus,
+  nnglaPublicationOptions = {},
 } = {}) {
   const viewport = documentRef?.querySelector?.("[data-role='future-map-viewport']");
   if (!viewport) return Object.freeze({ status: "UNAVAILABLE", reason: "feature_viewport_missing" });
 
   // Bundle 12E Omega owns feature-page resize reconciliation so every P004/P005
   // presentation is redrawn against the same actual drawable viewport width.
-  const base = mountMapPresentation(documentRef, { observeResize: false });
-  let physical = mountPhysicalLandPresentation(documentRef);
-  let biosphere = mountBiospherePresentation(documentRef);
-  let hydroClimate = mountHydrologyAtmospherePresentation(documentRef);
-  let coordinates = mountFullViewportCoordinatePresentation(documentRef);
-  const discovery = mountMapNavigationDiscovery(documentRef, windowRef);
+  const base = boundaryPublication
+    ? mountMapPresentation(documentRef, { observeResize: false, publication: boundaryPublication })
+    : mountMapPresentation(documentRef, { observeResize: false });
+  let physical = boundaryPublication
+    ? mountPhysicalLandPresentation(documentRef, { boundaryPublication })
+    : mountPhysicalLandPresentation(documentRef);
+  let biosphere = boundaryPublication
+    ? mountBiospherePresentation(documentRef, { boundaryPublication })
+    : mountBiospherePresentation(documentRef);
+  let hydroClimate = boundaryPublication
+    ? mountHydrologyAtmospherePresentation(documentRef, { boundaryPublication })
+    : mountHydrologyAtmospherePresentation(documentRef);
+  let coordinates = boundaryPublication
+    ? mountFullViewportCoordinatePresentation(documentRef, { boundaryPublication })
+    : mountFullViewportCoordinatePresentation(documentRef);
+  const discovery = boundaryPublication
+    ? mountMapNavigationDiscovery(documentRef, windowRef, { publication: boundaryPublication })
+    : mountMapNavigationDiscovery(documentRef, windowRef);
   const state = mountP006StateIntegration({ documentRef, windowRef, discovery, runtimeMode });
   const openingView = applyDefaultNoveGeoOpeningView({ viewport, discovery, stateIntegration: state });
   const adaptiveControls = configureAdaptiveControls(documentRef);
-  const nnglaPublication = mountNnglaPublicationStatus({ documentRef, fetchRef: windowRef?.fetch || globalThis.fetch });
+  const nnglaPublication = nnglaPublicationMount({ documentRef, fetchRef: windowRef?.fetch || globalThis.fetch, ...nnglaPublicationOptions });
 
   const redrawFeatureSurface = () => {
     const baseReceipt = base.redraw?.() || base;
-    physical = mountPhysicalLandPresentation(documentRef);
-    biosphere = mountBiospherePresentation(documentRef);
-    hydroClimate = mountHydrologyAtmospherePresentation(documentRef);
-    coordinates = mountFullViewportCoordinatePresentation(documentRef);
+    physical = boundaryPublication ? mountPhysicalLandPresentation(documentRef, { boundaryPublication }) : mountPhysicalLandPresentation(documentRef);
+    biosphere = boundaryPublication ? mountBiospherePresentation(documentRef, { boundaryPublication }) : mountBiospherePresentation(documentRef);
+    hydroClimate = boundaryPublication ? mountHydrologyAtmospherePresentation(documentRef, { boundaryPublication }) : mountHydrologyAtmospherePresentation(documentRef);
+    coordinates = boundaryPublication ? mountFullViewportCoordinatePresentation(documentRef, { boundaryPublication }) : mountFullViewportCoordinatePresentation(documentRef);
     return Object.freeze({ base: baseReceipt, physical, biosphere, hydroClimate, coordinates });
   };
 

@@ -1,2 +1,3 @@
-from infrastructure.api.app import create_application
-app=create_application()
+from infrastructure.api.app.live_composition import create_application_from_environment
+
+app = create_application_from_environment()

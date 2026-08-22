@@ -18,6 +18,7 @@ export function noveGeoFeatureMarkup({ runtime = "simulation", backRoute = "simu
         </div>
         <div class="novegeo-tool-rail" data-role="novegeo-tool-rail" aria-label="Map tools"></div>
       </div>
+      <p class="privacy-note" data-role="novegeo-authority-state" role="status" aria-live="polite">Connecting to the authoritative NoveGeo read API…</p>
       <p class="novegeo-feature-note">Governed geography only. No citizen, business, institution or population overlays are introduced by Bundle 12E.</p>
     </section>`;
 }
