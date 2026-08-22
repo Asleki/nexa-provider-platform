@@ -1,0 +1,34 @@
+{
+  "bundle_code": "P006.7.11.10",
+  "bundle_name": "Place Spatial Association and Settlement Geometry",
+  "bundle_version": 1,
+  "counts": {
+    "canonical_places": 700,
+    "parent_spatial_evidence": 668,
+    "place_reference_points": 700,
+    "point_only_explicit_outcomes": 281,
+    "qualified_geometry_assignment_candidates": 1119,
+    "settlement_footprints": 419
+  },
+  "crs_code": "NG-CRS-EPSG4326",
+  "database_contract": {
+    "geometry_identity_allocation": "LIVE GOVERNED geography.nngla_reserve_geometry_id",
+    "new_schema_migration_required": false,
+    "place_geometry_reference_meaning": "CURRENT PRIMARY PLACE_REFERENCE_POINT ONLY"
+  },
+  "effective_date": "2026-08-22",
+  "fingerprint_sha256": "95e3ea014feed3f0c69fc2c2087054bd8d3c516f4eb0d56141d3a37b97cc2cf8",
+  "qualification_status": "PASS",
+  "runtime_effect_scope": "SHARED_REFERENCE",
+  "runtime_mode": "production",
+  "safety_boundaries": [
+    "PLACE IDENTITY IS NOT GEOMETRY IDENTITY",
+    "SETTLEMENT_FOOTPRINT IS NOT AN ADMINISTRATIVE OR LEGAL BOUNDARY",
+    "P006.7.11.10 DOES NOT LEGALIZE ADMINISTRATIVE AREAS",
+    "MAPPED DOES NOT IMPLY PUBLICLY PUBLISHED",
+    "FRONTEND COORDINATES ARE NOT AUTHORITATIVE"
+  ],
+  "source_dataset_id": "dataset:novegeo:place-spatial-association",
+  "source_dataset_version": "1",
+  "source_repository_revision": "25b1f34db429632d409920631140e1265f8c84bf"
+}
