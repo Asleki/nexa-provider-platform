@@ -38,8 +38,12 @@ def test_real_chain_has_exact_forward_and_reverse_rollback_order():
         "m006_07_11_nngla_geographic_naming_gazette",
         "m006_07_11_nngla_runtime_command_services",
         "m006_07_11_nngla_spatial_query_read_models",
+        "m006_07_11_nngla_road_network_construction",
+        "m006_07_11_nngla_governed_spatial_publication",
     ]
     assert [item.identity.migration_id for item in plan.rollback_order] == [
+        "m006_07_11_nngla_governed_spatial_publication",
+        "m006_07_11_nngla_road_network_construction",
         "m006_07_11_nngla_spatial_query_read_models",
         "m006_07_11_nngla_runtime_command_services",
         "m006_07_11_nngla_geographic_naming_gazette",
@@ -59,7 +63,7 @@ def test_real_chain_has_exact_forward_and_reverse_rollback_order():
         "m009_12_06_name_authority",
         "m009_10_04_name_catalogue",
     ]
-    assert plan.migration_count == 18
+    assert plan.migration_count == 20
     assert len(plan.plan_checksum) == 64
 
 

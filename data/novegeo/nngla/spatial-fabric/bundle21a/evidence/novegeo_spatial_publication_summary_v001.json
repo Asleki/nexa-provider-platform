@@ -1,0 +1,28 @@
+{
+  "blocking_reason_counts": {
+    "FEATURE_GEOMETRY_NOT_PUBLISHED": 20,
+    "FEATURE_NAME_NOT_PUBLIC": 20,
+    "NAME_NOT_PUBLIC": 700,
+    "NO_AUTHORITATIVE_GEOMETRY": 192,
+    "NO_NNGLA_PUBLICATION_RECORD": 1262,
+    "ROAD_NOT_AUTHORITATIVELY_MAPPED": 350
+  },
+  "bundle_code": "P006.7.11.14",
+  "bundle_name": "Governed Spatial Publication and National Read Projection",
+  "candidate_counts": {
+    "ADMINISTRATIVE_AREA": 192,
+    "GEOGRAPHIC_FEATURE": 20,
+    "PLACE": 700,
+    "ROAD": 350
+  },
+  "current_map_renderable": 0,
+  "current_public_decisions": 0,
+  "effective_date": "2026-08-23",
+  "excluded_internal_spatial_reference_points": 2411,
+  "feature_candidates_pending_public_name_and_geometry_publication": 20,
+  "place_candidates_blocked_by_proposed_names": 700,
+  "policy_ready_after_live_geometry_binding": 542,
+  "publication_policy": "FAIL_CLOSED_UNTIL_LIVE_GEOMETRY_AND_PUBLICATION_GATE",
+  "target_runtime": "simulation",
+  "total_candidates": 1262
+}

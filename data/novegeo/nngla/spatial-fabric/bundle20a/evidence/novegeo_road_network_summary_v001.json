@@ -1,0 +1,24 @@
+{
+  "bundle_code": "P006.7.11.12",
+  "bundle_name": "Road Geometry and National Network Construction",
+  "class_counts": {
+    "ACCESS": 50,
+    "DISTRICT": 50,
+    "LOCAL": 50,
+    "MUNICIPAL": 50,
+    "REGIONAL": 50,
+    "RURAL": 50,
+    "SERVICE": 50
+  },
+  "counts": {
+    "connections": 700,
+    "junction_nodes": 221,
+    "nodes": 314,
+    "relationships": 1056,
+    "roads": 350,
+    "segments": 350
+  },
+  "effective_date": "2026-08-23",
+  "provenance": "NNGLA_SIMULATION_AUTHORED_NOT_FIELD_SURVEYED",
+  "publication_status": "NOT_PUBLISHED"
+}

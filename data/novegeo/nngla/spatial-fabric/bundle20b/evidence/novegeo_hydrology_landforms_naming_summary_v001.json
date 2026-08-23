@@ -1,0 +1,14 @@
+{
+  "bundle_code": "P006.7.11.13",
+  "bundle_name": "Hydrology, Landforms and Geographic Naming",
+  "counts": {
+    "existing_hydrology_geometries_preserved": 8,
+    "existing_landform_reference_geometries_preserved": 12,
+    "hydro_relationships": 20,
+    "landform_extent_candidates": 11,
+    "physical_feature_names": 20
+  },
+  "effective_date": "2026-08-23",
+  "geometry_policy": "PRESERVE_EXISTING_20_FEATURE_GEOMETRY_CHAINS; ADD_EXTENTS_AS_SEPARATE_ROLES",
+  "naming_effect": "PROPOSED_UNGAZETTED_NO_AUTOMATIC_OFFICIAL_EFFECT"
+}

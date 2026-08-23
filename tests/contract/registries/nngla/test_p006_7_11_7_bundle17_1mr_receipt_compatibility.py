@@ -12,9 +12,14 @@ LOCKED_17E_PERSISTENCE_SHA256 = "c5a70830070fb794f72d2f4691d09c87ca6fbb63"
 
 def test_17_1mr_preserves_plan_lineage_without_schema_migration_19():
     manifest = json.loads((ROOT / "database/migrations/migration_manifest.json").read_text(encoding="utf-8"))
-    assert len(manifest["migrations"]) == 18
-    assert max(row["sequence_number"] for row in manifest["migrations"]) == 18
-    assert all("migration_ready" not in row["migration_id"] for row in manifest["migrations"])
+    historical = manifest["migrations"][:18]
+    assert len(historical) == 18
+    assert max(row["sequence_number"] for row in historical) == 18
+    assert all("migration_ready" not in row["migration_id"] for row in historical)
+    assert [row["migration_id"] for row in manifest["migrations"][18:]] == [
+        "m006_07_11_nngla_road_network_construction",
+        "m006_07_11_nngla_governed_spatial_publication",
+    ]
     assert orchestrator.PLAN_ID == "P006.7.11.7.0MR-SPATIAL-BATCH"
     assert orchestrator.PLAN_VERSION == 2
 

@@ -1,0 +1,556 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              34.3,
+              1.312533
+            ],
+            [
+              33.88,
+              1.732533
+            ],
+            [
+              33.88,
+              2.572533
+            ],
+            [
+              34.3,
+              2.992533
+            ],
+            [
+              35.14,
+              2.992533
+            ],
+            [
+              35.56,
+              2.152533
+            ],
+            [
+              34.72,
+              1.312533
+            ],
+            [
+              34.3,
+              1.312533
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000010",
+        "feature_id": "NG-FEAT-000010",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000010",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:mountain:001",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 18
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              33.88,
+              2.572533
+            ],
+            [
+              33.46,
+              2.992533
+            ],
+            [
+              33.46,
+              3.832533
+            ],
+            [
+              33.88,
+              4.252533
+            ],
+            [
+              34.3,
+              4.252533
+            ],
+            [
+              34.72,
+              3.832533
+            ],
+            [
+              35.14,
+              3.412533
+            ],
+            [
+              34.72,
+              2.572533
+            ],
+            [
+              33.88,
+              2.572533
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000011",
+        "feature_id": "NG-FEAT-000011",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000011",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:mountain:002",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 18
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              33.88,
+              0.052533
+            ],
+            [
+              33.46,
+              0.472533
+            ],
+            [
+              33.46,
+              1.312533
+            ],
+            [
+              33.88,
+              1.732533
+            ],
+            [
+              34.3,
+              1.732533
+            ],
+            [
+              35.14,
+              0.892533
+            ],
+            [
+              34.72,
+              0.052533
+            ],
+            [
+              33.88,
+              0.052533
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000012",
+        "feature_id": "NG-FEAT-000012",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000012",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:mountain:003",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 18
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              36.4,
+              7.192533
+            ],
+            [
+              36.4,
+              7.612533
+            ],
+            [
+              36.82,
+              7.612533
+            ],
+            [
+              36.82,
+              7.192533
+            ],
+            [
+              36.4,
+              7.192533
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000013",
+        "feature_id": "NG-FEAT-000013",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000013",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:valley:001",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 4
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              35.14,
+              -7.507467
+            ],
+            [
+              35.14,
+              -7.087467
+            ],
+            [
+              35.56,
+              -7.087467
+            ],
+            [
+              35.56,
+              -7.507467
+            ],
+            [
+              35.14,
+              -7.507467
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000014",
+        "feature_id": "NG-FEAT-000014",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000014",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:valley:002",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 4
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              35.14,
+              7.192533
+            ],
+            [
+              35.14,
+              7.612533
+            ],
+            [
+              35.56,
+              7.612533
+            ],
+            [
+              35.56,
+              7.192533
+            ],
+            [
+              35.14,
+              7.192533
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000015",
+        "feature_id": "NG-FEAT-000015",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000015",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:valley:003",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 4
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              38.5,
+              6.772533
+            ],
+            [
+              38.5,
+              7.192533
+            ],
+            [
+              38.92,
+              7.192533
+            ],
+            [
+              39.34,
+              6.772533
+            ],
+            [
+              38.5,
+              6.772533
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000017",
+        "feature_id": "NG-FEAT-000017",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000017",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:plain:002",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 5
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              37.24,
+              7.192533
+            ],
+            [
+              37.24,
+              7.612533
+            ],
+            [
+              37.66,
+              7.192533
+            ],
+            [
+              37.24,
+              7.192533
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000018",
+        "feature_id": "NG-FEAT-000018",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000018",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:plain:003",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 3
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              35.98,
+              0.052533
+            ],
+            [
+              36.82,
+              1.732533
+            ],
+            [
+              37.24,
+              1.312533
+            ],
+            [
+              37.24,
+              0.472533
+            ],
+            [
+              36.82,
+              0.052533
+            ],
+            [
+              35.98,
+              0.052533
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000019",
+        "feature_id": "NG-FEAT-000019",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000019",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:plateau:001",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 12
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              37.24,
+              -4.147467
+            ],
+            [
+              36.82,
+              -3.727467
+            ],
+            [
+              36.82,
+              -2.887467
+            ],
+            [
+              37.24,
+              -2.467467
+            ],
+            [
+              38.08,
+              -2.467467
+            ],
+            [
+              38.08,
+              -4.147467
+            ],
+            [
+              37.24,
+              -4.147467
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000020",
+        "feature_id": "NG-FEAT-000020",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000020",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:plateau:002",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 15
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              38.5,
+              -4.567467
+            ],
+            [
+              38.08,
+              -4.147467
+            ],
+            [
+              39.34,
+              -2.887467
+            ],
+            [
+              39.76,
+              -3.307467
+            ],
+            [
+              39.76,
+              -4.147467
+            ],
+            [
+              39.34,
+              -4.567467
+            ],
+            [
+              38.5,
+              -4.567467
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "properties": {
+        "existing_reference_geometry_id": "NG-GEO-000021",
+        "feature_id": "NG-FEAT-000021",
+        "geometry_id": "",
+        "geometry_id_state": "PENDING_GOVERNED_LIVE_RESERVATION",
+        "geometry_reservation_key": "p006.7.11.13:landform-extent:NG-FEAT-000021",
+        "geometry_role_code": "LANDFORM_EXTENT",
+        "physical_subject_id": "landform:novegeo:plateau:003",
+        "publication_status": "NOT_PUBLISHED",
+        "qualification_status": "QUALIFIED_CANDIDATE",
+        "runtime_effect_scope": "SHARED_REFERENCE",
+        "runtime_mode": "production",
+        "source_basis": "QUALIFIED_TERRAIN_V001_OBSERVATIONAL_CONVEX_HULL",
+        "terrain_sample_count": 14
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

@@ -64,12 +64,16 @@ def test_manifest_extends_locked_ten_entry_prefix_without_renumbering():
     catalogue = _catalogue()
     ids = tuple(item.identity.migration_id for item in catalogue.definitions)
     assert ids[:10] == LOCKED_PREFIX
-    assert ids[10:] == tuple(stem for _, stem in TAIL)
-    assert tuple(item.identity.sequence_number for item in catalogue.definitions) == tuple(range(1, 19))
+    assert ids[10:18] == tuple(stem for _, stem in TAIL)
+    assert tuple(item.identity.sequence_number for item in catalogue.definitions[:18]) == tuple(range(1, 19))
     assert all(item.identity.milestone_id == "M006.7.11" for item in catalogue.definitions[10:])
     assert catalogue.definitions[10].depends_on == (LOCKED_PREFIX[-1],)
-    for previous, current in zip(catalogue.definitions[10:-1], catalogue.definitions[11:]):
+    for previous, current in zip(catalogue.definitions[10:], catalogue.definitions[11:]):
         assert current.depends_on == (previous.identity.migration_id,)
+    assert ids[18:] == (
+        "m006_07_11_nngla_road_network_construction",
+        "m006_07_11_nngla_governed_spatial_publication",
+    )
 
 
 def test_forward_migrations_are_transaction_wrapped_verbatim_locked_schema_contracts():
@@ -98,14 +102,14 @@ def test_manifest_checksums_sizes_discovery_and_dependency_plan_are_clean():
     catalogue = _catalogue()
     assert MigrationDiscovery(MIGRATIONS).validate_catalogue(catalogue) is catalogue
     plan = MigrationPlanner().create_plan(catalogue)
-    assert plan.migration_count == 18
-    assert tuple(item.identity.migration_id for item in plan.forward_order[-8:]) == tuple(stem for _, stem in TAIL)
-    assert tuple(item.identity.migration_id for item in plan.rollback_order[:8]) == tuple(stem for _, stem in reversed(TAIL))
+    assert plan.migration_count == 20
+    assert tuple(item.identity.migration_id for item in plan.forward_order[10:18]) == tuple(stem for _, stem in TAIL)
+    assert tuple(item.identity.migration_id for item in plan.rollback_order[2:10]) == tuple(stem for _, stem in reversed(TAIL))
     assert len(plan.plan_checksum) == 64
 
 
 def test_remediation_manifest_exposes_complete_additive_operational_object_surface():
-    tail = _catalogue().definitions[10:]
+    tail = _catalogue().definitions[10:18]
     tables = {name for item in tail for name in item.expected_objects.tables}
     indexes = {name for item in tail for name in item.expected_objects.indexes}
     views = {name for item in tail for name in item.expected_objects.views}
