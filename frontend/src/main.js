@@ -26,6 +26,9 @@ export async function bootstrap(documentRef = globalThis.document, windowRef = g
   void import("./app/auth/authentication-experience.js")
     .then(({ installAuthenticationExperience }) => installAuthenticationExperience({ documentRef, windowRef, application }))
     .catch((error) => console.warn("[NexiLabs PWA] Development authentication unavailable.", error));
+  void import("./app/features/novegeo-national-geography-experience.js")
+    .then(({ installNoveGeoNationalGeographyExperience }) => installNoveGeoNationalGeographyExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
+    .catch((error) => console.warn("[NexiLabs PWA] Governed national geography unavailable.", error));
   return application;
 }
 

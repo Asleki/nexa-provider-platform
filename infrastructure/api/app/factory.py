@@ -7,10 +7,13 @@ from infrastructure.api.config import InfrastructureSettings
 from infrastructure.api.middleware import CorrelationIdMiddleware, SecurityHeadersMiddleware
 from infrastructure.api.routers import geography_router, health_router, publication_router
 from infrastructure.api.routers.nngla import router as nngla_router
+from infrastructure.api.routers.nngla_map import router as nngla_map_router
 from infrastructure.api.services.publication_service import build_default_publication_service
 from infrastructure.api.services.nngla_read_service import build_default_nngla_read_service
+from infrastructure.api.services.nngla_map_read_service import build_default_nngla_map_read_service
 from infrastructure.database.runtime.pool import DatabaseUnavailable
 from infrastructure.database.read.nngla import NNGLAReadAuthorityError
+from infrastructure.database.read.nngla_national_map import NNGLAMapReadAuthorityError
 from infrastructure.database.read.world_boundary import WorldBoundaryAuthorityError
 from infrastructure.geography import build_default_world_geometry_service
 from .state import ApplicationState
@@ -21,6 +24,7 @@ def create_application(
     publication_service=None,
     world_geometry_service=None,
     nngla_read_service=None,
+    nngla_map_read_service=None,
     database_pool=None,
 ) -> FastAPI:
     settings = settings or InfrastructureSettings()
@@ -55,6 +59,7 @@ def create_application(
     app.state.publication_service = publication_service or build_default_publication_service()
     app.state.world_geometry_service = world_geometry_service or build_default_world_geometry_service()
     app.state.nngla_read_service = nngla_read_service or build_default_nngla_read_service()
+    app.state.nngla_map_read_service = nngla_map_read_service or build_default_nngla_map_read_service()
     app.add_middleware(SecurityHeadersMiddleware)
     app.add_middleware(CorrelationIdMiddleware)
     app.add_middleware(TrustedHostMiddleware, allowed_hosts=list(settings.trusted_hosts))
@@ -69,6 +74,7 @@ def create_application(
     app.include_router(publication_router, prefix=settings.api_prefix)
     app.include_router(geography_router, prefix=settings.api_prefix)
     app.include_router(nngla_router, prefix=settings.api_prefix)
+    app.include_router(nngla_map_router, prefix=settings.api_prefix)
 
     async def database_unavailable(request: Request, exc: Exception):
         return JSONResponse(
@@ -84,6 +90,7 @@ def create_application(
 
     app.add_exception_handler(DatabaseUnavailable, database_unavailable)
     app.add_exception_handler(NNGLAReadAuthorityError, database_unavailable)
+    app.add_exception_handler(NNGLAMapReadAuthorityError, database_unavailable)
     app.add_exception_handler(WorldBoundaryAuthorityError, database_unavailable)
 
     @app.exception_handler(Exception)

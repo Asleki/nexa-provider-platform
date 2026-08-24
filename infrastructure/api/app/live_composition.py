@@ -11,8 +11,10 @@ from typing import Mapping
 
 from infrastructure.api.config import InfrastructureSettings
 from infrastructure.api.services.nngla_postgresql_read_service import PostgreSQLNNGLAReadService
+from infrastructure.api.services.nngla_map_read_service import PostgreSQLNNGLAMapReadService
 from infrastructure.database import DatabaseRuntimeSettings, PostgreSQLPool
 from infrastructure.database.read import PostgreSQLNNGLAReadRepository, PostgreSQLWorldBoundaryRepository
+from infrastructure.database.read.nngla_national_map import PostgreSQLNNGLANationalMapRepository
 from infrastructure.geography.service import WorldGeometryService
 
 from .factory import create_application
@@ -49,10 +51,14 @@ def create_application_from_environment(env: Mapping[str, str] | None = None):
     nngla_read_service = PostgreSQLNNGLAReadService(
         PostgreSQLNNGLAReadRepository(pool, runtime_mode=runtime_mode)
     )
+    nngla_map_read_service = PostgreSQLNNGLAMapReadService(
+        PostgreSQLNNGLANationalMapRepository(pool, runtime_mode=runtime_mode)
+    )
     return create_application(
         settings,
         world_geometry_service=world_geometry_service,
         nngla_read_service=nngla_read_service,
+        nngla_map_read_service=nngla_map_read_service,
         database_pool=pool,
     )
 
