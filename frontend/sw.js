@@ -1,5 +1,6 @@
-/** P003.2–P003.4 — Versioned offline application-shell service worker. */
+/** P003.2–P003.4 / P006.7.11.15.4_R2 — Versioned offline application-shell service worker. */
 const CACHE_NAME = "nexilabs-shell-v17";
+const SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-4-r2";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -14,6 +15,7 @@ const APP_SHELL = [
   "./public/brand/nexilabs/pwa/nexilabs_maskable_512x512.png",
   "./styles/app.css",
   "./styles/novegeo-map-shell-v1.css",
+  "./styles/novegeo-cartography-v1.css",
   "./src/main.js",
   "./src/ui/partials/header.html",
   "./src/ui/partials/footer.html",
@@ -36,6 +38,8 @@ const APP_SHELL = [
   "./src/app/features/novegeo-live-authority-runtime.js",
   "./src/app/features/novegeo-map-shell-hardening-runtime.js",
   "./src/app/features/novegeo-feature-geometry.js",
+  "./src/app/features/novegeo-national-geography-experience.js",
+  "./src/app/features/novegeo-cartographic-styling-experience.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",
@@ -51,6 +55,9 @@ const APP_SHELL = [
   "./src/map/nngla/read-client.js",
   "./src/map/nngla/render-plan.js",
   "./src/map/nngla/publication-status.js",
+  "./src/map/nngla/national-map-client.js",
+  "./src/map/nngla/national-map-contracts.js",
+  "./src/map/nngla/national-map-state.js",
   "./src/map/geography/contracts.js",
   "./src/map/geography/live-boundary-client.js",
   "./src/map/geography/projection.js",
@@ -64,6 +71,13 @@ const APP_SHELL = [
   "./src/map/presentation/map-presentation.js",
   "./src/map/presentation/publication.js",
   "./src/map/presentation/viewport.js",
+  "./src/map/cartography/contracts.js",
+  "./src/map/cartography/style-catalog.js",
+  "./src/map/cartography/country-anchor.js",
+  "./src/map/cartography/label-plan.js",
+  "./src/map/cartography/collision.js",
+  "./src/map/cartography/label-renderer.js",
+  "./src/map/cartography/cartographic-overlay.js",
   "./src/map/publication/contracts.js",
   "./src/map/publication/catalog.js",
   "./src/map/publication/index.js",
@@ -128,13 +142,25 @@ const APP_SHELL = [
   "./public/geography/novegeo/terrain/v001/overview.json",
   "./public/geography/novegeo/terrain/v001/standard.json",
   "./public/geography/novegeo/landforms/v001/manifest.json",
-  "./public/geography/novegeo/landforms/v001/standard.geojson"
+  "./public/geography/novegeo/landforms/v001/standard.geojson",
 ];
 
 self.addEventListener("install", (event) => {
   event.waitUntil((async () => {
+    const existingKeys = await caches.keys();
+    const refreshingExistingGeneration = existingKeys.includes(CACHE_NAME);
+
     const cache = await caches.open(CACHE_NAME);
     await cache.addAll(APP_SHELL);
+
+    // P006.7.11.15.4_R2: the repository's locked PWA ABI still identifies the
+    // installed generation as v17. When this worker replaces an older v17
+    // script, remember that fact persistently so activation can restart the
+    // stale ES-module graph exactly once without changing the public cache ABI.
+    if (refreshingExistingGeneration) {
+      await caches.open(SAME_GENERATION_REFRESH_MARKER);
+    }
+
     // Bundle 12.0E: activate only after the complete replacement shell is cached.
     await self.skipWaiting();
   })());
@@ -143,15 +169,17 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    const previousShellKeys = keys.filter((key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME);
+    const sameGenerationRefresh = keys.includes(SAME_GENERATION_REFRESH_MARKER);
+    const previousShellKeys = keys.filter(
+      (key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME
+    );
+
     await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));
     await self.clients.claim();
 
-    // A previously controlled page can keep its old ES-module graph in memory even after
-    // controllerchange. Navigate stale window clients exactly once per shell generation so
-    // they restart against the newly completed cache. First installation has no old shell
-    // cache and therefore does not cause an unnecessary reload.
-    if (previousShellKeys.length > 0) {
+    // Preserve the historical v16 -> v17 restart and add the one missing case:
+    // an older v17 worker whose cache contains a stale ES-module graph.
+    if (previousShellKeys.length > 0 || sameGenerationRefresh) {
       const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
       await Promise.all(clients.map((client) => {
         if (!client.url?.startsWith(self.location.origin)) return undefined;

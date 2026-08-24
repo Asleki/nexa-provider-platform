@@ -29,6 +29,9 @@ export async function bootstrap(documentRef = globalThis.document, windowRef = g
   void import("./app/features/novegeo-national-geography-experience.js")
     .then(({ installNoveGeoNationalGeographyExperience }) => installNoveGeoNationalGeographyExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
     .catch((error) => console.warn("[NexiLabs PWA] Governed national geography unavailable.", error));
+  void import("./app/features/novegeo-cartographic-styling-experience.js")
+    .then(({ installNoveGeoCartographicStylingExperience }) => installNoveGeoCartographicStylingExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
+    .catch((error) => console.warn("[NexiLabs PWA] Cartographic styling unavailable.", error));
   return application;
 }
 

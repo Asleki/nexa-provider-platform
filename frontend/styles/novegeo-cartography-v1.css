@@ -1,0 +1,17 @@
+/** P006.7.11.15.4 — presentation-only cartographic overlay styling. */
+.novegeo-feature-page [data-role="future-map-viewport"][data-cartography-version="1"] {
+  isolation: isolate;
+}
+
+.novegeo-feature-page [data-role="novegeo-cartographic-label-canvas"] {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.novegeo-feature-page[data-cartographic-styling="DEGRADED"] [data-role="novegeo-cartographic-label-canvas"] {
+  display: none;
+}

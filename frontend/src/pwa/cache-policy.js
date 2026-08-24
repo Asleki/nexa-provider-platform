@@ -1,4 +1,4 @@
-/** P003.3/P003.4 — Immutable application-shell cache policy. */
+/** P003.3/P003.4 / P006.7.11.15.4_R2 — Immutable application-shell cache policy. */
 export const PWA_CACHE_VERSION = "nexilabs-shell-v17";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
@@ -13,6 +13,7 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./public/brand/nexilabs/pwa/nexilabs_maskable_512x512.png",
   "./styles/app.css",
   "./styles/novegeo-map-shell-v1.css",
+  "./styles/novegeo-cartography-v1.css",
   "./src/main.js",
   "./src/ui/partials/header.html",
   "./src/ui/partials/footer.html",
@@ -35,6 +36,8 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/app/features/novegeo-live-authority-runtime.js",
   "./src/app/features/novegeo-map-shell-hardening-runtime.js",
   "./src/app/features/novegeo-feature-geometry.js",
+  "./src/app/features/novegeo-national-geography-experience.js",
+  "./src/app/features/novegeo-cartographic-styling-experience.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",
@@ -50,6 +53,9 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/map/nngla/read-client.js",
   "./src/map/nngla/render-plan.js",
   "./src/map/nngla/publication-status.js",
+  "./src/map/nngla/national-map-client.js",
+  "./src/map/nngla/national-map-contracts.js",
+  "./src/map/nngla/national-map-state.js",
   "./src/map/geography/contracts.js",
   "./src/map/geography/live-boundary-client.js",
   "./src/map/geography/projection.js",
@@ -63,6 +69,13 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/map/presentation/map-presentation.js",
   "./src/map/presentation/publication.js",
   "./src/map/presentation/viewport.js",
+  "./src/map/cartography/contracts.js",
+  "./src/map/cartography/style-catalog.js",
+  "./src/map/cartography/country-anchor.js",
+  "./src/map/cartography/label-plan.js",
+  "./src/map/cartography/collision.js",
+  "./src/map/cartography/label-renderer.js",
+  "./src/map/cartography/cartographic-overlay.js",
   "./src/map/publication/contracts.js",
   "./src/map/publication/catalog.js",
   "./src/map/publication/index.js",
@@ -127,9 +140,5 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./public/geography/novegeo/terrain/v001/overview.json",
   "./public/geography/novegeo/terrain/v001/standard.json",
   "./public/geography/novegeo/landforms/v001/manifest.json",
-  "./public/geography/novegeo/landforms/v001/standard.geojson"
+  "./public/geography/novegeo/landforms/v001/standard.geojson",
 ]);
-
-export function isCurrentApplicationCache(cacheName) {
-  return cacheName === PWA_CACHE_VERSION;
-}
