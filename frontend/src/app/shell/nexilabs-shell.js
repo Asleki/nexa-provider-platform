@@ -14,6 +14,7 @@ import { noveGeoFeatureMarkup } from "../../ui/pages/novegeo-feature.js";
 import { productionFeatureGuardMarkup } from "../../ui/pages/production-feature-guard.js";
 import { accessPlaceholderMarkup } from "../../ui/pages/access-placeholder.js";
 import { mountNoveGeoLiveAuthorityRuntime } from "../features/novegeo-live-authority-runtime.js";
+import { mountNoveGeoMapShellHardeningRuntime } from "../features/novegeo-map-shell-hardening-runtime.js";
 
 function pageMarkup(route) {
   switch (route) {
@@ -73,6 +74,7 @@ export async function mountNexiLabsShell({
   const runtimeSelection = createRuntimeSelection();
   let router;
   let featureRuntime = null;
+  let mapShellHardeningRuntime = null;
 
   const routeRuntime = (route) => {
     if (route === ApplicationRoute.SIMULATION_ENTRY || route === ApplicationRoute.SIMULATION_NOVEGEO) return "simulation";
@@ -81,6 +83,8 @@ export async function mountNexiLabsShell({
   };
 
   const renderRoute = (route) => {
+    mapShellHardeningRuntime?.disconnect?.();
+    mapShellHardeningRuntime = null;
     featureRuntime?.disconnect?.();
     featureRuntime = null;
     outlet.innerHTML = pageMarkup(route);
@@ -95,6 +99,7 @@ export async function mountNexiLabsShell({
     root.dataset.developerDiagnostics = "false";
     if (route === ApplicationRoute.SIMULATION_NOVEGEO) {
       featureRuntime = mountNoveGeoLiveAuthorityRuntime({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl, runtimeMode: "simulation" });
+      mapShellHardeningRuntime = mountNoveGeoMapShellHardeningRuntime({ documentRef, windowRef, authorityRuntime: featureRuntime });
     }
     const main = documentRef.querySelector("#main-content");
     main?.focus?.({ preventScroll: true });
