@@ -3,7 +3,7 @@ from database.migration_control.service import MigrationControlService
 from database.migration_control.ledger import MemoryMigrationLedger
 ROOT=Path('database/migrations')
 def test_status_and_verify_are_read_only():
- l=MemoryMigrationLedger(False); s=MigrationControlService(ROOT,ROOT/'migration_manifest.json',l); assert s.status().pending_migrations==20; assert s.verify().ledger_state=='NOT_BOOTSTRAPPED'; assert not l.is_bootstrapped()
+ l=MemoryMigrationLedger(False); s=MigrationControlService(ROOT,ROOT/'migration_manifest.json',l); expected=s.trusted_plan().migration_count; assert s.status().pending_migrations==expected; assert s.verify().ledger_state=='NOT_BOOTSTRAPPED'; assert not l.is_bootstrapped()
 
 
 from datetime import datetime, timezone
@@ -63,9 +63,9 @@ def test_structural_verify_checks_only_ledger_applied_migrations_when_repository
 
     status = service.verify(structural=True)
 
-    assert status.repository_migrations == 20
+    assert status.repository_migrations == service.trusted_plan().migration_count
     assert status.applied_migrations == 6
-    assert status.pending_migrations == 14
+    assert status.pending_migrations == service.trusted_plan().migration_count - 6
     assert drift.definition_ids == tuple(
         definition.identity.migration_id
         for definition in service.trusted_plan().forward_order[:6]

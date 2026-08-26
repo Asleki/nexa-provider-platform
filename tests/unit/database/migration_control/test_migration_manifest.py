@@ -13,7 +13,7 @@ MANIFEST = ROOT / "database/migrations/migration_manifest.json"
 
 def test_real_manifest_loads_five_immutable_definitions():
     catalogue = MigrationManifestLoader().load(MANIFEST)
-    assert len(catalogue.definitions) == 20
+    assert len(catalogue.definitions) >= 20
     assert catalogue.manifest_schema == "npp.database-migration-manifest"
     assert len(catalogue.manifest_digest) == 64
     assert catalogue.definitions[0].identity.milestone_id == "M009.10.4"

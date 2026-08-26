@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 5,
+  "catalogue_version": 6,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -697,6 +697,49 @@
       "rollback_sha256": "cc3976de7a562f4061f1d59c1036fa72f3e1991a3b49b0c779d57c02e1feae09",
       "forward_byte_size": 1631,
       "rollback_byte_size": 72,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_shared_face_candidate_lifecycle",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 21,
+      "description": "nngla_shared_face_candidate_lifecycle",
+      "forward_file": "m006_07_11_nngla_shared_face_candidate_lifecycle.sql",
+      "rollback_file": "m006_07_11_nngla_shared_face_candidate_lifecycle_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_governed_spatial_publication"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_shared_face_fabric_run",
+          "geography.nngla_shared_face_fabric_input",
+          "geography.nngla_shared_face_edge_candidate",
+          "geography.nngla_shared_face_edge_lineage",
+          "geography.nngla_shared_face_face_candidate",
+          "geography.nngla_shared_face_finding",
+          "geography.nngla_shared_face_governance_decision",
+          "geography.nngla_shared_face_face_assignment",
+          "geography.nngla_shared_face_geometry_candidate",
+          "geography.nngla_shared_face_qualification_decision",
+          "geography.nngla_shared_face_candidate_receipt"
+        ],
+        "indexes": [
+          "ix_nngla_shared_face_run_root_status",
+          "ix_nngla_shared_face_run_parent",
+          "ix_nngla_shared_face_governance_run",
+          "ix_nngla_shared_face_candidate_subject"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "67951db33b4ce1e04f0ae661d29af79a128d2002a7e63d61fcbe031cb9cf5f72",
+      "rollback_sha256": "53f2b8ef405c593fcfeb9e9f6d6e252ca7286965150e83b8014c98900897d468",
+      "forward_byte_size": 8990,
+      "rollback_byte_size": 736,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1

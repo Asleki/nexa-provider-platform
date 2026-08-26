@@ -16,7 +16,7 @@ def test_17_1mr_preserves_plan_lineage_without_schema_migration_19():
     assert len(historical) == 18
     assert max(row["sequence_number"] for row in historical) == 18
     assert all("migration_ready" not in row["migration_id"] for row in historical)
-    assert [row["migration_id"] for row in manifest["migrations"][18:]] == [
+    assert [row["migration_id"] for row in manifest["migrations"][18:20]] == [
         "m006_07_11_nngla_road_network_construction",
         "m006_07_11_nngla_governed_spatial_publication",
     ]

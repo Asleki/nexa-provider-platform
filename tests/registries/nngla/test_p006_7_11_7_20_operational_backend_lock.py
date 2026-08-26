@@ -6,6 +6,7 @@ any earlier Bundle 17A-17O test.  Bundle 17P introduces no production feature.
 from __future__ import annotations
 
 from pathlib import Path
+import json
 import subprocess
 
 
@@ -195,6 +196,59 @@ def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
             target_path.startswith("tests/")
             or target_path.startswith("verification/")
         ):
+            continue
+
+        # Later governed migrations must append to the existing manifest.
+        # The manifest is the one tracked production file that may therefore
+        # change during an additive migration milestone, but only when every
+        # committed migration row remains an exact unchanged prefix and only
+        # later definitions are appended.
+        if (
+            target_path == "database/migrations/migration_manifest.json"
+            and status.strip() == "M"
+        ):
+            current = json.loads(
+                (root / target_path).read_text(encoding="utf-8")
+            )
+
+            prior_proc = subprocess.run(
+                ["git", "show", f"HEAD:{target_path}"],
+                cwd=root,
+                text=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                check=False,
+            )
+
+            if prior_proc.returncode != 0:
+                disallowed.append(target_path)
+                continue
+
+            prior = json.loads(prior_proc.stdout)
+
+            old_rows = prior.get("migrations", [])
+            new_rows = current.get("migrations", [])
+
+            root_fields_match = all(
+                current.get(key) == prior.get(key)
+                for key in (
+                    "manifest_schema",
+                    "manifest_schema_version",
+                )
+            )
+
+            append_only = (
+                root_fields_match
+                and len(new_rows) > len(old_rows)
+                and new_rows[:len(old_rows)] == old_rows
+                and int(current.get("catalogue_version", 0))
+                >= int(prior.get("catalogue_version", 0))
+            )
+
+            if append_only:
+                continue
+
+            disallowed.append(target_path)
             continue
 
         # Renaming/copying locked production is not an additive extension.

@@ -1,0 +1,13 @@
+BEGIN;
+DROP TABLE IF EXISTS geography.nngla_shared_face_candidate_receipt;
+DROP TABLE IF EXISTS geography.nngla_shared_face_qualification_decision;
+DROP TABLE IF EXISTS geography.nngla_shared_face_geometry_candidate;
+DROP TABLE IF EXISTS geography.nngla_shared_face_face_assignment;
+DROP TABLE IF EXISTS geography.nngla_shared_face_governance_decision;
+DROP TABLE IF EXISTS geography.nngla_shared_face_finding;
+DROP TABLE IF EXISTS geography.nngla_shared_face_face_candidate;
+DROP TABLE IF EXISTS geography.nngla_shared_face_edge_lineage;
+DROP TABLE IF EXISTS geography.nngla_shared_face_edge_candidate;
+DROP TABLE IF EXISTS geography.nngla_shared_face_fabric_input;
+DROP TABLE IF EXISTS geography.nngla_shared_face_fabric_run;
+COMMIT;

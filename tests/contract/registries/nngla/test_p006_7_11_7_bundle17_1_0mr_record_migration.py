@@ -15,7 +15,7 @@ def test_plan_lineage_advances_to_v3_without_new_database_migration():
     assert historical[-1]["sequence_number"] == 18
     assert all("migration_ready" not in row["migration_id"] for row in historical)
     # Later milestones may append schema migrations; that does not rewrite the locked v3 record-migration lineage.
-    assert [row["sequence_number"] for row in manifest["migrations"][18:]] == [19, 20]
+    assert [row["sequence_number"] for row in manifest["migrations"][18:20]] == [19, 20]
 
 
 def test_record_engine_is_additive_and_locked_bundle17e_is_not_rewritten():
