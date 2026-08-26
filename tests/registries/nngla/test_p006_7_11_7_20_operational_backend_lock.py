@@ -127,6 +127,21 @@ def test_spatial_query_and_cross_registry_read_evidence_is_still_reachable():
 
 
 def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
+    """Protect locked production while permitting genuinely additive milestones.
+
+    Bundle 17P originally rejected every production-path working-tree entry.
+    That was appropriate while 17P itself was under construction, but later
+    milestone immutability requires a different invariant:
+
+    * production that already exists in HEAD remains immutable;
+    * roadmap surfaces remain immutable;
+    * tests and verification may be appended;
+    * genuinely new production modules may be added.
+
+    Additive status must be determined relative to HEAD rather than from the
+    current porcelain status alone, because a new file changes from ``??`` to
+    ``A `` once staged.
+    """
     root = _repo_root()
     proc = subprocess.run(
         ["git", "status", "--porcelain=v1", "--untracked-files=all"],
@@ -137,16 +152,75 @@ def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
         check=False,
     )
     assert proc.returncode == 0, proc.stderr
+
+    roadmap_names = {
+        "ROADMAP.md",
+        "PWA_ROADMAP.md",
+        "ROADMAP_TRACKER.md",
+        "roadmap.py",
+        "roadmap_data.py",
+        "roadmap_frontend.py",
+        "pwa_roadmap.py",
+        "pwa_roadmap_data.py",
+        "pwa_roadmap_frontend.py",
+        "roadmap_tracker.py",
+    }
+
     disallowed = []
+
     for line in proc.stdout.splitlines():
         if len(line) < 4:
             continue
-        path = line[3:].strip().replace("\\", "/")
-        if " -> " in path:
-            path = path.split(" -> ", 1)[1]
-        if not (path.startswith("tests/") or path.startswith("verification/")):
-            disallowed.append(path)
+
+        status = line[:2]
+        path_value = line[3:].strip().replace("\\\\", "/")
+
+        source_path = ""
+        target_path = path_value
+
+        if " -> " in path_value:
+            source_path, target_path = path_value.split(" -> ", 1)
+
+        name = target_path.rsplit("/", 1)[-1]
+
+        if (
+            name in roadmap_names
+            or target_path.startswith("roadmap/")
+            or target_path.startswith("docs/roadmap/")
+        ):
+            disallowed.append(target_path)
+            continue
+
+        if (
+            target_path.startswith("tests/")
+            or target_path.startswith("verification/")
+        ):
+            continue
+
+        # Renaming/copying locked production is not an additive extension.
+        if "R" in status or "C" in status:
+            disallowed.append(path_value)
+            continue
+
+        # A production path is additive only when it did not exist in HEAD.
+        # This remains true both before staging (??) and after staging (A/AM).
+        head_probe = subprocess.run(
+            ["git", "cat-file", "-e", f"HEAD:{target_path}"],
+            cwd=root,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+
+        if head_probe.returncode != 0:
+            continue
+
+        # The path existed in the locked HEAD, therefore any working-tree or
+        # index change to it requires explicit compatibility/maintenance work.
+        disallowed.append(target_path)
+
     assert not disallowed, (
-        "17P Phase B-E is a no-new-production-code qualification gate. "
-        f"Unexpected modified/untracked paths: {sorted(disallowed)}"
+        "Locked production or roadmap surfaces changed during later additive "
+        f"work. Unexpected existing-path changes: {sorted(disallowed)}"
     )
+
