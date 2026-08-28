@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 6,
+  "catalogue_version": 7,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -740,6 +740,47 @@
       "rollback_sha256": "53f2b8ef405c593fcfeb9e9f6d6e252ca7286965150e83b8014c98900897d468",
       "forward_byte_size": 8990,
       "rollback_byte_size": 736,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_administrative_authority_adoption",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 22,
+      "description": "nngla_feature_level_city_qualification_authority_adoption_publication",
+      "forward_file": "m006_07_11_nngla_administrative_authority_adoption.sql",
+      "rollback_file": "m006_07_11_nngla_administrative_authority_adoption_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_shared_face_candidate_lifecycle"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_city_feature_qualification",
+          "geography.nngla_administrative_geometry_adoption_decision",
+          "geography.nngla_administrative_geometry_assignment",
+          "geography.nngla_administrative_legalization_decision",
+          "geography.nngla_city_authority_receipt",
+          "geography.nngla_unresolved_territorial_residual",
+          "geography.nngla_administrative_fabric_completeness"
+        ],
+        "indexes": [
+          "ix_nngla_city_feature_qualification_subject",
+          "ix_nngla_admin_adoption_subject",
+          "ux_nngla_admin_geometry_assignment_current",
+          "ix_nngla_admin_geometry_assignment_geometry",
+          "ix_nngla_residual_parent_review",
+          "ix_nngla_fabric_completeness_parent"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "0a1a4433716472e06136c33406841d27cc1f71881a608ec0ab78e3145ce905cf",
+      "rollback_sha256": "3f09969d66329efc3b352ca3bdb8808435999de4caef9f1c8a53cf1d6732a17d",
+      "forward_byte_size": 13750,
+      "rollback_byte_size": 512,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1

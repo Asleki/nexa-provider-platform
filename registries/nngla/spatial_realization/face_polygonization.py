@@ -144,9 +144,30 @@ def _perimeter_km(geometry) -> float:
 
 
 def _adjacency(component, sibling_rows, sibling_geometries) -> tuple[str, ...]:
+    """Return positive-length sibling adjacency for polygonal residual content.
+
+    Shapely may expose ``GeometryCollection.boundary`` as ``None`` even when the
+    collection contains legitimate Polygon/MultiPolygon residual components.
+    Delivery 1 classifies the *aggregate* residual geometry, so adjacency must
+    not split or otherwise reinterpret that diagnostic.  It may, however,
+    derive a lineal inspection boundary from only the polygonal components.
+    """
+    *_, unary_union, _ = _geometry_engine()
+    polygon_parts = _polygon_parts(component)
+    if not polygon_parts:
+        return ()
+    boundaries = [part.boundary for part in polygon_parts if not part.is_empty and part.boundary is not None and not part.boundary.is_empty]
+    if not boundaries:
+        return ()
+    inspection_boundary = unary_union(boundaries)
+    if inspection_boundary is None or inspection_boundary.is_empty:
+        return ()
     rows = []
     for item, geometry in zip(sibling_rows, sibling_geometries):
-        intersection = component.boundary.intersection(geometry.boundary)
+        sibling_boundary = geometry.boundary
+        if sibling_boundary is None or sibling_boundary.is_empty:
+            continue
+        intersection = inspection_boundary.intersection(sibling_boundary)
         if intersection.is_empty:
             continue
         if float(_projected(intersection).length) > 0.0:
