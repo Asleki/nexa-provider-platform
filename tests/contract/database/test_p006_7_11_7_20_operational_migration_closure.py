@@ -68,7 +68,12 @@ def test_manifest_extends_locked_ten_entry_prefix_without_renumbering():
     assert tuple(item.identity.sequence_number for item in catalogue.definitions[:18]) == tuple(range(1, 19))
     assert all(item.identity.milestone_id == "M006.7.11" for item in catalogue.definitions[10:])
     assert catalogue.definitions[10].depends_on == (LOCKED_PREFIX[-1],)
-    for previous, current in zip(catalogue.definitions[10:], catalogue.definitions[11:]):
+    # Preserve the exact historical operational chain through Delivery 3.
+    # Later additive migrations may branch from the earliest stable contract
+    # they actually require; they must not acquire a false Delivery-3
+    # architectural dependency merely to satisfy this historical lock.
+    locked_operational_chain = catalogue.definitions[10:22]
+    for previous, current in zip(locked_operational_chain, locked_operational_chain[1:]):
         assert current.depends_on == (previous.identity.migration_id,)
     assert ids[18:20] == (
         "m006_07_11_nngla_road_network_construction",

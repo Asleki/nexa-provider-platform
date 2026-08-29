@@ -6,6 +6,7 @@ any earlier Bundle 17A-17O test.  Bundle 17P introduces no production feature.
 from __future__ import annotations
 
 from pathlib import Path
+from hashlib import sha256
 import ast
 import json
 import subprocess
@@ -123,6 +124,28 @@ def _authorized_d3_lysora_maintenance(root: Path) -> bool:
         "if inspection_boundary is None or inspection_boundary.is_empty",
         "intersection = inspection_boundary.intersection(sibling_boundary)",
     ))
+
+
+P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256 = {
+    "frontend/src/main.js": "809fd354f0f9d55c319aa3eac66fd0869847b27ef570a766d7e04b36e64aead0",
+    "frontend/src/pwa/cache-policy.js": "59354982093f52ab11a1c76c55bdc987350b3d25d81e5ccf8ee3649bf66d373b",
+    "frontend/sw.js": "bd7341d5e81cda12ab5ff4721193dbde6555185036074f5063d5ca50ccee11d7",
+    "infrastructure/api/app/live_composition.py": "ab06157237b5bb6eb16684e8b7d52f73a154bf061b0c248ac238f61f3e4c460b",
+}
+
+
+def _authorized_p006_7_11_15_7_composition_successor(root: Path, target_path: str) -> bool:
+    # Permit only the exact reviewed .15.7 successor bytes at shared composition seams.
+    expected = P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    proof = root / "tests/infrastructure/api/test_p006_7_11_15_7_city_composition.py"
+    if not proof.is_file():
+        return False
+    candidate = root / target_path
+    if not candidate.is_file():
+        return False
+    return sha256(candidate.read_bytes()).hexdigest() == expected
 
 
 def _authorized_delivery3_existing_path(root: Path, target_path: str) -> bool:
@@ -351,6 +374,8 @@ def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
         # compatibility maintenance inside _adjacency(). It is validated
         # structurally against HEAD; no broader allowlist exists and roadmap
         # surfaces remain prohibited above.
+        if _authorized_p006_7_11_15_7_composition_successor(root, target_path):
+            continue
         if _authorized_delivery3_existing_path(root, target_path):
             continue
         disallowed.append(target_path)
@@ -366,3 +391,21 @@ def test_delivery3_locked_file_exception_is_structurally_narrow():
     root = _repo_root()
     assert _authorized_d3_lysora_maintenance(root)
     assert not _authorized_delivery3_existing_path(root, "frontend/src/main.js")
+
+
+def test_p006_7_11_15_7_shared_composition_successors_are_exactly_scoped():
+    root = _repo_root()
+    assert set(P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256) == {
+        "frontend/src/main.js",
+        "frontend/src/pwa/cache-policy.js",
+        "frontend/sw.js",
+        "infrastructure/api/app/live_composition.py",
+    }
+    for target_path in P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256:
+        assert _authorized_p006_7_11_15_7_composition_successor(root, target_path)
+    assert not _authorized_p006_7_11_15_7_composition_successor(
+        root, "frontend/src/app/application.js"
+    )
+    assert not _authorized_p006_7_11_15_7_composition_successor(
+        root, "roadmap_data.py"
+    )

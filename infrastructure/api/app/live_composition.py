@@ -3,6 +3,10 @@
 The historical ``create_application`` composition remains the default when
 ``INFRA_READ_AUTHORITY`` is absent or ``source``.  Live deployments opt in to
 PostgreSQL explicitly, preserving locked P006.7.9 test behavior.
+
+P006.7.11.15.7 appends governed CITY authority after the locked REGION adapter;
+it does not modify the REGION implementation or historical Delivery 1–3 CITY
+contracts.
 """
 from __future__ import annotations
 
@@ -13,12 +17,17 @@ from infrastructure.api.config import InfrastructureSettings
 from infrastructure.api.services.nngla_postgresql_read_service import PostgreSQLNNGLAReadService
 from infrastructure.api.services.nngla_map_read_service import PostgreSQLNNGLAMapReadService
 from infrastructure.api.services.nngla_region_map_read_service import PostgreSQLRegionAugmentedNNGLAMapReadService
+from infrastructure.api.services.nngla_city_map_read_service import PostgreSQLCityAugmentedNNGLAMapReadService
 from infrastructure.database import DatabaseRuntimeSettings, PostgreSQLPool
 from infrastructure.database.read import PostgreSQLNNGLAReadRepository, PostgreSQLWorldBoundaryRepository
 from infrastructure.database.read.nngla_national_map import PostgreSQLNNGLANationalMapRepository
 from infrastructure.database.read.nngla_region_public_map import (
     PostgreSQLRegionPublicMapRepository,
     RegionAugmentedNNGLANationalMapRepository,
+)
+from infrastructure.database.read.nngla_city_public_map import (
+    CityAugmentedNNGLANationalMapRepository,
+    PostgreSQLCityPublicMapRepository,
 )
 from infrastructure.geography.service import WorldGeometryService
 
@@ -56,15 +65,24 @@ def create_application_from_environment(env: Mapping[str, str] | None = None):
     nngla_read_service = PostgreSQLNNGLAReadService(
         PostgreSQLNNGLAReadRepository(pool, runtime_mode=runtime_mode)
     )
+
     base_nngla_map_repository = PostgreSQLNNGLANationalMapRepository(pool, runtime_mode=runtime_mode)
     region_public_map_repository = PostgreSQLRegionPublicMapRepository(pool, runtime_mode=runtime_mode)
-    nngla_map_repository = RegionAugmentedNNGLANationalMapRepository(
+    region_augmented_map_repository = RegionAugmentedNNGLANationalMapRepository(
         base_nngla_map_repository,
         region_public_map_repository,
     )
-    nngla_map_read_service = PostgreSQLRegionAugmentedNNGLAMapReadService(
+
+    city_public_map_repository = PostgreSQLCityPublicMapRepository(pool, runtime_mode=runtime_mode)
+    nngla_map_repository = CityAugmentedNNGLANationalMapRepository(
+        region_augmented_map_repository,
+        city_public_map_repository,
+    )
+
+    nngla_map_read_service = PostgreSQLCityAugmentedNNGLAMapReadService(
         nngla_map_repository,
         region_public_map_repository,
+        city_public_map_repository,
     )
     return create_application(
         settings,

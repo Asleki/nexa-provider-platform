@@ -35,6 +35,9 @@ export async function bootstrap(documentRef = globalThis.document, windowRef = g
   void import("./app/features/novegeo-region-map-experience.js")
     .then(({ installNoveGeoRegionMapExperience }) => installNoveGeoRegionMapExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
     .catch((error) => console.warn("[NexiLabs PWA] Governed REGION cartography unavailable.", error));
+  void import("./app/features/novegeo-city-map-experience.js")
+    .then(({ installNoveGeoCityMapExperience }) => installNoveGeoCityMapExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
+    .catch((error) => console.warn("[NexiLabs PWA] Governed CITY cartography unavailable.", error));
   return application;
 }
 
