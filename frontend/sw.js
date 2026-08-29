@@ -1,6 +1,7 @@
-/** P003.2–P003.4 / P006.7.11.15.4_R2 — Versioned offline application-shell service worker. */
+/** P003.2–P003.4 / P006.7.11.15.6_R1 — Versioned offline application-shell service worker with REGION integration refresh. */
 const CACHE_NAME = "nexilabs-shell-v17";
 const SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-4-r2";
+const REGION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-6-r1";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -40,6 +41,7 @@ const APP_SHELL = [
   "./src/app/features/novegeo-feature-geometry.js",
   "./src/app/features/novegeo-national-geography-experience.js",
   "./src/app/features/novegeo-cartographic-styling-experience.js",
+  "./src/app/features/novegeo-region-map-experience.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",
@@ -78,6 +80,8 @@ const APP_SHELL = [
   "./src/map/cartography/collision.js",
   "./src/map/cartography/label-renderer.js",
   "./src/map/cartography/cartographic-overlay.js",
+  "./src/map/cartography/region-anchor.js",
+  "./src/map/cartography/region-cartographic-overlay.js",
   "./src/map/publication/contracts.js",
   "./src/map/publication/catalog.js",
   "./src/map/publication/index.js",
@@ -153,12 +157,15 @@ self.addEventListener("install", (event) => {
     const cache = await caches.open(CACHE_NAME);
     await cache.addAll(APP_SHELL);
 
-    // P006.7.11.15.4_R2: the repository's locked PWA ABI still identifies the
-    // installed generation as v17. When this worker replaces an older v17
-    // script, remember that fact persistently so activation can restart the
-    // stale ES-module graph exactly once without changing the public cache ABI.
+    // P006.7.11.15.6_R1: preserve the locked v17 PWA ABI while forcing one
+    // same-generation refresh so existing clients receive the additive REGION
+    // modules and the updated main-module graph instead of stale cache-first code.
     if (refreshingExistingGeneration) {
+      // Preserve the locked .15.4 marker contract so historical regression
+      // tests and existing v17 clients remain valid, then add the .15.6 marker
+      // for this milestone's module-graph refresh lineage.
       await caches.open(SAME_GENERATION_REFRESH_MARKER);
+      await caches.open(REGION_SAME_GENERATION_REFRESH_MARKER);
     }
 
     // Bundle 12.0E: activate only after the complete replacement shell is cached.
@@ -169,7 +176,8 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    const sameGenerationRefresh = keys.includes(SAME_GENERATION_REFRESH_MARKER);
+    const sameGenerationRefresh = keys.includes(SAME_GENERATION_REFRESH_MARKER)
+      || keys.includes(REGION_SAME_GENERATION_REFRESH_MARKER);
     const previousShellKeys = keys.filter(
       (key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME
     );
@@ -177,8 +185,8 @@ self.addEventListener("activate", (event) => {
     await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));
     await self.clients.claim();
 
-    // Preserve the historical v16 -> v17 restart and add the one missing case:
-    // an older v17 worker whose cache contains a stale ES-module graph.
+    // Preserve historical generation restarts and the v17 same-generation
+    // restart contract so no open client keeps the pre-.15.6 module graph.
     if (previousShellKeys.length > 0 || sameGenerationRefresh) {
       const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
       await Promise.all(clients.map((client) => {

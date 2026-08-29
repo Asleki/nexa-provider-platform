@@ -1,4 +1,4 @@
-/** P003.3/P003.4 / P006.7.11.15.4_R2 — Immutable application-shell cache policy. */
+/** P003.3/P003.4 / P006.7.11.15.6_R1 — Immutable application-shell cache policy with additive REGION modules. */
 export const PWA_CACHE_VERSION = "nexilabs-shell-v17";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
@@ -38,6 +38,7 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/app/features/novegeo-feature-geometry.js",
   "./src/app/features/novegeo-national-geography-experience.js",
   "./src/app/features/novegeo-cartographic-styling-experience.js",
+  "./src/app/features/novegeo-region-map-experience.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",
@@ -76,6 +77,8 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/map/cartography/collision.js",
   "./src/map/cartography/label-renderer.js",
   "./src/map/cartography/cartographic-overlay.js",
+  "./src/map/cartography/region-anchor.js",
+  "./src/map/cartography/region-cartographic-overlay.js",
   "./src/map/publication/contracts.js",
   "./src/map/publication/catalog.js",
   "./src/map/publication/index.js",

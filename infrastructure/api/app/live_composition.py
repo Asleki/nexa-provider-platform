@@ -12,9 +12,14 @@ from typing import Mapping
 from infrastructure.api.config import InfrastructureSettings
 from infrastructure.api.services.nngla_postgresql_read_service import PostgreSQLNNGLAReadService
 from infrastructure.api.services.nngla_map_read_service import PostgreSQLNNGLAMapReadService
+from infrastructure.api.services.nngla_region_map_read_service import PostgreSQLRegionAugmentedNNGLAMapReadService
 from infrastructure.database import DatabaseRuntimeSettings, PostgreSQLPool
 from infrastructure.database.read import PostgreSQLNNGLAReadRepository, PostgreSQLWorldBoundaryRepository
 from infrastructure.database.read.nngla_national_map import PostgreSQLNNGLANationalMapRepository
+from infrastructure.database.read.nngla_region_public_map import (
+    PostgreSQLRegionPublicMapRepository,
+    RegionAugmentedNNGLANationalMapRepository,
+)
 from infrastructure.geography.service import WorldGeometryService
 
 from .factory import create_application
@@ -51,8 +56,15 @@ def create_application_from_environment(env: Mapping[str, str] | None = None):
     nngla_read_service = PostgreSQLNNGLAReadService(
         PostgreSQLNNGLAReadRepository(pool, runtime_mode=runtime_mode)
     )
-    nngla_map_read_service = PostgreSQLNNGLAMapReadService(
-        PostgreSQLNNGLANationalMapRepository(pool, runtime_mode=runtime_mode)
+    base_nngla_map_repository = PostgreSQLNNGLANationalMapRepository(pool, runtime_mode=runtime_mode)
+    region_public_map_repository = PostgreSQLRegionPublicMapRepository(pool, runtime_mode=runtime_mode)
+    nngla_map_repository = RegionAugmentedNNGLANationalMapRepository(
+        base_nngla_map_repository,
+        region_public_map_repository,
+    )
+    nngla_map_read_service = PostgreSQLRegionAugmentedNNGLAMapReadService(
+        nngla_map_repository,
+        region_public_map_repository,
     )
     return create_application(
         settings,

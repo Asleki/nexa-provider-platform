@@ -32,6 +32,9 @@ export async function bootstrap(documentRef = globalThis.document, windowRef = g
   void import("./app/features/novegeo-cartographic-styling-experience.js")
     .then(({ installNoveGeoCartographicStylingExperience }) => installNoveGeoCartographicStylingExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
     .catch((error) => console.warn("[NexiLabs PWA] Cartographic styling unavailable.", error));
+  void import("./app/features/novegeo-region-map-experience.js")
+    .then(({ installNoveGeoRegionMapExperience }) => installNoveGeoRegionMapExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
+    .catch((error) => console.warn("[NexiLabs PWA] Governed REGION cartography unavailable.", error));
   return application;
 }
 
