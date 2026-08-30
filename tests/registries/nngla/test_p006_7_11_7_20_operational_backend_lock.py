@@ -133,9 +133,40 @@ P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256 = {
     "infrastructure/api/app/live_composition.py": "ab06157237b5bb6eb16684e8b7d52f73a154bf061b0c248ac238f61f3e4c460b",
 }
 
+# P006.7.11.15.9 CM1_R1 — exact compatibility-maintenance successor bytes.
+# These hashes are taken from the already-delivered CM1 compatibility-seam ZIP.
+# They are deliberately narrower than the historical .15.7 shared-composition
+# scope: cache-policy.js was not changed by CM1 and remains locked to .15.7.
+P006_7_11_15_9_CM1_COMPOSITION_SUCCESSOR_SHA256 = {
+    "frontend/src/main.js": "811de1d1ae59778a2f6109a640b748b93ffb5acaeebb9aa199ddf5c604a19483",
+    "frontend/sw.js": "65994c75cb10f5e048311d34d010633ff2b29e77adb7451d66161f4dc6fed6a9",
+    "infrastructure/api/app/live_composition.py": "10c805ba28aafd04105dc2deecb124c03ce4911d0155ceac8be2f247ab8db052",
+}
+
+P006_7_11_15_9_CM1_PROOF_FILES = (
+    "tests/infrastructure/api/test_p006_7_11_15_9_compat_map_extension_seam.py",
+    "tests/infrastructure/api/test_p006_7_11_15_9_compat_live_composition_source.py",
+    "frontend/tests/app/features/p006_7_11_15_9_compat_map-extension-loader.test.mjs",
+    "frontend/tests/app/features/p006_7_11_15_9_compat_main-source.test.mjs",
+    "frontend/tests/pwa/p006_7_11_15_9_compat_extension-seam-refresh.test.mjs",
+)
+
+
+def _authorized_p006_7_11_15_9_cm1_composition_successor(root: Path, target_path: str) -> bool:
+    """Authorize only the exact reviewed CM1 shared-composition successor."""
+    expected = P006_7_11_15_9_CM1_COMPOSITION_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_7_11_15_9_CM1_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    if not candidate.is_file():
+        return False
+    return sha256(candidate.read_bytes()).hexdigest() == expected
+
 
 def _authorized_p006_7_11_15_7_composition_successor(root: Path, target_path: str) -> bool:
-    # Permit only the exact reviewed .15.7 successor bytes at shared composition seams.
+    """Protect the .15.7 seam while permitting its exact audited CM1 successor."""
     expected = P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256.get(target_path)
     if expected is None:
         return False
@@ -145,7 +176,10 @@ def _authorized_p006_7_11_15_7_composition_successor(root: Path, target_path: st
     candidate = root / target_path
     if not candidate.is_file():
         return False
-    return sha256(candidate.read_bytes()).hexdigest() == expected
+    digest = sha256(candidate.read_bytes()).hexdigest()
+    if digest == expected:
+        return True
+    return _authorized_p006_7_11_15_9_cm1_composition_successor(root, target_path)
 
 
 def _authorized_delivery3_existing_path(root: Path, target_path: str) -> bool:

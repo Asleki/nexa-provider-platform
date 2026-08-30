@@ -7,6 +7,12 @@ PostgreSQL explicitly, preserving locked P006.7.9 test behavior.
 P006.7.11.15.7 appends governed CITY authority after the locked REGION adapter;
 it does not modify the REGION implementation or historical Delivery 1–3 CITY
 contracts.
+
+P006.7.11.15.9 compatibility maintenance appends one constrained generic
+extension seam after the locked REGION→CITY stack.  With the empty extension
+manifest this is identity composition.  Future governed map layers are added
+through the append-only extension manifest and layer package rather than by
+reopening this file.
 """
 from __future__ import annotations
 
@@ -32,6 +38,7 @@ from infrastructure.database.read.nngla_city_public_map import (
 from infrastructure.geography.service import WorldGeometryService
 
 from .factory import create_application
+from .nngla_map_extensions import NNGLAMapExtensionContext, compose_nngla_map_extensions
 
 
 READ_AUTHORITY_SOURCE = "source"
@@ -84,6 +91,22 @@ def create_application_from_environment(env: Mapping[str, str] | None = None):
         region_public_map_repository,
         city_public_map_repository,
     )
+
+    extension_context = compose_nngla_map_extensions(
+        NNGLAMapExtensionContext(
+            pool=pool,
+            runtime_mode=runtime_mode,
+            map_repository=nngla_map_repository,
+            map_read_service=nngla_map_read_service,
+            resources={
+                "region_public_map_repository": region_public_map_repository,
+                "city_public_map_repository": city_public_map_repository,
+            },
+        )
+    )
+    nngla_map_repository = extension_context.map_repository
+    nngla_map_read_service = extension_context.map_read_service
+
     return create_application(
         settings,
         world_geometry_service=world_geometry_service,

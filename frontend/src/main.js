@@ -35,9 +35,23 @@ export async function bootstrap(documentRef = globalThis.document, windowRef = g
   void import("./app/features/novegeo-region-map-experience.js")
     .then(({ installNoveGeoRegionMapExperience }) => installNoveGeoRegionMapExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
     .catch((error) => console.warn("[NexiLabs PWA] Governed REGION cartography unavailable.", error));
-  void import("./app/features/novegeo-city-map-experience.js")
+
+  const cityExperience = import("./app/features/novegeo-city-map-experience.js")
     .then(({ installNoveGeoCityMapExperience }) => installNoveGeoCityMapExperience({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl }))
     .catch((error) => console.warn("[NexiLabs PWA] Governed CITY cartography unavailable.", error));
+
+  // P006.7.11.15.9 compatibility maintenance: future governed map layers register
+  // through the generic append-only manifest.  The seam starts only after the locked
+  // CITY bootstrap attempt and does not alter REGION/CITY implementation contracts.
+  void cityExperience.then(() => import("./app/features/novegeo-map-extension-loader.js"))
+    .then(({ installNoveGeoMapExtensions }) => installNoveGeoMapExtensions({
+      documentRef,
+      windowRef,
+      fetchRef,
+      apiBaseUrl: config.apiBaseUrl,
+    }))
+    .catch((error) => console.warn("[NexiLabs PWA] Governed map extensions unavailable.", error));
+
   return application;
 }
 

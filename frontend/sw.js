@@ -1,8 +1,9 @@
-/** P003.2–P003.4 / P006.7.11.15.7_R1 — Versioned offline application-shell service worker with CITY integration refresh. */
+/** P003.2–P003.4 / P006.7.11.15.9 compatibility maintenance — v17 shell refresh for generic map-extension seam. */
 const CACHE_NAME = "nexilabs-shell-v17";
 const SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-4-r2";
 const REGION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-6-r1";
 const CITY_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-7-r1";
+const MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-9-compat-seam-r1";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -162,11 +163,12 @@ self.addEventListener("install", (event) => {
     await cache.addAll(APP_SHELL);
 
     // Preserve the locked v17 ABI while forcing one same-generation refresh
-    // when an existing v17 client must receive the additive CITY module graph.
+    // when an existing v17 client must receive additive module-graph changes.
     if (refreshingExistingGeneration) {
       await caches.open(SAME_GENERATION_REFRESH_MARKER);
       await caches.open(REGION_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(CITY_SAME_GENERATION_REFRESH_MARKER);
+      await caches.open(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER);
     }
 
     await self.skipWaiting();
@@ -178,7 +180,8 @@ self.addEventListener("activate", (event) => {
     const keys = await caches.keys();
     const sameGenerationRefresh = keys.includes(SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(REGION_SAME_GENERATION_REFRESH_MARKER)
-      || keys.includes(CITY_SAME_GENERATION_REFRESH_MARKER);
+      || keys.includes(CITY_SAME_GENERATION_REFRESH_MARKER)
+      || keys.includes(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER);
     const previousShellKeys = keys.filter(
       (key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME
     );
@@ -187,7 +190,7 @@ self.addEventListener("activate", (event) => {
     await self.clients.claim();
 
     // Keep historical generation restarts and all v17 same-generation refresh
-    // contracts so no open client remains on a pre-.15.7 module graph.
+    // contracts so no open client remains on a pre-seam module graph.
     if (previousShellKeys.length > 0 || sameGenerationRefresh) {
       const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
       await Promise.all(clients.map((client) => {
