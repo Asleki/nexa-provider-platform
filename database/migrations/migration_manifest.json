@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 8,
+  "catalogue_version": 9,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -860,6 +860,41 @@
       "rollback_sha256": "707f290fb7f9c62901bd1729dd5168c9f5d2b9ab45404c915f32c0de5cba1acd",
       "forward_byte_size": 9773,
       "rollback_byte_size": 188,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_city_parent_containment_qualification",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 25,
+      "description": "nngla_city_parent_containment_qualification",
+      "forward_file": "m006_07_11_nngla_city_parent_containment_qualification.sql",
+      "rollback_file": "m006_07_11_nngla_city_parent_containment_qualification_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_city_spatial_foundation"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_city_parent_containment_qualification"
+        ],
+        "indexes": [
+          "ux_nngla_city_parent_containment_current",
+          "ix_nngla_city_parent_containment_parent",
+          "ix_nngla_city_parent_containment_geometry",
+          "ix_nngla_city_parent_containment_source"
+        ],
+        "constraints": [],
+        "views": [
+          "geography.nngla_city_parent_containment_read_v1"
+        ],
+        "functions": []
+      },
+      "forward_sha256": "d5aff83948516cd2810ee0c77d17ab332406ff5bc0bdc85332174b8ae1fbe7c0",
+      "rollback_sha256": "a8b8036f65e30be309c65e60c7599b5affacfa77e2e1ed35fff34e082f5fddf7",
+      "forward_byte_size": 12139,
+      "rollback_byte_size": 2570,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1

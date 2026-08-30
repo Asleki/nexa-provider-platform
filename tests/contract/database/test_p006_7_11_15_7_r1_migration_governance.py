@@ -1,4 +1,9 @@
-"""P006.7.11.15.7_R1 — migration-governance compatibility regression."""
+"""P006.7.11.15.7_R1 — migration-governance compatibility regression.
+
+Maintenance note for P006.7.11.15.8.1: sequence 25 is an additive successor.
+The historical REGION/CITY foundations remain fixed at sequences 23/24 rather
+than being required to remain the final two catalogue entries forever.
+"""
 from pathlib import Path
 
 from database.migration_control.discovery import MigrationDiscovery
@@ -17,12 +22,9 @@ def _catalogue():
 def test_region_and_city_foundations_are_governed_manifest_artifacts():
     catalogue = _catalogue()
     assert MigrationDiscovery(MIGRATIONS).validate_catalogue(catalogue) is catalogue
-    tail = catalogue.definitions[-2:]
-    assert tuple(item.identity.migration_id for item in tail) == (
-        "m006_07_11_nngla_region_spatial_foundation",
-        "m006_07_11_nngla_city_spatial_foundation",
-    )
-    assert tuple(item.identity.sequence_number for item in tail) == (23, 24)
+    by_sequence = {item.identity.sequence_number: item for item in catalogue.definitions}
+    assert by_sequence[23].identity.migration_id == "m006_07_11_nngla_region_spatial_foundation"
+    assert by_sequence[24].identity.migration_id == "m006_07_11_nngla_city_spatial_foundation"
 
 
 def test_region_foundation_remains_independent_from_delivery3_authority_adoption():
@@ -62,10 +64,9 @@ def test_region_and_city_rollbacks_are_non_cascading_and_scoped():
             assert token in text
 
 
-def test_dependency_plan_keeps_new_branch_deterministic():
+def test_dependency_plan_keeps_historical_foundations_fixed_and_allows_additive_successors():
     plan = MigrationPlanner().create_plan(_catalogue())
-    ids = tuple(item.identity.migration_id for item in plan.forward_order)
-    assert ids[-2:] == (
-        "m006_07_11_nngla_region_spatial_foundation",
-        "m006_07_11_nngla_city_spatial_foundation",
-    )
+    by_sequence = {item.identity.sequence_number: item for item in plan.forward_order}
+    assert by_sequence[23].identity.migration_id == "m006_07_11_nngla_region_spatial_foundation"
+    assert by_sequence[24].identity.migration_id == "m006_07_11_nngla_city_spatial_foundation"
+    assert plan.forward_order[-1].identity.sequence_number >= 24
