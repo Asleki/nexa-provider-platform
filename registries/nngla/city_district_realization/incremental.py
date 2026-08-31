@@ -311,11 +311,11 @@ class IncrementalCityDistrictPublicationService:
                   FROM jsonb_array_elements(%s::jsonb)
                 ), aggregate AS (
                   SELECT count(*)::integer AS observed_count,
-                         COALESCE(bool_and(ST_IsValid(geometry)),true) AS all_valid,
-                         COALESCE(bool_and(NOT ST_IsEmpty(geometry)),true) AS all_non_empty,
-                         COALESCE(bool_and(ST_GeometryType(geometry) IN ('ST_Polygon','ST_MultiPolygon')),true) AS all_polygonal,
-                         COALESCE(bool_and(ST_CoveredBy(geometry,city.geometry)),true) AS all_covered_by_city,
-                         ST_UnaryUnion(ST_Collect(geometry)) AS district_union
+                         COALESCE(bool_and(ST_IsValid(src.geometry)),true) AS all_valid,
+                         COALESCE(bool_and(NOT ST_IsEmpty(src.geometry)),true) AS all_non_empty,
+                         COALESCE(bool_and(ST_GeometryType(src.geometry) IN ('ST_Polygon','ST_MultiPolygon')),true) AS all_polygonal,
+                         COALESCE(bool_and(ST_CoveredBy(src.geometry,city.geometry)),true) AS all_covered_by_city,
+                         ST_UnaryUnion(ST_Collect(src.geometry)) AS district_union
                   FROM src CROSS JOIN city
                 ), overlap AS (
                   SELECT COALESCE(sum(

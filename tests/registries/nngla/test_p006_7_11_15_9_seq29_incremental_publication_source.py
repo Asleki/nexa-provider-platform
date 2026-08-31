@@ -55,3 +55,24 @@ def test_historical_operational_lock_has_exact_seq29_successor_authority():
         "infrastructure/api/app/nngla_map_extensions/layers/town_settlement_footprint_publication.py",
     ):
         assert path in s
+
+
+def test_seq29_fabric_sql_uses_qualified_geometry_aliases():
+    district = _text(
+        "registries/nngla/city_district_realization/incremental.py"
+    )
+    municipality = _text(
+        "registries/nngla/municipality_realization/incremental.py"
+    )
+
+    assert "bool_and(ST_IsValid(src.geometry))" in district
+    assert "bool_and(NOT ST_IsEmpty(src.geometry))" in district
+    assert "ST_GeometryType(src.geometry)" in district
+    assert "ST_CoveredBy(src.geometry,city.geometry)" in district
+    assert "ST_Collect(src.geometry)) AS district_union" in district
+
+    assert "bool_and(ST_IsValid(src.geometry))" in municipality
+    assert "bool_and(NOT ST_IsEmpty(src.geometry))" in municipality
+    assert "ST_GeometryType(src.geometry)" in municipality
+    assert "ST_CoveredBy(src.geometry,region.geometry)" in municipality
+    assert "ST_Collect(src.geometry)) AS municipality_union" in municipality
