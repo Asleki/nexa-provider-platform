@@ -1,4 +1,4 @@
-"""P006.7.11.15.9.2 extension registration for governed CITY_DISTRICT publication."""
+"""P006.7.11.15.9 CITY_DISTRICT extension, corrected by sequence 29."""
 from infrastructure.database.read.nngla_city_district_public_map import (
     CityDistrictAugmentedNNGLANationalMapRepository,
     PostgreSQLCityDistrictPublicMapRepository,
@@ -9,18 +9,10 @@ from infrastructure.api.services.nngla_city_district_map_read_service import (
 
 
 def compose(context):
-    region_repository = context.resources.get("region_public_map_repository")
-    city_repository = context.resources.get("city_public_map_repository")
-    municipality_repository = context.resources.get("municipality_public_map_repository")
-    if (
-        region_repository is None
-        or city_repository is None
-        or municipality_repository is None
-    ):
-        raise RuntimeError(
-            "CITY_DISTRICT extension requires locked REGION, CITY and MUNICIPALITY map repositories"
-        )
-
+    # CITY_DISTRICT has exactly one authority dependency here: the locked
+    # published CITY layer. MUNICIPALITY is deliberately not a prerequisite.
+    if context.resources.get("city_public_map_repository") is None:
+        raise RuntimeError("CITY_DISTRICT extension requires the locked CITY map repository")
     city_district_repository = PostgreSQLCityDistrictPublicMapRepository(
         context.pool,
         runtime_mode=context.runtime_mode,
@@ -31,9 +23,7 @@ def compose(context):
     )
     service = PostgreSQLCityDistrictAugmentedNNGLAMapReadService(
         repository,
-        region_repository,
-        city_repository,
-        municipality_repository,
+        context.map_read_service,
         city_district_repository,
     )
     return context.with_layer(

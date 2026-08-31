@@ -1,0 +1,11 @@
+BEGIN;
+DROP VIEW IF EXISTS geography.nngla_town_public_read_v2;
+DROP VIEW IF EXISTS geography.nngla_municipality_public_read_v2;
+DROP VIEW IF EXISTS geography.nngla_city_district_public_read_v2;
+DROP VIEW IF EXISTS geography.nngla_municipality_fabric_status_read_v2;
+DROP VIEW IF EXISTS geography.nngla_city_district_fabric_status_read_v2;
+DROP TABLE IF EXISTS geography.nngla_municipality_feature_publication;
+DROP TABLE IF EXISTS geography.nngla_municipality_feature_qualification;
+DROP TABLE IF EXISTS geography.nngla_city_district_feature_publication;
+DROP TABLE IF EXISTS geography.nngla_city_district_feature_qualification;
+COMMIT;

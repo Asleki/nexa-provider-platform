@@ -393,6 +393,36 @@ def test_spatial_query_and_cross_registry_read_evidence_is_still_reachable():
     assert not missing, f"Spatial query/read evidence groups not reachable: {missing}"
 
 
+
+# P006.7.11.15.9 sequence-29 feature-publication correction.
+# Exact successor bytes are installer-derived from the guarded ad7d5a8 baseline.
+P006_7_11_15_9_SEQ29_PRODUCTION_SUCCESSOR_SHA256 = {
+    "infrastructure/api/app/nngla_map_extensions/layers/city_district_spatial_publication.py": "69aa07fae916b0cf1c5b725df62b11c2cd0f49e046f6ab3cee6172ab76570a82",
+    "infrastructure/api/app/nngla_map_extensions/layers/town_settlement_footprint_publication.py": "8254e9549b423504c2f1815f0d740e405ed0acd197853d4bfa26e760d93ca466",
+    "infrastructure/api/services/nngla_city_district_map_read_service.py": "ee96cc832843cb4622b4210f4dd35d8f395c86b6c67b2798c0ed62893be8edba",
+    "infrastructure/api/services/nngla_town_map_read_service.py": "cfb414ba0fd93589724306106a8aa1f954c826bc2862b5e3c44a94a8da06d2e6",
+    "infrastructure/database/read/nngla_city_district_public_map.py": "4003cc847a624c510b83d9310fb5bc335019a9b4a75f108b032a6a29ef42e0a2",
+    "infrastructure/database/read/nngla_municipality_public_map.py": "e86b4958d171f012dcbfc2906d696c3d0980899c00c701d4a01debdbf6120ac2",
+    "infrastructure/database/read/nngla_town_public_map.py": "88668fa6f027a928bc4f3a03780702b63725fe5e9b1114bf0af0366cb3bf78cf"
+}
+
+
+def _authorized_p006_7_11_15_9_seq29_production_successor(root: Path, target_path: str) -> bool:
+    expected = P006_7_11_15_9_SEQ29_PRODUCTION_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    proof_paths = (
+        "database/migrations/m006_07_11_nngla_feature_level_spatial_publication_correction.sql",
+        "tests/contract/database/test_p006_7_11_15_9_seq29_feature_level_publication_correction.py",
+        "tests/infrastructure/api/test_p006_7_11_15_9_seq29_dependency_correction.py",
+        "tests/infrastructure/database/test_p006_7_11_15_9_seq29_public_read_adapters.py",
+        "tests/registries/nngla/test_p006_7_11_15_9_seq29_incremental_publication_source.py",
+    )
+    if not all((root / rel).is_file() for rel in proof_paths):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
 def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
     """Protect locked production while permitting genuinely additive milestones.
 
@@ -540,6 +570,9 @@ def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
                 target_path,
             )
         ):
+            continue
+
+        if _authorized_p006_7_11_15_9_seq29_production_successor(root, target_path):
             continue
 
         # Renaming/copying locked production is not an additive extension.

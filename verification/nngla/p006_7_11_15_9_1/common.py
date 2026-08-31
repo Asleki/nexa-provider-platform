@@ -1,4 +1,4 @@
-"""Credential-safe helpers for MUNICIPALITY preview/execution."""
+"""Credential-safe helpers for sequence-29 incremental MUNICIPALITY publication."""
 from __future__ import annotations
 
 import getpass
@@ -7,12 +7,8 @@ import os
 from pathlib import Path
 import subprocess
 
-from registries.nngla.municipality_realization.persistence import (
-    PostgreSQLMunicipalityRealizationRepository,
-)
-from registries.nngla.municipality_realization.postgis import PostGISMunicipalityEngine
-from registries.nngla.municipality_realization.service import (
-    GovernedMunicipalityRealizationService,
+from registries.nngla.municipality_realization.incremental import (
+    IncrementalMunicipalityPublicationService,
 )
 
 
@@ -58,13 +54,9 @@ def service(
     effective_date: str | None = None,
     revision: str | None = None,
 ):
-    repository = PostgreSQLMunicipalityRealizationRepository(
+    return IncrementalMunicipalityPublicationService(
         connection,
         environment_name=environment_name,
-    )
-    return GovernedMunicipalityRealizationService(
-        repository,
-        PostGISMunicipalityEngine(connection),
         repository_revision=revision or repository_revision(),
         effective_date=effective_date,
     )

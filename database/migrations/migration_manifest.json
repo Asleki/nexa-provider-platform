@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 12,
+  "catalogue_version": 13,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -1027,6 +1027,52 @@
       "rollback_sha256": "01f951e394e633e81e01734ab027101ee92189d49eb22b0ac7f74524d6bbdf3f",
       "forward_byte_size": 8383,
       "rollback_byte_size": 265,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_feature_level_spatial_publication_correction",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 29,
+      "description": "nngla_feature_level_spatial_publication_correction",
+      "forward_file": "m006_07_11_nngla_feature_level_spatial_publication_correction.sql",
+      "rollback_file": "m006_07_11_nngla_feature_level_spatial_publication_correction_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_town_settlement_footprint_publication"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_municipality_feature_qualification",
+          "geography.nngla_municipality_feature_publication",
+          "geography.nngla_city_district_feature_qualification",
+          "geography.nngla_city_district_feature_publication"
+        ],
+        "indexes": [
+          "ux_nngla_municipality_feature_qualification_fingerprint",
+          "ix_nngla_municipality_feature_qualification_parent",
+          "ux_nngla_municipality_feature_publication_current",
+          "ix_nngla_municipality_feature_publication_geometry",
+          "ux_nngla_city_district_feature_qualification_fingerprint",
+          "ix_nngla_city_district_feature_qualification_parent",
+          "ux_nngla_city_district_feature_publication_current",
+          "ix_nngla_city_district_feature_publication_geometry"
+        ],
+        "constraints": [],
+        "views": [
+          "geography.nngla_city_district_fabric_status_read_v2",
+          "geography.nngla_municipality_fabric_status_read_v2",
+          "geography.nngla_city_district_public_read_v2",
+          "geography.nngla_municipality_public_read_v2",
+          "geography.nngla_town_public_read_v2"
+        ],
+        "functions": []
+      },
+      "forward_sha256": "74ec3064c2bc68c0aa9959ce89bbb63714dfefe08d1d06866ef899528412c073",
+      "rollback_sha256": "41706cfefe0df02c358674145e75233d56ca4cc66586c9404cfe70a29811b379",
+      "forward_byte_size": 33086,
+      "rollback_byte_size": 638,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1

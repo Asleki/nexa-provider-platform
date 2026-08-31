@@ -8,7 +8,7 @@ from infrastructure.database.read.nngla_town_public_map import (
 
 
 def test_town_public_map_adapter_is_governed_national_map_layer():
-    assert TOWN_PUBLIC_VIEW == "geography.nngla_town_public_read_v1"
+    assert TOWN_PUBLIC_VIEW == "geography.nngla_town_public_read_v2"
     assert TOWN_FAMILY == "PLACE"
     assert TOWN_CLASSIFICATION_CODE == "TOWN"
     assert PostgreSQLTownPublicMapRepository

@@ -1,33 +1,26 @@
-"""Read-only governed preview for one REGION's MUNICIPALITY fabric."""
+"""Read-only incremental MUNICIPALITY preview for one published REGION."""
 from __future__ import annotations
-
 import argparse
 from .common import connect_postgresql, service, write_json
 
 
 def main(argv=None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--region", required=True)
-    parser.add_argument("--environment-name", default="development")
-    parser.add_argument("--effective-date", default="")
-    parser.add_argument("--repository-revision", default="")
-    parser.add_argument("--output", default="")
-    args = parser.parse_args(argv)
-    connection = connect_postgresql()
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--region", required=True)
+    p.add_argument("--environment-name", default="development")
+    p.add_argument("--effective-date", default="")
+    p.add_argument("--repository-revision", default="")
+    p.add_argument("--output", default="")
+    a = p.parse_args(argv)
+    c = connect_postgresql()
     try:
-        with connection.transaction():
-            connection.execute("SET TRANSACTION READ ONLY")
-            plan = service(
-                connection,
-                environment_name=args.environment_name,
-                effective_date=args.effective_date or None,
-                revision=args.repository_revision.strip() or None,
-            ).preview_region(args.region)
-        write_json(plan.as_dict(), args.output or None)
+        plan = service(c, environment_name=a.environment_name,
+                       effective_date=a.effective_date or None,
+                       revision=a.repository_revision.strip() or None).preview_region(a.region)
+        write_json(plan.as_dict(), a.output or None)
         return 0
     finally:
-        connection.close()
-
+        c.close()
 
 if __name__ == "__main__":
     raise SystemExit(main())

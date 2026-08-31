@@ -1,10 +1,19 @@
-"""P006.7.11.15.9.3 additive TOWN metadata over CITY_DISTRICT map reads."""
+"""P006.7.11.15.9 sequence-29 TOWN map-service successor.
+
+TOWN authority is its published MUNICIPALITY.  The service decorates the map
+service already present in the extension context; CITY_DISTRICT is optional and
+is never an authority/runtime prerequisite for TOWN publication or reads.
+"""
 from __future__ import annotations
 
+from copy import copy
 from hashlib import sha256
 import json
 from typing import Iterable
 
+from infrastructure.api.services.nngla_municipality_map_read_service import (
+    PostgreSQLMunicipalityAugmentedNNGLAMapReadService,
+)
 from infrastructure.api.services.nngla_city_district_map_read_service import (
     PostgreSQLCityDistrictAugmentedNNGLAMapReadService,
 )
@@ -14,7 +23,7 @@ from infrastructure.database.read.nngla_town_public_map import (
     PostgreSQLTownPublicMapRepository,
 )
 
-TOWN_MAP_INTEGRATION_VERSION = 1
+TOWN_MAP_INTEGRATION_VERSION = 2
 
 
 def _checksum(payload: object) -> str:
@@ -28,31 +37,48 @@ def _checksum(payload: object) -> str:
     ).hexdigest()
 
 
-class PostgreSQLTownAugmentedNNGLAMapReadService(
-    PostgreSQLCityDistrictAugmentedNNGLAMapReadService
-):
-    """Preserve prior governed enrichment and append TOWN footprint facts."""
+def _rebind_service(service, repository):
+    rebound = copy(service)
+    if not hasattr(rebound, "repository"):
+        raise TypeError("base map service must expose repository")
+    rebound.repository = repository
+    if hasattr(rebound, "base_service"):
+        rebound.base_service = _rebind_service(rebound.base_service, repository)
+    return rebound
 
-    def __init__(
-        self,
-        repository,
-        region_repository,
-        city_repository,
-        municipality_repository,
-        city_district_repository,
-        town_repository: PostgreSQLTownPublicMapRepository,
-    ) -> None:
-        super().__init__(
-            repository,
-            region_repository,
-            city_repository,
-            municipality_repository,
-            city_district_repository,
-        )
-        if town_repository is None:
-            raise TypeError("town_repository is required")
+
+def _integration_versions(body: dict[str, object]) -> dict[str, object]:
+    return {
+        key: body[key]
+        for key in sorted(body)
+        if key.endswith("MapIntegrationVersion")
+    }
+
+
+class PostgreSQLTownAugmentedNNGLAMapReadService:
+    """Decorate the current map service with governed TOWN presentation facts."""
+
+    def __init__(self, repository, *args) -> None:
+        # Sequence-29 runtime signature: (repository, base_service, town_repo).
+        # Preserve the historical 6-argument constructor for compatibility only.
+        if len(args) == 2:
+            base_service, town_repository = args
+        elif len(args) == 5:
+            region_repository, city_repository, municipality_repository, city_district_repository, town_repository = args
+            municipality_service = PostgreSQLMunicipalityAugmentedNNGLAMapReadService(
+                repository, region_repository, city_repository, municipality_repository
+            )
+            base_service = PostgreSQLCityDistrictAugmentedNNGLAMapReadService(
+                repository, municipality_service, city_district_repository
+            )
+        else:
+            raise TypeError("expected base_service+town_repository or historical compatibility arguments")
+        if repository is None or base_service is None or town_repository is None:
+            raise TypeError("repository, base_service and town_repository are required")
         if str(repository.runtime_mode) != str(town_repository.runtime_mode):
             raise ValueError("repository and TOWN repository runtime modes must match")
+        self.repository = repository
+        self.base_service = _rebind_service(base_service, repository)
         self.town_repository = town_repository
 
     def _enrich_town(
@@ -77,7 +103,7 @@ class PostgreSQLTownAugmentedNNGLAMapReadService(
         return enriched
 
     def list_features(self, **kwargs) -> dict[str, object]:
-        body = dict(super().list_features(**kwargs))
+        body = dict(self.base_service.list_features(**kwargs))
         items = self._enrich_town(body.get("items", []))
         body["items"] = items
         body["count"] = len(items)
@@ -95,21 +121,13 @@ class PostgreSQLTownAugmentedNNGLAMapReadService(
             "items": items,
             "nextCursor": body.get("nextCursor"),
             "readModelVersion": body.get("mapReadModelVersion"),
-            "regionMapIntegrationVersion": body.get("regionMapIntegrationVersion"),
-            "cityMapIntegrationVersion": body.get("cityMapIntegrationVersion"),
-            "municipalityMapIntegrationVersion": body.get(
-                "municipalityMapIntegrationVersion"
-            ),
-            "cityDistrictMapIntegrationVersion": body.get(
-                "cityDistrictMapIntegrationVersion"
-            ),
-            "townMapIntegrationVersion": TOWN_MAP_INTEGRATION_VERSION,
+            "integrationVersions": _integration_versions(body),
         }
         body["semanticChecksum"] = _checksum(semantic)
         return body
 
     def get_subject(self, subject_id: str) -> dict[str, object] | None:
-        body = super().get_subject(subject_id)
+        body = self.base_service.get_subject(subject_id)
         if body is None:
             return None
         result = dict(body)
@@ -120,19 +138,7 @@ class PostgreSQLTownAugmentedNNGLAMapReadService(
             {
                 "runtime": result.get("readRuntime"),
                 "item": item,
-                "regionMapIntegrationVersion": result.get(
-                    "regionMapIntegrationVersion"
-                ),
-                "cityMapIntegrationVersion": result.get(
-                    "cityMapIntegrationVersion"
-                ),
-                "municipalityMapIntegrationVersion": result.get(
-                    "municipalityMapIntegrationVersion"
-                ),
-                "cityDistrictMapIntegrationVersion": result.get(
-                    "cityDistrictMapIntegrationVersion"
-                ),
-                "townMapIntegrationVersion": TOWN_MAP_INTEGRATION_VERSION,
+                "integrationVersions": _integration_versions(result),
             }
         )
         return result

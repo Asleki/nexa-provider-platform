@@ -13,7 +13,7 @@ from infrastructure.database.read.nngla_national_map import (
     NNGLAMapReadAuthorityError,
 )
 
-TOWN_PUBLIC_VIEW = "geography.nngla_town_public_read_v1"
+TOWN_PUBLIC_VIEW = "geography.nngla_town_public_read_v2"
 TOWN_FAMILY = "PLACE"
 TOWN_CLASSIFICATION_SCHEME = "NNGLA_PLACE_TYPE"
 TOWN_CLASSIFICATION_CODE = "TOWN"

@@ -18,7 +18,7 @@ from infrastructure.database.read.nngla_national_map import (
     NNGLAMapReadAuthorityError,
 )
 
-MUNICIPALITY_PUBLIC_VIEW = "geography.nngla_municipality_public_read_v1"
+MUNICIPALITY_PUBLIC_VIEW = "geography.nngla_municipality_public_read_v2"
 MUNICIPALITY_FAMILY = "ADMINISTRATIVE_AREA"
 MUNICIPALITY_CLASSIFICATION_SCHEME = "NNGLA_ADMIN_TYPE"
 MUNICIPALITY_CLASSIFICATION_CODE = "MUNICIPALITY"
@@ -130,7 +130,6 @@ class PostgreSQLMunicipalityPublicMapRepository:
             FROM {MUNICIPALITY_PUBLIC_VIEW} AS v
             WHERE v.administrative_type_code='MUNICIPALITY'
               AND v.qualification_status='QUALIFIED'
-              AND v.partition_status='COMPLETE'
               AND v.publication_status='PUBLISHED'
               {bounds_filter}
             ORDER BY v.municipality_id

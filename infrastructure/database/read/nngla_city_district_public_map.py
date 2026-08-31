@@ -13,7 +13,7 @@ from infrastructure.database.read.nngla_national_map import (
     NNGLAMapReadAuthorityError,
 )
 
-CITY_DISTRICT_PUBLIC_VIEW = "geography.nngla_city_district_public_read_v1"
+CITY_DISTRICT_PUBLIC_VIEW = "geography.nngla_city_district_public_read_v2"
 CITY_DISTRICT_FAMILY = "ADMINISTRATIVE_AREA"
 CITY_DISTRICT_CLASSIFICATION_SCHEME = "NNGLA_ADMIN_TYPE"
 CITY_DISTRICT_CLASSIFICATION_CODE = "CITY_DISTRICT"
@@ -31,7 +31,7 @@ class CityDistrictMapMetadata:
     label_point: dict[str, object]
     area_m2: float
     perimeter_m: float
-    partition_qualification_id: str
+    partition_qualification_id: str | None
     partition_status: str
     source_administrative_type_code: str
     label_point_algorithm_id: str = CITY_DISTRICT_LABEL_POINT_ALGORITHM_ID
@@ -135,8 +135,7 @@ class PostgreSQLCityDistrictPublicMapRepository:
                    v.area_m2,v.perimeter_m,
                    v.partition_qualification_id,v.partition_status
             FROM {CITY_DISTRICT_PUBLIC_VIEW} AS v
-            WHERE v.partition_status='COMPLETE'
-              AND v.publication_status='PUBLISHED'
+            WHERE v.publication_status='PUBLISHED'
               {bounds_filter}
             ORDER BY v.district_id
         """
@@ -183,9 +182,9 @@ class PostgreSQLCityDistrictPublicMapRepository:
                     "CITY_DISTRICT measurements must be positive"
                 )
             partition_status = str(row[15]).upper()
-            if partition_status != "COMPLETE":
+            if partition_status not in {"PARTIAL", "COMPLETE"}:
                 raise NNGLAMapReadAuthorityError(
-                    "CITY_DISTRICT public row requires COMPLETE partition"
+                    "CITY_DISTRICT fabric status must be PARTIAL or COMPLETE"
                 )
             feature = NationalMapFeature(
                 subject_id=subject_id,
@@ -210,7 +209,7 @@ class PostgreSQLCityDistrictPublicMapRepository:
                 label_point=label_point,
                 area_m2=area_m2,
                 perimeter_m=perimeter_m,
-                partition_qualification_id=str(row[14]),
+                partition_qualification_id=(None if row[14] is None else str(row[14])),
                 partition_status=partition_status,
                 source_administrative_type_code=str(row[4]).upper(),
             )
