@@ -16,7 +16,11 @@ def catalogue():
 def test_sequence25_is_append_only_and_depends_on_locked_city_foundation():
     value = catalogue()
     assert MigrationDiscovery(MIGRATIONS).validate_catalogue(value) is value
-    tail = value.definitions[-3:]
+    by_sequence = {
+        item.identity.sequence_number: item
+        for item in value.definitions
+    }
+    tail = tuple(by_sequence[number] for number in (23, 24, 25))
     assert tuple(item.identity.sequence_number for item in tail) == (23, 24, 25)
     assert tuple(item.identity.migration_id for item in tail) == (
         "m006_07_11_nngla_region_spatial_foundation",
@@ -29,7 +33,11 @@ def test_sequence25_is_append_only_and_depends_on_locked_city_foundation():
 
 
 def test_sequence25_expected_object_surface_is_scoped_to_new_qualification_objects():
-    item = catalogue().definitions[-1]
+    item = next(
+        definition
+        for definition in catalogue().definitions
+        if definition.identity.sequence_number == 25
+    )
     assert item.expected_objects.tables == (
         "geography.nngla_city_parent_containment_qualification",
     )
@@ -47,4 +55,11 @@ def test_sequence25_expected_object_surface_is_scoped_to_new_qualification_objec
 
 def test_dependency_plan_ends_in_sequence25_without_renumbering_23_or_24():
     plan = MigrationPlanner().create_plan(catalogue())
-    assert tuple(item.identity.sequence_number for item in plan.forward_order[-3:]) == (23, 24, 25)
+    by_sequence = {
+        item.identity.sequence_number: item
+        for item in plan.forward_order
+    }
+    assert tuple(
+        by_sequence[number].identity.sequence_number
+        for number in (23, 24, 25)
+    ) == (23, 24, 25)

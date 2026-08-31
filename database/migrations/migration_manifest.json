@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 9,
+  "catalogue_version": 10,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -895,6 +895,51 @@
       "rollback_sha256": "a8b8036f65e30be309c65e60c7599b5affacfa77e2e1ed35fff34e082f5fddf7",
       "forward_byte_size": 12139,
       "rollback_byte_size": 2570,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_municipality_spatial_publication",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 26,
+      "description": "nngla_municipality_spatial_truth_publication",
+      "forward_file": "m006_07_11_nngla_municipality_spatial_publication.sql",
+      "rollback_file": "m006_07_11_nngla_municipality_spatial_publication_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_city_parent_containment_qualification"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_municipality_geometry_record",
+          "geography.nngla_municipality_partition_qualification",
+          "geography.nngla_municipality_publication"
+        ],
+        "indexes": [
+          "ux_nngla_municipality_geometry_current",
+          "ux_nngla_municipality_geometry_sha256",
+          "ix_nngla_municipality_geometry_parent",
+          "ix_nngla_municipality_geometry_source",
+          "ix_nngla_municipality_geometry_gist",
+          "ix_nngla_municipality_label_point_gist",
+          "ux_nngla_municipality_partition_current",
+          "ix_nngla_municipality_partition_parent",
+          "ix_nngla_municipality_partition_city",
+          "ux_nngla_municipality_publication_current",
+          "ix_nngla_municipality_publication_geometry",
+          "ix_nngla_municipality_publication_partition"
+        ],
+        "constraints": [],
+        "views": [
+          "geography.nngla_municipality_public_read_v1"
+        ],
+        "functions": []
+      },
+      "forward_sha256": "e4718bbd566c42fb83bbb8a356982844e82658a48503881b703d787b9aadc809",
+      "rollback_sha256": "1e3401b998affe8a38280dbcf0b2e6f7eec42193524cc41203387d849c8711ae",
+      "forward_byte_size": 14815,
+      "rollback_byte_size": 285,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1

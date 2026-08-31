@@ -1,4 +1,10 @@
 {
   "manifestVersion": 1,
-  "extensions": []
+  "extensions": [
+    {
+      "extensionId": "nngla-map-extension:municipality:v1",
+      "order": 100,
+      "module": "infrastructure.api.app.nngla_map_extensions.layers.municipality_spatial_publication"
+    }
+  ]
 }

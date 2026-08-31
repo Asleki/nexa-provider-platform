@@ -1,4 +1,10 @@
 {
   "manifestVersion": 1,
-  "extensions": []
+  "extensions": [
+    {
+      "extensionId": "nngla-map-extension:municipality:v1",
+      "order": 100,
+      "module": "./src/app/features/novegeo-municipality-map-experience.js"
+    }
+  ]
 }
