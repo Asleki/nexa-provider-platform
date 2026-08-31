@@ -5,6 +5,16 @@
       "extensionId": "nngla-map-extension:municipality:v1",
       "order": 100,
       "module": "./src/app/features/novegeo-municipality-map-experience.js"
+    },
+    {
+      "extensionId": "nngla-map-extension:city-district:v1",
+      "order": 200,
+      "module": "./src/app/features/novegeo-city-district-map-experience.js"
+    },
+    {
+      "extensionId": "nngla-map-extension:town:v1",
+      "order": 300,
+      "module": "./src/app/features/novegeo-town-map-experience.js"
     }
   ]
 }

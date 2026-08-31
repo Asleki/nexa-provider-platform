@@ -248,6 +248,94 @@ def _authorized_p006_7_11_15_9_1_manifest_successor(
 
 
 
+P006_7_11_15_9_2_3_MAP_EXTENSION_SUCCESSOR_TAILS = {
+    "frontend/public/geography/novegeo/map-extensions/manifest.json": (
+        {
+            "extensionId": "nngla-map-extension:city-district:v1",
+            "order": 200,
+            "module": "./src/app/features/novegeo-city-district-map-experience.js",
+        },
+        {
+            "extensionId": "nngla-map-extension:town:v1",
+            "order": 300,
+            "module": "./src/app/features/novegeo-town-map-experience.js",
+        },
+    ),
+    "infrastructure/api/app/nngla_map_extensions/extension_manifest.json": (
+        {
+            "extensionId": "nngla-map-extension:city-district:v1",
+            "order": 200,
+            "module": (
+                "infrastructure.api.app.nngla_map_extensions.layers."
+                "city_district_spatial_publication"
+            ),
+        },
+        {
+            "extensionId": "nngla-map-extension:town:v1",
+            "order": 300,
+            "module": (
+                "infrastructure.api.app.nngla_map_extensions.layers."
+                "town_settlement_footprint_publication"
+            ),
+        },
+    ),
+}
+
+
+def _authorized_p006_7_11_15_9_2_3_manifest_successor(
+    root: Path,
+    target_path: str,
+) -> bool:
+    """Authorize only exact CITY_DISTRICT then TOWN manifest successors."""
+    expected_tail = P006_7_11_15_9_2_3_MAP_EXTENSION_SUCCESSOR_TAILS.get(
+        target_path
+    )
+    if expected_tail is None:
+        return False
+
+    prior_text = _head_text(root, target_path)
+    candidate = root / target_path
+
+    if prior_text is None or not candidate.is_file():
+        return False
+
+    try:
+        prior = json.loads(prior_text)
+        current = json.loads(
+            candidate.read_text(encoding="utf-8")
+        )
+    except (json.JSONDecodeError, OSError, TypeError):
+        return False
+
+    if set(prior) != {"manifestVersion", "extensions"}:
+        return False
+
+    if set(current) != {"manifestVersion", "extensions"}:
+        return False
+
+    if prior.get("manifestVersion") != current.get("manifestVersion"):
+        return False
+
+    prior_extensions = prior.get("extensions")
+    current_extensions = current.get("extensions")
+
+    if not isinstance(prior_extensions, list):
+        return False
+
+    if not isinstance(current_extensions, list):
+        return False
+
+    if (
+        current_extensions[:len(prior_extensions)]
+        != prior_extensions
+    ):
+        return False
+
+    appended = current_extensions[len(prior_extensions):]
+
+    return appended == list(expected_tail)
+
+
 def test_17p_runs_against_canonical_nngla_repository_surfaces():
     root = _repo_root()
     required = (
@@ -442,7 +530,16 @@ def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
 
         # P006.7.11.15.9.1: the two CM1 extension registries may advance only
         # through the exact reviewed append-only MUNICIPALITY successor.
-        if _authorized_p006_7_11_15_9_1_manifest_successor(root, target_path):
+        if (
+            _authorized_p006_7_11_15_9_2_3_manifest_successor(
+                root,
+                target_path,
+            )
+            or _authorized_p006_7_11_15_9_1_manifest_successor(
+                root,
+                target_path,
+            )
+        ):
             continue
 
         # Renaming/copying locked production is not an additive extension.

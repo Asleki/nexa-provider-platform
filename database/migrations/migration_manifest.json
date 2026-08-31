@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 10,
+  "catalogue_version": 12,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -940,6 +940,93 @@
       "rollback_sha256": "1e3401b998affe8a38280dbcf0b2e6f7eec42193524cc41203387d849c8711ae",
       "forward_byte_size": 14815,
       "rollback_byte_size": 285,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_city_district_spatial_publication",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 27,
+      "description": "nngla_city_district_spatial_truth_publication",
+      "forward_file": "m006_07_11_nngla_city_district_spatial_publication.sql",
+      "rollback_file": "m006_07_11_nngla_city_district_spatial_publication_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_municipality_spatial_publication"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_city_district_geometry_record",
+          "geography.nngla_city_district_partition_qualification",
+          "geography.nngla_city_district_publication"
+        ],
+        "indexes": [
+          "ux_nngla_city_district_geometry_current",
+          "ux_nngla_city_district_geometry_sha256",
+          "ix_nngla_city_district_geometry_parent",
+          "ix_nngla_city_district_geometry_source",
+          "ix_nngla_city_district_geometry_gist",
+          "ix_nngla_city_district_label_point_gist",
+          "ux_nngla_city_district_partition_current",
+          "ix_nngla_city_district_partition_parent",
+          "ux_nngla_city_district_publication_current",
+          "ix_nngla_city_district_publication_geometry",
+          "ix_nngla_city_district_publication_partition"
+        ],
+        "constraints": [],
+        "views": [
+          "geography.nngla_city_district_partition_exact_read_v1",
+          "geography.nngla_city_district_public_read_v1"
+        ],
+        "functions": []
+      },
+      "forward_sha256": "75b700c3923e27d67ecb6c44587643c895f5f3664b2d1da501804e27cb37aaaf",
+      "rollback_sha256": "384060d3b05510a723b6c63aa5b7d0867738354286c14e40efd4a647f936222f",
+      "forward_byte_size": 12472,
+      "rollback_byte_size": 364,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_town_settlement_footprint_publication",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 28,
+      "description": "nngla_town_settlement_footprint_truth_publication",
+      "forward_file": "m006_07_11_nngla_town_settlement_footprint_publication.sql",
+      "rollback_file": "m006_07_11_nngla_town_settlement_footprint_publication_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_city_district_spatial_publication"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "geography.nngla_town_settlement_footprint_record",
+          "geography.nngla_town_footprint_qualification",
+          "geography.nngla_town_publication"
+        ],
+        "indexes": [
+          "ux_nngla_town_footprint_current",
+          "ux_nngla_town_footprint_geometry_sha256",
+          "ix_nngla_town_footprint_parent",
+          "ix_nngla_town_footprint_source",
+          "ix_nngla_town_footprint_geometry_gist",
+          "ix_nngla_town_footprint_label_gist",
+          "ix_nngla_town_footprint_qualification_place",
+          "ux_nngla_town_publication_current",
+          "ix_nngla_town_publication_footprint"
+        ],
+        "constraints": [],
+        "views": [
+          "geography.nngla_town_public_read_v1"
+        ],
+        "functions": []
+      },
+      "forward_sha256": "58574b71c38c36d27d4005bbb94055cfd1253fa6db9f8c11f85fda42912679c6",
+      "rollback_sha256": "01f951e394e633e81e01734ab027101ee92189d49eb22b0ac7f74524d6bbdf3f",
+      "forward_byte_size": 8383,
+      "rollback_byte_size": 265,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1

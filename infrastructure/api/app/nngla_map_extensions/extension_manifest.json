@@ -5,6 +5,16 @@
       "extensionId": "nngla-map-extension:municipality:v1",
       "order": 100,
       "module": "infrastructure.api.app.nngla_map_extensions.layers.municipality_spatial_publication"
+    },
+    {
+      "extensionId": "nngla-map-extension:city-district:v1",
+      "order": 200,
+      "module": "infrastructure.api.app.nngla_map_extensions.layers.city_district_spatial_publication"
+    },
+    {
+      "extensionId": "nngla-map-extension:town:v1",
+      "order": 300,
+      "module": "infrastructure.api.app.nngla_map_extensions.layers.town_settlement_footprint_publication"
     }
   ]
 }
