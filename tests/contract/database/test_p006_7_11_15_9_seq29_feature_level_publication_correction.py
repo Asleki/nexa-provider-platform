@@ -90,16 +90,34 @@ def test_publication_eligible_views_require_governed_production_execution_receip
         assert "ei.detail->>'publication_id'" in view_sql
         assert "ei.detail->>'geometry_sha256'" in view_sql
 
-def test_seq29_manifest_is_exact_append_only_tail():
+def test_seq29_manifest_entry_remains_immutable_and_append_only():
     manifest = json.loads((ROOT / "database/migrations/migration_manifest.json").read_text())
-    assert int(manifest["catalogue_version"]) == 13
     rows = manifest["migrations"]
-    assert [int(row["sequence_number"]) for row in rows[-4:]] == [26, 27, 28, 29]
-    row = rows[-1]
-    assert row["migration_id"] == "m006_07_11_nngla_feature_level_spatial_publication_correction"
-    assert row["depends_on"] == ["m006_07_11_nngla_town_settlement_footprint_publication"]
+
+    matches = [
+        row
+        for row in rows
+        if int(row["sequence_number"]) == 29
+    ]
+
+    assert len(matches) == 1
+
+    row = matches[0]
+
+    assert row["migration_id"] == (
+        "m006_07_11_nngla_feature_level_spatial_publication_correction"
+    )
+    assert row["depends_on"] == [
+        "m006_07_11_nngla_town_settlement_footprint_publication"
+    ]
+
+    sequences = [int(item["sequence_number"]) for item in rows]
+    assert sequences == sorted(sequences)
+    assert sequences[-1] >= 29
+
     forward = ROOT / "database/migrations" / row["forward_file"]
     rollback = ROOT / "database/migrations" / row["rollback_file"]
+
     assert row["forward_sha256"] == sha256(forward.read_bytes()).hexdigest()
     assert row["rollback_sha256"] == sha256(rollback.read_bytes()).hexdigest()
     assert int(row["forward_byte_size"]) == forward.stat().st_size

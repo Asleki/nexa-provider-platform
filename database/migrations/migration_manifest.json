@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 13,
+  "catalogue_version": 14,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -1073,6 +1073,34 @@
       "rollback_sha256": "41706cfefe0df02c358674145e75233d56ca4cc66586c9404cfe70a29811b379",
       "forward_byte_size": 33086,
       "rollback_byte_size": 638,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_07_11_nngla_municipality_public_read_qualification_admission_correction",
+      "milestone_id": "M006.7.11",
+      "sequence_number": 30,
+      "description": "nngla_municipality_public_read_qualification_admission_correction",
+      "forward_file": "m006_07_11_nngla_municipality_public_read_qualification_admission_correction.sql",
+      "rollback_file": "m006_07_11_nngla_municipality_public_read_qualification_admission_correction_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_feature_level_spatial_publication_correction"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [],
+        "indexes": [],
+        "constraints": [],
+        "views": [
+          "geography.nngla_municipality_public_read_v2"
+        ],
+        "functions": []
+      },
+      "forward_sha256": "14e713a2c6e890d36b14450be8c9d452cbc920c7ed3f5b9a3462a2e1e74c7a3d",
+      "rollback_sha256": "af8148ed7a10eaef025c97eac333a0f8b02a2f5e16fd44830474617701bf76d1",
+      "forward_byte_size": 5583,
+      "rollback_byte_size": 5386,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1
