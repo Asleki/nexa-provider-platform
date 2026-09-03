@@ -1,9 +1,10 @@
-/** P003.2–P003.4 / P006.7.11.15.9 compatibility maintenance — v17 shell refresh for generic map-extension seam. */
+/** P003.2–P003.4 / P006.7.11.15.10 R2 — v17 shell refresh for unified map presentation. */
 const CACHE_NAME = "nexilabs-shell-v17";
 const SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-4-r2";
 const REGION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-6-r1";
 const CITY_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-7-r1";
 const MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-9-compat-seam-r1";
+const MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-r2";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -19,6 +20,7 @@ const APP_SHELL = [
   "./styles/app.css",
   "./styles/novegeo-map-shell-v1.css",
   "./styles/novegeo-cartography-v1.css",
+  "./styles/novegeo-map-first-v1.css",
   "./src/main.js",
   "./src/ui/partials/header.html",
   "./src/ui/partials/footer.html",
@@ -45,6 +47,11 @@ const APP_SHELL = [
   "./src/app/features/novegeo-cartographic-styling-experience.js",
   "./src/app/features/novegeo-region-map-experience.js",
   "./src/app/features/novegeo-city-map-experience.js",
+  "./src/app/features/novegeo-municipality-map-experience.js",
+  "./src/app/features/novegeo-city-district-map-experience.js",
+  "./src/app/features/novegeo-town-map-experience.js",
+  "./src/app/features/novegeo-map-extension-loader.js",
+  "./src/app/features/novegeo-presentation-provider.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",
@@ -87,6 +94,18 @@ const APP_SHELL = [
   "./src/map/cartography/region-cartographic-overlay.js",
   "./src/map/cartography/city-anchor.js",
   "./src/map/cartography/city-cartographic-overlay.js",
+  "./src/map/cartography/municipality-anchor.js",
+  "./src/map/cartography/municipality-cartographic-overlay.js",
+  "./src/map/cartography/city-district-anchor.js",
+  "./src/map/cartography/city-district-cartographic-overlay.js",
+  "./src/map/cartography/town-anchor.js",
+  "./src/map/cartography/town-cartographic-overlay.js",
+  "./src/map/cartography/semantic-zoom-v2.js",
+  "./src/map/cartography/geodesic-scale-v2.js",
+  "./src/map/cartography/unified-projection.js",
+  "./src/map/cartography/unified-frame-plan.js",
+  "./src/map/cartography/unified-frame-renderer.js",
+  "./src/map/cartography/presentation-coordinator.js",
   "./src/map/publication/contracts.js",
   "./src/map/publication/catalog.js",
   "./src/map/publication/index.js",
@@ -95,6 +114,7 @@ const APP_SHELL = [
   "./public/geography/novegeo/world-boundary/v002/manifest.json",
   "./public/geography/novegeo/world-boundary/v002/overview.geojson",
   "./public/geography/novegeo/world-boundary/v002/standard.geojson",
+  "./public/geography/novegeo/map-extensions/manifest.json",
   "./src/map/validation/contracts.js",
   "./src/map/validation/geometry-validator.js",
   "./src/map/validation/extent-calculator.js",
@@ -169,6 +189,7 @@ self.addEventListener("install", (event) => {
       await caches.open(REGION_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(CITY_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER);
+      await caches.open(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER);
     }
 
     await self.skipWaiting();
@@ -181,7 +202,8 @@ self.addEventListener("activate", (event) => {
     const sameGenerationRefresh = keys.includes(SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(REGION_SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(CITY_SAME_GENERATION_REFRESH_MARKER)
-      || keys.includes(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER);
+      || keys.includes(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER)
+      || keys.includes(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER);
     const previousShellKeys = keys.filter(
       (key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME
     );

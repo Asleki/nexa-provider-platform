@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>P006.7.11.15.10 Runtime Diagnostic</title>
+<style>
+body {
+  margin: 0;
+  padding: 18px;
+  background: #07111f;
+  color: #f8fafc;
+  font-family: monospace;
+}
+pre {
+  white-space: pre-wrap;
+  font-size: 15px;
+  line-height: 1.45;
+}
+iframe {
+  width: 390px;
+  height: 700px;
+  border: 1px solid #334155;
+  margin-top: 18px;
+}
+</style>
+</head>
+<body>
+<h2>P006.7.11.15.10 Runtime Diagnostic</h2>
+<pre id="out">Loading NoveGeo runtime...</pre>
+
+<iframe
+  id="app"
+  src="/#/simulation/novegeo">
+</iframe>
+
+<script type="module">
+const out = document.querySelector("#out");
+const frame = document.querySelector("#app");
+
+const wait = (ms) =>
+  new Promise(resolve => setTimeout(resolve, ms));
+
+async function cachedText(path) {
+  const cache = await caches.open("nexilabs-shell-v17");
+  const url = new URL(path, location.origin + "/").href;
+  const response = await cache.match(url);
+  return response ? response.text() : null;
+}
+
+async function runDiagnostic() {
+  out.textContent =
+    "NoveGeo loaded.\nWaiting for governed layers...\n";
+
+  await wait(10000);
+
+  const doc = frame.contentDocument;
+  const win = frame.contentWindow;
+
+  if (!doc || !win) {
+    out.textContent = "ERROR: iframe document unavailable";
+    return;
+  }
+
+  const probe = doc.createElement("script");
+  probe.type = "module";
+  probe.textContent = `
+    import {
+      getNoveGeoPresentationCoordinator
+    } from "/src/app/features/novegeo-presentation-provider.js";
+
+    const coordinator =
+      getNoveGeoPresentationCoordinator();
+
+    window.__P006_15_10_DIAG__ = {
+      coordinatorExists: Boolean(coordinator),
+      coordinatorMode: coordinator?.mode || "NONE",
+      latestReceipt: coordinator?.latestReceipt || null
+    };
+  `;
+  doc.head.appendChild(probe);
+
+  await wait(1000);
+
+  const page =
+    doc.querySelector(".novegeo-feature-page");
+
+  const viewport =
+    doc.querySelector(
+      "[data-role='future-map-viewport']"
+    );
+
+  const root =
+    doc.querySelector("#nexilabs-app");
+
+  const runtime =
+    win.__P006_15_10_DIAG__ || {};
+
+  const shell =
+    await cachedText(
+      "/src/app/shell/nexilabs-shell.js"
+    );
+
+  const provider =
+    await cachedText(
+      "/src/app/features/novegeo-presentation-provider.js"
+    );
+
+  const region =
+    await cachedText(
+      "/src/app/features/novegeo-region-map-experience.js"
+    );
+
+  const city =
+    await cachedText(
+      "/src/app/features/novegeo-city-map-experience.js"
+    );
+
+  const municipality =
+    await cachedText(
+      "/src/app/features/novegeo-municipality-map-experience.js"
+    );
+
+  const district =
+    await cachedText(
+      "/src/app/features/novegeo-city-district-map-experience.js"
+    );
+
+  const town =
+    await cachedText(
+      "/src/app/features/novegeo-town-map-experience.js"
+    );
+
+  const lines = [
+    "=== PRESENTATION ===",
+    "rootMode=" +
+      (root?.dataset?.novegeoPresentationMode || "NONE"),
+    "pageMode=" +
+      (page?.dataset?.novegeoPresentationMode || "NONE"),
+    "viewportMode=" +
+      (viewport?.dataset?.novegeoPresentationMode || "NONE"),
+    "coordinatorExists=" +
+      Boolean(runtime.coordinatorExists),
+    "coordinatorMode=" +
+      (runtime.coordinatorMode || "NONE"),
+    "unifiedCanvas=" +
+      Boolean(
+        doc.querySelector(
+          "[data-role='novegeo-unified-cartographic-canvas']"
+        )
+      ),
+    "unifiedScale=" +
+      Boolean(
+        doc.querySelector(
+          "[data-role='novegeo-unified-distance-scale']"
+        )
+      ),
+    "",
+    "=== LAYER STATUS ===",
+    "REGION=" +
+      (page?.dataset?.novegeoRegionMapStatus || "NONE") +
+      " count=" +
+      (page?.dataset?.novegeoRegionMapCount || "NONE"),
+    "CITY=" +
+      (page?.dataset?.novegeoCityMapStatus || "NONE") +
+      " count=" +
+      (page?.dataset?.novegeoCityMapCount || "NONE"),
+    "MUNICIPALITY=" +
+      (page?.dataset?.novegeoMunicipalityMapStatus || "NONE") +
+      " count=" +
+      (page?.dataset?.novegeoMunicipalityMapCount || "NONE"),
+    "CITY_DISTRICT=" +
+      (page?.dataset?.novegeoCityDistrictMapStatus || "NONE") +
+      " count=" +
+      (page?.dataset?.novegeoCityDistrictMapCount || "NONE"),
+    "TOWN=" +
+      (page?.dataset?.novegeoTownMapStatus || "NONE") +
+      " count=" +
+      (page?.dataset?.novegeoTownMapCount || "NONE"),
+    "",
+    "=== V17 CACHE ===",
+    "shellHasCoordinator=" +
+      Boolean(
+        shell?.includes(
+          "installNoveGeoPresentationCoordinator"
+        )
+      ),
+    "providerPresent=" +
+      Boolean(
+        provider?.includes(
+          "registerNoveGeoPresentationSnapshot"
+        )
+      ),
+    "regionSnapshotSeam=" +
+      Boolean(
+        region?.includes(
+          "registerNoveGeoPresentationSnapshot"
+        )
+      ),
+    "citySnapshotSeam=" +
+      Boolean(
+        city?.includes(
+          "registerNoveGeoPresentationSnapshot"
+        )
+      ),
+    "municipalitySnapshotSeam=" +
+      Boolean(
+        municipality?.includes(
+          "registerNoveGeoPresentationSnapshot"
+        )
+      ),
+    "districtSnapshotSeam=" +
+      Boolean(
+        district?.includes(
+          "registerNoveGeoPresentationSnapshot"
+        )
+      ),
+    "townSnapshotSeam=" +
+      Boolean(
+        town?.includes(
+          "registerNoveGeoPresentationSnapshot"
+        )
+      ),
+    "",
+    "=== LATEST RECEIPT ===",
+    JSON.stringify(
+      runtime.latestReceipt,
+      null,
+      2
+    )
+  ];
+
+  out.textContent = lines.join("\n");
+}
+
+frame.addEventListener(
+  "load",
+  () => {
+    runDiagnostic().catch(error => {
+      out.textContent =
+        "DIAGNOSTIC ERROR\n" +
+        (error?.stack || error);
+    });
+  },
+  { once: true }
+);
+</script>
+</body>
+</html>

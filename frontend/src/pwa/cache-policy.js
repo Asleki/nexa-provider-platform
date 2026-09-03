@@ -1,4 +1,4 @@
-/** P003.3/P003.4 / P006.7.11.15.7_R1 — Immutable application-shell cache policy with additive CITY modules. */
+/** P003.3/P003.4 / P006.7.11.15.10 R2 — locked-v17 policy with unified map presentation assets. */
 export const PWA_CACHE_VERSION = "nexilabs-shell-v17";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
@@ -14,6 +14,7 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./styles/app.css",
   "./styles/novegeo-map-shell-v1.css",
   "./styles/novegeo-cartography-v1.css",
+  "./styles/novegeo-map-first-v1.css",
   "./src/main.js",
   "./src/ui/partials/header.html",
   "./src/ui/partials/footer.html",
@@ -40,6 +41,11 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/app/features/novegeo-cartographic-styling-experience.js",
   "./src/app/features/novegeo-region-map-experience.js",
   "./src/app/features/novegeo-city-map-experience.js",
+  "./src/app/features/novegeo-municipality-map-experience.js",
+  "./src/app/features/novegeo-city-district-map-experience.js",
+  "./src/app/features/novegeo-town-map-experience.js",
+  "./src/app/features/novegeo-map-extension-loader.js",
+  "./src/app/features/novegeo-presentation-provider.js",
   "./src/app/application.js",
   "./src/branding/brand-assets.js",
   "./src/branding/brand-config.js",
@@ -82,6 +88,18 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/map/cartography/region-cartographic-overlay.js",
   "./src/map/cartography/city-anchor.js",
   "./src/map/cartography/city-cartographic-overlay.js",
+  "./src/map/cartography/municipality-anchor.js",
+  "./src/map/cartography/municipality-cartographic-overlay.js",
+  "./src/map/cartography/city-district-anchor.js",
+  "./src/map/cartography/city-district-cartographic-overlay.js",
+  "./src/map/cartography/town-anchor.js",
+  "./src/map/cartography/town-cartographic-overlay.js",
+  "./src/map/cartography/semantic-zoom-v2.js",
+  "./src/map/cartography/geodesic-scale-v2.js",
+  "./src/map/cartography/unified-projection.js",
+  "./src/map/cartography/unified-frame-plan.js",
+  "./src/map/cartography/unified-frame-renderer.js",
+  "./src/map/cartography/presentation-coordinator.js",
   "./src/map/publication/contracts.js",
   "./src/map/publication/catalog.js",
   "./src/map/publication/index.js",
@@ -90,6 +108,7 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./public/geography/novegeo/world-boundary/v002/manifest.json",
   "./public/geography/novegeo/world-boundary/v002/overview.geojson",
   "./public/geography/novegeo/world-boundary/v002/standard.geojson",
+  "./public/geography/novegeo/map-extensions/manifest.json",
   "./src/map/validation/contracts.js",
   "./src/map/validation/geometry-validator.js",
   "./src/map/validation/extent-calculator.js",

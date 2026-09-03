@@ -2,6 +2,7 @@
 import { resolveLiveApiBaseUrl } from "../../config/live-api-endpoint.js";
 import { createLiveWorldBoundaryClient } from "../../map/geography/live-boundary-client.js";
 import { mountNoveGeoCartographicOverlay } from "../../map/cartography/cartographic-overlay.js";
+import { resolveNoveGeoPresentationCoordinator } from "./novegeo-presentation-provider.js";
 
 export const NOVEGEO_CARTOGRAPHY_STYLE_HREF = "./styles/novegeo-cartography-v1.css";
 
@@ -39,7 +40,9 @@ export function installNoveGeoCartographicStylingExperience({
   apiBaseUrl = "",
   createBoundaryClientRef = createLiveWorldBoundaryClient,
   mountOverlayRef = mountNoveGeoCartographicOverlay,
+  presentationCoordinator = undefined,
 } = {}) {
+  presentationCoordinator = resolveNoveGeoPresentationCoordinator(presentationCoordinator);
   ensureStylesheet(documentRef);
   let generation = 0;
   let disconnected = false;
@@ -57,10 +60,22 @@ export function installNoveGeoCartographicStylingExperience({
       if (disconnected || token !== generation) return Object.freeze({ status: "DISCONNECTED" });
       await waitForMapCanvas(documentRef, windowRef);
       if (disconnected || token !== generation) return Object.freeze({ status: "DISCONNECTED" });
-      overlay?.disconnect?.();
-      overlay = mountOverlayRef(documentRef, { boundaryPublication: boundary });
-      page.dataset.cartographicStyling = overlay.status === "RENDERED" ? "READY" : overlay.status;
-      return Object.freeze({ status: overlay.status, boundaryVersion: boundary.boundaryVersion, overlay });
+
+      // Prepare the historical country-label overlay before boundary binding is
+      // allowed to activate UNIFIED ownership. This guarantees complete rollback.
+      if (presentationCoordinator?.mode !== "UNIFIED") {
+        overlay?.disconnect?.();
+        overlay = mountOverlayRef(documentRef, { boundaryPublication: boundary });
+      }
+      presentationCoordinator?.bindBoundary?.(boundary);
+      const unified = presentationCoordinator?.mode === "UNIFIED";
+      page.dataset.cartographicStyling = unified ? "READY" : (overlay?.status === "RENDERED" ? "READY" : overlay?.status || "DEGRADED");
+      return Object.freeze({
+        status: unified ? "RENDERED" : overlay?.status || "DEGRADED",
+        boundaryVersion: boundary.boundaryVersion,
+        overlay,
+        presentationMode: unified ? "UNIFIED" : "LEGACY",
+      });
     } catch (error) {
       if (!disconnected && page?.dataset) page.dataset.cartographicStyling = "DEGRADED";
       return Object.freeze({ status: "DEGRADED", reason: error?.message || String(error) });

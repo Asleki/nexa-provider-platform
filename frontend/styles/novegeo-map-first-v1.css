@@ -1,0 +1,157 @@
+/** P006.7.11.15.10 — map-first presentation, activated only after atomic UNIFIED ownership. */
+
+#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="simulation-novegeo"],
+#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="production-novegeo"] {
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="simulation-novegeo"] .application-header,
+#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="simulation-novegeo"] .application-footer,
+#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="production-novegeo"] .application-header,
+#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="production-novegeo"] .application-footer {
+  display: none;
+}
+
+#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"] .application-main {
+  height: 100dvh;
+  min-height: 100dvh;
+  padding: 0;
+  overflow: hidden;
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100dvh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #07111f;
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-feature-heading,
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-authority-summary,
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-feature-note,
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-developer-details {
+  display: none !important;
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-map-stage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  background: #07111f;
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] [data-role="future-map-viewport"] {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  aspect-ratio: auto !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  contain: layout paint size;
+  background: #07111f;
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] [data-role="novegeo-unified-cartographic-canvas"] {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Keep the existing tool rail, but remove the old dashboard-like toolbar copy. */
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-map-shell-toolbar {
+  position: absolute !important;
+  z-index: 40 !important;
+  inset: max(.65rem, env(safe-area-inset-top)) max(.65rem, env(safe-area-inset-right)) auto auto !important;
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-map-shell-toolbar-copy {
+  display: none !important;
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-tool-rail {
+  position: static !important;
+  display: flex !important;
+  gap: .42rem;
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-tool-button {
+  width: 2.65rem;
+  height: 2.65rem;
+  border-radius: 999px;
+  border-color: rgba(226,232,240,.24);
+  background: rgba(7,17,31,.78);
+  box-shadow: 0 .25rem 1rem rgba(0,0,0,.25);
+  backdrop-filter: blur(.5rem);
+}
+
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-feature-controls {
+  position: absolute !important;
+  z-index: 39 !important;
+  top: calc(max(.65rem, env(safe-area-inset-top)) + 3.2rem) !important;
+  right: max(.65rem, env(safe-area-inset-right)) !important;
+  width: min(22rem, calc(100% - 1.3rem)) !important;
+  max-height: calc(100dvh - 5rem) !important;
+  overflow: auto !important;
+  border-radius: .9rem !important;
+  background: rgba(7,17,31,.9) !important;
+  backdrop-filter: blur(.8rem) !important;
+}
+
+/* Coordinate search remains a retained diagnostic/reference tool but is not primary map chrome. */
+.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .map-coordinate-search {
+  opacity: .72;
+}
+
+.novegeo-unified-distance-scale {
+  position: absolute;
+  z-index: 35;
+  left: max(.75rem, env(safe-area-inset-left));
+  bottom: max(.75rem, env(safe-area-inset-bottom));
+  display: grid;
+  gap: .22rem;
+  pointer-events: none;
+  color: rgba(248,250,252,.9);
+  font: 600 .7rem/1.1 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-shadow: 0 1px 2px rgba(7,17,31,.95);
+}
+
+.novegeo-unified-distance-scale-bar {
+  display: block;
+  height: .42rem;
+  border: 1px solid rgba(248,250,252,.92);
+  border-top: 0;
+  border-radius: 0 0 .12rem .12rem;
+}
+
+.novegeo-unified-distance-scale-labels {
+  white-space: nowrap;
+}
+
+@media (orientation: landscape) and (max-height: 34rem) {
+  .novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-tool-button {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-feature-controls {
+    max-height: calc(100dvh - 4.4rem) !important;
+  }
+}

@@ -11,7 +11,7 @@ class PostgreSQLPool:
             else:
                 from psycopg_pool import ConnectionPool
                 conninfo=f"host={self.settings.host} port={self.settings.port} dbname={self.settings.database_name} user={self.settings.username} password={self.settings.password} sslmode={self.settings.ssl_mode}"
-                self._pool=ConnectionPool(conninfo=conninfo,min_size=self.settings.min_pool_size,max_size=self.settings.max_pool_size,timeout=self.settings.acquisition_timeout_seconds,open=True)
+                self._pool=ConnectionPool(conninfo=conninfo,min_size=self.settings.min_pool_size,max_size=self.settings.max_pool_size,timeout=self.settings.acquisition_timeout_seconds,check=ConnectionPool.check_connection,open=True)
         except Exception as exc: raise DatabaseUnavailable("database pool could not be opened") from exc
     def close(self):
         if self._pool is not None:

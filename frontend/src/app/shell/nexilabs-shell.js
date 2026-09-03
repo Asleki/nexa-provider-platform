@@ -15,6 +15,7 @@ import { productionFeatureGuardMarkup } from "../../ui/pages/production-feature-
 import { accessPlaceholderMarkup } from "../../ui/pages/access-placeholder.js";
 import { mountNoveGeoLiveAuthorityRuntime } from "../features/novegeo-live-authority-runtime.js";
 import { mountNoveGeoMapShellHardeningRuntime } from "../features/novegeo-map-shell-hardening-runtime.js";
+import { installNoveGeoPresentationCoordinator } from "../features/novegeo-presentation-provider.js";
 
 function pageMarkup(route) {
   switch (route) {
@@ -58,9 +59,12 @@ export async function mountNexiLabsShell({
   const outlet = documentRef.querySelector("[data-role='application-page']");
   if (!root || !outlet) throw new Error("NexiLabs root shell is incomplete");
 
+  // P006.7.11.15.10 B0 — establish one presentation owner before any
+  // NoveGeo geographic renderer can be installed by the shell or main bootstrap.
+  const presentationCoordinator = installNoveGeoPresentationCoordinator({ documentRef, windowRef });
+
   state.transition(ApplicationStatus.BOOTING, { reason: "nexilabs_shell_start" });
 
-  // Shared chrome is important but must never be allowed to hold the entire PWA in BOOTING.
   try {
     await loadShellPartials({ documentRef, fetchRef });
     root.dataset.shellChromeStatus = "READY";
@@ -83,6 +87,7 @@ export async function mountNexiLabsShell({
   };
 
   const renderRoute = (route) => {
+    presentationCoordinator?.disconnect?.();
     mapShellHardeningRuntime?.disconnect?.();
     mapShellHardeningRuntime = null;
     featureRuntime?.disconnect?.();
@@ -98,7 +103,14 @@ export async function mountNexiLabsShell({
     else delete root.dataset.selectedRuntime;
     root.dataset.developerDiagnostics = "false";
     if (route === ApplicationRoute.SIMULATION_NOVEGEO) {
-      featureRuntime = mountNoveGeoLiveAuthorityRuntime({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl, runtimeMode: "simulation" });
+      presentationCoordinator?.attachViewport?.({ documentRef, windowRef });
+      featureRuntime = mountNoveGeoLiveAuthorityRuntime({
+        documentRef,
+        windowRef,
+        fetchRef,
+        apiBaseUrl: config.apiBaseUrl,
+        runtimeMode: "simulation",
+      });
       mapShellHardeningRuntime = mountNoveGeoMapShellHardeningRuntime({ documentRef, windowRef, authorityRuntime: featureRuntime });
     }
     const main = documentRef.querySelector("#main-content");
@@ -163,7 +175,13 @@ export async function mountNexiLabsShell({
     recoverShellChrome: recovery.recover,
     mountFeatureRuntime(runtimeMode = runtimeSelection.value || "simulation") {
       featureRuntime?.disconnect?.();
-      featureRuntime = mountNoveGeoLiveAuthorityRuntime({ documentRef, windowRef, fetchRef, apiBaseUrl: config.apiBaseUrl, runtimeMode });
+      featureRuntime = mountNoveGeoLiveAuthorityRuntime({
+        documentRef,
+        windowRef,
+        fetchRef,
+        apiBaseUrl: config.apiBaseUrl,
+        runtimeMode,
+      });
       return featureRuntime;
     },
     router,

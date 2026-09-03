@@ -3,7 +3,8 @@ import { resolveLiveApiBaseUrl } from "../../config/live-api-endpoint.js";
 import { createLiveWorldBoundaryClient } from "../../map/geography/live-boundary-client.js";
 import { createNationalMapClient } from "../../map/nngla/national-map-client.js";
 import { mountNoveGeoCityCartographicOverlay } from "../../map/cartography/city-cartographic-overlay.js";
-import { assertPublishedNoveGeoCitySubset } from "../../map/cartography/city-anchor.js";
+import { assertPublishedNoveGeoCitySubset, createNoveGeoCityLabelCandidates } from "../../map/cartography/city-anchor.js";
+import { registerNoveGeoPresentationSnapshot, resolveNoveGeoPresentationCoordinator, unifiedPresentationOwnsLayer } from "./novegeo-presentation-provider.js";
 
 function delay(windowRef, milliseconds) {
   return new Promise((resolve) => (windowRef?.setTimeout || globalThis.setTimeout)(resolve, milliseconds));
@@ -29,7 +30,9 @@ export function installNoveGeoCityMapExperience({
   createBoundaryClientRef = createLiveWorldBoundaryClient,
   createMapClientRef = createNationalMapClient,
   mountOverlayRef = mountNoveGeoCityCartographicOverlay,
+  presentationCoordinator = undefined,
 } = {}) {
+  presentationCoordinator = resolveNoveGeoPresentationCoordinator(presentationCoordinator);
   let generation = 0;
   let disconnected = false;
   let overlay = null;
@@ -48,6 +51,7 @@ export function installNoveGeoCityMapExperience({
     try {
       const boundary = await createBoundaryClientRef({ apiBaseUrl: resolved, fetchRef }).getActive();
       if (disconnected || token !== generation) return Object.freeze({ status: "DISCONNECTED" });
+      presentationCoordinator?.bindBoundary?.(boundary);
       const extent = boundary.extent;
       const payload = await createMapClientRef({ apiBaseUrl: resolved, fetchRef }).readViewport(
         {
@@ -60,22 +64,34 @@ export function installNoveGeoCityMapExperience({
       );
       if (disconnected || token !== generation) return Object.freeze({ status: "DISCONNECTED" });
       const cities = assertPublishedNoveGeoCitySubset(payload.items || []);
+      const candidates = createNoveGeoCityLabelCandidates(cities, { readRuntime: payload.readRuntime });
       await waitForMapCanvas(documentRef, windowRef);
       if (disconnected || token !== generation) return Object.freeze({ status: "DISCONNECTED" });
-      overlay?.disconnect?.();
-      overlay = mountOverlayRef(documentRef, {
-        boundaryPublication: boundary,
-        cityItems: cities,
+      if (!unifiedPresentationOwnsLayer(presentationCoordinator)) {
+        overlay?.disconnect?.();
+        overlay = mountOverlayRef(documentRef, {
+          boundaryPublication: boundary,
+          cityItems: cities,
+          readRuntime: payload.readRuntime,
+        });
+      }
+      const coordination = registerNoveGeoPresentationSnapshot(presentationCoordinator, {
+        layerKey: "CITY",
+        items: cities,
+        candidates,
         readRuntime: payload.readRuntime,
+        semanticChecksum: payload.semanticChecksum || null,
       });
-      page.dataset.novegeoCityMapStatus = overlay.status === "RENDERED" ? "READY" : overlay.status;
+      const unified = unifiedPresentationOwnsLayer(presentationCoordinator);
+      page.dataset.novegeoCityMapStatus = unified ? "READY" : (overlay?.status === "RENDERED" ? "READY" : overlay?.status || "DEGRADED");
       page.dataset.novegeoCityMapCount = String(cities.length);
       return Object.freeze({
-        status: overlay.status,
+        status: unified ? "RENDERED" : overlay.status,
         cityCount: cities.length,
         readRuntime: payload.readRuntime,
         semanticChecksum: payload.semanticChecksum || null,
         overlay,
+        coordination,
       });
     } catch (error) {
       if (!disconnected && page?.dataset) page.dataset.novegeoCityMapStatus = "DEGRADED";

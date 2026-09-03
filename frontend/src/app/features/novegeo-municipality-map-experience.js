@@ -3,7 +3,8 @@ import { resolveLiveApiBaseUrl } from "../../config/live-api-endpoint.js";
 import { createLiveWorldBoundaryClient } from "../../map/geography/live-boundary-client.js";
 import { createNationalMapClient } from "../../map/nngla/national-map-client.js";
 import { mountNoveGeoMunicipalityCartographicOverlay } from "../../map/cartography/municipality-cartographic-overlay.js";
-import { assertPublishedNoveGeoMunicipalitySubset } from "../../map/cartography/municipality-anchor.js";
+import { assertPublishedNoveGeoMunicipalitySubset, createNoveGeoMunicipalityLabelCandidates } from "../../map/cartography/municipality-anchor.js";
+import { registerNoveGeoPresentationSnapshot, resolveNoveGeoPresentationCoordinator, unifiedPresentationOwnsLayer } from "./novegeo-presentation-provider.js";
 
 function delay(windowRef, milliseconds) {
   return new Promise((resolve) => (windowRef?.setTimeout || globalThis.setTimeout)(resolve, milliseconds));
@@ -29,7 +30,9 @@ export function installNoveGeoMunicipalityMapExperience({
   createBoundaryClientRef = createLiveWorldBoundaryClient,
   createMapClientRef = createNationalMapClient,
   mountOverlayRef = mountNoveGeoMunicipalityCartographicOverlay,
+  presentationCoordinator = undefined,
 } = {}) {
+  presentationCoordinator = resolveNoveGeoPresentationCoordinator(presentationCoordinator);
   let generation = 0;
   let disconnected = false;
   let overlay = null;
@@ -48,6 +51,7 @@ export function installNoveGeoMunicipalityMapExperience({
     try {
       const boundary = await createBoundaryClientRef({ apiBaseUrl: resolved, fetchRef }).getActive();
       if (disconnected || token !== generation) return Object.freeze({ status: "DISCONNECTED" });
+      presentationCoordinator?.bindBoundary?.(boundary);
       const extent = boundary.extent;
       const payload = await createMapClientRef({ apiBaseUrl: resolved, fetchRef }).readViewport(
         {
@@ -60,22 +64,34 @@ export function installNoveGeoMunicipalityMapExperience({
       );
       if (disconnected || token !== generation) return Object.freeze({ status: "DISCONNECTED" });
       const municipalities = assertPublishedNoveGeoMunicipalitySubset(payload.items || []);
+      const candidates = createNoveGeoMunicipalityLabelCandidates(municipalities, { readRuntime: payload.readRuntime });
       await waitForMapCanvas(documentRef, windowRef);
       if (disconnected || token !== generation) return Object.freeze({ status: "DISCONNECTED" });
-      overlay?.disconnect?.();
-      overlay = mountOverlayRef(documentRef, {
-        boundaryPublication: boundary,
-        municipalityItems: municipalities,
+      if (!unifiedPresentationOwnsLayer(presentationCoordinator)) {
+        overlay?.disconnect?.();
+        overlay = mountOverlayRef(documentRef, {
+          boundaryPublication: boundary,
+          municipalityItems: municipalities,
+          readRuntime: payload.readRuntime,
+        });
+      }
+      const coordination = registerNoveGeoPresentationSnapshot(presentationCoordinator, {
+        layerKey: "MUNICIPALITY",
+        items: municipalities,
+        candidates,
         readRuntime: payload.readRuntime,
+        semanticChecksum: payload.semanticChecksum || null,
       });
-      page.dataset.novegeoMunicipalityMapStatus = overlay.status === "RENDERED" ? "READY" : overlay.status;
+      const unified = unifiedPresentationOwnsLayer(presentationCoordinator);
+      page.dataset.novegeoMunicipalityMapStatus = unified ? "READY" : (overlay?.status === "RENDERED" ? "READY" : overlay?.status || "DEGRADED");
       page.dataset.novegeoMunicipalityMapCount = String(municipalities.length);
       return Object.freeze({
-        status: overlay.status,
+        status: unified ? "RENDERED" : overlay.status,
         municipalityCount: municipalities.length,
         readRuntime: payload.readRuntime,
         semanticChecksum: payload.semanticChecksum || null,
         overlay,
+        coordination,
       });
     } catch (error) {
       if (!disconnected && page?.dataset) page.dataset.novegeoMunicipalityMapStatus = "DEGRADED";

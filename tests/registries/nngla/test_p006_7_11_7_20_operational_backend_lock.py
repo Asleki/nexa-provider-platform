@@ -179,7 +179,9 @@ def _authorized_p006_7_11_15_7_composition_successor(root: Path, target_path: st
     digest = sha256(candidate.read_bytes()).hexdigest()
     if digest == expected:
         return True
-    return _authorized_p006_7_11_15_9_cm1_composition_successor(root, target_path)
+    if _authorized_p006_7_11_15_9_cm1_composition_successor(root, target_path):
+        return True
+    return _authorized_p006_7_11_15_10_r2_pwa_successor(root, target_path)
 
 
 def _authorized_delivery3_existing_path(root: Path, target_path: str) -> bool:
@@ -423,6 +425,76 @@ def _authorized_p006_7_11_15_9_seq29_production_successor(root: Path, target_pat
     candidate = root / target_path
     return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
 
+
+# P006.7.11.15.10 — exact frontend presentation-coordinator successor bytes.
+# This is a compatibility/extension authorization only. It does not broaden the
+# lock to arbitrary frontend edits: exactly these reviewed paths and hashes may
+# advance, and only while the dedicated .15.10 proof files are present.
+P006_7_11_15_10_PRESENTATION_SUCCESSOR_SHA256 = {
+    "frontend/src/app/shell/nexilabs-shell.js": "ecc624b5538c77053c1b21d9a9e4d16745b8a5689b8accef957d32ea8dddb577",
+    "frontend/src/app/features/novegeo-cartographic-styling-experience.js": "4254255aec4a57f70fb4f8fb7c20c24d1dbb2b65a714664f8dadd3c5cdd7f3ca",
+    "frontend/src/app/features/novegeo-region-map-experience.js": "7910557641478ede66d553848facf662d14b693dc33838db2835cc4a6e04b7ef",
+    "frontend/src/app/features/novegeo-city-map-experience.js": "78c5b6f7cce0a96d587615230ea0b8cbd9057ad2b842be49200636cb6017b112",
+    "frontend/src/app/features/novegeo-municipality-map-experience.js": "e665c475fe35d789857a4d5015caa07d14da1218ebd9334d4fd606123f677744",
+    "frontend/src/app/features/novegeo-city-district-map-experience.js": "bc214c662187069bf29cfdc2bab4809f51f378130512dd3a9b066ed7d763fa0a",
+    "frontend/src/app/features/novegeo-town-map-experience.js": "6537600e26e2abd6e3dae0c845891ba9fa7192845e0ecce45df8c1c9d77bb737",
+}
+
+P006_7_11_15_10_PRESENTATION_PROOF_FILES = (
+    "frontend/tests/map/cartography/p006_7_11_15_10_semantic-zoom-v2.test.mjs",
+    "frontend/tests/map/cartography/p006_7_11_15_10_unified-projection.test.mjs",
+    "frontend/tests/map/cartography/p006_7_11_15_10_geodesic-scale-v2.test.mjs",
+    "frontend/tests/map/cartography/p006_7_11_15_10_unified-frame-plan.test.mjs",
+    "frontend/tests/map/cartography/p006_7_11_15_10_unified-frame-renderer.test.mjs",
+    "frontend/tests/map/cartography/p006_7_11_15_10_presentation-coordinator.test.mjs",
+    "frontend/tests/map/cartography/p006_7_11_15_10_capital-role-safety.test.mjs",
+    "frontend/tests/app/features/p006_7_11_15_10_layer-provider-seam.test.mjs",
+    "frontend/tests/integration/p006_7_11_15_10_bootstrap-order.test.mjs",
+    "frontend/tests/integration/p006_7_11_15_10_map-first-css-contract.test.mjs",
+    "tests/registries/nngla/test_p006_7_11_15_10_presentation_successor_lock_qualification.py",
+)
+
+
+def _authorized_p006_7_11_15_10_presentation_successor(
+    root: Path,
+    target_path: str,
+) -> bool:
+    """Authorize only the exact reviewed .15.10 presentation successor."""
+    expected = P006_7_11_15_10_PRESENTATION_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_7_11_15_10_PRESENTATION_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
+
+# P006.7.11.15.10 R2 — exact same-generation PWA refresh successors.
+# The cache ABI remains v17; only these two cache-composition surfaces advance.
+P006_7_11_15_10_R2_PWA_SUCCESSOR_SHA256 = {
+    "frontend/sw.js": "e3271948407449bde5d4da9124d339b7bc61196b82fdcc26fb5b447dd6f30091",
+    "frontend/src/pwa/cache-policy.js": "d8f1fcaf98733b95c4c19f3d069a54b79598665dd7cfdb213985d3e35d4263a4",
+}
+
+P006_7_11_15_10_R2_PWA_PROOF_FILES = (
+    "frontend/tests/pwa/p006_7_11_15_10_r2_map-first-shell-refresh.test.mjs",
+    "tests/registries/nngla/test_p006_7_11_15_10_r2_pwa_successor_lock_qualification.py",
+)
+
+
+def _authorized_p006_7_11_15_10_r2_pwa_successor(
+    root: Path,
+    target_path: str,
+) -> bool:
+    """Authorize only the reviewed .15.10 R2 PWA cache refresh bytes."""
+    expected = P006_7_11_15_10_R2_PWA_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_7_11_15_10_R2_PWA_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
 def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
     """Protect locked production while permitting genuinely additive milestones.
 
@@ -573,6 +645,15 @@ def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
             continue
 
         if _authorized_p006_7_11_15_9_seq29_production_successor(root, target_path):
+            continue
+
+        # P006.7.11.15.10 changes only the exact reviewed presentation-owner
+        # seams needed to install the coordinator before layer rendering while
+        # preserving every historical default when the coordinator is absent.
+        if _authorized_p006_7_11_15_10_presentation_successor(root, target_path):
+            continue
+
+        if _authorized_p006_7_11_15_10_r2_pwa_successor(root, target_path):
             continue
 
         # Renaming/copying locked production is not an additive extension.
