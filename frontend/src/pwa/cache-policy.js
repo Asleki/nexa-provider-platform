@@ -1,4 +1,4 @@
-/** P003.3/P003.4 / P006.7.11.15.10 R2 — locked-v17 policy with unified map presentation assets. */
+/** P003.3/P003.4 / P006.7.11.15.10.1 — locked-v17 policy with styling architecture lock assets. */
 export const PWA_CACHE_VERSION = "nexilabs-shell-v17";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
@@ -62,6 +62,7 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/map/nngla/render-plan.js",
   "./src/map/nngla/publication-status.js",
   "./src/map/nngla/national-map-client.js",
+  "./src/map/nngla/governed-snapshot-loader.js",
   "./src/map/nngla/national-map-contracts.js",
   "./src/map/nngla/national-map-state.js",
   "./src/map/geography/contracts.js",

@@ -12,6 +12,10 @@ from infrastructure.database.read.nngla_national_map import (
     NationalMapPage,
     NNGLAMapReadAuthorityError,
 )
+from infrastructure.database.runtime.read_materialization import (
+    current_request_read_materialization,
+    materialization_key,
+)
 
 TOWN_PUBLIC_VIEW = "geography.nngla_town_public_read_v2"
 TOWN_FAMILY = "PLACE"
@@ -21,6 +25,8 @@ TOWN_LABEL_POINT_ALGORITHM_ID = (
     "algorithm:nngla:town-label-point-on-surface:epsg4326"
 )
 TOWN_LABEL_POINT_ALGORITHM_VERSION = 1
+_TOWN_GOVERNED_IDS_MATERIALIZATION_NAMESPACE = "nngla.town.governed_ids.v2"
+_TOWN_RECORDS_MATERIALIZATION_NAMESPACE = "nngla.town.public_map.records.v2"
 
 
 @dataclass(frozen=True, slots=True)
@@ -68,6 +74,16 @@ class PostgreSQLTownPublicMapRepository:
         self.runtime_mode = normalized
 
     def governed_ids(self) -> frozenset[str]:
+        materialization = current_request_read_materialization(self.pool)
+        cache_key = materialization_key(
+            self.runtime_mode,
+            _TOWN_GOVERNED_IDS_MATERIALIZATION_NAMESPACE,
+        )
+        if materialization is not None:
+            cached = materialization.get(cache_key)
+            if isinstance(cached, frozenset):
+                return cached
+
         with self.pool.connection(read_only=True) as connection:
             with connection.cursor() as cursor:
                 cursor.execute(
@@ -83,7 +99,10 @@ class PostgreSQLTownPublicMapRepository:
             raise NNGLAMapReadAuthorityError(
                 "governed TOWN identity set must be non-empty and unique"
             )
-        return frozenset(ids)
+        governed = frozenset(ids)
+        if materialization is not None:
+            materialization.set(cache_key, governed)
+        return governed
 
     @staticmethod
     def _json_object(value: object, label: str) -> dict[str, object]:
@@ -196,7 +215,17 @@ class PostgreSQLTownPublicMapRepository:
                 source_runtime_effect_scope=runtime_scope,
             )
             records.append(TownMapRecord(feature=feature, metadata=metadata))
-        return tuple(records)
+        result = tuple(records)
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            materialization.merge_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _TOWN_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                {record.feature.subject_id: record for record in result},
+            )
+        return result
 
     def list_features(
         self,
@@ -239,6 +268,17 @@ class PostgreSQLTownPublicMapRepository:
         normalized = str(subject_id)
         if normalized not in self.governed_ids():
             return None
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            cached = materialization.complete_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _TOWN_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                (normalized,),
+            )
+            if cached is not None:
+                return cached[normalized].feature
         for record in self._records(bounds=None):
             if record.feature.subject_id == normalized:
                 return record.feature
@@ -252,6 +292,20 @@ class PostgreSQLTownPublicMapRepository:
         wanted = {str(value) for value in subject_ids if str(value) in governed}
         if not wanted:
             return {}
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            cached = materialization.complete_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _TOWN_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                wanted,
+            )
+            if cached is not None:
+                return {
+                    subject_id: record.metadata
+                    for subject_id, record in cached.items()
+                }
         return {
             record.feature.subject_id: record.metadata
             for record in self._records(bounds=None)

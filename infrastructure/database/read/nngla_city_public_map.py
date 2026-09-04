@@ -18,6 +18,10 @@ from infrastructure.database.read.nngla_national_map import (
     NationalMapPage,
     NNGLAMapReadAuthorityError,
 )
+from infrastructure.database.runtime.read_materialization import (
+    current_request_read_materialization,
+    materialization_key,
+)
 
 CITY_PUBLIC_VIEW = "geography.nngla_city_public_read_v1"
 CITY_FAMILY = "ADMINISTRATIVE_AREA"
@@ -37,6 +41,7 @@ OFFICIAL_NOVEGEO_CITY_IDS = (
     "NG-ADM-000170",  # Port Meridian
 )
 _OFFICIAL_CITY_SET = frozenset(OFFICIAL_NOVEGEO_CITY_IDS)
+_CITY_RECORDS_MATERIALIZATION_NAMESPACE = "nngla.city.public_map.records.v1"
 
 
 @dataclass(frozen=True, slots=True)
@@ -185,7 +190,17 @@ class PostgreSQLCityPublicMapRepository:
                 perimeter_m=perimeter_m,
             )
             records.append(CityMapRecord(feature=feature, metadata=metadata))
-        return tuple(records)
+        result = tuple(records)
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            materialization.merge_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _CITY_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                {record.feature.subject_id: record for record in result},
+            )
+        return result
 
     def list_features(
         self,
@@ -224,6 +239,17 @@ class PostgreSQLCityPublicMapRepository:
         normalized = str(subject_id)
         if normalized not in _OFFICIAL_CITY_SET:
             return None
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            cached = materialization.complete_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _CITY_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                (normalized,),
+            )
+            if cached is not None:
+                return cached[normalized].feature
         for record in self._records(bounds=None):
             if record.feature.subject_id == normalized:
                 return record.feature
@@ -233,6 +259,20 @@ class PostgreSQLCityPublicMapRepository:
         wanted = {str(value) for value in subject_ids if str(value) in _OFFICIAL_CITY_SET}
         if not wanted:
             return {}
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            cached = materialization.complete_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _CITY_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                wanted,
+            )
+            if cached is not None:
+                return {
+                    subject_id: record.metadata
+                    for subject_id, record in cached.items()
+                }
         return {
             record.feature.subject_id: record.metadata
             for record in self._records(bounds=None)

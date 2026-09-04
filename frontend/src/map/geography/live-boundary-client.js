@@ -1,5 +1,6 @@
-/** P006.7.11.9 — HTTP-only reader for the authoritative PostgreSQL-backed NoveGeo boundary. */
+/** P006.7.11.9 / P006.7.11.15.10.1 — HTTP-only authoritative NoveGeo boundary reader. */
 import { validateWorldBoundaryPublication } from "./contracts.js";
+import { createGovernedSnapshotLoader } from "../nngla/governed-snapshot-loader.js";
 
 export const LIVE_NOVEGEO_BOUNDARY = Object.freeze({
   boundaryId: "boundary:novegeo:sovereign",
@@ -31,13 +32,12 @@ export function createLiveWorldBoundaryClient({ apiBaseUrl, fetchRef = globalThi
   const base = normalizeBaseUrl(apiBaseUrl);
   if (!base) throw new Error("apiBaseUrl is required for live boundary authority");
   const url = `${base}/api/v1/geography/world-boundary`;
+  const loader = createGovernedSnapshotLoader({ apiBaseUrl: base, fetchRef });
   return Object.freeze({
     apiBaseUrl: base,
     endpoint: url,
     async getActive() {
-      const response = await fetchRef(url, { method: "GET", headers: { accept: "application/json" } });
-      if (!response?.ok) throw new Error(`world boundary read request failed (${response?.status ?? "unknown"})`);
-      return assertLiveWorldBoundaryPublication(await response.json());
+      return assertLiveWorldBoundaryPublication(await loader.readBoundaryRaw());
     },
   });
 }

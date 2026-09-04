@@ -1,7 +1,7 @@
-/** P006.7.11.15.10 — map-first presentation, activated only after atomic UNIFIED ownership. */
+/** P006.7.11.15.10.1 — map-first layout is independent of renderer/data completeness. */
 
-#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="simulation-novegeo"],
-#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="production-novegeo"] {
+#nexilabs-app[data-novegeo-layout-mode="MAP_FIRST"][data-application-route="simulation-novegeo"],
+#nexilabs-app[data-novegeo-layout-mode="MAP_FIRST"][data-application-route="production-novegeo"] {
   width: 100%;
   max-width: none;
   height: 100dvh;
@@ -9,21 +9,21 @@
   overflow: hidden;
 }
 
-#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="simulation-novegeo"] .application-header,
-#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="simulation-novegeo"] .application-footer,
-#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="production-novegeo"] .application-header,
-#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"][data-application-route="production-novegeo"] .application-footer {
+#nexilabs-app[data-novegeo-layout-mode="MAP_FIRST"][data-application-route="simulation-novegeo"] .application-header,
+#nexilabs-app[data-novegeo-layout-mode="MAP_FIRST"][data-application-route="simulation-novegeo"] .application-footer,
+#nexilabs-app[data-novegeo-layout-mode="MAP_FIRST"][data-application-route="production-novegeo"] .application-header,
+#nexilabs-app[data-novegeo-layout-mode="MAP_FIRST"][data-application-route="production-novegeo"] .application-footer {
   display: none;
 }
 
-#nexilabs-app[data-novegeo-presentation-mode="UNIFIED"] .application-main {
+#nexilabs-app[data-novegeo-layout-mode="MAP_FIRST"] .application-main {
   height: 100dvh;
   min-height: 100dvh;
   padding: 0;
   overflow: hidden;
 }
 
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] {
   position: relative;
   display: block;
   width: 100%;
@@ -33,14 +33,14 @@
   background: #07111f;
 }
 
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-feature-heading,
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-authority-summary,
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-feature-note,
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-developer-details {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-feature-heading,
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-authority-summary,
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-feature-note,
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-developer-details {
   display: none !important;
 }
 
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-map-stage {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-map-stage {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -50,7 +50,7 @@
   background: #07111f;
 }
 
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] [data-role="future-map-viewport"] {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] [data-role="future-map-viewport"] {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
@@ -71,7 +71,7 @@
 }
 
 /* Keep the existing tool rail, but remove the old dashboard-like toolbar copy. */
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-map-shell-toolbar {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-map-shell-toolbar {
   position: absolute !important;
   z-index: 40 !important;
   inset: max(.65rem, env(safe-area-inset-top)) max(.65rem, env(safe-area-inset-right)) auto auto !important;
@@ -83,17 +83,17 @@
   background: transparent !important;
 }
 
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-map-shell-toolbar-copy {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-map-shell-toolbar-copy {
   display: none !important;
 }
 
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-tool-rail {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-tool-rail {
   position: static !important;
   display: flex !important;
   gap: .42rem;
 }
 
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-tool-button {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-tool-button {
   width: 2.65rem;
   height: 2.65rem;
   border-radius: 999px;
@@ -103,7 +103,7 @@
   backdrop-filter: blur(.5rem);
 }
 
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-feature-controls {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-feature-controls {
   position: absolute !important;
   z-index: 39 !important;
   top: calc(max(.65rem, env(safe-area-inset-top)) + 3.2rem) !important;
@@ -116,8 +116,7 @@
   backdrop-filter: blur(.8rem) !important;
 }
 
-/* Coordinate search remains a retained diagnostic/reference tool but is not primary map chrome. */
-.novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .map-coordinate-search {
+.novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .map-coordinate-search {
   opacity: .72;
 }
 
@@ -142,16 +141,14 @@
   border-radius: 0 0 .12rem .12rem;
 }
 
-.novegeo-unified-distance-scale-labels {
-  white-space: nowrap;
-}
+.novegeo-unified-distance-scale-labels { white-space: nowrap; }
 
 @media (orientation: landscape) and (max-height: 34rem) {
-  .novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-tool-button {
+  .novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-tool-button {
     width: 2.4rem;
     height: 2.4rem;
   }
-  .novegeo-feature-page[data-novegeo-presentation-mode="UNIFIED"] .novegeo-feature-controls {
+  .novegeo-feature-page[data-novegeo-layout-mode="MAP_FIRST"] .novegeo-feature-controls {
     max-height: calc(100dvh - 4.4rem) !important;
   }
 }

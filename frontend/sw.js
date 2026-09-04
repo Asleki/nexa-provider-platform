@@ -1,10 +1,11 @@
-/** P003.2–P003.4 / P006.7.11.15.10 R2 — v17 shell refresh for unified map presentation. */
+/** P003.2–P003.4 / P006.7.11.15.10.1 — v17 shell refresh for styling architecture lock. */
 const CACHE_NAME = "nexilabs-shell-v17";
 const SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-4-r2";
 const REGION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-6-r1";
 const CITY_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-7-r1";
 const MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-9-compat-seam-r1";
 const MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-r2";
+const STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-1";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -68,6 +69,7 @@ const APP_SHELL = [
   "./src/map/nngla/render-plan.js",
   "./src/map/nngla/publication-status.js",
   "./src/map/nngla/national-map-client.js",
+  "./src/map/nngla/governed-snapshot-loader.js",
   "./src/map/nngla/national-map-contracts.js",
   "./src/map/nngla/national-map-state.js",
   "./src/map/geography/contracts.js",
@@ -182,14 +184,13 @@ self.addEventListener("install", (event) => {
     const cache = await caches.open(CACHE_NAME);
     await cache.addAll(APP_SHELL);
 
-    // Preserve the locked v17 ABI while forcing one same-generation refresh
-    // when an existing v17 client must receive additive module-graph changes.
     if (refreshingExistingGeneration) {
       await caches.open(SAME_GENERATION_REFRESH_MARKER);
       await caches.open(REGION_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(CITY_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER);
+      await caches.open(STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER);
     }
 
     await self.skipWaiting();
@@ -203,7 +204,8 @@ self.addEventListener("activate", (event) => {
       || keys.includes(REGION_SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(CITY_SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER)
-      || keys.includes(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER);
+      || keys.includes(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER)
+      || keys.includes(STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER);
     const previousShellKeys = keys.filter(
       (key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME
     );
@@ -211,8 +213,6 @@ self.addEventListener("activate", (event) => {
     await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));
     await self.clients.claim();
 
-    // Keep historical generation restarts and all v17 same-generation refresh
-    // contracts so no open client remains on a pre-seam module graph.
     if (previousShellKeys.length > 0 || sameGenerationRefresh) {
       const clients = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
       await Promise.all(clients.map((client) => {

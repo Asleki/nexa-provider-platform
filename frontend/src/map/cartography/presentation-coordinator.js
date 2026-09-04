@@ -1,9 +1,10 @@
 /**
- * P006.7.11.15.10 — core NoveGeo cartographic presentation coordinator.
+ * P006.7.11.15.10.1 — NoveGeo styling architecture lock coordinator.
  *
- * LEGACY remains visible until one complete UNIFIED frame has rendered successfully.
- * The coordinator consumes only already-validated publication-gated snapshots supplied
- * by the existing layer adapters; it never discovers authority from DOM/canvas content.
+ * Layout ownership, renderer ownership and governed data completeness are
+ * deliberately independent. MAP_FIRST begins when the NoveGeo viewport mounts;
+ * UNIFIED begins when the authoritative boundary can render a base frame;
+ * governed layers then arrive progressively without fabricating missing facts.
  */
 import { createNoveGeoCountryLabelCandidate } from "./country-anchor.js";
 import { renderUnifiedCartographicFrame, UNIFIED_CANVAS_ROLE } from "./unified-frame-renderer.js";
@@ -11,10 +12,12 @@ import { REQUIRED_LAYER_KEYS } from "./unified-frame-plan.js";
 import { UnifiedLayerKey } from "./semantic-zoom-v2.js";
 
 export const NOVEGEO_PRESENTATION_COORDINATOR_ID = "presentation:novegeo:map-first-coordinator";
-export const NOVEGEO_PRESENTATION_COORDINATOR_VERSION = 1;
+export const NOVEGEO_PRESENTATION_COORDINATOR_VERSION = 2;
 export const NOVEGEO_MAP_FIRST_STYLE_HREF = "./styles/novegeo-map-first-v1.css";
 
+export const LayoutMode = Object.freeze({ LEGACY: "LEGACY", MAP_FIRST: "MAP_FIRST" });
 export const PresentationMode = Object.freeze({ LEGACY: "LEGACY", UNIFIED: "UNIFIED" });
+export const DataState = Object.freeze({ LOADING: "LOADING", PARTIAL: "PARTIAL", READY: "READY", DEGRADED: "DEGRADED" });
 
 function ensureStylesheet(documentRef) {
   const existing = documentRef?.querySelector?.("link[data-novegeo-map-first-style='true']");
@@ -76,15 +79,20 @@ function immutableSnapshot({ layerKey, items, candidates, readRuntime, semanticC
   });
 }
 
-function allRequiredSnapshots(snapshots) {
-  return REQUIRED_LAYER_KEYS.every((key) => snapshots.has(key));
+function resolveDataState(snapshots, degradedLayers) {
+  if (degradedLayers.size > 0) return DataState.DEGRADED;
+  if (REQUIRED_LAYER_KEYS.every((key) => snapshots.has(key))) return DataState.READY;
+  if (snapshots.size > 0) return DataState.PARTIAL;
+  return DataState.LOADING;
 }
 
-function setPresentationDataset(documentRef, page, viewport, mode) {
-  if (page?.dataset) page.dataset.novegeoPresentationMode = mode;
-  if (viewport?.dataset) viewport.dataset.novegeoPresentationMode = mode;
-  const root = documentRef?.querySelector?.("#nexilabs-app");
-  if (root?.dataset) root.dataset.novegeoPresentationMode = mode;
+function setPresentationDataset(documentRef, page, viewport, { rendererMode, layoutMode, dataState }) {
+  for (const node of [page, viewport, documentRef?.querySelector?.("#nexilabs-app")]) {
+    if (!node?.dataset) continue;
+    node.dataset.novegeoPresentationMode = rendererMode;
+    node.dataset.novegeoLayoutMode = layoutMode;
+    node.dataset.novegeoDataState = dataState;
+  }
 }
 
 function ensureUnifiedCanvas(documentRef, viewport) {
@@ -136,6 +144,8 @@ export function createNoveGeoPresentationCoordinator({
   ensureStylesheet(documentRef);
 
   let mode = PresentationMode.LEGACY;
+  let layoutMode = LayoutMode.LEGACY;
+  let dataState = DataState.LOADING;
   let page = null;
   let viewport = null;
   let boundaryPublication = null;
@@ -149,6 +159,7 @@ export function createNoveGeoPresentationCoordinator({
   let legacyVisibility = [];
   let legacyOverlayVisibility = [];
   const snapshots = new Map();
+  const degradedLayers = new Map();
   const userLayerVisibility = {
     [UnifiedLayerKey.COUNTRY]: true,
     [UnifiedLayerKey.REGION]: true,
@@ -159,9 +170,10 @@ export function createNoveGeoPresentationCoordinator({
     [UnifiedLayerKey.REFERENCE]: true,
   };
 
-  // No authoritative capital-role binding exists in the inspected .15.9 contracts.
-  // The presentation capability remains reserved rather than inferred from CITY/name.
   const presentationRoles = Object.freeze({});
+
+  const publishState = () => setPresentationDataset(documentRef, page, viewport, { rendererMode: mode, layoutMode, dataState });
+  const refreshDataState = () => { dataState = resolveDataState(snapshots, degradedLayers); publishState(); return dataState; };
 
   const detachObservers = () => {
     for (const disconnect of observers.splice(0)) disconnect?.();
@@ -192,7 +204,7 @@ export function createNoveGeoPresentationCoordinator({
 
   const setMode = (nextMode) => {
     mode = nextMode;
-    setPresentationDataset(documentRef, page, viewport, mode);
+    publishState();
   };
 
   const rollbackToLegacy = (reason = "unified_frame_failed") => {
@@ -202,20 +214,20 @@ export function createNoveGeoPresentationCoordinator({
     previousBand = null;
     setMode(PresentationMode.LEGACY);
     latestReceipt = Object.freeze({
-      status: "LEGACY_RESTORED",
+      status: "RENDERER_LEGACY_RESTORED",
       reason,
       presentationRevision,
+      layoutMode,
+      dataState,
       activePresentationMode: PresentationMode.LEGACY,
     });
     return latestReceipt;
   };
 
   const renderCandidateFrame = ({ preserveGeographicCenter = false, prepareMapFirstViewport = false } = {}) => {
-    if (!viewport || !boundaryPublication || !countryCandidate || !allRequiredSnapshots(snapshots)) {
-      return Object.freeze({ status: "WAITING_FOR_GOVERNED_SNAPSHOTS" });
+    if (!viewport || !boundaryPublication || !countryCandidate) {
+      return Object.freeze({ status: "WAITING_FOR_AUTHORITY_BOUNDARY" });
     }
-    // The first hidden UNIFIED frame is rendered at the intended map-first viewport
-    // dimensions before ownership switches, preventing a stretched transition frame.
     const dimensions = prepareMapFirstViewport
       ? mapFirstTargetDimensions(viewport, windowRef)
       : measuredViewport(viewport);
@@ -255,20 +267,23 @@ export function createNoveGeoPresentationCoordinator({
       presentationCoordinatorVersion: NOVEGEO_PRESENTATION_COORDINATOR_VERSION,
       presentationRevision,
       navigationRevision,
+      layoutMode,
+      dataState,
       activePresentationMode: PresentationMode.UNIFIED,
       authorityBoundary: Object.freeze({
         boundaryId: boundaryPublication.boundaryId || null,
         boundaryVersion: boundaryPublication.boundaryVersion || null,
         publicationId: boundaryPublication.publicationId || null,
       }),
+      degradedLayers: Object.freeze([...degradedLayers.keys()].sort()),
       snapshotSources,
     });
   };
 
   const activate = () => {
-    if (preferredMode !== PresentationMode.UNIFIED) return Object.freeze({ status: "LEGACY_SELECTED", activePresentationMode: mode });
-    if (!allRequiredSnapshots(snapshots) || !boundaryPublication || !viewport) {
-      return Object.freeze({ status: "WAITING_FOR_GOVERNED_SNAPSHOTS", activePresentationMode: mode });
+    if (preferredMode !== PresentationMode.UNIFIED) return Object.freeze({ status: "LEGACY_SELECTED", activePresentationMode: mode, layoutMode, dataState });
+    if (!boundaryPublication || !viewport) {
+      return Object.freeze({ status: "WAITING_FOR_AUTHORITY_BOUNDARY", activePresentationMode: mode, layoutMode, dataState });
     }
     try {
       const frame = renderCandidateFrame({ prepareMapFirstViewport: true });
@@ -308,18 +323,21 @@ export function createNoveGeoPresentationCoordinator({
       restoreLegacyNodes();
       detachObservers();
       snapshots.clear();
+      degradedLayers.clear();
       boundaryPublication = null;
       countryCandidate = null;
       previousBand = null;
       unifiedCanvas = null;
       scaleNode = null;
-      setMode(PresentationMode.LEGACY);
+      mode = PresentationMode.LEGACY;
+      dataState = DataState.LOADING;
     }
 
     page = nextPage;
     viewport = nextViewport;
-    setPresentationDataset(nextDocument, page, viewport, mode);
-    if (observers.length) return Object.freeze({ status: "READY", reused: true, activePresentationMode: mode });
+    layoutMode = LayoutMode.MAP_FIRST;
+    refreshDataState();
+    if (observers.length) return Object.freeze({ status: "READY", reused: true, layoutMode, dataState, activePresentationMode: mode });
 
     const schedule = (preserveGeographicCenter = false) => {
       const run = () => { if (mode === PresentationMode.UNIFIED) redraw({ preserveGeographicCenter }); };
@@ -340,6 +358,26 @@ export function createNoveGeoPresentationCoordinator({
       const observer = new MutationObserverCtor(scheduleNavigation);
       observer.observe(viewport, { attributes: true, attributeFilter: ["data-map-zoom", "data-map-navigation-revision"] });
       observers.push(() => observer.disconnect?.());
+
+      const statusAttributes = Object.freeze({
+        "data-novegeo-region-map-status": UnifiedLayerKey.REGION,
+        "data-novegeo-city-map-status": UnifiedLayerKey.CITY,
+        "data-novegeo-municipality-map-status": UnifiedLayerKey.MUNICIPALITY,
+        "data-novegeo-city-district-map-status": UnifiedLayerKey.CITY_DISTRICT,
+        "data-novegeo-town-map-status": UnifiedLayerKey.TOWN,
+      });
+      const statusObserver = new MutationObserverCtor((records = []) => {
+        for (const record of records) {
+          const layerKey = statusAttributes[record.attributeName];
+          if (!layerKey) continue;
+          const status = String(record.target?.getAttribute?.(record.attributeName) || "").toUpperCase();
+          if (status === "DEGRADED") degradedLayers.set(layerKey, "layer_runtime_degraded");
+          else if (status === "READY" || status === "RENDERED") degradedLayers.delete(layerKey);
+        }
+        refreshDataState();
+      });
+      statusObserver.observe(page, { attributes: true, attributeFilter: Object.keys(statusAttributes) });
+      observers.push(() => statusObserver.disconnect?.());
     }
     const visualViewport = nextWindow?.visualViewport;
     visualViewport?.addEventListener?.("resize", scheduleResize);
@@ -359,7 +397,7 @@ export function createNoveGeoPresentationCoordinator({
     nextDocument?.addEventListener?.("change", onLayerChange);
     observers.push(() => nextDocument?.removeEventListener?.("change", onLayerChange));
 
-    return Object.freeze({ status: "READY", activePresentationMode: mode });
+    return Object.freeze({ status: "READY", layoutMode, dataState, activePresentationMode: mode });
   };
 
   return Object.freeze({
@@ -367,6 +405,8 @@ export function createNoveGeoPresentationCoordinator({
     coordinatorVersion: NOVEGEO_PRESENTATION_COORDINATOR_VERSION,
     preferredMode,
     get mode() { return mode; },
+    get layoutMode() { return layoutMode; },
+    get dataState() { return dataState; },
     get latestReceipt() { return latestReceipt; },
     attachViewport,
     bindBoundary(publication) {
@@ -378,6 +418,8 @@ export function createNoveGeoPresentationCoordinator({
     registerLayerSnapshot(input = {}) {
       const snapshot = immutableSnapshot(input);
       snapshots.set(snapshot.layerKey, snapshot);
+      degradedLayers.delete(snapshot.layerKey);
+      refreshDataState();
       const activation = mode === PresentationMode.UNIFIED ? redraw() : activate();
       return Object.freeze({
         status: "REGISTERED",
@@ -386,14 +428,22 @@ export function createNoveGeoPresentationCoordinator({
         candidateCount: snapshot.candidates.length,
         registeredLayerCount: snapshots.size,
         requiredLayerCount: REQUIRED_LAYER_KEYS.length,
+        layoutMode,
+        dataState,
         activePresentationMode: mode,
         activation,
       });
     },
+    markLayerDegraded(layerKey, reason = "layer_read_failed") {
+      if (!REQUIRED_LAYER_KEYS.includes(layerKey)) throw new Error(`unsupported unified layer snapshot: ${layerKey}`);
+      degradedLayers.set(layerKey, String(reason));
+      refreshDataState();
+      return Object.freeze({ status: "LAYER_DEGRADED", layerKey, reason: String(reason), layoutMode, dataState, activePresentationMode: mode });
+    },
     setLayerEnabled(layerKey, value) {
       if (!(layerKey in userLayerVisibility)) throw new Error(`unknown presentation layer: ${layerKey}`);
       userLayerVisibility[layerKey] = value !== false;
-      return mode === PresentationMode.UNIFIED ? redraw() : Object.freeze({ status: "LEGACY", activePresentationMode: mode });
+      return mode === PresentationMode.UNIFIED ? redraw() : Object.freeze({ status: "LEGACY", layoutMode, dataState, activePresentationMode: mode });
     },
     redraw,
     restoreLegacy(reason = "manual_restore") { return rollbackToLegacy(reason); },
@@ -402,7 +452,10 @@ export function createNoveGeoPresentationCoordinator({
       restoreLegacyNodes();
       if (unifiedCanvas?.style) unifiedCanvas.style.visibility = "hidden";
       if (scaleNode) scaleNode.hidden = true;
-      setMode(PresentationMode.LEGACY);
+      mode = PresentationMode.LEGACY;
+      layoutMode = LayoutMode.LEGACY;
+      dataState = DataState.LOADING;
+      publishState();
     },
   });
 }

@@ -20,6 +20,10 @@ from infrastructure.database.read.nngla_national_map import (
     NationalMapPage,
     NNGLAMapReadAuthorityError,
 )
+from infrastructure.database.runtime.read_materialization import (
+    current_request_read_materialization,
+    materialization_key,
+)
 
 REGION_PUBLIC_VIEW = "geography.nngla_region_public_read_v1"
 REGION_FAMILY = "ADMINISTRATIVE_AREA"
@@ -38,6 +42,7 @@ OFFICIAL_NOVEGEO_REGION_IDS = (
     "NG-ADM-000008",
 )
 _OFFICIAL_REGION_SET = frozenset(OFFICIAL_NOVEGEO_REGION_IDS)
+_REGION_RECORDS_MATERIALIZATION_NAMESPACE = "nngla.region.public_map.records.v1"
 
 
 @dataclass(frozen=True, slots=True)
@@ -177,7 +182,17 @@ class PostgreSQLRegionPublicMapRepository:
                 perimeter_m=perimeter_m,
             )
             records.append(RegionMapRecord(feature=feature, metadata=metadata))
-        return tuple(records)
+        result = tuple(records)
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            materialization.merge_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _REGION_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                {record.feature.subject_id: record for record in result},
+            )
+        return result
 
     def list_features(
         self,
@@ -208,6 +223,17 @@ class PostgreSQLRegionPublicMapRepository:
         normalized = str(subject_id)
         if normalized not in _OFFICIAL_REGION_SET:
             return None
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            cached = materialization.complete_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _REGION_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                (normalized,),
+            )
+            if cached is not None:
+                return cached[normalized].feature
         for record in self._records(bounds=None):
             if record.feature.subject_id == normalized:
                 return record.feature
@@ -217,6 +243,20 @@ class PostgreSQLRegionPublicMapRepository:
         wanted = {str(value) for value in subject_ids if str(value) in _OFFICIAL_REGION_SET}
         if not wanted:
             return {}
+        materialization = current_request_read_materialization(self.pool)
+        if materialization is not None:
+            cached = materialization.complete_mapping(
+                materialization_key(
+                    self.runtime_mode,
+                    _REGION_RECORDS_MATERIALIZATION_NAMESPACE,
+                ),
+                wanted,
+            )
+            if cached is not None:
+                return {
+                    subject_id: record.metadata
+                    for subject_id, record in cached.items()
+                }
         return {
             record.feature.subject_id: record.metadata
             for record in self._records(bounds=None)

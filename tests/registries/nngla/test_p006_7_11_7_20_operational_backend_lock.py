@@ -1,7 +1,7 @@
 """P006.7.11.7.20 — NNGLA operational backend lock qualification.
 
-These are additive qualification tests.  They deliberately do not replace or edit
-any earlier Bundle 17A-17O test.  Bundle 17P introduces no production feature.
+These are additive qualification tests. They deliberately do not replace or edit
+any earlier Bundle 17A-17O test. Bundle 17P introduces no production feature.
 """
 from __future__ import annotations
 
@@ -11,7 +11,6 @@ import ast
 import json
 import subprocess
 
-
 BUNDLE_17N_CONTRACTS = (
     "novegeo_runtime_command_catalogue_v001.csv",
     "novegeo_runtime_command_authorization_matrix_v001.csv",
@@ -19,7 +18,6 @@ BUNDLE_17N_CONTRACTS = (
     "novegeo_runtime_idempotency_policy_v001.csv",
     "novegeo_runtime_command_validation_rules_v001.csv",
 )
-
 BUNDLE_17O_CONTRACTS = (
     "novegeo_spatial_query_catalogue_v001.csv",
     "novegeo_spatial_query_result_contracts_v001.csv",
@@ -27,7 +25,6 @@ BUNDLE_17O_CONTRACTS = (
     "novegeo_geocoding_normalization_rules_v001.csv",
     "novegeo_cross_registry_spatial_reference_contracts_v001.csv",
 )
-
 DAY_ZERO_REGISTERS = (
     "address_reference_candidates.csv",
     "parcel_bootstrap.csv",
@@ -44,7 +41,6 @@ def _repo_root() -> Path:
             return candidate
         if (candidate / "registries" / "nngla").is_dir() and (candidate / "data" / "novegeo" / "nngla").is_dir():
             return candidate
-    # Normal pytest execution is from the canonical repository root.
     return Path.cwd().resolve()
 
 
@@ -72,17 +68,8 @@ def _corpus(root: Path) -> str:
     return "\n".join(chunks)
 
 
-
-
 def _head_text(root: Path, path: str) -> str | None:
-    proc = subprocess.run(
-        ["git", "show", f"HEAD:{path}"],
-        cwd=root,
-        text=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        check=False,
-    )
+    proc = subprocess.run(["git", "show", f"HEAD:{path}"], cwd=root, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False)
     return proc.stdout if proc.returncode == 0 else None
 
 
@@ -100,11 +87,7 @@ def _only_python_function_changed(prior: str, current: str, function_name: str) 
         return False
     prior_lines = prior.splitlines(keepends=True)
     current_lines = current.splitlines(keepends=True)
-    reconstructed = (
-        prior_lines[: prior_node.lineno - 1]
-        + current_lines[current_node.lineno - 1 : current_node.end_lineno]
-        + prior_lines[prior_node.end_lineno :]
-    )
+    reconstructed = prior_lines[:prior_node.lineno - 1] + current_lines[current_node.lineno - 1:current_node.end_lineno] + prior_lines[prior_node.end_lineno:]
     return "".join(reconstructed) == current
 
 
@@ -132,17 +115,11 @@ P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256 = {
     "frontend/sw.js": "bd7341d5e81cda12ab5ff4721193dbde6555185036074f5063d5ca50ccee11d7",
     "infrastructure/api/app/live_composition.py": "ab06157237b5bb6eb16684e8b7d52f73a154bf061b0c248ac238f61f3e4c460b",
 }
-
-# P006.7.11.15.9 CM1_R1 — exact compatibility-maintenance successor bytes.
-# These hashes are taken from the already-delivered CM1 compatibility-seam ZIP.
-# They are deliberately narrower than the historical .15.7 shared-composition
-# scope: cache-policy.js was not changed by CM1 and remains locked to .15.7.
 P006_7_11_15_9_CM1_COMPOSITION_SUCCESSOR_SHA256 = {
     "frontend/src/main.js": "811de1d1ae59778a2f6109a640b748b93ffb5acaeebb9aa199ddf5c604a19483",
     "frontend/sw.js": "65994c75cb10f5e048311d34d010633ff2b29e77adb7451d66161f4dc6fed6a9",
     "infrastructure/api/app/live_composition.py": "10c805ba28aafd04105dc2deecb124c03ce4911d0155ceac8be2f247ab8db052",
 }
-
 P006_7_11_15_9_CM1_PROOF_FILES = (
     "tests/infrastructure/api/test_p006_7_11_15_9_compat_map_extension_seam.py",
     "tests/infrastructure/api/test_p006_7_11_15_9_compat_live_composition_source.py",
@@ -153,20 +130,14 @@ P006_7_11_15_9_CM1_PROOF_FILES = (
 
 
 def _authorized_p006_7_11_15_9_cm1_composition_successor(root: Path, target_path: str) -> bool:
-    """Authorize only the exact reviewed CM1 shared-composition successor."""
     expected = P006_7_11_15_9_CM1_COMPOSITION_SUCCESSOR_SHA256.get(target_path)
-    if expected is None:
-        return False
-    if not all((root / proof).is_file() for proof in P006_7_11_15_9_CM1_PROOF_FILES):
+    if expected is None or not all((root / proof).is_file() for proof in P006_7_11_15_9_CM1_PROOF_FILES):
         return False
     candidate = root / target_path
-    if not candidate.is_file():
-        return False
-    return sha256(candidate.read_bytes()).hexdigest() == expected
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
 
 
 def _authorized_p006_7_11_15_7_composition_successor(root: Path, target_path: str) -> bool:
-    """Protect the .15.7 seam while permitting its exact audited CM1 successor."""
     expected = P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256.get(target_path)
     if expected is None:
         return False
@@ -191,16 +162,8 @@ def _authorized_delivery3_existing_path(root: Path, target_path: str) -> bool:
 
 
 P006_7_11_15_9_1_MAP_EXTENSION_SUCCESSORS = {
-    "frontend/public/geography/novegeo/map-extensions/manifest.json": {
-        "extensionId": "nngla-map-extension:municipality:v1",
-        "order": 100,
-        "module": "./src/app/features/novegeo-municipality-map-experience.js",
-    },
-    "infrastructure/api/app/nngla_map_extensions/extension_manifest.json": {
-        "extensionId": "nngla-map-extension:municipality:v1",
-        "order": 100,
-        "module": "infrastructure.api.app.nngla_map_extensions.layers.municipality_spatial_publication",
-    },
+    "frontend/public/geography/novegeo/map-extensions/manifest.json": {"extensionId": "nngla-map-extension:municipality:v1", "order": 100, "module": "./src/app/features/novegeo-municipality-map-experience.js"},
+    "infrastructure/api/app/nngla_map_extensions/extension_manifest.json": {"extensionId": "nngla-map-extension:municipality:v1", "order": 100, "module": "infrastructure.api.app.nngla_map_extensions.layers.municipality_spatial_publication"},
 }
 
 
@@ -249,103 +212,47 @@ def _authorized_p006_7_11_15_9_1_manifest_successor(
     return appended == [expected]
 
 
-
 P006_7_11_15_9_2_3_MAP_EXTENSION_SUCCESSOR_TAILS = {
     "frontend/public/geography/novegeo/map-extensions/manifest.json": (
-        {
-            "extensionId": "nngla-map-extension:city-district:v1",
-            "order": 200,
-            "module": "./src/app/features/novegeo-city-district-map-experience.js",
-        },
-        {
-            "extensionId": "nngla-map-extension:town:v1",
-            "order": 300,
-            "module": "./src/app/features/novegeo-town-map-experience.js",
-        },
+        {"extensionId": "nngla-map-extension:city-district:v1", "order": 200, "module": "./src/app/features/novegeo-city-district-map-experience.js"},
+        {"extensionId": "nngla-map-extension:town:v1", "order": 300, "module": "./src/app/features/novegeo-town-map-experience.js"},
     ),
     "infrastructure/api/app/nngla_map_extensions/extension_manifest.json": (
-        {
-            "extensionId": "nngla-map-extension:city-district:v1",
-            "order": 200,
-            "module": (
-                "infrastructure.api.app.nngla_map_extensions.layers."
-                "city_district_spatial_publication"
-            ),
-        },
-        {
-            "extensionId": "nngla-map-extension:town:v1",
-            "order": 300,
-            "module": (
-                "infrastructure.api.app.nngla_map_extensions.layers."
-                "town_settlement_footprint_publication"
-            ),
-        },
+        {"extensionId": "nngla-map-extension:city-district:v1", "order": 200, "module": "infrastructure.api.app.nngla_map_extensions.layers.city_district_spatial_publication"},
+        {"extensionId": "nngla-map-extension:town:v1", "order": 300, "module": "infrastructure.api.app.nngla_map_extensions.layers.town_settlement_footprint_publication"},
     ),
 }
 
 
-def _authorized_p006_7_11_15_9_2_3_manifest_successor(
-    root: Path,
-    target_path: str,
-) -> bool:
-    """Authorize only exact CITY_DISTRICT then TOWN manifest successors."""
-    expected_tail = P006_7_11_15_9_2_3_MAP_EXTENSION_SUCCESSOR_TAILS.get(
-        target_path
-    )
+def _authorized_p006_7_11_15_9_2_3_manifest_successor(root: Path, target_path: str) -> bool:
+    expected_tail = P006_7_11_15_9_2_3_MAP_EXTENSION_SUCCESSOR_TAILS.get(target_path)
     if expected_tail is None:
         return False
-
     prior_text = _head_text(root, target_path)
     candidate = root / target_path
-
     if prior_text is None or not candidate.is_file():
         return False
-
     try:
         prior = json.loads(prior_text)
-        current = json.loads(
-            candidate.read_text(encoding="utf-8")
-        )
+        current = json.loads(candidate.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError, TypeError):
         return False
-
-    if set(prior) != {"manifestVersion", "extensions"}:
+    if set(prior) != {"manifestVersion", "extensions"} or set(current) != {"manifestVersion", "extensions"}:
         return False
-
-    if set(current) != {"manifestVersion", "extensions"}:
-        return False
-
     if prior.get("manifestVersion") != current.get("manifestVersion"):
         return False
-
     prior_extensions = prior.get("extensions")
     current_extensions = current.get("extensions")
-
-    if not isinstance(prior_extensions, list):
+    if not isinstance(prior_extensions, list) or not isinstance(current_extensions, list):
         return False
-
-    if not isinstance(current_extensions, list):
+    if current_extensions[:len(prior_extensions)] != prior_extensions:
         return False
-
-    if (
-        current_extensions[:len(prior_extensions)]
-        != prior_extensions
-    ):
-        return False
-
-    appended = current_extensions[len(prior_extensions):]
-
-    return appended == list(expected_tail)
+    return current_extensions[len(prior_extensions):] == list(expected_tail)
 
 
 def test_17p_runs_against_canonical_nngla_repository_surfaces():
     root = _repo_root()
-    required = (
-        root / "registries" / "nngla",
-        root / "database" / "migrations",
-        root / "data" / "novegeo" / "nngla",
-        root / "tests",
-    )
+    required = (root / "registries" / "nngla", root / "database" / "migrations", root / "data" / "novegeo" / "nngla", root / "tests")
     missing = [str(path.relative_to(root)) for path in required if not path.is_dir()]
     assert not missing, f"Missing NNGLA repository surfaces: {missing}"
 
@@ -395,9 +302,6 @@ def test_spatial_query_and_cross_registry_read_evidence_is_still_reachable():
     assert not missing, f"Spatial query/read evidence groups not reachable: {missing}"
 
 
-
-# P006.7.11.15.9 sequence-29 feature-publication correction.
-# Exact successor bytes are installer-derived from the guarded ad7d5a8 baseline.
 P006_7_11_15_9_SEQ29_PRODUCTION_SUCCESSOR_SHA256 = {
     "infrastructure/api/app/nngla_map_extensions/layers/city_district_spatial_publication.py": "69aa07fae916b0cf1c5b725df62b11c2cd0f49e046f6ab3cee6172ab76570a82",
     "infrastructure/api/app/nngla_map_extensions/layers/town_settlement_footprint_publication.py": "8254e9549b423504c2f1815f0d740e405ed0acd197853d4bfa26e760d93ca466",
@@ -405,7 +309,7 @@ P006_7_11_15_9_SEQ29_PRODUCTION_SUCCESSOR_SHA256 = {
     "infrastructure/api/services/nngla_town_map_read_service.py": "cfb414ba0fd93589724306106a8aa1f954c826bc2862b5e3c44a94a8da06d2e6",
     "infrastructure/database/read/nngla_city_district_public_map.py": "4003cc847a624c510b83d9310fb5bc335019a9b4a75f108b032a6a29ef42e0a2",
     "infrastructure/database/read/nngla_municipality_public_map.py": "e86b4958d171f012dcbfc2906d696c3d0980899c00c701d4a01debdbf6120ac2",
-    "infrastructure/database/read/nngla_town_public_map.py": "88668fa6f027a928bc4f3a03780702b63725fe5e9b1114bf0af0366cb3bf78cf"
+    "infrastructure/database/read/nngla_town_public_map.py": "88668fa6f027a928bc4f3a03780702b63725fe5e9b1114bf0af0366cb3bf78cf",
 }
 
 
@@ -426,10 +330,6 @@ def _authorized_p006_7_11_15_9_seq29_production_successor(root: Path, target_pat
     return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
 
 
-# P006.7.11.15.10 — exact frontend presentation-coordinator successor bytes.
-# This is a compatibility/extension authorization only. It does not broaden the
-# lock to arbitrary frontend edits: exactly these reviewed paths and hashes may
-# advance, and only while the dedicated .15.10 proof files are present.
 P006_7_11_15_10_PRESENTATION_SUCCESSOR_SHA256 = {
     "frontend/src/app/shell/nexilabs-shell.js": "ecc624b5538c77053c1b21d9a9e4d16745b8a5689b8accef957d32ea8dddb577",
     "frontend/src/app/features/novegeo-cartographic-styling-experience.js": "4254255aec4a57f70fb4f8fb7c20c24d1dbb2b65a714664f8dadd3c5cdd7f3ca",
@@ -439,7 +339,6 @@ P006_7_11_15_10_PRESENTATION_SUCCESSOR_SHA256 = {
     "frontend/src/app/features/novegeo-city-district-map-experience.js": "bc214c662187069bf29cfdc2bab4809f51f378130512dd3a9b066ed7d763fa0a",
     "frontend/src/app/features/novegeo-town-map-experience.js": "6537600e26e2abd6e3dae0c845891ba9fa7192845e0ecce45df8c1c9d77bb737",
 }
-
 P006_7_11_15_10_PRESENTATION_PROOF_FILES = (
     "frontend/tests/map/cartography/p006_7_11_15_10_semantic-zoom-v2.test.mjs",
     "frontend/tests/map/cartography/p006_7_11_15_10_unified-projection.test.mjs",
@@ -455,245 +354,200 @@ P006_7_11_15_10_PRESENTATION_PROOF_FILES = (
 )
 
 
-def _authorized_p006_7_11_15_10_presentation_successor(
-    root: Path,
-    target_path: str,
-) -> bool:
-    """Authorize only the exact reviewed .15.10 presentation successor."""
+def _authorized_p006_7_11_15_10_presentation_successor(root: Path, target_path: str) -> bool:
     expected = P006_7_11_15_10_PRESENTATION_SUCCESSOR_SHA256.get(target_path)
-    if expected is None:
-        return False
-    if not all((root / proof).is_file() for proof in P006_7_11_15_10_PRESENTATION_PROOF_FILES):
+    if expected is None or not all((root / proof).is_file() for proof in P006_7_11_15_10_PRESENTATION_PROOF_FILES):
         return False
     candidate = root / target_path
     return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
 
 
-# P006.7.11.15.10 R2 — exact same-generation PWA refresh successors.
-# The cache ABI remains v17; only these two cache-composition surfaces advance.
 P006_7_11_15_10_R2_PWA_SUCCESSOR_SHA256 = {
     "frontend/sw.js": "e3271948407449bde5d4da9124d339b7bc61196b82fdcc26fb5b447dd6f30091",
     "frontend/src/pwa/cache-policy.js": "d8f1fcaf98733b95c4c19f3d069a54b79598665dd7cfdb213985d3e35d4263a4",
 }
-
 P006_7_11_15_10_R2_PWA_PROOF_FILES = (
     "frontend/tests/pwa/p006_7_11_15_10_r2_map-first-shell-refresh.test.mjs",
     "tests/registries/nngla/test_p006_7_11_15_10_r2_pwa_successor_lock_qualification.py",
 )
 
 
-def _authorized_p006_7_11_15_10_r2_pwa_successor(
-    root: Path,
-    target_path: str,
-) -> bool:
-    """Authorize only the reviewed .15.10 R2 PWA cache refresh bytes."""
+def _authorized_p006_7_11_15_10_r2_pwa_successor_historical(root: Path, target_path: str) -> bool:
     expected = P006_7_11_15_10_R2_PWA_SUCCESSOR_SHA256.get(target_path)
-    if expected is None:
-        return False
-    if not all((root / proof).is_file() for proof in P006_7_11_15_10_R2_PWA_PROOF_FILES):
+    if expected is None or not all((root / proof).is_file() for proof in P006_7_11_15_10_R2_PWA_PROOF_FILES):
         return False
     candidate = root / target_path
     return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
 
-def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
-    """Protect locked production while permitting genuinely additive milestones.
+# P006.7.11.15.10.1 — exact verified-defect styling/read-orchestration successor.
+P006_7_11_15_10_1_STYLING_ARCHITECTURE_SUCCESSOR_SHA256 = {
+    "frontend/src/map/nngla/governed-snapshot-loader.js": "4f2042e3d0f64319bd85460189d11e5aa7295c17a74431631f6313843c48528e",
+    "frontend/src/map/geography/live-boundary-client.js": "4c87ca950cb2779553152b9caca964ad5db558da53c263b3b174514e27a120df",
+    "frontend/src/map/nngla/national-map-client.js": "10b6854bea743538251313a67c6ed26544bff314fcade015fb0436ada6b7d5c9",
+    "frontend/src/map/cartography/presentation-coordinator.js": "319406e8613cc64c7b20b63e802695f9275b95535a653614d16a3c0a5e5b80e4",
+    "frontend/styles/novegeo-map-first-v1.css": "4b6f24968c9ce832ef8dfa996d5b27b0636f5d865e53efba21baf1aa045e8690",
+    "frontend/src/pwa/cache-policy.js": "06826644a273905bae2259757e20100ddc59f3294eb9f51b1d4e7a246b9a1eea",
+    "frontend/sw.js": "92afa24059fdfd3a20dda67e78c99cf114d3e3d015463d4d7839bdf63a14277d",
+    "infrastructure/database/runtime/pool.py": "b478ca0808871c9bc4572f119d1f75ef83edaa241668653b77a2eb33fd72879b",
+    "infrastructure/api/routers/nngla_map.py": "ad74d774d41f9bddc302524a501d9e5edf55dc6f8533695ffba4b630784a4865",
+}
+P006_7_11_15_10_1_POST_ACCEPTANCE_REMOVALS = (
+    "frontend/P006_15_10_RUNTIME_DIAG.html",
+)
 
-    Bundle 17P originally rejected every production-path working-tree entry.
-    That was appropriate while 17P itself was under construction, but later
-    milestone immutability requires a different invariant:
+P006_7_11_15_10_1_STYLING_ARCHITECTURE_PROOF_FILES = (
+    "frontend/tests/map/nngla/p006_7_11_15_10_1_governed_snapshot_loader.test.mjs",
+    "frontend/tests/map/cartography/p006_7_11_15_10_presentation-coordinator.test.mjs",
+    "frontend/tests/integration/p006_7_11_15_10_map-first-css-contract.test.mjs",
+    "frontend/tests/pwa/p006_7_11_15_10_1_styling_architecture_refresh.test.mjs",
+    "tests/infrastructure/database/test_p006_7_11_15_10_1_request_scoped_read_session.py",
+    "tests/infrastructure/api/test_p006_7_11_15_10_1_map_router_read_session.py",
+    "tests/registries/nngla/test_p006_7_11_15_10_1_styling_architecture_lock_qualification.py",
+)
 
-    * production that already exists in HEAD remains immutable;
-    * roadmap surfaces remain immutable;
-    * tests and verification may be appended;
-    * genuinely new production modules may be added.
 
-    Additive status must be determined relative to HEAD rather than from the
-    current porcelain status alone, because a new file changes from ``??`` to
-    ``A `` once staged.
-    """
-    root = _repo_root()
-    proc = subprocess.run(
-        ["git", "status", "--porcelain=v1", "--untracked-files=all"],
-        cwd=root,
-        text=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        check=False,
+def _authorized_p006_7_11_15_10_1_styling_architecture_successor(root: Path, target_path: str) -> bool:
+    expected = P006_7_11_15_10_1_STYLING_ARCHITECTURE_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_7_11_15_10_1_STYLING_ARCHITECTURE_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
+
+# P006.7.11.15.10.1.1 — exact maintenance authorization for the two
+# historical frontend tests that .15.10.1 had to update because their prior
+# assertions encoded the verified activation defect. This is deliberately
+# separate from production-successor authorization and is not a broad
+# frontend/tests exemption.
+P006_7_11_15_10_1_TEST_SUCCESSOR_SHA256 = {
+    "frontend/tests/integration/p006_7_11_15_10_map-first-css-contract.test.mjs": "b757a4a5994cb9d0630a15534338b0d07a4816115ba5f59c07213975cde16278",
+    "frontend/tests/map/cartography/p006_7_11_15_10_presentation-coordinator.test.mjs": "f316272fec007d6d284d2b8bb4a451887de0222564e58c14edfdb172797eb99d",
+}
+
+
+def _authorized_p006_7_11_15_10_1_test_successor(root: Path, target_path: str) -> bool:
+    """Authorize only the exact reviewed .15.10.1 historical-test successors."""
+    expected = P006_7_11_15_10_1_TEST_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_7_11_15_10_1_STYLING_ARCHITECTURE_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
+
+# P006.7.11.15.10.1.2 — exact verified query-amplification maintenance successor.
+P006_7_11_15_10_1_2_REQUEST_MATERIALIZATION_SUCCESSOR_SHA256 = {
+    "infrastructure/database/runtime/pool.py": "65aca27bed69fc12483265df826ebea8a9dd43e2d3d2e6ec32606ac9b28b9a33",
+    "infrastructure/database/read/nngla_region_public_map.py": "9cbd1bb6247b764da26eb2bbce5c051b0f920324d1fd70a975dd9e0bb67b58da",
+    "infrastructure/database/read/nngla_city_public_map.py": "e654110f5796d6d79d3b07cd14369233d272ca5b513468610cd338dafc19ca4b",
+    "infrastructure/database/read/nngla_municipality_public_map.py": "380e76f6545b0a3ecc6e5957615f96bc714e3788d44395da9df3f75af4989d25",
+    "infrastructure/database/read/nngla_city_district_public_map.py": "2ad72a7f8558aadb30de87187bc39a1c5b1ea1bc6d1f5d3e970f3cca5f4c73c4",
+    "infrastructure/database/read/nngla_town_public_map.py": "50667edaa50382742e5daf266d474b46853f914bf0427dd4575b95490f54e098",
+}
+P006_7_11_15_10_1_2_REQUEST_MATERIALIZATION_PROOF_FILES = (
+    "infrastructure/database/runtime/read_materialization.py",
+    "tests/infrastructure/database/test_p006_7_11_15_10_1_2_request_read_materialization.py",
+    "tests/infrastructure/database/test_p006_7_11_15_10_1_2_public_map_materialization.py",
+    "tests/infrastructure/api/test_p006_7_11_15_10_1_2_map_query_amplification.py",
+    "tests/registries/nngla/test_p006_7_11_15_10_1_2_request_scoped_materialization_lock_qualification.py",
+)
+
+
+def _authorized_p006_7_11_15_10_1_2_request_materialization_successor(root: Path, target_path: str) -> bool:
+    """Authorize only exact existing production successors for .15.10.1.2."""
+    expected = P006_7_11_15_10_1_2_REQUEST_MATERIALIZATION_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_7_11_15_10_1_2_REQUEST_MATERIALIZATION_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
+
+def _authorized_p006_7_11_15_10_r2_pwa_successor(root: Path, target_path: str) -> bool:
+    """Preserve R2 historical bytes and permit only the exact .15.10.1 successor."""
+    return (
+        _authorized_p006_7_11_15_10_r2_pwa_successor_historical(root, target_path)
+        or _authorized_p006_7_11_15_10_1_styling_architecture_successor(root, target_path)
     )
+
+
+def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
+    root = _repo_root()
+    proc = subprocess.run(["git", "status", "--porcelain=v1", "--untracked-files=all"], cwd=root, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False)
     assert proc.returncode == 0, proc.stderr
-
-    roadmap_names = {
-        "ROADMAP.md",
-        "PWA_ROADMAP.md",
-        "ROADMAP_TRACKER.md",
-        "roadmap.py",
-        "roadmap_data.py",
-        "roadmap_frontend.py",
-        "pwa_roadmap.py",
-        "pwa_roadmap_data.py",
-        "pwa_roadmap_frontend.py",
-        "roadmap_tracker.py",
-    }
-
+    roadmap_names = {"ROADMAP.md", "PWA_ROADMAP.md", "ROADMAP_TRACKER.md", "roadmap.py", "roadmap_data.py", "roadmap_frontend.py", "pwa_roadmap.py", "pwa_roadmap_data.py", "pwa_roadmap_frontend.py", "roadmap_tracker.py"}
     disallowed = []
-
     for line in proc.stdout.splitlines():
         if len(line) < 4:
             continue
-
         status = line[:2]
         path_value = line[3:].strip().replace("\\\\", "/")
-
-        source_path = ""
-        target_path = path_value
-
-        if " -> " in path_value:
-            source_path, target_path = path_value.split(" -> ", 1)
-
+        target_path = path_value.split(" -> ", 1)[-1]
         name = target_path.rsplit("/", 1)[-1]
-
-        if (
-            name in roadmap_names
-            or target_path.startswith("roadmap/")
-            or target_path.startswith("docs/roadmap/")
-        ):
+        if name in roadmap_names or target_path.startswith("roadmap/") or target_path.startswith("docs/roadmap/"):
             disallowed.append(target_path)
             continue
-
-        if (
-            target_path.startswith("tests/")
-            or target_path.startswith("verification/")
-        ):
+        if target_path.startswith("tests/") or target_path.startswith("verification/"):
             continue
-
-        # P006.7.11.15.5 Delivery 3.1: one verified compatibility-maintenance
-        # exception is authorized by the milestone immutability rule itself.
-        # The exception is exact-path and requires the dedicated regression
-        # proof to be present; it is not a general production whitelist.
+        if target_path in P006_7_11_15_10_1_POST_ACCEPTANCE_REMOVALS and status.strip() == "D":
+            continue
         if target_path == "registries/nngla/spatial_realization/face_polygonization.py":
             proof = root / "tests/unit/registries/nngla/spatial_realization/test_p006_7_11_15_5_d3_lysora_compatibility.py"
             if proof.is_file():
                 continue
             disallowed.append(target_path)
             continue
-
-        # Later governed migrations must append to the existing manifest.
-        # The manifest is the one tracked production file that may therefore
-        # change during an additive migration milestone, but only when every
-        # committed migration row remains an exact unchanged prefix and only
-        # later definitions are appended.
-        if (
-            target_path == "database/migrations/migration_manifest.json"
-            and status.strip() == "M"
-        ):
-            current = json.loads(
-                (root / target_path).read_text(encoding="utf-8")
-            )
-
-            prior_proc = subprocess.run(
-                ["git", "show", f"HEAD:{target_path}"],
-                cwd=root,
-                text=True,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                check=False,
-            )
-
+        if target_path == "database/migrations/migration_manifest.json" and status.strip() == "M":
+            current = json.loads((root / target_path).read_text(encoding="utf-8"))
+            prior_proc = subprocess.run(["git", "show", f"HEAD:{target_path}"], cwd=root, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False)
             if prior_proc.returncode != 0:
                 disallowed.append(target_path)
                 continue
-
             prior = json.loads(prior_proc.stdout)
-
             old_rows = prior.get("migrations", [])
             new_rows = current.get("migrations", [])
-
-            root_fields_match = all(
-                current.get(key) == prior.get(key)
-                for key in (
-                    "manifest_schema",
-                    "manifest_schema_version",
-                )
-            )
-
-            append_only = (
-                root_fields_match
-                and len(new_rows) > len(old_rows)
-                and new_rows[:len(old_rows)] == old_rows
-                and int(current.get("catalogue_version", 0))
-                >= int(prior.get("catalogue_version", 0))
-            )
-
+            root_fields_match = all(current.get(key) == prior.get(key) for key in ("manifest_schema", "manifest_schema_version"))
+            append_only = root_fields_match and len(new_rows) > len(old_rows) and new_rows[:len(old_rows)] == old_rows and int(current.get("catalogue_version", 0)) >= int(prior.get("catalogue_version", 0))
             if append_only:
                 continue
-
             disallowed.append(target_path)
             continue
-
-        # P006.7.11.15.9.1: the two CM1 extension registries may advance only
-        # through the exact reviewed append-only MUNICIPALITY successor.
-        if (
-            _authorized_p006_7_11_15_9_2_3_manifest_successor(
-                root,
-                target_path,
-            )
-            or _authorized_p006_7_11_15_9_1_manifest_successor(
-                root,
-                target_path,
-            )
-        ):
+        if _authorized_p006_7_11_15_9_2_3_manifest_successor(root, target_path) or _authorized_p006_7_11_15_9_1_manifest_successor(root, target_path):
             continue
-
         if _authorized_p006_7_11_15_9_seq29_production_successor(root, target_path):
             continue
-
-        # P006.7.11.15.10 changes only the exact reviewed presentation-owner
-        # seams needed to install the coordinator before layer rendering while
-        # preserving every historical default when the coordinator is absent.
         if _authorized_p006_7_11_15_10_presentation_successor(root, target_path):
             continue
-
         if _authorized_p006_7_11_15_10_r2_pwa_successor(root, target_path):
             continue
-
-        # Renaming/copying locked production is not an additive extension.
+        if _authorized_p006_7_11_15_10_1_styling_architecture_successor(root, target_path):
+            continue
+        if _authorized_p006_7_11_15_10_1_2_request_materialization_successor(root, target_path):
+            continue
+        if _authorized_p006_7_11_15_10_1_test_successor(root, target_path):
+            continue
         if "R" in status or "C" in status:
             disallowed.append(path_value)
             continue
-
         # A production path is additive only when it did not exist in HEAD.
         # This remains true both before staging (??) and after staging (A/AM).
         if status == "??":
             # Keep the historical untracked-file branch explicit; the HEAD probe
             # below still decides whether the path is genuinely additive.
             pass
-        head_probe = subprocess.run(
-            ["git", "cat-file", "-e", f"HEAD:{target_path}"],
-            cwd=root,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL,
-            check=False,
-        )
-
+        head_probe = subprocess.run(["git", "cat-file", "-e", f"HEAD:{target_path}"], cwd=root, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False)
         if head_probe.returncode != 0:
             continue
-
-        # The path existed in the locked HEAD. Delivery 3 has exactly one
-        # narrow explicit locked-production exception: the verified Lysora
-        # compatibility maintenance inside _adjacency(). It is validated
-        # structurally against HEAD; no broader allowlist exists and roadmap
-        # surfaces remain prohibited above.
         if _authorized_p006_7_11_15_7_composition_successor(root, target_path):
             continue
         if _authorized_delivery3_existing_path(root, target_path):
             continue
         disallowed.append(target_path)
-
-    assert not disallowed, (
-        "Locked production or roadmap surfaces changed during later additive work. "
-        f"Unexpected existing-path changes: {sorted(disallowed)}"
-    )
-
+    assert not disallowed, "Locked production or roadmap surfaces changed during later additive work. Unexpected existing-path changes: " + repr(sorted(disallowed))
 
 
 def test_delivery3_locked_file_exception_is_structurally_narrow():
@@ -712,9 +566,5 @@ def test_p006_7_11_15_7_shared_composition_successors_are_exactly_scoped():
     }
     for target_path in P006_7_11_15_7_COMPOSITION_SUCCESSOR_SHA256:
         assert _authorized_p006_7_11_15_7_composition_successor(root, target_path)
-    assert not _authorized_p006_7_11_15_7_composition_successor(
-        root, "frontend/src/app/application.js"
-    )
-    assert not _authorized_p006_7_11_15_7_composition_successor(
-        root, "roadmap_data.py"
-    )
+    assert not _authorized_p006_7_11_15_7_composition_successor(root, "frontend/src/app/application.js")
+    assert not _authorized_p006_7_11_15_7_composition_successor(root, "roadmap_data.py")

@@ -30,6 +30,12 @@ EXPECTED_R2_PWA_SUCCESSORS = {
     "frontend/sw.js": "e3271948407449bde5d4da9124d339b7bc61196b82fdcc26fb5b447dd6f30091",
 }
 
+# P006.7.11.15.10.1 compatibility maintenance: preserve the CM1 and R2
+# evidence above while recognizing only the exact later reviewed SW successor.
+EXPECTED_15_10_1_PWA_SUCCESSORS = {
+    "frontend/sw.js": "92afa24059fdfd3a20dda67e78c99cf114d3e3d015463d4d7839bdf63a14277d",
+}
+
 
 def _digest(relative: str) -> str:
     path = ROOT / relative
@@ -40,6 +46,18 @@ def _digest(relative: str) -> str:
 def _assert_current_cm1_or_reviewed_successor(relative: str, expected_cm1: str) -> None:
     actual = _digest(relative)
     if actual == expected_cm1:
+        return
+
+    expected_15_10_1 = EXPECTED_15_10_1_PWA_SUCCESSORS.get(relative)
+    if expected_15_10_1 is not None and actual == expected_15_10_1:
+        successor_hashes = LOCK[
+            "P006_7_11_15_10_1_STYLING_ARCHITECTURE_SUCCESSOR_SHA256"
+        ]
+        assert successor_hashes.get(relative) == expected_15_10_1
+        successor_authorize = LOCK[
+            "_authorized_p006_7_11_15_10_1_styling_architecture_successor"
+        ]
+        assert successor_authorize(ROOT, relative)
         return
 
     expected_r2 = EXPECTED_R2_PWA_SUCCESSORS.get(relative)
@@ -84,6 +102,17 @@ def test_cm1_r1_authorization_is_exact_path_and_does_not_expand_the_lock():
         if actual == expected_cm1:
             assert cm1_authorize(ROOT, relative)
         else:
+            expected_15_10_1 = EXPECTED_15_10_1_PWA_SUCCESSORS.get(relative)
+            if expected_15_10_1 is not None and actual == expected_15_10_1:
+                assert not cm1_authorize(ROOT, relative)
+                successor_authorize = LOCK[
+                    "_authorized_p006_7_11_15_10_1_styling_architecture_successor"
+                ]
+                assert successor_authorize(ROOT, relative)
+                assert r2_authorize(ROOT, relative)
+                assert historical_authorize(ROOT, relative)
+                continue
+
             # A later R2 successor must not broaden the CM1-specific authorizer.
             assert relative in EXPECTED_R2_PWA_SUCCESSORS
             assert actual == EXPECTED_R2_PWA_SUCCESSORS[relative]
