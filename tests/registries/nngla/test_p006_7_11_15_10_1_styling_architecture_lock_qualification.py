@@ -26,6 +26,18 @@ EXPECTED_15_10_1_2_SUCCESSORS = {
 }
 
 
+EXPECTED_15_10_1_3_SUCCESSORS = {
+    "frontend/src/map/cartography/presentation-coordinator.js": "25e412f4b6e4e659b8a5d7565b324fabb89cadee2271c6978f1d1e1a74910e15",
+    "frontend/src/pwa/cache-policy.js": "baa55cbe2c227615084f9666568710d9c25259ec8feb673cf28fe4d990807d20",
+    "frontend/sw.js": "1db4bdcac4ac719762f3e29e8647de2b6efe6eede3393f8573e36562ce28897c",
+}
+
+EXPECTED_15_10_1_3_TEST_SUCCESSORS = {
+    "frontend/tests/map/cartography/p006_7_11_15_10_presentation-coordinator.test.mjs":
+        "70aac0b53eab19451ce3caf89cb64fefe7858ff11964890881b59b4f7bb32ff4",
+}
+
+
 EXPECTED_TEST_SUCCESSORS = {
     "frontend/tests/integration/p006_7_11_15_10_map-first-css-contract.test.mjs": "b757a4a5994cb9d0630a15534338b0d07a4816115ba5f59c07213975cde16278",
     "frontend/tests/map/cartography/p006_7_11_15_10_presentation-coordinator.test.mjs": "f316272fec007d6d284d2b8bb4a451887de0222564e58c14edfdb172797eb99d",
@@ -44,16 +56,21 @@ def test_styling_architecture_successor_scope_is_exact_and_roadmap_free():
 def test_styling_architecture_successor_hashes_and_authorization_are_exact():
     authorize = LOCK["_authorized_p006_7_11_15_10_1_styling_architecture_successor"]
     authorize_15_10_1_2 = LOCK["_authorized_p006_7_11_15_10_1_2_request_materialization_successor"]
+    authorize_15_10_1_3 = LOCK["_authorized_p006_7_11_15_10_1_3_unified_environmental_successor"]
     for relative, expected in EXPECTED.items():
         path = ROOT / relative
         assert path.is_file(), relative
-        current_expected = EXPECTED_15_10_1_2_SUCCESSORS.get(relative, expected)
+        current_expected = EXPECTED_15_10_1_3_SUCCESSORS.get(
+            relative, EXPECTED_15_10_1_2_SUCCESSORS.get(relative, expected)
+        )
         assert sha256(path.read_bytes()).hexdigest() == current_expected
-        assert authorize(ROOT, relative) or authorize_15_10_1_2(ROOT, relative)
+        assert authorize(ROOT, relative) or authorize_15_10_1_2(ROOT, relative) or authorize_15_10_1_3(ROOT, relative)
     assert not authorize(ROOT, "roadmap_data.py")
     assert not authorize(ROOT, "frontend/src/main.js")
     assert not authorize_15_10_1_2(ROOT, "roadmap_data.py")
     assert not authorize_15_10_1_2(ROOT, "frontend/src/main.js")
+    assert not authorize_15_10_1_3(ROOT, "roadmap_data.py")
+    assert not authorize_15_10_1_3(ROOT, "frontend/src/main.js")
 
 
 def test_15_10_1_2_successor_preserves_historical_pool_hash_and_is_narrow():
@@ -84,12 +101,29 @@ def test_historical_frontend_test_successor_scope_is_exact_and_narrow():
 
 def test_historical_frontend_test_successor_hashes_and_authorization_are_exact():
     authorize = LOCK["_authorized_p006_7_11_15_10_1_test_successor"]
+    authorize_15_10_1_3 = LOCK["_authorized_p006_7_11_15_10_1_3_frontend_test_successor"]
     for relative, expected in EXPECTED_TEST_SUCCESSORS.items():
         path = ROOT / relative
         assert path.is_file(), relative
-        assert sha256(path.read_bytes()).hexdigest() == expected
-        assert authorize(ROOT, relative)
+        current_expected = EXPECTED_15_10_1_3_TEST_SUCCESSORS.get(relative, expected)
+        assert sha256(path.read_bytes()).hexdigest() == current_expected
+        assert authorize(ROOT, relative) or authorize_15_10_1_3(ROOT, relative)
 
     assert not authorize(ROOT, "frontend/tests/map/cartography/p006_7_11_15_10_semantic-zoom-v2.test.mjs")
     assert not authorize(ROOT, "frontend/tests/pwa/p006_7_11_15_10_r2_map-first-shell-refresh.test.mjs")
     assert not authorize(ROOT, "roadmap_data.py")
+    assert not authorize_15_10_1_3(ROOT, "roadmap_data.py")
+
+
+def test_15_10_1_3_preserves_historical_15_10_1_hash_evidence_and_is_narrow():
+    successor = LOCK["P006_7_11_15_10_1_3_UNIFIED_ENVIRONMENTAL_PRODUCTION_SHA256"]
+    assert EXPECTED_15_10_1_3_SUCCESSORS == {
+        relative: successor[relative] for relative in EXPECTED_15_10_1_3_SUCCESSORS
+    }
+    assert set(EXPECTED_15_10_1_3_SUCCESSORS) == {
+        "frontend/src/map/cartography/presentation-coordinator.js",
+        "frontend/src/pwa/cache-policy.js",
+        "frontend/sw.js",
+    }
+    assert not any("roadmap" in path.lower() for path in EXPECTED_15_10_1_3_SUCCESSORS)
+    assert not any(path.startswith("infrastructure/") or path.startswith("database/") for path in EXPECTED_15_10_1_3_SUCCESSORS)

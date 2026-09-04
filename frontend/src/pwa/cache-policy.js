@@ -1,4 +1,4 @@
-/** P003.3/P003.4 / P006.7.11.15.10.1 — locked-v17 policy with styling architecture lock assets. */
+/** P003.3/P003.4 / P006.7.11.15.10.1.3 — locked-v17 policy with unified environmental composition assets. */
 export const PWA_CACHE_VERSION = "nexilabs-shell-v17";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
@@ -99,6 +99,7 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/map/cartography/geodesic-scale-v2.js",
   "./src/map/cartography/unified-projection.js",
   "./src/map/cartography/unified-frame-plan.js",
+  "./src/map/cartography/unified-environmental-compositor.js",
   "./src/map/cartography/unified-frame-renderer.js",
   "./src/map/cartography/presentation-coordinator.js",
   "./src/map/publication/contracts.js",

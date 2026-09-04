@@ -16,11 +16,15 @@ function fixture(renderFrameRef){
   base.setAttribute("data-role","novegeo-map-canvas");base.style.transform="translate(0px, 0px) scale(1)";viewport.appendChild(base);
   page.querySelector=(selector)=>selector==="[data-role='future-map-viewport']"?viewport:null;
   const head=new FakeNode("head");
-  const documentRef={head,createElement:(tag)=>new FakeNode(tag),querySelector(selector){if(selector===".novegeo-feature-page")return page;if(selector==="[data-role='future-map-viewport']")return viewport;if(selector==="#nexilabs-app")return root;if(selector==="link[data-novegeo-map-first-style='true']")return null;return null;},addEventListener(){},removeEventListener(){}};
+  const listeners=new Map();
+  const on=(type,handler)=>{if(!listeners.has(type))listeners.set(type,new Set());listeners.get(type).add(handler);};
+  const off=(type,handler)=>listeners.get(type)?.delete(handler);
+  const documentRef={head,createElement:(tag)=>new FakeNode(tag),querySelector(selector){if(selector===".novegeo-feature-page")return page;if(selector==="[data-role='future-map-viewport']")return viewport;if(selector==="#nexilabs-app")return root;if(selector==="link[data-novegeo-map-first-style='true']")return null;return null;},addEventListener:on,removeEventListener:off};
   const windowRef={devicePixelRatio:1,innerWidth:640,innerHeight:435,addEventListener(){},removeEventListener(){}};
   const coordinator=createNoveGeoPresentationCoordinator({documentRef,windowRef,renderFrameRef});
   coordinator.attachViewport({documentRef,windowRef});
-  return {coordinator,base,viewport,page,root};
+  const dispatchChange=(target)=>{for(const handler of listeners.get("change")||[])handler({target});};
+  return {coordinator,base,viewport,page,root,documentRef,windowRef,dispatchChange};
 }
 const boundary={boundaryId:"boundary:novegeo:test",boundaryVersion:1,publicationId:"publication:novegeo:test",coordinateReference:{coordinateReferenceId:"crs:novegeo:geographic",version:1,axisOrder:["longitude","latitude"]},extent:{minLongitude:30,minLatitude:-10,maxLongitude:50,maxLatitude:10},geometry:{type:"MultiPolygon",coordinates:[[[[30,-10],[50,-10],[50,10],[30,10],[30,-10]]]]}};
 const keys=["REGION","CITY","MUNICIPALITY","CITY_DISTRICT","TOWN"];
@@ -79,4 +83,49 @@ test("country label remains exact NoveGeo casing in the boundary-only base frame
   coordinator.bindBoundary(boundary);
   assert.equal(seen.displayName,"NoveGeo");
   assert.notEqual(seen.displayName,"NOVEGEO");
+});
+
+test("all four historical environmental controls are enabled in the first unified frame",()=>{
+  let seen=null;
+  const {coordinator}=fixture((input)=>{seen=input;return frame;});
+  coordinator.bindBoundary(boundary);
+  assert.deepEqual({...seen.environmentalLayerVisibility},{physicalLand:true,biosphere:true,hydrologyAtmosphere:true,coordinates:true});
+  assert.equal(seen.userLayerVisibility.REFERENCE,true);
+});
+
+test("physical land, biosphere and water-atmosphere controls redraw unified environment truthfully",()=>{
+  const seen=[];
+  const {coordinator,dispatchChange}=fixture((input)=>{seen.push({env:{...input.environmentalLayerVisibility},ref:input.userLayerVisibility.REFERENCE});return frame;});
+  coordinator.bindBoundary(boundary);
+  for(const key of ["physicalLand","biosphere","hydrologyAtmosphere"]){
+    dispatchChange({dataset:{layerKey:key},checked:false});
+    assert.equal(seen.at(-1).env[key],false,key);
+  }
+  assert.equal(coordinator.mode,PresentationMode.UNIFIED);
+});
+
+test("coordinates control couples unified graticule visibility and REFERENCE label visibility",()=>{
+  const seen=[];
+  const {coordinator,dispatchChange}=fixture((input)=>{seen.push({env:{...input.environmentalLayerVisibility},ref:{...input.userLayerVisibility}});return frame;});
+  coordinator.bindBoundary(boundary);
+  dispatchChange({dataset:{layerKey:"coordinates"},checked:false});
+  assert.equal(seen.at(-1).env.coordinates,false);
+  assert.equal(seen.at(-1).ref.REFERENCE,false);
+  dispatchChange({dataset:{layerKey:"coordinates"},checked:true});
+  assert.equal(seen.at(-1).env.coordinates,true);
+  assert.equal(seen.at(-1).ref.REFERENCE,true);
+});
+
+test("environment visibility resets only across presentation generations and remains re-applicable by restored layer events",()=>{
+  const seen=[];
+  const first=fixture((input)=>{seen.push({...input.environmentalLayerVisibility});return frame;});
+  first.coordinator.bindBoundary(boundary);
+  first.dispatchChange({dataset:{layerKey:"physicalLand"},checked:false});
+  assert.equal(seen.at(-1).physicalLand,false);
+  first.coordinator.disconnect();
+  first.coordinator.attachViewport({documentRef:first.documentRef,windowRef:first.windowRef});
+  first.coordinator.bindBoundary(boundary);
+  assert.equal(seen.at(-1).physicalLand,true);
+  first.dispatchChange({dataset:{layerKey:"physicalLand"},checked:false});
+  assert.equal(seen.at(-1).physicalLand,false);
 });

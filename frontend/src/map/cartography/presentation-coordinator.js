@@ -9,10 +9,15 @@
 import { createNoveGeoCountryLabelCandidate } from "./country-anchor.js";
 import { renderUnifiedCartographicFrame, UNIFIED_CANVAS_ROLE } from "./unified-frame-renderer.js";
 import { REQUIRED_LAYER_KEYS } from "./unified-frame-plan.js";
+import {
+  UNIFIED_ENVIRONMENTAL_LAYER_KEYS,
+  createUnifiedEnvironmentalLayerVisibility,
+  UnifiedEnvironmentalLayerKey,
+} from "./unified-environmental-compositor.js";
 import { UnifiedLayerKey } from "./semantic-zoom-v2.js";
 
 export const NOVEGEO_PRESENTATION_COORDINATOR_ID = "presentation:novegeo:map-first-coordinator";
-export const NOVEGEO_PRESENTATION_COORDINATOR_VERSION = 2;
+export const NOVEGEO_PRESENTATION_COORDINATOR_VERSION = 3;
 export const NOVEGEO_MAP_FIRST_STYLE_HREF = "./styles/novegeo-map-first-v1.css";
 
 export const LayoutMode = Object.freeze({ LEGACY: "LEGACY", MAP_FIRST: "MAP_FIRST" });
@@ -169,6 +174,12 @@ export function createNoveGeoPresentationCoordinator({
     [UnifiedLayerKey.TOWN]: true,
     [UnifiedLayerKey.REFERENCE]: true,
   };
+  const environmentalLayerVisibility = { ...createUnifiedEnvironmentalLayerVisibility() };
+
+  const resetEnvironmentalLayerVisibility = () => {
+    for (const key of UNIFIED_ENVIRONMENTAL_LAYER_KEYS) environmentalLayerVisibility[key] = true;
+    userLayerVisibility[UnifiedLayerKey.REFERENCE] = true;
+  };
 
   const presentationRoles = Object.freeze({});
 
@@ -255,6 +266,7 @@ export function createNoveGeoPresentationCoordinator({
       navigation,
       previousBand,
       userLayerVisibility,
+      environmentalLayerVisibility,
       presentationRoles,
       preserveGeographicCenter: preserveGeographicCenter ? latestReceipt?.geographicCenter || null : null,
     });
@@ -331,6 +343,7 @@ export function createNoveGeoPresentationCoordinator({
       scaleNode = null;
       mode = PresentationMode.LEGACY;
       dataState = DataState.LOADING;
+      resetEnvironmentalLayerVisibility();
     }
 
     page = nextPage;
@@ -389,10 +402,12 @@ export function createNoveGeoPresentationCoordinator({
 
     const onLayerChange = (event) => {
       const key = event?.target?.dataset?.layerKey;
-      if (key === "coordinates") {
+      if (!UNIFIED_ENVIRONMENTAL_LAYER_KEYS.includes(key)) return;
+      environmentalLayerVisibility[key] = event.target.checked !== false;
+      if (key === UnifiedEnvironmentalLayerKey.COORDINATES) {
         userLayerVisibility[UnifiedLayerKey.REFERENCE] = event.target.checked !== false;
-        if (mode === PresentationMode.UNIFIED) redraw();
       }
+      if (mode === PresentationMode.UNIFIED) redraw();
     };
     nextDocument?.addEventListener?.("change", onLayerChange);
     observers.push(() => nextDocument?.removeEventListener?.("change", onLayerChange));
@@ -441,6 +456,11 @@ export function createNoveGeoPresentationCoordinator({
       return Object.freeze({ status: "LAYER_DEGRADED", layerKey, reason: String(reason), layoutMode, dataState, activePresentationMode: mode });
     },
     setLayerEnabled(layerKey, value) {
+      if (UNIFIED_ENVIRONMENTAL_LAYER_KEYS.includes(layerKey)) {
+        environmentalLayerVisibility[layerKey] = value !== false;
+        if (layerKey === UnifiedEnvironmentalLayerKey.COORDINATES) userLayerVisibility[UnifiedLayerKey.REFERENCE] = value !== false;
+        return mode === PresentationMode.UNIFIED ? redraw() : Object.freeze({ status: "LEGACY", layoutMode, dataState, activePresentationMode: mode });
+      }
       if (!(layerKey in userLayerVisibility)) throw new Error(`unknown presentation layer: ${layerKey}`);
       userLayerVisibility[layerKey] = value !== false;
       return mode === PresentationMode.UNIFIED ? redraw() : Object.freeze({ status: "LEGACY", layoutMode, dataState, activePresentationMode: mode });
@@ -455,6 +475,7 @@ export function createNoveGeoPresentationCoordinator({
       mode = PresentationMode.LEGACY;
       layoutMode = LayoutMode.LEGACY;
       dataState = DataState.LOADING;
+      resetEnvironmentalLayerVisibility();
       publishState();
     },
   });

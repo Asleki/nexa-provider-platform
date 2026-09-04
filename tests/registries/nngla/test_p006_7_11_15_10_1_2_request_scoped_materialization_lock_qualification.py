@@ -38,6 +38,12 @@ EXPECTED_GOVERNANCE_SUCCESSORS = {
     "tests/registries/nngla/test_p006_7_11_15_10_1_styling_architecture_lock_qualification.py":
         "76aeaa901f96fd87328615b61022fae293e1f7d8487e643294d84d1c44c4e1d4",
 }
+EXPECTED_15_10_1_3_GOVERNANCE_SUCCESSORS = {
+    "tests/registries/nngla/test_p006_7_11_7_20_operational_backend_lock.py":
+        "118a8ab783653c83b21d87f0d2f9a1d553f21fd3cbf2d9353abeaad2ef417225",
+    "tests/registries/nngla/test_p006_7_11_15_10_1_styling_architecture_lock_qualification.py":
+        "9e1092e6e90a0063cdb9e89479c38012a5cf6dc6c363858cb9ac34248b1e5022",
+}
 HISTORICAL_15_10_1_POOL_SHA256 = (
     "b478ca0808871c9bc4572f119d1f75ef83edaa241668653b77a2eb33fd72879b"
 )
@@ -100,10 +106,16 @@ def test_predecessor_pool_hash_and_no_reformatting_source_markers_remain_present
 
 
 def test_governance_successors_are_exact_and_preserve_predecessor_evidence():
+    assert set(EXPECTED_15_10_1_3_GOVERNANCE_SUCCESSORS) == set(
+        EXPECTED_GOVERNANCE_SUCCESSORS
+    )
     for relative, expected in EXPECTED_GOVERNANCE_SUCCESSORS.items():
         path = ROOT / relative
         assert path.is_file(), relative
-        assert sha256(path.read_bytes()).hexdigest() == expected
+        actual = sha256(path.read_bytes()).hexdigest()
+        if actual == expected:
+            continue
+        assert actual == EXPECTED_15_10_1_3_GOVERNANCE_SUCCESSORS[relative]
     styling_text = (
         ROOT / "tests/registries/nngla/test_p006_7_11_15_10_1_styling_architecture_lock_qualification.py"
     ).read_text(encoding="utf-8")

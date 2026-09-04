@@ -36,6 +36,12 @@ EXPECTED_15_10_1_PWA_SUCCESSORS = {
     "frontend/sw.js": "92afa24059fdfd3a20dda67e78c99cf114d3e3d015463d4d7839bdf63a14277d",
 }
 
+# P006.7.11.15.10.1.3 compatibility maintenance: append one further exact
+# service-worker successor without broadening the CM1-specific authorizer.
+EXPECTED_15_10_1_3_PWA_SUCCESSORS = {
+    "frontend/sw.js": "1db4bdcac4ac719762f3e29e8647de2b6efe6eede3393f8573e36562ce28897c",
+}
+
 
 def _digest(relative: str) -> str:
     path = ROOT / relative
@@ -46,6 +52,18 @@ def _digest(relative: str) -> str:
 def _assert_current_cm1_or_reviewed_successor(relative: str, expected_cm1: str) -> None:
     actual = _digest(relative)
     if actual == expected_cm1:
+        return
+
+    expected_15_10_1_3 = EXPECTED_15_10_1_3_PWA_SUCCESSORS.get(relative)
+    if expected_15_10_1_3 is not None and actual == expected_15_10_1_3:
+        successor_hashes = LOCK[
+            "P006_7_11_15_10_1_3_UNIFIED_ENVIRONMENTAL_PRODUCTION_SHA256"
+        ]
+        assert successor_hashes.get(relative) == expected_15_10_1_3
+        successor_authorize = LOCK[
+            "_authorized_p006_7_11_15_10_1_3_unified_environmental_successor"
+        ]
+        assert successor_authorize(ROOT, relative)
         return
 
     expected_15_10_1 = EXPECTED_15_10_1_PWA_SUCCESSORS.get(relative)
@@ -102,6 +120,17 @@ def test_cm1_r1_authorization_is_exact_path_and_does_not_expand_the_lock():
         if actual == expected_cm1:
             assert cm1_authorize(ROOT, relative)
         else:
+            expected_15_10_1_3 = EXPECTED_15_10_1_3_PWA_SUCCESSORS.get(relative)
+            if expected_15_10_1_3 is not None and actual == expected_15_10_1_3:
+                assert not cm1_authorize(ROOT, relative)
+                successor_authorize = LOCK[
+                    "_authorized_p006_7_11_15_10_1_3_unified_environmental_successor"
+                ]
+                assert successor_authorize(ROOT, relative)
+                assert r2_authorize(ROOT, relative)
+                assert historical_authorize(ROOT, relative)
+                continue
+
             expected_15_10_1 = EXPECTED_15_10_1_PWA_SUCCESSORS.get(relative)
             if expected_15_10_1 is not None and actual == expected_15_10_1:
                 assert not cm1_authorize(ROOT, relative)
@@ -143,3 +172,28 @@ def test_cm1_r1_preserves_the_historical_15_7_scope_and_cache_policy_lock():
     assert historical["frontend/src/pwa/cache-policy.js"] == (
         "59354982093f52ab11a1c76c55bdc987350b3d25d81e5ccf8ee3649bf66d373b"
     )
+
+
+def test_cm1_r1_preserves_exact_sw_successor_chain_through_15_10_1_3():
+    assert EXPECTED_CM1["frontend/sw.js"] == (
+        "65994c75cb10f5e048311d34d010633ff2b29e77adb7451d66161f4dc6fed6a9"
+    )
+    assert EXPECTED_R2_PWA_SUCCESSORS["frontend/sw.js"] == (
+        "e3271948407449bde5d4da9124d339b7bc61196b82fdcc26fb5b447dd6f30091"
+    )
+    assert EXPECTED_15_10_1_PWA_SUCCESSORS["frontend/sw.js"] == (
+        "92afa24059fdfd3a20dda67e78c99cf114d3e3d015463d4d7839bdf63a14277d"
+    )
+    assert EXPECTED_15_10_1_3_PWA_SUCCESSORS["frontend/sw.js"] == (
+        "1db4bdcac4ac719762f3e29e8647de2b6efe6eede3393f8573e36562ce28897c"
+    )
+    assert _digest("frontend/sw.js") == EXPECTED_15_10_1_3_PWA_SUCCESSORS["frontend/sw.js"]
+    cm1_authorize = LOCK["_authorized_p006_7_11_15_9_cm1_composition_successor"]
+    r2_authorize = LOCK["_authorized_p006_7_11_15_10_r2_pwa_successor"]
+    successor_authorize = LOCK["_authorized_p006_7_11_15_10_1_3_unified_environmental_successor"]
+    assert not cm1_authorize(ROOT, "frontend/sw.js")
+    assert r2_authorize(ROOT, "frontend/sw.js")
+    assert successor_authorize(ROOT, "frontend/sw.js")
+    assert not successor_authorize(ROOT, "frontend/src/main.js")
+    assert not successor_authorize(ROOT, "infrastructure/api/app/live_composition.py")
+    assert not successor_authorize(ROOT, "roadmap_data.py")

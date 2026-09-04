@@ -61,3 +61,63 @@ test("settlement symbols reserve screen-space clearance for unrelated labels", (
   ], [symbol]);
   assert.equal(result.rejected.some((item) => item.label.subjectId === "d1" && item.reason === "settlement_symbol_clearance"), true);
 });
+
+test("accepted CITY and TOWN labels accept only their matching settlement symbols", () => {
+  const cityLabel = { subjectId: "c1", priority: 820, x: 80, y: 70, style: { collisionPaddingPx: 2 } };
+  const townLabel = { subjectId: "t1", priority: 620, x: 180, y: 170, style: { collisionPaddingPx: 2 } };
+  const symbols = [
+    { subjectId: "c1", x: 80, y: 80, style: { radiusPx: 3, clearancePx: 4 } },
+    { subjectId: "t1", x: 180, y: 180, style: { radiusPx: 2, clearancePx: 3 } },
+  ];
+  const result = declutterUnifiedLabels([
+    { label: cityLabel, metrics: { width: 40, height: 12 } },
+    { label: townLabel, metrics: { width: 40, height: 12 } },
+  ], symbols);
+  assert.deepEqual(result.acceptedSymbols.map((symbol) => symbol.subjectId).sort(), ["c1", "t1"]);
+  assert.equal(result.rejectedSymbols.length, 0);
+});
+
+test("rejected settlement labels reject their point and cannot leave an invisible collision hole", () => {
+  const adminLabel = { subjectId: "d1", priority: 900, x: 100, y: 100, style: { collisionPaddingPx: 2 } };
+  const cityLabel = { subjectId: "c1", priority: 800, x: 100, y: 70, style: { collisionPaddingPx: 2 } };
+  const citySymbol = { subjectId: "c1", x: 100, y: 100, style: { radiusPx: 4, clearancePx: 5 } };
+  const result = declutterUnifiedLabels([
+    { label: adminLabel, metrics: { width: 50, height: 12 } },
+    { label: cityLabel, metrics: { width: 40, height: 10 } },
+  ], [citySymbol]);
+  assert.equal(result.accepted.some((item) => item.label.subjectId === "d1"), true);
+  assert.equal(result.rejected.some((item) => item.label.subjectId === "c1"), true);
+  assert.equal(result.acceptedSymbols.some((symbol) => symbol.subjectId === "c1"), false);
+  assert.equal(result.rejectedSymbols.some((item) => item.symbol.subjectId === "c1"), true);
+});
+
+test("a settlement symbol with no zoom-eligible label is never rendered anonymously", () => {
+  const orphan = { subjectId: "orphan", x: 100, y: 100, style: { radiusPx: 3, clearancePx: 4 } };
+  const result = declutterUnifiedLabels([], [orphan]);
+  assert.equal(result.acceptedSymbols.length, 0);
+  assert.equal(result.rejectedSymbols[0].reason, "settlement_label_unavailable");
+});
+
+test("presentation targets preserve stable identities and projected anchors for future selection without enabling interaction now", () => {
+  const plan = createUnifiedFramePlan({
+    boundaryPublication: boundary,
+    countryCandidate: country,
+    snapshots,
+    zoom: 2.1,
+    project: (longitude, latitude) => ({ x: longitude * 10, y: latitude * 10 + 100 }),
+  });
+  const townTarget = plan.presentationTargets.find((target) => target.subjectId === "t1");
+  const municipalityTarget = plan.presentationTargets.find((target) => target.subjectId === "m1");
+  assert.ok(townTarget);
+  assert.equal(townTarget.interactionKind, "SETTLEMENT");
+  assert.equal(townTarget.settlementCapable, true);
+  assert.equal(townTarget.labelEligible, false);
+  assert.equal(townTarget.symbolEligible, false);
+  assert.equal(townTarget.publicationReference, "publication:t1");
+  assert.equal(Number.isFinite(townTarget.x), true);
+  assert.equal(Number.isFinite(townTarget.y), true);
+  assert.ok(municipalityTarget);
+  assert.equal(municipalityTarget.interactionKind, "ADMINISTRATIVE_LABEL");
+  assert.equal(municipalityTarget.settlementCapable, false);
+  assert.equal(municipalityTarget.symbolEligible, false);
+});

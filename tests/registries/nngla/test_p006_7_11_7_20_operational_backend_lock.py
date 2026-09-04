@@ -467,11 +467,59 @@ def _authorized_p006_7_11_15_10_1_2_request_materialization_successor(root: Path
     return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
 
 
+# P006.7.11.15.10.1.3 — exact verified frontend/PWA environmental-composition
+# and settlement-label coupling maintenance successors. Historical predecessor
+# hashes above remain unchanged; this is a separate narrow authorization seam.
+P006_7_11_15_10_1_3_UNIFIED_ENVIRONMENTAL_PRODUCTION_SHA256 = {
+    "frontend/src/map/cartography/unified-environmental-compositor.js": "b30be53cf63849a5737481166aadac66ce77674f332bad28e8da8b7ec78fad8e",
+    "frontend/src/map/cartography/unified-frame-plan.js": "100dc0c386c0dce17c8f11c370cc81a37366b610f1a878913ea5855305238b81",
+    "frontend/src/map/cartography/unified-frame-renderer.js": "66be2a1bdd48c52a4d41c805284cde485132c7e884f68db20e88a568f029bbd9",
+    "frontend/src/map/cartography/presentation-coordinator.js": "25e412f4b6e4e659b8a5d7565b324fabb89cadee2271c6978f1d1e1a74910e15",
+    "frontend/src/pwa/cache-policy.js": "baa55cbe2c227615084f9666568710d9c25259ec8feb673cf28fe4d990807d20",
+    "frontend/sw.js": "1db4bdcac4ac719762f3e29e8647de2b6efe6eede3393f8573e36562ce28897c",
+}
+P006_7_11_15_10_1_3_FRONTEND_TEST_SHA256 = {
+    "frontend/tests/map/cartography/p006_7_11_15_10_unified-frame-plan.test.mjs": "05be097b0896a39e766e9a0fb691200891a8a797172164882a35301afd9f78ab",
+    "frontend/tests/map/cartography/p006_7_11_15_10_unified-frame-renderer.test.mjs": "7da061caee65a5a209581201dffe3fe4aabd722ec16f912626cfd083a9a5dc36",
+    "frontend/tests/map/cartography/p006_7_11_15_10_presentation-coordinator.test.mjs": "70aac0b53eab19451ce3caf89cb64fefe7858ff11964890881b59b4f7bb32ff4",
+    "frontend/tests/map/cartography/p006_7_11_15_10_1_3_unified-environmental-compositor.test.mjs": "f367ac70afc0c4bc4c383e4338d0177a83bc6b315be898609227716f052ebdff",
+    "frontend/tests/pwa/p006_7_11_15_10_1_3_environmental-composition-refresh.test.mjs": "79d5827758448058fb72a3c82c86d51ba0a177381b7fcca53eb968f8aca3b4ca",
+}
+P006_7_11_15_10_1_3_PROOF_FILES = (
+    "frontend/tests/map/cartography/p006_7_11_15_10_1_3_unified-environmental-compositor.test.mjs",
+    "frontend/tests/pwa/p006_7_11_15_10_1_3_environmental-composition-refresh.test.mjs",
+    "tests/registries/nngla/test_p006_7_11_15_10_1_3_unified_environmental_composition_lock_qualification.py",
+)
+
+
+def _authorized_p006_7_11_15_10_1_3_unified_environmental_successor(root: Path, target_path: str) -> bool:
+    """Authorize only exact reviewed .15.10.1.3 production successors."""
+    expected = P006_7_11_15_10_1_3_UNIFIED_ENVIRONMENTAL_PRODUCTION_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_7_11_15_10_1_3_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
+
+def _authorized_p006_7_11_15_10_1_3_frontend_test_successor(root: Path, target_path: str) -> bool:
+    """Authorize only exact reviewed .15.10.1.3 frontend-test successors/additions."""
+    expected = P006_7_11_15_10_1_3_FRONTEND_TEST_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_7_11_15_10_1_3_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
+
 def _authorized_p006_7_11_15_10_r2_pwa_successor(root: Path, target_path: str) -> bool:
-    """Preserve R2 historical bytes and permit only the exact .15.10.1 successor."""
+    """Preserve R2 bytes and permit only exact reviewed later PWA successors."""
     return (
         _authorized_p006_7_11_15_10_r2_pwa_successor_historical(root, target_path)
         or _authorized_p006_7_11_15_10_1_styling_architecture_successor(root, target_path)
+        or _authorized_p006_7_11_15_10_1_3_unified_environmental_successor(root, target_path)
     )
 
 
@@ -529,6 +577,10 @@ def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
         if _authorized_p006_7_11_15_10_1_2_request_materialization_successor(root, target_path):
             continue
         if _authorized_p006_7_11_15_10_1_test_successor(root, target_path):
+            continue
+        if _authorized_p006_7_11_15_10_1_3_unified_environmental_successor(root, target_path):
+            continue
+        if _authorized_p006_7_11_15_10_1_3_frontend_test_successor(root, target_path):
             continue
         if "R" in status or "C" in status:
             disallowed.append(path_value)

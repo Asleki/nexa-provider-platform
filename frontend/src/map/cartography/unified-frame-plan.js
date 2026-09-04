@@ -88,6 +88,7 @@ export function createUnifiedFramePlan({
   const labels = [];
   const symbols = [];
   const geometry = [];
+  const presentationTargets = [];
 
   for (const layerKey of REQUIRED_LAYER_KEYS) {
     const snapshot = snapshots[layerKey];
@@ -101,25 +102,40 @@ export function createUnifiedFramePlan({
   }
 
   for (const record of records) {
-    if (!enabled(userLayerVisibility, record.layerKey)) continue;
+    const layerEnabled = enabled(userLayerVisibility, record.layerKey);
     const semantic = semanticLayerVisibility(record.layerKey, zoom);
-    if (semantic.symbol) {
-      const symbolStyle = settlementSymbolStyle(record.layerKey, { presentationRole: record.presentationRole });
-      if (symbolStyle) {
-        const point = project(record.candidate.anchor.longitude, record.candidate.anchor.latitude);
-        symbols.push(Object.freeze({
-          subjectId: record.candidate.subjectId,
-          layerKey: record.layerKey,
-          presentationRole: record.presentationRole,
-          x: Number(point.x),
-          y: Number(point.y),
-          style: symbolStyle,
-        }));
-      }
+    const symbolStyle = settlementSymbolStyle(record.layerKey, { presentationRole: record.presentationRole });
+    const anchorPoint = project(record.candidate.anchor.longitude, record.candidate.anchor.latitude);
+    presentationTargets.push(Object.freeze({
+      subjectId: record.candidate.subjectId,
+      layerKey: record.layerKey,
+      labelClass: record.candidate.labelClass,
+      displayName: record.candidate.displayName,
+      publicationReference: record.candidate.publicationReference || null,
+      runtimeMode: record.candidate.runtimeMode || "shared_reference",
+      presentationRole: record.presentationRole,
+      x: Number(anchorPoint.x),
+      y: Number(anchorPoint.y),
+      layerEnabled,
+      labelEligible: layerEnabled && semantic.label,
+      symbolEligible: layerEnabled && semantic.symbol && Boolean(symbolStyle),
+      settlementCapable: Boolean(symbolStyle),
+      interactionKind: symbolStyle ? "SETTLEMENT" : record.layerKey === UnifiedLayerKey.REFERENCE ? "REFERENCE" : "ADMINISTRATIVE_LABEL",
+    }));
+
+    if (!layerEnabled) continue;
+    if (semantic.symbol && symbolStyle) {
+      symbols.push(Object.freeze({
+        subjectId: record.candidate.subjectId,
+        layerKey: record.layerKey,
+        presentationRole: record.presentationRole,
+        x: Number(anchorPoint.x),
+        y: Number(anchorPoint.y),
+        style: symbolStyle,
+      }));
     }
     if (!semantic.label) continue;
     const style = resolveUnifiedLabelStyle(record.candidate.labelClass, { presentationRole: record.presentationRole });
-    const point = project(record.candidate.anchor.longitude, record.candidate.anchor.latitude);
     labels.push(Object.freeze({
       subjectId: record.candidate.subjectId,
       layerKey: record.layerKey,
@@ -128,8 +144,8 @@ export function createUnifiedFramePlan({
       renderedText: String(record.candidate.displayName),
       publicationReference: record.candidate.publicationReference || null,
       runtimeMode: record.candidate.runtimeMode || "shared_reference",
-      x: Number(point.x) + Number(style.labelOffsetXPx || 0),
-      y: Number(point.y) + Number(style.labelOffsetYPx || 0),
+      x: Number(anchorPoint.x) + Number(style.labelOffsetXPx || 0),
+      y: Number(anchorPoint.y) + Number(style.labelOffsetYPx || 0),
       priority: style.priority,
       style,
     }));
@@ -150,6 +166,7 @@ export function createUnifiedFramePlan({
     geometry: Object.freeze(geometry),
     symbols: Object.freeze(symbols),
     labels: Object.freeze(labels),
+    presentationTargets: Object.freeze(presentationTargets),
   });
 }
 
@@ -185,19 +202,47 @@ function symbolBox(symbol) {
 export function declutterUnifiedLabels(measuredLabels = [], symbols = []) {
   const accepted = [];
   const rejected = [];
-  const symbolClearance = symbols.map((symbol) => Object.freeze({ symbol, box: symbolBox(symbol) }));
+  const acceptedSymbols = [];
+  const rejectedSymbols = [];
+  const symbolBySubject = new Map(symbols.map((symbol) => [symbol.subjectId, symbol]));
+  const measuredSubjectIds = new Set(measuredLabels.map((item) => item.label.subjectId));
+  const acceptedSymbolClearance = [];
   const ordered = [...measuredLabels].sort((a, b) => b.label.priority - a.label.priority || a.label.subjectId.localeCompare(b.label.subjectId));
+
   for (const item of ordered) {
     const box = labelBox(item.label, item.metrics);
-    const symbolConflict = symbolClearance.some(({ symbol, box: clearance }) => symbol.subjectId !== item.label.subjectId && overlaps(clearance, box));
+    const ownSymbol = symbolBySubject.get(item.label.subjectId);
+    const ownSymbolBox = ownSymbol ? symbolBox(ownSymbol) : null;
+    const symbolConflict = acceptedSymbolClearance.some(({ symbol, box: clearance }) => symbol.subjectId !== item.label.subjectId && overlaps(clearance, box));
     const labelConflict = accepted.some((existing) => overlaps(existing.box, box));
-    if (symbolConflict || labelConflict) {
-      rejected.push(Object.freeze({ ...item, box, reason: symbolConflict ? "settlement_symbol_clearance" : "label_collision" }));
+    const ownSymbolConflict = ownSymbolBox && accepted.some((existing) => existing.label.subjectId !== item.label.subjectId && overlaps(existing.box, ownSymbolBox));
+    if (symbolConflict || labelConflict || ownSymbolConflict) {
+      rejected.push(Object.freeze({
+        ...item,
+        box,
+        reason: symbolConflict || ownSymbolConflict ? "settlement_symbol_clearance" : "label_collision",
+      }));
+      if (ownSymbol) rejectedSymbols.push(Object.freeze({ symbol: ownSymbol, reason: "settlement_label_rejected" }));
     } else {
       accepted.push(Object.freeze({ ...item, box }));
+      if (ownSymbol) {
+        acceptedSymbols.push(ownSymbol);
+        acceptedSymbolClearance.push(Object.freeze({ symbol: ownSymbol, box: ownSymbolBox }));
+      }
     }
   }
-  return Object.freeze({ accepted: Object.freeze(accepted), rejected: Object.freeze(rejected) });
+
+  for (const symbol of symbols) {
+    if (measuredSubjectIds.has(symbol.subjectId)) continue;
+    rejectedSymbols.push(Object.freeze({ symbol, reason: "settlement_label_unavailable" }));
+  }
+
+  return Object.freeze({
+    accepted: Object.freeze(accepted),
+    rejected: Object.freeze(rejected),
+    acceptedSymbols: Object.freeze(acceptedSymbols),
+    rejectedSymbols: Object.freeze(rejectedSymbols),
+  });
 }
 
 export function layerKeyForCandidate(candidate) {

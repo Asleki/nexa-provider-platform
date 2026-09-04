@@ -1,4 +1,4 @@
-/** P003.2–P003.4 / P006.7.11.15.10.1 — v17 shell refresh for styling architecture lock. */
+/** P003.2–P003.4 / P006.7.11.15.10.1.3 — v17 same-generation refresh for unified environmental composition. */
 const CACHE_NAME = "nexilabs-shell-v17";
 const SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-4-r2";
 const REGION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-6-r1";
@@ -6,6 +6,7 @@ const CITY_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-7-r1"
 const MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-9-compat-seam-r1";
 const MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-r2";
 const STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-1";
+const UNIFIED_ENVIRONMENTAL_COMPOSITION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-1-3";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -106,6 +107,7 @@ const APP_SHELL = [
   "./src/map/cartography/geodesic-scale-v2.js",
   "./src/map/cartography/unified-projection.js",
   "./src/map/cartography/unified-frame-plan.js",
+  "./src/map/cartography/unified-environmental-compositor.js",
   "./src/map/cartography/unified-frame-renderer.js",
   "./src/map/cartography/presentation-coordinator.js",
   "./src/map/publication/contracts.js",
@@ -191,6 +193,7 @@ self.addEventListener("install", (event) => {
       await caches.open(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER);
+      await caches.open(UNIFIED_ENVIRONMENTAL_COMPOSITION_SAME_GENERATION_REFRESH_MARKER);
     }
 
     await self.skipWaiting();
@@ -205,7 +208,8 @@ self.addEventListener("activate", (event) => {
       || keys.includes(CITY_SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER)
-      || keys.includes(STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER);
+      || keys.includes(STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER)
+      || keys.includes(UNIFIED_ENVIRONMENTAL_COMPOSITION_SAME_GENERATION_REFRESH_MARKER);
     const previousShellKeys = keys.filter(
       (key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME
     );

@@ -7,10 +7,11 @@ import {
 } from "./unified-projection.js";
 import { createGeodesicScaleModel } from "./geodesic-scale-v2.js";
 import { createUnifiedFramePlan, declutterUnifiedLabels } from "./unified-frame-plan.js";
+import { renderUnifiedEnvironmentalComposition } from "./unified-environmental-compositor.js";
 import { UnifiedLayerKey } from "./semantic-zoom-v2.js";
 
 export const UNIFIED_CANVAS_ROLE = "novegeo-unified-cartographic-canvas";
-export const UNIFIED_RENDERER_VERSION = 1;
+export const UNIFIED_RENDERER_VERSION = 2;
 
 const LAYER_DRAW_STYLE = Object.freeze({
   [UnifiedLayerKey.REGION]: Object.freeze({ fill: "rgba(96,165,250,0.025)", stroke: "rgba(191,219,254,0.62)", width: 1.15, dash: [] }),
@@ -130,10 +131,13 @@ function measureLabel(context, label) {
   return Object.freeze({ width, height: label.style.fontSizePx * 1.22 });
 }
 
-function drawLabels(context, labels, symbols) {
+function resolveLabelCollision(context, labels, symbols) {
   const measured = labels.map((label) => Object.freeze({ label, metrics: measureLabel(context, label) }));
-  const collision = declutterUnifiedLabels(measured, symbols);
-  for (const item of collision.accepted) {
+  return declutterUnifiedLabels(measured, symbols);
+}
+
+function drawLabels(context, acceptedLabels) {
+  for (const item of acceptedLabels) {
     const label = item.label;
     context.save();
     context.font = font(label.style);
@@ -147,7 +151,20 @@ function drawLabels(context, labels, symbols) {
     context.fillText(label.renderedText, label.x, label.y);
     context.restore();
   }
-  return collision;
+}
+
+function presentationTargetReceipts(plan, collision) {
+  const acceptedLabelIds = new Set(collision.accepted.map((item) => item.label.subjectId));
+  const acceptedSymbolIds = new Set(collision.acceptedSymbols.map((symbol) => symbol.subjectId));
+  const rejectedLabelReason = new Map(collision.rejected.map((item) => [item.label.subjectId, item.reason]));
+  const rejectedSymbolReason = new Map(collision.rejectedSymbols.map((item) => [item.symbol.subjectId, item.reason]));
+  return Object.freeze(plan.presentationTargets.map((target) => Object.freeze({
+    ...target,
+    labelRendered: acceptedLabelIds.has(target.subjectId),
+    symbolRendered: acceptedSymbolIds.has(target.subjectId),
+    labelRejectedReason: rejectedLabelReason.get(target.subjectId) || null,
+    symbolRejectedReason: rejectedSymbolReason.get(target.subjectId) || null,
+  })));
 }
 
 function configureCanvas(canvas, viewport) {
@@ -180,6 +197,7 @@ export function renderUnifiedCartographicFrame({
   navigation,
   previousBand = null,
   userLayerVisibility = {},
+  environmentalLayerVisibility = {},
   presentationRoles = {},
   preserveGeographicCenter = null,
 } = {}) {
@@ -233,11 +251,20 @@ export function renderUnifiedCartographicFrame({
   context.fillRect(0, 0, viewport.cssWidth, viewport.cssHeight);
   context.restore();
 
-  const equatorRendered = drawEquatorReference(context, boundaryPublication, project, userLayerVisibility.REFERENCE !== false);
+  const environment = renderUnifiedEnvironmentalComposition({
+    context,
+    cssWidth: viewport.cssWidth,
+    cssHeight: viewport.cssHeight,
+    boundaryPublication,
+    project,
+    layerVisibility: environmentalLayerVisibility,
+  });
   drawBoundary(context, boundaryPublication, project);
   const geometryCounts = drawAdministrativeGeometry(context, plan.geometry, project);
-  drawSettlementSymbols(context, plan.symbols);
-  const collision = drawLabels(context, plan.labels, plan.symbols);
+  const collision = resolveLabelCollision(context, plan.labels, plan.symbols);
+  const presentationTargets = presentationTargetReceipts(plan, collision);
+  drawSettlementSymbols(context, collision.acceptedSymbols);
+  drawLabels(context, collision.accepted);
   const scale = createGeodesicScaleModel({ viewport, navigation: effectiveNavigation });
 
   const geographicCenter = viewportPointToGeographic(
@@ -249,7 +276,7 @@ export function renderUnifiedCartographicFrame({
 
   const visible = new Set();
   for (const record of plan.geometry) if (record.subjectId) visible.add(record.subjectId);
-  for (const symbol of plan.symbols) visible.add(symbol.subjectId);
+  for (const symbol of collision.acceptedSymbols) visible.add(symbol.subjectId);
   for (const item of collision.accepted) visible.add(item.label.subjectId);
 
   return Object.freeze({
@@ -265,10 +292,14 @@ export function renderUnifiedCartographicFrame({
     collisionRejectedCount: collision.rejected.length,
     visibleSubjectIds: Object.freeze([...visible].sort()),
     collisionRejectedSubjectIds: Object.freeze(collision.rejected.map((item) => item.label.subjectId).sort()),
-    settlementSymbolCount: plan.symbols.length,
+    settlementSymbolCandidateCount: plan.symbols.length,
+    settlementSymbolCount: collision.acceptedSymbols.length,
+    settlementSymbolRejectedSubjectIds: Object.freeze(collision.rejectedSymbols.map((item) => item.symbol.subjectId).sort()),
+    presentationTargets,
     geometryFeatureCount: plan.geometry.length,
     geometryCounts,
-    equatorRendered,
+    equatorRendered: environment.equatorRendered,
+    environment,
     scale,
     geographicCenter: Object.freeze({
       longitude: geographicCenter.longitude,
