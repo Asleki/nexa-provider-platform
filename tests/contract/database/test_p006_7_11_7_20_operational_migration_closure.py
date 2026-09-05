@@ -66,7 +66,16 @@ def test_manifest_extends_locked_ten_entry_prefix_without_renumbering():
     assert ids[:10] == LOCKED_PREFIX
     assert ids[10:18] == tuple(stem for _, stem in TAIL)
     assert tuple(item.identity.sequence_number for item in catalogue.definitions[:18]) == tuple(range(1, 19))
-    assert all(item.identity.milestone_id == "M006.7.11" for item in catalogue.definitions[10:])
+    # Preserve the complete historical M006.7.11 migration ownership through
+    # sequence 30, then admit only the exact P006.UI.10.2 / M006.10.2 successor.
+    assert all(item.identity.milestone_id == "M006.7.11" for item in catalogue.definitions[10:30])
+    assert ids[30:] == ("m006_10_02_nexilabs_account_credential_authority",)
+    account_successor = catalogue.definitions[30]
+    assert account_successor.identity.sequence_number == 31
+    assert account_successor.identity.milestone_id == "M006.10.2"
+    assert account_successor.depends_on == (
+        "m006_07_11_nngla_municipality_public_read_qualification_admission_correction",
+    )
     assert catalogue.definitions[10].depends_on == (LOCKED_PREFIX[-1],)
     # Preserve the exact historical operational chain through Delivery 3.
     # Later additive migrations may branch from the earliest stable contract

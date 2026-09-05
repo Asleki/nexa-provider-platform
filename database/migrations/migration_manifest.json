@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 14,
+  "catalogue_version": 15,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -164,13 +164,13 @@
         "views": [],
         "functions": []
       },
+      "forward_sha256": "f0c4b61e3997f98ab7436bf71f222023ef685f1c7b94492ca16d79ff1fef9f78",
+      "rollback_sha256": "cff5f10331a610c7f2519f6eec3b290d5a0375bf260faacf6cd62c7f7c2b5bac",
+      "forward_byte_size": 4141,
+      "rollback_byte_size": 343,
       "transaction_policy": "embedded",
       "destructive": false,
-      "catalogue_entry_version": 1,
-      "forward_sha256": "f0c4b61e3997f98ab7436bf71f222023ef685f1c7b94492ca16d79ff1fef9f78",
-      "forward_byte_size": 4141,
-      "rollback_sha256": "cff5f10331a610c7f2519f6eec3b290d5a0375bf260faacf6cd62c7f7c2b5bac",
-      "rollback_byte_size": 343
+      "catalogue_entry_version": 1
     },
     {
       "migration_id": "m004_01_02_world_geometry_authority",
@@ -1101,6 +1101,70 @@
       "rollback_sha256": "af8148ed7a10eaef025c97eac333a0f8b02a2f5e16fd44830474617701bf76d1",
       "forward_byte_size": 5583,
       "rollback_byte_size": 5386,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_10_02_nexilabs_account_credential_authority",
+      "milestone_id": "M006.10.2",
+      "sequence_number": 31,
+      "description": "nexilabs_account_credential_authority",
+      "forward_file": "m006_10_02_nexilabs_account_credential_authority.sql",
+      "rollback_file": "m006_10_02_nexilabs_account_credential_authority_rollback.sql",
+      "depends_on": [
+        "m006_07_11_nngla_municipality_public_read_qualification_admission_correction"
+      ],
+      "expected_objects": {
+        "schemas": [
+          "nexilabs_auth"
+        ],
+        "tables": [
+          "nexilabs_auth.principal_account",
+          "nexilabs_auth.principal_profile",
+          "nexilabs_auth.principal_permission",
+          "nexilabs_auth.account_email",
+          "nexilabs_auth.credential_verifier",
+          "nexilabs_auth.developer_access_request",
+          "nexilabs_auth.developer_setup",
+          "nexilabs_auth.enigma_catalogue",
+          "nexilabs_auth.enigma_catalogue_entry",
+          "nexilabs_auth.enigma_profile",
+          "nexilabs_auth.enigma_profile_catalogue",
+          "nexilabs_auth.principal_enigma_profile"
+        ],
+        "indexes": [
+          "ux_nexilabs_auth_principal_username_key",
+          "ix_nexilabs_auth_principal_identity_state",
+          "ux_nexilabs_auth_active_permission",
+          "ix_nexilabs_auth_permission_principal",
+          "ux_nexilabs_auth_email_key",
+          "ux_nexilabs_auth_primary_email",
+          "ix_nexilabs_auth_email_principal_state",
+          "ux_nexilabs_auth_active_password",
+          "ix_nexilabs_auth_credential_principal_state",
+          "ux_nexilabs_auth_open_developer_request_email",
+          "ix_nexilabs_auth_developer_request_state",
+          "ux_nexilabs_auth_developer_setup_lookup_key",
+          "ux_nexilabs_auth_active_developer_setup_request",
+          "ux_nexilabs_auth_developer_setup_result_principal",
+          "ix_nexilabs_auth_developer_setup_state_expiry",
+          "ux_nexilabs_auth_enigma_catalogue_version",
+          "ux_nexilabs_auth_active_enigma_catalogue",
+          "ix_nexilabs_auth_enigma_catalogue_entry_lookup",
+          "ix_nexilabs_auth_enigma_profile_state",
+          "ix_nexilabs_auth_enigma_profile_catalogue",
+          "ux_nexilabs_auth_active_principal_enigma_profile",
+          "ux_nexilabs_auth_active_profile_assignment"
+        ],
+        "constraints": [],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "f26c57fb03d5d516d3f2adba4638cc44521f795833d4ab02a82c211a5f5f3e9c",
+      "rollback_sha256": "13bdd716f594804664da81411a98b1c57843c0ab2b57fc04905f54b3d8c52b38",
+      "forward_byte_size": 14563,
+      "rollback_byte_size": 723,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1
