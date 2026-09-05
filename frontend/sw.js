@@ -1,4 +1,4 @@
-/** P003.2–P003.4 / P006.7.11.15.10.1.3 — v17 same-generation refresh for unified environmental composition. */
+/** P003.2–P003.4 / P006.UI.10.1.R2 — v17 same-generation refresh for installed account-enrollment activation. */
 const CACHE_NAME = "nexilabs-shell-v17";
 const SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-4-r2";
 const REGION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-6-r1";
@@ -7,6 +7,7 @@ const MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006
 const MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-r2";
 const STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-1";
 const UNIFIED_ENVIRONMENTAL_COMPOSITION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-7-11-15-10-1-3";
+const ACCOUNT_ENROLLMENT_ACTIVATION_SAME_GENERATION_REFRESH_MARKER = "nexilabs-refresh-p006-ui-10-1-r2";
 const OFFLINE_URL = "./index.html";
 const NAVIGATION_NETWORK_TIMEOUT_MS = 1800;
 const APP_SHELL = [
@@ -20,10 +21,13 @@ const APP_SHELL = [
   "./public/brand/nexilabs/pwa/nexilabs_maskable_192x192.png",
   "./public/brand/nexilabs/pwa/nexilabs_maskable_512x512.png",
   "./styles/app.css",
+  "./styles/account-enrollment-v1.css",
   "./styles/novegeo-map-shell-v1.css",
   "./styles/novegeo-cartography-v1.css",
   "./styles/novegeo-map-first-v1.css",
   "./src/main.js",
+  "./src/app/account/account-enrollment-route.js",
+  "./src/app/account/account-enrollment-experience.js",
   "./src/ui/partials/header.html",
   "./src/ui/partials/footer.html",
   "./src/app/navigation/application-route.js",
@@ -34,6 +38,9 @@ const APP_SHELL = [
   "./src/app/shell/nexilabs-shell.js",
   "./src/ui/navigation/primary-navigation.js",
   "./src/ui/pages/runtime-gateway.js",
+  "./src/ui/pages/account-enrollment-gateway.js",
+  "./src/ui/pages/guest-account-enrollment.js",
+  "./src/ui/pages/developer-account-enrollment.js",
   "./src/ui/pages/production-access.js",
   "./src/ui/pages/simulation-entry.js",
   "./src/ui/pages/access-placeholder.js",
@@ -194,6 +201,7 @@ self.addEventListener("install", (event) => {
       await caches.open(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER);
       await caches.open(UNIFIED_ENVIRONMENTAL_COMPOSITION_SAME_GENERATION_REFRESH_MARKER);
+      await caches.open(ACCOUNT_ENROLLMENT_ACTIVATION_SAME_GENERATION_REFRESH_MARKER);
     }
 
     await self.skipWaiting();
@@ -209,7 +217,8 @@ self.addEventListener("activate", (event) => {
       || keys.includes(MAP_EXTENSION_SEAM_SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(MAP_FIRST_PRESENTATION_SAME_GENERATION_REFRESH_MARKER)
       || keys.includes(STYLING_ARCHITECTURE_LOCK_SAME_GENERATION_REFRESH_MARKER)
-      || keys.includes(UNIFIED_ENVIRONMENTAL_COMPOSITION_SAME_GENERATION_REFRESH_MARKER);
+      || keys.includes(UNIFIED_ENVIRONMENTAL_COMPOSITION_SAME_GENERATION_REFRESH_MARKER)
+      || keys.includes(ACCOUNT_ENROLLMENT_ACTIVATION_SAME_GENERATION_REFRESH_MARKER);
     const previousShellKeys = keys.filter(
       (key) => key.startsWith("nexilabs-shell-") && key !== CACHE_NAME
     );

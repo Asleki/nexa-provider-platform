@@ -32,6 +32,11 @@ EXPECTED_15_10_1_3_SUCCESSORS = {
     "frontend/sw.js": "1db4bdcac4ac719762f3e29e8647de2b6efe6eede3393f8573e36562ce28897c",
 }
 
+EXPECTED_P006_UI_10_1_R2_PWA_SUCCESSORS = {
+    "frontend/src/pwa/cache-policy.js": "2df032f691d551937fb9e0a34ff15b291c218abe14ed69ad99a7a36425e231e2",
+    "frontend/sw.js": "7fb8964ddbb9efe64948eb842dd6534f5b6cba2bd8caf87ed56d914064bda84d",
+}
+
 EXPECTED_15_10_1_3_TEST_SUCCESSORS = {
     "frontend/tests/map/cartography/p006_7_11_15_10_presentation-coordinator.test.mjs":
         "70aac0b53eab19451ce3caf89cb64fefe7858ff11964890881b59b4f7bb32ff4",
@@ -57,20 +62,30 @@ def test_styling_architecture_successor_hashes_and_authorization_are_exact():
     authorize = LOCK["_authorized_p006_7_11_15_10_1_styling_architecture_successor"]
     authorize_15_10_1_2 = LOCK["_authorized_p006_7_11_15_10_1_2_request_materialization_successor"]
     authorize_15_10_1_3 = LOCK["_authorized_p006_7_11_15_10_1_3_unified_environmental_successor"]
+    authorize_ui_r2 = LOCK["_authorized_p006_ui_10_1_r2_installed_pwa_activation_successor"]
     for relative, expected in EXPECTED.items():
         path = ROOT / relative
         assert path.is_file(), relative
-        current_expected = EXPECTED_15_10_1_3_SUCCESSORS.get(
-            relative, EXPECTED_15_10_1_2_SUCCESSORS.get(relative, expected)
+        current_expected = EXPECTED_P006_UI_10_1_R2_PWA_SUCCESSORS.get(
+            relative, EXPECTED_15_10_1_3_SUCCESSORS.get(
+                relative, EXPECTED_15_10_1_2_SUCCESSORS.get(relative, expected)
+            )
         )
         assert sha256(path.read_bytes()).hexdigest() == current_expected
-        assert authorize(ROOT, relative) or authorize_15_10_1_2(ROOT, relative) or authorize_15_10_1_3(ROOT, relative)
+        assert (
+            authorize(ROOT, relative)
+            or authorize_15_10_1_2(ROOT, relative)
+            or authorize_15_10_1_3(ROOT, relative)
+            or authorize_ui_r2(ROOT, relative)
+        )
     assert not authorize(ROOT, "roadmap_data.py")
     assert not authorize(ROOT, "frontend/src/main.js")
     assert not authorize_15_10_1_2(ROOT, "roadmap_data.py")
     assert not authorize_15_10_1_2(ROOT, "frontend/src/main.js")
     assert not authorize_15_10_1_3(ROOT, "roadmap_data.py")
     assert not authorize_15_10_1_3(ROOT, "frontend/src/main.js")
+    assert not authorize_ui_r2(ROOT, "roadmap_data.py")
+    assert not authorize_ui_r2(ROOT, "frontend/src/main.js")
 
 
 def test_15_10_1_2_successor_preserves_historical_pool_hash_and_is_narrow():
@@ -127,3 +142,11 @@ def test_15_10_1_3_preserves_historical_15_10_1_hash_evidence_and_is_narrow():
     }
     assert not any("roadmap" in path.lower() for path in EXPECTED_15_10_1_3_SUCCESSORS)
     assert not any(path.startswith("infrastructure/") or path.startswith("database/") for path in EXPECTED_15_10_1_3_SUCCESSORS)
+
+
+def test_p006_ui_10_1_r2_pwa_successor_preserves_historical_styling_evidence():
+    successor = LOCK["P006_UI_10_1_R2_INSTALLED_PWA_ACTIVATION_SUCCESSOR_SHA256"]
+    assert successor == EXPECTED_P006_UI_10_1_R2_PWA_SUCCESSORS
+    assert set(successor) == {"frontend/src/pwa/cache-policy.js", "frontend/sw.js"}
+    assert not any("roadmap" in path.lower() for path in successor)
+

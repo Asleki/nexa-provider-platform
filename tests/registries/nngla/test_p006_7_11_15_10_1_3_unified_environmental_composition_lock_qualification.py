@@ -24,6 +24,11 @@ EXPECTED_PRODUCTION = {
     "frontend/sw.js": "1db4bdcac4ac719762f3e29e8647de2b6efe6eede3393f8573e36562ce28897c",
 }
 
+EXPECTED_P006_UI_10_1_R2_PWA_SUCCESSORS = {
+    "frontend/src/pwa/cache-policy.js": "2df032f691d551937fb9e0a34ff15b291c218abe14ed69ad99a7a36425e231e2",
+    "frontend/sw.js": "7fb8964ddbb9efe64948eb842dd6534f5b6cba2bd8caf87ed56d914064bda84d",
+}
+
 EXPECTED_FRONTEND_TESTS = {
     "frontend/tests/map/cartography/p006_7_11_15_10_unified-frame-plan.test.mjs": "05be097b0896a39e766e9a0fb691200891a8a797172164882a35301afd9f78ab",
     "frontend/tests/map/cartography/p006_7_11_15_10_unified-frame-renderer.test.mjs": "7da061caee65a5a209581201dffe3fe4aabd722ec16f912626cfd083a9a5dc36",
@@ -31,6 +36,14 @@ EXPECTED_FRONTEND_TESTS = {
     "frontend/tests/map/cartography/p006_7_11_15_10_1_3_unified-environmental-compositor.test.mjs": "f367ac70afc0c4bc4c383e4338d0177a83bc6b315be898609227716f052ebdff",
     "frontend/tests/pwa/p006_7_11_15_10_1_3_environmental-composition-refresh.test.mjs": "79d5827758448058fb72a3c82c86d51ba0a177381b7fcca53eb968f8aca3b4ca",
 }
+
+EXPECTED_15_10_1_2_R1_GOVERNANCE_QUALIFICATION_SHA256 = (
+    "400d5127657a58c1d9716d2593119a267e24f7c1fdaffcd281c6179c08ad7a02"
+)
+
+EXPECTED_P006_UI_10_1_R2_REQUEST_GOVERNANCE_QUALIFICATION_SHA256 = (
+    "b363d3faebb4631ad0f785d0b8c2aed2167429892f0c9381c396bd29abf6a03b"
+)
 
 EXPECTED_15_10_1_HISTORICAL_TEST_SUCCESSORS = {
     "frontend/tests/integration/p006_7_11_15_10_map-first-css-contract.test.mjs":
@@ -56,11 +69,17 @@ def test_15_10_1_3_exact_scope_is_frontend_pwa_only_and_roadmap_free():
 def test_15_10_1_3_production_and_frontend_test_hashes_are_exactly_authorized():
     authorize_production = LOCK["_authorized_p006_7_11_15_10_1_3_unified_environmental_successor"]
     authorize_test = LOCK["_authorized_p006_7_11_15_10_1_3_frontend_test_successor"]
+    authorize_ui_r2 = LOCK["_authorized_p006_ui_10_1_r2_installed_pwa_activation_successor"]
     for relative, expected in EXPECTED_PRODUCTION.items():
         path = ROOT / relative
         assert path.is_file(), relative
-        assert sha256(path.read_bytes()).hexdigest() == expected
-        assert authorize_production(ROOT, relative)
+        current_expected = EXPECTED_P006_UI_10_1_R2_PWA_SUCCESSORS.get(relative, expected)
+        assert sha256(path.read_bytes()).hexdigest() == current_expected
+        if relative in EXPECTED_P006_UI_10_1_R2_PWA_SUCCESSORS:
+            assert not authorize_production(ROOT, relative)
+            assert authorize_ui_r2(ROOT, relative)
+        else:
+            assert authorize_production(ROOT, relative)
     for relative, expected in EXPECTED_FRONTEND_TESTS.items():
         path = ROOT / relative
         assert path.is_file(), relative
@@ -69,6 +88,7 @@ def test_15_10_1_3_production_and_frontend_test_hashes_are_exactly_authorized():
     assert not authorize_production(ROOT, "roadmap_data.py")
     assert not authorize_production(ROOT, "infrastructure/api/routers/nngla_map.py")
     assert not authorize_test(ROOT, "roadmap_data.py")
+    assert not authorize_ui_r2(ROOT, "roadmap_data.py")
 
 
 def test_unified_environmental_compositor_reuses_locked_environment_authority_modules():
@@ -157,6 +177,8 @@ def test_pwa_cache_abi_stays_v17_with_dedicated_same_generation_handoff():
     assert asset in worker and asset in policy
     assert "nexilabs-refresh-p006-7-11-15-10-1-3" in worker
     assert "UNIFIED_ENVIRONMENTAL_COMPOSITION_SAME_GENERATION_REFRESH_MARKER" in worker
+    assert "nexilabs-refresh-p006-ui-10-1-r2" in worker
+    assert "ACCOUNT_ENROLLMENT_ACTIVATION_SAME_GENERATION_REFRESH_MARKER" in worker
     assert "client.navigate(client.url)" in worker
 
 
@@ -167,6 +189,24 @@ def test_historical_successor_evidence_remains_present_and_distinct():
     assert LOCK["P006_7_11_15_10_1_2_REQUEST_MATERIALIZATION_SUCCESSOR_SHA256"]
     assert LOCK["P006_7_11_15_10_1_TEST_SUCCESSOR_SHA256"] == EXPECTED_15_10_1_HISTORICAL_TEST_SUCCESSORS
     assert set(EXPECTED_PRODUCTION).isdisjoint(LOCK["P006_7_11_15_10_1_2_REQUEST_MATERIALIZATION_SUCCESSOR_SHA256"])
+
+    predecessor_qualification = (
+        ROOT / "tests/registries/nngla/test_p006_7_11_15_10_1_2_request_scoped_materialization_lock_qualification.py"
+    )
+    assert predecessor_qualification.is_file()
+    assert EXPECTED_15_10_1_2_R1_GOVERNANCE_QUALIFICATION_SHA256 == (
+        "400d5127657a58c1d9716d2593119a267e24f7c1fdaffcd281c6179c08ad7a02"
+    )
+    assert sha256(predecessor_qualification.read_bytes()).hexdigest() == (
+        EXPECTED_P006_UI_10_1_R2_REQUEST_GOVERNANCE_QUALIFICATION_SHA256
+    )
+    predecessor_text = predecessor_qualification.read_text(encoding="utf-8")
+    assert "EXPECTED_GOVERNANCE_SUCCESSORS" in predecessor_text
+    assert "EXPECTED_15_10_1_3_GOVERNANCE_SUCCESSORS" in predecessor_text
+    assert "EXPECTED_P006_UI_10_1_R1_GOVERNANCE_SUCCESSORS" in predecessor_text
+    assert "EXPECTED_P006_UI_10_1_R2_GOVERNANCE_SUCCESSORS" in predecessor_text
+    assert "ccc7a1ea66eb7884eee3895a0bd5a93155ad26104f410c63481d2480817aed6b" in predecessor_text
+    assert "76aeaa901f96fd87328615b61022fae293e1f7d8487e643294d84d1c44c4e1d4" in predecessor_text
 
 
 def test_historical_operational_lock_no_reformatting_markers_are_still_verbatim():

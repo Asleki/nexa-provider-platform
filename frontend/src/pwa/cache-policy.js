@@ -1,4 +1,4 @@
-/** P003.3/P003.4 / P006.7.11.15.10.1.3 — locked-v17 policy with unified environmental composition assets. */
+/** P003.3/P003.4 / P006.UI.10.1.R2 — locked-v17 policy with account-enrollment activation assets. */
 export const PWA_CACHE_VERSION = "nexilabs-shell-v17";
 export const OFFLINE_DOCUMENT = "./index.html";
 export const APPLICATION_SHELL_ASSETS = Object.freeze([
@@ -12,10 +12,13 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./public/brand/nexilabs/pwa/nexilabs_maskable_192x192.png",
   "./public/brand/nexilabs/pwa/nexilabs_maskable_512x512.png",
   "./styles/app.css",
+  "./styles/account-enrollment-v1.css",
   "./styles/novegeo-map-shell-v1.css",
   "./styles/novegeo-cartography-v1.css",
   "./styles/novegeo-map-first-v1.css",
   "./src/main.js",
+  "./src/app/account/account-enrollment-route.js",
+  "./src/app/account/account-enrollment-experience.js",
   "./src/ui/partials/header.html",
   "./src/ui/partials/footer.html",
   "./src/app/navigation/application-route.js",
@@ -26,6 +29,9 @@ export const APPLICATION_SHELL_ASSETS = Object.freeze([
   "./src/app/shell/nexilabs-shell.js",
   "./src/ui/navigation/primary-navigation.js",
   "./src/ui/pages/runtime-gateway.js",
+  "./src/ui/pages/account-enrollment-gateway.js",
+  "./src/ui/pages/guest-account-enrollment.js",
+  "./src/ui/pages/developer-account-enrollment.js",
   "./src/ui/pages/production-access.js",
   "./src/ui/pages/simulation-entry.js",
   "./src/ui/pages/access-placeholder.js",

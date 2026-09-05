@@ -44,6 +44,25 @@ EXPECTED_15_10_1_3_GOVERNANCE_SUCCESSORS = {
     "tests/registries/nngla/test_p006_7_11_15_10_1_styling_architecture_lock_qualification.py":
         "9e1092e6e90a0063cdb9e89479c38012a5cf6dc6c363858cb9ac34248b1e5022",
 }
+
+# P006.UI.10.1.R1 compatibility maintenance: the account-enrollment milestone
+# legitimately advances only the centralized operational governance lock. Keep
+# both earlier governance generations above as historical evidence; this map is
+# intentionally one-path-only and does not absorb the unchanged styling lock.
+EXPECTED_P006_UI_10_1_R1_GOVERNANCE_SUCCESSORS = {
+    "tests/registries/nngla/test_p006_7_11_7_20_operational_backend_lock.py":
+        "7fb0d77971d014918379a1d95ae52eaec93c7025ae1af74d73da967bb95fc34c",
+}
+
+# P006.UI.10.1.R2 compatibility maintenance: the installed-PWA activation
+# correction legitimately advances the centralized lock and the styling
+# qualification that historically tracks the current PWA successor chain.
+EXPECTED_P006_UI_10_1_R2_GOVERNANCE_SUCCESSORS = {
+    "tests/registries/nngla/test_p006_7_11_7_20_operational_backend_lock.py":
+        "77e2706e92d454f9cf2203e7e62275a46e5f1dcce100b825efd17056b9eab8fb",
+    "tests/registries/nngla/test_p006_7_11_15_10_1_styling_architecture_lock_qualification.py":
+        "70f744e609c4012d4070fdfbdddd22f5a6bf4494ec063a1a42b528a53d39bf8d",
+}
 HISTORICAL_15_10_1_POOL_SHA256 = (
     "b478ca0808871c9bc4572f119d1f75ef83edaa241668653b77a2eb33fd72879b"
 )
@@ -109,13 +128,27 @@ def test_governance_successors_are_exact_and_preserve_predecessor_evidence():
     assert set(EXPECTED_15_10_1_3_GOVERNANCE_SUCCESSORS) == set(
         EXPECTED_GOVERNANCE_SUCCESSORS
     )
+    assert set(EXPECTED_P006_UI_10_1_R1_GOVERNANCE_SUCCESSORS) == {
+        "tests/registries/nngla/test_p006_7_11_7_20_operational_backend_lock.py"
+    }
+    assert set(EXPECTED_P006_UI_10_1_R2_GOVERNANCE_SUCCESSORS) == set(EXPECTED_GOVERNANCE_SUCCESSORS)
     for relative, expected in EXPECTED_GOVERNANCE_SUCCESSORS.items():
         path = ROOT / relative
         assert path.is_file(), relative
         actual = sha256(path.read_bytes()).hexdigest()
         if actual == expected:
             continue
-        assert actual == EXPECTED_15_10_1_3_GOVERNANCE_SUCCESSORS[relative]
+        if actual == EXPECTED_15_10_1_3_GOVERNANCE_SUCCESSORS[relative]:
+            continue
+        r1_expected = EXPECTED_P006_UI_10_1_R1_GOVERNANCE_SUCCESSORS.get(relative)
+        if r1_expected is not None and actual == r1_expected:
+            continue
+        r2_expected = EXPECTED_P006_UI_10_1_R2_GOVERNANCE_SUCCESSORS.get(relative)
+        assert r2_expected is not None, (
+            f"{relative} advanced beyond the reviewed P006.UI.10.1.R1 governance successor "
+            "without an explicit P006.UI.10.1.R2 successor"
+        )
+        assert actual == r2_expected
     styling_text = (
         ROOT / "tests/registries/nngla/test_p006_7_11_15_10_1_styling_architecture_lock_qualification.py"
     ).read_text(encoding="utf-8")

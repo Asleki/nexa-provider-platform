@@ -152,6 +152,8 @@ def _authorized_p006_7_11_15_7_composition_successor(root: Path, target_path: st
         return True
     if _authorized_p006_7_11_15_9_cm1_composition_successor(root, target_path):
         return True
+    if _authorized_p006_ui_10_1_account_enrollment_composition_successor(root, target_path):
+        return True
     return _authorized_p006_7_11_15_10_r2_pwa_successor(root, target_path)
 
 
@@ -514,12 +516,63 @@ def _authorized_p006_7_11_15_10_1_3_frontend_test_successor(root: Path, target_p
     return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
 
 
+# P006.UI.10.1.R1 — exact compatibility successor for the already-delivered
+# Account & Developer Enrollment Frontend Foundation composition root.
+# Historical main.js hashes above remain immutable; this seam recognizes only
+# the exact reviewed .10.1 account-enrollment bootstrap successor.
+P006_UI_10_1_ACCOUNT_ENROLLMENT_COMPOSITION_SUCCESSOR_SHA256 = {
+    "frontend/src/main.js": "77523c35b98d6c1485850979312dd03bd8a2e32ec74371f380724a4c425bb60f",
+}
+P006_UI_10_1_ACCOUNT_ENROLLMENT_COMPOSITION_PROOF_FILES = (
+    "frontend/tests/account/account-enrollment-experience.test.mjs",
+    "frontend/tests/account/account-enrollment-security.test.mjs",
+    "tests/registries/nngla/test_p006_ui_10_1_r1_account_enrollment_composition_successor.py",
+)
+
+
+def _authorized_p006_ui_10_1_account_enrollment_composition_successor(root: Path, target_path: str) -> bool:
+    """Authorize only the exact reviewed P006.UI.10.1 main.js successor."""
+    expected = P006_UI_10_1_ACCOUNT_ENROLLMENT_COMPOSITION_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_UI_10_1_ACCOUNT_ENROLLMENT_COMPOSITION_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
+
+# P006.UI.10.1.R2 — exact installed-PWA activation maintenance successor.
+# The historical v17, .15.10.1.3 and .10.1.R1 hashes remain immutable; this
+# seam recognizes only the reviewed service-worker/cache-policy bytes required
+# to atomically activate the already-delivered account-enrollment presentation.
+P006_UI_10_1_R2_INSTALLED_PWA_ACTIVATION_SUCCESSOR_SHA256 = {
+    "frontend/sw.js": "7fb8964ddbb9efe64948eb842dd6534f5b6cba2bd8caf87ed56d914064bda84d",
+    "frontend/src/pwa/cache-policy.js": "2df032f691d551937fb9e0a34ff15b291c218abe14ed69ad99a7a36425e231e2",
+}
+P006_UI_10_1_R2_INSTALLED_PWA_ACTIVATION_PROOF_FILES = (
+    "frontend/tests/pwa/p006_ui_10_1_r2_account-enrollment-activation-refresh.test.mjs",
+    "tests/registries/nngla/test_p006_ui_10_1_r2_installed_pwa_account_enrollment_activation_successor.py",
+)
+
+
+def _authorized_p006_ui_10_1_r2_installed_pwa_activation_successor(root: Path, target_path: str) -> bool:
+    """Authorize only exact P006.UI.10.1.R2 PWA activation successors."""
+    expected = P006_UI_10_1_R2_INSTALLED_PWA_ACTIVATION_SUCCESSOR_SHA256.get(target_path)
+    if expected is None:
+        return False
+    if not all((root / proof).is_file() for proof in P006_UI_10_1_R2_INSTALLED_PWA_ACTIVATION_PROOF_FILES):
+        return False
+    candidate = root / target_path
+    return candidate.is_file() and sha256(candidate.read_bytes()).hexdigest() == expected
+
+
 def _authorized_p006_7_11_15_10_r2_pwa_successor(root: Path, target_path: str) -> bool:
     """Preserve R2 bytes and permit only exact reviewed later PWA successors."""
     return (
         _authorized_p006_7_11_15_10_r2_pwa_successor_historical(root, target_path)
         or _authorized_p006_7_11_15_10_1_styling_architecture_successor(root, target_path)
         or _authorized_p006_7_11_15_10_1_3_unified_environmental_successor(root, target_path)
+        or _authorized_p006_ui_10_1_r2_installed_pwa_activation_successor(root, target_path)
     )
 
 
@@ -571,6 +624,8 @@ def test_phase_b_e_does_not_modify_locked_production_or_roadmap_files():
         if _authorized_p006_7_11_15_10_presentation_successor(root, target_path):
             continue
         if _authorized_p006_7_11_15_10_r2_pwa_successor(root, target_path):
+            continue
+        if _authorized_p006_ui_10_1_account_enrollment_composition_successor(root, target_path):
             continue
         if _authorized_p006_7_11_15_10_1_styling_architecture_successor(root, target_path):
             continue

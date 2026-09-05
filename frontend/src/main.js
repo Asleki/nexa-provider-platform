@@ -23,6 +23,9 @@ export async function bootstrap(documentRef = globalThis.document, windowRef = g
   void registerServiceWorker({ documentRef, windowRef });
 
   const application = await mountNexiLabsShell({ documentRef, windowRef, fetchRef, config });
+  void import("./app/account/account-enrollment-experience.js")
+    .then(({ installAccountEnrollmentExperience }) => installAccountEnrollmentExperience({ documentRef, windowRef }))
+    .catch((error) => console.warn("[NexiLabs PWA] Account enrollment presentation unavailable.", error));
   void import("./app/auth/authentication-experience.js")
     .then(({ installAuthenticationExperience }) => installAuthenticationExperience({ documentRef, windowRef, application }))
     .catch((error) => console.warn("[NexiLabs PWA] Development authentication unavailable.", error));

@@ -21,6 +21,7 @@ EXPECTED = {
 }
 
 CM1_MAIN_SHA256 = "811de1d1ae59778a2f6109a640b748b93ffb5acaeebb9aa199ddf5c604a19483"
+P006_UI_10_1_MAIN_SHA256 = "77523c35b98d6c1485850979312dd03bd8a2e32ec74371f380724a4c425bb60f"
 
 
 def test_p006_7_11_15_10_successor_scope_is_exact_and_does_not_rewrite_main():
@@ -32,7 +33,15 @@ def test_p006_7_11_15_10_successor_scope_is_exact_and_does_not_rewrite_main():
     assert not any(path.startswith("database/") for path in EXPECTED)
     assert not any(path.startswith("infrastructure/") for path in EXPECTED)
     assert not any("roadmap" in path.lower() for path in EXPECTED)
-    assert sha256((ROOT / "frontend/src/main.js").read_bytes()).hexdigest() == CM1_MAIN_SHA256
+    # P006.7.11.15.10 still did not own main.js. A later reviewed account
+    # composition successor may now be the current working-tree byte sequence.
+    actual_main = sha256((ROOT / "frontend/src/main.js").read_bytes()).hexdigest()
+    if actual_main != CM1_MAIN_SHA256:
+        assert actual_main == P006_UI_10_1_MAIN_SHA256
+        successor_hashes = LOCK["P006_UI_10_1_ACCOUNT_ENROLLMENT_COMPOSITION_SUCCESSOR_SHA256"]
+        assert successor_hashes == {"frontend/src/main.js": P006_UI_10_1_MAIN_SHA256}
+        successor_authorize = LOCK["_authorized_p006_ui_10_1_account_enrollment_composition_successor"]
+        assert successor_authorize(ROOT, "frontend/src/main.js")
 
 
 def test_p006_7_11_15_10_successor_hashes_and_authorization_are_exact():
