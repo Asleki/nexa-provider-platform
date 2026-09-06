@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 15,
+  "catalogue_version": 16,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -1165,6 +1165,73 @@
       "rollback_sha256": "13bdd716f594804664da81411a98b1c57843c0ab2b57fc04905f54b3d8c52b38",
       "forward_byte_size": 14563,
       "rollback_byte_size": 723,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_10_02_layered_admin_review_authority",
+      "milestone_id": "M006.10.2",
+      "sequence_number": 32,
+      "description": "layered_admin_review_authority",
+      "forward_file": "m006_10_02_layered_admin_review_authority.sql",
+      "rollback_file": "m006_10_02_layered_admin_review_authority_rollback.sql",
+      "depends_on": [
+        "m006_10_02_nexilabs_account_credential_authority"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "nexilabs_auth.admin_operator",
+          "nexilabs_auth.developer_access_decision"
+        ],
+        "indexes": [
+          "ix_nexilabs_auth_admin_operator_email",
+          "ix_nexilabs_auth_admin_operator_state",
+          "ix_nexilabs_auth_developer_decision_admin_operator",
+          "ix_nexilabs_auth_developer_decision_decided",
+          "ix_nexilabs_auth_developer_decision_reviewer",
+          "ux_nexilabs_auth_active_admin_operator_principal",
+          "ux_nexilabs_auth_active_admin_password",
+          "ux_nexilabs_auth_admin_developer_id",
+          "ux_nexilabs_auth_admin_developer_id_key"
+        ],
+        "constraints": [
+          "nexilabs_auth.ck_nexilabs_auth_admin_audit_reference_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_admin_bootstrap_reference_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_admin_developer_id_key_canonical",
+          "nexilabs_auth.ck_nexilabs_auth_admin_developer_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_admin_operator_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_admin_operator_state_time",
+          "nexilabs_auth.ck_nexilabs_auth_developer_decision_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_developer_decision_internal_reference",
+          "nexilabs_auth.ck_nexilabs_auth_developer_decision_policy_version",
+          "nexilabs_auth.ck_nexilabs_auth_developer_decision_reason",
+          "nexilabs_auth.ck_nexilabs_auth_developer_decision_receipt_reference",
+          "nexilabs_auth.ck_nexilabs_auth_developer_decision_safe_explanation",
+          "nexilabs_auth.ck_nexilabs_auth_request_terminal_decision_presence",
+          "nexilabs_auth.fk_nexilabs_auth_admin_operator_email_owner",
+          "nexilabs_auth.fk_nexilabs_auth_decision_request_projection",
+          "nexilabs_auth.fk_nexilabs_auth_developer_decision_request",
+          "nexilabs_auth.fk_nexilabs_auth_developer_decision_reviewer_operator",
+          "nexilabs_auth.fk_nexilabs_auth_request_terminal_decision",
+          "nexilabs_auth.uq_nexilabs_auth_admin_operator_id_principal",
+          "nexilabs_auth.uq_nexilabs_auth_developer_decision_projection",
+          "nexilabs_auth.uq_nexilabs_auth_developer_decision_request",
+          "nexilabs_auth.uq_nexilabs_auth_email_id_principal",
+          "nexilabs_auth.uq_nexilabs_auth_request_terminal_projection"
+        ],
+        "views": [],
+        "functions": [
+          "nexilabs_auth.reject_developer_access_decision_mutation",
+          "nexilabs_auth.validate_admin_operator_binding",
+          "nexilabs_auth.validate_developer_access_decision_reviewer"
+        ]
+      },
+      "forward_sha256": "8819c4eddfd31e6b8d7ca771d5730fd53fe7a5dfb05609bec9656a9ed1bdce65",
+      "rollback_sha256": "73551df2fe66066aff4776b0890fad939319c6c4c603ad1dee56c63959abc704",
+      "forward_byte_size": 11996,
+      "rollback_byte_size": 1421,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1

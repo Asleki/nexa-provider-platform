@@ -34,19 +34,21 @@ def test_b_uses_frozen_private_source_hash_contract_without_committing_source_by
     )
 
 
-def test_b_requires_no_schema_growth_and_keeps_migration_31_immutable() -> None:
+def test_b_keeps_migration_31_immutable_when_later_migrations_append() -> None:
+    """Compatibility maintenance: B had no schema growth; migration 31 need not remain tail."""
     root = _root()
     manifest = json.loads(
         (root / "database" / "migrations" / "migration_manifest.json").read_text(encoding="utf-8")
     )
-    assert manifest["catalogue_version"] == 15
-    assert len(manifest["migrations"]) == 31
-    tail = manifest["migrations"][-1]
-    assert tail["sequence_number"] == 31
-    assert tail["migration_id"] == PREDECESSOR_MIGRATION_ID
-    assert tail["forward_sha256"] == PREDECESSOR_FORWARD_SHA256
-    assert tail["forward_byte_size"] == PREDECESSOR_FORWARD_BYTES
-
+    assert manifest["catalogue_version"] >= 15
+    assert len(manifest["migrations"]) >= 31
+    row = next(
+        item for item in manifest["migrations"]
+        if item["migration_id"] == PREDECESSOR_MIGRATION_ID
+    )
+    assert row["sequence_number"] == 31
+    assert row["forward_sha256"] == PREDECESSOR_FORWARD_SHA256
+    assert row["forward_byte_size"] == PREDECESSOR_FORWARD_BYTES
 
 
 def test_b_sql_write_path_never_stores_profile_lookup_word_in_shared_catalogue_tables() -> None:

@@ -167,13 +167,13 @@ def test_rollback_is_explicit_reverse_order_without_cascade() -> None:
     assert "DROP SCHEMA IF EXISTS nexilabs_auth;" in sql
 
 
-def test_manifest_tail_is_sequence_31_and_artifact_integrity_is_exact() -> None:
+def test_migration_31_identity_and_artifact_integrity_remain_exact() -> None:
+    """Compatibility maintenance: migration 31 is immutable, not a permanent tail."""
     root = _root()
     manifest_path = root / "database" / "migrations" / "migration_manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    assert manifest["catalogue_version"] == 15
-    row = manifest["migrations"][-1]
-    assert row["migration_id"] == MIGRATION_ID
+    assert manifest["catalogue_version"] >= 15
+    row = next(item for item in manifest["migrations"] if item["migration_id"] == MIGRATION_ID)
     assert row["milestone_id"] == MILESTONE_ID
     assert row["sequence_number"] == 31
     assert row["depends_on"] == [
@@ -197,5 +197,8 @@ def test_manifest_tail_is_sequence_31_and_artifact_integrity_is_exact() -> None:
         assert row[size_key] == path.stat().st_size
 
     catalogue = MigrationManifestLoader().load(manifest_path)
-    assert catalogue.definitions[-1].identity.migration_id == MIGRATION_ID
-    assert catalogue.definitions[-1].identity.milestone_id == MILESTONE_ID
+    definition = next(
+        item for item in catalogue.definitions if item.identity.migration_id == MIGRATION_ID
+    )
+    assert definition.identity.migration_id == MIGRATION_ID
+    assert definition.identity.milestone_id == MILESTONE_ID
