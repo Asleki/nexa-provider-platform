@@ -1,9 +1,15 @@
-"""P006.UI.10.2 — predecessor, strict-hash and manifest append qualification.
+"""P006.UI.10.2 — predecessor, strict-hash and committed-manifest qualification.
 
 These tests are additive. They do not replace any historical R1/R2 lock tests.
 They qualify that .10.2 touches none of the strict predecessor surfaces that
-caused the earlier five regression failures and that its sole existing
-production-file change is a one-row append of the complete migration manifest.
+caused the earlier five regression failures and that the committed .10.2.A
+migration-manifest authority remains an immutable prefix for later successors.
+
+Compatibility maintenance:
+The original manifest assertion compared the working tree with ``HEAD`` and
+expected one new row. That was correct only while .10.2.A was uncommitted.
+After .10.2.A became HEAD, the comparison became self-relative and could never
+pass. The lock now anchors to the immutable .10.2.A commit instead.
 """
 from __future__ import annotations
 
@@ -14,6 +20,7 @@ import subprocess
 
 
 MIGRATION_ID = "m006_10_02_nexilabs_account_credential_authority"
+P006_UI_10_2_A_COMMIT = "cc28249f89ae9b530f0569d306ddd6cc6354e01c"
 
 IMMUTABLE_PREDECESSOR_PATHS = (
     "frontend/src/main.js",
@@ -49,18 +56,11 @@ KNOWN_D62C5C1_HASHES = {
 }
 
 ROADMAP_PATHS = (
-    "ROADMAP.md",
-    "PWA_ROADMAP.md",
-    "ROADMAP_TRACKER.md",
-    "roadmap.py",
-    "roadmap_data.py",
-    "roadmap_frontend.py",
-    "pwa_roadmap.py",
-    "pwa_roadmap_data.py",
-    "pwa_roadmap_frontend.py",
+    "ROADMAP.md","PWA_ROADMAP.md","ROADMAP_TRACKER.md",
+    "roadmap.py","roadmap_data.py","roadmap_frontend.py",
+    "pwa_roadmap.py","pwa_roadmap_data.py","pwa_roadmap_frontend.py",
     "roadmap_tracker.py",
 )
-
 
 def _root() -> Path:
     here = Path(__file__).resolve()
@@ -69,17 +69,15 @@ def _root() -> Path:
             return candidate
     raise AssertionError("git repository root not found")
 
-
-def _head_bytes(root: Path, path: str) -> bytes | None:
+def _git_bytes(root: Path, revision: str, path: str) -> bytes | None:
     proc = subprocess.run(
-        ["git", "show", f"HEAD:{path}"],
-        cwd=root,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        check=False,
+        ["git", "show", f"{revision}:{path}"],
+        cwd=root, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False,
     )
     return proc.stdout if proc.returncode == 0 else None
 
+def _head_bytes(root: Path, path: str) -> bytes | None:
+    return _git_bytes(root, "HEAD", path)
 
 def test_d62c5c1_known_strict_hash_predecessors_are_still_exact() -> None:
     root = _root()
@@ -87,7 +85,6 @@ def test_d62c5c1_known_strict_hash_predecessors_are_still_exact() -> None:
         candidate = root / path
         assert candidate.is_file(), path
         assert sha256(candidate.read_bytes()).hexdigest() == expected, path
-
 
 def test_all_locked_auth_pwa_strict_tests_and_roadmaps_are_byte_identical_to_head() -> None:
     root = _root()
@@ -100,23 +97,24 @@ def test_all_locked_auth_pwa_strict_tests_and_roadmaps_are_byte_identical_to_hea
         assert candidate.is_file(), f"P006.UI.10.2 must not remove predecessor path {path}"
         assert candidate.read_bytes() == head, f"P006.UI.10.2 modified locked predecessor {path}"
 
-
-def test_complete_migration_manifest_is_exactly_one_row_append_to_head() -> None:
+def test_complete_migration_manifest_preserves_committed_10_2_a_predecessor_prefix() -> None:
     root = _root()
     path = "database/migrations/migration_manifest.json"
-    prior_bytes = _head_bytes(root, path)
-    assert prior_bytes is not None
-    prior = json.loads(prior_bytes.decode("utf-8"))
+    predecessor_bytes = _git_bytes(root, P006_UI_10_2_A_COMMIT, path)
+    assert predecessor_bytes is not None, "immutable P006.UI.10.2.A manifest is unavailable"
+
+    predecessor = json.loads(predecessor_bytes.decode("utf-8"))
     current = json.loads((root / path).read_text(encoding="utf-8"))
 
-    assert current["manifest_schema"] == prior["manifest_schema"]
-    assert current["manifest_schema_version"] == prior["manifest_schema_version"]
-    assert current["catalogue_version"] == prior["catalogue_version"] + 1
-    assert current["migrations"][:-1] == prior["migrations"]
-    assert len(current["migrations"]) == len(prior["migrations"]) + 1
-    assert current["migrations"][-1]["migration_id"] == MIGRATION_ID
-    assert current["migrations"][-1]["sequence_number"] == 31
+    assert predecessor["catalogue_version"] == 15
+    assert predecessor["migrations"][-1]["migration_id"] == MIGRATION_ID
+    assert predecessor["migrations"][-1]["sequence_number"] == 31
 
+    assert current["manifest_schema"] == predecessor["manifest_schema"]
+    assert current["manifest_schema_version"] == predecessor["manifest_schema_version"]
+    assert current["catalogue_version"] >= predecessor["catalogue_version"]
+    assert len(current["migrations"]) >= len(predecessor["migrations"])
+    assert current["migrations"][: len(predecessor["migrations"])] == predecessor["migrations"]
 
 def test_private_development_auth_fixtures_remain_ignored_and_not_production_files() -> None:
     root = _root()
@@ -129,10 +127,7 @@ def test_private_development_auth_fixtures_remain_ignored_and_not_production_fil
     ):
         proc = subprocess.run(
             ["git", "check-ignore", path],
-            cwd=root,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
-            check=False,
+            cwd=root, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            text=True, check=False,
         )
         assert proc.returncode == 0, f"private fixture is not ignored: {path}"
