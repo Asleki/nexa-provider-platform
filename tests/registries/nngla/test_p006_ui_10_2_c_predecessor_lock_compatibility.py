@@ -9,6 +9,7 @@ import pytest
 
 
 B_TAG = "P006.UI.10.2.B-governed-enigma-catalogue-admission"
+C_TAG = "P006.UI.10.2.C-layered-admin-review-authority-persistence"
 MANIFEST_PATH = "database/migrations/migration_manifest.json"
 C_MIGRATION_ID = "m006_10_02_layered_admin_review_authority"
 ROADMAP_PATHS = (
@@ -57,7 +58,9 @@ def test_c_manifest_is_exactly_one_governed_append_after_b() -> None:
     b_raw = _git_bytes(root, B_TAG, MANIFEST_PATH)
     assert b_raw is not None, "B annotated tag manifest is unavailable"
     before = json.loads(b_raw.decode("utf-8"))
-    current = json.loads((root / MANIFEST_PATH).read_text(encoding="utf-8"))
+    c_raw = _git_bytes(root, C_TAG, MANIFEST_PATH)
+    assert c_raw is not None, "C annotated tag manifest is unavailable"
+    current = json.loads(c_raw.decode("utf-8"))
     assert current["manifest_schema"] == before["manifest_schema"]
     assert current["manifest_schema_version"] == before["manifest_schema_version"]
     assert current["catalogue_version"] == before["catalogue_version"] + 1
@@ -71,17 +74,19 @@ def test_c_does_not_rewrite_locked_b_production_modules() -> None:
     root = _root()
     for path in LOCKED_B_PRODUCTION_PATHS:
         expected = _git_bytes(root, B_TAG, path)
+        candidate = _git_bytes(root, C_TAG, path)
         assert expected is not None, path
-        assert (root / path).read_bytes() == expected, path
+        assert candidate is not None, path
+        assert candidate == expected, path
 
 
 def test_c_does_not_touch_roadmap_authority() -> None:
     root = _root()
     for path in ROADMAP_PATHS:
         expected = _git_bytes(root, B_TAG, path)
-        candidate = root / path
-        if expected is None and not candidate.exists():
+        candidate = _git_bytes(root, C_TAG, path)
+        if expected is None and candidate is None:
             continue
         assert expected is not None, f"C introduced roadmap path: {path}"
-        assert candidate.is_file(), f"C removed roadmap path: {path}"
-        assert candidate.read_bytes() == expected, f"C changed roadmap path: {path}"
+        assert candidate is not None, f"C removed roadmap path: {path}"
+        assert candidate == expected, f"C changed roadmap path: {path}"

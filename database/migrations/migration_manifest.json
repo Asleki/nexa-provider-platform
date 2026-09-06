@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 16,
+  "catalogue_version": 17,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -1232,6 +1232,56 @@
       "rollback_sha256": "73551df2fe66066aff4776b0890fad939319c6c4c603ad1dee56c63959abc704",
       "forward_byte_size": 11996,
       "rollback_byte_size": 1421,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_10_02_email_verification_challenge",
+      "milestone_id": "M006.10.2",
+      "sequence_number": 33,
+      "description": "email_verification_challenge",
+      "forward_file": "m006_10_02_email_verification_challenge.sql",
+      "rollback_file": "m006_10_02_email_verification_challenge_rollback.sql",
+      "depends_on": [
+        "m006_10_02_layered_admin_review_authority"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "nexilabs_auth.email_verification_challenge"
+        ],
+        "indexes": [
+          "ux_nexilabs_auth_issued_email_verification_challenge",
+          "ix_nexilabs_auth_email_verification_challenge_principal",
+          "ix_nexilabs_auth_email_verification_challenge_state_expiry"
+        ],
+        "constraints": [
+          "nexilabs_auth.fk_nexilabs_auth_email_challenge_principal",
+          "nexilabs_auth.fk_nexilabs_auth_email_challenge_owner",
+          "nexilabs_auth.ck_nexilabs_auth_email_challenge_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_otp_verifier_scheme",
+          "nexilabs_auth.ck_nexilabs_auth_otp_verifier_version",
+          "nexilabs_auth.ck_nexilabs_auth_otp_verifier_payload",
+          "nexilabs_auth.ck_nexilabs_auth_otp_challenge_state",
+          "nexilabs_auth.ck_nexilabs_auth_otp_policy_version",
+          "nexilabs_auth.ck_nexilabs_auth_otp_expiry",
+          "nexilabs_auth.ck_nexilabs_auth_otp_attempts",
+          "nexilabs_auth.ck_nexilabs_auth_otp_state_timestamps",
+          "nexilabs_auth.ck_nexilabs_auth_otp_verified_time",
+          "nexilabs_auth.ck_nexilabs_auth_otp_invalidated_time",
+          "nexilabs_auth.ck_nexilabs_auth_otp_resend_accounting"
+        ],
+        "views": [],
+        "functions": [
+          "nexilabs_auth.validate_email_verification_challenge_email",
+          "nexilabs_auth.validate_email_verification_challenge_transition"
+        ]
+      },
+      "forward_sha256": "128cd485a2bc4f70e57446f12b54d56642a46f1f19f2ccebb27bac97e97f82bc",
+      "rollback_sha256": "8cde381d98d0e6568ffb27c1af751741321038a62d69aac93b344706ac416860",
+      "forward_byte_size": 8237,
+      "rollback_byte_size": 694,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1
