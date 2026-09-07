@@ -164,11 +164,13 @@ def _successor_root(tmp_path: Path) -> tuple[Path, list[dict[str, object]]]:
         (migration_dir / name).write_bytes((source / "database/migrations" / name).read_bytes())
     path = migration_dir / "migration_manifest.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
-    payload["catalogue_version"] = D_CATALOGUE_VERSION + 1
+    payload["catalogue_version"] = max(int(payload["catalogue_version"]), D_CATALOGUE_VERSION) + 1
+    next_sequence = len(payload["migrations"]) + 1
+    dependency = str(payload["migrations"][-1]["migration_id"])
     payload["migrations"].append({
         "migration_id": "m006_10_02_later_successor",
         "milestone_id": "M006.10.2",
-        "sequence_number": 34,
+        "sequence_number": next_sequence,
         "description": "later_successor",
         "forward_file": "m006_10_02_later_successor.sql",
         "rollback_file": "m006_10_02_later_successor_rollback.sql",
@@ -176,7 +178,7 @@ def _successor_root(tmp_path: Path) -> tuple[Path, list[dict[str, object]]]:
         "rollback_sha256": "b" * 64,
         "forward_byte_size": 1,
         "rollback_byte_size": 1,
-        "depends_on": [D_MIGRATION_ID],
+        "depends_on": [dependency],
         "transaction_policy": "embedded",
         "expected_objects": {"schemas": [], "tables": [], "indexes": [], "constraints": [], "views": [], "functions": []},
         "destructive": False,
@@ -188,7 +190,7 @@ def _successor_root(tmp_path: Path) -> tuple[Path, list[dict[str, object]]]:
 
 def test_repository_artifact_gate_locks_exact_d_row_33_and_hashes() -> None:
     result = PostgreSQLEmailVerificationQualification.verify_repository_artifacts(_repo_root())
-    assert len(result) == 33
+    assert len(result) >= D_SEQUENCE
     assert result[31]["migration_id"] == C_MIGRATION_ID
     assert result[32]["migration_id"] == D_MIGRATION_ID
     assert result[32]["sequence_number"] == D_SEQUENCE
@@ -198,7 +200,7 @@ def test_repository_artifact_gate_locks_exact_d_row_33_and_hashes() -> None:
 def test_repository_artifact_gate_is_successor_safe(tmp_path: Path) -> None:
     root, _ = _successor_root(tmp_path)
     result = PostgreSQLEmailVerificationQualification.verify_repository_artifacts(root)
-    assert len(result) == 34
+    assert len(result) > D_SEQUENCE
     assert result[32]["migration_id"] == D_MIGRATION_ID
 
 

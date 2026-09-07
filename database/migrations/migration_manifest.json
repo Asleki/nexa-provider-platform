@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 17,
+  "catalogue_version": 18,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -1282,6 +1282,84 @@
       "rollback_sha256": "8cde381d98d0e6568ffb27c1af751741321038a62d69aac93b344706ac416860",
       "forward_byte_size": 8237,
       "rollback_byte_size": 694,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_10_02_credential_bundle_storage_delivery",
+      "milestone_id": "M006.10.2",
+      "sequence_number": 34,
+      "description": "credential_bundle_storage_delivery",
+      "forward_file": "m006_10_02_credential_bundle_storage_delivery.sql",
+      "rollback_file": "m006_10_02_credential_bundle_storage_delivery_rollback.sql",
+      "depends_on": [
+        "m006_10_02_email_verification_challenge"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "nexilabs_auth.credential_bundle",
+          "nexilabs_auth.credential_bundle_secret",
+          "nexilabs_auth.credential_delivery"
+        ],
+        "indexes": [
+          "ux_nexilabs_auth_current_credential_bundle",
+          "ux_nexilabs_auth_credential_bundle_object",
+          "ix_nexilabs_auth_credential_bundle_principal",
+          "ix_nexilabs_auth_credential_bundle_state_expiry",
+          "ux_nexilabs_auth_active_credential_bundle_secret",
+          "ix_nexilabs_auth_credential_bundle_secret_bundle",
+          "ux_nexilabs_auth_issued_credential_delivery",
+          "ix_nexilabs_auth_credential_delivery_bundle",
+          "ix_nexilabs_auth_credential_delivery_state_expiry"
+        ],
+        "constraints": [
+          "nexilabs_auth.fk_nexilabs_auth_credential_bundle_principal",
+          "nexilabs_auth.fk_nexilabs_auth_credential_bundle_enigma_profile",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_object_provider",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_object_key",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_sha256",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_byte_size",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_state",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_expiry_retention",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_ready_evidence",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_invalidation_time",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_retired_time",
+          "nexilabs_auth.fk_nexilabs_auth_credential_bundle_secret_bundle",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_secret_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_secret_provider",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_secret_reference",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_secret_context",
+          "nexilabs_auth.ck_nexilabs_auth_credential_bundle_secret_retirement",
+          "nexilabs_auth.fk_nexilabs_auth_credential_delivery_bundle",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_delivery_verifier_scheme",
+          "nexilabs_auth.ck_nexilabs_auth_delivery_verifier_version",
+          "nexilabs_auth.ck_nexilabs_auth_delivery_verifier_payload",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_state",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_policy",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_host",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_expiry",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_state_timestamps",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_consumed_time",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_revoked_time",
+          "nexilabs_auth.ck_nexilabs_auth_credential_delivery_download_accounting"
+        ],
+        "views": [],
+        "functions": [
+          "nexilabs_auth.validate_credential_bundle_owner",
+          "nexilabs_auth.validate_credential_bundle_transition",
+          "nexilabs_auth.validate_credential_bundle_secret_transition",
+          "nexilabs_auth.validate_credential_delivery_transition",
+          "nexilabs_auth.validate_credential_delivery_bundle"
+        ]
+      },
+      "forward_sha256": "ad0a5768940db404283a5165ded16c408282414d78152ec867eea027f241dd1d",
+      "rollback_sha256": "aaeac2c2a4080973c8fc9fcd0c19fa5988b082cc24287d6bfc99b4e3b5cefa23",
+      "forward_byte_size": 21130,
+      "rollback_byte_size": 1275,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1
