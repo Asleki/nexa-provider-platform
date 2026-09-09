@@ -1,7 +1,7 @@
 {
   "manifest_schema": "npp.database-migration-manifest",
   "manifest_schema_version": 1,
-  "catalogue_version": 18,
+  "catalogue_version": 20,
   "migrations": [
     {
       "migration_id": "m009_10_04_name_catalogue",
@@ -1360,6 +1360,115 @@
       "rollback_sha256": "aaeac2c2a4080973c8fc9fcd0c19fa5988b082cc24287d6bfc99b4e3b5cefa23",
       "forward_byte_size": 21130,
       "rollback_byte_size": 1275,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_10_02_enrollment_notification_audit_persistence",
+      "milestone_id": "M006.10.2",
+      "sequence_number": 35,
+      "description": "enrollment_notification_audit_persistence",
+      "forward_file": "m006_10_02_enrollment_notification_audit_persistence.sql",
+      "rollback_file": "m006_10_02_enrollment_notification_audit_persistence_rollback.sql",
+      "depends_on": [
+        "m006_10_02_credential_bundle_storage_delivery"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "nexilabs_auth.enrollment_event",
+          "nexilabs_auth.notification_delivery",
+          "nexilabs_auth.audit_export"
+        ],
+        "indexes": [
+          "ux_nexilabs_auth_enrollment_event_authority",
+          "ix_nexilabs_auth_enrollment_event_request",
+          "ix_nexilabs_auth_enrollment_event_authority",
+          "ix_nexilabs_auth_enrollment_event_correlation",
+          "ix_nexilabs_auth_notification_delivery_event",
+          "ix_nexilabs_auth_notification_delivery_state",
+          "ix_nexilabs_auth_notification_delivery_template",
+          "ux_nexilabs_auth_audit_export_object",
+          "ix_nexilabs_auth_audit_export_admin",
+          "ix_nexilabs_auth_audit_export_state_expiry"
+        ],
+        "constraints": [
+          "nexilabs_auth.fk_nexilabs_auth_enrollment_event_request",
+          "nexilabs_auth.fk_nexilabs_auth_enrollment_event_causation",
+          "nexilabs_auth.ck_nexilabs_auth_enrollment_event_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_enrollment_event_type",
+          "nexilabs_auth.ck_nexilabs_auth_enrollment_event_authority_type",
+          "nexilabs_auth.ck_nexilabs_auth_enrollment_event_authority_id",
+          "nexilabs_auth.ck_nexilabs_auth_enrollment_event_source_reference",
+          "nexilabs_auth.ck_nexilabs_auth_enrollment_event_correlation",
+          "nexilabs_auth.ck_nexilabs_auth_enrollment_event_causation_not_self",
+          "nexilabs_auth.fk_nexilabs_auth_notification_delivery_event",
+          "nexilabs_auth.ck_nexilabs_auth_notification_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_notification_template",
+          "nexilabs_auth.ck_nexilabs_auth_notification_template_version",
+          "nexilabs_auth.ck_nexilabs_auth_notification_recipient_reference",
+          "nexilabs_auth.ck_nexilabs_auth_notification_provider_reference",
+          "nexilabs_auth.ck_nexilabs_auth_notification_delivery_state",
+          "nexilabs_auth.ck_nexilabs_auth_notification_terminal_evidence",
+          "nexilabs_auth.fk_nexilabs_auth_audit_export_admin_operator",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_id_nonblank",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_report_type",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_filter_reference",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_object_provider",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_object_key",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_sha256",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_byte_size",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_state",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_retention",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_state_timestamps",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_expired_time",
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_retired_time"
+        ],
+        "views": [],
+        "functions": [
+          "nexilabs_auth.validate_enrollment_event_authority",
+          "nexilabs_auth.reject_enrollment_event_mutation",
+          "nexilabs_auth.validate_notification_event_template",
+          "nexilabs_auth.validate_notification_delivery_transition",
+          "nexilabs_auth.validate_audit_export_requester",
+          "nexilabs_auth.validate_audit_export_transition"
+        ]
+      },
+      "forward_sha256": "9521c7a30a4c20c64b2949368ac44e6177bc01a49afd2e12af715ab8436433b1",
+      "rollback_sha256": "2f8356952df0fd49dd5a25680de3e9567bf621434cf7eed976a41119fb692904",
+      "forward_byte_size": 30788,
+      "rollback_byte_size": 1499,
+      "transaction_policy": "embedded",
+      "destructive": false,
+      "catalogue_entry_version": 1
+    },
+    {
+      "migration_id": "m006_10_02_enrollment_notification_audit_filter_regex_correction",
+      "milestone_id": "M006.10.2",
+      "sequence_number": 36,
+      "description": "enrollment_notification_audit_filter_regex_correction",
+      "forward_file": "m006_10_02_enrollment_notification_audit_filter_regex_correction.sql",
+      "rollback_file": "m006_10_02_enrollment_notification_audit_filter_regex_correction_rollback.sql",
+      "depends_on": [
+        "m006_10_02_enrollment_notification_audit_persistence"
+      ],
+      "expected_objects": {
+        "schemas": [],
+        "tables": [
+          "nexilabs_auth.audit_export"
+        ],
+        "indexes": [],
+        "constraints": [
+          "nexilabs_auth.ck_nexilabs_auth_audit_export_filter_reference"
+        ],
+        "views": [],
+        "functions": []
+      },
+      "forward_sha256": "f22a57c0643335c7f30d7ecee8159a90aeb11782c117c338d57268accbe1a8b7",
+      "rollback_sha256": "d84b13f383897c9bda152780475bfa5f830a42e0d937da6dddaa7aaf2fd6d59b",
+      "forward_byte_size": 1025,
+      "rollback_byte_size": 658,
       "transaction_policy": "embedded",
       "destructive": false,
       "catalogue_entry_version": 1
